@@ -38,6 +38,7 @@ def h5_items():
 				"weapon_type": sets.get("weapon_type"),
 				"grade": (sets.get("crystal_type") or "NONE").upper(),
 				"etcitem_type": sets.get("etcitem_type"),
+				"quest_item": sets.get("is_questitem") == "true",
 				"file": f.name,
 			}
 	return items

@@ -1,6 +1,7 @@
 """What counts as Kamael content: kept even though it is absent from aCis (Interlude)."""
 
 import re
+import xml.etree.ElementTree as ET
 
 import datasets as ds
 
@@ -25,6 +26,24 @@ SCRIPT_DIRS = [
 ]
 
 _INT_CONST = re.compile(r"\b(\d{4,6})\b")
+
+# Item variants that did not exist in Interlude: event, rental and PvP copies,
+# Common Items, S80+ weapon families.
+_LATE_VARIANT = re.compile(r"\(Event\)|- Event|limited period|of Fortune|Baguette|\{PvP\}|^Common Item|^Foundation |Dynasty|Icarus|Vesper|Vorpal|Elegia|Moirai|Santa Claus")
+
+
+def _interlude_weapon_suffixes():
+	"""Special Ability suffixes (the part after ' - ') used by Interlude weapons."""
+	suffixes = set()
+	for f in ds._xml_files(ds.ACIS / "items"):
+		for it in ET.parse(f).getroot().iter("item"):
+			if it.get("type") == "Weapon" and " - " in it.get("name"):
+				suffixes.add(it.get("name").split(" - ", 1)[1])
+	return suffixes
+
+
+def _is_interlude_like_weapon(name, suffixes):
+	return not _LATE_VARIANT.search(name) and (" - " not in name or name.split(" - ", 1)[1] in suffixes)
 
 
 def quest_dirs():
@@ -53,10 +72,11 @@ def npc_ids(npcs, spawns_by_region):
 
 def item_ids(items):
 	"""Kamael weapons and bolts up to S grade, starting equipment, Kamael quest items."""
-	result = {i for i, it in items.items() if ds.is_kamael_item(it) and it["grade"] in ds.INTERLUDE_GRADES and not it["name"].startswith("Common Item")}
+	suffixes = _interlude_weapon_suffixes()
+	result = {i for i, it in items.items() if ds.is_kamael_item(it) and it["grade"] in ds.INTERLUDE_GRADES and _is_interlude_like_weapon(it["name"], suffixes)}
 	text = (ds.GAME / "data" / "stats" / "initialEquipment.xml").read_text(encoding="utf-8")
 	for block in re.findall(r"<equipment classId=\"(\d+)\">(.*?)</equipment>", text, re.S):
 		if int(block[0]) in ds.KAMAEL_CLASS_IDS:
 			result |= {int(i) for i in re.findall(r'<item id="(\d+)"', block[1])}
-	result |= {i for i in referenced_ids() if i in items and items[i]["type"] == "EtcItem"}
+	result |= {i for i in referenced_ids() if i in items and items[i]["quest_item"]}
 	return result
