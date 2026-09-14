@@ -57,13 +57,21 @@
 - [ ] Дроп и спойл с NPC (`data/stats/npcs`)
 - [ ] Наборы брони S80/S84, заточка поздних предметов, аугментация поздних предметов
 - [ ] Рубашки, пояса, талисманы, браслеты, Common Items, Shadow Items поздних хроник
+- [ ] Стартовая экипировка (`stats/initialEquipment.xml`): все расы получают H5-предметы (Adventurer's SoE, 10 свитков в Kamael Village) — привести к aCis, Камаэлям оставить свою
 
 ## Этап 4. Мир
-- [ ] Спавны (`game/sql/spawnlist.sql`): убрать 9 555 записей NPC, которых нет в aCis (650 разных NPC), кроме Камаэлей и Isle of Souls
-- [ ] Рейд-боссы и эпики поздних хроник (Beleth, Freya, Tiat, Ekimus и др.)
+- [x] Спавны (`game/sql/spawnlist.sql`): удалено 8 146 строк NPC, которых нет в aCis (498 NPC); Isle of Souls (квадраты 16_19, 17_19, 16_20) и NPC камаэльских скриптов оставлены (`tools/interlude/build_spawns.py`)
+- [x] Монстры Interlude, которых в H5 нигде нет, перенесены из aCis: 593 мейкера и территории (`data/spawnlist/interlude.xml`, `data/zones/npcSpawnTerritories/interlude.xml`)
+- [ ] Не перенесены мейкеры aCis со скриптовой логикой (события, день/ночь, сундуки, Royal Rush, `event`/`spawnTime`) — 2 608 обычных мейкеров с такими атрибутами и ~2 000 специальных; разобрать по зонам
+- [ ] Не перенесены NPC Interlude не-монстры (торговцы, L2Npc, Feedable Beast — ~120 записей)
+- [ ] Минионы (privates) мейкеров aCis не переносятся — проверить, что у лидеров есть миньоны в шаблонах H5
+- [ ] После изменения `spawnlist.sql` таблицу нужно перезалить: `mysql l2jdb_custom < game/sql/spawnlist.sql`
+- [ ] Рейд-боссы и эпики поздних хроник (`raidboss_spawnlist.sql`, `grandboss_data.sql`) (Beleth, Freya, Tiat, Ekimus и др.)
 - [ ] Телепорты гейткиперов в Hellbound, Gracia, Freya-зоны, Den of Evil и т. п.
 - [ ] HTML гейткиперов и NPC со ссылками на удалённые места
-- [ ] Квесты поздних хроник (`quests/QuestLoader.java`), кроме камаэльских
+- [x] Квесты поздних хроник убраны из `QuestLoader.java` (133 квеста), камаэльские и dummy-квесты туториала оставлены (`tools/interlude/build_quests.py`)
+- [ ] Q179 Into the Large Cavern (Камаэли, 17 ур.) требует инстанс Nornils Garden, а инстансы выключены — включить только его или заменить квест
+- [ ] Квесты Interlude, которых нет в H5: 127, 353, 374, 375, 640
 - [ ] Остров Камаэлей (Isle of Souls, Kamael Village) и путь оттуда на материк
 
 ## Этап 5. Проверка

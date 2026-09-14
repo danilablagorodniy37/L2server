@@ -30,7 +30,6 @@ import com.l2jserver.datapack.quests.Dummy.Q00206_DwarfTutorial;
 import com.l2jserver.datapack.quests.Dummy.Q00207_NewbieWeaponCoupon;
 import com.l2jserver.datapack.quests.Dummy.Q00208_NewbieAccessoryCoupon;
 import com.l2jserver.datapack.quests.Dummy.Q00209_KamaelTutorial;
-import com.l2jserver.datapack.quests.Dummy.Q00728_TerritoryWar;
 import com.l2jserver.datapack.quests.Q00001_LettersOfLove.Q00001_LettersOfLove;
 import com.l2jserver.datapack.quests.Q00002_WhatWomenWant.Q00002_WhatWomenWant;
 import com.l2jserver.datapack.quests.Q00003_WillTheSealBeBroken.Q00003_WillTheSealBeBroken;
@@ -56,7 +55,6 @@ import com.l2jserver.datapack.quests.Q00022_TragedyInVonHellmannForest.Q00022_Tr
 import com.l2jserver.datapack.quests.Q00023_LidiasHeart.Q00023_LidiasHeart;
 import com.l2jserver.datapack.quests.Q00024_InhabitantsOfTheForestOfTheDead.Q00024_InhabitantsOfTheForestOfTheDead;
 import com.l2jserver.datapack.quests.Q00025_HidingBehindTheTruth.Q00025_HidingBehindTheTruth;
-import com.l2jserver.datapack.quests.Q00026_TiredOfWaiting.Q00026_TiredOfWaiting;
 import com.l2jserver.datapack.quests.Q00027_ChestCaughtWithABaitOfWind.Q00027_ChestCaughtWithABaitOfWind;
 import com.l2jserver.datapack.quests.Q00028_ChestCaughtWithABaitOfIcyAir.Q00028_ChestCaughtWithABaitOfIcyAir;
 import com.l2jserver.datapack.quests.Q00029_ChestCaughtWithABaitOfEarth.Q00029_ChestCaughtWithABaitOfEarth;
@@ -70,7 +68,6 @@ import com.l2jserver.datapack.quests.Q00036_MakeASewingKit.Q00036_MakeASewingKit
 import com.l2jserver.datapack.quests.Q00037_MakeFormalWear.Q00037_MakeFormalWear;
 import com.l2jserver.datapack.quests.Q00038_DragonFangs.Q00038_DragonFangs;
 import com.l2jserver.datapack.quests.Q00039_RedEyedInvaders.Q00039_RedEyedInvaders;
-import com.l2jserver.datapack.quests.Q00040_ASpecialOrder.Q00040_ASpecialOrder;
 import com.l2jserver.datapack.quests.Q00042_HelpTheUncle.Q00042_HelpTheUncle;
 import com.l2jserver.datapack.quests.Q00043_HelpTheSister.Q00043_HelpTheSister;
 import com.l2jserver.datapack.quests.Q00044_HelpTheSon.Q00044_HelpTheSon;
@@ -150,25 +147,6 @@ import com.l2jserver.datapack.quests.Q00123_TheLeaderAndTheFollower.Q00123_TheLe
 import com.l2jserver.datapack.quests.Q00124_MeetingTheElroki.Q00124_MeetingTheElroki;
 import com.l2jserver.datapack.quests.Q00125_TheNameOfEvil1.Q00125_TheNameOfEvil1;
 import com.l2jserver.datapack.quests.Q00126_TheNameOfEvil2.Q00126_TheNameOfEvil2;
-import com.l2jserver.datapack.quests.Q00128_PailakaSongOfIceAndFire.Q00128_PailakaSongOfIceAndFire;
-import com.l2jserver.datapack.quests.Q00129_PailakaDevilsLegacy.Q00129_PailakaDevilsLegacy;
-import com.l2jserver.datapack.quests.Q00130_PathToHellbound.Q00130_PathToHellbound;
-import com.l2jserver.datapack.quests.Q00131_BirdInACage.Q00131_BirdInACage;
-import com.l2jserver.datapack.quests.Q00132_MatrasCuriosity.Q00132_MatrasCuriosity;
-import com.l2jserver.datapack.quests.Q00133_ThatsBloodyHot.Q00133_ThatsBloodyHot;
-import com.l2jserver.datapack.quests.Q00134_TempleMissionary.Q00134_TempleMissionary;
-import com.l2jserver.datapack.quests.Q00135_TempleExecutor.Q00135_TempleExecutor;
-import com.l2jserver.datapack.quests.Q00136_MoreThanMeetsTheEye.Q00136_MoreThanMeetsTheEye;
-import com.l2jserver.datapack.quests.Q00137_TempleChampionPart1.Q00137_TempleChampionPart1;
-import com.l2jserver.datapack.quests.Q00138_TempleChampionPart2.Q00138_TempleChampionPart2;
-import com.l2jserver.datapack.quests.Q00139_ShadowFoxPart1.Q00139_ShadowFoxPart1;
-import com.l2jserver.datapack.quests.Q00140_ShadowFoxPart2.Q00140_ShadowFoxPart2;
-import com.l2jserver.datapack.quests.Q00141_ShadowFoxPart3.Q00141_ShadowFoxPart3;
-import com.l2jserver.datapack.quests.Q00142_FallenAngelRequestOfDawn.Q00142_FallenAngelRequestOfDawn;
-import com.l2jserver.datapack.quests.Q00143_FallenAngelRequestOfDusk.Q00143_FallenAngelRequestOfDusk;
-import com.l2jserver.datapack.quests.Q00146_TheZeroHour.Q00146_TheZeroHour;
-import com.l2jserver.datapack.quests.Q00147_PathtoBecominganEliteMercenary.Q00147_PathtoBecominganEliteMercenary;
-import com.l2jserver.datapack.quests.Q00148_PathtoBecominganExaltedMercenary.Q00148_PathtoBecominganExaltedMercenary;
 import com.l2jserver.datapack.quests.Q00151_CureForFever.Q00151_CureForFever;
 import com.l2jserver.datapack.quests.Q00152_ShardsOfGolem.Q00152_ShardsOfGolem;
 import com.l2jserver.datapack.quests.Q00153_DeliverGoods.Q00153_DeliverGoods;
@@ -194,26 +172,9 @@ import com.l2jserver.datapack.quests.Q00172_NewHorizons.Q00172_NewHorizons;
 import com.l2jserver.datapack.quests.Q00173_ToTheIsleOfSouls.Q00173_ToTheIsleOfSouls;
 import com.l2jserver.datapack.quests.Q00174_SupplyCheck.Q00174_SupplyCheck;
 import com.l2jserver.datapack.quests.Q00175_TheWayOfTheWarrior.Q00175_TheWayOfTheWarrior;
-import com.l2jserver.datapack.quests.Q00176_StepsForHonor.Q00176_StepsForHonor;
 import com.l2jserver.datapack.quests.Q00178_IconicTrinity.Q00178_IconicTrinity;
 import com.l2jserver.datapack.quests.Q00179_IntoTheLargeCavern.Q00179_IntoTheLargeCavern;
 import com.l2jserver.datapack.quests.Q00182_NewRecruits.Q00182_NewRecruits;
-import com.l2jserver.datapack.quests.Q00183_RelicExploration.Q00183_RelicExploration;
-import com.l2jserver.datapack.quests.Q00184_ArtOfPersuasion.Q00184_ArtOfPersuasion;
-import com.l2jserver.datapack.quests.Q00185_NikolasCooperation.Q00185_NikolasCooperation;
-import com.l2jserver.datapack.quests.Q00186_ContractExecution.Q00186_ContractExecution;
-import com.l2jserver.datapack.quests.Q00187_NikolasHeart.Q00187_NikolasHeart;
-import com.l2jserver.datapack.quests.Q00188_SealRemoval.Q00188_SealRemoval;
-import com.l2jserver.datapack.quests.Q00189_ContractCompletion.Q00189_ContractCompletion;
-import com.l2jserver.datapack.quests.Q00190_LostDream.Q00190_LostDream;
-import com.l2jserver.datapack.quests.Q00191_VainConclusion.Q00191_VainConclusion;
-import com.l2jserver.datapack.quests.Q00192_SevenSignsSeriesOfDoubt.Q00192_SevenSignsSeriesOfDoubt;
-import com.l2jserver.datapack.quests.Q00193_SevenSignsDyingMessage.Q00193_SevenSignsDyingMessage;
-import com.l2jserver.datapack.quests.Q00194_SevenSignsMammonsContract.Q00194_SevenSignsMammonsContract;
-import com.l2jserver.datapack.quests.Q00195_SevenSignsSecretRitualOfThePriests.Q00195_SevenSignsSecretRitualOfThePriests;
-import com.l2jserver.datapack.quests.Q00196_SevenSignsSealOfTheEmperor.Q00196_SevenSignsSealOfTheEmperor;
-import com.l2jserver.datapack.quests.Q00197_SevenSignsTheSacredBookOfSeal.Q00197_SevenSignsTheSacredBookOfSeal;
-import com.l2jserver.datapack.quests.Q00198_SevenSignsEmbryo.Q00198_SevenSignsEmbryo;
 import com.l2jserver.datapack.quests.Q00211_TrialOfTheChallenger.Q00211_TrialOfTheChallenger;
 import com.l2jserver.datapack.quests.Q00212_TrialOfDuty.Q00212_TrialOfDuty;
 import com.l2jserver.datapack.quests.Q00213_TrialOfTheSeeker.Q00213_TrialOfTheSeeker;
@@ -240,19 +201,10 @@ import com.l2jserver.datapack.quests.Q00233_TestOfTheWarSpirit.Q00233_TestOfTheW
 import com.l2jserver.datapack.quests.Q00234_FatesWhisper.Q00234_FatesWhisper;
 import com.l2jserver.datapack.quests.Q00235_MimirsElixir.Q00235_MimirsElixir;
 import com.l2jserver.datapack.quests.Q00236_SeedsOfChaos.Q00236_SeedsOfChaos;
-import com.l2jserver.datapack.quests.Q00237_WindsOfChange.Q00237_WindsOfChange;
-import com.l2jserver.datapack.quests.Q00238_SuccessFailureOfBusiness.Q00238_SuccessFailureOfBusiness;
-import com.l2jserver.datapack.quests.Q00239_WontYouJoinUs.Q00239_WontYouJoinUs;
-import com.l2jserver.datapack.quests.Q00240_ImTheOnlyOneYouCanTrust.Q00240_ImTheOnlyOneYouCanTrust;
 import com.l2jserver.datapack.quests.Q00241_PossessorOfAPreciousSoul1.Q00241_PossessorOfAPreciousSoul1;
 import com.l2jserver.datapack.quests.Q00242_PossessorOfAPreciousSoul2.Q00242_PossessorOfAPreciousSoul2;
 import com.l2jserver.datapack.quests.Q00246_PossessorOfAPreciousSoul3.Q00246_PossessorOfAPreciousSoul3;
 import com.l2jserver.datapack.quests.Q00247_PossessorOfAPreciousSoul4.Q00247_PossessorOfAPreciousSoul4;
-import com.l2jserver.datapack.quests.Q00249_PoisonedPlainsOfTheLizardmen.Q00249_PoisonedPlainsOfTheLizardmen;
-import com.l2jserver.datapack.quests.Q00250_WatchWhatYouEat.Q00250_WatchWhatYouEat;
-import com.l2jserver.datapack.quests.Q00251_NoSecrets.Q00251_NoSecrets;
-import com.l2jserver.datapack.quests.Q00252_ItSmellsDelicious.Q00252_ItSmellsDelicious;
-import com.l2jserver.datapack.quests.Q00254_LegendaryTales.Q00254_LegendaryTales;
 import com.l2jserver.datapack.quests.Q00255_Tutorial.Q00255_Tutorial;
 import com.l2jserver.datapack.quests.Q00257_TheGuardIsBusy.Q00257_TheGuardIsBusy;
 import com.l2jserver.datapack.quests.Q00258_BringWolfPelts.Q00258_BringWolfPelts;
@@ -265,9 +217,6 @@ import com.l2jserver.datapack.quests.Q00264_KeenClaws.Q00264_KeenClaws;
 import com.l2jserver.datapack.quests.Q00265_BondsOfSlavery.Q00265_BondsOfSlavery;
 import com.l2jserver.datapack.quests.Q00266_PleasOfPixies.Q00266_PleasOfPixies;
 import com.l2jserver.datapack.quests.Q00267_WrathOfVerdure.Q00267_WrathOfVerdure;
-import com.l2jserver.datapack.quests.Q00268_TracesOfEvil.Q00268_TracesOfEvil;
-import com.l2jserver.datapack.quests.Q00269_InventionAmbition.Q00269_InventionAmbition;
-import com.l2jserver.datapack.quests.Q00270_TheOneWhoEndsSilence.Q00270_TheOneWhoEndsSilence;
 import com.l2jserver.datapack.quests.Q00271_ProofOfValor.Q00271_ProofOfValor;
 import com.l2jserver.datapack.quests.Q00272_WrathOfAncestors.Q00272_WrathOfAncestors;
 import com.l2jserver.datapack.quests.Q00273_InvadersOfTheHolyLand.Q00273_InvadersOfTheHolyLand;
@@ -275,17 +224,11 @@ import com.l2jserver.datapack.quests.Q00274_SkirmishWithTheWerewolves.Q00274_Ski
 import com.l2jserver.datapack.quests.Q00275_DarkWingedSpies.Q00275_DarkWingedSpies;
 import com.l2jserver.datapack.quests.Q00276_TotemOfTheHestui.Q00276_TotemOfTheHestui;
 import com.l2jserver.datapack.quests.Q00277_GatekeepersOffering.Q00277_GatekeepersOffering;
-import com.l2jserver.datapack.quests.Q00278_HomeSecurity.Q00278_HomeSecurity;
-import com.l2jserver.datapack.quests.Q00279_TargetOfOpportunity.Q00279_TargetOfOpportunity;
 import com.l2jserver.datapack.quests.Q00280_TheFoodChain.Q00280_TheFoodChain;
 import com.l2jserver.datapack.quests.Q00281_HeadForTheHills.Q00281_HeadForTheHills;
 import com.l2jserver.datapack.quests.Q00283_TheFewTheProudTheBrave.Q00283_TheFewTheProudTheBrave;
 import com.l2jserver.datapack.quests.Q00284_MuertosFeather.Q00284_MuertosFeather;
 import com.l2jserver.datapack.quests.Q00286_FabulousFeathers.Q00286_FabulousFeathers;
-import com.l2jserver.datapack.quests.Q00287_FiguringItOut.Q00287_FiguringItOut;
-import com.l2jserver.datapack.quests.Q00288_HandleWithCare.Q00288_HandleWithCare;
-import com.l2jserver.datapack.quests.Q00289_NoMoreSoupForYou.Q00289_NoMoreSoupForYou;
-import com.l2jserver.datapack.quests.Q00290_ThreatRemoval.Q00290_ThreatRemoval;
 import com.l2jserver.datapack.quests.Q00291_RevengeOfTheRedbonnet.Q00291_RevengeOfTheRedbonnet;
 import com.l2jserver.datapack.quests.Q00292_BrigandsSweep.Q00292_BrigandsSweep;
 import com.l2jserver.datapack.quests.Q00293_TheHiddenVeins.Q00293_TheHiddenVeins;
@@ -298,12 +241,6 @@ import com.l2jserver.datapack.quests.Q00299_GatherIngredientsForPie.Q00299_Gathe
 import com.l2jserver.datapack.quests.Q00300_HuntingLetoLizardman.Q00300_HuntingLetoLizardman;
 import com.l2jserver.datapack.quests.Q00303_CollectArrowheads.Q00303_CollectArrowheads;
 import com.l2jserver.datapack.quests.Q00306_CrystalOfFireAndIce.Q00306_CrystalOfFireAndIce;
-import com.l2jserver.datapack.quests.Q00307_ControlDeviceOfTheGiants.Q00307_ControlDeviceOfTheGiants;
-import com.l2jserver.datapack.quests.Q00308_ReedFieldMaintenance.Q00308_ReedFieldMaintenance;
-import com.l2jserver.datapack.quests.Q00309_ForAGoodCause.Q00309_ForAGoodCause;
-import com.l2jserver.datapack.quests.Q00310_OnlyWhatRemains.Q00310_OnlyWhatRemains;
-import com.l2jserver.datapack.quests.Q00311_ExpulsionOfEvilSpirits.Q00311_ExpulsionOfEvilSpirits;
-import com.l2jserver.datapack.quests.Q00312_TakeAdvantageOfTheCrisis.Q00312_TakeAdvantageOfTheCrisis;
 import com.l2jserver.datapack.quests.Q00313_CollectSpores.Q00313_CollectSpores;
 import com.l2jserver.datapack.quests.Q00316_DestroyPlagueCarriers.Q00316_DestroyPlagueCarriers;
 import com.l2jserver.datapack.quests.Q00317_CatchTheWind.Q00317_CatchTheWind;
@@ -385,33 +322,15 @@ import com.l2jserver.datapack.quests.Q00419_GetAPet.Q00419_GetAPet;
 import com.l2jserver.datapack.quests.Q00420_LittleWing.Q00420_LittleWing;
 import com.l2jserver.datapack.quests.Q00421_LittleWingsBigAdventure.Q00421_LittleWingsBigAdventure;
 import com.l2jserver.datapack.quests.Q00422_RepentYourSins.Q00422_RepentYourSins;
-import com.l2jserver.datapack.quests.Q00423_TakeYourBestShot.Q00423_TakeYourBestShot;
 import com.l2jserver.datapack.quests.Q00426_QuestForFishingShot.Q00426_QuestForFishingShot;
 import com.l2jserver.datapack.quests.Q00431_WeddingMarch.Q00431_WeddingMarch;
 import com.l2jserver.datapack.quests.Q00432_BirthdayPartySong.Q00432_BirthdayPartySong;
-import com.l2jserver.datapack.quests.Q00450_GraveRobberRescue.Q00450_GraveRobberRescue;
-import com.l2jserver.datapack.quests.Q00451_LuciensAltar.Q00451_LuciensAltar;
-import com.l2jserver.datapack.quests.Q00452_FindingtheLostSoldiers.Q00452_FindingtheLostSoldiers;
-import com.l2jserver.datapack.quests.Q00453_NotStrongEnoughAlone.Q00453_NotStrongEnoughAlone;
-import com.l2jserver.datapack.quests.Q00454_CompletelyLost.Q00454_CompletelyLost;
-import com.l2jserver.datapack.quests.Q00455_WingsOfSand.Q00455_WingsOfSand;
-import com.l2jserver.datapack.quests.Q00456_DontKnowDontCare.Q00456_DontKnowDontCare;
-import com.l2jserver.datapack.quests.Q00457_LostAndFound.Q00457_LostAndFound;
-import com.l2jserver.datapack.quests.Q00458_PerfectForm.Q00458_PerfectForm;
-import com.l2jserver.datapack.quests.Q00461_RumbleInTheBase.Q00461_RumbleInTheBase;
-import com.l2jserver.datapack.quests.Q00463_IMustBeaGenius.Q00463_IMustBeaGenius;
-import com.l2jserver.datapack.quests.Q00464_Oath.Q00464_Oath;
 import com.l2jserver.datapack.quests.Q00501_ProofOfClanAlliance.Q00501_ProofOfClanAlliance;
 import com.l2jserver.datapack.quests.Q00503_PursuitOfClanAmbition.Q00503_PursuitOfClanAmbition;
 import com.l2jserver.datapack.quests.Q00504_CompetitionForTheBanditStronghold.Q00504_CompetitionForTheBanditStronghold;
 import com.l2jserver.datapack.quests.Q00508_AClansReputation.Q00508_AClansReputation;
 import com.l2jserver.datapack.quests.Q00509_AClansFame.Q00509_AClansFame;
 import com.l2jserver.datapack.quests.Q00510_AClansPrestige.Q00510_AClansPrestige;
-import com.l2jserver.datapack.quests.Q00511_AwlUnderFoot.Q00511_AwlUnderFoot;
-import com.l2jserver.datapack.quests.Q00512_BladeUnderFoot.Q00512_BladeUnderFoot;
-import com.l2jserver.datapack.quests.Q00551_OlympiadStarter.Q00551_OlympiadStarter;
-import com.l2jserver.datapack.quests.Q00552_OlympiadVeteran.Q00552_OlympiadVeteran;
-import com.l2jserver.datapack.quests.Q00553_OlympiadUndefeated.Q00553_OlympiadUndefeated;
 import com.l2jserver.datapack.quests.Q00601_WatchingEyes.Q00601_WatchingEyes;
 import com.l2jserver.datapack.quests.Q00602_ShadowOfLight.Q00602_ShadowOfLight;
 import com.l2jserver.datapack.quests.Q00603_DaimonTheWhiteEyedPart1.Q00603_DaimonTheWhiteEyedPart1;
@@ -471,58 +390,6 @@ import com.l2jserver.datapack.quests.Q00661_MakingTheHarvestGroundsSafe.Q00661_M
 import com.l2jserver.datapack.quests.Q00662_AGameOfCards.Q00662_AGameOfCards;
 import com.l2jserver.datapack.quests.Q00663_SeductiveWhispers.Q00663_SeductiveWhispers;
 import com.l2jserver.datapack.quests.Q00688_DefeatTheElrokianRaiders.Q00688_DefeatTheElrokianRaiders;
-import com.l2jserver.datapack.quests.Q00690_JudesRequest.Q00690_JudesRequest;
-import com.l2jserver.datapack.quests.Q00691_MatrasSuspiciousRequest.Q00691_MatrasSuspiciousRequest;
-import com.l2jserver.datapack.quests.Q00692_HowtoOpposeEvil.Q00692_HowtoOpposeEvil;
-import com.l2jserver.datapack.quests.Q00695_DefendTheHallOfSuffering.Q00695_DefendTheHallOfSuffering;
-import com.l2jserver.datapack.quests.Q00699_GuardianOfTheSkies.Q00699_GuardianOfTheSkies;
-import com.l2jserver.datapack.quests.Q00700_CursedLife.Q00700_CursedLife;
-import com.l2jserver.datapack.quests.Q00701_ProofOfExistence.Q00701_ProofOfExistence;
-import com.l2jserver.datapack.quests.Q00702_ATrapForRevenge.Q00702_ATrapForRevenge;
-import com.l2jserver.datapack.quests.Q00708_PathToBecomingALordGludio.Q00708_PathToBecomingALordGludio;
-import com.l2jserver.datapack.quests.Q00901_HowLavasaurusesAreMade.Q00901_HowLavasaurusesAreMade;
-import com.l2jserver.datapack.quests.Q00902_ReclaimOurEra.Q00902_ReclaimOurEra;
-import com.l2jserver.datapack.quests.Q00903_TheCallOfAntharas.Q00903_TheCallOfAntharas;
-import com.l2jserver.datapack.quests.Q00904_DragonTrophyAntharas.Q00904_DragonTrophyAntharas;
-import com.l2jserver.datapack.quests.Q00905_RefinedDragonBlood.Q00905_RefinedDragonBlood;
-import com.l2jserver.datapack.quests.Q00906_TheCallOfValakas.Q00906_TheCallOfValakas;
-import com.l2jserver.datapack.quests.Q00907_DragonTrophyValakas.Q00907_DragonTrophyValakas;
-import com.l2jserver.datapack.quests.Q00998_FallenAngelSelect.Q00998_FallenAngelSelect;
-import com.l2jserver.datapack.quests.Q10267_JourneyToGracia.Q10267_JourneyToGracia;
-import com.l2jserver.datapack.quests.Q10268_ToTheSeedOfInfinity.Q10268_ToTheSeedOfInfinity;
-import com.l2jserver.datapack.quests.Q10269_ToTheSeedOfDestruction.Q10269_ToTheSeedOfDestruction;
-import com.l2jserver.datapack.quests.Q10270_BirthOfTheSeed.Q10270_BirthOfTheSeed;
-import com.l2jserver.datapack.quests.Q10271_TheEnvelopingDarkness.Q10271_TheEnvelopingDarkness;
-import com.l2jserver.datapack.quests.Q10272_LightFragment.Q10272_LightFragment;
-import com.l2jserver.datapack.quests.Q10273_GoodDayToFly.Q10273_GoodDayToFly;
-import com.l2jserver.datapack.quests.Q10274_CollectingInTheAir.Q10274_CollectingInTheAir;
-import com.l2jserver.datapack.quests.Q10275_ContainingTheAttributePower.Q10275_ContainingTheAttributePower;
-import com.l2jserver.datapack.quests.Q10276_MutatedKaneusGludio.Q10276_MutatedKaneusGludio;
-import com.l2jserver.datapack.quests.Q10277_MutatedKaneusDion.Q10277_MutatedKaneusDion;
-import com.l2jserver.datapack.quests.Q10278_MutatedKaneusHeine.Q10278_MutatedKaneusHeine;
-import com.l2jserver.datapack.quests.Q10279_MutatedKaneusOren.Q10279_MutatedKaneusOren;
-import com.l2jserver.datapack.quests.Q10280_MutatedKaneusSchuttgart.Q10280_MutatedKaneusSchuttgart;
-import com.l2jserver.datapack.quests.Q10281_MutatedKaneusRune.Q10281_MutatedKaneusRune;
-import com.l2jserver.datapack.quests.Q10282_ToTheSeedOfAnnihilation.Q10282_ToTheSeedOfAnnihilation;
-import com.l2jserver.datapack.quests.Q10283_RequestOfIceMerchant.Q10283_RequestOfIceMerchant;
-import com.l2jserver.datapack.quests.Q10284_AcquisitionOfDivineSword.Q10284_AcquisitionOfDivineSword;
-import com.l2jserver.datapack.quests.Q10285_MeetingSirra.Q10285_MeetingSirra;
-import com.l2jserver.datapack.quests.Q10286_ReunionWithSirra.Q10286_ReunionWithSirra;
-import com.l2jserver.datapack.quests.Q10287_StoryOfThoseLeft.Q10287_StoryOfThoseLeft;
-import com.l2jserver.datapack.quests.Q10288_SecretMission.Q10288_SecretMission;
-import com.l2jserver.datapack.quests.Q10289_FadeToBlack.Q10289_FadeToBlack;
-import com.l2jserver.datapack.quests.Q10290_LandDragonConqueror.Q10290_LandDragonConqueror;
-import com.l2jserver.datapack.quests.Q10291_FireDragonDestroyer.Q10291_FireDragonDestroyer;
-import com.l2jserver.datapack.quests.Q10292_SevenSignsGirlOfDoubt.Q10292_SevenSignsGirlOfDoubt;
-import com.l2jserver.datapack.quests.Q10293_SevenSignsForbiddenBookOfTheElmoreAdenKingdom.Q10293_SevenSignsForbiddenBookOfTheElmoreAdenKingdom;
-import com.l2jserver.datapack.quests.Q10294_SevenSignsToTheMonasteryOfSilence.Q10294_SevenSignsToTheMonasteryOfSilence;
-import com.l2jserver.datapack.quests.Q10295_SevenSignsSolinasTomb.Q10295_SevenSignsSolinasTomb;
-import com.l2jserver.datapack.quests.Q10296_SevenSignsOneWhoSeeksThePowerOfTheSeal.Q10296_SevenSignsOneWhoSeeksThePowerOfTheSeal;
-import com.l2jserver.datapack.quests.Q10501_ZakenEmbroideredSoulCloak.Q10501_ZakenEmbroideredSoulCloak;
-import com.l2jserver.datapack.quests.Q10502_FreyaEmbroideredSoulCloak.Q10502_FreyaEmbroideredSoulCloak;
-import com.l2jserver.datapack.quests.Q10503_FrintezzaEmbroideredSoulCloak.Q10503_FrintezzaEmbroideredSoulCloak;
-import com.l2jserver.datapack.quests.Q10504_JewelOfAntharas.Q10504_JewelOfAntharas;
-import com.l2jserver.datapack.quests.Q10505_JewelOfValakas.Q10505_JewelOfValakas;
 
 /**
  * Quest loader.
@@ -558,7 +425,6 @@ public class QuestLoader {
 		Q00023_LidiasHeart.class,
 		Q00024_InhabitantsOfTheForestOfTheDead.class,
 		Q00025_HidingBehindTheTruth.class,
-		Q00026_TiredOfWaiting.class,
 		Q00027_ChestCaughtWithABaitOfWind.class,
 		Q00028_ChestCaughtWithABaitOfIcyAir.class,
 		Q00029_ChestCaughtWithABaitOfEarth.class,
@@ -572,7 +438,6 @@ public class QuestLoader {
 		Q00037_MakeFormalWear.class,
 		Q00038_DragonFangs.class,
 		Q00039_RedEyedInvaders.class,
-		Q00040_ASpecialOrder.class,
 		Q00042_HelpTheUncle.class,
 		Q00043_HelpTheSister.class,
 		Q00044_HelpTheSon.class,
@@ -652,25 +517,6 @@ public class QuestLoader {
 		Q00124_MeetingTheElroki.class,
 		Q00125_TheNameOfEvil1.class,
 		Q00126_TheNameOfEvil2.class,
-		Q00128_PailakaSongOfIceAndFire.class,
-		Q00129_PailakaDevilsLegacy.class,
-		Q00130_PathToHellbound.class,
-		Q00131_BirdInACage.class,
-		Q00132_MatrasCuriosity.class,
-		Q00133_ThatsBloodyHot.class,
-		Q00134_TempleMissionary.class,
-		Q00135_TempleExecutor.class,
-		Q00136_MoreThanMeetsTheEye.class,
-		Q00137_TempleChampionPart1.class,
-		Q00138_TempleChampionPart2.class,
-		Q00139_ShadowFoxPart1.class,
-		Q00140_ShadowFoxPart2.class,
-		Q00141_ShadowFoxPart3.class,
-		Q00142_FallenAngelRequestOfDawn.class,
-		Q00143_FallenAngelRequestOfDusk.class,
-		Q00146_TheZeroHour.class,
-		Q00147_PathtoBecominganEliteMercenary.class,
-		Q00148_PathtoBecominganExaltedMercenary.class,
 		Q00151_CureForFever.class,
 		Q00152_ShardsOfGolem.class,
 		Q00153_DeliverGoods.class,
@@ -696,26 +542,9 @@ public class QuestLoader {
 		Q00173_ToTheIsleOfSouls.class,
 		Q00174_SupplyCheck.class,
 		Q00175_TheWayOfTheWarrior.class,
-		Q00176_StepsForHonor.class,
 		Q00178_IconicTrinity.class,
 		Q00179_IntoTheLargeCavern.class,
 		Q00182_NewRecruits.class,
-		Q00183_RelicExploration.class,
-		Q00184_ArtOfPersuasion.class,
-		Q00185_NikolasCooperation.class,
-		Q00186_ContractExecution.class,
-		Q00187_NikolasHeart.class,
-		Q00188_SealRemoval.class,
-		Q00189_ContractCompletion.class,
-		Q00190_LostDream.class,
-		Q00191_VainConclusion.class,
-		Q00192_SevenSignsSeriesOfDoubt.class,
-		Q00193_SevenSignsDyingMessage.class,
-		Q00194_SevenSignsMammonsContract.class,
-		Q00195_SevenSignsSecretRitualOfThePriests.class,
-		Q00196_SevenSignsSealOfTheEmperor.class,
-		Q00197_SevenSignsTheSacredBookOfSeal.class,
-		Q00198_SevenSignsEmbryo.class,
 		Q00201_HumanFighterTutorial.class,
 		Q00202_HumanMageTutorial.class,
 		Q00203_ElfTutorial.class,
@@ -751,19 +580,10 @@ public class QuestLoader {
 		Q00234_FatesWhisper.class,
 		Q00235_MimirsElixir.class,
 		Q00236_SeedsOfChaos.class,
-		Q00237_WindsOfChange.class,
-		Q00238_SuccessFailureOfBusiness.class,
-		Q00239_WontYouJoinUs.class,
-		Q00240_ImTheOnlyOneYouCanTrust.class,
 		Q00241_PossessorOfAPreciousSoul1.class,
 		Q00242_PossessorOfAPreciousSoul2.class,
 		Q00246_PossessorOfAPreciousSoul3.class,
 		Q00247_PossessorOfAPreciousSoul4.class,
-		Q00249_PoisonedPlainsOfTheLizardmen.class,
-		Q00250_WatchWhatYouEat.class,
-		Q00251_NoSecrets.class,
-		Q00252_ItSmellsDelicious.class,
-		Q00254_LegendaryTales.class,
 		Q00255_Tutorial.class,
 		Q00257_TheGuardIsBusy.class,
 		Q00258_BringWolfPelts.class,
@@ -776,9 +596,6 @@ public class QuestLoader {
 		Q00265_BondsOfSlavery.class,
 		Q00266_PleasOfPixies.class,
 		Q00267_WrathOfVerdure.class,
-		Q00268_TracesOfEvil.class,
-		Q00269_InventionAmbition.class,
-		Q00270_TheOneWhoEndsSilence.class,
 		Q00271_ProofOfValor.class,
 		Q00272_WrathOfAncestors.class,
 		Q00273_InvadersOfTheHolyLand.class,
@@ -786,17 +603,11 @@ public class QuestLoader {
 		Q00275_DarkWingedSpies.class,
 		Q00276_TotemOfTheHestui.class,
 		Q00277_GatekeepersOffering.class,
-		Q00278_HomeSecurity.class,
-		Q00279_TargetOfOpportunity.class,
 		Q00280_TheFoodChain.class,
 		Q00281_HeadForTheHills.class,
 		Q00283_TheFewTheProudTheBrave.class,
 		Q00284_MuertosFeather.class,
 		Q00286_FabulousFeathers.class,
-		Q00287_FiguringItOut.class,
-		Q00288_HandleWithCare.class,
-		Q00289_NoMoreSoupForYou.class,
-		Q00290_ThreatRemoval.class,
 		Q00291_RevengeOfTheRedbonnet.class,
 		Q00292_BrigandsSweep.class,
 		Q00293_TheHiddenVeins.class,
@@ -809,12 +620,6 @@ public class QuestLoader {
 		Q00300_HuntingLetoLizardman.class,
 		Q00303_CollectArrowheads.class,
 		Q00306_CrystalOfFireAndIce.class,
-		Q00307_ControlDeviceOfTheGiants.class,
-		Q00308_ReedFieldMaintenance.class,
-		Q00309_ForAGoodCause.class,
-		Q00310_OnlyWhatRemains.class,
-		Q00311_ExpulsionOfEvilSpirits.class,
-		Q00312_TakeAdvantageOfTheCrisis.class,
 		Q00313_CollectSpores.class,
 		Q00316_DestroyPlagueCarriers.class,
 		Q00317_CatchTheWind.class,
@@ -896,33 +701,15 @@ public class QuestLoader {
 		Q00420_LittleWing.class,
 		Q00421_LittleWingsBigAdventure.class,
 		Q00422_RepentYourSins.class,
-		Q00423_TakeYourBestShot.class,
 		Q00426_QuestForFishingShot.class,
 		Q00431_WeddingMarch.class,
 		Q00432_BirthdayPartySong.class,
-		Q00450_GraveRobberRescue.class,
-		Q00451_LuciensAltar.class,
-		Q00452_FindingtheLostSoldiers.class,
-		Q00453_NotStrongEnoughAlone.class,
-		Q00454_CompletelyLost.class,
-		Q00455_WingsOfSand.class,
-		Q00456_DontKnowDontCare.class,
-		Q00457_LostAndFound.class,
-		Q00458_PerfectForm.class,
-		Q00461_RumbleInTheBase.class,
-		Q00463_IMustBeaGenius.class,
-		Q00464_Oath.class,
 		Q00501_ProofOfClanAlliance.class,
 		Q00503_PursuitOfClanAmbition.class,
 		Q00504_CompetitionForTheBanditStronghold.class,
 		Q00508_AClansReputation.class,
 		Q00509_AClansFame.class,
 		Q00510_AClansPrestige.class,
-		Q00511_AwlUnderFoot.class,
-		Q00512_BladeUnderFoot.class,
-		Q00551_OlympiadStarter.class,
-		Q00552_OlympiadVeteran.class,
-		Q00553_OlympiadUndefeated.class,
 		Q00601_WatchingEyes.class,
 		Q00602_ShadowOfLight.class,
 		Q00603_DaimonTheWhiteEyedPart1.class,
@@ -981,60 +768,7 @@ public class QuestLoader {
 		Q00661_MakingTheHarvestGroundsSafe.class,
 		Q00662_AGameOfCards.class,
 		Q00663_SeductiveWhispers.class,
-		Q00688_DefeatTheElrokianRaiders.class,
-		Q00690_JudesRequest.class,
-		Q00691_MatrasSuspiciousRequest.class,
-		Q00692_HowtoOpposeEvil.class,
-		Q00695_DefendTheHallOfSuffering.class,
-		Q00699_GuardianOfTheSkies.class,
-		Q00700_CursedLife.class,
-		Q00701_ProofOfExistence.class,
-		Q00702_ATrapForRevenge.class,
-		Q00708_PathToBecomingALordGludio.class,
-		Q00728_TerritoryWar.class,
-		Q00901_HowLavasaurusesAreMade.class,
-		Q00902_ReclaimOurEra.class,
-		Q00903_TheCallOfAntharas.class,
-		Q00904_DragonTrophyAntharas.class,
-		Q00905_RefinedDragonBlood.class,
-		Q00906_TheCallOfValakas.class,
-		Q00907_DragonTrophyValakas.class,
-		Q00998_FallenAngelSelect.class,
-		Q10267_JourneyToGracia.class,
-		Q10268_ToTheSeedOfInfinity.class,
-		Q10269_ToTheSeedOfDestruction.class,
-		Q10270_BirthOfTheSeed.class,
-		Q10271_TheEnvelopingDarkness.class,
-		Q10272_LightFragment.class,
-		Q10273_GoodDayToFly.class,
-		Q10274_CollectingInTheAir.class,
-		Q10275_ContainingTheAttributePower.class,
-		Q10276_MutatedKaneusGludio.class,
-		Q10277_MutatedKaneusDion.class,
-		Q10278_MutatedKaneusHeine.class,
-		Q10279_MutatedKaneusOren.class,
-		Q10280_MutatedKaneusSchuttgart.class,
-		Q10281_MutatedKaneusRune.class,
-		Q10282_ToTheSeedOfAnnihilation.class,
-		Q10283_RequestOfIceMerchant.class,
-		Q10284_AcquisitionOfDivineSword.class,
-		Q10285_MeetingSirra.class,
-		Q10286_ReunionWithSirra.class,
-		Q10287_StoryOfThoseLeft.class,
-		Q10288_SecretMission.class,
-		Q10289_FadeToBlack.class,
-		Q10290_LandDragonConqueror.class,
-		Q10291_FireDragonDestroyer.class,
-		Q10292_SevenSignsGirlOfDoubt.class,
-		Q10293_SevenSignsForbiddenBookOfTheElmoreAdenKingdom.class,
-		Q10294_SevenSignsToTheMonasteryOfSilence.class,
-		Q10295_SevenSignsSolinasTomb.class,
-		Q10296_SevenSignsOneWhoSeeksThePowerOfTheSeal.class,
-		Q10501_ZakenEmbroideredSoulCloak.class,
-		Q10502_FreyaEmbroideredSoulCloak.class,
-		Q10503_FrintezzaEmbroideredSoulCloak.class,
-		Q10504_JewelOfAntharas.class,
-		Q10505_JewelOfValakas.class
+		Q00688_DefeatTheElrokianRaiders.class
 	};
 	
 	public static void main(String[] args) {

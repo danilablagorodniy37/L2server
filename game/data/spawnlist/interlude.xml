@@ -1,0 +1,2666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list enabled="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/spawnlist.xsd">
+	<!-- Interlude monsters imported from aCis by tools/interlude/build_spawns.py -->
+	<!-- [18_19] -->
+	<spawn name="oren10_1819_20m1" zone="il_oren10_1819_20">
+		<npc id="20367" count="2" respawnDelay="60" respawnRandom="15" />	<!-- Merkenis's Escort -->
+	</spawn>
+	<spawn name="oren10_1819_21m1" zone="il_oren10_1819_21">
+		<npc id="20367" count="1" respawnDelay="60" respawnRandom="15" />	<!-- Merkenis's Escort -->
+	</spawn>
+	<spawn name="oren10_1819_23m1" zone="il_oren10_1819_23">
+		<npc id="20367" count="3" respawnDelay="60" respawnRandom="15" />	<!-- Merkenis's Escort -->
+	</spawn>
+	<spawn name="oren10_1819_26m1" zone="il_oren10_1819_26">
+		<npc id="20367" count="4" respawnDelay="60" respawnRandom="15" />	<!-- Merkenis's Escort -->
+	</spawn>
+	<!-- [19_16] -->
+	<spawn name="rune14_1916_17m2" zone="il_rune14_1916_17">
+		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_18m2" zone="il_rune14_1916_18">
+		<npc id="22148" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_19m2" zone="il_rune14_1916_19">
+		<npc id="22148" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_20m2" zone="il_rune14_1916_20">
+		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_21m2" zone="il_rune14_1916_21">
+		<npc id="22148" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_22m2" zone="il_rune14_1916_22">
+		<npc id="22148" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_23m2" zone="il_rune14_1916_23">
+		<npc id="22150" count="2" respawnDelay="60" respawnRandom="20" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_24m2" zone="il_rune14_1916_24">
+		<npc id="22148" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_25m2" zone="il_rune14_1916_25">
+		<npc id="22148" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_26m2" zone="il_rune14_1916_26">
+		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_27m2" zone="il_rune14_1916_27">
+		<npc id="22148" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_28m2" zone="il_rune14_1916_28">
+		<npc id="22148" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_29m2" zone="il_rune14_1916_29">
+		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_30m2" zone="il_rune14_1916_30">
+		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_31m2" zone="il_rune14_1916_31">
+		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_32m2" zone="il_rune14_1916_32">
+		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_33m2" zone="il_rune14_1916_33">
+		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_34m2" zone="il_rune14_1916_34">
+		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_35m2" zone="il_rune14_1916_35">
+		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_36m2" zone="il_rune14_1916_36">
+		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_37m2" zone="il_rune14_1916_37">
+		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_38m2" zone="il_rune14_1916_38">
+		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_39m2" zone="il_rune14_1916_39">
+		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<spawn name="rune14_1916_41m2" zone="il_rune14_1916_41">
+		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
+	</spawn>
+	<!-- [20_17] -->
+	<spawn name="rune18_2017_13m1" zone="il_rune18_2017_13">
+		<npc id="22227" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Wild Strider -->
+		<npc id="22226" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Pachycephalosaurus -->
+	</spawn>
+	<spawn name="rune18_2017_15m1" zone="il_rune18_2017_15">
+		<npc id="22227" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Wild Strider -->
+		<npc id="22226" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Pachycephalosaurus -->
+	</spawn>
+	<spawn name="rune18_2017_17m1" zone="il_rune18_2017_17">
+		<npc id="22227" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Wild Strider -->
+		<npc id="22226" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Pachycephalosaurus -->
+	</spawn>
+	<spawn name="rune18_2017_19m1" zone="il_rune18_2017_19">
+		<npc id="22227" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Wild Strider -->
+		<npc id="22226" count="2" respawnDelay="150" respawnRandom="20" />	<!-- Pachycephalosaurus -->
+	</spawn>
+	<spawn name="rune18_2017_21m1" zone="il_rune18_2017_21">
+		<npc id="22227" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Wild Strider -->
+		<npc id="22226" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Pachycephalosaurus -->
+	</spawn>
+	<spawn name="rune18_2017_23m1" zone="il_rune18_2017_23">
+		<npc id="22227" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Wild Strider -->
+		<npc id="22226" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Pachycephalosaurus -->
+	</spawn>
+	<spawn name="rune18_2017_25m1" zone="il_rune18_2017_25">
+		<npc id="22227" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Wild Strider -->
+		<npc id="22226" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Pachycephalosaurus -->
+	</spawn>
+	<spawn name="rune18_2017_27m1" zone="il_rune18_2017_27">
+		<npc id="22227" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Wild Strider -->
+		<npc id="22226" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Pachycephalosaurus -->
+	</spawn>
+	<spawn name="rune18_2017_29m1" zone="il_rune18_2017_29">
+		<npc id="22226" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Pachycephalosaurus -->
+	</spawn>
+	<spawn name="rune18_2017_31m1" zone="il_rune18_2017_31">
+		<npc id="22227" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Wild Strider -->
+		<npc id="22226" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Pachycephalosaurus -->
+	</spawn>
+	<spawn name="rune18_2017_33m1" zone="il_rune18_2017_33">
+		<npc id="22227" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Wild Strider -->
+		<npc id="22226" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Pachycephalosaurus -->
+	</spawn>
+	<spawn name="rune18_2017_35m1" zone="il_rune18_2017_35">
+		<npc id="22227" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Wild Strider -->
+		<npc id="22226" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Pachycephalosaurus -->
+	</spawn>
+	<spawn name="rune18_2017_37m1" zone="il_rune18_2017_37">
+		<npc id="22227" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Wild Strider -->
+		<npc id="22226" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Pachycephalosaurus -->
+	</spawn>
+	<!-- [20_20] -->
+	<spawn name="oren05_2020_32m1" zone="il_oren05_2020_32">
+		<npc id="20492" count="5" respawnDelay="71" respawnRandom="25" />	<!-- Kirunak's Guards -->
+	</spawn>
+	<spawn name="oren05_2020_33m1" zone="il_oren05_2020_33">
+		<npc id="20492" count="2" respawnDelay="71" respawnRandom="25" />	<!-- Kirunak's Guards -->
+	</spawn>
+	<!-- [20_23] -->
+	<spawn name="dion14_2023_01" zone="il_dion14_2023_01">
+		<npc id="20928" count="11" respawnDelay="32" />	<!-- Hatu Weird Bee -->
+		<npc id="20929" count="11" respawnDelay="32" />	<!-- Hatu Dire Wolf -->
+	</spawn>
+	<spawn name="dion14_2023_02" zone="il_dion14_2023_02">
+		<npc id="20928" count="11" respawnDelay="32" />	<!-- Hatu Weird Bee -->
+		<npc id="20929" count="12" respawnDelay="32" />	<!-- Hatu Dire Wolf -->
+	</spawn>
+	<spawn name="dion14_2023_04" zone="il_dion14_2023_04">
+		<npc id="20928" count="8" respawnDelay="32" />	<!-- Hatu Weird Bee -->
+		<npc id="20929" count="8" respawnDelay="32" />	<!-- Hatu Dire Wolf -->
+		<npc id="20934" count="8" respawnDelay="32" />	<!-- Wasp Worker -->
+	</spawn>
+	<spawn name="dion14_2023_05" zone="il_dion14_2023_05">
+		<npc id="20928" count="5" respawnDelay="32" />	<!-- Hatu Weird Bee -->
+		<npc id="20929" count="5" respawnDelay="32" />	<!-- Hatu Dire Wolf -->
+		<npc id="20934" count="5" respawnDelay="32" />	<!-- Wasp Worker -->
+	</spawn>
+	<spawn name="dion14_2023_06" zone="il_dion14_2023_06">
+		<npc id="20928" count="5" respawnDelay="32" />	<!-- Hatu Weird Bee -->
+		<npc id="20929" count="5" respawnDelay="32" />	<!-- Hatu Dire Wolf -->
+		<npc id="20934" count="5" respawnDelay="32" />	<!-- Wasp Worker -->
+	</spawn>
+	<spawn name="dion14_2023_07" zone="il_dion14_2023_07">
+		<npc id="20928" count="3" respawnDelay="32" />	<!-- Hatu Weird Bee -->
+		<npc id="20929" count="4" respawnDelay="32" />	<!-- Hatu Dire Wolf -->
+		<npc id="20934" count="4" respawnDelay="32" />	<!-- Wasp Worker -->
+	</spawn>
+	<spawn name="dion14_2023_08" zone="il_dion14_2023_08">
+		<npc id="20934" count="5" respawnDelay="32" />	<!-- Wasp Worker -->
+		<npc id="20931" count="6" respawnDelay="32" />	<!-- Hatu Onyx Beast -->
+		<npc id="20932" count="5" respawnDelay="32" />	<!-- Hatu Crimson Bear -->
+	</spawn>
+	<spawn name="dion14_2023_09" zone="il_dion14_2023_09">
+		<npc id="20934" count="6" respawnDelay="32" />	<!-- Wasp Worker -->
+		<npc id="20931" count="6" respawnDelay="32" />	<!-- Hatu Onyx Beast -->
+		<npc id="20932" count="7" respawnDelay="32" />	<!-- Hatu Crimson Bear -->
+	</spawn>
+	<spawn name="dion14_2023_10" zone="il_dion14_2023_10">
+		<npc id="20934" count="3" respawnDelay="32" />	<!-- Wasp Worker -->
+		<npc id="20931" count="3" respawnDelay="32" />	<!-- Hatu Onyx Beast -->
+		<npc id="20932" count="3" respawnDelay="32" />	<!-- Hatu Crimson Bear -->
+	</spawn>
+	<spawn name="dion14_2023_11" zone="il_dion14_2023_11">
+		<npc id="20934" count="4" respawnDelay="32" />	<!-- Wasp Worker -->
+		<npc id="20931" count="4" respawnDelay="32" />	<!-- Hatu Onyx Beast -->
+		<npc id="20932" count="4" respawnDelay="32" />	<!-- Hatu Crimson Bear -->
+	</spawn>
+	<spawn name="dion14_2023_12" zone="il_dion14_2023_12">
+		<npc id="20934" count="6" respawnDelay="32" />	<!-- Wasp Worker -->
+		<npc id="20931" count="7" respawnDelay="32" />	<!-- Hatu Onyx Beast -->
+		<npc id="20932" count="7" respawnDelay="32" />	<!-- Hatu Crimson Bear -->
+	</spawn>
+	<spawn name="dion14_2023_13s" zone="il_dion14_2023_13s">
+		<npc id="20928" count="3" respawnDelay="32" />	<!-- Hatu Weird Bee -->
+		<npc id="20929" count="3" respawnDelay="32" />	<!-- Hatu Dire Wolf -->
+	</spawn>
+	<spawn name="dion14_2023_14s" zone="il_dion14_2023_14s">
+		<npc id="20928" count="3" respawnDelay="32" />	<!-- Hatu Weird Bee -->
+		<npc id="20929" count="3" respawnDelay="32" />	<!-- Hatu Dire Wolf -->
+		<npc id="20934" count="3" respawnDelay="32" />	<!-- Wasp Worker -->
+	</spawn>
+	<!-- [21_14] -->
+	<spawn name="schuttgart16_2114_01sm1" zone="il_schuttgart16_2114_01s">
+		<npc id="22038" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Hero -->
+		<npc id="22039" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Commander -->
+		<npc id="22040" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Sniper -->
+	</spawn>
+	<spawn name="schuttgart16_2114_03m1" zone="il_schuttgart16_2114_03">
+		<npc id="22038" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Hero -->
+		<npc id="22039" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Commander -->
+		<npc id="22040" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Sniper -->
+	</spawn>
+	<spawn name="burial_2114_09m1" zone="il_schuttgart17_2114_09">
+		<npc id="22008" count="4" respawnDelay="25" />	<!-- Grave Robber Fighter -->
+	</spawn>
+	<spawn name="burial_2114_13m1" zone="il_schuttgart17_2114_13">
+		<npc id="22008" count="3" respawnDelay="25" />	<!-- Grave Robber Fighter -->
+	</spawn>
+	<spawn name="burial_2114_14m1" zone="il_schuttgart17_2114_14">
+		<npc id="22008" count="2" respawnDelay="25" />	<!-- Grave Robber Fighter -->
+	</spawn>
+	<spawn name="burial_2114_15m1" zone="il_schuttgart17_2114_15">
+		<npc id="22008" count="3" respawnDelay="25" />	<!-- Grave Robber Fighter -->
+		<npc id="22010" count="4" respawnDelay="25" />	<!-- Ghost of a General -->
+	</spawn>
+	<spawn name="burial_2114_21m1" zone="il_schuttgart17_2114_21">
+		<npc id="22009" count="3" respawnDelay="25" />	<!-- Ghost of a Loyal Vassal -->
+		<npc id="22010" count="3" respawnDelay="25" />	<!-- Ghost of a General -->
+	</spawn>
+	<spawn name="burial_2114_22m1" zone="il_schuttgart17_2114_22">
+		<npc id="22009" count="3" respawnDelay="25" />	<!-- Ghost of a Loyal Vassal -->
+		<npc id="22010" count="3" respawnDelay="25" />	<!-- Ghost of a General -->
+	</spawn>
+	<spawn name="burial_2114_23m1" zone="il_schuttgart17_2114_23">
+		<npc id="22009" count="3" respawnDelay="25" />	<!-- Ghost of a Loyal Vassal -->
+		<npc id="22010" count="3" respawnDelay="25" />	<!-- Ghost of a General -->
+	</spawn>
+	<spawn name="burial_2114_24m1" zone="il_schuttgart17_2114_24">
+		<npc id="22009" count="3" respawnDelay="25" />	<!-- Ghost of a Loyal Vassal -->
+		<npc id="22010" count="3" respawnDelay="25" />	<!-- Ghost of a General -->
+	</spawn>
+	<spawn name="burial_2114_25m1" zone="il_schuttgart17_2114_25">
+		<npc id="22009" count="3" respawnDelay="25" />	<!-- Ghost of a Loyal Vassal -->
+		<npc id="22010" count="3" respawnDelay="25" />	<!-- Ghost of a General -->
+	</spawn>
+	<spawn name="burial_2114_26m1" zone="il_schuttgart17_2114_26">
+		<npc id="22009" count="3" respawnDelay="25" />	<!-- Ghost of a Loyal Vassal -->
+		<npc id="22010" count="3" respawnDelay="25" />	<!-- Ghost of a General -->
+	</spawn>
+	<spawn name="burial_2114_32m1" zone="il_schuttgart17_2114_32">
+		<npc id="22011" x="50158" y="-119238" z="-3733" heading="48928" count="1" respawnDelay="3600" respawnRandom="600" />	<!-- Ghost of a Batur Chief -->
+	</spawn>
+	<spawn name="burial_2114_34m1" zone="il_schuttgart17_2114_34">
+		<npc id="22012" x="48196" y="-122142" z="-3444" heading="55320" count="1" respawnDelay="3600" respawnRandom="600" />	<!-- Ghost of a Batur Chief -->
+	</spawn>
+	<spawn name="burial_2114_36m1" zone="il_schuttgart17_2114_36">
+		<npc id="22013" x="52036" y="-122009" z="-3445" heading="32432" count="1" respawnDelay="3600" respawnRandom="600" />	<!-- Ghost of a Morek Chief -->
+	</spawn>
+	<spawn name="burial_2114_38m1" zone="il_schuttgart17_2114_38">
+		<npc id="22014" x="53770" y="-124818" z="-3205" heading="25760" count="1" respawnDelay="3600" respawnRandom="600" />	<!-- Ghost of a Morek Chief -->
+	</spawn>
+	<spawn name="burial_2114_40m1" zone="il_schuttgart17_2114_40">
+		<npc id="22015" x="50091" y="-124801" z="-3248" heading="15456" count="1" respawnDelay="3600" respawnRandom="600" />	<!-- Ghost of a Turka Chief -->
+	</spawn>
+	<spawn name="burial_2114_42m1" zone="il_schuttgart17_2114_42">
+		<npc id="22016" x="46519" y="-124749" z="-3237" heading="3424" count="1" respawnDelay="3600" respawnRandom="600" />	<!-- Ghost of a Turka Chief -->
+	</spawn>
+	<!-- [21_15] -->
+	<spawn name="rune06_2115_01m1" zone="il_rune06_2115_01">
+		<npc id="21443" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+		<npc id="21444" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_02m1" zone="il_rune06_2115_02">
+		<npc id="21443" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+		<npc id="21444" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_05m1" zone="il_rune06_2115_05">
+		<npc id="21444" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_06m1" zone="il_rune06_2115_06">
+		<npc id="21444" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_07m1" zone="il_rune06_2115_07">
+		<npc id="21443" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_08m1" zone="il_rune06_2115_08">
+		<npc id="21443" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_09m1" zone="il_rune06_2115_09">
+		<npc id="21443" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_10m1" zone="il_rune06_2115_10">
+		<npc id="21445" count="1" respawnDelay="28" />	<!-- Alpine Bandersnatch -->
+	</spawn>
+	<spawn name="rune06_2115_11m1" zone="il_rune06_2115_11">
+		<npc id="21444" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_12m1" zone="il_rune06_2115_12">
+		<npc id="21443" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_13m1" zone="il_rune06_2115_13">
+		<npc id="21444" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_14m1" zone="il_rune06_2115_14">
+		<npc id="21445" count="1" respawnDelay="28" />	<!-- Alpine Bandersnatch -->
+	</spawn>
+	<spawn name="rune06_2115_15m1" zone="il_rune06_2115_15">
+		<npc id="21446" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_16m1" zone="il_rune06_2115_16">
+		<npc id="21446" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+		<npc id="21445" count="1" respawnDelay="28" />	<!-- Alpine Bandersnatch -->
+	</spawn>
+	<spawn name="rune06_2115_17m1" zone="il_rune06_2115_17">
+		<npc id="21448" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+		<npc id="21445" count="1" respawnDelay="28" />	<!-- Alpine Bandersnatch -->
+	</spawn>
+	<spawn name="rune06_2115_18m1" zone="il_rune06_2115_18">
+		<npc id="21447" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+		<npc id="21445" count="1" respawnDelay="28" />	<!-- Alpine Bandersnatch -->
+	</spawn>
+	<spawn name="rune06_2115_19m1" zone="il_rune06_2115_19">
+		<npc id="21447" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+		<npc id="21445" count="1" respawnDelay="28" />	<!-- Alpine Bandersnatch -->
+	</spawn>
+	<spawn name="rune06_2115_20m1" zone="il_rune06_2115_20">
+		<npc id="21447" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_22m1" zone="il_rune06_2115_22">
+		<npc id="21449" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+		<npc id="21450" count="1" respawnDelay="28" />	<!-- Alpine Grendel -->
+	</spawn>
+	<spawn name="rune06_2115_23m1" zone="il_rune06_2115_23">
+		<npc id="21449" count="2" respawnDelay="28" />	<!-- Raider of Pastureland -->
+		<npc id="21450" count="1" respawnDelay="28" />	<!-- Alpine Grendel -->
+	</spawn>
+	<spawn name="rune06_2115_24m1" zone="il_rune06_2115_24">
+		<npc id="21449" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+		<npc id="21450" count="1" respawnDelay="28" />	<!-- Alpine Grendel -->
+	</spawn>
+	<spawn name="rune06_2115_25m1" zone="il_rune06_2115_25">
+		<npc id="21449" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+		<npc id="21450" count="1" respawnDelay="28" />	<!-- Alpine Grendel -->
+	</spawn>
+	<spawn name="rune06_2115_26m1" zone="il_rune06_2115_26">
+		<npc id="21450" count="1" respawnDelay="28" />	<!-- Alpine Grendel -->
+	</spawn>
+	<spawn name="rune06_2115_27m1" zone="il_rune06_2115_27">
+		<npc id="21449" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+		<npc id="21450" count="1" respawnDelay="28" />	<!-- Alpine Grendel -->
+	</spawn>
+	<spawn name="rune06_2115_28m1" zone="il_rune06_2115_28">
+		<npc id="21449" count="2" respawnDelay="28" />	<!-- Raider of Pastureland -->
+		<npc id="21450" count="1" respawnDelay="28" />	<!-- Alpine Grendel -->
+	</spawn>
+	<spawn name="rune06_2115_29m1" zone="il_rune06_2115_29">
+		<npc id="21449" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+		<npc id="21450" count="2" respawnDelay="28" />	<!-- Alpine Grendel -->
+	</spawn>
+	<spawn name="rune06_2115_30m1" zone="il_rune06_2115_30">
+		<npc id="21449" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+		<npc id="21450" count="1" respawnDelay="28" />	<!-- Alpine Grendel -->
+	</spawn>
+	<spawn name="rune06_2115_31m1" zone="il_rune06_2115_31">
+		<npc id="21445" count="1" respawnDelay="28" />	<!-- Alpine Bandersnatch -->
+		<npc id="21447" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_32m1" zone="il_rune06_2115_32">
+		<npc id="21445" count="1" respawnDelay="28" />	<!-- Alpine Bandersnatch -->
+		<npc id="21447" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_33m1" zone="il_rune06_2115_33">
+		<npc id="21446" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+		<npc id="21448" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_34m1" zone="il_rune06_2115_34">
+		<npc id="21449" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_35m1" zone="il_rune06_2115_35">
+		<npc id="21449" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_36m1" zone="il_rune06_2115_36">
+		<npc id="21449" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+		<npc id="21447" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_37m1" zone="il_rune06_2115_37">
+		<npc id="21450" count="1" respawnDelay="28" />	<!-- Alpine Grendel -->
+	</spawn>
+	<spawn name="rune06_2115_38m1" zone="il_rune06_2115_38">
+		<npc id="21449" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_39m1" zone="il_rune06_2115_39">
+		<npc id="21449" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<spawn name="rune06_2115_40m1" zone="il_rune06_2115_40">
+		<npc id="21449" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+		<npc id="21450" count="1" respawnDelay="28" />	<!-- Alpine Grendel -->
+	</spawn>
+	<spawn name="rune06_2115_41m1" zone="il_rune06_2115_41">
+		<npc id="21449" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+		<npc id="21450" count="1" respawnDelay="28" />	<!-- Alpine Grendel -->
+	</spawn>
+	<spawn name="rune06_2115_42m1" zone="il_rune06_2115_42">
+		<npc id="21449" count="1" respawnDelay="28" />	<!-- Raider of Pastureland -->
+	</spawn>
+	<!-- [21_16] -->
+	<spawn name="rune14_2116_01m1" zone="il_rune14_2116_01">
+		<npc id="18343" x="35348" y="-49857" z="-760" heading="16384" count="1" respawnDelay="15" />	<!-- Doorman Zombie -->
+		<npc id="18343" x="35349" y="-49662" z="-760" heading="49152" count="1" respawnDelay="15" />	<!-- Doorman Zombie -->
+		<npc id="18343" x="35713" y="-50050" z="-760" heading="32768" count="1" respawnDelay="15" />	<!-- Doorman Zombie -->
+		<npc id="18343" x="35517" y="-50049" z="-760" heading="0" count="1" respawnDelay="15" />	<!-- Doorman Zombie -->
+	</spawn>
+	<spawn name="rune14_2116_01m2" zone="il_rune14_2116_02">
+		<npc id="18343" x="35033" y="-49669" z="-760" heading="49152" count="1" respawnDelay="15" />	<!-- Doorman Zombie -->
+		<npc id="18343" x="35035" y="-49850" z="-760" heading="16384" count="1" respawnDelay="15" />	<!-- Doorman Zombie -->
+	</spawn>
+	<!-- [21_22] -->
+	<spawn name="dion13_2122_01" zone="il_dion13_2122_01">
+		<npc id="20939" count="10" respawnDelay="45" />	<!-- Tanor Silenos Warrior -->
+	</spawn>
+	<spawn name="dion13_2122_02" zone="il_dion13_2122_02">
+		<npc id="20939" count="8" respawnDelay="45" />	<!-- Tanor Silenos Warrior -->
+	</spawn>
+	<spawn name="dion13_2122_03" zone="il_dion13_2122_03">
+		<npc id="20939" count="2" respawnDelay="45" />	<!-- Tanor Silenos Warrior -->
+	</spawn>
+	<spawn name="dion13_2122_04" zone="il_dion13_2122_04">
+		<npc id="20939" count="4" respawnDelay="45" />	<!-- Tanor Silenos Warrior -->
+	</spawn>
+	<spawn name="dion13_2122_05" zone="il_dion13_2122_05">
+		<npc id="20939" count="2" respawnDelay="45" />	<!-- Tanor Silenos Warrior -->
+	</spawn>
+	<spawn name="dion13_2122_06" zone="il_dion13_2122_06">
+		<npc id="20939" count="2" respawnDelay="45" />	<!-- Tanor Silenos Warrior -->
+	</spawn>
+	<spawn name="dion13_2122_08s" zone="il_dion13_2122_08s">
+		<npc id="20939" count="3" respawnDelay="45" />	<!-- Tanor Silenos Warrior -->
+	</spawn>
+	<!-- [21_23] -->
+	<spawn name="dion13_2123_01" zone="il_dion13_2123_01">
+		<npc id="20939" count="7" respawnDelay="45" />	<!-- Tanor Silenos Warrior -->
+	</spawn>
+	<spawn name="dion13_2123_02" zone="il_dion13_2123_02">
+		<npc id="20939" count="5" respawnDelay="45" />	<!-- Tanor Silenos Warrior -->
+	</spawn>
+	<spawn name="dion14_2123_01" zone="il_dion14_2123_01">
+		<npc id="20934" count="5" respawnDelay="32" />	<!-- Wasp Worker -->
+		<npc id="20931" count="6" respawnDelay="32" />	<!-- Hatu Onyx Beast -->
+		<npc id="20932" count="6" respawnDelay="32" />	<!-- Hatu Crimson Bear -->
+	</spawn>
+	<spawn name="dion14_2123_02" zone="il_dion14_2123_02">
+		<npc id="20931" count="2" respawnDelay="32" />	<!-- Hatu Onyx Beast -->
+		<npc id="20932" count="2" respawnDelay="32" />	<!-- Hatu Crimson Bear -->
+	</spawn>
+	<!-- [21_25] -->
+	<spawn name="gludio29_2125_18m1" zone="il_gludio29_2125_18">
+		<npc id="20118" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Dre Vanul Scout -->
+	</spawn>
+	<!-- [22_14] -->
+	<spawn name="schuttgart14_2214_01m1" zone="il_schuttgart14_2214_01">
+		<npc id="22050" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Prodigy IV -->
+		<npc id="22051" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Spider -->
+		<npc id="22052" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Menacing Jackhammer Golem -->
+		<npc id="22053" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Cannon Golem I -->
+	</spawn>
+	<spawn name="schuttgart14_2214_02m1" zone="il_schuttgart14_2214_02">
+		<npc id="22050" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Prodigy IV -->
+		<npc id="22052" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Menacing Jackhammer Golem -->
+		<npc id="22053" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Cannon Golem I -->
+		<npc id="22054" count="1" respawnDelay="360" />	<!-- Horrifying Cannon Golem IV -->
+	</spawn>
+	<spawn name="schuttgart14_2214_03m1" zone="il_schuttgart14_2214_03">
+		<npc id="22050" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Prodigy IV -->
+		<npc id="22052" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Menacing Jackhammer Golem -->
+		<npc id="22053" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Cannon Golem I -->
+		<npc id="22054" count="1" respawnDelay="360" />	<!-- Horrifying Cannon Golem IV -->
+	</spawn>
+	<spawn name="schuttgart14_2214_04m1" zone="il_schuttgart14_2214_04">
+		<npc id="22050" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Prodigy IV -->
+		<npc id="22051" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Spider -->
+		<npc id="22052" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Menacing Jackhammer Golem -->
+		<npc id="22053" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Cannon Golem I -->
+	</spawn>
+	<spawn name="schuttgart14_2214_05m1" zone="il_schuttgart14_2214_05">
+		<npc id="22050" count="2" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Prodigy IV -->
+		<npc id="22051" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Spider -->
+		<npc id="22052" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Menacing Jackhammer Golem -->
+	</spawn>
+	<spawn name="schuttgart14_2214_06m1" zone="il_schuttgart14_2214_06">
+		<npc id="22050" count="2" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Prodigy IV -->
+		<npc id="22051" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Spider -->
+		<npc id="22052" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Menacing Jackhammer Golem -->
+	</spawn>
+	<spawn name="schuttgart14_2214_07m1" zone="il_schuttgart14_2214_07">
+		<npc id="22051" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Spider -->
+		<npc id="22052" count="2" respawnDelay="30" respawnRandom="5" />	<!-- Menacing Jackhammer Golem -->
+	</spawn>
+	<spawn name="schuttgart14_2214_08m1" zone="il_schuttgart14_2214_08">
+		<npc id="22052" count="2" respawnDelay="30" respawnRandom="5" />	<!-- Menacing Jackhammer Golem -->
+		<npc id="22053" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Cannon Golem I -->
+	</spawn>
+	<spawn name="schuttgart14_2214_09m1" zone="il_schuttgart14_2214_09">
+		<npc id="22053" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Cannon Golem I -->
+		<npc id="22055" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Cruel Vice Golem -->
+		<npc id="22056" count="2" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Champion I -->
+	</spawn>
+	<spawn name="schuttgart14_2214_10m1" zone="il_schuttgart14_2214_10">
+		<npc id="22053" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Cannon Golem I -->
+		<npc id="22054" count="1" respawnDelay="360" />	<!-- Horrifying Cannon Golem IV -->
+		<npc id="22055" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Cruel Vice Golem -->
+		<npc id="22056" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Champion I -->
+	</spawn>
+	<spawn name="schuttgart14_2214_11m1" zone="il_schuttgart14_2214_11">
+		<npc id="22053" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Cannon Golem I -->
+		<npc id="22054" count="1" respawnDelay="360" />	<!-- Horrifying Cannon Golem IV -->
+		<npc id="22055" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Cruel Vice Golem -->
+		<npc id="22056" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Champion I -->
+	</spawn>
+	<spawn name="schuttgart14_2214_12m1" zone="il_schuttgart14_2214_12">
+		<npc id="22051" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Spider -->
+		<npc id="22052" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Menacing Jackhammer Golem -->
+		<npc id="22053" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Cannon Golem I -->
+	</spawn>
+	<spawn name="schuttgart14_2214_13m1" zone="il_schuttgart14_2214_13">
+		<npc id="22053" count="2" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Cannon Golem I -->
+		<npc id="22056" count="2" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Champion I -->
+	</spawn>
+	<spawn name="schuttgart14_2214_14m1" zone="il_schuttgart14_2214_14">
+		<npc id="22053" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Cannon Golem I -->
+		<npc id="22055" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Cruel Vice Golem -->
+		<npc id="22056" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Champion I -->
+	</spawn>
+	<spawn name="schuttgart14_2214_15m1" zone="il_schuttgart14_2214_15">
+		<npc id="22055" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Cruel Vice Golem -->
+		<npc id="22057" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Ant -->
+		<npc id="22053" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Cannon Golem I -->
+		<npc id="22056" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Champion I -->
+	</spawn>
+	<spawn name="schuttgart14_2214_16m1" zone="il_schuttgart14_2214_16">
+		<npc id="22055" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Cruel Vice Golem -->
+		<npc id="22057" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Ant -->
+		<npc id="22053" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Cannon Golem I -->
+		<npc id="22056" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Champion I -->
+	</spawn>
+	<spawn name="schuttgart14_2214_17m1" zone="il_schuttgart14_2214_17">
+		<npc id="22055" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Cruel Vice Golem -->
+		<npc id="22057" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Ant -->
+		<npc id="22054" count="1" respawnDelay="360" />	<!-- Horrifying Cannon Golem IV -->
+		<npc id="22056" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Champion I -->
+	</spawn>
+	<spawn name="schuttgart14_2214_18m1" zone="il_schuttgart14_2214_18">
+		<npc id="22055" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Cruel Vice Golem -->
+		<npc id="22057" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Ant -->
+		<npc id="22054" count="1" respawnDelay="360" />	<!-- Horrifying Cannon Golem IV -->
+		<npc id="22056" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Champion I -->
+	</spawn>
+	<spawn name="schuttgart14_2214_19m1" zone="il_schuttgart14_2214_19">
+		<npc id="22053" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Cannon Golem I -->
+		<npc id="22054" count="1" respawnDelay="360" />	<!-- Horrifying Cannon Golem IV -->
+		<npc id="22056" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Champion I -->
+	</spawn>
+	<spawn name="schuttgart14_2214_20m1" zone="il_schuttgart14_2214_20">
+		<npc id="22055" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Cruel Vice Golem -->
+		<npc id="22057" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Ant -->
+		<npc id="22056" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Champion I -->
+	</spawn>
+	<spawn name="schuttgart14_2214_21m1" zone="il_schuttgart14_2214_21">
+		<npc id="22057" count="3" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Ant -->
+	</spawn>
+	<spawn name="schuttgart14_2214_22m1" zone="il_schuttgart14_2214_22">
+		<npc id="22057" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Ant -->
+		<npc id="22056" count="3" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Champion I -->
+	</spawn>
+	<spawn name="schuttgart14_2214_23m1" zone="il_schuttgart14_2214_23">
+		<npc id="22055" count="2" respawnDelay="30" respawnRandom="5" />	<!-- Cruel Vice Golem -->
+		<npc id="22056" count="2" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Champion I -->
+		<npc id="22057" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Ant -->
+		<npc id="22058" count="2" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Excavator Golem III -->
+	</spawn>
+	<spawn name="schuttgart14_2214_24m1" zone="il_schuttgart14_2214_24">
+		<npc id="22055" count="2" respawnDelay="30" respawnRandom="5" />	<!-- Cruel Vice Golem -->
+		<npc id="22056" count="2" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Champion I -->
+		<npc id="22057" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Ant -->
+	</spawn>
+	<spawn name="schuttgart14_2214_25m1" zone="il_schuttgart14_2214_25">
+		<npc id="22055" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Cruel Vice Golem -->
+		<npc id="22056" count="2" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Champion I -->
+		<npc id="22058" count="2" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Excavator Golem III -->
+	</spawn>
+	<spawn name="schuttgart14_2214_26m1" zone="il_schuttgart14_2214_26">
+		<npc id="22055" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Cruel Vice Golem -->
+		<npc id="22056" count="2" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Champion I -->
+		<npc id="22057" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Ant -->
+		<npc id="22058" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Excavator Golem III -->
+	</spawn>
+	<spawn name="schuttgart14_2214_27m1" zone="il_schuttgart14_2214_27">
+		<npc id="22055" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Cruel Vice Golem -->
+		<npc id="22056" count="2" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Champion I -->
+		<npc id="22057" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Ant -->
+		<npc id="22058" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Excavator Golem III -->
+	</spawn>
+	<spawn name="schuttgart14_2214_28m1" zone="il_schuttgart14_2214_28">
+		<npc id="22055" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Cruel Vice Golem -->
+		<npc id="22056" count="2" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Champion I -->
+		<npc id="22057" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Ant -->
+		<npc id="22058" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Excavator Golem III -->
+	</spawn>
+	<spawn name="schuttgart14_2214_29m1" zone="il_schuttgart14_2214_29">
+		<npc id="22055" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Cruel Vice Golem -->
+		<npc id="22056" count="2" respawnDelay="30" respawnRandom="5" />	<!-- Probe Golem Champion I -->
+		<npc id="22057" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Ant -->
+		<npc id="22058" count="1" respawnDelay="30" respawnRandom="5" />	<!-- Horrifying Excavator Golem III -->
+	</spawn>
+	<spawn name="schuttgart14_2214_95m1" zone="il_schuttgart14_2214_95">
+		<npc id="22051" count="4" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Spider -->
+	</spawn>
+	<spawn name="schuttgart14_2214_96m1" zone="il_schuttgart14_2214_96">
+		<npc id="22051" count="4" respawnDelay="30" respawnRandom="5" />	<!-- Spelunking Spider -->
+	</spawn>
+	<spawn name="schuttgart16_2214_01sm1" zone="il_schuttgart16_2214_01s">
+		<npc id="22029" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc -->
+		<npc id="22031" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Archer -->
+		<npc id="22032" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Warrior -->
+	</spawn>
+	<spawn name="schuttgart16_2214_02sm1" zone="il_schuttgart16_2214_02s">
+		<npc id="22029" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc -->
+		<npc id="22031" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Archer -->
+		<npc id="22032" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Warrior -->
+	</spawn>
+	<spawn name="schuttgart16_2214_03sm1" zone="il_schuttgart16_2214_03s">
+		<npc id="22029" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc -->
+		<npc id="22031" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Archer -->
+		<npc id="22032" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Warrior -->
+	</spawn>
+	<spawn name="schuttgart16_2214_04sm1" zone="il_schuttgart16_2214_04s">
+		<npc id="22029" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc -->
+		<npc id="22031" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Archer -->
+		<npc id="22032" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Warrior -->
+	</spawn>
+	<spawn name="schuttgart16_2214_05sm1" zone="il_schuttgart16_2214_05s">
+		<npc id="22038" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Hero -->
+		<npc id="22031" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Archer -->
+		<npc id="22032" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Warrior -->
+	</spawn>
+	<spawn name="schuttgart16_2214_06sm1" zone="il_schuttgart16_2214_06s">
+		<npc id="22029" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc -->
+		<npc id="22031" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Archer -->
+		<npc id="22032" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Warrior -->
+	</spawn>
+	<spawn name="schuttgart16_2214_07sm1" zone="il_schuttgart16_2214_07s">
+		<npc id="22029" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc -->
+		<npc id="22031" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Archer -->
+		<npc id="22032" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Warrior -->
+	</spawn>
+	<spawn name="schuttgart16_2214_08sm1" zone="il_schuttgart16_2214_08s">
+		<npc id="22031" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Archer -->
+		<npc id="22032" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Warrior -->
+	</spawn>
+	<spawn name="schuttgart16_2214_10m1" zone="il_schuttgart16_2214_10">
+		<npc id="22045" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Dark Corpse -->
+		<npc id="22047" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22048" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
+	</spawn>
+	<spawn name="schuttgart16_2214_10sm1" zone="il_schuttgart16_2214_10s">
+		<npc id="22039" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Commander -->
+		<npc id="22040" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Sniper -->
+		<npc id="22038" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Hero -->
+	</spawn>
+	<spawn name="schuttgart16_2214_11m1" zone="il_schuttgart16_2214_11">
+		<npc id="22045" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Dark Corpse -->
+		<npc id="22047" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22048" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
+	</spawn>
+	<spawn name="schuttgart16_2214_14m1" zone="il_schuttgart16_2214_14">
+		<npc id="22045" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Dark Corpse -->
+		<npc id="22047" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22048" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
+	</spawn>
+	<spawn name="schuttgart16_2214_18m1" zone="il_schuttgart16_2214_18">
+		<npc id="22045" count="4" respawnDelay="48" respawnRandom="15" />	<!-- Dark Corpse -->
+		<npc id="22047" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22048" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
+	</spawn>
+	<spawn name="schuttgart16_2214_22m1" zone="il_schuttgart16_2214_22">
+		<npc id="22046" count="4" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
+		<npc id="22047" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22048" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
+	</spawn>
+	<spawn name="schuttgart16_2214_26m1" zone="il_schuttgart16_2214_26">
+		<npc id="22046" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
+		<npc id="22047" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22048" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
+	</spawn>
+	<spawn name="schuttgart16_2214_27m1" zone="il_schuttgart16_2214_27">
+		<npc id="22046" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
+		<npc id="22047" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22048" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
+	</spawn>
+	<spawn name="schuttgart16_2214_28m1" zone="il_schuttgart16_2214_28">
+		<npc id="22046" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
+		<npc id="22047" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22049" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Succubus -->
+	</spawn>
+	<spawn name="schuttgart16_2214_29m1" zone="il_schuttgart16_2214_29">
+		<npc id="22046" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
+		<npc id="22047" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22049" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Succubus -->
+	</spawn>
+	<spawn name="schuttgart16_2214_30m1" zone="il_schuttgart16_2214_30">
+		<npc id="22046" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
+		<npc id="22047" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22049" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Succubus -->
+	</spawn>
+	<spawn name="schuttgart16_2214_33m1" zone="il_schuttgart16_2214_33">
+		<npc id="22046" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
+		<npc id="22047" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22049" count="4" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Succubus -->
+	</spawn>
+	<spawn name="schuttgart16_2214_34m1" zone="il_schuttgart16_2214_34">
+		<npc id="22046" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
+		<npc id="22047" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22049" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Succubus -->
+	</spawn>
+	<spawn name="schuttgart16_2214_35m1" zone="il_schuttgart16_2214_35">
+		<npc id="22046" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
+		<npc id="22047" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22049" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Succubus -->
+	</spawn>
+	<spawn name="schuttgart21_2214_31m1" zone="il_schuttgart21_2214_31">
+		<npc id="22060" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Cannon Golem -->
+		<npc id="22059" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Bloodthirsty Ginzu Golem VII -->
+		<npc id="22064" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Bloodthirsty Ginzu Golem II -->
+	</spawn>
+	<spawn name="schuttgart21_2214_32m1" zone="il_schuttgart21_2214_32">
+		<npc id="22060" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Cannon Golem -->
+		<npc id="22062" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Jackhammer Golem -->
+		<npc id="22059" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Bloodthirsty Ginzu Golem VII -->
+		<npc id="22064" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Bloodthirsty Ginzu Golem II -->
+	</spawn>
+	<spawn name="schuttgart21_2214_33m1" zone="il_schuttgart21_2214_33">
+		<npc id="22060" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Cannon Golem -->
+		<npc id="22059" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Bloodthirsty Ginzu Golem VII -->
+		<npc id="22064" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Bloodthirsty Ginzu Golem II -->
+	</spawn>
+	<spawn name="schuttgart21_2214_34m1" zone="il_schuttgart21_2214_34">
+		<npc id="22060" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Cannon Golem -->
+		<npc id="22062" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Jackhammer Golem -->
+		<npc id="22059" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Bloodthirsty Ginzu Golem VII -->
+		<npc id="22064" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Bloodthirsty Ginzu Golem II -->
+	</spawn>
+	<spawn name="schuttgart21_2214_35m1" zone="il_schuttgart21_2214_35">
+		<npc id="22062" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Jackhammer Golem -->
+	</spawn>
+	<spawn name="schuttgart21_2214_36m1" zone="il_schuttgart21_2214_36">
+		<npc id="22060" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Cannon Golem -->
+		<npc id="22062" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Jackhammer Golem -->
+		<npc id="22059" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Bloodthirsty Ginzu Golem VII -->
+		<npc id="22064" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Bloodthirsty Ginzu Golem II -->
+	</spawn>
+	<spawn name="schuttgart21_2214_46m1" zone="il_schuttgart21_2214_46">
+		<npc id="22066" count="1" respawnDelay="3600" />	<!-- Horrifying Cannon Golem VI -->
+		<npc id="22074" count="1" respawnDelay="80" respawnRandom="12" />	<!-- Epic Cannon Golem -->
+		<npc id="22062" count="2" respawnDelay="80" respawnRandom="12" />	<!-- Horrifying Jackhammer Golem -->
+	</spawn>
+	<spawn name="schuttgart21_2214_48m1" zone="il_schuttgart21_2214_48">
+		<npc id="22067" count="1" respawnDelay="3600" />	<!-- Horrifying Cannon Golem VI -->
+		<npc id="22074" count="1" respawnDelay="80" respawnRandom="12" />	<!-- Epic Cannon Golem -->
+		<npc id="22062" count="2" respawnDelay="80" respawnRandom="12" />	<!-- Horrifying Jackhammer Golem -->
+	</spawn>
+	<spawn name="schuttgart21_2214_50m1" zone="il_schuttgart21_2214_50">
+		<npc id="22068" count="1" respawnDelay="3600" />	<!-- Horrifying Cannon Golem VI -->
+		<npc id="22074" count="1" respawnDelay="80" respawnRandom="12" />	<!-- Epic Cannon Golem -->
+		<npc id="22062" count="2" respawnDelay="80" respawnRandom="12" />	<!-- Horrifying Jackhammer Golem -->
+	</spawn>
+	<spawn name="schuttgart21_2214_52m1" zone="il_schuttgart21_2214_52">
+		<npc id="22069" count="1" respawnDelay="3600" />	<!-- Horrifying Cannon Golem VI -->
+		<npc id="22074" count="1" respawnDelay="80" respawnRandom="12" />	<!-- Epic Cannon Golem -->
+		<npc id="22062" count="2" respawnDelay="80" respawnRandom="12" />	<!-- Horrifying Jackhammer Golem -->
+	</spawn>
+	<spawn name="schuttgart21_2214_54m1" zone="il_schuttgart21_2214_54">
+		<npc id="22062" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Jackhammer Golem -->
+		<npc id="22063" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Ginzu Golem Prodigy X -->
+		<npc id="22076" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Deadly Ginzu Golem V -->
+		<npc id="22065" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Ginzu Golem V -->
+		<npc id="22077" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Ginzu Golem VIII -->
+		<npc id="22078" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Deadly Ginzu Golem VIII -->
+	</spawn>
+	<spawn name="schuttgart21_2214_55m1" zone="il_schuttgart21_2214_55">
+		<npc id="22062" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Jackhammer Golem -->
+		<npc id="22063" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Ginzu Golem Prodigy X -->
+		<npc id="22076" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Deadly Ginzu Golem V -->
+		<npc id="22065" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Ginzu Golem V -->
+		<npc id="22077" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Ginzu Golem VIII -->
+		<npc id="22078" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Deadly Ginzu Golem VIII -->
+	</spawn>
+	<spawn name="schuttgart21_2214_56m1" zone="il_schuttgart21_2214_56">
+		<npc id="22062" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Jackhammer Golem -->
+		<npc id="22063" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Ginzu Golem Prodigy X -->
+		<npc id="22076" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Deadly Ginzu Golem V -->
+		<npc id="22065" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Ginzu Golem V -->
+		<npc id="22077" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Ginzu Golem VIII -->
+		<npc id="22078" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Deadly Ginzu Golem VIII -->
+	</spawn>
+	<spawn name="schuttgart21_2214_57m1" zone="il_schuttgart21_2214_57">
+		<npc id="22062" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Jackhammer Golem -->
+		<npc id="22063" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Ginzu Golem Prodigy X -->
+		<npc id="22076" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Deadly Ginzu Golem V -->
+		<npc id="22065" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Ginzu Golem V -->
+		<npc id="22077" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Ginzu Golem VIII -->
+		<npc id="22078" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Deadly Ginzu Golem VIII -->
+	</spawn>
+	<spawn name="schuttgart21_2214_61m1" zone="il_schuttgart21_2214_61">
+		<npc id="22070" count="1" respawnDelay="3600" />	<!-- Horrifying Cannon Golem VI -->
+		<npc id="22074" count="1" respawnDelay="80" respawnRandom="12" />	<!-- Epic Cannon Golem -->
+		<npc id="22062" count="2" respawnDelay="80" respawnRandom="12" />	<!-- Horrifying Jackhammer Golem -->
+	</spawn>
+	<spawn name="schuttgart21_2214_63m1" zone="il_schuttgart21_2214_63">
+		<npc id="22071" count="1" respawnDelay="3600" />	<!-- Horrifying Cannon Golem VI -->
+		<npc id="22074" count="1" respawnDelay="80" respawnRandom="12" />	<!-- Epic Cannon Golem -->
+		<npc id="22062" count="2" respawnDelay="80" respawnRandom="12" />	<!-- Horrifying Jackhammer Golem -->
+	</spawn>
+	<spawn name="schuttgart21_2214_65m1" zone="il_schuttgart21_2214_65">
+		<npc id="22072" count="1" respawnDelay="3600" />	<!-- Horrifying Cannon Golem VI -->
+		<npc id="22074" count="1" respawnDelay="80" respawnRandom="12" />	<!-- Epic Cannon Golem -->
+		<npc id="22062" count="2" respawnDelay="80" respawnRandom="12" />	<!-- Horrifying Jackhammer Golem -->
+	</spawn>
+	<spawn name="schuttgart21_2214_67m1" zone="il_schuttgart21_2214_67">
+		<npc id="22073" count="1" respawnDelay="3600" />	<!-- Horrifying Cannon Golem VI -->
+		<npc id="22074" count="1" respawnDelay="80" respawnRandom="12" />	<!-- Epic Cannon Golem -->
+		<npc id="22062" count="2" respawnDelay="80" respawnRandom="12" />	<!-- Horrifying Jackhammer Golem -->
+	</spawn>
+	<spawn name="schuttgart21_2214_69m1" zone="il_schuttgart21_2214_69">
+		<npc id="22062" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Jackhammer Golem -->
+		<npc id="22063" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Ginzu Golem Prodigy X -->
+		<npc id="22076" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Deadly Ginzu Golem V -->
+		<npc id="22065" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Ginzu Golem V -->
+		<npc id="22077" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Ginzu Golem VIII -->
+		<npc id="22078" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Deadly Ginzu Golem VIII -->
+	</spawn>
+	<spawn name="schuttgart21_2214_70m1" zone="il_schuttgart21_2214_70">
+		<npc id="22062" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Jackhammer Golem -->
+		<npc id="22063" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Ginzu Golem Prodigy X -->
+		<npc id="22076" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Deadly Ginzu Golem V -->
+		<npc id="22065" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Ginzu Golem V -->
+		<npc id="22077" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Ginzu Golem VIII -->
+		<npc id="22078" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Deadly Ginzu Golem VIII -->
+	</spawn>
+	<spawn name="schuttgart21_2214_71m1" zone="il_schuttgart21_2214_71">
+		<npc id="22062" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Jackhammer Golem -->
+		<npc id="22063" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Ginzu Golem Prodigy X -->
+		<npc id="22076" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Deadly Ginzu Golem V -->
+		<npc id="22065" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Ginzu Golem V -->
+		<npc id="22077" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Ginzu Golem VIII -->
+		<npc id="22078" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Deadly Ginzu Golem VIII -->
+	</spawn>
+	<spawn name="schuttgart21_2214_72m1" zone="il_schuttgart21_2214_72">
+		<npc id="22062" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Jackhammer Golem -->
+		<npc id="22063" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Ginzu Golem Prodigy X -->
+		<npc id="22076" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Deadly Ginzu Golem V -->
+		<npc id="22065" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Ginzu Golem V -->
+		<npc id="22077" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Ginzu Golem VIII -->
+		<npc id="22078" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Deadly Ginzu Golem VIII -->
+	</spawn>
+	<!-- [22_16] -->
+	<spawn name="rune15_2216_01m1" zone="il_rune15_2216_01">
+		<npc id="22105" count="4" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato -->
+		<npc id="22106" count="4" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Worker -->
+		<npc id="22109" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Male Spiked Stakato -->
+		<npc id="22111" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Sorcerer -->
+		<npc id="22113" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Cannibalistic Stakato Leader -->
+	</spawn>
+	<spawn name="rune15_2216_03m1" zone="il_rune15_2216_03">
+		<npc id="22105" count="3" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato -->
+		<npc id="22106" count="4" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Worker -->
+		<npc id="22107" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Guard -->
+		<npc id="22109" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Male Spiked Stakato -->
+	</spawn>
+	<spawn name="rune15_2216_05m1" zone="il_rune15_2216_05">
+		<npc id="22105" count="3" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato -->
+		<npc id="22106" count="4" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Worker -->
+		<npc id="22111" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Sorcerer -->
+		<npc id="22113" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Cannibalistic Stakato Leader -->
+		<npc id="22109" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Male Spiked Stakato -->
+	</spawn>
+	<spawn name="rune15_2216_07m1" zone="il_rune15_2216_07">
+		<npc id="22105" count="4" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato -->
+		<npc id="22106" count="3" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Worker -->
+		<npc id="22111" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Sorcerer -->
+		<npc id="22113" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Cannibalistic Stakato Leader -->
+		<npc id="22109" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Male Spiked Stakato -->
+	</spawn>
+	<spawn name="rune15_2216_09m1" zone="il_rune15_2216_09">
+		<npc id="22105" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato -->
+		<npc id="22106" count="4" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Worker -->
+		<npc id="22107" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Guard -->
+		<npc id="22109" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Male Spiked Stakato -->
+	</spawn>
+	<spawn name="rune15_2216_11m1" zone="il_rune15_2216_11">
+		<npc id="22105" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato -->
+		<npc id="22106" count="4" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Worker -->
+		<npc id="22107" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Guard -->
+		<npc id="22109" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Male Spiked Stakato -->
+	</spawn>
+	<spawn name="rune15_2216_13m1" zone="il_rune15_2216_13">
+		<npc id="22105" count="3" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato -->
+		<npc id="22106" count="3" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Worker -->
+		<npc id="22111" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Sorcerer -->
+		<npc id="22109" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Male Spiked Stakato -->
+		<npc id="22111" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Sorcerer -->
+		<npc id="22113" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Cannibalistic Stakato Leader -->
+	</spawn>
+	<spawn name="rune15_2216_15m1" zone="il_rune15_2216_15">
+		<npc id="22115" count="3" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Soldier -->
+		<npc id="22116" count="4" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Drone -->
+		<npc id="22113" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Cannibalistic Stakato Leader -->
+		<npc id="22121" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Shaman -->
+		<npc id="22118" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Nurse -->
+	</spawn>
+	<spawn name="rune15_2216_19m1" zone="il_rune15_2216_19">
+		<npc id="22105" count="3" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato -->
+		<npc id="22106" count="3" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Worker -->
+		<npc id="22109" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Male Spiked Stakato -->
+		<npc id="22111" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Sorcerer -->
+		<npc id="22113" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Cannibalistic Stakato Leader -->
+	</spawn>
+	<spawn name="rune15_2216_21m1" zone="il_rune15_2216_21">
+		<npc id="22105" count="4" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato -->
+		<npc id="22106" count="3" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Worker -->
+		<npc id="22109" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Male Spiked Stakato -->
+		<npc id="22111" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Sorcerer -->
+		<npc id="22113" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Cannibalistic Stakato Leader -->
+	</spawn>
+	<spawn name="rune15_2216_23m1" zone="il_rune15_2216_23">
+		<npc id="22105" count="3" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato -->
+		<npc id="22106" count="3" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Worker -->
+		<npc id="22109" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Male Spiked Stakato -->
+		<npc id="22111" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Sorcerer -->
+		<npc id="22113" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Cannibalistic Stakato Leader -->
+	</spawn>
+	<spawn name="rune15_2216_25m1" zone="il_rune15_2216_25">
+		<npc id="22105" count="4" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato -->
+		<npc id="22106" count="3" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Worker -->
+		<npc id="22109" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Male Spiked Stakato -->
+		<npc id="22111" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Sorcerer -->
+		<npc id="22113" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Cannibalistic Stakato Leader -->
+	</spawn>
+	<spawn name="rune15_2216_27m1" zone="il_rune15_2216_27">
+		<npc id="22105" count="4" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato -->
+		<npc id="22106" count="3" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Worker -->
+		<npc id="22109" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Male Spiked Stakato -->
+		<npc id="22111" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Sorcerer -->
+		<npc id="22113" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Cannibalistic Stakato Leader -->
+	</spawn>
+	<spawn name="rune15_2216_29m1" zone="il_rune15_2216_29">
+		<npc id="22115" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Soldier -->
+		<npc id="22116" count="4" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Drone -->
+		<npc id="22113" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Cannibalistic Stakato Leader -->
+		<npc id="22121" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Shaman -->
+		<npc id="22118" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Nurse -->
+	</spawn>
+	<spawn name="rune15_2216_31m1" zone="il_rune15_2216_31">
+		<npc id="22115" count="3" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Soldier -->
+		<npc id="22116" count="4" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Drone -->
+		<npc id="22113" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Cannibalistic Stakato Leader -->
+		<npc id="22121" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Shaman -->
+		<npc id="22118" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Nurse -->
+	</spawn>
+	<spawn name="rune15_2216_33m1" zone="il_rune15_2216_33">
+		<npc id="22115" count="3" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Soldier -->
+		<npc id="22116" count="4" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Drone -->
+		<npc id="22113" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Cannibalistic Stakato Leader -->
+		<npc id="22121" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Shaman -->
+		<npc id="22118" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Nurse -->
+	</spawn>
+	<spawn name="rune15_2216_35m1" zone="il_rune15_2216_35">
+		<npc id="22115" count="3" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Soldier -->
+		<npc id="22116" count="4" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Drone -->
+		<npc id="22113" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Cannibalistic Stakato Leader -->
+		<npc id="22121" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Shaman -->
+		<npc id="22118" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Nurse -->
+	</spawn>
+	<spawn name="rune15_2216_37m1" zone="il_rune15_2216_37">
+		<npc id="22115" count="3" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Soldier -->
+		<npc id="22116" count="4" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Drone -->
+		<npc id="22113" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Cannibalistic Stakato Leader -->
+		<npc id="22121" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Shaman -->
+		<npc id="22118" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Nurse -->
+	</spawn>
+	<spawn name="rune15_2216_39m1" zone="il_rune15_2216_39">
+		<npc id="22115" count="3" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Soldier -->
+		<npc id="22116" count="4" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Drone -->
+		<npc id="22113" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Cannibalistic Stakato Leader -->
+		<npc id="22121" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Shaman -->
+		<npc id="22118" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Nurse -->
+	</spawn>
+	<!-- [22_19] -->
+	<spawn name="oren22_2219_15sm1" zone="il_oren22_2219_15s">
+		<npc id="20947" count="8" respawnDelay="33" respawnRandom="15" />	<!-- Connabi -->
+	</spawn>
+	<spawn name="oren22_2219_p14m1" zone="il_oren22_2219_p14">
+		<npc id="20947" count="13" respawnDelay="33" respawnRandom="15" />	<!-- Connabi -->
+	</spawn>
+	<spawn name="oren22_2219_p15m1" zone="il_oren22_2219_p15">
+		<npc id="20947" count="11" respawnDelay="33" respawnRandom="15" />	<!-- Connabi -->
+	</spawn>
+	<spawn name="oren22_2219_p16m1" zone="il_oren22_2219_p16">
+		<npc id="20947" count="8" respawnDelay="33" respawnRandom="15" />	<!-- Connabi -->
+		<npc id="20953" count="5" respawnDelay="33" respawnRandom="15" />	<!-- Pobby -->
+	</spawn>
+	<spawn name="oren22_2219_p17m1" zone="il_oren22_2219_p17">
+		<npc id="20947" count="5" respawnDelay="33" respawnRandom="15" />	<!-- Connabi -->
+		<npc id="20953" count="6" respawnDelay="33" respawnRandom="15" />	<!-- Pobby -->
+	</spawn>
+	<spawn name="oren22_2219_p17sm1" zone="il_oren22_2219_p17s">
+		<npc id="20947" count="3" respawnDelay="33" respawnRandom="15" />	<!-- Connabi -->
+		<npc id="20953" count="5" respawnDelay="33" respawnRandom="15" />	<!-- Pobby -->
+	</spawn>
+	<spawn name="oren22_2219_p18m1" zone="il_oren22_2219_p18">
+		<npc id="20950" count="2" respawnDelay="33" respawnRandom="15" />	<!-- Innersen -->
+		<npc id="20953" count="6" respawnDelay="33" respawnRandom="15" />	<!-- Pobby -->
+	</spawn>
+	<spawn name="oren22_2219_p18sm1" zone="il_oren22_2219_p18s">
+		<npc id="20950" count="2" respawnDelay="33" respawnRandom="15" />	<!-- Innersen -->
+		<npc id="20953" count="3" respawnDelay="33" respawnRandom="15" />	<!-- Pobby -->
+	</spawn>
+	<spawn name="oren22_2219_p19m1" zone="il_oren22_2219_p19">
+		<npc id="20950" count="5" respawnDelay="33" respawnRandom="15" />	<!-- Innersen -->
+		<npc id="20953" count="3" respawnDelay="33" respawnRandom="15" />	<!-- Pobby -->
+	</spawn>
+	<spawn name="oren22_2219_p20m1" zone="il_oren22_2219_p20">
+		<npc id="20950" count="2" respawnDelay="33" respawnRandom="15" />	<!-- Innersen -->
+		<npc id="20953" count="1" respawnDelay="33" respawnRandom="15" />	<!-- Pobby -->
+	</spawn>
+	<spawn name="oren22_2219_p21m1" zone="il_oren22_2219_p21">
+		<npc id="20950" count="3" respawnDelay="33" respawnRandom="15" />	<!-- Innersen -->
+		<npc id="20953" count="5" respawnDelay="33" respawnRandom="15" />	<!-- Pobby -->
+	</spawn>
+	<spawn name="oren22_2219_p22m1" zone="il_oren22_2219_p22">
+		<npc id="20950" count="2" respawnDelay="33" respawnRandom="15" />	<!-- Innersen -->
+		<npc id="20953" count="5" respawnDelay="33" respawnRandom="15" />	<!-- Pobby -->
+	</spawn>
+	<!-- [22_20] -->
+	<spawn name="oren21_2220_p23m1" zone="il_oren21_2220_p23">
+		<npc id="20763" count="1" respawnDelay="50" respawnRandom="10" />	<!-- Lord of the Plains -->
+	</spawn>
+	<spawn name="oren21_2220_p24m1" zone="il_oren21_2220_p24">
+		<npc id="20763" count="1" respawnDelay="50" respawnRandom="10" />	<!-- Lord of the Plains -->
+	</spawn>
+	<spawn name="oren21_2220_p26m1" zone="il_oren21_2220_p26">
+		<npc id="20763" count="1" respawnDelay="50" respawnRandom="10" />	<!-- Lord of the Plains -->
+	</spawn>
+	<spawn name="oren21_2220_p27m1" zone="il_oren21_2220_p27">
+		<npc id="20763" count="1" respawnDelay="50" respawnRandom="10" />	<!-- Lord of the Plains -->
+	</spawn>
+	<spawn name="oren21_2220_p29m1" zone="il_oren21_2220_p29">
+		<npc id="20763" count="1" respawnDelay="50" respawnRandom="10" />	<!-- Lord of the Plains -->
+	</spawn>
+	<spawn name="oren21_2220_p30m1" zone="il_oren21_2220_p30">
+		<npc id="20763" count="1" respawnDelay="50" respawnRandom="10" />	<!-- Lord of the Plains -->
+	</spawn>
+	<spawn name="oren21_2220_p31m1" zone="il_oren21_2220_p31">
+		<npc id="20763" count="1" respawnDelay="50" respawnRandom="10" />	<!-- Lord of the Plains -->
+	</spawn>
+	<spawn name="oren21_2220_p32m1" zone="il_oren21_2220_p32">
+		<npc id="20763" count="1" respawnDelay="50" respawnRandom="10" />	<!-- Lord of the Plains -->
+	</spawn>
+	<spawn name="oren21_2220_p33m1" zone="il_oren21_2220_p33">
+		<npc id="20763" count="1" respawnDelay="50" respawnRandom="10" />	<!-- Lord of the Plains -->
+	</spawn>
+	<spawn name="oren21_2220_p34m1" zone="il_oren21_2220_p34">
+		<npc id="20763" count="1" respawnDelay="50" respawnRandom="10" />	<!-- Lord of the Plains -->
+	</spawn>
+	<spawn name="oren21_2220_p36m1" zone="il_oren21_2220_p36">
+		<npc id="20763" count="1" respawnDelay="50" respawnRandom="10" />	<!-- Lord of the Plains -->
+	</spawn>
+	<spawn name="oren21_2220_p37m1" zone="il_oren21_2220_p37">
+		<npc id="20763" count="1" respawnDelay="50" respawnRandom="10" />	<!-- Lord of the Plains -->
+	</spawn>
+	<spawn name="oren21_2220_p38m1" zone="il_oren21_2220_p38">
+		<npc id="20763" count="1" respawnDelay="50" respawnRandom="10" />	<!-- Lord of the Plains -->
+	</spawn>
+	<spawn name="oren22_2220_p01m1" zone="il_oren22_2220_p01">
+		<npc id="20947" count="8" respawnDelay="33" respawnRandom="15" />	<!-- Connabi -->
+	</spawn>
+	<spawn name="oren22_2220_p02m1" zone="il_oren22_2220_p02">
+		<npc id="20947" count="6" respawnDelay="33" respawnRandom="15" />	<!-- Connabi -->
+	</spawn>
+	<spawn name="oren22_2220_p03m1" zone="il_oren22_2220_p03">
+		<npc id="20947" count="8" respawnDelay="33" respawnRandom="15" />	<!-- Connabi -->
+	</spawn>
+	<spawn name="oren22_2220_p04m1" zone="il_oren22_2220_p04">
+		<npc id="20947" count="13" respawnDelay="33" respawnRandom="15" />	<!-- Connabi -->
+	</spawn>
+	<!-- [22_21] -->
+	<spawn name="giran03_2221_p05m1" zone="il_giran03_2221_p05">
+		<npc id="20758" count="2" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<spawn name="giran03_2221_p08m1" zone="il_giran03_2221_p08">
+		<npc id="20758" count="2" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<spawn name="giran03_2221_p09m1" zone="il_giran03_2221_p09">
+		<npc id="20758" count="2" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<spawn name="giran03_2221_p19m1" zone="il_giran03_2221_p19">
+		<npc id="20758" count="2" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<spawn name="giran03_2221_p46m1" zone="il_giran03_2221_p46">
+		<npc id="20758" count="2" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<spawn name="giran03_2221_p47m1" zone="il_giran03_2221_p47">
+		<npc id="20758" count="2" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<!-- [22_23] -->
+	<spawn name="innadril03_2223_0301" zone="il_innadril03_2223_03">
+		<npc id="21034" count="5" respawnDelay="25" respawnRandom="10" />	<!-- Ogre -->
+		<npc id="21641" count="5" respawnDelay="25" respawnRandom="10" />	<!-- Ogre -->
+	</spawn>
+	<spawn name="innadril03_2223_0701" zone="il_innadril03_2223_07">
+		<npc id="20783" count="3" respawnDelay="25" respawnRandom="10" />	<!-- Dread Wolf -->
+		<npc id="21638" count="2" respawnDelay="25" respawnRandom="10" />	<!-- Dread Wolf -->
+	</spawn>
+	<spawn name="innadril03_2223_0801" zone="il_innadril03_2223_08">
+		<npc id="20783" count="6" respawnDelay="25" respawnRandom="10" />	<!-- Dread Wolf -->
+		<npc id="21638" count="3" respawnDelay="25" respawnRandom="10" />	<!-- Dread Wolf -->
+	</spawn>
+	<spawn name="innadril03_2223_0901" zone="il_innadril03_2223_09">
+		<npc id="20783" count="4" respawnDelay="25" respawnRandom="10" />	<!-- Dread Wolf -->
+		<npc id="21638" count="2" respawnDelay="25" respawnRandom="10" />	<!-- Dread Wolf -->
+	</spawn>
+	<spawn name="innadril03_2223_1001" zone="il_innadril03_2223_10">
+		<npc id="20783" count="3" respawnDelay="25" respawnRandom="10" />	<!-- Dread Wolf -->
+		<npc id="21638" count="4" respawnDelay="25" respawnRandom="10" />	<!-- Dread Wolf -->
+	</spawn>
+	<spawn name="innadril03_2223_1101" zone="il_innadril03_2223_11">
+		<npc id="20783" count="5" respawnDelay="25" respawnRandom="10" />	<!-- Dread Wolf -->
+		<npc id="21638" count="8" respawnDelay="25" respawnRandom="10" />	<!-- Dread Wolf -->
+	</spawn>
+	<spawn name="innadril03_2223_1201" zone="il_innadril03_2223_12">
+		<npc id="20783" count="3" respawnDelay="25" respawnRandom="10" />	<!-- Dread Wolf -->
+		<npc id="21638" count="3" respawnDelay="25" respawnRandom="10" />	<!-- Dread Wolf -->
+	</spawn>
+	<spawn name="innadril03_2223_1301" zone="il_innadril03_2223_13">
+		<npc id="20783" count="4" respawnDelay="25" respawnRandom="10" />	<!-- Dread Wolf -->
+		<npc id="21638" count="5" respawnDelay="25" respawnRandom="10" />	<!-- Dread Wolf -->
+	</spawn>
+	<spawn name="innadril03_2223_1401" zone="il_innadril03_2223_14">
+		<npc id="20783" count="2" respawnDelay="25" respawnRandom="10" />	<!-- Dread Wolf -->
+		<npc id="21638" count="3" respawnDelay="25" respawnRandom="10" />	<!-- Dread Wolf -->
+	</spawn>
+	<spawn name="innadril03_2223_1601" zone="il_innadril03_2223_16">
+		<npc id="21034" count="4" respawnDelay="25" respawnRandom="10" />	<!-- Ogre -->
+		<npc id="21641" count="3" respawnDelay="25" respawnRandom="10" />	<!-- Ogre -->
+	</spawn>
+	<spawn name="innadril03_2223_1701" zone="il_innadril03_2223_17">
+		<npc id="21034" count="6" respawnDelay="25" respawnRandom="10" />	<!-- Ogre -->
+		<npc id="21641" count="6" respawnDelay="25" respawnRandom="10" />	<!-- Ogre -->
+	</spawn>
+	<spawn name="innadril03_2223_1801" zone="il_innadril03_2223_18">
+		<npc id="21034" count="4" respawnDelay="25" respawnRandom="10" />	<!-- Ogre -->
+		<npc id="21641" count="4" respawnDelay="25" respawnRandom="10" />	<!-- Ogre -->
+	</spawn>
+	<spawn name="innadril03_2223_2301" zone="il_innadril03_2223_23">
+		<npc id="21034" count="5" respawnDelay="25" respawnRandom="10" />	<!-- Ogre -->
+		<npc id="21641" count="5" respawnDelay="25" respawnRandom="10" />	<!-- Ogre -->
+	</spawn>
+	<spawn name="innadril03_2223_2401" zone="il_innadril03_2223_24">
+		<npc id="21034" count="5" respawnDelay="25" respawnRandom="10" />	<!-- Ogre -->
+		<npc id="21641" count="5" respawnDelay="25" respawnRandom="10" />	<!-- Ogre -->
+	</spawn>
+	<spawn name="innadril03_2223_2501" zone="il_innadril03_2223_25">
+		<npc id="21034" count="1" respawnDelay="25" respawnRandom="10" />	<!-- Ogre -->
+		<npc id="21641" count="1" respawnDelay="25" respawnRandom="10" />	<!-- Ogre -->
+	</spawn>
+	<spawn name="innadril03_2223_32s01" zone="il_innadril03_2223_32s">
+		<npc id="21034" count="1" respawnDelay="25" respawnRandom="10" />	<!-- Ogre -->
+		<npc id="21641" count="2" respawnDelay="25" respawnRandom="10" />	<!-- Ogre -->
+	</spawn>
+	<!-- [22_24] -->
+	<spawn name="innadril04_01" zone="il_innadril04_2224_01">
+		<npc id="20788" count="10" respawnDelay="30" />	<!-- Rakul -->
+	</spawn>
+	<spawn name="innadril04_02" zone="il_innadril04_2224_02">
+		<npc id="20788" count="7" respawnDelay="30" />	<!-- Rakul -->
+	</spawn>
+	<spawn name="innadril04_05" zone="il_innadril04_2224_05">
+		<npc id="20989" count="5" respawnDelay="45" />	<!-- Lageos -->
+	</spawn>
+	<spawn name="innadril04_06" zone="il_innadril04_2224_06">
+		<npc id="20989" count="5" respawnDelay="45" />	<!-- Lageos -->
+	</spawn>
+	<spawn name="innadril04_07" zone="il_innadril04_2224_07">
+		<npc id="20989" count="5" respawnDelay="45" />	<!-- Lageos -->
+	</spawn>
+	<spawn name="innadril04_08" zone="il_innadril04_2224_08">
+		<npc id="20989" count="4" respawnDelay="45" />	<!-- Lageos -->
+	</spawn>
+	<spawn name="innadril04_09" zone="il_innadril04_2224_09">
+		<npc id="20989" count="5" respawnDelay="45" />	<!-- Lageos -->
+	</spawn>
+	<spawn name="innadril04_10" zone="il_innadril04_2224_10">
+		<npc id="20989" count="5" respawnDelay="45" />	<!-- Lageos -->
+	</spawn>
+	<spawn name="innadril04_11" zone="il_innadril04_2224_11">
+		<npc id="20989" count="3" respawnDelay="45" />	<!-- Lageos -->
+	</spawn>
+	<spawn name="innadril04_13" zone="il_innadril04_2224_13">
+		<npc id="20989" count="3" respawnDelay="45" />	<!-- Lageos -->
+	</spawn>
+	<spawn name="innadril04_25" zone="il_innadril04_2224_25">
+		<npc id="20788" count="2" respawnDelay="30" />	<!-- Rakul -->
+	</spawn>
+	<spawn name="innadril04_27" zone="il_innadril04_2224_27">
+		<npc id="20788" count="6" respawnDelay="30" />	<!-- Rakul -->
+	</spawn>
+	<spawn name="innadril04_28s" zone="il_innadril04_2224_28s">
+		<npc id="20788" count="1" respawnDelay="30" />	<!-- Rakul -->
+	</spawn>
+	<spawn name="innadril04_29s" zone="il_innadril04_2224_29s">
+		<npc id="20989" count="2" respawnDelay="45" />	<!-- Lageos -->
+	</spawn>
+	<!-- [23_15] -->
+	<spawn name="rune13_2315_01m1" zone="il_rune13_2315_01">
+		<npc id="22123" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Crusader -->
+		<npc id="22124" count="4" respawnDelay="90" respawnRandom="15" />	<!-- Solina Brother -->
+		<npc id="22126" count="3" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+	</spawn>
+	<spawn name="rune13_2315_02m1" zone="il_rune13_2315_02">
+		<npc id="22124" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Solina Brother -->
+		<npc id="22126" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+	</spawn>
+	<spawn name="rune13_2315_03m1" zone="il_rune13_2315_03">
+		<npc id="22124" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Solina Brother -->
+		<npc id="22126" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+	</spawn>
+	<spawn name="rune13_2315_04m1" zone="il_rune13_2315_04">
+		<npc id="22124" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Solina Brother -->
+		<npc id="22126" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+	</spawn>
+	<spawn name="rune13_2315_05m1" zone="il_rune13_2315_05">
+		<npc id="22123" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Crusader -->
+		<npc id="22124" count="3" respawnDelay="90" respawnRandom="15" />	<!-- Solina Brother -->
+		<npc id="22126" count="3" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+	</spawn>
+	<spawn name="rune13_2315_06m1" zone="il_rune13_2315_06">
+		<npc id="22123" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Crusader -->
+		<npc id="22125" count="3" respawnDelay="90" respawnRandom="15" />	<!-- Solina Lay Brother -->
+		<npc id="22126" count="3" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+	</spawn>
+	<spawn name="rune13_2315_07m1" zone="il_rune13_2315_07">
+		<npc id="22125" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Solina Lay Brother -->
+		<npc id="22126" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+	</spawn>
+	<spawn name="rune13_2315_08m1" zone="il_rune13_2315_08">
+		<npc id="22124" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Solina Brother -->
+		<npc id="22126" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+		<npc id="22123" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Crusader -->
+		<npc id="22128" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Guardian -->
+	</spawn>
+	<spawn name="rune13_2315_09m1" zone="il_rune13_2315_09">
+		<npc id="22125" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Solina Lay Brother -->
+		<npc id="22126" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+	</spawn>
+	<spawn name="rune13_2315_10m1" zone="il_rune13_2315_10">
+		<npc id="22123" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Crusader -->
+		<npc id="22124" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Solina Brother -->
+		<npc id="22126" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+		<npc id="22125" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Solina Lay Brother -->
+		<npc id="22128" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Guardian -->
+	</spawn>
+	<spawn name="rune13_2315_11m1" zone="il_rune13_2315_11">
+		<npc id="22124" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Solina Brother -->
+		<npc id="22126" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+	</spawn>
+	<spawn name="rune13_2315_12m1" zone="il_rune13_2315_12">
+		<npc id="22125" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Solina Lay Brother -->
+		<npc id="22127" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Silent Brother -->
+	</spawn>
+	<spawn name="rune13_2315_13m1" zone="il_rune13_2315_13">
+		<npc id="22125" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Solina Lay Brother -->
+		<npc id="22127" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Silent Brother -->
+	</spawn>
+	<spawn name="rune13_2315_14m1" zone="il_rune13_2315_14">
+		<npc id="22123" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Crusader -->
+		<npc id="22125" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Solina Lay Brother -->
+		<npc id="22126" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+		<npc id="22127" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Brother -->
+		<npc id="22128" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Guardian -->
+	</spawn>
+	<spawn name="rune13_2315_15m1" zone="il_rune13_2315_15">
+		<npc id="22125" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Solina Lay Brother -->
+		<npc id="22126" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+		<npc id="22127" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Brother -->
+	</spawn>
+	<spawn name="rune13_2315_16m1" zone="il_rune13_2315_16">
+		<npc id="22125" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Solina Lay Brother -->
+		<npc id="22126" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+		<npc id="22127" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Brother -->
+	</spawn>
+	<spawn name="rune13_2315_17m1" zone="il_rune13_2315_17">
+		<npc id="22125" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Solina Lay Brother -->
+		<npc id="22126" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+		<npc id="22127" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Brother -->
+	</spawn>
+	<spawn name="rune13_2315_18m1" zone="il_rune13_2315_18">
+		<npc id="22123" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Crusader -->
+		<npc id="22125" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Solina Lay Brother -->
+		<npc id="22126" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+		<npc id="22127" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Brother -->
+		<npc id="22128" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Guardian -->
+	</spawn>
+	<spawn name="rune13_2315_19m1" zone="il_rune13_2315_19">
+		<npc id="22125" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Solina Lay Brother -->
+		<npc id="22126" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+		<npc id="22127" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Brother -->
+	</spawn>
+	<spawn name="rune13_2315_20m1" zone="il_rune13_2315_20">
+		<npc id="22124" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Solina Brother -->
+		<npc id="22126" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+	</spawn>
+	<spawn name="rune13_2315_21m1" zone="il_rune13_2315_21">
+		<npc id="22123" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Crusader -->
+		<npc id="22124" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Solina Brother -->
+		<npc id="22127" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Brother -->
+		<npc id="22128" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Guardian -->
+	</spawn>
+	<spawn name="rune13_2315_22m1" zone="il_rune13_2315_22">
+		<npc id="22123" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Crusader -->
+		<npc id="22124" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Solina Brother -->
+		<npc id="22127" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Brother -->
+		<npc id="22128" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Guardian -->
+	</spawn>
+	<spawn name="rune13_2315_23m1" zone="il_rune13_2315_23">
+		<npc id="22123" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Crusader -->
+		<npc id="22124" count="4" respawnDelay="90" respawnRandom="15" />	<!-- Solina Brother -->
+		<npc id="22126" count="3" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+	</spawn>
+	<spawn name="rune13_2315_24m1" zone="il_rune13_2315_24">
+		<npc id="22124" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Solina Brother -->
+		<npc id="22126" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Silent Seeker -->
+	</spawn>
+	<spawn name="rune13_2315_25m1" zone="il_rune13_2315_25">
+		<npc id="22123" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Crusader -->
+		<npc id="22124" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Solina Brother -->
+		<npc id="22127" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Brother -->
+		<npc id="22128" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Guardian -->
+	</spawn>
+	<spawn name="rune13_2315_26m1" zone="il_rune13_2315_26">
+		<npc id="22123" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Crusader -->
+		<npc id="22125" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Solina Lay Brother -->
+		<npc id="22127" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Brother -->
+		<npc id="22128" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Monastic Guardian -->
+	</spawn>
+	<spawn name="rune13_2315_27m1" zone="il_rune13_2315_27">
+		<npc id="22129" count="3" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22132" count="3" respawnDelay="90" respawnRandom="15" />	<!-- Judge of Light -->
+		<npc id="22134" count="3" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Holy Land -->
+	</spawn>
+	<spawn name="rune13_2315_28m1" zone="il_rune13_2315_28">
+		<npc id="22129" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22132" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Judge of Light -->
+		<npc id="22133" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Grail -->
+		<npc id="22135" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Beholder of Light -->
+	</spawn>
+	<spawn name="rune13_2315_29m1" zone="il_rune13_2315_29">
+		<npc id="22129" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22132" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Judge of Light -->
+		<npc id="22133" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Grail -->
+		<npc id="22135" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Beholder of Light -->
+	</spawn>
+	<spawn name="rune13_2315_30m1" zone="il_rune13_2315_30">
+		<npc id="22129" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22132" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Judge of Light -->
+		<npc id="22133" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Grail -->
+		<npc id="22135" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Beholder of Light -->
+	</spawn>
+	<spawn name="rune13_2315_31m1" zone="il_rune13_2315_31">
+		<npc id="22129" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22132" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Judge of Light -->
+		<npc id="22133" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Grail -->
+		<npc id="22135" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Beholder of Light -->
+	</spawn>
+	<spawn name="rune13_2315_32m1" zone="il_rune13_2315_32">
+		<npc id="22129" count="3" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22132" count="3" respawnDelay="90" respawnRandom="15" />	<!-- Judge of Light -->
+		<npc id="22134" count="3" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Holy Land -->
+	</spawn>
+	<spawn name="rune13_2315_33m1" zone="il_rune13_2315_33">
+		<npc id="22129" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22132" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Judge of Light -->
+		<npc id="22133" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Grail -->
+		<npc id="22135" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Beholder of Light -->
+	</spawn>
+	<spawn name="rune13_2315_34m1" zone="il_rune13_2315_34">
+		<npc id="22129" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22132" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Judge of Light -->
+		<npc id="22133" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Grail -->
+		<npc id="22135" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Beholder of Light -->
+	</spawn>
+	<spawn name="rune13_2315_35m1" zone="il_rune13_2315_35">
+		<npc id="22129" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22132" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Judge of Light -->
+		<npc id="22133" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Grail -->
+		<npc id="22135" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Beholder of Light -->
+	</spawn>
+	<spawn name="rune13_2315_36m1" zone="il_rune13_2315_36">
+		<npc id="22129" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22132" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Judge of Light -->
+		<npc id="22133" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Grail -->
+		<npc id="22135" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Beholder of Light -->
+	</spawn>
+	<spawn name="rune13_2315_37m1" zone="il_rune13_2315_37">
+		<npc id="22129" count="3" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22132" count="3" respawnDelay="90" respawnRandom="15" />	<!-- Judge of Light -->
+		<npc id="22134" count="3" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Holy Land -->
+	</spawn>
+	<spawn name="rune13_2315_38m1" zone="il_rune13_2315_38">
+		<npc id="22129" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22133" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Grail -->
+		<npc id="22134" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Holy Land -->
+		<npc id="22135" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Beholder of Light -->
+	</spawn>
+	<spawn name="rune13_2315_39m1" zone="il_rune13_2315_39">
+		<npc id="22129" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22133" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Grail -->
+		<npc id="22134" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Holy Land -->
+		<npc id="22135" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Beholder of Light -->
+	</spawn>
+	<spawn name="rune13_2315_40m1" zone="il_rune13_2315_40">
+		<npc id="22129" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22133" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Grail -->
+		<npc id="22134" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Holy Land -->
+		<npc id="22135" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Beholder of Light -->
+	</spawn>
+	<spawn name="rune13_2315_41m1" zone="il_rune13_2315_41">
+		<npc id="22129" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22133" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Grail -->
+		<npc id="22134" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Holy Land -->
+		<npc id="22135" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Beholder of Light -->
+	</spawn>
+	<spawn name="rune13_2315_42m1" zone="il_rune13_2315_42">
+		<npc id="22129" count="3" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22132" count="3" respawnDelay="90" respawnRandom="15" />	<!-- Judge of Light -->
+		<npc id="22134" count="3" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Holy Land -->
+	</spawn>
+	<spawn name="rune13_2315_43m1" zone="il_rune13_2315_43">
+		<npc id="22129" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22133" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Grail -->
+		<npc id="22134" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Holy Land -->
+		<npc id="22135" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Beholder of Light -->
+	</spawn>
+	<spawn name="rune13_2315_44m1" zone="il_rune13_2315_44">
+		<npc id="22129" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22133" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Grail -->
+		<npc id="22134" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Holy Land -->
+		<npc id="22135" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Beholder of Light -->
+	</spawn>
+	<spawn name="rune13_2315_45m1" zone="il_rune13_2315_45">
+		<npc id="22129" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22133" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Grail -->
+		<npc id="22134" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Holy Land -->
+		<npc id="22135" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Beholder of Light -->
+	</spawn>
+	<spawn name="rune13_2315_46m1" zone="il_rune13_2315_46">
+		<npc id="22129" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22133" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Grail -->
+		<npc id="22134" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Holy Land -->
+		<npc id="22135" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Beholder of Light -->
+	</spawn>
+	<spawn name="rune13_2315_47m1" zone="il_rune13_2315_47">
+		<npc id="22129" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22133" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Grail -->
+		<npc id="22134" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Holy Land -->
+		<npc id="22135" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Beholder of Light -->
+	</spawn>
+	<spawn name="rune13_2315_48m1" zone="il_rune13_2315_48">
+		<npc id="22129" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Warrior Monk -->
+		<npc id="22133" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Grail -->
+		<npc id="22134" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Guardian of the Holy Land -->
+		<npc id="22135" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Beholder of Light -->
+	</spawn>
+	<spawn name="rune13_2315_49m1" zone="il_rune13_2315_49">
+		<npc id="22125" count="2" respawnDelay="90" respawnRandom="15" />	<!-- Solina Lay Brother -->
+		<npc id="22127" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Silent Brother -->
+	</spawn>
+	<spawn name="rune13_mb2315_02m1" zone="il_rune13_mb2315_02">
+		<npc id="22135" count="1" respawnDelay="50" />	<!-- Beholder of Light -->
+		<npc id="22134" count="1" respawnDelay="50" />	<!-- Guardian of the Holy Land -->
+		<npc id="22134" count="1" respawnDelay="50" />	<!-- Guardian of the Holy Land -->
+	</spawn>
+	<spawn name="rune13_mb2315_03m1" zone="il_rune13_mb2315_03">
+		<npc id="22135" count="1" respawnDelay="50" />	<!-- Beholder of Light -->
+		<npc id="22134" count="1" respawnDelay="50" />	<!-- Guardian of the Holy Land -->
+		<npc id="22134" count="1" respawnDelay="50" />	<!-- Guardian of the Holy Land -->
+	</spawn>
+	<spawn name="rune13_mb2315_04m1" zone="il_rune13_mb2315_04">
+		<npc id="22135" count="1" respawnDelay="50" />	<!-- Beholder of Light -->
+		<npc id="22134" count="1" respawnDelay="50" />	<!-- Guardian of the Holy Land -->
+		<npc id="22134" count="1" respawnDelay="50" />	<!-- Guardian of the Holy Land -->
+	</spawn>
+	<spawn name="rune13_mb2315_05m1" zone="il_rune13_mb2315_05">
+		<npc id="22135" count="1" respawnDelay="50" />	<!-- Beholder of Light -->
+		<npc id="22134" count="1" respawnDelay="50" />	<!-- Guardian of the Holy Land -->
+		<npc id="22134" count="1" respawnDelay="50" />	<!-- Guardian of the Holy Land -->
+	</spawn>
+	<!-- [23_21] -->
+	<spawn name="giran03_2321_p06_1m1" zone="il_giran03_2321_p06_1">
+		<npc id="20758" count="2" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<spawn name="giran03_2321_p07m1" zone="il_giran03_2321_p07">
+		<npc id="20758" count="1" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<spawn name="giran03_2321_p08m1" zone="il_giran03_2321_p08">
+		<npc id="20758" count="1" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<spawn name="giran03_2321_p09m1" zone="il_giran03_2321_p09">
+		<npc id="20758" count="2" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<spawn name="giran03_2321_p10m1" zone="il_giran03_2321_p10">
+		<npc id="20758" count="1" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<spawn name="giran03_2321_p15m1" zone="il_giran03_2321_p15">
+		<npc id="20758" count="3" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<spawn name="giran03_2321_p16m1" zone="il_giran03_2321_p16">
+		<npc id="20758" count="1" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<spawn name="giran03_2321_p18m1" zone="il_giran03_2321_p18">
+		<npc id="20758" count="2" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<spawn name="giran03_2321_p19m1" zone="il_giran03_2321_p19">
+		<npc id="20758" count="1" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<spawn name="giran03_2321_p21m1" zone="il_giran03_2321_p21">
+		<npc id="20758" count="1" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<spawn name="giran03_2321_p22m1" zone="il_giran03_2321_p22">
+		<npc id="20758" count="1" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<spawn name="giran03_2321_p23m1" zone="il_giran03_2321_p23">
+		<npc id="20758" count="1" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<spawn name="giran03_2321_p24m1" zone="il_giran03_2321_p24">
+		<npc id="20758" count="1" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<spawn name="giran03_2321_p50m1" zone="il_giran03_2321_p50">
+		<npc id="20758" count="1" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<spawn name="giran03_2321_p51m1" zone="il_giran03_2321_p51">
+		<npc id="20758" count="2" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
+	</spawn>
+	<!-- [24_21] -->
+	<spawn name="giran05_2421_01m1" zone="il_giran05_2421_01">
+		<npc id="20620" count="2" respawnDelay="250" respawnRandom="175" />	<!-- Cave Beast -->
+		<npc id="20621" count="3" respawnDelay="250" respawnRandom="175" />	<!-- Death Wave -->
+	</spawn>
+	<spawn name="giran05_2421_02m1" zone="il_giran05_2421_02">
+		<npc id="20620" count="3" respawnDelay="250" respawnRandom="175" />	<!-- Cave Beast -->
+		<npc id="20621" count="3" respawnDelay="250" respawnRandom="175" />	<!-- Death Wave -->
+	</spawn>
+	<spawn name="giran05_2421_04m1" zone="il_giran05_2421_04">
+		<npc id="20620" count="4" respawnDelay="250" respawnRandom="175" />	<!-- Cave Beast -->
+		<npc id="20621" count="4" respawnDelay="250" respawnRandom="175" />	<!-- Death Wave -->
+	</spawn>
+	<spawn name="giran05_2421_07m1" zone="il_giran05_2421_07">
+		<npc id="20620" count="4" respawnDelay="250" respawnRandom="175" />	<!-- Cave Beast -->
+		<npc id="20621" count="3" respawnDelay="250" respawnRandom="175" />	<!-- Death Wave -->
+	</spawn>
+	<spawn name="giran05_2421_08m1" zone="il_giran05_2421_08">
+		<npc id="20621" count="3" respawnDelay="300" respawnRandom="200" />	<!-- Death Wave -->
+		<npc id="20622" count="4" respawnDelay="300" respawnRandom="200" />	<!-- Maluk Soldier -->
+		<npc id="20623" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Plando -->
+	</spawn>
+	<spawn name="giran05_2421_09m1" zone="il_giran05_2421_09">
+		<npc id="20621" count="3" respawnDelay="300" respawnRandom="200" />	<!-- Death Wave -->
+		<npc id="20622" count="3" respawnDelay="300" respawnRandom="200" />	<!-- Maluk Soldier -->
+		<npc id="20623" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Plando -->
+	</spawn>
+	<spawn name="giran05_2421_10m1" zone="il_giran05_2421_10">
+		<npc id="20622" count="4" respawnDelay="260" respawnRandom="180" />	<!-- Maluk Soldier -->
+		<npc id="20623" count="4" respawnDelay="260" respawnRandom="180" />	<!-- Plando -->
+		<npc id="20624" count="4" respawnDelay="260" respawnRandom="180" />	<!-- Cave Howler -->
+	</spawn>
+	<spawn name="giran05_2421_11m1" zone="il_giran05_2421_11">
+		<npc id="20620" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Cave Beast -->
+		<npc id="20621" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Death Wave -->
+	</spawn>
+	<spawn name="giran05_2421_12m1" zone="il_giran05_2421_12">
+		<npc id="20620" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Cave Beast -->
+		<npc id="20621" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Death Wave -->
+	</spawn>
+	<spawn name="giran05_2421_13m1" zone="il_giran05_2421_13">
+		<npc id="20620" count="5" respawnDelay="300" respawnRandom="200" />	<!-- Cave Beast -->
+		<npc id="20621" count="4" respawnDelay="300" respawnRandom="200" />	<!-- Death Wave -->
+	</spawn>
+	<spawn name="giran05_2421_14m1" zone="il_giran05_2421_14">
+		<npc id="20622" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Maluk Soldier -->
+		<npc id="20623" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Plando -->
+		<npc id="20624" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Cave Howler -->
+	</spawn>
+	<spawn name="giran05_2421_15m1" zone="il_giran05_2421_15">
+		<npc id="20622" count="9" respawnDelay="300" respawnRandom="200" />	<!-- Maluk Soldier -->
+		<npc id="20623" count="4" respawnDelay="300" respawnRandom="200" />	<!-- Plando -->
+		<npc id="20624" count="9" respawnDelay="300" respawnRandom="200" />	<!-- Cave Howler -->
+	</spawn>
+	<spawn name="giran05_2421_16m1" zone="il_giran05_2421_16">
+		<npc id="20622" count="5" respawnDelay="300" respawnRandom="200" />	<!-- Maluk Soldier -->
+		<npc id="20623" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Plando -->
+		<npc id="20624" count="5" respawnDelay="300" respawnRandom="200" />	<!-- Cave Howler -->
+	</spawn>
+	<spawn name="giran05_2421_17m1" zone="il_giran05_2421_17">
+		<npc id="20622" count="6" respawnDelay="300" respawnRandom="200" />	<!-- Maluk Soldier -->
+		<npc id="20623" count="4" respawnDelay="300" respawnRandom="200" />	<!-- Plando -->
+		<npc id="20624" count="5" respawnDelay="300" respawnRandom="200" />	<!-- Cave Howler -->
+	</spawn>
+	<spawn name="giran05_2421_18m1" zone="il_giran05_2421_18">
+		<npc id="20624" count="6" respawnDelay="300" respawnRandom="200" />	<!-- Cave Howler -->
+	</spawn>
+	<spawn name="giran05_2421_20m1" zone="il_giran05_2421_20">
+		<npc id="20621" count="5" respawnDelay="300" respawnRandom="200" />	<!-- Death Wave -->
+		<npc id="20622" count="6" respawnDelay="300" respawnRandom="200" />	<!-- Maluk Soldier -->
+		<npc id="20623" count="3" respawnDelay="300" respawnRandom="200" />	<!-- Plando -->
+		<npc id="20624" count="6" respawnDelay="300" respawnRandom="200" />	<!-- Cave Howler -->
+	</spawn>
+	<spawn name="giran05_2421_21m1" zone="il_giran05_2421_21">
+		<npc id="20622" count="9" respawnDelay="300" respawnRandom="200" />	<!-- Maluk Soldier -->
+		<npc id="20623" count="3" respawnDelay="300" respawnRandom="200" />	<!-- Plando -->
+		<npc id="20624" count="10" respawnDelay="300" respawnRandom="200" />	<!-- Cave Howler -->
+	</spawn>
+	<spawn name="giran05_2421_22m1" zone="il_giran05_2421_22">
+		<npc id="20622" count="4" respawnDelay="300" respawnRandom="200" />	<!-- Maluk Soldier -->
+		<npc id="20623" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Plando -->
+		<npc id="20624" count="4" respawnDelay="300" respawnRandom="200" />	<!-- Cave Howler -->
+	</spawn>
+	<spawn name="giran05_2421_23m1" zone="il_giran05_2421_23">
+		<npc id="20622" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Maluk Soldier -->
+		<npc id="20624" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Cave Howler -->
+	</spawn>
+	<spawn name="giran05_2421_24m1" zone="il_giran05_2421_24">
+		<npc id="20622" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Maluk Soldier -->
+		<npc id="20624" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Cave Howler -->
+	</spawn>
+	<spawn name="giran05_2421_25m1" zone="il_giran05_2421_25">
+		<npc id="20622" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Maluk Soldier -->
+		<npc id="20624" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Cave Howler -->
+	</spawn>
+	<spawn name="giran05_2421_26m1" zone="il_giran05_2421_26">
+		<npc id="20622" count="10" respawnDelay="300" respawnRandom="200" />	<!-- Maluk Soldier -->
+		<npc id="20623" count="4" respawnDelay="300" respawnRandom="200" />	<!-- Plando -->
+		<npc id="20624" count="10" respawnDelay="300" respawnRandom="200" />	<!-- Cave Howler -->
+	</spawn>
+	<spawn name="giran05_2421_27m1" zone="il_giran05_2421_27">
+		<npc id="20624" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Cave Howler -->
+	</spawn>
+	<spawn name="giran05_2421_28m1" zone="il_giran05_2421_28">
+		<npc id="20624" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Cave Howler -->
+	</spawn>
+	<spawn name="giran05_2421_29m1" zone="il_giran05_2421_29">
+		<npc id="20624" count="3" respawnDelay="300" respawnRandom="200" />	<!-- Cave Howler -->
+	</spawn>
+	<spawn name="giran05_2421_50m1" zone="il_giran05_2421_50">
+		<npc id="21085" count="4" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Sniper -->
+	</spawn>
+	<spawn name="giran05_2421_51m1" zone="il_giran05_2421_51">
+		<npc id="21085" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Sniper -->
+	</spawn>
+	<spawn name="giran05_2421_53m1" zone="il_giran05_2421_53">
+		<npc id="21085" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Sniper -->
+		<npc id="21086" count="4" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Liviona -->
+	</spawn>
+	<spawn name="giran05_2421_56m1" zone="il_giran05_2421_56">
+		<npc id="21085" count="3" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Sniper -->
+		<npc id="21086" count="6" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Liviona -->
+	</spawn>
+	<spawn name="giran05_2421_58m1" zone="il_giran05_2421_58">
+		<npc id="21085" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Sniper -->
+		<npc id="21086" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Liviona -->
+	</spawn>
+	<spawn name="giran05_2421_59m1" zone="il_giran05_2421_59">
+		<npc id="21085" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Sniper -->
+		<npc id="21086" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Liviona -->
+	</spawn>
+	<spawn name="giran05_2421_61m1" zone="il_giran05_2421_61">
+		<npc id="21085" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Sniper -->
+		<npc id="21086" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Liviona -->
+	</spawn>
+	<spawn name="giran05_2421_62m1" zone="il_giran05_2421_62">
+		<npc id="21085" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Sniper -->
+		<npc id="21086" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Liviona -->
+	</spawn>
+	<spawn name="giran05_2421_63m1" zone="il_giran05_2421_63">
+		<npc id="21085" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Sniper -->
+		<npc id="21086" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Liviona -->
+	</spawn>
+	<spawn name="giran05_2421_64m1" zone="il_giran05_2421_64">
+		<npc id="21085" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Sniper -->
+		<npc id="21086" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Liviona -->
+	</spawn>
+	<spawn name="giran05_2421_65m1" zone="il_giran05_2421_65">
+		<npc id="21085" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Sniper -->
+		<npc id="21086" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Liviona -->
+	</spawn>
+	<spawn name="giran05_2421_66m1" zone="il_giran05_2421_66">
+		<npc id="21085" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Sniper -->
+		<npc id="21086" count="4" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Liviona -->
+	</spawn>
+	<spawn name="giran05_2421_68m1" zone="il_giran05_2421_68">
+		<npc id="21086" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Liviona -->
+		<npc id="21087" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Knight -->
+	</spawn>
+	<spawn name="giran05_2421_70m1" zone="il_giran05_2421_70">
+		<npc id="21086" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Liviona -->
+		<npc id="21087" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Knight -->
+	</spawn>
+	<spawn name="giran05_2421_72m1" zone="il_giran05_2421_72">
+		<npc id="21086" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Liviona -->
+		<npc id="21087" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Knight -->
+	</spawn>
+	<spawn name="giran05_2421_75m1" zone="il_giran05_2421_75">
+		<npc id="21087" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Knight -->
+		<npc id="21088" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Banshee -->
+		<npc id="21089" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Lord -->
+	</spawn>
+	<spawn name="giran05_2421_76m1" zone="il_giran05_2421_76">
+		<npc id="21087" count="6" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Knight -->
+		<npc id="21088" count="3" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Banshee -->
+		<npc id="21089" count="8" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Lord -->
+	</spawn>
+	<spawn name="giran05_2421_77m1" zone="il_giran05_2421_77">
+		<npc id="21087" count="5" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Knight -->
+		<npc id="21088" count="3" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Banshee -->
+		<npc id="21089" count="5" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Lord -->
+	</spawn>
+	<spawn name="giran05_2421_78m1" zone="il_giran05_2421_78">
+		<npc id="21087" count="3" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Knight -->
+		<npc id="21088" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Banshee -->
+		<npc id="21089" count="3" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Lord -->
+	</spawn>
+	<spawn name="giran05_2421_79m1" zone="il_giran05_2421_79">
+		<npc id="21087" count="4" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Knight -->
+		<npc id="21088" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Banshee -->
+		<npc id="21089" count="4" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Lord -->
+	</spawn>
+	<spawn name="giran05_2421_80m1" zone="il_giran05_2421_80">
+		<npc id="21087" count="3" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Knight -->
+		<npc id="21088" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Banshee -->
+		<npc id="21089" count="3" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Lord -->
+	</spawn>
+	<spawn name="giran05_2421_81m1" zone="il_giran05_2421_81">
+		<npc id="21087" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Knight -->
+		<npc id="21088" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Banshee -->
+		<npc id="21089" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Lord -->
+	</spawn>
+	<spawn name="giran05_2421_82m1" zone="il_giran05_2421_82">
+		<npc id="21087" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Knight -->
+		<npc id="21088" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Banshee -->
+		<npc id="21089" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Lord -->
+	</spawn>
+	<spawn name="giran05_2421_83m1" zone="il_giran05_2421_83">
+		<npc id="21087" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Knight -->
+		<npc id="21088" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Banshee -->
+		<npc id="21089" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Lord -->
+	</spawn>
+	<spawn name="giran05_2421_84m1" zone="il_giran05_2421_84">
+		<npc id="21087" count="5" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Knight -->
+		<npc id="21088" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Banshee -->
+		<npc id="21089" count="6" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Lord -->
+	</spawn>
+	<spawn name="giran05_2421_85m1" zone="il_giran05_2421_85">
+		<npc id="21087" count="6" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Knight -->
+		<npc id="21088" count="3" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Banshee -->
+		<npc id="21089" count="7" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Lord -->
+	</spawn>
+	<spawn name="giran05_2421_86m1" zone="il_giran05_2421_86">
+		<npc id="21087" count="3" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Knight -->
+		<npc id="21088" count="1" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Banshee -->
+		<npc id="21089" count="3" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Lord -->
+	</spawn>
+	<spawn name="giran05_2421_87m1" zone="il_giran05_2421_87">
+		<npc id="21087" count="4" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Knight -->
+		<npc id="21088" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Banshee -->
+		<npc id="21089" count="4" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Lord -->
+	</spawn>
+	<!-- [25_12] -->
+	<spawn name="schuttgart06_2512_01m1" zone="il_schuttgart06_2512_01">
+		<npc id="20424" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Bone Lord -->
+		<npc id="20420" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Turen -->
+		<npc id="20338" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Nightmare Weaver -->
+	</spawn>
+	<spawn name="schuttgart06_2512_03m1" zone="il_schuttgart06_2512_03">
+		<npc id="20424" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Bone Lord -->
+		<npc id="20420" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Turen -->
+		<npc id="20338" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Nightmare Weaver -->
+	</spawn>
+	<spawn name="schuttgart06_2512_04m1" zone="il_schuttgart06_2512_04">
+		<npc id="20424" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Bone Lord -->
+		<npc id="20420" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Turen -->
+		<npc id="20338" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Nightmare Weaver -->
+	</spawn>
+	<spawn name="schuttgart06_2512_05m1" zone="il_schuttgart06_2512_05">
+		<npc id="20424" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Bone Lord -->
+		<npc id="20420" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Turen -->
+		<npc id="20338" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Nightmare Weaver -->
+	</spawn>
+	<spawn name="schuttgart06_2512_06m1" zone="il_schuttgart06_2512_06">
+		<npc id="20424" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Bone Lord -->
+		<npc id="20420" count="3" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Turen -->
+		<npc id="20338" count="3" respawnDelay="40" respawnRandom="10" />	<!-- Nightmare Weaver -->
+	</spawn>
+	<spawn name="schuttgart06_2512_07m1" zone="il_schuttgart06_2512_07">
+		<npc id="20424" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Bone Lord -->
+		<npc id="20420" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Turen -->
+		<npc id="20338" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Nightmare Weaver -->
+	</spawn>
+	<spawn name="schuttgart06_2512_08m1" zone="il_schuttgart06_2512_08">
+		<npc id="20424" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Bone Lord -->
+		<npc id="20420" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Turen -->
+		<npc id="20338" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Nightmare Weaver -->
+	</spawn>
+	<spawn name="schuttgart06_2512_09m1" zone="il_schuttgart06_2512_09">
+		<npc id="20424" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Bone Lord -->
+		<npc id="20420" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Turen -->
+		<npc id="20338" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Nightmare Weaver -->
+	</spawn>
+	<spawn name="schuttgart06_2512_10m1" zone="il_schuttgart06_2512_10">
+		<npc id="20424" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Bone Lord -->
+		<npc id="20420" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Turen -->
+		<npc id="20338" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Nightmare Weaver -->
+	</spawn>
+	<spawn name="schuttgart06_2512_12m1" zone="il_schuttgart06_2512_12">
+		<npc id="20424" count="4" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Bone Lord -->
+		<npc id="20420" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Turen -->
+		<npc id="20338" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Nightmare Weaver -->
+	</spawn>
+	<spawn name="schuttgart06_2512_13m1" zone="il_schuttgart06_2512_13">
+		<npc id="20424" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Bone Lord -->
+		<npc id="20420" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Turen -->
+		<npc id="20338" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Nightmare Weaver -->
+	</spawn>
+	<spawn name="schuttgart06_2512_14m1" zone="il_schuttgart06_2512_14">
+		<npc id="20424" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Bone Lord -->
+		<npc id="20420" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Turen -->
+		<npc id="20338" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Nightmare Weaver -->
+	</spawn>
+	<spawn name="schuttgart06_2512_15m1" zone="il_schuttgart06_2512_15">
+		<npc id="20421" count="4" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_16m1" zone="il_schuttgart06_2512_16">
+		<npc id="20421" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_17m1" zone="il_schuttgart06_2512_17">
+		<npc id="20421" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_18m1" zone="il_schuttgart06_2512_18">
+		<npc id="20421" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="3" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_19m1" zone="il_schuttgart06_2512_19">
+		<npc id="20421" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_20m1" zone="il_schuttgart06_2512_20">
+		<npc id="20421" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_21m1" zone="il_schuttgart06_2512_21">
+		<npc id="20421" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_22m1" zone="il_schuttgart06_2512_22">
+		<npc id="20421" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_23m1" zone="il_schuttgart06_2512_23">
+		<npc id="20421" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="4" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="6" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_24m1" zone="il_schuttgart06_2512_24">
+		<npc id="20421" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_25m1" zone="il_schuttgart06_2512_25">
+		<npc id="20421" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_26m1" zone="il_schuttgart06_2512_26">
+		<npc id="20421" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_28m1" zone="il_schuttgart06_2512_28">
+		<npc id="20421" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_29m1" zone="il_schuttgart06_2512_29">
+		<npc id="20421" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_30m1" zone="il_schuttgart06_2512_30">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_31m1" zone="il_schuttgart06_2512_31">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_32m1" zone="il_schuttgart06_2512_32">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_33m1" zone="il_schuttgart06_2512_33">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_34m1" zone="il_schuttgart06_2512_34">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_35m1" zone="il_schuttgart06_2512_35">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_36m1" zone="il_schuttgart06_2512_36">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_37m1" zone="il_schuttgart06_2512_37">
+		<npc id="21133" count="4" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="4" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_38m1" zone="il_schuttgart06_2512_38">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_39m1" zone="il_schuttgart06_2512_39">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_40m1" zone="il_schuttgart06_2512_40">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_41m1" zone="il_schuttgart06_2512_41">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_42m1" zone="il_schuttgart06_2512_42">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_43m1" zone="il_schuttgart06_2512_43">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_44m1" zone="il_schuttgart06_2512_44">
+		<npc id="20424" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Bone Lord -->
+		<npc id="20420" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Turen -->
+		<npc id="20338" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Nightmare Weaver -->
+	</spawn>
+	<spawn name="schuttgart06_2512_45m1" zone="il_schuttgart06_2512_45">
+		<npc id="20424" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Bone Lord -->
+		<npc id="20420" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Turen -->
+		<npc id="20338" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Nightmare Weaver -->
+	</spawn>
+	<spawn name="schuttgart06_2512_46m1" zone="il_schuttgart06_2512_46">
+		<npc id="20424" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Bone Lord -->
+		<npc id="20420" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Turen -->
+		<npc id="20338" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Nightmare Weaver -->
+	</spawn>
+	<spawn name="schuttgart06_2512_47m1" zone="il_schuttgart06_2512_47">
+		<npc id="20424" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Bone Lord -->
+		<npc id="20420" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Turen -->
+		<npc id="20338" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Nightmare Weaver -->
+	</spawn>
+	<spawn name="schuttgart06_2512_48m1" zone="il_schuttgart06_2512_48">
+		<npc id="20421" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_49m1" zone="il_schuttgart06_2512_49">
+		<npc id="20421" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_50m1" zone="il_schuttgart06_2512_50">
+		<npc id="20421" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="6" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="6" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_51m1" zone="il_schuttgart06_2512_51">
+		<npc id="20421" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_52m1" zone="il_schuttgart06_2512_52">
+		<npc id="20421" count="4" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_53m1" zone="il_schuttgart06_2512_53">
+		<npc id="20421" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_54m1" zone="il_schuttgart06_2512_54">
+		<npc id="20421" count="3" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Tilfo -->
+		<npc id="21256" count="3" respawnDelay="40" respawnRandom="10" />	<!-- Underground Werewolf -->
+		<npc id="21132" count="3" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold -->
+	</spawn>
+	<spawn name="schuttgart06_2512_55m1" zone="il_schuttgart06_2512_55">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_56m1" zone="il_schuttgart06_2512_56">
+		<npc id="21133" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_57m1" zone="il_schuttgart06_2512_57">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_58m1" zone="il_schuttgart06_2512_58">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_59m1" zone="il_schuttgart06_2512_59">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_60m1" zone="il_schuttgart06_2512_60">
+		<npc id="21133" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="3" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="3" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_61m1" zone="il_schuttgart06_2512_61">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_62m1" zone="il_schuttgart06_2512_62">
+		<npc id="21133" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_63m1" zone="il_schuttgart06_2512_63">
+		<npc id="21133" count="4" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_64m1" zone="il_schuttgart06_2512_64">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_65m1" zone="il_schuttgart06_2512_65">
+		<npc id="21133" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_66m1" zone="il_schuttgart06_2512_66">
+		<npc id="21133" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_67m1" zone="il_schuttgart06_2512_67">
+		<npc id="21133" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Skeleton Archer -->
+		<npc id="21134" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Spartoi -->
+		<npc id="21135" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Underground Kobold Warrior -->
+	</spawn>
+	<spawn name="schuttgart06_2512_68m1" zone="il_schuttgart06_2512_68">
+		<npc id="21136" count="4" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_69m1" zone="il_schuttgart06_2512_69">
+		<npc id="21136" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_70m1" zone="il_schuttgart06_2512_70">
+		<npc id="21137" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_71m1" zone="il_schuttgart06_2512_71">
+		<npc id="21136" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21138" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_72m1" zone="il_schuttgart06_2512_72">
+		<npc id="21136" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+	</spawn>
+	<spawn name="schuttgart06_2512_73m1" zone="il_schuttgart06_2512_73">
+		<npc id="21137" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_74m1" zone="il_schuttgart06_2512_74">
+		<npc id="21136" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21138" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_75m1" zone="il_schuttgart06_2512_75">
+		<npc id="21136" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_76m1" zone="il_schuttgart06_2512_76">
+		<npc id="21136" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_77m1" zone="il_schuttgart06_2512_77">
+		<npc id="21136" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_78m1" zone="il_schuttgart06_2512_78">
+		<npc id="21136" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_79m1" zone="il_schuttgart06_2512_79">
+		<npc id="21136" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_80m1" zone="il_schuttgart06_2512_80">
+		<npc id="21136" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_81m1" zone="il_schuttgart06_2512_81">
+		<npc id="21136" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_82m1" zone="il_schuttgart06_2512_82">
+		<npc id="21136" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_83m1" zone="il_schuttgart06_2512_83">
+		<npc id="21136" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="3" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_84m1" zone="il_schuttgart06_2512_84">
+		<npc id="21136" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="3" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_85m1" zone="il_schuttgart06_2512_85">
+		<npc id="21136" count="4" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_86m1" zone="il_schuttgart06_2512_86">
+		<npc id="21136" count="2" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="3" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="3" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_87m1" zone="il_schuttgart06_2512_87">
+		<npc id="21136" count="4" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="4" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_88m1" zone="il_schuttgart06_2512_88">
+		<npc id="21136" count="6" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="6" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_89m1" zone="il_schuttgart06_2512_89">
+		<npc id="21136" count="3" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="4" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="3" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_90m1" zone="il_schuttgart06_2512_90">
+		<npc id="21136" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_92m1" zone="il_schuttgart06_2512_92">
+		<npc id="21136" count="4" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="4" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_93m1" zone="il_schuttgart06_2512_93">
+		<npc id="21136" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_94m1" zone="il_schuttgart06_2512_94">
+		<npc id="21136" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Dead Pit Horror -->
+		<npc id="21137" count="6" respawnDelay="40" respawnRandom="10" />	<!-- Iron Ore Golem -->
+		<npc id="21138" count="5" respawnDelay="40" respawnRandom="10" />	<!-- Greedy Geist -->
+	</spawn>
+	<spawn name="schuttgart06_2512_95m1" zone="il_schuttgart06_2512_95">
+		<npc id="20424" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Bone Lord -->
+		<npc id="20420" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Akaste Succubus Turen -->
+		<npc id="20338" count="1" respawnDelay="40" respawnRandom="10" />	<!-- Nightmare Weaver -->
+	</spawn>
+	<!-- [25_14] -->
+	<spawn name="godard08_2514_01m1" zone="il_godard08_2514_01">
+		<npc id="21377" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Soldier -->
+		<npc id="21376" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Worker -->
+		<npc id="21378" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Noble -->
+		<npc id="21652" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Noble -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_02m1" zone="il_godard08_2514_02">
+		<npc id="21377" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Soldier -->
+		<npc id="21376" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Worker -->
+		<npc id="21378" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Noble -->
+		<npc id="21652" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Noble -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_03m1" zone="il_godard08_2514_03">
+		<npc id="21377" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Soldier -->
+		<npc id="21376" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Worker -->
+		<npc id="21378" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Noble -->
+		<npc id="21652" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Noble -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_06m1" zone="il_godard08_2514_06">
+		<npc id="21377" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Soldier -->
+		<npc id="21376" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Worker -->
+		<npc id="21378" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Noble -->
+		<npc id="21652" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Noble -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_07m1" zone="il_godard08_2514_07">
+		<npc id="21377" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Soldier -->
+		<npc id="21376" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Worker -->
+		<npc id="21378" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Noble -->
+		<npc id="21652" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Noble -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_15m1" zone="il_godard08_2514_15">
+		<npc id="21379" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scorpion -->
+		<npc id="21380" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scarab -->
+		<npc id="21381" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Assassin Beetle -->
+		<npc id="21653" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Assassin Beetle -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_17m1" zone="il_godard08_2514_17">
+		<npc id="21382" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Mercenary of Destruction -->
+		<npc id="21383" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Knight of Destruction -->
+		<npc id="21384" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Necromancer of Destruction -->
+		<npc id="21654" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Necromancer of Destruction -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_18m1" zone="il_godard08_2514_18">
+		<npc id="21382" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Mercenary of Destruction -->
+		<npc id="21383" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Knight of Destruction -->
+		<npc id="21384" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Necromancer of Destruction -->
+		<npc id="21654" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Necromancer of Destruction -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_19m1" zone="il_godard08_2514_19">
+		<npc id="21382" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Mercenary of Destruction -->
+		<npc id="21383" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Knight of Destruction -->
+		<npc id="21384" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Necromancer of Destruction -->
+		<npc id="21654" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Necromancer of Destruction -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_20m1" zone="il_godard08_2514_20">
+		<npc id="21382" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Mercenary of Destruction -->
+		<npc id="21383" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Knight of Destruction -->
+		<npc id="21384" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Necromancer of Destruction -->
+		<npc id="21654" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Necromancer of Destruction -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_22m1" zone="il_godard08_2514_22">
+		<npc id="21382" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Mercenary of Destruction -->
+		<npc id="21383" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Knight of Destruction -->
+		<npc id="21384" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Necromancer of Destruction -->
+		<npc id="21654" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Necromancer of Destruction -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_23m1" zone="il_godard08_2514_23">
+		<npc id="21385" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Lavastone Golem -->
+		<npc id="21386" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Magma Golem -->
+		<npc id="21387" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Arimanes of Destruction -->
+		<npc id="21655" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Arimanes of Destruction -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_24m1" zone="il_godard08_2514_24">
+		<npc id="21385" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Lavastone Golem -->
+		<npc id="21386" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Magma Golem -->
+		<npc id="21387" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Arimanes of Destruction -->
+		<npc id="21655" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Arimanes of Destruction -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_25m1" zone="il_godard08_2514_25">
+		<npc id="21385" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Lavastone Golem -->
+		<npc id="21386" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Magma Golem -->
+		<npc id="21387" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Arimanes of Destruction -->
+		<npc id="21655" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Arimanes of Destruction -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_26m1" zone="il_godard08_2514_26">
+		<npc id="21385" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Lavastone Golem -->
+		<npc id="21386" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Magma Golem -->
+		<npc id="21387" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Arimanes of Destruction -->
+		<npc id="21655" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Arimanes of Destruction -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_28m1" zone="il_godard08_2514_28">
+		<npc id="21385" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Lavastone Golem -->
+		<npc id="21386" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Magma Golem -->
+		<npc id="21387" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Arimanes of Destruction -->
+		<npc id="21655" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Arimanes of Destruction -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_30m1" zone="il_godard08_2514_30">
+		<npc id="21385" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Lavastone Golem -->
+		<npc id="21386" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Magma Golem -->
+		<npc id="21387" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Arimanes of Destruction -->
+		<npc id="21655" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Arimanes of Destruction -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard09_2514_01m1" zone="il_godard09_2514_01">
+		<npc id="21388" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Iblis of Destruction -->
+		<npc id="21389" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Balrog of Destruction -->
+		<npc id="21390" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Ashuras of Destruction -->
+		<npc id="21656" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Ashuras of Destruction -->
+	</spawn>
+	<spawn name="godard09_2514_02m1" zone="il_godard09_2514_02">
+		<npc id="21388" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Iblis of Destruction -->
+		<npc id="21389" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Balrog of Destruction -->
+		<npc id="21390" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Ashuras of Destruction -->
+		<npc id="21656" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Ashuras of Destruction -->
+	</spawn>
+	<spawn name="godard09_2514_03m1" zone="il_godard09_2514_03">
+		<npc id="21388" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Iblis of Destruction -->
+		<npc id="21389" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Balrog of Destruction -->
+		<npc id="21390" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Ashuras of Destruction -->
+		<npc id="21656" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Ashuras of Destruction -->
+	</spawn>
+	<spawn name="godard09_2514_07m1" zone="il_godard09_2514_07">
+		<npc id="21391" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Lavasillisk -->
+		<npc id="21393" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Magma Drake -->
+		<npc id="21657" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Magma Drake -->
+	</spawn>
+	<spawn name="godard09_2514_08m1" zone="il_godard09_2514_08">
+		<npc id="21391" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Lavasillisk -->
+		<npc id="21393" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Magma Drake -->
+		<npc id="21657" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Magma Drake -->
+	</spawn>
+	<spawn name="godard09_2514_09m1" zone="il_godard09_2514_09">
+		<npc id="21391" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Lavasillisk -->
+		<npc id="21393" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Magma Drake -->
+		<npc id="21657" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Magma Drake -->
+	</spawn>
+	<spawn name="godard09_2514_11m1" zone="il_godard09_2514_11">
+		<npc id="21393" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Magma Drake -->
+	</spawn>
+	<spawn name="godard09_2514_12m1" zone="il_godard09_2514_12">
+		<npc id="21393" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Magma Drake -->
+		<npc id="21657" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Magma Drake -->
+	</spawn>
+	<spawn name="godard09_2514_13m1" zone="il_godard09_2514_13">
+		<npc id="21391" count="1" respawnDelay="110" respawnRandom="35" />	<!-- Lavasillisk -->
+		<npc id="21393" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Magma Drake -->
+	</spawn>
+	<spawn name="godard09_2514_14m1" zone="il_godard09_2514_14">
+		<npc id="21393" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Magma Drake -->
+		<npc id="21391" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Lavasillisk -->
+	</spawn>
+	<spawn name="godard09_2514_15m1" zone="il_godard09_2514_15">
+		<npc id="21393" count="1" respawnDelay="110" respawnRandom="35" />	<!-- Magma Drake -->
+	</spawn>
+	<spawn name="godard09_2514_16m1" zone="il_godard09_2514_16">
+		<npc id="21393" count="1" respawnDelay="110" respawnRandom="35" />	<!-- Magma Drake -->
+		<npc id="21391" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Lavasillisk -->
+	</spawn>
+	<spawn name="godard09_2514_17m1" zone="il_godard09_2514_17">
+		<npc id="21393" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Magma Drake -->
+	</spawn>
+	<spawn name="godard09_2514_18m1" zone="il_godard09_2514_18">
+		<npc id="21391" count="1" respawnDelay="110" respawnRandom="35" />	<!-- Lavasillisk -->
+		<npc id="21393" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Magma Drake -->
+	</spawn>
+	<spawn name="godard09_2514_20m1" zone="il_godard09_2514_20">
+		<npc id="21391" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Lavasillisk -->
+	</spawn>
+	<spawn name="godard09_2514_21m1" zone="il_godard09_2514_21">
+		<npc id="21391" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Lavasillisk -->
+	</spawn>
+	<spawn name="godard09_2514_22m1" zone="il_godard09_2514_22">
+		<npc id="21657" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Magma Drake -->
+	</spawn>
+	<!-- [25_15] -->
+	<spawn name="frintessa_2515_m01" zone="il_frintessa_2515_02">
+		<npc id="29059" x="174259" y="-86550" z="-5088" heading="16440" count="1" respawnDelay="0" />	<!--  -->
+	</spawn>
+	<!-- [25_19] -->
+	<spawn name="aden07_2519_01m1" zone="il_aden07_2519_01">
+		<npc id="20646" count="8" respawnDelay="82" respawnRandom="20" />	<!-- Halingka -->
+	</spawn>
+	<spawn name="aden07_2519_02m1" zone="il_aden07_2519_02">
+		<npc id="20651" count="9" respawnDelay="82" respawnRandom="20" />	<!-- Gamlin -->
+	</spawn>
+	<spawn name="aden07_2519_05m1" zone="il_aden07_2519_05">
+		<npc id="20651" count="5" respawnDelay="82" respawnRandom="20" />	<!-- Gamlin -->
+	</spawn>
+	<spawn name="aden07_2519_06m1" zone="il_aden07_2519_06">
+		<npc id="20651" count="9" respawnDelay="82" respawnRandom="20" />	<!-- Gamlin -->
+	</spawn>
+	<spawn name="aden07_2519_07m1" zone="il_aden07_2519_07">
+		<npc id="20646" count="8" respawnDelay="82" respawnRandom="20" />	<!-- Halingka -->
+	</spawn>
+	<spawn name="aden07_2519_09m1" zone="il_aden07_2519_09">
+		<npc id="20646" count="8" respawnDelay="82" respawnRandom="20" />	<!-- Halingka -->
+	</spawn>
+	<spawn name="aden07_2519_10m1" zone="il_aden07_2519_10">
+		<npc id="20651" count="6" respawnDelay="82" respawnRandom="20" />	<!-- Gamlin -->
+	</spawn>
+	<spawn name="aden07_2519_11m1" zone="il_aden07_2519_11">
+		<npc id="20651" count="5" respawnDelay="82" respawnRandom="20" />	<!-- Gamlin -->
+	</spawn>
+	<spawn name="aden07_2519_12m1" zone="il_aden07_2519_12">
+		<npc id="20651" count="3" respawnDelay="82" respawnRandom="20" />	<!-- Gamlin -->
+	</spawn>
+	<spawn name="aden07_2519_13m1" zone="il_aden07_2519_13">
+		<npc id="20651" count="5" respawnDelay="82" respawnRandom="20" />	<!-- Gamlin -->
+	</spawn>
+	<spawn name="aden07_2519_14m1" zone="il_aden07_2519_14">
+		<npc id="20651" count="5" respawnDelay="82" respawnRandom="20" />	<!-- Gamlin -->
+	</spawn>
+	<spawn name="aden07_2519_18m1" zone="il_aden07_2519_18">
+		<npc id="20651" count="2" respawnDelay="82" respawnRandom="20" />	<!-- Gamlin -->
+	</spawn>
+	<spawn name="aden07_2519_19m1" zone="il_aden07_2519_19">
+		<npc id="20652" count="9" respawnDelay="82" respawnRandom="20" />	<!-- Leogul -->
+		<npc id="20654" count="9" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Soldier -->
+		<npc id="20656" count="9" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Scout -->
+	</spawn>
+	<spawn name="aden07_2519_20m1" zone="il_aden07_2519_20">
+		<npc id="20652" count="3" respawnDelay="82" respawnRandom="20" />	<!-- Leogul -->
+		<npc id="20654" count="2" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Soldier -->
+		<npc id="20656" count="3" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Scout -->
+	</spawn>
+	<spawn name="aden07_2519_21m1" zone="il_aden07_2519_21">
+		<npc id="20652" count="2" respawnDelay="82" respawnRandom="20" />	<!-- Leogul -->
+		<npc id="20654" count="3" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Soldier -->
+		<npc id="20656" count="3" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Scout -->
+	</spawn>
+	<spawn name="aden07_2519_22m1" zone="il_aden07_2519_22">
+		<npc id="20652" count="3" respawnDelay="82" respawnRandom="20" />	<!-- Leogul -->
+		<npc id="20654" count="4" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Soldier -->
+		<npc id="20656" count="4" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Scout -->
+	</spawn>
+	<spawn name="aden07_2519_23m1" zone="il_aden07_2519_23">
+		<npc id="20652" count="3" respawnDelay="82" respawnRandom="20" />	<!-- Leogul -->
+		<npc id="20654" count="4" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Soldier -->
+		<npc id="20656" count="4" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Scout -->
+	</spawn>
+	<spawn name="aden07_2519_24m1" zone="il_aden07_2519_24">
+		<npc id="20652" count="5" respawnDelay="82" respawnRandom="20" />	<!-- Leogul -->
+		<npc id="20654" count="5" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Soldier -->
+		<npc id="20656" count="5" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Scout -->
+	</spawn>
+	<spawn name="aden07_2519_25m1" zone="il_aden07_2519_25">
+		<npc id="20652" count="5" respawnDelay="82" respawnRandom="20" />	<!-- Leogul -->
+		<npc id="20654" count="5" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Soldier -->
+		<npc id="20656" count="5" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Scout -->
+	</spawn>
+	<spawn name="aden07_2519_26m1" zone="il_aden07_2519_26">
+		<npc id="20655" count="2" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Shooter -->
+		<npc id="20657" count="3" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Mage -->
+		<npc id="20658" count="3" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Elder -->
+	</spawn>
+	<spawn name="aden07_2519_27m1" zone="il_aden07_2519_27">
+		<npc id="20655" count="6" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Shooter -->
+		<npc id="20657" count="6" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Mage -->
+		<npc id="20658" count="6" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Elder -->
+	</spawn>
+	<spawn name="aden07_2519_28m1" zone="il_aden07_2519_28">
+		<npc id="20655" count="5" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Shooter -->
+		<npc id="20657" count="5" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Mage -->
+		<npc id="20658" count="5" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Elder -->
+	</spawn>
+	<spawn name="aden07_2519_29m1" zone="il_aden07_2519_29">
+		<npc id="20655" count="2" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Shooter -->
+		<npc id="20657" count="1" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Mage -->
+		<npc id="20658" count="2" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Elder -->
+	</spawn>
+	<spawn name="aden07_2519_30m1" zone="il_aden07_2519_30">
+		<npc id="20655" count="2" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Shooter -->
+		<npc id="20657" count="1" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Mage -->
+		<npc id="20658" count="2" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Elder -->
+	</spawn>
+	<spawn name="aden07_2519_31m1" zone="il_aden07_2519_31">
+		<npc id="20655" count="2" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Shooter -->
+		<npc id="20657" count="1" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Mage -->
+		<npc id="20658" count="2" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Elder -->
+	</spawn>
+	<spawn name="aden07_2519_32m1" zone="il_aden07_2519_32">
+		<npc id="20655" count="2" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Shooter -->
+		<npc id="20657" count="1" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Mage -->
+		<npc id="20658" count="2" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Elder -->
+	</spawn>
+	<spawn name="aden07_2519_33m1" zone="il_aden07_2519_33">
+		<npc id="20655" count="1" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Shooter -->
+		<npc id="20657" count="2" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Mage -->
+		<npc id="20658" count="2" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Elder -->
+	</spawn>
+	<spawn name="aden07_2519_34m1" zone="il_aden07_2519_34">
+		<npc id="20655" count="2" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Shooter -->
+		<npc id="20657" count="1" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Mage -->
+		<npc id="20658" count="2" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Elder -->
+	</spawn>
+	<spawn name="aden07_2519_35m1" zone="il_aden07_2519_35">
+		<npc id="20655" count="2" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Shooter -->
+		<npc id="20657" count="1" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Mage -->
+		<npc id="20658" count="2" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Elder -->
+	</spawn>
+	<spawn name="aden07_2519_36m1" zone="il_aden07_2519_36">
+		<npc id="20655" count="10" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Shooter -->
+		<npc id="20657" count="11" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Mage -->
+		<npc id="20658" count="10" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Elder -->
+	</spawn>
+	<spawn name="aden07_2519_39m1" zone="il_aden07_2519_39">
+		<npc id="20652" count="10" respawnDelay="82" respawnRandom="20" />	<!-- Leogul -->
+		<npc id="20654" count="10" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Soldier -->
+		<npc id="20656" count="10" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Scout -->
+	</spawn>
+	<spawn name="aden07_2519_40m1" zone="il_aden07_2519_40">
+		<npc id="20652" count="6" respawnDelay="82" respawnRandom="20" />	<!-- Leogul -->
+		<npc id="20654" count="6" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Soldier -->
+		<npc id="20656" count="6" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Scout -->
+	</spawn>
+	<spawn name="aden07_2519_41m1" zone="il_aden07_2519_41">
+		<npc id="20652" count="6" respawnDelay="82" respawnRandom="20" />	<!-- Leogul -->
+		<npc id="20654" count="6" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Soldier -->
+		<npc id="20656" count="6" respawnDelay="82" respawnRandom="20" />	<!-- Lesser Giant Scout -->
+	</spawn>
+	<spawn name="aden07_2519_p01m1" zone="il_aden07_2519_p01">
+		<npc id="21058" count="1" respawnDelay="150" respawnRandom="50" />	<!-- Beast Lord -->
+	</spawn>
+	<spawn name="aden07_2519_p02m1" zone="il_aden07_2519_p02">
+		<npc id="21058" count="1" respawnDelay="150" respawnRandom="50" />	<!-- Beast Lord -->
+	</spawn>
+	<spawn name="aden07_2519_p05m1" zone="il_aden07_2519_p05">
+		<npc id="21058" count="1" respawnDelay="150" respawnRandom="50" />	<!-- Beast Lord -->
+	</spawn>
+	<spawn name="aden07_2519_p06m1" zone="il_aden07_2519_p06">
+		<npc id="21058" count="1" respawnDelay="150" respawnRandom="50" />	<!-- Beast Lord -->
+	</spawn>
+	<spawn name="aden07_2519_p07m1" zone="il_aden07_2519_p07">
+		<npc id="21058" count="1" respawnDelay="150" respawnRandom="50" />	<!-- Beast Lord -->
+	</spawn>
+	<spawn name="aden07_2519_p09m1" zone="il_aden07_2519_p09">
+		<npc id="21058" count="1" respawnDelay="150" respawnRandom="50" />	<!-- Beast Lord -->
+	</spawn>
+	<spawn name="aden07_2519_p10m1" zone="il_aden07_2519_p10">
+		<npc id="21058" count="1" respawnDelay="150" respawnRandom="50" />	<!-- Beast Lord -->
+	</spawn>
+	<spawn name="aden07_2519_p11m1" zone="il_aden07_2519_p11">
+		<npc id="21058" count="1" respawnDelay="150" respawnRandom="50" />	<!-- Beast Lord -->
+	</spawn>
+	<spawn name="aden07_2519_p13m1" zone="il_aden07_2519_p13">
+		<npc id="21058" count="1" respawnDelay="150" respawnRandom="50" />	<!-- Beast Lord -->
+	</spawn>
+	<spawn name="aden07_2519_p14m1" zone="il_aden07_2519_p14">
+		<npc id="21058" count="1" respawnDelay="150" respawnRandom="50" />	<!-- Beast Lord -->
+	</spawn>
+	<spawn name="aden07_2519_p23m1" zone="il_aden07_2519_p23">
+		<npc id="20771" count="1" respawnDelay="150" respawnRandom="50" />	<!-- Barif -->
+	</spawn>
+	<spawn name="aden07_2519_p24m1" zone="il_aden07_2519_p24">
+		<npc id="20771" count="1" respawnDelay="150" respawnRandom="50" />	<!-- Barif -->
+	</spawn>
+	<spawn name="aden07_2519_p27m1" zone="il_aden07_2519_p27">
+		<npc id="20771" count="1" respawnDelay="150" respawnRandom="50" />	<!-- Barif -->
+	</spawn>
+	<spawn name="aden07_2519_p28m1" zone="il_aden07_2519_p28">
+		<npc id="20771" count="1" respawnDelay="150" respawnRandom="50" />	<!-- Barif -->
+	</spawn>
+	<spawn name="aden07_2519_p36m1" zone="il_aden07_2519_p36">
+		<npc id="20771" count="3" respawnDelay="150" respawnRandom="50" />	<!-- Barif -->
+	</spawn>
+	<spawn name="aden07_2519_p38m1" zone="il_aden07_2519_p38">
+		<npc id="20771" count="3" respawnDelay="150" respawnRandom="50" />	<!-- Barif -->
+	</spawn>
+	<spawn name="aden07_2519_p39m1" zone="il_aden07_2519_p39">
+		<npc id="20771" count="3" respawnDelay="150" respawnRandom="50" />	<!-- Barif -->
+	</spawn>
+	<spawn name="aden07_2519_p40m1" zone="il_aden07_2519_p40">
+		<npc id="20771" count="1" respawnDelay="150" respawnRandom="50" />	<!-- Barif -->
+	</spawn>
+	<spawn name="aden07_2519_p41m1" zone="il_aden07_2519_p41">
+		<npc id="20771" count="1" respawnDelay="150" respawnRandom="50" />	<!-- Barif -->
+	</spawn>
+	<spawn name="aden22_2519_11m1" zone="il_aden22_2519_11">
+		<npc id="21258" count="1" respawnDelay="27" />	<!-- Fallen Orc Shaman -->
+	</spawn>
+	<spawn name="aden22_2519_12m1" zone="il_aden22_2519_12">
+		<npc id="21258" count="1" respawnDelay="27" />	<!-- Fallen Orc Shaman -->
+	</spawn>
+	<spawn name="aden22_2519_14m1" zone="il_aden22_2519_14">
+		<npc id="21258" count="1" respawnDelay="27" />	<!-- Fallen Orc Shaman -->
+	</spawn>
+	<spawn name="aden22_2519_16m1" zone="il_aden22_2519_16">
+		<npc id="21258" count="1" respawnDelay="27" />	<!-- Fallen Orc Shaman -->
+	</spawn>
+	<spawn name="aden22_2519_20m1" zone="il_aden22_2519_20">
+		<npc id="21258" count="1" respawnDelay="27" />	<!-- Fallen Orc Shaman -->
+	</spawn>
+	<spawn name="aden22_2519_21m1" zone="il_aden22_2519_21">
+		<npc id="21258" count="2" respawnDelay="27" />	<!-- Fallen Orc Shaman -->
+	</spawn>
+	<spawn name="aden22_2519_23m1" zone="il_aden22_2519_23">
+		<npc id="21258" count="1" respawnDelay="27" />	<!-- Fallen Orc Shaman -->
+	</spawn>
+	<spawn name="aden22_2519_25m1" zone="il_aden22_2519_25">
+		<npc id="21258" count="2" respawnDelay="27" />	<!-- Fallen Orc Shaman -->
+	</spawn>
+</list>
