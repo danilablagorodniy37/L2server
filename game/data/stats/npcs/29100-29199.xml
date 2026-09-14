@@ -668,15 +668,6 @@
 					<item id="6712" min="36" max="108" chance="4.2999" /> <!-- Sealed Major Arcana Gloves fabric -->
 					<item id="6713" min="4" max="10" chance="44.2269" /> <!-- Sealed Major Arcana Boots Design -->
 				</group>
-				<group chance="2.3326001167297363">
-					<item id="9458" min="1" max="1" chance="14.2857" /> <!-- Dynasty Earrings - Stun Resistance -->
-					<item id="9461" min="1" max="1" chance="14.2857" /> <!-- Dynasty Earrings - Poison Resistance -->
-					<item id="9464" min="1" max="1" chance="14.2857" /> <!-- Dynasty Earrings - Bleed Resistance -->
-					<item id="9467" min="1" max="1" chance="14.2857" /> <!-- Dynasty Earrings - Sleep Resistance -->
-					<item id="9470" min="1" max="1" chance="14.2857" /> <!-- Dynasty Earrings - Paralysis Resistance -->
-					<item id="9473" min="1" max="1" chance="14.2857" /> <!-- Dynasty Earrings - Hold Resistance -->
-					<item id="9476" min="1" max="1" chance="14.2858" /> <!-- Dynasty Earrings - Fear Resistance -->
-				</group>
 				<group chance="4.107600212097168">
 					<item id="6577" min="1" max="1" chance="13.0435" /> <!-- Blessed Scroll: Enchant Weapon (S-Grade) -->
 					<item id="6578" min="1" max="1" chance="86.9565" /> <!-- Blessed Scroll: Enchant Armor (S-Grade) -->
@@ -731,9 +722,6 @@
 					<item id="6710" min="11" max="31" chance="40.884" /> <!-- Sealed Draconic Leather Helmet Pattern -->
 					<item id="6714" min="16" max="48" chance="26.8301" /> <!-- Sealed Major Arcana Circlet Pattern -->
 				</group>
-				<group chance="8.449700355529785">
-					<item id="10170" min="1" max="1" chance="100" /> <!-- Baylor's Earring -->
-				</group>
 				<group chance="8.215100288391113">
 					<item id="6577" min="1" max="1" chance="13.0435" /> <!-- Blessed Scroll: Enchant Weapon (S-Grade) -->
 					<item id="6578" min="1" max="1" chance="86.9565" /> <!-- Blessed Scroll: Enchant Armor (S-Grade) -->
@@ -785,47 +773,6 @@
 				<clan>BERES</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<item id="13893" min="1" max="1" chance="40" /> <!-- Sealed Holy Spirit's Cloak -->
-				<item id="10552" min="1" max="1" chance="20" /> <!-- Forgotten Scroll - Fighter's Will -->
-				<item id="10553" min="1" max="1" chance="20" /> <!-- Forgotten Scroll - Archer's Will -->
-				<item id="14219" min="1" max="1" chance="20" /> <!-- Forgotten Scroll - Magician's Will -->
-				<group chance="100">
-					<item id="13457" min="1" max="1" chance="3.77" /> <!-- Vesper Cutter -->
-					<item id="13458" min="1" max="1" chance="3.76" /> <!-- Vesper Slasher -->
-					<item id="13459" min="1" max="1" chance="3.76" /> <!-- Vesper Buster -->
-					<item id="13460" min="1" max="1" chance="3.77" /> <!-- Vesper Shaper -->
-					<item id="13461" min="1" max="1" chance="3.77" /> <!-- Vesper Fighter -->
-					<item id="13462" min="1" max="1" chance="3.76" /> <!-- Vesper Stormer -->
-					<item id="13463" min="1" max="1" chance="3.77" /> <!-- Vesper Avenger -->
-					<item id="13464" min="1" max="1" chance="3.76" /> <!-- Vesper Retributer -->
-					<item id="13465" min="1" max="1" chance="3.76" /> <!-- Vesper Caster -->
-					<item id="13467" min="1" max="1" chance="3.76" /> <!-- Vesper Thrower -->
-					<item id="13466" min="1" max="1" chance="3.76" /> <!-- Vesper Singer -->
-					<item id="10215" min="1" max="1" chance="6.52" /> <!-- Icarus Sawsword -->
-					<item id="10216" min="1" max="1" chance="6.51" /> <!-- Icarus Disperser -->
-					<item id="10217" min="1" max="1" chance="6.51" /> <!-- Icarus Spirit -->
-					<item id="10218" min="1" max="1" chance="6.51" /> <!-- Icarus Heavy Arms -->
-					<item id="10219" min="1" max="1" chance="6.51" /> <!-- Icarus Trident -->
-					<item id="10220" min="1" max="1" chance="6.51" /> <!-- Icarus Hammer -->
-					<item id="10221" min="1" max="1" chance="6.51" /> <!-- Icarus Hand -->
-					<item id="10222" min="1" max="1" chance="6.51" /> <!-- Icarus Hall -->
-					<item id="10223" min="1" max="1" chance="6.51" /> <!-- Icarus Spitter -->
-				</group>
-				<group chance="50.0">
-					<item id="10215" min="1" max="1" chance="11.2" /> <!-- Icarus Sawsword -->
-					<item id="10216" min="1" max="1" chance="11.1" /> <!-- Icarus Disperser -->
-					<item id="10217" min="1" max="1" chance="11.1" /> <!-- Icarus Spirit -->
-					<item id="10218" min="1" max="1" chance="11.1" /> <!-- Icarus Heavy Arms -->
-					<item id="10219" min="1" max="1" chance="11.1" /> <!-- Icarus Trident -->
-					<item id="10220" min="1" max="1" chance="11.1" /> <!-- Icarus Hammer -->
-					<item id="10221" min="1" max="1" chance="11.1" /> <!-- Icarus Hand -->
-					<item id="10222" min="1" max="1" chance="11.1" /> <!-- Icarus Hall -->
-					<item id="10223" min="1" max="1" chance="11.1" /> <!-- Icarus Spitter -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="15" />
 			<height normal="30" />
@@ -2354,55 +2301,6 @@
 				<clan>ACEED</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<item id="14160" min="1" max="1" chance="35" /> <!-- Sealed Vesper Earring -->
-				<item id="14161" min="1" max="1" chance="30" /> <!-- Sealed Vesper Necklace -->
-				<item id="14162" min="1" max="1" chance="35" /> <!-- Sealed Vesper Ring -->
-				<group chance="100">
-					<item id="13143" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Helmet -->
-					<item id="13144" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Leather Helmet -->
-					<item id="13145" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Circlet -->
-					<item id="13887" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Sigil -->
-					<item id="14105" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Breastplate -->
-					<item id="14106" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Leather Breastplate -->
-					<item id="14107" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Tunic -->
-					<item id="14108" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Gaiters -->
-					<item id="14109" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Gauntlet -->
-					<item id="14110" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Boots -->
-					<item id="14111" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Shield -->
-					<item id="14112" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Leather Leggings -->
-					<item id="14113" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Leather Gloves -->
-					<item id="14114" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Leather Boots -->
-					<item id="14115" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Stockings -->
-					<item id="14116" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Gloves -->
-					<item id="14117" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Shoes -->
-					<item id="13146" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Noble Helmet -->
-					<item id="13147" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Noble Leather Helmet -->
-					<item id="13148" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Noble Circlet -->
-					<item id="13886" min="1" max="1" chance="2.94" /> <!-- Sealed Dynasty Sigil -->
-					<item id="17006" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Noble Breastplate -->
-					<item id="17007" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Noble Leather Breastplate -->
-					<item id="17008" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Noble Tunic -->
-					<item id="17009" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Noble Gaiters -->
-					<item id="17010" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Noble Gauntlet -->
-					<item id="17011" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Noble Boots -->
-					<item id="9529" min="1" max="1" chance="2.94" /> <!-- Sealed Dynasty Shield -->
-					<item id="17012" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Noble Leather Leggings -->
-					<item id="17013" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Noble Leather Gloves -->
-					<item id="17014" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Noble Leather Boots -->
-					<item id="17015" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Noble Stockings -->
-					<item id="17016" min="1" max="1" chance="2.94" /> <!-- Sealed Vesper Noble Gloves -->
-					<item id="17017" min="1" max="1" chance="2.98" /> <!-- Sealed Vesper Noble Shoes -->
-				</group>
-				<group chance="100.0">
-					<item id="13893" min="1" max="1" chance="10" /> <!-- Sealed Holy Spirit's Cloak -->
-					<item id="10552" min="1" max="1" chance="30" /> <!-- Forgotten Scroll - Fighter's Will -->
-					<item id="10553" min="1" max="1" chance="30" /> <!-- Forgotten Scroll - Archer's Will -->
-					<item id="14219" min="1" max="1" chance="30" /> <!-- Forgotten Scroll - Magician's Will -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="25" />
 			<height normal="70" />
@@ -2912,39 +2810,6 @@
 				<clan>DES_DRAGON</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<item id="13893" min="1" max="1" chance="20" /> <!-- Sealed Holy Spirit's Cloak -->
-				<item id="10550" min="1" max="1" chance="40" /> <!-- Forgotten Scroll - Protection of Elemental -->
-				<item id="10552" min="1" max="1" chance="40" /> <!-- Forgotten Scroll - Fighter's Will -->
-				<group chance="100">
-					<item id="13457" min="1" max="1" chance="3.77" /> <!-- Vesper Cutter -->
-					<item id="13458" min="1" max="1" chance="3.76" /> <!-- Vesper Slasher -->
-					<item id="13459" min="1" max="1" chance="3.76" /> <!-- Vesper Buster -->
-					<item id="13460" min="1" max="1" chance="3.77" /> <!-- Vesper Shaper -->
-					<item id="13461" min="1" max="1" chance="3.77" /> <!-- Vesper Fighter -->
-					<item id="13462" min="1" max="1" chance="3.76" /> <!-- Vesper Stormer -->
-					<item id="13463" min="1" max="1" chance="3.77" /> <!-- Vesper Avenger -->
-					<item id="13464" min="1" max="1" chance="3.76" /> <!-- Vesper Retributer -->
-					<item id="13465" min="1" max="1" chance="3.76" /> <!-- Vesper Caster -->
-					<item id="13467" min="1" max="1" chance="3.76" /> <!-- Vesper Thrower -->
-					<item id="13466" min="1" max="1" chance="3.76" /> <!-- Vesper Singer -->
-					<item id="10215" min="1" max="1" chance="6.52" /> <!-- Icarus Sawsword -->
-					<item id="10216" min="1" max="1" chance="6.51" /> <!-- Icarus Disperser -->
-					<item id="10217" min="1" max="1" chance="6.51" /> <!-- Icarus Spirit -->
-					<item id="10218" min="1" max="1" chance="6.51" /> <!-- Icarus Heavy Arms -->
-					<item id="10219" min="1" max="1" chance="6.51" /> <!-- Icarus Trident -->
-					<item id="10220" min="1" max="1" chance="6.51" /> <!-- Icarus Hammer -->
-					<item id="10221" min="1" max="1" chance="6.51" /> <!-- Icarus Hand -->
-					<item id="10222" min="1" max="1" chance="6.51" /> <!-- Icarus Hall -->
-					<item id="10223" min="1" max="1" chance="6.51" /> <!-- Icarus Spitter -->
-				</group>
-				<group chance="100.0">
-					<item id="10553" min="1" max="1" chance="50" /> <!-- Forgotten Scroll - Archer's Will -->
-					<item id="14219" min="1" max="1" chance="50" /> <!-- Forgotten Scroll - Magician's Will -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="55" grown="66" />
 			<height normal="104" grown="124.8" />
@@ -3607,80 +3472,9 @@
 		</ai>
 		<dropLists>
 			<death>
-				<group chance="15">
-					<item id="15560" min="1" max="1" chance="9.1" /> <!-- Vigwik Axe -->
-					<item id="15561" min="1" max="1" chance="9.09" /> <!-- Devilish Maul -->
-					<item id="15562" min="1" max="1" chance="9.09" /> <!-- Feather Eye Blade -->
-					<item id="15563" min="1" max="1" chance="9.09" /> <!-- Octo Claw -->
-					<item id="15564" min="1" max="1" chance="9.09" /> <!-- Doubletop Spear -->
-					<item id="15565" min="1" max="1" chance="9.09" /> <!-- Rising Star -->
-					<item id="15566" min="1" max="1" chance="9.09" /> <!-- Black Visage -->
-					<item id="15567" min="1" max="1" chance="9.09" /> <!-- Veniplant Sword -->
-					<item id="15568" min="1" max="1" chance="9.09" /> <!-- Skull Carnium Bow -->
-					<item id="15558" min="1" max="1" chance="9.09" /> <!-- Periel Sword -->
-					<item id="15559" min="1" max="1" chance="9.09" /> <!-- Skull Edge -->
-				</group>
-				<group chance="50">
-					<item id="13143" min="1" max="1" chance="9.1" /> <!-- Sealed Vesper Helmet -->
-					<item id="13144" min="1" max="1" chance="9.09" /> <!-- Sealed Vesper Leather Helmet -->
-					<item id="13145" min="1" max="1" chance="9.09" /> <!-- Sealed Vesper Circlet -->
-					<item id="14109" min="1" max="1" chance="9.09" /> <!-- Sealed Vesper Gauntlet -->
-					<item id="14113" min="1" max="1" chance="9.09" /> <!-- Sealed Vesper Leather Gloves -->
-					<item id="14116" min="1" max="1" chance="9.09" /> <!-- Sealed Vesper Gloves -->
-					<item id="14110" min="1" max="1" chance="9.09" /> <!-- Sealed Vesper Boots -->
-					<item id="14114" min="1" max="1" chance="9.09" /> <!-- Sealed Vesper Leather Boots -->
-					<item id="14117" min="1" max="1" chance="9.09" /> <!-- Sealed Vesper Shoes -->
-					<item id="14111" min="1" max="1" chance="9.09" /> <!-- Sealed Vesper Shield -->
-					<item id="13887" min="1" max="1" chance="9.09" /> <!-- Sealed Vesper Sigil -->
-				</group>
-				<group chance="50">
-					<item id="14105" min="1" max="1" chance="16.7" /> <!-- Sealed Vesper Breastplate -->
-					<item id="14106" min="1" max="1" chance="16.66" /> <!-- Sealed Vesper Leather Breastplate -->
-					<item id="14107" min="1" max="1" chance="16.66" /> <!-- Sealed Vesper Tunic -->
-					<item id="14108" min="1" max="1" chance="16.66" /> <!-- Sealed Vesper Gaiters -->
-					<item id="14112" min="1" max="1" chance="16.66" /> <!-- Sealed Vesper Leather Leggings -->
-					<item id="14115" min="1" max="1" chance="16.66" /> <!-- Sealed Vesper Stockings -->
-				</group>
-				<group chance="50">
-					<item id="14162" min="1" max="1" chance="33.4" /> <!-- Sealed Vesper Ring -->
-					<item id="14160" min="1" max="1" chance="33.3" /> <!-- Sealed Vesper Earring -->
-					<item id="14161" min="1" max="1" chance="33.3" /> <!-- Sealed Vesper Necklace -->
-				</group>
 				<group chance="4.1076">
 					<item id="6577" min="1" max="1" chance="13.0435" /> <!-- Blessed Scroll: Enchant Weapon (S-Grade) -->
 					<item id="6578" min="1" max="1" chance="86.9565" /> <!-- Blessed Scroll: Enchant Armor (S-Grade) -->
-				</group>
-				<group chance="100">
-					<item id="16164" min="2" max="4" chance="60" /> <!-- Life Stone - Level 86 -->
-					<item id="16165" min="2" max="4" chance="40" /> <!-- Mid-Grade Life Stone - Level 86 -->
-				</group>
-				<group chance="25">
-					<item id="16025" min="1" max="1" chance="100" /> <!-- Necklace of Freya -->
-				</group>
-				<group chance="2.8">
-					<item id="21894" min="1" max="1" chance="50" /> <!-- Ice Queen's Tiara -->
-					<item id="21714" min="1" max="1" chance="50" /> <!-- Sealed Cloak of Freya -->
-				</group>
-				<group chance="55.241">
-					<item id="14189" min="1" max="1" chance="5.5701" /> <!-- Forgotten Scroll - Hurricane Armor -->
-					<item id="14202" min="1" max="1" chance="5.3457" /> <!-- Forgotten Scroll - Maximum Sonic Focus -->
-					<item id="14194" min="1" max="1" chance="5.342" /> <!-- Forgotten Scroll - Blessing of Eva -->
-					<item id="14190" min="1" max="1" chance="5.3077" /> <!-- Forgotten Scroll - Vampiric Mist -->
-					<item id="14198" min="1" max="1" chance="5.3022" /> <!-- Forgotten Scroll - Song of Purification -->
-					<item id="14206" min="1" max="1" chance="5.295" /> <!-- Forgotten Scroll - Spirit of the Phantom -->
-					<item id="14197" min="1" max="1" chance="5.2805" /> <!-- Forgotten Scroll - Seal of Limit -->
-					<item id="14199" min="1" max="1" chance="5.2733" /> <!-- Forgotten Scroll - Dance of Berserker -->
-					<item id="14195" min="1" max="1" chance="5.2696" /> <!-- Forgotten Scroll - Lord of Vampire -->
-					<item id="14204" min="1" max="1" chance="5.2515" /> <!-- Forgotten Scroll - Spirit of the Cat -->
-					<item id="14200" min="1" max="1" chance="5.2443" /> <!-- Forgotten Scroll - Summon Imperial Phoenix -->
-					<item id="14227" min="1" max="1" chance="5.2298" /> <!-- Forgotten Scroll - Great Fury -->
-					<item id="14201" min="1" max="1" chance="5.2244" /> <!-- Forgotten Scroll - Maximum Force Focus -->
-					<item id="14222" min="1" max="1" chance="5.2081" /> <!-- This Forgotten Scroll can be used by Fortune Seekers level 83 and above to learn Lucky Strike. -->
-					<item id="14225" min="1" max="1" chance="5.1954" /> <!-- Forgotten Scroll - Counter Critical -->
-					<item id="14226" min="1" max="1" chance="5.1936" /> <!-- Forgotten Scroll - Onslaught of Pa'agrio -->
-					<item id="14223" min="1" max="1" chance="5.1791" /> <!-- This Forgotten Scroll can be used by Doombringers level 83 and above to learn Eye for Eye. -->
-					<item id="14193" min="1" max="1" chance="5.161" /> <!-- Forgotten Scroll - Sublime Self Sacrifice -->
-					<item id="14205" min="1" max="1" chance="5.1266" /> <!-- Forgotten Scroll - Spirit of the Unicorn -->
 				</group>
 			</death>
 		</dropLists>
@@ -3730,54 +3524,9 @@
 		</ai>
 		<dropLists>
 			<death>
-				<group chance="30">
-					<item id="15560" min="1" max="1" chance="9.1" /> <!-- Vigwik Axe -->
-					<item id="15561" min="1" max="1" chance="9.09" /> <!-- Devilish Maul -->
-					<item id="15562" min="1" max="1" chance="9.09" /> <!-- Feather Eye Blade -->
-					<item id="15563" min="1" max="1" chance="9.09" /> <!-- Octo Claw -->
-					<item id="15564" min="1" max="1" chance="9.09" /> <!-- Doubletop Spear -->
-					<item id="15565" min="1" max="1" chance="9.09" /> <!-- Rising Star -->
-					<item id="15566" min="1" max="1" chance="9.09" /> <!-- Black Visage -->
-					<item id="15567" min="1" max="1" chance="9.09" /> <!-- Veniplant Sword -->
-					<item id="15568" min="1" max="1" chance="9.09" /> <!-- Skull Carnium Bow -->
-					<item id="15558" min="1" max="1" chance="9.09" /> <!-- Periel Sword -->
-					<item id="15559" min="1" max="1" chance="9.09" /> <!-- Skull Edge -->
-				</group>
-				<group chance="50">
-					<item id="15726" min="1" max="1" chance="9.1" /> <!-- Sealed Elegia Helmet -->
-					<item id="15727" min="1" max="1" chance="9.09" /> <!-- Sealed Elegia Leather Helmet -->
-					<item id="15728" min="1" max="1" chance="9.09" /> <!-- Sealed Elegia Circlet -->
-					<item id="15735" min="1" max="1" chance="9.09" /> <!-- Sealed Elegia Gauntlet -->
-					<item id="15736" min="1" max="1" chance="9.09" /> <!-- Sealed Elegia Leather Gloves -->
-					<item id="15737" min="1" max="1" chance="9.09" /> <!-- Sealed Elegia Gloves -->
-					<item id="15738" min="1" max="1" chance="9.09" /> <!-- Sealed Elegia Boots -->
-					<item id="15739" min="1" max="1" chance="9.09" /> <!-- Sealed Elegia Leather Boots -->
-					<item id="15740" min="1" max="1" chance="9.09" /> <!-- Sealed Elegia Shoes -->
-					<item id="15741" min="1" max="1" chance="9.09" /> <!-- Sealed Elegia Shield -->
-					<item id="15742" min="1" max="1" chance="9.09" /> <!-- Sealed Elegia Sigil -->
-				</group>
-				<group chance="50">
-					<item id="15729" min="1" max="1" chance="16.7" /> <!-- Sealed Elegia Breastplate -->
-					<item id="15730" min="1" max="1" chance="16.66" /> <!-- Sealed Elegia Leather Breastplate -->
-					<item id="15731" min="1" max="1" chance="16.66" /> <!-- Sealed Elegia Tunic -->
-					<item id="15732" min="1" max="1" chance="16.66" /> <!-- Sealed Elegia Gaiter -->
-					<item id="15733" min="1" max="1" chance="16.66" /> <!-- Sealed Elegia Leather Legging -->
-					<item id="15734" min="1" max="1" chance="16.66" /> <!-- Sealed Elegia Stockings -->
-				</group>
-				<group chance="50">
-					<item id="15760" min="1" max="1" chance="33.4" /> <!-- Sealed Elegia Ring -->
-					<item id="15761" min="1" max="1" chance="33.3" /> <!-- Sealed Elegia Earring -->
-					<item id="15762" min="1" max="1" chance="33.3" /> <!-- Sealed Elegia Necklace -->
-				</group>
 				<group chance="4.107600212097168">
 					<item id="6577" min="1" max="1" chance="13.0435" /> <!-- Blessed Scroll: Enchant Weapon (S-Grade) -->
 					<item id="6578" min="1" max="1" chance="86.9565" /> <!-- Blessed Scroll: Enchant Armor (S-Grade) -->
-				</group>
-				<group chance="30">
-					<item id="16026" min="1" max="1" chance="100" /> <!-- Blessed Necklace of Freya -->
-				</group>
-				<group chance="50">
-					<item id="16027" min="1" max="1" chance="100" /> <!-- Bottle of Freya's Soul -->
 				</group>
 			</death>
 		</dropLists>
@@ -3823,49 +3572,6 @@
 		<ai aggroRange="1000" clanHelpRange="300" isAggressive="false" />
 		<dropLists>
 			<death>
-				<group chance="30">
-					<item id="13143" min="1" max="1" chance="5.92" /> <!-- Sealed Vesper Helmet -->
-					<item id="13144" min="1" max="1" chance="5.88" /> <!-- Sealed Vesper Leather Helmet -->
-					<item id="13145" min="1" max="1" chance="5.88" /> <!-- Sealed Vesper Circlet -->
-					<item id="14109" min="1" max="1" chance="5.88" /> <!-- Sealed Vesper Gauntlet -->
-					<item id="14113" min="1" max="1" chance="5.88" /> <!-- Sealed Vesper Leather Gloves -->
-					<item id="14116" min="1" max="1" chance="5.88" /> <!-- Sealed Vesper Gloves -->
-					<item id="14110" min="1" max="1" chance="5.88" /> <!-- Sealed Vesper Boots -->
-					<item id="14114" min="1" max="1" chance="5.88" /> <!-- Sealed Vesper Leather Boots -->
-					<item id="14117" min="1" max="1" chance="5.88" /> <!-- Sealed Vesper Shoes -->
-					<item id="14111" min="1" max="1" chance="5.88" /> <!-- Sealed Vesper Shield -->
-					<item id="13887" min="1" max="1" chance="5.88" /> <!-- Sealed Vesper Sigil -->
-					<item id="14105" min="1" max="1" chance="5.88" /> <!-- Sealed Vesper Breastplate -->
-					<item id="14106" min="1" max="1" chance="5.88" /> <!-- Sealed Vesper Leather Breastplate -->
-					<item id="14107" min="1" max="1" chance="5.88" /> <!-- Sealed Vesper Tunic -->
-					<item id="14108" min="1" max="1" chance="5.88" /> <!-- Sealed Vesper Gaiters -->
-					<item id="14112" min="1" max="1" chance="5.88" /> <!-- Sealed Vesper Leather Leggings -->
-					<item id="14115" min="1" max="1" chance="5.88" /> <!-- Sealed Vesper Stockings -->
-				</group>
-				<group chance="70">
-					<item id="15694" min="1" max="1" chance="5.92" /> <!-- Sealed Moirai Helmet -->
-					<item id="15695" min="1" max="1" chance="5.88" /> <!-- Sealed Moirai Leather Helmet -->
-					<item id="15696" min="1" max="1" chance="5.88" /> <!-- Sealed Moirai Circlet -->
-					<item id="15703" min="1" max="1" chance="5.88" /> <!-- Sealed Moirai Gauntlet -->
-					<item id="15704" min="1" max="1" chance="5.88" /> <!-- Sealed Moirai Leather Gloves -->
-					<item id="15705" min="1" max="1" chance="5.88" /> <!-- Sealed Moirai Gloves -->
-					<item id="15706" min="1" max="1" chance="5.88" /> <!-- Sealed Moirai Boots -->
-					<item id="15707" min="1" max="1" chance="5.88" /> <!-- Sealed Moirai Leather Boots -->
-					<item id="15708" min="1" max="1" chance="5.88" /> <!-- Sealed Moirai Shoes -->
-					<item id="15710" min="1" max="1" chance="5.88" /> <!-- Sealed Moirai Shield -->
-					<item id="15709" min="1" max="1" chance="5.88" /> <!-- Sealed Moirai Sigil -->
-					<item id="15697" min="1" max="1" chance="5.88" /> <!-- Sealed Moirai Breastplate -->
-					<item id="15698" min="1" max="1" chance="5.88" /> <!-- Sealed Moirai Leather Breastplate -->
-					<item id="15699" min="1" max="1" chance="5.88" /> <!-- Sealed Moirai Tunic -->
-					<item id="15700" min="1" max="1" chance="5.88" /> <!-- Sealed Moirai Gaiter -->
-					<item id="15701" min="1" max="1" chance="5.88" /> <!-- Sealed Moirai Leather Legging -->
-					<item id="15702" min="1" max="1" chance="5.88" /> <!-- Sealed Moirai Stockings -->
-				</group>
-				<group chance="50">
-					<item id="14162" min="1" max="1" chance="33.4" /> <!-- Sealed Vesper Ring -->
-					<item id="14160" min="1" max="1" chance="33.3" /> <!-- Sealed Vesper Earring -->
-					<item id="14161" min="1" max="1" chance="33.3" /> <!-- Sealed Vesper Necklace -->
-				</group>
 				<group chance="100">
 					<item id="1538" min="1" max="30" chance="100" /> <!-- Blessed Scroll of Escape -->
 				</group>
@@ -3874,42 +3580,6 @@
 				</group>
 				<group chance="100">
 					<item id="57" min="9000000" max="1100000" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="100">
-					<item id="16162" min="2" max="4" chance="60" /> <!-- High-Grade Life Stone - Level 85 -->
-					<item id="16166" min="2" max="4" chance="40" /> <!-- High-Grade Life Stone - Level 86 -->
-				</group>
-				<group chance="0.09">
-					<item id="21712" min="1" max="1" chance="100" /> <!-- Blessed Earring of Zaken -->
-				</group>
-				<group chance="0.1">
-					<item id="21935" min="1" max="1" chance="100" /> <!-- Butcher Blades -->
-				</group>
-				<group chance="2.893">
-					<item id="21713" min="1" max="1" chance="100" /> <!-- Sealed Cloak of Zaken -->
-				</group>
-				<group chance="3">
-					<item id="21892" min="1" max="1" chance="100" /> <!-- Pirate King Hat -->
-				</group>
-				<group chance="52.264">
-					<item id="14170" min="1" max="1" chance="5.7764" /> <!-- Forgotten Scroll - Seed of Revenge -->
-					<item id="14177" min="1" max="1" chance="5.6387" /> <!-- Forgotten Scroll - Ghost Walking -->
-					<item id="14181" min="1" max="1" chance="5.6195" /> <!-- Forgotten Scroll - Dread Pool -->
-					<item id="14179" min="1" max="1" chance="5.6081" /> <!-- Forgotten Scroll - Arrow Rain -->
-					<item id="14175" min="1" max="1" chance="5.6081" /> <!-- Forgotten Scroll - Exciting Adventure -->
-					<item id="14176" min="1" max="1" chance="5.6042" /> <!-- Forgotten Scroll - Wind Riding -->
-					<item id="14182" min="1" max="1" chance="5.6042" /> <!-- Forgotten Scroll - Force of Destruction -->
-					<item id="14178" min="1" max="1" chance="5.587" /> <!-- Forgotten Scroll - Flame Hawk -->
-					<item id="14173" min="1" max="1" chance="5.5851" /> <!-- Forgotten Scroll - Eva's Will / Touch of Eva -->
-					<item id="14174" min="1" max="1" chance="5.5813" /> <!-- Forgotten Scroll - Pain of Shillien -->
-					<item id="14172" min="1" max="1" chance="5.5641" /> <!-- Forgotten Scroll - Spirit of Phoenix -->
-					<item id="14184" min="1" max="1" chance="5.5354" /> <!-- Forgotten Scroll - Golem Armor -->
-					<item id="14183" min="1" max="1" chance="5.5143" /> <!-- Forgotten Scroll - Demolition Impact -->
-					<item id="14186" min="1" max="1" chance="5.4741" /> <!-- Forgotten Scroll - Lightning Shock -->
-					<item id="14187" min="1" max="1" chance="5.4359" /> <!-- Forgotten Scroll - Flame Armor -->
-					<item id="14188" min="1" max="1" chance="5.4263" /> <!-- Forgotten Scroll - Frost Armor -->
-					<item id="14185" min="1" max="1" chance="5.4244" /> <!-- Forgotten Scroll - Wild Shot -->
-					<item id="14171" min="1" max="1" chance="5.4129" /> <!-- Forgotten Scroll - Hell Scream -->
 				</group>
 			</death>
 		</dropLists>
@@ -4150,20 +3820,6 @@
 		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
 		<dropLists>
 			<death>
-				<group chance="100">
-					<item id="13143" min="1" max="1" chance="8.37" /> <!-- Sealed Vesper Helmet -->
-					<item id="13144" min="1" max="1" chance="8.33" /> <!-- Sealed Vesper Leather Helmet -->
-					<item id="13145" min="1" max="1" chance="8.33" /> <!-- Sealed Vesper Circlet -->
-					<item id="14109" min="1" max="1" chance="8.33" /> <!-- Sealed Vesper Gauntlet -->
-					<item id="14113" min="1" max="1" chance="8.33" /> <!-- Sealed Vesper Leather Gloves -->
-					<item id="14116" min="1" max="1" chance="8.33" /> <!-- Sealed Vesper Gloves -->
-					<item id="14110" min="1" max="1" chance="8.33" /> <!-- Sealed Vesper Boots -->
-					<item id="14114" min="1" max="1" chance="8.33" /> <!-- Sealed Vesper Leather Boots -->
-					<item id="14117" min="1" max="1" chance="8.33" /> <!-- Sealed Vesper Shoes -->
-					<item id="14111" min="1" max="1" chance="8.33" /> <!-- Sealed Vesper Shield -->
-					<item id="13887" min="1" max="1" chance="8.33" /> <!-- Sealed Vesper Sigil -->
-					<item id="10170" min="1" max="1" chance="8.33" /> <!-- Baylor's Earring -->
-				</group>
 				<group chance="4.107600212097168">
 					<item id="6577" min="1" max="1" chance="13.0435" /> <!-- Blessed Scroll: Enchant Weapon (S-Grade) -->
 					<item id="6578" min="1" max="1" chance="86.9565" /> <!-- Blessed Scroll: Enchant Armor (S-Grade) -->

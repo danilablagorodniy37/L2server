@@ -1432,14 +1432,6 @@
 		</skillList>
 		<exCrtEffect>false</exCrtEffect>
 		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" />
-		<dropLists>
-			<death>
-				<group chance="100.0">
-					<item id="10432" min="1" max="1" chance="50" /> <!-- Kertin's Herb of Life -->
-					<item id="10433" min="1" max="1" chance="50" /> <!-- Kertin's Herb of Mana -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="8.5" />
 			<height normal="8.5" />
@@ -1476,14 +1468,6 @@
 		</skillList>
 		<exCrtEffect>false</exCrtEffect>
 		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" />
-		<dropLists>
-			<death>
-				<group chance="100.0">
-					<item id="10432" min="1" max="1" chance="50" /> <!-- Kertin's Herb of Life -->
-					<item id="10433" min="1" max="1" chance="50" /> <!-- Kertin's Herb of Mana -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="8.5" />
 			<height normal="8.5" />
@@ -1520,14 +1504,6 @@
 		</skillList>
 		<exCrtEffect>false</exCrtEffect>
 		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" />
-		<dropLists>
-			<death>
-				<group chance="100.0">
-					<item id="10432" min="1" max="1" chance="50" /> <!-- Kertin's Herb of Life -->
-					<item id="10433" min="1" max="1" chance="50" /> <!-- Kertin's Herb of Mana -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="8.5" />
 			<height normal="8.5" />
@@ -1564,14 +1540,6 @@
 		</skillList>
 		<exCrtEffect>false</exCrtEffect>
 		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" />
-		<dropLists>
-			<death>
-				<group chance="100.0">
-					<item id="10432" min="1" max="1" chance="50" /> <!-- Kertin's Herb of Life -->
-					<item id="10433" min="1" max="1" chance="50" /> <!-- Kertin's Herb of Mana -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="8.5" />
 			<height normal="8.5" />
@@ -1608,14 +1576,6 @@
 		</skillList>
 		<exCrtEffect>false</exCrtEffect>
 		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" />
-		<dropLists>
-			<death>
-				<group chance="100.0">
-					<item id="10432" min="1" max="1" chance="50" /> <!-- Kertin's Herb of Life -->
-					<item id="10433" min="1" max="1" chance="50" /> <!-- Kertin's Herb of Mana -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="8.5" />
 			<height normal="8.5" />
@@ -1860,8 +1820,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -1874,7 +1832,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="95" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="5" /> <!-- Herb of Doubt -->
 				</group>
 			</death>
 		</dropLists>
@@ -4226,8 +4183,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -4308,8 +4263,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -4388,8 +4341,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -4471,8 +4422,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -4551,8 +4500,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -4632,8 +4579,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -4714,8 +4659,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -4794,8 +4737,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -4877,8 +4818,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -4960,8 +4899,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -5040,8 +4977,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -5123,8 +5058,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -5204,8 +5137,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -5290,8 +5221,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -5372,8 +5301,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -5454,8 +5381,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -5539,8 +5464,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -5621,8 +5544,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -5706,8 +5627,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -5793,8 +5712,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -5878,8 +5795,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->

@@ -2378,7 +2378,6 @@
 					<item id="1895" min="3" max="9" chance="20.5133" /> <!-- Metallic Fiber -->
 					<item id="4042" min="1" max="1" chance="8.3762" /> <!-- Enria -->
 					<item id="1808" min="1" max="1" chance="0.2234" /> <!-- Recipe: Soulshot (S-Grade) -->
-					<item id="9675" min="5" max="15" chance="6.701" /> <!-- Prayer Fragment -->
 					<item id="1344" min="1650" max="4950" chance="3.8073" /> <!-- Mithril Arrow -->
 				</group>
 			</death>
@@ -2465,7 +2464,6 @@
 					<item id="4041" min="1" max="1" chance="4.8412" /> <!-- Mold Hardener -->
 					<item id="4040" min="1" max="1" chance="11.1348" /> <!-- Mold Lubricant -->
 					<item id="6901" min="1" max="1" chance="0.5567" /> <!-- Recipe: Shining Arrow (100%) -->
-					<item id="9675" min="4" max="12" chance="9.279" /> <!-- Prayer Fragment -->
 					<item id="1344" min="900" max="2700" chance="7.7327" /> <!-- Mithril Arrow -->
 				</group>
 			</death>
@@ -3241,15 +3239,6 @@
 				<group chance="22.902099609375">
 					<item id="6684" min="1" max="1" chance="5.274" /> <!-- Sealed Major Arcana Robe -->
 					<item id="6711" min="12" max="36" chance="94.726" /> <!-- Sealed Major Arcana Robe Part -->
-				</group>
-				<group chance="4.9355998039245605">
-					<item id="9460" min="1" max="1" chance="14.2857" /> <!-- Dynasty Ring - Stun Resistance -->
-					<item id="9463" min="1" max="1" chance="14.2857" /> <!-- Dynasty Ring - Poison Resistance -->
-					<item id="9466" min="1" max="1" chance="14.2857" /> <!-- Dynasty Ring - Bleed Resistance -->
-					<item id="9469" min="1" max="1" chance="14.2857" /> <!-- Dynasty Ring - Sleep Resistance -->
-					<item id="9472" min="1" max="1" chance="14.2857" /> <!-- Dynasty Ring - Paralysis Resistance -->
-					<item id="9475" min="1" max="1" chance="14.2857" /> <!-- Dynasty Ring - Hold Resistance -->
-					<item id="9478" min="1" max="1" chance="14.2858" /> <!-- Dynasty Ring - Fear Resistance -->
 				</group>
 			</death>
 		</dropLists>

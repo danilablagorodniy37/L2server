@@ -3686,13 +3686,6 @@
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
 		<ai type="BALANCED" isAggressive="false" />
-		<dropLists>
-			<death>
-				<group chance="100">
-					<item id="10272" min="3" max="7" chance="100" /> <!-- Treasure Sack Piece -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="8.5" />
 			<height normal="8.5" />

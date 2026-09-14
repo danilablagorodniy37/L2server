@@ -53,18 +53,6 @@
 		</ai>
 		<dropLists>
 			<death>
-				<group chance="5.903900146484375">
-					<item id="13143" min="1" max="1" chance="17.0732" /> <!-- Sealed Vesper Helmet -->
-					<item id="13144" min="1" max="1" chance="17.0732" /> <!-- Sealed Vesper Leather Helmet -->
-					<item id="13145" min="1" max="1" chance="17.0732" /> <!-- Sealed Vesper Circlet -->
-					<item id="14111" min="1" max="1" chance="24.3902" /> <!-- Sealed Vesper Shield -->
-					<item id="13887" min="1" max="1" chance="24.3902" /> <!-- Sealed Vesper Sigil -->
-				</group>
-				<group chance="12.578700065612793">
-					<item id="14160" min="1" max="1" chance="30.7692" /> <!-- Sealed Vesper Earring -->
-					<item id="14161" min="1" max="1" chance="23.0769" /> <!-- Sealed Vesper Necklace -->
-					<item id="14162" min="1" max="1" chance="46.1539" /> <!-- Sealed Vesper Ring -->
-				</group>
 				<group chance="94.32319641113281">
 					<item id="959" min="1" max="1" chance="9.0909" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
 					<item id="960" min="1" max="1" chance="90.9091" /> <!-- Scroll: Enchant Armor (S-Grade) -->
@@ -124,22 +112,6 @@
 		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" />
 		<dropLists>
 			<death>
-				<group chance="24.853200912475586">
-					<item id="14109" min="1" max="1" chance="3.409" /> <!-- Sealed Vesper Gauntlet -->
-					<item id="14113" min="1" max="1" chance="3.409" /> <!-- Sealed Vesper Leather Gloves -->
-					<item id="14116" min="1" max="1" chance="3.409" /> <!-- Sealed Vesper Gloves -->
-					<item id="14110" min="1" max="1" chance="3.409" /> <!-- Sealed Vesper Boots -->
-					<item id="14114" min="1" max="1" chance="3.409" /> <!-- Sealed Vesper Leather Boots -->
-					<item id="14117" min="1" max="1" chance="3.409" /> <!-- Sealed Vesper Shoes -->
-					<item id="15484" min="1" max="1" chance="79.546" /> <!-- High-level Angel Circlet -->
-				</group>
-				<group chance="6.9475998878479">
-					<item id="13143" min="1" max="1" chance="17.0732" /> <!-- Sealed Vesper Helmet -->
-					<item id="13144" min="1" max="1" chance="17.0732" /> <!-- Sealed Vesper Leather Helmet -->
-					<item id="13145" min="1" max="1" chance="17.0732" /> <!-- Sealed Vesper Circlet -->
-					<item id="14111" min="1" max="1" chance="24.3902" /> <!-- Sealed Vesper Shield -->
-					<item id="13887" min="1" max="1" chance="24.3902" /> <!-- Sealed Vesper Sigil -->
-				</group>
 				<group chance="50.080101013183594">
 					<item id="959" min="1" max="1" chance="8.9552" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
 					<item id="960" min="1" max="1" chance="89.5522" /> <!-- Scroll: Enchant Armor (S-Grade) -->
@@ -619,14 +591,6 @@
 		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
 		<dropLists>
 			<death>
-				<group chance="20.002700805664062">
-					<item id="15766" min="1" max="1" chance="46.1565" /> <!-- Sealed Moirai Ring -->
-					<item id="15767" min="1" max="1" chance="30.7673" /> <!-- Sealed Moirai Earring -->
-					<item id="15768" min="1" max="1" chance="23.0762" /> <!-- Sealed Moirai Necklace -->
-				</group>
-				<group chance="1.4673999547958374">
-					<item id="10219" min="1" max="1" chance="100" /> <!-- Icarus Trident -->
-				</group>
 				<group chance="88.53970336914062">
 					<item id="959" min="1" max="1" chance="16.6667" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
 					<item id="960" min="1" max="3" chance="83.3333" /> <!-- Scroll: Enchant Armor (S-Grade) -->
@@ -774,16 +738,6 @@
 		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
 		<dropLists>
 			<death>
-				<group chance="4.49970006942749">
-					<item id="15694" min="1" max="1" chance="17.0733" /> <!-- Sealed Moirai Helmet -->
-					<item id="15695" min="1" max="1" chance="17.0733" /> <!-- Sealed Moirai Leather Helmet -->
-					<item id="15696" min="1" max="1" chance="17.0733" /> <!-- Sealed Moirai Circlet -->
-					<item id="15710" min="1" max="1" chance="24.3901" /> <!-- Sealed Moirai Shield -->
-					<item id="15709" min="1" max="1" chance="24.39" /> <!-- Sealed Moirai Sigil -->
-				</group>
-				<group chance="0.46889999508857727">
-					<item id="10223" min="1" max="1" chance="100" /> <!-- Icarus Spitter -->
-				</group>
 				<group chance="51.87110137939453">
 					<item id="959" min="1" max="1" chance="9.0909" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
 					<item id="960" min="1" max="1" chance="90.9091" /> <!-- Scroll: Enchant Armor (S-Grade) -->
@@ -844,18 +798,6 @@
 		</ai>
 		<dropLists>
 			<death>
-				<group chance="4.426799774169922">
-					<item id="15703" min="1" max="1" chance="16.6667" /> <!-- Sealed Moirai Gauntlet -->
-					<item id="15704" min="1" max="1" chance="16.6667" /> <!-- Sealed Moirai Leather Gloves -->
-					<item id="15705" min="1" max="1" chance="16.6667" /> <!-- Sealed Moirai Gloves -->
-					<item id="15706" min="1" max="1" chance="16.6667" /> <!-- Sealed Moirai Boots -->
-					<item id="15707" min="1" max="1" chance="16.6667" /> <!-- Sealed Moirai Leather Boots -->
-					<item id="15708" min="1" max="1" chance="16.6665" /> <!-- Sealed Moirai Shoes -->
-				</group>
-				<group chance="0.3603000044822693">
-					<item id="10222" min="1" max="1" chance="50" /> <!-- Icarus Hall -->
-					<item id="10220" min="1" max="1" chance="50" /> <!-- Icarus Hammer -->
-				</group>
 				<group chance="39.85319900512695">
 					<item id="959" min="1" max="1" chance="9.0909" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
 					<item id="960" min="1" max="1" chance="90.9091" /> <!-- Scroll: Enchant Armor (S-Grade) -->
@@ -970,13 +912,6 @@
 		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
 		<dropLists>
 			<death>
-				<group chance="2.642400026321411">
-					<item id="15698" min="1" max="1" chance="38.461" /> <!-- Sealed Moirai Leather Breastplate -->
-					<item id="15701" min="1" max="1" chance="61.539" /> <!-- Sealed Moirai Leather Legging -->
-				</group>
-				<group chance="0.49630001187324524">
-					<item id="10223" min="1" max="1" chance="100" /> <!-- Icarus Spitter -->
-				</group>
 				<group chance="19.408599853515625">
 					<item id="6578" min="1" max="1" chance="28.5714" /> <!-- Blessed Scroll: Enchant Armor (S-Grade) -->
 					<item id="6570" min="1" max="1" chance="71.4286" /> <!-- Blessed Scroll: Enchant Armor (A-Grade) -->
@@ -1078,16 +1013,6 @@
 		<ai aggroRange="300" clanHelpRange="300" />
 		<dropLists>
 			<death>
-				<item id="17267" min="1" max="1" chance="10" /> <!-- Sealed Blood Crystal -->
-				<group chance="1.054800033569336">
-					<item id="14105" min="1" max="1" chance="15.6016" /> <!-- Sealed Vesper Breastplate -->
-					<item id="14108" min="1" max="1" chance="24.9621" /> <!-- Sealed Vesper Gaiters -->
-					<item id="13887" min="1" max="1" chance="59.4363" /> <!-- Sealed Vesper Sigil -->
-				</group>
-				<group chance="1.2835999727249146">
-					<item id="14106" min="1" max="1" chance="38.4626" /> <!-- Sealed Vesper Leather Breastplate -->
-					<item id="14112" min="1" max="1" chance="61.5374" /> <!-- Sealed Vesper Leather Leggings -->
-				</group>
 				<group chance="4.480000019073486">
 					<item id="959" min="1" max="1" chance="100" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
 				</group>
@@ -1148,16 +1073,6 @@
 		<ai aggroRange="300" clanHelpRange="300" />
 		<dropLists>
 			<death>
-				<item id="17267" min="1" max="1" chance="10" /> <!-- Sealed Blood Crystal -->
-				<group chance="1.04830002784729">
-					<item id="14106" min="1" max="1" chance="38.4626" /> <!-- Sealed Vesper Leather Breastplate -->
-					<item id="14112" min="1" max="1" chance="61.5374" /> <!-- Sealed Vesper Leather Leggings -->
-				</group>
-				<group chance="1.9381999969482422">
-					<item id="14105" min="1" max="1" chance="15.6016" /> <!-- Sealed Vesper Breastplate -->
-					<item id="14108" min="1" max="1" chance="24.9621" /> <!-- Sealed Vesper Gaiters -->
-					<item id="13887" min="1" max="1" chance="59.4363" /> <!-- Sealed Vesper Sigil -->
-				</group>
 				<group chance="5.792900085449219">
 					<item id="959" min="1" max="1" chance="47.3684" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
 					<item id="6578" min="1" max="1" chance="52.6316" /> <!-- Blessed Scroll: Enchant Armor (S-Grade) -->
@@ -1220,22 +1135,6 @@
 		<ai aggroRange="300" clanHelpRange="300" />
 		<dropLists>
 			<death>
-				<item id="17267" min="1" max="1" chance="10" /> <!-- Sealed Blood Crystal -->
-				<group chance="2.1205999851226807">
-					<item id="13143" min="1" max="1" chance="17.0732" /> <!-- Sealed Vesper Helmet -->
-					<item id="13144" min="1" max="1" chance="17.0732" /> <!-- Sealed Vesper Leather Helmet -->
-					<item id="13145" min="1" max="1" chance="17.0732" /> <!-- Sealed Vesper Circlet -->
-					<item id="14111" min="1" max="1" chance="24.3902" /> <!-- Sealed Vesper Shield -->
-					<item id="13887" min="1" max="1" chance="24.3902" /> <!-- Sealed Vesper Sigil -->
-				</group>
-				<group chance="4.072999954223633">
-					<item id="14109" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Gauntlet -->
-					<item id="14113" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Leather Gloves -->
-					<item id="14116" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Gloves -->
-					<item id="14110" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Boots -->
-					<item id="14114" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Leather Boots -->
-					<item id="14117" min="1" max="1" chance="16.6665" /> <!-- Sealed Vesper Shoes -->
-				</group>
 				<group chance="6.502200126647949">
 					<item id="959" min="1" max="1" chance="47.3684" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
 					<item id="6578" min="1" max="1" chance="52.6316" /> <!-- Blessed Scroll: Enchant Armor (S-Grade) -->
@@ -1293,22 +1192,6 @@
 		<ai aggroRange="300" clanHelpRange="300" />
 		<dropLists>
 			<death>
-				<item id="17267" min="1" max="1" chance="10" /> <!-- Sealed Blood Crystal -->
-				<group chance="2.9621999263763428">
-					<item id="14109" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Gauntlet -->
-					<item id="14113" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Leather Gloves -->
-					<item id="14116" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Gloves -->
-					<item id="14110" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Boots -->
-					<item id="14114" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Leather Boots -->
-					<item id="14117" min="1" max="1" chance="16.6665" /> <!-- Sealed Vesper Shoes -->
-				</group>
-				<group chance="3.470099925994873">
-					<item id="13143" min="1" max="1" chance="17.0732" /> <!-- Sealed Vesper Helmet -->
-					<item id="13144" min="1" max="1" chance="17.0732" /> <!-- Sealed Vesper Leather Helmet -->
-					<item id="13145" min="1" max="1" chance="17.0732" /> <!-- Sealed Vesper Circlet -->
-					<item id="14111" min="1" max="1" chance="24.3902" /> <!-- Sealed Vesper Shield -->
-					<item id="13887" min="1" max="1" chance="24.3902" /> <!-- Sealed Vesper Sigil -->
-				</group>
 				<group chance="7.093299865722656">
 					<item id="959" min="1" max="1" chance="47.3684" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
 					<item id="6578" min="1" max="1" chance="52.6316" /> <!-- Blessed Scroll: Enchant Armor (S-Grade) -->
@@ -1370,22 +1253,6 @@
 		<ai aggroRange="300" clanHelpRange="300" />
 		<dropLists>
 			<death>
-				<item id="17267" min="1" max="1" chance="10" /> <!-- Sealed Blood Crystal -->
-				<group chance="2.506200075149536">
-					<item id="13143" min="1" max="1" chance="17.0732" /> <!-- Sealed Vesper Helmet -->
-					<item id="13144" min="1" max="1" chance="17.0732" /> <!-- Sealed Vesper Leather Helmet -->
-					<item id="13145" min="1" max="1" chance="17.0732" /> <!-- Sealed Vesper Circlet -->
-					<item id="14111" min="1" max="1" chance="24.3902" /> <!-- Sealed Vesper Shield -->
-					<item id="13887" min="1" max="1" chance="24.3902" /> <!-- Sealed Vesper Sigil -->
-				</group>
-				<group chance="4.813600063323975">
-					<item id="14109" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Gauntlet -->
-					<item id="14113" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Leather Gloves -->
-					<item id="14116" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Gloves -->
-					<item id="14110" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Boots -->
-					<item id="14114" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Leather Boots -->
-					<item id="14117" min="1" max="1" chance="16.6665" /> <!-- Sealed Vesper Shoes -->
-				</group>
 				<group chance="4.246699810028076">
 					<item id="959" min="1" max="1" chance="85.7143" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
 					<item id="6577" min="1" max="1" chance="14.2857" /> <!-- Blessed Scroll: Enchant Weapon (S-Grade) -->
@@ -1445,22 +1312,6 @@
 		<ai aggroRange="300" clanHelpRange="300" />
 		<dropLists>
 			<death>
-				<item id="17267" min="1" max="1" chance="10" /> <!-- Sealed Blood Crystal -->
-				<group chance="3.455899953842163">
-					<item id="14109" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Gauntlet -->
-					<item id="14113" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Leather Gloves -->
-					<item id="14116" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Gloves -->
-					<item id="14110" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Boots -->
-					<item id="14114" min="1" max="1" chance="16.6667" /> <!-- Sealed Vesper Leather Boots -->
-					<item id="14117" min="1" max="1" chance="16.6665" /> <!-- Sealed Vesper Shoes -->
-				</group>
-				<group chance="4.048500061035156">
-					<item id="13143" min="1" max="1" chance="17.0732" /> <!-- Sealed Vesper Helmet -->
-					<item id="13144" min="1" max="1" chance="17.0732" /> <!-- Sealed Vesper Leather Helmet -->
-					<item id="13145" min="1" max="1" chance="17.0732" /> <!-- Sealed Vesper Circlet -->
-					<item id="14111" min="1" max="1" chance="24.3902" /> <!-- Sealed Vesper Shield -->
-					<item id="13887" min="1" max="1" chance="24.3902" /> <!-- Sealed Vesper Sigil -->
-				</group>
 				<group chance="4.573299884796143">
 					<item id="959" min="1" max="1" chance="85.7143" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
 					<item id="6577" min="1" max="1" chance="14.2857" /> <!-- Blessed Scroll: Enchant Weapon (S-Grade) -->
@@ -1518,16 +1369,6 @@
 		<ai aggroRange="300" clanHelpRange="300" />
 		<dropLists>
 			<death>
-				<item id="17267" min="1" max="1" chance="10" /> <!-- Sealed Blood Crystal -->
-				<group chance="1.6045000553131104">
-					<item id="14107" min="1" max="1" chance="38.4626" /> <!-- Sealed Vesper Tunic -->
-					<item id="14115" min="1" max="1" chance="61.5374" /> <!-- Sealed Vesper Stockings -->
-				</group>
-				<group chance="2.966599941253662">
-					<item id="14105" min="1" max="1" chance="15.6016" /> <!-- Sealed Vesper Breastplate -->
-					<item id="14108" min="1" max="1" chance="24.9621" /> <!-- Sealed Vesper Gaiters -->
-					<item id="13887" min="1" max="1" chance="59.4363" /> <!-- Sealed Vesper Sigil -->
-				</group>
 				<group chance="4.900000095367432">
 					<item id="959" min="1" max="1" chance="85.7143" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
 					<item id="6577" min="1" max="1" chance="14.2857" /> <!-- Blessed Scroll: Enchant Weapon (S-Grade) -->
@@ -1591,11 +1432,6 @@
 		<corpseTime>14</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="300" />
-		<dropLists>
-			<death>
-				<item id="17266" min="1" max="1" chance="20" /> <!-- Will of Antharas -->
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="18" />
 			<height normal="51" />
@@ -1654,11 +1490,6 @@
 		<corpseTime>14</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="300" />
-		<dropLists>
-			<death>
-				<item id="17266" min="1" max="1" chance="20" /> <!-- Will of Antharas -->
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="63" />
 			<height normal="54" />
@@ -1947,11 +1778,6 @@
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="300" isAggressive="false" />
-		<dropLists>
-			<death>
-				<item id="17266" min="1" max="1" chance="6.6666" /> <!-- Will of Antharas -->
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="50" />
 			<height normal="84" />
@@ -2103,8 +1929,6 @@
 				<item id="126" min="1" max="1" chance="6.7691868545" /> <!-- Artisan's Sword -->
 				<item id="128" min="1" max="1" chance="6.7691868545" /> <!-- Knight's Sword -->
 				<item id="2021" min="3" max="9" chance="35.291952582" /> <!-- Spinebone Sword Blade -->
-				<item id="22229" min="1" max="1" chance="4.025877498" /> <!-- Scroll: Enchant Weapon of Destruction (D-Grade) - Event -->
-				<item id="22230" min="1" max="1" chance="36.233159166" /> <!-- Scroll: Enchant Armor of Destruction (D-Grade) - Event -->
 			</death>
 		</dropLists>
 		<collision>
@@ -2246,8 +2070,6 @@
 				<item id="2022" min="4" max="12" chance="16.3267484" /> <!-- Mace of Judgment Head -->
 				<item id="2023" min="2" max="4" chance="34.6364932" /> <!-- Conjuror's Staff Head -->
 				<item id="6387" min="24" max="72" chance="15.0970503238" /> <!-- Blessed Scroll of Resurrection for Pets -->
-				<item id="22229" min="4" max="10" chance="10.3522612018" /> <!-- Scroll: Enchant Weapon of Destruction (D-Grade) - Event -->
-				<item id="22230" min="8" max="22" chance="40.2588884744" /> <!-- Scroll: Enchant Armor of Destruction (D-Grade) - Event -->
 			</death>
 		</dropLists>
 		<collision>
@@ -2371,8 +2193,6 @@
 				<item id="1123" min="8" max="22" chance="13.6830226662" /> <!-- Blue Buckskin Boots -->
 				<item id="222" min="1" max="1" chance="31.812" /> <!-- Poniard Dagger -->
 				<item id="6387" min="24" max="72" chance="14.1898009605" /> <!-- Blessed Scroll of Resurrection for Pets -->
-				<item id="22229" min="4" max="10" chance="9.7301474655" /> <!-- Scroll: Enchant Weapon of Destruction (D-Grade) - Event -->
-				<item id="22230" min="8" max="22" chance="37.839551574" /> <!-- Scroll: Enchant Armor of Destruction (D-Grade) - Event -->
 			</death>
 		</dropLists>
 		<collision>
@@ -2640,7 +2460,6 @@
 				<item id="130" min="1" max="1" chance="3.951247916" /> <!-- Elven Sword -->
 				<item id="144" min="1" max="1" chance="5.333555656" /> <!-- Sword of Occult -->
 				<item id="2026" min="3" max="9" chance="29.46514494" /> <!-- Two-Handed Sword Edge -->
-				<item id="22230" min="1" max="3" chance="57.1224" /> <!-- Scroll: Enchant Armor of Destruction (D-Grade) - Event -->
 			</death>
 		</dropLists>
 		<collision>
@@ -2777,8 +2596,6 @@
 				<item id="167" min="1" max="1" chance="17.1845494821" /> <!-- Scalpel -->
 				<item id="178" min="1" max="1" chance="17.1846010358" /> <!-- Bone Staff -->
 				<item id="955" min="1" max="3" chance="35.084826512" /> <!-- Scroll: Enchant Weapon (D-Grade) -->
-				<item id="22229" min="1" max="1" chance="3.898346976" /> <!-- Scroll: Enchant Weapon of Destruction (D-Grade) - Event -->
-				<item id="22230" min="1" max="1" chance="35.084826512" /> <!-- Scroll: Enchant Armor of Destruction (D-Grade) - Event -->
 			</death>
 		</dropLists>
 		<collision>
@@ -2930,7 +2747,6 @@
 				<item id="4591" min="1" max="3" chance="32.6602419916" /> <!-- Greater Dye of CON <Con+2 Str-2> -->
 				<item id="4592" min="2" max="4" chance="21.7735186845" /> <!-- Greater Dye of CON <Con+2 Dex-2> -->
 				<item id="4593" min="2" max="6" chance="16.3301209958" /> <!-- Greater Dye of DEX <Dex+2 Str-2> -->
-				<item id="22227" min="1" max="1" chance="1.3064183281" /> <!-- Scroll: Enchant Weapon of Destruction (C-Grade) - Event -->
 			</death>
 		</dropLists>
 		<collision>
@@ -2995,7 +2811,6 @@
 				<item id="4594" min="1" max="3" chance="32.6602621394" /> <!-- Greater Dye of DEX <Dex+2 Con-2> -->
 				<item id="4595" min="2" max="4" chance="21.7735354135" /> <!-- Greater Dye of INT <Int+2 Men-2> -->
 				<item id="4596" min="2" max="6" chance="16.3301310697" /> <!-- Greater Dye of INT <Int+2 Wit-2> -->
-				<item id="22228" min="1" max="1" chance="11.1977713774" /> <!-- Scroll: Enchant Armor of Destruction (C-Grade) - Event -->
 			</death>
 		</dropLists>
 		<collision>
@@ -3135,7 +2950,6 @@
 				<item id="225" min="1" max="1" chance="8.7192549621" /> <!-- Mithril Dagger -->
 				<item id="2052" min="12" max="36" chance="21.8498450379" /> <!-- Mithril Dagger Blade -->
 				<item id="4600" min="2" max="6" chance="32.660221746" /> <!-- Greater Dye of WIT <Wit+2 Men-2> -->
-				<item id="22228" min="15" max="45" chance="17.418778254" /> <!-- Scroll: Enchant Armor of Destruction (C-Grade) - Event -->
 			</death>
 		</dropLists>
 		<collision>
@@ -3279,8 +3093,6 @@
 				<item id="4614" min="2" max="4" chance="17.4335116116" /> <!-- Greater Dye of STR <Str+4 Dex-4> -->
 				<item id="4615" min="2" max="6" chance="13.0751696218" /> <!-- Greater Dye of CON <Con+4 Str-4> -->
 				<item id="8176" min="1" max="2" chance="73" /> <!-- Destruction Tombstone -->
-				<item id="9814" min="1" max="4" chance="85" /> <!-- Memento Mori -->
-				<item id="22225" min="1" max="1" chance="15.167179523" /> <!-- Scroll: Enchant Weapon of Destruction (B-Grade) - Event -->
 			</death>
 		</dropLists>
 		<collision>
@@ -3427,9 +3239,6 @@
 				<item id="5547" min="8" max="22" chance="15.931506108" /> <!-- Elemental Sword Edge -->
 				<item id="5548" min="4" max="12" chance="29.871591876" /> <!-- Tallum Blade Edge -->
 				<item id="8176" min="1" max="2" chance="70" /> <!-- Destruction Tombstone -->
-				<item id="9814" min="1" max="4" chance="83" /> <!-- Memento Mori -->
-				<item id="22223" min="1" max="1" chance="10.11685" /> <!-- Scroll: Enchant Weapon of Destruction (A-Grade) - Event -->
-				<item id="22224" min="1" max="1" chance="10.11685" /> <!-- Scroll: Enchant Armor of Destruction (A-Grade) - Event -->
 			</death>
 		</dropLists>
 		<collision>
@@ -3570,9 +3379,6 @@
 				<item id="729" min="1" max="1" chance="6.6800186371" /> <!-- Scroll: Enchant Weapon (A-Grade) -->
 				<item id="730" min="1" max="1" chance="50.100283733" /> <!-- Scroll: Enchant Armor (A-Grade) -->
 				<item id="8176" min="1" max="2" chance="72" /> <!-- Destruction Tombstone -->
-				<item id="9815" min="1" max="4" chance="85" /> <!-- Dragon Heart -->
-				<item id="22223" min="1" max="1" chance="0.8015976299" /> <!-- Scroll: Enchant Weapon of Destruction (A-Grade) - Event -->
-				<item id="22224" min="1" max="1" chance="7.2135976299" /> <!-- Scroll: Enchant Armor of Destruction (A-Grade) - Event -->
 			</death>
 		</dropLists>
 		<collision>
@@ -3637,9 +3443,7 @@
 				<item id="4610" min="1" max="3" chance="33.2293680726" /> <!-- Greater Dye of MEN <Men+3 Wit-3> -->
 				<item id="4611" min="2" max="4" chance="22.1529120484" /> <!-- Greater Dye of WIT <Wit+3 Int-3> -->
 				<item id="4612" min="2" max="6" chance="16.6146840363" /> <!-- Greater Dye of WIT <Wit+3 Men-3> -->
-				<item id="22228" min="1" max="1" chance="17.0893358427" /> <!-- Scroll: Enchant Armor of Destruction (C-Grade) - Event -->
 				<item id="8176" min="1" max="1" chance="85" /> <!-- Destruction Tombstone -->
-				<item id="9814" min="1" max="3" chance="85" /> <!-- Memento Mori -->
 			</death>
 		</dropLists>
 		<collision>
@@ -3771,9 +3575,7 @@
 				<item id="4607" min="1" max="3" chance="34.0992819254" /> <!-- Greater Dye of INT <Int+3 Men-3> -->
 				<item id="4608" min="2" max="4" chance="22.7328293077" /> <!-- Greater Dye of INT <Int+3 Wit-3> -->
 				<item id="4609" min="2" max="6" chance="17.0496409627" /> <!-- Greater Dye of MEN <Men+3 Int-3> -->
-				<item id="22227" min="1" max="1" chance="2.0459478042" /> <!-- Scroll: Enchant Weapon of Destruction (C-Grade) - Event -->
 				<item id="8176" min="1" max="1" chance="87" /> <!-- Destruction Tombstone -->
-				<item id="9814" min="1" max="3" chance="87" /> <!-- Memento Mori -->
 			</death>
 		</dropLists>
 		<collision>
@@ -3901,12 +3703,10 @@
 				<item id="233" min="1" max="1" chance="2.454601275" /> <!-- Dark Screamer -->
 				<item id="2106" min="4" max="12" chance="27.6249704325" /> <!-- Grace Dagger Edge -->
 				<item id="2107" min="8" max="22" chance="14.7333270175" /> <!-- Dark Screamer Edge -->
-				<item id="22228" min="3" max="9" chance="58.4107704999" /> <!-- Scroll: Enchant Armor of Destruction (C-Grade) - Event -->
 				<item id="4604" min="2" max="6" chance="14.6026690173" /> <!-- Greater Dye of CON <Con+3 Dex-3> -->
 				<item id="4605" min="3" max="7" chance="11.6821163277" /> <!-- Greater Dye of DEX <Dex+3 Str-3> -->
 				<item id="4606" min="3" max="9" chance="9.7351441551" /> <!-- Greater Dye of DEX <Dex+3 Con-3> -->
 				<item id="8176" min="1" max="1" chance="75" /> <!-- Destruction Tombstone -->
-				<item id="9816" min="1" max="3" chance="75" /> <!-- Earth Egg -->
 			</death>
 		</dropLists>
 		<collision>
@@ -4041,9 +3841,7 @@
 				<item id="1970" min="12" max="36" chance="46.5225004933" /> <!-- Robe of Seal Fabric -->
 				<item id="325" min="1" max="1" chance="6.7880705832" /> <!-- Horn of Glory -->
 				<item id="2088" min="12" max="36" chance="22.0235294168" /> <!-- Horn of Glory Fragment -->
-				<item id="22228" min="1" max="1" chance="55.5541" /> <!-- Scroll: Enchant Armor of Destruction (C-Grade) - Event -->
 				<item id="8176" min="1" max="1" chance="70" /> <!-- Destruction Tombstone -->
-				<item id="9816" min="1" max="2" chance="89" /> <!-- Earth Egg -->
 			</death>
 		</dropLists>
 		<collision>
@@ -4167,7 +3965,6 @@
 				<item id="628" min="4" max="12" chance="17.9129664216" /> <!-- Hoplon -->
 				<item id="278" min="1" max="1" chance="11.853637999" /> <!-- Gastraphetes -->
 				<item id="2029" min="12" max="36" chance="21.901062001" /> <!-- Gastraphetes Shaft -->
-				<item id="22230" min="12" max="36" chance="79.3367" /> <!-- Scroll: Enchant Armor of Destruction (D-Grade) - Event -->
 			</death>
 		</dropLists>
 		<collision>
@@ -4315,7 +4112,6 @@
 				<item id="2076" min="2" max="6" chance="44.1895069525" /> <!-- Body Slasher Blade -->
 				<item id="951" min="1" max="1" chance="53.1163081987" /> <!-- Scroll: Enchant Weapon (C-Grade) -->
 				<item id="952" min="12" max="36" chance="16.2299850411" /> <!-- Scroll: Enchant Armor (C-Grade) -->
-				<item id="22227" min="1" max="1" chance="1.9476067602" /> <!-- Scroll: Enchant Weapon of Destruction (C-Grade) - Event -->
 			</death>
 		</dropLists>
 		<collision>
@@ -4410,7 +4206,6 @@
 				<item id="2935" min="24" max="72" chance="22.9434634473" /> <!-- Reinforced Mithril Gaiters Fragment -->
 				<item id="281" min="1" max="1" chance="7.0503761262" /> <!-- Crystallized Ice Bow -->
 				<item id="2074" min="12" max="36" chance="18.3398238738" /> <!-- Crystallized Ice Bow Shaft -->
-				<item id="22228" min="1" max="1" chance="46.0338" /> <!-- Scroll: Enchant Armor of Destruction (C-Grade) - Event -->
 			</death>
 		</dropLists>
 		<collision>
@@ -4538,7 +4333,6 @@
 				<item id="6367" min="1" max="1" chance="0.7347704126" /> <!-- Angel Slayer -->
 				<item id="6691" min="3" max="9" chance="56.5930295874" /> <!-- Angel Slayer Blade -->
 				<item id="3936" min="1" max="1" chance="50.9091236248" /> <!-- Blessed Scroll of Resurrection -->
-				<item id="22222" min="1" max="1" chance="4.5252763752" /> <!-- Scroll: Enchant Armor of Destruction (S-Grade) - Event -->
 			</death>
 		</dropLists>
 		<collision>
@@ -4670,7 +4464,6 @@
 				<item id="6691" min="3" max="9" chance="56.5930295874" /> <!-- Angel Slayer Blade -->
 				<item id="959" min="1" max="1" chance="2.7151629088" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
 				<item id="960" min="1" max="1" chance="27.1516897268" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-				<item id="22221" min="1" max="1" chance="0.4525473644" /> <!-- Scroll: Enchant Weapon of Destruction (S-Grade) - Event -->
 			</death>
 		</dropLists>
 		<collision>
@@ -4798,10 +4591,8 @@
 				<item id="236" min="1" max="1" chance="2.1512677472" /> <!-- Soul Separator -->
 				<item id="5537" min="12" max="36" chance="25.5028322528" /> <!-- Soul Separator Head -->
 				<item id="730" min="1" max="3" chance="60.2496381482" /> <!-- Scroll: Enchant Armor (A-Grade) -->
-				<item id="22222" min="1" max="1" chance="6.4266618518" /> <!-- Scroll: Enchant Armor of Destruction (S-Grade) - Event -->
 				<item id="8176" min="1" max="4" chance="82" /> <!-- Destruction Tombstone -->
 				<item id="8619" min="1" max="1" chance="54" /> <!-- Ancient Book: Divine Inspiration (Original Language Version) -->
-				<item id="9814" min="3" max="7" chance="82" /> <!-- Memento Mori -->
 			</death>
 		</dropLists>
 		<collision>
@@ -4875,7 +4666,6 @@
 				<item id="6695" min="12" max="36" chance="19.9953094473" /> <!-- Demon Splinter Blade -->
 				<item id="959" min="1" max="1" chance="3.9110313616" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
 				<item id="960" min="1" max="1" chance="39.1104009626" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-				<item id="22221" min="1" max="1" chance="0.6518676758" /> <!-- Scroll: Enchant Weapon of Destruction (S-Grade) - Event -->
 			</death>
 		</dropLists>
 		<collision>
@@ -5013,10 +4803,8 @@
 				<item id="5541" min="12" max="36" chance="25.2256532376" /> <!-- Tallum Glaive Edge -->
 				<item id="959" min="1" max="1" chance="3.8156405712" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
 				<item id="960" min="1" max="1" chance="38.1564909282" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-				<item id="22221" min="1" max="1" chance="0.6359685006" /> <!-- Scroll: Enchant Weapon of Destruction (S-Grade) - Event -->
 				<item id="8176" min="1" max="4" chance="82" /> <!-- Destruction Tombstone -->
 				<item id="8619" min="1" max="1" chance="52" /> <!-- Ancient Book: Divine Inspiration (Original Language Version) -->
-				<item id="9815" min="3" max="7" chance="81" /> <!-- Dragon Heart -->
 			</death>
 		</dropLists>
 		<collision>

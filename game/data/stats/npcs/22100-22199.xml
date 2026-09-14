@@ -795,7 +795,6 @@
 					<item id="1880" min="1" max="1" chance="14.9229" /> <!-- Steel -->
 					<item id="5550" min="1" max="1" chance="1.9897" /> <!-- Durable Metal Plate -->
 					<item id="4043" min="1" max="1" chance="4.9743" /> <!-- Asofe -->
-					<item id="10302" min="1" max="1" chance="0.5969" /> <!-- Transformation Sealbook: Heretic -->
 					<item id="1344" min="180" max="540" chance="10.3632" /> <!-- Mithril Arrow -->
 				</group>
 			</death>
@@ -887,7 +886,6 @@
 					<item id="1878" min="3" max="9" chance="12.7058" /> <!-- Braided Hemp -->
 					<item id="1884" min="2" max="6" chance="23.4568" /> <!-- Cord -->
 					<item id="4039" min="1" max="1" chance="6.3529" /> <!-- Mold Glue -->
-					<item id="10302" min="1" max="1" chance="0.7623" /> <!-- Transformation Sealbook: Heretic -->
 				</group>
 			</death>
 			<corpse>
@@ -978,7 +976,6 @@
 					<item id="5220" min="1" max="1" chance="5.256" /> <!-- Metal Hardener -->
 					<item id="1885" min="1" max="1" chance="10.9501" /> <!-- High-Grade Suede -->
 					<item id="4041" min="1" max="1" chance="1.1426" /> <!-- Mold Hardener -->
-					<item id="10302" min="1" max="1" chance="0.5256" /> <!-- Transformation Sealbook: Heretic -->
 					<item id="1344" min="100" max="300" chance="16.4252" /> <!-- Mithril Arrow -->
 				</group>
 			</death>
@@ -1159,7 +1156,6 @@
 					<item id="1881" min="1" max="1" chance="28.4747" /> <!-- Coarse Bone Powder -->
 					<item id="1875" min="1" max="1" chance="14.2374" /> <!-- Stone of Purity -->
 					<item id="4041" min="1" max="1" chance="1.857" /> <!-- Mold Hardener -->
-					<item id="10302" min="1" max="1" chance="0.8543" /> <!-- Transformation Sealbook: Heretic -->
 				</group>
 			</death>
 			<corpse>
@@ -2891,7 +2887,6 @@
 			<corpse>
 				<item id="6701" min="1" max="1" chance="5.4702" /> <!-- Sealed Imperial Crusader Breastplate Part -->
 				<item id="6702" min="1" max="1" chance="7.0417" /> <!-- Sealed Imperial Crusader Gaiters Pattern -->
-				<item id="13099" min="1" max="1" chance="14.3288" /> <!-- Sealed Arcana Sigil Piece -->
 			</corpse>
 		</dropLists>
 		<collision>
@@ -3259,7 +3254,6 @@
 					<item id="57" min="492" max="1008" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.05400000140070915">
-					<item id="11976" min="1" max="1" chance="6.0879" /> <!-- Common Item - Tallum Glaive -->
 					<item id="5541" min="1" max="1" chance="93.9121" /> <!-- Tallum Glaive Edge -->
 				</group>
 				<group chance="15.761199951171875">
@@ -3339,9 +3333,7 @@
 					<item id="57" min="545" max="1113" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.07810000330209732">
-					<item id="12263" min="1" max="1" chance="5.4811" /> <!-- Common Item - Sealed Armor of Nightmare -->
 					<item id="5522" min="1" max="1" chance="44.5189" /> <!-- Sealed Armor of Nightmare Pattern -->
-					<item id="12262" min="1" max="1" chance="5.4811" /> <!-- Common Item - Sealed Majestic Plate Armor -->
 					<item id="5523" min="1" max="1" chance="44.5189" /> <!-- Sealed Majestic Plate Armor Pattern -->
 				</group>
 				<group chance="17.00320053100586">
@@ -4932,7 +4924,6 @@
 			<corpse>
 				<item id="6688" min="1" max="1" chance="2.819" /> <!-- Forgotten Blade Edge -->
 				<item id="6689" min="1" max="1" chance="2.7659" /> <!-- Basalt Battlehammer Head -->
-				<item id="13099" min="1" max="1" chance="18.1883" /> <!-- Sealed Arcana Sigil Piece -->
 			</corpse>
 		</dropLists>
 		<collision>
@@ -6037,7 +6028,6 @@
 			<corpse>
 				<item id="1894" min="1" max="1" chance="53.0607" /> <!-- Crafted Leather -->
 				<item id="4039" min="1" max="1" chance="50.4077" /> <!-- Mold Glue -->
-				<item id="13099" min="1" max="1" chance="21.0896" /> <!-- Sealed Arcana Sigil Piece -->
 			</corpse>
 		</dropLists>
 		<collision>
@@ -7350,19 +7340,11 @@
 				<group chance="7.685500144958496">
 					<item id="1879" min="1" max="1" chance="60.3115" /> <!-- Cokes -->
 					<item id="1885" min="1" max="1" chance="30.1558" /> <!-- High-Grade Suede -->
-					<item id="9628" min="1" max="1" chance="2.8382" /> <!-- Leonard -->
-					<item id="9630" min="1" max="1" chance="1.9046" /> <!-- Orichalcum -->
-					<item id="9629" min="1" max="1" chance="1.5733" /> <!-- Adamantine -->
-					<item id="9573" min="1" max="1" chance="2.513" /> <!-- Life Stone - Level 80 -->
-					<item id="9574" min="1" max="1" chance="0.6282" /> <!-- Mid-Grade Life Stone - Level 80 -->
-					<item id="9575" min="1" max="1" chance="0.0628" /> <!-- High-Grade Life Stone - Level 80 -->
-					<item id="9576" min="1" max="1" chance="0.0126" /> <!-- Top-Grade Life Stone - Level 80 -->
 				</group>
 			</death>
 			<corpse>
 				<item id="6688" min="1" max="1" chance="1.4653" /> <!-- Forgotten Blade Edge -->
 				<item id="6901" min="1" max="1" chance="0.6779" /> <!-- Recipe: Shining Arrow (100%) -->
-				<item id="13099" min="1" max="1" chance="9.454" /> <!-- Sealed Arcana Sigil Piece -->
 			</corpse>
 		</dropLists>
 		<collision>
@@ -7435,13 +7417,6 @@
 				<group chance="7.685500144958496">
 					<item id="1879" min="1" max="1" chance="60.3115" /> <!-- Cokes -->
 					<item id="1885" min="1" max="1" chance="30.1558" /> <!-- High-Grade Suede -->
-					<item id="9628" min="1" max="1" chance="2.8382" /> <!-- Leonard -->
-					<item id="9630" min="1" max="1" chance="1.9046" /> <!-- Orichalcum -->
-					<item id="9629" min="1" max="1" chance="1.5733" /> <!-- Adamantine -->
-					<item id="9573" min="1" max="1" chance="2.513" /> <!-- Life Stone - Level 80 -->
-					<item id="9574" min="1" max="1" chance="0.6282" /> <!-- Mid-Grade Life Stone - Level 80 -->
-					<item id="9575" min="1" max="1" chance="0.0628" /> <!-- High-Grade Life Stone - Level 80 -->
-					<item id="9576" min="1" max="1" chance="0.0126" /> <!-- Top-Grade Life Stone - Level 80 -->
 				</group>
 			</death>
 			<corpse>
@@ -7525,18 +7500,10 @@
 				<group chance="7.685500144958496">
 					<item id="1879" min="1" max="1" chance="60.3115" /> <!-- Cokes -->
 					<item id="1885" min="1" max="1" chance="30.1558" /> <!-- High-Grade Suede -->
-					<item id="9628" min="1" max="1" chance="2.8382" /> <!-- Leonard -->
-					<item id="9630" min="1" max="1" chance="1.9046" /> <!-- Orichalcum -->
-					<item id="9629" min="1" max="1" chance="1.5733" /> <!-- Adamantine -->
-					<item id="9573" min="1" max="1" chance="2.513" /> <!-- Life Stone - Level 80 -->
-					<item id="9574" min="1" max="1" chance="0.6282" /> <!-- Mid-Grade Life Stone - Level 80 -->
-					<item id="9575" min="1" max="1" chance="0.0628" /> <!-- High-Grade Life Stone - Level 80 -->
-					<item id="9576" min="1" max="1" chance="0.0126" /> <!-- Top-Grade Life Stone - Level 80 -->
 				</group>
 			</death>
 			<corpse>
 				<item id="959" min="1" max="1" chance="0.0407" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-				<item id="13099" min="1" max="1" chance="14.181" /> <!-- Sealed Arcana Sigil Piece -->
 			</corpse>
 		</dropLists>
 		<collision>
@@ -7624,13 +7591,6 @@
 				<group chance="7.685500144958496">
 					<item id="1879" min="1" max="1" chance="60.3115" /> <!-- Cokes -->
 					<item id="1885" min="1" max="1" chance="30.1558" /> <!-- High-Grade Suede -->
-					<item id="9628" min="1" max="1" chance="2.8382" /> <!-- Leonard -->
-					<item id="9630" min="1" max="1" chance="1.9046" /> <!-- Orichalcum -->
-					<item id="9629" min="1" max="1" chance="1.5733" /> <!-- Adamantine -->
-					<item id="9573" min="1" max="1" chance="2.513" /> <!-- Life Stone - Level 80 -->
-					<item id="9574" min="1" max="1" chance="0.6282" /> <!-- Mid-Grade Life Stone - Level 80 -->
-					<item id="9575" min="1" max="1" chance="0.0628" /> <!-- High-Grade Life Stone - Level 80 -->
-					<item id="9576" min="1" max="1" chance="0.0126" /> <!-- Top-Grade Life Stone - Level 80 -->
 				</group>
 			</death>
 			<corpse>

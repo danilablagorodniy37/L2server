@@ -322,7 +322,6 @@
 		<dropLists>
 			<death>
 				<group chance="0.4032999873161316">
-					<item id="11960" min="1" max="1" chance="7.5474" /> <!-- Common Item - Halberd -->
 					<item id="5542" min="1" max="1" chance="92.4526" /> <!-- Halberd Edge -->
 				</group>
 				<group chance="30.949600219726562">
@@ -416,7 +415,6 @@
 		<dropLists>
 			<death>
 				<group chance="0.3921999931335449">
-					<item id="11955" min="1" max="1" chance="7.4658" /> <!-- Common Item - Carnage Bow -->
 					<item id="5535" min="1" max="1" chance="92.5342" /> <!-- Carnage Bow Stave -->
 				</group>
 				<group chance="37.13090133666992">
@@ -513,7 +511,6 @@
 		<dropLists>
 			<death>
 				<group chance="0.37619999051094055">
-					<item id="11951" min="1" max="1" chance="7.4858" /> <!-- Common Item - Bloody Orchid -->
 					<item id="5536" min="1" max="1" chance="92.5142" /> <!-- Bloody Orchid Head -->
 				</group>
 				<group chance="40.26689910888672">
@@ -746,11 +743,8 @@
 					<item id="57" min="1298" max="2632" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="1.823199987411499">
-					<item id="12341" min="1" max="1" chance="4.1055" /> <!-- Common Item - Earring of Black Ore -->
 					<item id="4052" min="1" max="1" chance="31.3238" /> <!-- Earring of Black Ore Piece -->
-					<item id="12342" min="1" max="1" chance="3.0774" /> <!-- Common Item - Necklace of Black Ore -->
 					<item id="4054" min="1" max="1" chance="17.4264" /> <!-- Necklace of Black Ore Beads -->
-					<item id="12343" min="1" max="1" chance="6.144" /> <!-- Common Item - Ring of Black Ore -->
 					<item id="4053" min="1" max="1" chance="37.9229" /> <!-- Ring of Black Ore Gemstone -->
 				</group>
 				<group chance="5.40310001373291">
@@ -779,8 +773,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -793,8 +785,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -865,9 +855,7 @@
 					<item id="57" min="1127" max="2304" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.5234000086784363">
-					<item id="12194" min="1" max="1" chance="4.4096" /> <!-- Common Item - Blue Wolf Leather Armor -->
 					<item id="4082" min="1" max="1" chance="45.5904" /> <!-- Blue Wolf Leather Armor Texture -->
-					<item id="12186" min="1" max="1" chance="4.4096" /> <!-- Common Item - Leather Armor of Doom -->
 					<item id="4083" min="1" max="1" chance="45.5904" /> <!-- Leather Armor of Doom Design -->
 				</group>
 				<group chance="35.247398376464844">
@@ -897,8 +885,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -911,8 +897,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -982,7 +966,6 @@
 					<item id="57" min="1383" max="2812" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.1899999976158142">
-					<item id="11951" min="1" max="1" chance="7.4858" /> <!-- Common Item - Bloody Orchid -->
 					<item id="5536" min="1" max="1" chance="92.5142" /> <!-- Bloody Orchid Head -->
 				</group>
 				<group chance="23.428600311279297">
@@ -1011,8 +994,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -1025,8 +1006,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -1098,13 +1077,9 @@
 					<item id="57" min="1793" max="3640" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.24449999630451202">
-					<item id="11946" min="1" max="1" chance="1.8833" /> <!-- Common Item - Dasparion's Staff -->
 					<item id="5543" min="1" max="1" chance="23.2872" /> <!-- Dasparion's Staff Head -->
-					<item id="11949" min="1" max="1" chance="1.8833" /> <!-- Common Item - Meteor Shower -->
 					<item id="5532" min="1" max="1" chance="23.0697" /> <!-- Meteor Shower Head -->
-					<item id="11953" min="1" max="1" chance="1.8833" /> <!-- Common Item - Spiritual Eye -->
 					<item id="8341" min="1" max="1" chance="23.0402" /> <!-- Spiritual Eye Piece -->
-					<item id="11958" min="1" max="1" chance="1.8833" /> <!-- Common Item - Destroyer Hammer -->
 					<item id="8346" min="1" max="1" chance="23.0697" /> <!-- Hammer Piece of Destroyer -->
 				</group>
 				<group chance="43.89580154418945">
@@ -1134,8 +1109,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -1148,8 +1121,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -1222,7 +1193,6 @@
 					<item id="57" min="2091" max="4255" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.287200003862381">
-					<item id="11951" min="1" max="1" chance="7.4858" /> <!-- Common Item - Bloody Orchid -->
 					<item id="5536" min="1" max="1" chance="92.5142" /> <!-- Bloody Orchid Head -->
 				</group>
 				<group chance="38.559600830078125">
@@ -1252,8 +1222,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -1266,8 +1234,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -1337,13 +1303,9 @@
 					<item id="57" min="1474" max="2999" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="1.5307999849319458">
-					<item id="12224" min="1" max="1" chance="3.9179" /> <!-- Common Item - Sealed Dark Crystal Boots -->
 					<item id="5496" min="1" max="1" chance="21.0821" /> <!-- Sealed Dark Crystal Boots Lining -->
-					<item id="12231" min="1" max="1" chance="3.9179" /> <!-- Common Item - Sealed Tallum Boots -->
 					<item id="5497" min="1" max="1" chance="21.0821" /> <!-- Sealed Tallum Boots Lining -->
-					<item id="12221" min="1" max="1" chance="3.9179" /> <!-- Common Item - Sealed Dark Crystal Gloves -->
 					<item id="5508" min="1" max="1" chance="21.0821" /> <!-- Sealed Dark Crystal Gloves Design -->
-					<item id="12229" min="1" max="1" chance="3.9179" /> <!-- Common Item - Sealed Tallum Gloves -->
 					<item id="5509" min="1" max="1" chance="21.0821" /> <!-- Sealed Tallum Gloves Design -->
 				</group>
 				<group chance="4.530700206756592">
@@ -1371,8 +1333,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -1385,8 +1345,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -1457,13 +1415,9 @@
 					<item id="57" min="1283" max="2614" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.1754000037908554">
-					<item id="11946" min="1" max="1" chance="1.8833" /> <!-- Common Item - Dasparion's Staff -->
 					<item id="5543" min="1" max="1" chance="23.2872" /> <!-- Dasparion's Staff Head -->
-					<item id="11949" min="1" max="1" chance="1.8833" /> <!-- Common Item - Meteor Shower -->
 					<item id="5532" min="1" max="1" chance="23.0697" /> <!-- Meteor Shower Head -->
-					<item id="11953" min="1" max="1" chance="1.8833" /> <!-- Common Item - Spiritual Eye -->
 					<item id="8341" min="1" max="1" chance="23.0402" /> <!-- Spiritual Eye Piece -->
-					<item id="11958" min="1" max="1" chance="1.8833" /> <!-- Common Item - Destroyer Hammer -->
 					<item id="8346" min="1" max="1" chance="23.0697" /> <!-- Hammer Piece of Destroyer -->
 				</group>
 				<group chance="38.99530029296875">
@@ -1492,8 +1446,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -1506,8 +1458,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -1577,7 +1527,6 @@
 					<item id="57" min="1563" max="3192" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.2152000069618225">
-					<item id="11951" min="1" max="1" chance="7.4858" /> <!-- Common Item - Bloody Orchid -->
 					<item id="5536" min="1" max="1" chance="92.5142" /> <!-- Bloody Orchid Head -->
 				</group>
 				<group chance="42.27479934692383">
@@ -1607,8 +1556,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -1621,8 +1568,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -1694,7 +1639,6 @@
 					<item id="57" min="1894" max="3856" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.2603999972343445">
-					<item id="11951" min="1" max="1" chance="7.4858" /> <!-- Common Item - Bloody Orchid -->
 					<item id="5536" min="1" max="1" chance="92.5142" /> <!-- Bloody Orchid Head -->
 				</group>
 				<group chance="41.26969909667969">
@@ -1723,8 +1667,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -1737,8 +1679,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -1811,11 +1751,8 @@
 					<item id="57" min="2357" max="4804" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.9463000297546387">
-					<item id="12222" min="1" max="1" chance="4.5113" /> <!-- Common Item - Sealed Dark Crystal Leather Armor -->
 					<item id="5478" min="1" max="1" chance="26.1184" /> <!-- Sealed Dark Crystal Leather Armor Pattern -->
-					<item id="12230" min="1" max="1" chance="2.7732" /> <!-- Common Item - Sealed Tallum Leather Armor -->
 					<item id="5479" min="1" max="1" chance="18.3787" /> <!-- Sealed Tallum Leather Armor Pattern -->
-					<item id="12228" min="1" max="1" chance="7.2233" /> <!-- Common Item - Sealed Dark Crystal Leggings -->
 					<item id="5482" min="1" max="1" chance="40.9951" /> <!-- Sealed Dark Crystal Leggings Design -->
 				</group>
 				<group chance="38.72060012817383">
@@ -1844,8 +1781,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -1858,8 +1793,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -1923,7 +1856,6 @@
 					<item id="57" min="1317" max="2677" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.18129999935626984">
-					<item id="11955" min="1" max="1" chance="7.4658" /> <!-- Common Item - Carnage Bow -->
 					<item id="5535" min="1" max="1" chance="92.5342" /> <!-- Carnage Bow Stave -->
 				</group>
 				<group chance="28.986099243164062">
@@ -1953,8 +1885,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -1967,8 +1897,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -2032,13 +1960,9 @@
 					<item id="57" min="1488" max="3039" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="1.549299955368042">
-					<item id="12224" min="1" max="1" chance="3.9179" /> <!-- Common Item - Sealed Dark Crystal Boots -->
 					<item id="5496" min="1" max="1" chance="21.0821" /> <!-- Sealed Dark Crystal Boots Lining -->
-					<item id="12231" min="1" max="1" chance="3.9179" /> <!-- Common Item - Sealed Tallum Boots -->
 					<item id="5497" min="1" max="1" chance="21.0821" /> <!-- Sealed Tallum Boots Lining -->
-					<item id="12221" min="1" max="1" chance="3.9179" /> <!-- Common Item - Sealed Dark Crystal Gloves -->
 					<item id="5508" min="1" max="1" chance="21.0821" /> <!-- Sealed Dark Crystal Gloves Design -->
-					<item id="12229" min="1" max="1" chance="3.9179" /> <!-- Common Item - Sealed Tallum Gloves -->
 					<item id="5509" min="1" max="1" chance="21.0821" /> <!-- Sealed Tallum Gloves Design -->
 				</group>
 				<group chance="32.5099983215332">
@@ -2067,8 +1991,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -2081,8 +2003,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -2157,11 +2077,8 @@
 					<item id="57" min="1203" max="2445" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="2.6933999061584473">
-					<item id="12338" min="1" max="1" chance="4.5566" /> <!-- Common Item - Adamantite Earring -->
 					<item id="4049" min="1" max="1" chance="29.1581" /> <!-- Adamantite Earring Gemstone -->
-					<item id="12339" min="1" max="1" chance="3.4209" /> <!-- Common Item - Adamantite Necklace -->
 					<item id="4051" min="1" max="1" chance="21.559" /> <!-- Adamantite Necklace Chain -->
-					<item id="12340" min="1" max="1" chance="6.863" /> <!-- Common Item - Adamantite Ring -->
 					<item id="4050" min="1" max="1" chance="34.4424" /> <!-- Adamantite Ring Wire -->
 				</group>
 				<group chance="13.37279987335205">
@@ -2190,8 +2107,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -2204,8 +2119,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -2317,8 +2230,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -2331,8 +2242,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -2441,8 +2350,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -2455,8 +2362,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -2570,8 +2475,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -2584,8 +2487,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -2664,11 +2565,8 @@
 					<item id="57" min="1299" max="2634" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="1.416200041770935">
-					<item id="12151" min="1" max="1" chance="3.6406" /> <!-- Common Item - Zubei's Leather Shirt -->
 					<item id="4066" min="1" max="1" chance="26.8656" /> <!-- Zubei's Leather Shirt Fabric -->
-					<item id="12165" min="1" max="1" chance="2.2343" /> <!-- Common Item - Avadon Leather Armor -->
 					<item id="4068" min="1" max="1" chance="20.6395" /> <!-- Avadon Leather Armor Lining -->
-					<item id="12150" min="1" max="1" chance="5.8287" /> <!-- Common Item - Zubei's Leather Gaiters -->
 					<item id="4067" min="1" max="1" chance="40.7913" /> <!-- Zubei's Leather Gaiter Texture -->
 				</group>
 				<group chance="48.568199157714844">
@@ -2698,8 +2596,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -2712,8 +2608,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -2790,9 +2684,7 @@
 					<item id="57" min="1299" max="2634" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.3005000054836273">
-					<item id="11915" min="1" max="1" chance="4.6104" /> <!-- Common Item - Kris -->
 					<item id="4109" min="1" max="1" chance="45.3896" /> <!-- Kris Edge -->
-					<item id="11919" min="1" max="1" chance="4.6104" /> <!-- Common Item - Hell Knife -->
 					<item id="4110" min="1" max="1" chance="45.3896" /> <!-- Hell Knife Edge -->
 				</group>
 				<group chance="15.112600326538086">
@@ -2821,8 +2713,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -2835,8 +2725,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -2911,11 +2799,8 @@
 					<item id="57" min="1449" max="2935" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.25360000133514404">
-					<item id="11930" min="1" max="1" chance="2.3159" /> <!-- Common Item - Sword of Damascus -->
 					<item id="4114" min="1" max="1" chance="31.0348" /> <!-- Sword of Damascus Blade -->
-					<item id="11929" min="1" max="1" chance="2.3159" /> <!-- Common Item - Guardian Sword -->
 					<item id="8330" min="1" max="1" chance="30.9826" /> <!-- Guardian Sword Blade -->
-					<item id="11943" min="1" max="1" chance="2.3159" /> <!-- Common Item - Wizard's Tear -->
 					<item id="8336" min="1" max="1" chance="31.0349" /> <!-- Blade of the Wizard's Tear -->
 				</group>
 				<group chance="28.253400802612305">
@@ -2944,8 +2829,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -2958,8 +2841,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -3038,11 +2919,8 @@
 					<item id="57" min="1273" max="2578" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="2.098400115966797">
-					<item id="12183" min="1" max="1" chance="3.8238" /> <!-- Common Item - Doom Shield -->
 					<item id="4077" min="1" max="1" chance="33.8862" /> <!-- Doom Shield Fragment -->
-					<item id="12202" min="1" max="1" chance="2.676" /> <!-- Common Item - Blue Wolf Helmet -->
 					<item id="4088" min="1" max="1" chance="28.469" /> <!-- Blue Wolf Helmet Design -->
-					<item id="12185" min="1" max="1" chance="2.676" /> <!-- Common Item - Doom Helmet -->
 					<item id="4089" min="1" max="1" chance="28.469" /> <!-- Doom Helmet Pattern -->
 				</group>
 				<group chance="27.438400268554688">
@@ -3072,8 +2950,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -3086,8 +2962,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -3162,11 +3036,8 @@
 					<item id="57" min="1570" max="3179" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="2.586899995803833">
-					<item id="12183" min="1" max="1" chance="3.8238" /> <!-- Common Item - Doom Shield -->
 					<item id="4077" min="1" max="1" chance="33.8862" /> <!-- Doom Shield Fragment -->
-					<item id="12202" min="1" max="1" chance="2.676" /> <!-- Common Item - Blue Wolf Helmet -->
 					<item id="4088" min="1" max="1" chance="28.469" /> <!-- Blue Wolf Helmet Design -->
-					<item id="12185" min="1" max="1" chance="2.676" /> <!-- Common Item - Doom Helmet -->
 					<item id="4089" min="1" max="1" chance="28.469" /> <!-- Doom Helmet Pattern -->
 				</group>
 				<group chance="33.825401306152344">
@@ -3196,8 +3067,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -3210,8 +3079,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -3290,13 +3157,9 @@
 					<item id="57" min="1201" max="2431" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="1.0163999795913696">
-					<item id="12201" min="1" max="1" chance="1.9518" /> <!-- Common Item - Blue Wolf Tunic -->
 					<item id="4084" min="1" max="1" chance="19.1146" /> <!-- Blue Wolf Tunic Fabric -->
-					<item id="12192" min="1" max="1" chance="1.9518" /> <!-- Common Item - Tunic of Doom -->
 					<item id="4085" min="1" max="1" chance="19.1146" /> <!-- Tunic of Doom Pattern -->
-					<item id="12203" min="1" max="1" chance="3.1246" /> <!-- Common Item - Blue Wolf Stockings -->
 					<item id="4086" min="1" max="1" chance="25.809" /> <!-- Blue Wolf Stockings Pattern -->
-					<item id="12205" min="1" max="1" chance="3.1246" /> <!-- Common Item - Stockings of Doom -->
 					<item id="4087" min="1" max="1" chance="25.809" /> <!-- Stockings of Doom Pattern -->
 				</group>
 				<group chance="33.09130096435547">
@@ -3326,8 +3189,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -3340,8 +3201,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -3416,7 +3275,6 @@
 					<item id="57" min="1284" max="2598" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.22439999878406525">
-					<item id="11933" min="1" max="1" chance="6.955" /> <!-- Common Item - Bellion Cestus -->
 					<item id="4120" min="1" max="1" chance="93.045" /> <!-- Bellion Cestus Edge -->
 				</group>
 				<group chance="12.021699905395508">
@@ -3445,8 +3303,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -3459,8 +3315,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -3539,7 +3393,6 @@
 					<item id="57" min="1443" max="2919" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.2513999938964844">
-					<item id="11944" min="1" max="1" chance="6.9768" /> <!-- Common Item - Bow of Peril -->
 					<item id="4121" min="1" max="1" chance="93.0232" /> <!-- Bow of Peril Shaft -->
 				</group>
 				<group chance="42.46009826660156">
@@ -3569,8 +3422,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -3583,8 +3434,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -3662,11 +3511,8 @@
 					<item id="57" min="1492" max="3025" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.25690001249313354">
-					<item id="11935" min="1" max="1" chance="2.3568" /> <!-- Common Item - Deadman's Glory -->
 					<item id="4116" min="1" max="1" chance="31.5289" /> <!-- Deadman's Glory Stone -->
-					<item id="11938" min="1" max="1" chance="2.3568" /> <!-- Common Item - Art of Battle Axe -->
 					<item id="4117" min="1" max="1" chance="31.5289" /> <!-- Art of Battle Axe Blade -->
-					<item id="11934" min="1" max="1" chance="2.3568" /> <!-- Common Item - Staff of Evil Spirits -->
 					<item id="4118" min="1" max="1" chance="29.8718" /> <!-- Evil Spirit Head -->
 				</group>
 				<group chance="32.89469909667969">
@@ -3695,8 +3541,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -3709,8 +3553,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -3788,11 +3630,8 @@
 					<item id="57" min="1270" max="2576" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="1.7836999893188477">
-					<item id="12341" min="1" max="1" chance="4.1055" /> <!-- Common Item - Earring of Black Ore -->
 					<item id="4052" min="1" max="1" chance="31.3238" /> <!-- Earring of Black Ore Piece -->
-					<item id="12342" min="1" max="1" chance="3.0774" /> <!-- Common Item - Necklace of Black Ore -->
 					<item id="4054" min="1" max="1" chance="17.4264" /> <!-- Necklace of Black Ore Beads -->
-					<item id="12343" min="1" max="1" chance="6.144" /> <!-- Common Item - Ring of Black Ore -->
 					<item id="4053" min="1" max="1" chance="37.9229" /> <!-- Ring of Black Ore Gemstone -->
 				</group>
 				<group chance="27.384599685668945">
@@ -3822,8 +3661,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -3836,8 +3673,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -3912,11 +3747,8 @@
 					<item id="57" min="1679" max="3405" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="2.3578999042510986">
-					<item id="12341" min="1" max="1" chance="4.1055" /> <!-- Common Item - Earring of Black Ore -->
 					<item id="4052" min="1" max="1" chance="31.3238" /> <!-- Earring of Black Ore Piece -->
-					<item id="12342" min="1" max="1" chance="3.0774" /> <!-- Common Item - Necklace of Black Ore -->
 					<item id="4054" min="1" max="1" chance="17.4264" /> <!-- Necklace of Black Ore Beads -->
-					<item id="12343" min="1" max="1" chance="6.144" /> <!-- Common Item - Ring of Black Ore -->
 					<item id="4053" min="1" max="1" chance="37.9229" /> <!-- Ring of Black Ore Gemstone -->
 				</group>
 				<group chance="36.199798583984375">
@@ -3946,8 +3778,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -3960,8 +3790,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -4040,11 +3868,8 @@
 					<item id="57" min="1504" max="3050" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.2635999917984009">
-					<item id="11930" min="1" max="1" chance="2.3159" /> <!-- Common Item - Sword of Damascus -->
 					<item id="4114" min="1" max="1" chance="31.0348" /> <!-- Sword of Damascus Blade -->
-					<item id="11929" min="1" max="1" chance="2.3159" /> <!-- Common Item - Guardian Sword -->
 					<item id="8330" min="1" max="1" chance="30.9826" /> <!-- Guardian Sword Blade -->
-					<item id="11943" min="1" max="1" chance="2.3159" /> <!-- Common Item - Wizard's Tear -->
 					<item id="8336" min="1" max="1" chance="31.0349" /> <!-- Blade of the Wizard's Tear -->
 				</group>
 				<group chance="21.8700008392334">
@@ -4074,8 +3899,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -4088,8 +3911,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -4164,7 +3985,6 @@
 					<item id="57" min="1454" max="2949" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.2549999952316284">
-					<item id="11939" min="1" max="1" chance="6.9442" /> <!-- Common Item - Demon's Dagger -->
 					<item id="4119" min="1" max="1" chance="93.0558" /> <!-- Demon's Dagger Edge -->
 				</group>
 				<group chance="3.245300054550171">
@@ -4192,8 +4012,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -4206,8 +4024,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -4286,7 +4102,6 @@
 					<item id="57" min="1456" max="2976" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.25540000200271606">
-					<item id="11944" min="1" max="1" chance="6.9768" /> <!-- Common Item - Bow of Peril -->
 					<item id="4121" min="1" max="1" chance="93.0232" /> <!-- Bow of Peril Shaft -->
 				</group>
 				<group chance="21.309200286865234">
@@ -4316,8 +4131,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -4330,8 +4143,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -4406,7 +4217,6 @@
 					<item id="57" min="1784" max="3645" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.31290000677108765">
-					<item id="11944" min="1" max="1" chance="6.9768" /> <!-- Common Item - Bow of Peril -->
 					<item id="4121" min="1" max="1" chance="93.0232" /> <!-- Bow of Peril Shaft -->
 				</group>
 				<group chance="28.706499099731445">
@@ -4435,8 +4245,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -4449,8 +4257,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -4529,13 +4335,9 @@
 					<item id="57" min="1584" max="3236" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="1.3486000299453735">
-					<item id="12201" min="1" max="1" chance="1.9518" /> <!-- Common Item - Blue Wolf Tunic -->
 					<item id="4084" min="1" max="1" chance="19.1146" /> <!-- Blue Wolf Tunic Fabric -->
-					<item id="12192" min="1" max="1" chance="1.9518" /> <!-- Common Item - Tunic of Doom -->
 					<item id="4085" min="1" max="1" chance="19.1146" /> <!-- Tunic of Doom Pattern -->
-					<item id="12203" min="1" max="1" chance="3.1246" /> <!-- Common Item - Blue Wolf Stockings -->
 					<item id="4086" min="1" max="1" chance="25.809" /> <!-- Blue Wolf Stockings Pattern -->
-					<item id="12205" min="1" max="1" chance="3.1246" /> <!-- Common Item - Stockings of Doom -->
 					<item id="4087" min="1" max="1" chance="25.809" /> <!-- Stockings of Doom Pattern -->
 				</group>
 				<group chance="34.28710174560547">
@@ -4565,8 +4367,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -4579,8 +4379,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -4657,11 +4455,8 @@
 					<item id="57" min="1584" max="3236" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.27410000562667847">
-					<item id="11935" min="1" max="1" chance="2.3568" /> <!-- Common Item - Deadman's Glory -->
 					<item id="4116" min="1" max="1" chance="31.5289" /> <!-- Deadman's Glory Stone -->
-					<item id="11938" min="1" max="1" chance="2.3568" /> <!-- Common Item - Art of Battle Axe -->
 					<item id="4117" min="1" max="1" chance="31.5289" /> <!-- Art of Battle Axe Blade -->
-					<item id="11934" min="1" max="1" chance="2.3568" /> <!-- Common Item - Staff of Evil Spirits -->
 					<item id="4118" min="1" max="1" chance="29.8718" /> <!-- Evil Spirit Head -->
 				</group>
 				<group chance="16.848899841308594">
@@ -4691,8 +4486,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -4705,8 +4498,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -4786,11 +4577,8 @@
 					<item id="57" min="1619" max="3277" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.2833999991416931">
-					<item id="11930" min="1" max="1" chance="2.3159" /> <!-- Common Item - Sword of Damascus -->
 					<item id="4114" min="1" max="1" chance="31.0348" /> <!-- Sword of Damascus Blade -->
-					<item id="11929" min="1" max="1" chance="2.3159" /> <!-- Common Item - Guardian Sword -->
 					<item id="8330" min="1" max="1" chance="30.9826" /> <!-- Guardian Sword Blade -->
-					<item id="11943" min="1" max="1" chance="2.3159" /> <!-- Common Item - Wizard's Tear -->
 					<item id="8336" min="1" max="1" chance="31.0349" /> <!-- Blade of the Wizard's Tear -->
 				</group>
 				<group chance="36.05179977416992">
@@ -4877,7 +4665,6 @@
 					<item id="57" min="1125" max="2280" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.19709999859333038">
-					<item id="11939" min="1" max="1" chance="6.9442" /> <!-- Common Item - Demon's Dagger -->
 					<item id="4119" min="1" max="1" chance="93.0558" /> <!-- Demon's Dagger Edge -->
 				</group>
 				<group chance="35.00310134887695">
@@ -4965,15 +4752,10 @@
 					<item id="57" min="1284" max="2601" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.2222999930381775">
-					<item id="11935" min="1" max="1" chance="1.4052" /> <!-- Common Item - Deadman's Glory -->
 					<item id="4116" min="1" max="1" chance="18.7987" /> <!-- Deadman's Glory Stone -->
-					<item id="11938" min="1" max="1" chance="1.4052" /> <!-- Common Item - Art of Battle Axe -->
 					<item id="4117" min="1" max="1" chance="18.7987" /> <!-- Art of Battle Axe Blade -->
-					<item id="11934" min="1" max="1" chance="1.4052" /> <!-- Common Item - Staff of Evil Spirits -->
 					<item id="4118" min="1" max="1" chance="17.8107" /> <!-- Evil Spirit Head -->
-					<item id="11941" min="1" max="1" chance="1.4052" /> <!-- Common Item - Kaim Vanul's Bones -->
 					<item id="8340" min="1" max="1" chance="18.7987" /> <!-- Bones Head of Kaim Vanul -->
-					<item id="11936" min="1" max="1" chance="1.4052" /> <!-- Common Item - Star Buster -->
 					<item id="8348" min="1" max="1" chance="18.7672" /> <!-- Star Buster Head -->
 				</group>
 				<group chance="16.772499084472656">
@@ -5066,11 +4848,8 @@
 					<item id="57" min="1783" max="3643" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="2.516200065612793">
-					<item id="12341" min="1" max="1" chance="4.1055" /> <!-- Common Item - Earring of Black Ore -->
 					<item id="4052" min="1" max="1" chance="31.3238" /> <!-- Earring of Black Ore Piece -->
-					<item id="12342" min="1" max="1" chance="3.0774" /> <!-- Common Item - Necklace of Black Ore -->
 					<item id="4054" min="1" max="1" chance="17.4264" /> <!-- Necklace of Black Ore Beads -->
-					<item id="12343" min="1" max="1" chance="6.144" /> <!-- Common Item - Ring of Black Ore -->
 					<item id="4053" min="1" max="1" chance="37.9229" /> <!-- Ring of Black Ore Gemstone -->
 				</group>
 				<group chance="35.19670104980469">
@@ -5156,11 +4935,8 @@
 					<item id="57" min="1288" max="2611" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.7890999913215637">
-					<item id="12204" min="1" max="1" chance="2.7002" /> <!-- Common Item - Blue Wolf Breastplate -->
 					<item id="4078" min="1" max="1" chance="29.6205" /> <!-- Blue Wolf Breastplate Part -->
-					<item id="12184" min="1" max="1" chance="1.6621" /> <!-- Common Item - Doom Plate Armor -->
 					<item id="4081" min="1" max="1" chance="19.9864" /> <!-- Doom Plate Armor Temper -->
-					<item id="12193" min="1" max="1" chance="4.3191" /> <!-- Common Item - Blue Wolf Gaiters -->
 					<item id="4080" min="1" max="1" chance="41.7117" /> <!-- Blue Wolf Gaiters Material -->
 				</group>
 				<group chance="45.272300720214844">
@@ -5248,13 +5024,9 @@
 					<item id="57" min="1469" max="2980" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="1.2451000213623047">
-					<item id="12201" min="1" max="1" chance="1.9518" /> <!-- Common Item - Blue Wolf Tunic -->
 					<item id="4084" min="1" max="1" chance="19.1146" /> <!-- Blue Wolf Tunic Fabric -->
-					<item id="12192" min="1" max="1" chance="1.9518" /> <!-- Common Item - Tunic of Doom -->
 					<item id="4085" min="1" max="1" chance="19.1146" /> <!-- Tunic of Doom Pattern -->
-					<item id="12203" min="1" max="1" chance="3.1246" /> <!-- Common Item - Blue Wolf Stockings -->
 					<item id="4086" min="1" max="1" chance="25.809" /> <!-- Blue Wolf Stockings Pattern -->
-					<item id="12205" min="1" max="1" chance="3.1246" /> <!-- Common Item - Stockings of Doom -->
 					<item id="4087" min="1" max="1" chance="25.809" /> <!-- Stockings of Doom Pattern -->
 				</group>
 				<group chance="41.20090103149414">
@@ -5345,11 +5117,8 @@
 					<item id="57" min="1229" max="2488" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.21140000224113464">
-					<item id="11935" min="1" max="1" chance="2.3568" /> <!-- Common Item - Deadman's Glory -->
 					<item id="4116" min="1" max="1" chance="31.5289" /> <!-- Deadman's Glory Stone -->
-					<item id="11938" min="1" max="1" chance="2.3568" /> <!-- Common Item - Art of Battle Axe -->
 					<item id="4117" min="1" max="1" chance="31.5289" /> <!-- Art of Battle Axe Blade -->
-					<item id="11934" min="1" max="1" chance="2.3568" /> <!-- Common Item - Staff of Evil Spirits -->
 					<item id="4118" min="1" max="1" chance="29.8718" /> <!-- Evil Spirit Head -->
 				</group>
 				<group chance="3.4505999088287354">
@@ -5378,8 +5147,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -5392,8 +5159,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -5466,7 +5231,6 @@
 					<item id="57" min="1050" max="2127" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.18369999527931213">
-					<item id="11933" min="1" max="1" chance="6.955" /> <!-- Common Item - Bellion Cestus -->
 					<item id="4120" min="1" max="1" chance="93.045" /> <!-- Bellion Cestus Edge -->
 				</group>
 				<group chance="25.374500274658203">
@@ -5497,8 +5261,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -5511,8 +5273,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -5587,11 +5347,8 @@
 					<item id="57" min="1273" max="2574" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="2.094899892807007">
-					<item id="12183" min="1" max="1" chance="3.8238" /> <!-- Common Item - Doom Shield -->
 					<item id="4077" min="1" max="1" chance="33.8862" /> <!-- Doom Shield Fragment -->
-					<item id="12202" min="1" max="1" chance="2.676" /> <!-- Common Item - Blue Wolf Helmet -->
 					<item id="4088" min="1" max="1" chance="28.469" /> <!-- Blue Wolf Helmet Design -->
-					<item id="12185" min="1" max="1" chance="2.676" /> <!-- Common Item - Doom Helmet -->
 					<item id="4089" min="1" max="1" chance="28.469" /> <!-- Doom Helmet Pattern -->
 				</group>
 				<group chance="43.81010055541992">
@@ -5621,8 +5378,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -5635,8 +5390,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -5713,11 +5466,8 @@
 					<item id="57" min="1298" max="2625" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="2.1368000507354736">
-					<item id="12183" min="1" max="1" chance="3.8238" /> <!-- Common Item - Doom Shield -->
 					<item id="4077" min="1" max="1" chance="33.8862" /> <!-- Doom Shield Fragment -->
-					<item id="12202" min="1" max="1" chance="2.676" /> <!-- Common Item - Blue Wolf Helmet -->
 					<item id="4088" min="1" max="1" chance="28.469" /> <!-- Blue Wolf Helmet Design -->
-					<item id="12185" min="1" max="1" chance="2.676" /> <!-- Common Item - Doom Helmet -->
 					<item id="4089" min="1" max="1" chance="28.469" /> <!-- Doom Helmet Pattern -->
 				</group>
 				<group chance="44.68629837036133">
@@ -5747,8 +5497,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -5761,8 +5509,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -5836,13 +5582,9 @@
 					<item id="57" min="1462" max="2965" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="2.7372000217437744">
-					<item id="12188" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Doom Boots -->
 					<item id="4099" min="1" max="1" chance="22.3517" /> <!-- Sealed Doom Boots Part -->
-					<item id="12189" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Blue Wolf Boots -->
 					<item id="4090" min="1" max="1" chance="22.3517" /> <!-- Sealed Blue Wolf Boots Design -->
-					<item id="12187" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Doom Gloves -->
 					<item id="4091" min="1" max="1" chance="22.3517" /> <!-- Sealed Doom Gloves Part -->
-					<item id="12190" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Blue Wolf Gloves -->
 					<item id="4096" min="1" max="1" chance="22.3517" /> <!-- Sealed Blue Wolf Gloves Fabric -->
 				</group>
 				<group chance="26.117399215698242">
@@ -5872,8 +5614,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -5886,8 +5626,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -5963,13 +5701,9 @@
 					<item id="57" min="1385" max="2810" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="2.593600034713745">
-					<item id="12188" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Doom Boots -->
 					<item id="4099" min="1" max="1" chance="22.3517" /> <!-- Sealed Doom Boots Part -->
-					<item id="12189" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Blue Wolf Boots -->
 					<item id="4090" min="1" max="1" chance="22.3517" /> <!-- Sealed Blue Wolf Boots Design -->
-					<item id="12187" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Doom Gloves -->
 					<item id="4091" min="1" max="1" chance="22.3517" /> <!-- Sealed Doom Gloves Part -->
-					<item id="12190" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Blue Wolf Gloves -->
 					<item id="4096" min="1" max="1" chance="22.3517" /> <!-- Sealed Blue Wolf Gloves Fabric -->
 				</group>
 				<group chance="24.747800827026367">
@@ -5999,8 +5733,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -6013,8 +5745,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -6087,13 +5817,9 @@
 					<item id="57" min="1025" max="2078" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="1.9183000326156616">
-					<item id="12188" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Doom Boots -->
 					<item id="4099" min="1" max="1" chance="22.3517" /> <!-- Sealed Doom Boots Part -->
-					<item id="12189" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Blue Wolf Boots -->
 					<item id="4090" min="1" max="1" chance="22.3517" /> <!-- Sealed Blue Wolf Boots Design -->
-					<item id="12187" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Doom Gloves -->
 					<item id="4091" min="1" max="1" chance="22.3517" /> <!-- Sealed Doom Gloves Part -->
-					<item id="12190" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Blue Wolf Gloves -->
 					<item id="4096" min="1" max="1" chance="22.3517" /> <!-- Sealed Blue Wolf Gloves Fabric -->
 				</group>
 				<group chance="20.29520034790039">
@@ -6123,8 +5849,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -6137,8 +5861,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -6211,13 +5933,9 @@
 					<item id="57" min="1025" max="2078" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="1.9183000326156616">
-					<item id="12188" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Doom Boots -->
 					<item id="4099" min="1" max="1" chance="22.3517" /> <!-- Sealed Doom Boots Part -->
-					<item id="12189" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Blue Wolf Boots -->
 					<item id="4090" min="1" max="1" chance="22.3517" /> <!-- Sealed Blue Wolf Boots Design -->
-					<item id="12187" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Doom Gloves -->
 					<item id="4091" min="1" max="1" chance="22.3517" /> <!-- Sealed Doom Gloves Part -->
-					<item id="12190" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Blue Wolf Gloves -->
 					<item id="4096" min="1" max="1" chance="22.3517" /> <!-- Sealed Blue Wolf Gloves Fabric -->
 				</group>
 				<group chance="20.29520034790039">
@@ -6247,8 +5965,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -6261,8 +5977,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -6334,7 +6048,6 @@
 					<item id="57" min="1246" max="2527" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.21809999644756317">
-					<item id="11933" min="1" max="1" chance="6.955" /> <!-- Common Item - Bellion Cestus -->
 					<item id="4120" min="1" max="1" chance="93.045" /> <!-- Bellion Cestus Edge -->
 				</group>
 				<group chance="24.4325008392334">
@@ -6364,8 +6077,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -6378,8 +6089,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -6451,7 +6160,6 @@
 					<item id="57" min="1216" max="2466" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.21279999613761902">
-					<item id="11933" min="1" max="1" chance="6.955" /> <!-- Common Item - Bellion Cestus -->
 					<item id="4120" min="1" max="1" chance="93.045" /> <!-- Bellion Cestus Edge -->
 				</group>
 				<group chance="23.841400146484375">
@@ -6481,8 +6189,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -6495,8 +6201,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -6577,11 +6281,8 @@
 					<item id="57" min="1438" max="2917" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.8813999891281128">
-					<item id="12204" min="1" max="1" chance="2.7002" /> <!-- Common Item - Blue Wolf Breastplate -->
 					<item id="4078" min="1" max="1" chance="29.6205" /> <!-- Blue Wolf Breastplate Part -->
-					<item id="12184" min="1" max="1" chance="1.6621" /> <!-- Common Item - Doom Plate Armor -->
 					<item id="4081" min="1" max="1" chance="19.9864" /> <!-- Doom Plate Armor Temper -->
-					<item id="12193" min="1" max="1" chance="4.3191" /> <!-- Common Item - Blue Wolf Gaiters -->
 					<item id="4080" min="1" max="1" chance="41.7117" /> <!-- Blue Wolf Gaiters Material -->
 				</group>
 				<group chance="20.878599166870117">
@@ -6611,8 +6312,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -6625,8 +6324,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -6703,11 +6400,8 @@
 					<item id="57" min="1438" max="2917" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.8813999891281128">
-					<item id="12204" min="1" max="1" chance="2.7002" /> <!-- Common Item - Blue Wolf Breastplate -->
 					<item id="4078" min="1" max="1" chance="29.6205" /> <!-- Blue Wolf Breastplate Part -->
-					<item id="12184" min="1" max="1" chance="1.6621" /> <!-- Common Item - Doom Plate Armor -->
 					<item id="4081" min="1" max="1" chance="19.9864" /> <!-- Doom Plate Armor Temper -->
-					<item id="12193" min="1" max="1" chance="4.3191" /> <!-- Common Item - Blue Wolf Gaiters -->
 					<item id="4080" min="1" max="1" chance="41.7117" /> <!-- Blue Wolf Gaiters Material -->
 				</group>
 				<group chance="20.878599166870117">
@@ -6737,8 +6431,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -6751,8 +6443,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -6833,13 +6523,9 @@
 					<item id="57" min="1573" max="3190" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="2.9446001052856445">
-					<item id="12188" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Doom Boots -->
 					<item id="4099" min="1" max="1" chance="22.3517" /> <!-- Sealed Doom Boots Part -->
-					<item id="12189" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Blue Wolf Boots -->
 					<item id="4090" min="1" max="1" chance="22.3517" /> <!-- Sealed Blue Wolf Boots Design -->
-					<item id="12187" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Doom Gloves -->
 					<item id="4091" min="1" max="1" chance="22.3517" /> <!-- Sealed Doom Gloves Part -->
-					<item id="12190" min="1" max="1" chance="2.6483" /> <!-- Common Item - Sealed Blue Wolf Gloves -->
 					<item id="4096" min="1" max="1" chance="22.3517" /> <!-- Sealed Blue Wolf Gloves Fabric -->
 				</group>
 				<group chance="47.92390060424805">
@@ -6869,8 +6555,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -6883,8 +6567,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -6961,13 +6643,9 @@
 					<item id="57" min="1573" max="3190" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="1.3329999446868896">
-					<item id="12201" min="1" max="1" chance="1.9518" /> <!-- Common Item - Blue Wolf Tunic -->
 					<item id="4084" min="1" max="1" chance="19.1146" /> <!-- Blue Wolf Tunic Fabric -->
-					<item id="12192" min="1" max="1" chance="1.9518" /> <!-- Common Item - Tunic of Doom -->
 					<item id="4085" min="1" max="1" chance="19.1146" /> <!-- Tunic of Doom Pattern -->
-					<item id="12203" min="1" max="1" chance="3.1246" /> <!-- Common Item - Blue Wolf Stockings -->
 					<item id="4086" min="1" max="1" chance="25.809" /> <!-- Blue Wolf Stockings Pattern -->
-					<item id="12205" min="1" max="1" chance="3.1246" /> <!-- Common Item - Stockings of Doom -->
 					<item id="4087" min="1" max="1" chance="25.809" /> <!-- Stockings of Doom Pattern -->
 				</group>
 				<group chance="26.632699966430664">
@@ -6996,8 +6674,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -7010,8 +6686,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -7086,11 +6760,8 @@
 					<item id="57" min="1318" max="2693" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.8113999962806702">
-					<item id="12204" min="1" max="1" chance="2.7002" /> <!-- Common Item - Blue Wolf Breastplate -->
 					<item id="4078" min="1" max="1" chance="29.6205" /> <!-- Blue Wolf Breastplate Part -->
-					<item id="12184" min="1" max="1" chance="1.6621" /> <!-- Common Item - Doom Plate Armor -->
 					<item id="4081" min="1" max="1" chance="19.9864" /> <!-- Doom Plate Armor Temper -->
-					<item id="12193" min="1" max="1" chance="4.3191" /> <!-- Common Item - Blue Wolf Gaiters -->
 					<item id="4080" min="1" max="1" chance="41.7117" /> <!-- Blue Wolf Gaiters Material -->
 				</group>
 				<group chance="31.78059959411621">
@@ -7120,8 +6791,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -7134,8 +6803,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -7207,13 +6874,9 @@
 					<item id="57" min="1364" max="2788" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="1.1618000268936157">
-					<item id="12201" min="1" max="1" chance="1.9518" /> <!-- Common Item - Blue Wolf Tunic -->
 					<item id="4084" min="1" max="1" chance="19.1146" /> <!-- Blue Wolf Tunic Fabric -->
-					<item id="12192" min="1" max="1" chance="1.9518" /> <!-- Common Item - Tunic of Doom -->
 					<item id="4085" min="1" max="1" chance="19.1146" /> <!-- Tunic of Doom Pattern -->
-					<item id="12203" min="1" max="1" chance="3.1246" /> <!-- Common Item - Blue Wolf Stockings -->
 					<item id="4086" min="1" max="1" chance="25.809" /> <!-- Blue Wolf Stockings Pattern -->
-					<item id="12205" min="1" max="1" chance="3.1246" /> <!-- Common Item - Stockings of Doom -->
 					<item id="4087" min="1" max="1" chance="25.809" /> <!-- Stockings of Doom Pattern -->
 				</group>
 				<group chance="18.536699295043945">
@@ -7242,8 +6905,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -7256,8 +6917,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -7338,11 +6997,8 @@
 					<item id="57" min="1585" max="3240" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.9761999845504761">
-					<item id="12204" min="1" max="1" chance="2.7002" /> <!-- Common Item - Blue Wolf Breastplate -->
 					<item id="4078" min="1" max="1" chance="29.6205" /> <!-- Blue Wolf Breastplate Part -->
-					<item id="12184" min="1" max="1" chance="1.6621" /> <!-- Common Item - Doom Plate Armor -->
 					<item id="4081" min="1" max="1" chance="19.9864" /> <!-- Doom Plate Armor Temper -->
-					<item id="12193" min="1" max="1" chance="4.3191" /> <!-- Common Item - Blue Wolf Gaiters -->
 					<item id="4080" min="1" max="1" chance="41.7117" /> <!-- Blue Wolf Gaiters Material -->
 				</group>
 				<group chance="47.33689880371094">
@@ -7372,8 +7028,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -7386,8 +7040,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -7468,9 +7120,7 @@
 					<item id="57" min="1508" max="3082" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.7001000046730042">
-					<item id="12194" min="1" max="1" chance="4.4096" /> <!-- Common Item - Blue Wolf Leather Armor -->
 					<item id="4082" min="1" max="1" chance="45.5904" /> <!-- Blue Wolf Leather Armor Texture -->
-					<item id="12186" min="1" max="1" chance="4.4096" /> <!-- Common Item - Leather Armor of Doom -->
 					<item id="4083" min="1" max="1" chance="45.5904" /> <!-- Leather Armor of Doom Design -->
 				</group>
 				<group chance="29.54400062561035">
@@ -7499,8 +7149,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -7513,8 +7161,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -7591,7 +7237,6 @@
 					<item id="57" min="1533" max="3116" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.20880000293254852">
-					<item id="11960" min="1" max="1" chance="7.5474" /> <!-- Common Item - Halberd -->
 					<item id="5542" min="1" max="1" chance="92.4526" /> <!-- Halberd Edge -->
 				</group>
 				<group chance="33.828399658203125">
@@ -7620,8 +7265,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -7634,8 +7277,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -7712,7 +7353,6 @@
 					<item id="57" min="1676" max="3408" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.23080000281333923">
-					<item id="11955" min="1" max="1" chance="7.4658" /> <!-- Common Item - Carnage Bow -->
 					<item id="5535" min="1" max="1" chance="92.5342" /> <!-- Carnage Bow Stave -->
 				</group>
 				<group chance="46.01459884643555">
@@ -7742,8 +7382,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -7756,8 +7394,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -7831,7 +7467,6 @@
 					<item id="57" min="2004" max="4074" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.2750999927520752">
-					<item id="11951" min="1" max="1" chance="7.4858" /> <!-- Common Item - Bloody Orchid -->
 					<item id="5536" min="1" max="1" chance="92.5142" /> <!-- Bloody Orchid Head -->
 				</group>
 				<group chance="47.35609817504883">
@@ -7860,8 +7495,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -7874,8 +7507,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -7951,7 +7582,6 @@
 					<item id="57" min="1582" max="3215" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.21719999611377716">
-					<item id="11951" min="1" max="1" chance="7.4858" /> <!-- Common Item - Bloody Orchid -->
 					<item id="5536" min="1" max="1" chance="92.5142" /> <!-- Bloody Orchid Head -->
 				</group>
 				<group chance="38.45209884643555">
@@ -7981,8 +7611,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -7995,8 +7623,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -8066,7 +7692,6 @@
 					<item id="57" min="1198" max="2435" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.16449999809265137">
-					<item id="11951" min="1" max="1" chance="7.4858" /> <!-- Common Item - Bloody Orchid -->
 					<item id="5536" min="1" max="1" chance="92.5142" /> <!-- Bloody Orchid Head -->
 				</group>
 				<group chance="29.120399475097656">
@@ -8096,8 +7721,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -8110,8 +7733,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -8186,7 +7807,6 @@
 					<item id="57" min="1248" max="2533" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.16979999840259552">
-					<item id="11950" min="1" max="1" chance="7.5474" /> <!-- Common Item - Blood Tornado -->
 					<item id="5539" min="1" max="1" chance="92.4526" /> <!-- Blood Tornado Edge -->
 				</group>
 				<group chance="26.976699829101562">
@@ -8215,8 +7835,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -8229,8 +7847,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -8304,7 +7920,6 @@
 					<item id="57" min="1643" max="3335" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.22599999606609344">
-					<item id="11955" min="1" max="1" chance="7.4658" /> <!-- Common Item - Carnage Bow -->
 					<item id="5535" min="1" max="1" chance="92.5342" /> <!-- Carnage Bow Stave -->
 				</group>
 				<group chance="20.051000595092773">
@@ -8334,8 +7949,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -8348,8 +7961,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -8430,7 +8041,6 @@
 					<item id="57" min="1698" max="3447" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.2329999953508377">
-					<item id="11951" min="1" max="1" chance="7.4858" /> <!-- Common Item - Bloody Orchid -->
 					<item id="5536" min="1" max="1" chance="92.5142" /> <!-- Bloody Orchid Head -->
 				</group>
 				<group chance="30.133100509643555">
@@ -8460,8 +8070,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -8474,8 +8082,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -8550,11 +8156,8 @@
 					<item id="57" min="1750" max="3554" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="1.347100019454956">
-					<item id="12225" min="1" max="1" chance="6.7053" /> <!-- Common Item - Sealed Dark Crystal Shield -->
 					<item id="5494" min="1" max="1" chance="33.9386" /> <!-- Sealed Dark Crystal Shield Fragment -->
-					<item id="12226" min="1" max="1" chance="4.6976" /> <!-- Common Item - Sealed Dark Crystal Helmet -->
 					<item id="5525" min="1" max="1" chance="24.9804" /> <!-- Sealed Dark Crystal Helmet Design -->
-					<item id="12234" min="1" max="1" chance="4.6976" /> <!-- Common Item - Sealed Tallum Helmet -->
 					<item id="5526" min="1" max="1" chance="24.9805" /> <!-- Sealed Tallum Helm Design -->
 				</group>
 				<group chance="39.72549819946289">
@@ -8584,8 +8187,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -8598,8 +8199,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -8673,7 +8272,6 @@
 					<item id="57" min="2136" max="4345" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.29089999198913574">
-					<item id="11960" min="1" max="1" chance="7.5474" /> <!-- Common Item - Halberd -->
 					<item id="5542" min="1" max="1" chance="92.4526" /> <!-- Halberd Edge -->
 				</group>
 				<group chance="41.48139953613281">
@@ -8683,7 +8281,6 @@
 					<item id="1889" min="1" max="1" chance="3.2043" /> <!-- Compound Braid -->
 					<item id="4044" min="1" max="1" chance="1.6021" /> <!-- Thons -->
 					<item id="5466" min="1" max="1" chance="0.0178" /> <!-- Recipe: Sword of Miracles(60%) -->
-					<item id="10305" min="1" max="1" chance="0.1923" /> <!-- Transformation Sealbook: Oel Mahum -->
 					<item id="1343" min="30" max="90" chance="22.8875" /> <!-- Silver Arrow -->
 				</group>
 				<group chance="42.0">
@@ -8700,8 +8297,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -8714,8 +8309,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -8786,7 +8379,6 @@
 					<item id="57" min="1203" max="2448" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.1639000028371811">
-					<item id="11960" min="1" max="1" chance="7.5474" /> <!-- Common Item - Halberd -->
 					<item id="5542" min="1" max="1" chance="92.4526" /> <!-- Halberd Edge -->
 				</group>
 				<group chance="45.299800872802734">
@@ -8796,7 +8388,6 @@
 					<item id="1889" min="1" max="1" chance="1.6531" /> <!-- Compound Braid -->
 					<item id="4044" min="1" max="1" chance="0.8265" /> <!-- Thons -->
 					<item id="5466" min="1" max="1" chance="0.0092" /> <!-- Recipe: Sword of Miracles(60%) -->
-					<item id="10305" min="1" max="1" chance="0.0992" /> <!-- Transformation Sealbook: Oel Mahum -->
 					<item id="1343" min="10" max="30" chance="35.4225" /> <!-- Silver Arrow -->
 				</group>
 				<group chance="42.0">
@@ -8813,8 +8404,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -8827,8 +8416,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -8903,7 +8490,6 @@
 					<item id="57" min="1405" max="2858" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.19290000200271606">
-					<item id="11951" min="1" max="1" chance="7.4858" /> <!-- Common Item - Bloody Orchid -->
 					<item id="5536" min="1" max="1" chance="92.5142" /> <!-- Bloody Orchid Head -->
 				</group>
 				<group chance="41.49549865722656">
@@ -8933,8 +8519,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -8947,8 +8531,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -9021,7 +8603,6 @@
 					<item id="57" min="1356" max="2760" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.18629999458789825">
-					<item id="11951" min="1" max="1" chance="7.4858" /> <!-- Common Item - Bloody Orchid -->
 					<item id="5536" min="1" max="1" chance="92.5142" /> <!-- Bloody Orchid Head -->
 				</group>
 				<group chance="40.06700134277344">
@@ -9051,8 +8632,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -9065,8 +8644,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -9142,7 +8719,6 @@
 					<item id="57" min="1588" max="3238" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.2168000042438507">
-					<item id="11950" min="1" max="1" chance="7.5474" /> <!-- Common Item - Blood Tornado -->
 					<item id="5539" min="1" max="1" chance="92.4526" /> <!-- Blood Tornado Edge -->
 				</group>
 				<group chance="32.41579818725586">
@@ -9172,8 +8748,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -9186,8 +8760,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -9262,7 +8834,6 @@
 					<item id="57" min="1659" max="3381" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.2289000004529953">
-					<item id="11955" min="1" max="1" chance="7.4658" /> <!-- Common Item - Carnage Bow -->
 					<item id="5535" min="1" max="1" chance="92.5342" /> <!-- Carnage Bow Stave -->
 				</group>
 				<group chance="36.20840072631836">
@@ -9291,8 +8862,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -9305,8 +8874,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -9384,7 +8951,6 @@
 					<item id="57" min="1682" max="3428" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.2313999980688095">
-					<item id="11951" min="1" max="1" chance="7.4858" /> <!-- Common Item - Bloody Orchid -->
 					<item id="5536" min="1" max="1" chance="92.5142" /> <!-- Bloody Orchid Head -->
 				</group>
 				<group chance="47.67639923095703">
@@ -9414,8 +8980,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -9428,8 +8992,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -9507,7 +9069,6 @@
 					<item id="57" min="1839" max="3749" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.25099998712539673">
-					<item id="11950" min="1" max="1" chance="7.5474" /> <!-- Common Item - Blood Tornado -->
 					<item id="5539" min="1" max="1" chance="92.4526" /> <!-- Blood Tornado Edge -->
 				</group>
 				<group chance="31.21660041809082">
@@ -9536,8 +9097,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -9550,8 +9109,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -9632,7 +9189,6 @@
 					<item id="57" min="1823" max="3716" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.2515000104904175">
-					<item id="11955" min="1" max="1" chance="7.4658" /> <!-- Common Item - Carnage Bow -->
 					<item id="5535" min="1" max="1" chance="92.5342" /> <!-- Carnage Bow Stave -->
 				</group>
 				<group chance="37.98419952392578">
@@ -9662,8 +9218,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -9676,8 +9230,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -9759,13 +9311,9 @@
 					<item id="57" min="1857" max="3793" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.2540999948978424">
-					<item id="11946" min="1" max="1" chance="1.8833" /> <!-- Common Item - Dasparion's Staff -->
 					<item id="5543" min="1" max="1" chance="23.2872" /> <!-- Dasparion's Staff Head -->
-					<item id="11949" min="1" max="1" chance="1.8833" /> <!-- Common Item - Meteor Shower -->
 					<item id="5532" min="1" max="1" chance="23.0697" /> <!-- Meteor Shower Head -->
-					<item id="11953" min="1" max="1" chance="1.8833" /> <!-- Common Item - Spiritual Eye -->
 					<item id="8341" min="1" max="1" chance="23.0402" /> <!-- Spiritual Eye Piece -->
-					<item id="11958" min="1" max="1" chance="1.8833" /> <!-- Common Item - Destroyer Hammer -->
 					<item id="8346" min="1" max="1" chance="23.0697" /> <!-- Hammer Piece of Destroyer -->
 				</group>
 				<group chance="47.28269958496094">
@@ -9775,7 +9323,6 @@
 					<item id="1884" min="1" max="1" chance="22.6259" /> <!-- Cord -->
 					<item id="4039" min="1" max="1" chance="1.2256" /> <!-- Mold Glue -->
 					<item id="3036" min="1" max="1" chance="0.0163" /> <!-- Recipe: Spiritshot S -->
-					<item id="10305" min="1" max="1" chance="0.1471" /> <!-- Transformation Sealbook: Oel Mahum -->
 					<item id="1344" min="30" max="90" chance="15.3195" /> <!-- Mithril Arrow -->
 				</group>
 				<group chance="42.0">
@@ -9792,8 +9339,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -9806,8 +9351,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -9885,13 +9428,9 @@
 					<item id="57" min="1732" max="3537" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.2370000034570694">
-					<item id="11946" min="1" max="1" chance="1.8833" /> <!-- Common Item - Dasparion's Staff -->
 					<item id="5543" min="1" max="1" chance="23.2872" /> <!-- Dasparion's Staff Head -->
-					<item id="11949" min="1" max="1" chance="1.8833" /> <!-- Common Item - Meteor Shower -->
 					<item id="5532" min="1" max="1" chance="23.0697" /> <!-- Meteor Shower Head -->
-					<item id="11953" min="1" max="1" chance="1.8833" /> <!-- Common Item - Spiritual Eye -->
 					<item id="8341" min="1" max="1" chance="23.0402" /> <!-- Spiritual Eye Piece -->
-					<item id="11958" min="1" max="1" chance="1.8833" /> <!-- Common Item - Destroyer Hammer -->
 					<item id="8346" min="1" max="1" chance="23.0697" /> <!-- Hammer Piece of Destroyer -->
 				</group>
 				<group chance="44.09870147705078">
@@ -9901,7 +9440,6 @@
 					<item id="1884" min="1" max="1" chance="22.6259" /> <!-- Cord -->
 					<item id="4039" min="1" max="1" chance="1.2256" /> <!-- Mold Glue -->
 					<item id="3036" min="1" max="1" chance="0.0163" /> <!-- Recipe: Spiritshot S -->
-					<item id="10305" min="1" max="1" chance="0.1471" /> <!-- Transformation Sealbook: Oel Mahum -->
 					<item id="1344" min="30" max="90" chance="15.3195" /> <!-- Mithril Arrow -->
 				</group>
 				<group chance="42.0">
@@ -9918,8 +9456,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -9932,8 +9468,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -10015,7 +9549,6 @@
 					<item id="57" min="1443" max="2946" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.19920000433921814">
-					<item id="11955" min="1" max="1" chance="7.4658" /> <!-- Common Item - Carnage Bow -->
 					<item id="5535" min="1" max="1" chance="92.5342" /> <!-- Carnage Bow Stave -->
 				</group>
 				<group chance="40.92850112915039">
@@ -10045,8 +9578,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -10059,8 +9590,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -10140,7 +9669,6 @@
 					<item id="57" min="1733" max="3538" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.23849999904632568">
-					<item id="11951" min="1" max="1" chance="7.4858" /> <!-- Common Item - Bloody Orchid -->
 					<item id="5536" min="1" max="1" chance="92.5142" /> <!-- Bloody Orchid Head -->
 				</group>
 				<group chance="37.84159851074219">
@@ -10169,8 +9697,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -10183,8 +9709,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -10265,7 +9789,6 @@
 					<item id="57" min="1815" max="3706" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.24779999256134033">
-					<item id="11950" min="1" max="1" chance="7.5474" /> <!-- Common Item - Blood Tornado -->
 					<item id="5539" min="1" max="1" chance="92.4526" /> <!-- Blood Tornado Edge -->
 				</group>
 				<group chance="43.46080017089844">
@@ -10295,8 +9818,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -10309,8 +9830,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -10390,11 +9909,8 @@
 					<item id="57" min="1499" max="3053" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.20630000531673431">
-					<item id="11957" min="1" max="1" chance="2.493" /> <!-- Common Item - Tallum Blade -->
 					<item id="5548" min="1" max="1" chance="30.8105" /> <!-- Tallum Blade Edge -->
-					<item id="11952" min="1" max="1" chance="2.493" /> <!-- Common Item - Elemental Sword -->
 					<item id="5547" min="1" max="1" chance="30.8105" /> <!-- Elemental Sword Edge -->
-					<item id="11954" min="1" max="1" chance="2.493" /> <!-- Common Item - Inferno Master -->
 					<item id="8331" min="1" max="1" chance="30.9" /> <!-- Infernal Master Blade -->
 				</group>
 				<group chance="42.45320129394531">
@@ -10424,8 +9940,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -10438,8 +9952,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -10519,11 +10031,8 @@
 					<item id="57" min="1538" max="3132" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.21170000731945038">
-					<item id="11957" min="1" max="1" chance="2.493" /> <!-- Common Item - Tallum Blade -->
 					<item id="5548" min="1" max="1" chance="30.8105" /> <!-- Tallum Blade Edge -->
-					<item id="11952" min="1" max="1" chance="2.493" /> <!-- Common Item - Elemental Sword -->
 					<item id="5547" min="1" max="1" chance="30.8105" /> <!-- Elemental Sword Edge -->
-					<item id="11954" min="1" max="1" chance="2.493" /> <!-- Common Item - Inferno Master -->
 					<item id="8331" min="1" max="1" chance="30.9" /> <!-- Infernal Master Blade -->
 				</group>
 				<group chance="43.55009841918945">
@@ -10553,8 +10062,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -10567,8 +10074,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -10646,7 +10151,6 @@
 					<item id="57" min="1499" max="3053" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.2045000046491623">
-					<item id="11950" min="1" max="1" chance="7.5474" /> <!-- Common Item - Blood Tornado -->
 					<item id="5539" min="1" max="1" chance="92.4526" /> <!-- Blood Tornado Edge -->
 				</group>
 				<group chance="43.93899917602539">
@@ -10676,8 +10180,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -10690,8 +10192,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -10771,7 +10271,6 @@
 					<item id="57" min="1754" max="3571" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.23919999599456787">
-					<item id="11950" min="1" max="1" chance="7.5474" /> <!-- Common Item - Blood Tornado -->
 					<item id="5539" min="1" max="1" chance="92.4526" /> <!-- Blood Tornado Edge -->
 				</group>
 				<group chance="41.45989990234375">
@@ -10801,8 +10300,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -10815,8 +10312,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -10890,7 +10385,6 @@
 					<item id="57" min="1292" max="2630" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.1761000007390976">
-					<item id="11950" min="1" max="1" chance="7.5474" /> <!-- Common Item - Blood Tornado -->
 					<item id="5539" min="1" max="1" chance="92.4526" /> <!-- Blood Tornado Edge -->
 				</group>
 				<group chance="46.624698638916016">
@@ -10920,8 +10414,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -10934,8 +10426,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -11013,7 +10503,6 @@
 					<item id="57" min="2068" max="4210" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.28200000524520874">
-					<item id="11950" min="1" max="1" chance="7.5474" /> <!-- Common Item - Blood Tornado -->
 					<item id="5539" min="1" max="1" chance="92.4526" /> <!-- Blood Tornado Edge -->
 				</group>
 				<group chance="45.062400817871094">
@@ -11042,8 +10531,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -11056,8 +10543,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -11137,7 +10622,6 @@
 					<item id="57" min="1939" max="3947" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.26429998874664307">
-					<item id="11950" min="1" max="1" chance="7.5474" /> <!-- Common Item - Blood Tornado -->
 					<item id="5539" min="1" max="1" chance="92.4526" /> <!-- Blood Tornado Edge -->
 				</group>
 				<group chance="42.247798919677734">
@@ -11166,8 +10650,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -11180,8 +10662,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -11257,7 +10737,6 @@
 					<item id="57" min="1370" max="2790" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.18690000474452972">
-					<item id="11950" min="1" max="1" chance="7.5474" /> <!-- Common Item - Blood Tornado -->
 					<item id="5539" min="1" max="1" chance="92.4526" /> <!-- Blood Tornado Edge -->
 				</group>
 				<group chance="29.863300323486328">
@@ -11286,8 +10765,6 @@
 					<item id="8606" min="1" max="1" chance="20" /> <!-- Herb of Power -->
 					<item id="8608" min="1" max="1" chance="20" /> <!-- Herb of Alacrity -->
 					<item id="8610" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Probability -->
-					<item id="10655" min="1" max="1" chance="20" /> <!-- Herb of Vampiric Rage -->
-					<item id="10656" min="1" max="1" chance="20" /> <!-- Herb of Critical Attack - Power -->
 				</group>
 				<group chance="10.0">
 					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
@@ -11300,8 +10777,6 @@
 				</group>
 				<group chance="11.0">
 					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-					<item id="10657" min="1" max="1" chance="3" /> <!-- Herb of Doubt -->
-					<item id="13028" min="1" max="1" chance="3" /> <!-- Vitality Replenishing Herb -->
 				</group>
 			</death>
 			<corpse>
@@ -11384,7 +10859,6 @@
 					<item id="57" min="1981" max="4028" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.26980000734329224">
-					<item id="11960" min="1" max="1" chance="7.5474" /> <!-- Common Item - Halberd -->
 					<item id="5542" min="1" max="1" chance="92.4526" /> <!-- Halberd Edge -->
 				</group>
 				<group chance="44.45029830932617">
@@ -11474,7 +10948,6 @@
 					<item id="57" min="1247" max="2548" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.21870000660419464">
-					<item id="11944" min="1" max="1" chance="6.9768" /> <!-- Common Item - Bow of Peril -->
 					<item id="4121" min="1" max="1" chance="93.0232" /> <!-- Bow of Peril Shaft -->
 				</group>
 				<group chance="39.01129913330078">
@@ -11563,13 +11036,9 @@
 					<item id="57" min="1396" max="2854" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="1.1891000270843506">
-					<item id="12201" min="1" max="1" chance="1.9518" /> <!-- Common Item - Blue Wolf Tunic -->
 					<item id="4084" min="1" max="1" chance="19.1146" /> <!-- Blue Wolf Tunic Fabric -->
-					<item id="12192" min="1" max="1" chance="1.9518" /> <!-- Common Item - Tunic of Doom -->
 					<item id="4085" min="1" max="1" chance="19.1146" /> <!-- Tunic of Doom Pattern -->
-					<item id="12203" min="1" max="1" chance="3.1246" /> <!-- Common Item - Blue Wolf Stockings -->
 					<item id="4086" min="1" max="1" chance="25.809" /> <!-- Blue Wolf Stockings Pattern -->
-					<item id="12205" min="1" max="1" chance="3.1246" /> <!-- Common Item - Stockings of Doom -->
 					<item id="4087" min="1" max="1" chance="25.809" /> <!-- Stockings of Doom Pattern -->
 				</group>
 				<group chance="22.521799087524414">
@@ -11666,7 +11135,6 @@
 					<item id="57" min="2112" max="4305" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.2906000018119812">
-					<item id="11951" min="1" max="1" chance="7.4858" /> <!-- Common Item - Bloody Orchid -->
 					<item id="5536" min="1" max="1" chance="92.5142" /> <!-- Bloody Orchid Head -->
 				</group>
 				<group chance="46.702999114990234">

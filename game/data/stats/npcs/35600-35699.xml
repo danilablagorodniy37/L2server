@@ -2937,11 +2937,7 @@
 		<dropLists>
 			<death>
 				<group chance="8.694999694824219">
-					<item id="9579" min="1" max="1" chance="65.217" /> <!-- Silk Shirt -->
 					<item id="1538" min="1" max="1" chance="34.783" /> <!-- Blessed Scroll of Escape -->
-				</group>
-				<group chance="100">
-					<item id="9912" min="40" max="80" chance="100" /> <!-- Knight's Epaulette -->
 				</group>
 			</death>
 		</dropLists>
@@ -3192,17 +3188,6 @@
 				<clan>FORTRESS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="13.779999732971191">
-					<item id="9581" min="1" max="1" chance="66.0508" /> <!-- Scale Shirt -->
-					<item id="9591" min="1" max="1" chance="33.9492" /> <!-- Steel Bracelet -->
-				</group>
-				<group chance="90">
-					<item id="9912" min="40" max="200" chance="100" /> <!-- Knight's Epaulette -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="10" />
 			<height normal="26.985" />
@@ -3260,13 +3245,6 @@
 				<clan>FORTRESS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="78.16500091552734">
-					<item id="9912" min="4" max="16" chance="100" /> <!-- Knight's Epaulette -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="15" />
 			<height normal="45" />
@@ -3319,13 +3297,6 @@
 				<clan>FORTRESS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="71.85700225830078">
-					<item id="9912" min="4" max="12" chance="100" /> <!-- Knight's Epaulette -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="8" />
 			<height normal="23.5" />
@@ -3381,13 +3352,6 @@
 				<clan>FORTRESS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="66.27999877929688">
-					<item id="9912" min="4" max="12" chance="100" /> <!-- Knight's Epaulette -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="7" />
 			<height normal="24" />
@@ -3443,13 +3407,6 @@
 				<clan>FORTRESS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="67.21099853515625">
-					<item id="9912" min="4" max="12" chance="100" /> <!-- Knight's Epaulette -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="8" />
 			<height normal="23.5" />
@@ -3548,13 +3505,6 @@
 				<clan>FORTRESS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="61.73699951171875">
-					<item id="9912" min="4" max="12" chance="100" /> <!-- Knight's Epaulette -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="13" />
 			<height normal="17.5" />
@@ -3627,13 +3577,6 @@
 				<clan>FORTRESS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="84.13700103759766">
-					<item id="9912" min="140" max="300" chance="100" /> <!-- Knight's Epaulette -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="10" />
 			<height normal="23.75" />
@@ -3748,13 +3691,6 @@
 				<clan>FORTRESS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="73.01000213623047">
-					<item id="9912" min="4" max="16" chance="100" /> <!-- Knight's Epaulette -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="7" />
 			<height normal="24" />
@@ -3827,13 +3763,6 @@
 				<clan>FORTRESS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="84.15709686279297">
-					<item id="9912" min="140" max="300" chance="100" /> <!-- Knight's Epaulette -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="9" />
 			<height normal="23.5" />
@@ -3898,13 +3827,6 @@
 				<clan>FORTRESS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="77.5739974975586">
-					<item id="9912" min="4" max="16" chance="100" /> <!-- Knight's Epaulette -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="8" />
 			<height normal="22.5" />
@@ -3967,13 +3889,6 @@
 				<clan>FORTRESS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="82.38200378417969">
-					<item id="9912" min="4" max="16" chance="100" /> <!-- Knight's Epaulette -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="8" />
 			<height normal="23" />
@@ -4036,13 +3951,6 @@
 				<clan>FORTRESS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="84.22350311279297">
-					<item id="9912" min="140" max="300" chance="100" /> <!-- Knight's Epaulette -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="10" />
 			<height normal="23.5" />
@@ -4100,13 +4008,6 @@
 				<clan>FORTRESS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="71">
-					<item id="9912" min="4" max="16" chance="100" /> <!-- Knight's Epaulette -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="8" />
 			<height normal="23.5" />
@@ -4707,11 +4608,7 @@
 		<dropLists>
 			<death>
 				<group chance="10.928999900817871">
-					<item id="9589" min="1" max="1" chance="40.984" /> <!-- Iron Bracelet -->
 					<item id="1538" min="1" max="1" chance="59.016" /> <!-- Blessed Scroll of Escape -->
-				</group>
-				<group chance="100">
-					<item id="9912" min="80" max="160" chance="100" /> <!-- Knight's Epaulette -->
 				</group>
 			</death>
 		</dropLists>
