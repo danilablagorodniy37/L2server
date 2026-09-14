@@ -35,6 +35,24 @@
 `tools\build_core.bat` — собирает `core/` через Maven Wrapper и копирует `l2jserver.jar` в `game/`.
 Скрипты из `game/script/` сервер компилирует сам при запуске, для них сборка не нужна.
 
-## Анализ отличий от Interlude
-`python tools/interlude/analyze.py` сравнивает датапак с aCis
-(`../acis_public-master/aCis_datapack`, путь меняется переменной `ACIS_DATAPACK`).
+## Откат до Interlude
+Скрипты в `tools/interlude/` сравнивают датапак с aCis
+(`../acis_public-master/aCis_datapack`, путь меняется переменной `ACIS_DATAPACK`)
+и вычищают контент поздних хроник. Что считается камаэльским контентом, задано в `kamael.py`.
+
+| Скрипт | Что делает |
+|---|---|
+| `analyze.py` | Отчёт: сколько предметов, NPC, скиллов и спавнов H5 нет в Interlude |
+| `build_skill_trees.py` | Деревья скиллов классов по aCis, Камаэли до 80 уровня |
+| `build_quests.py` | Убирает квесты поздних хроник из `QuestLoader` |
+| `build_ai.py` | Убирает AI-скрипты поздних зон и систем из `AILoader` |
+| `build_spawns.py` | Чистит `spawnlist.sql`, переносит монстров Interlude из aCis |
+| `build_shops.py` | Чистит магазины и мультиселлы |
+| `build_items.py` | Чистит дроп, рецепты, стартовую экипировку |
+| `build_teleports.py` | Убирает телепорты в поздние зоны и ссылки на них в HTML |
+| `build_bosses.py` | Убирает поздних рейд- и эпик-боссов |
+
+Скрипты уже применены, результат в git. Они рассчитаны на исходные файлы H5:
+повторный запуск на уже очищенных данных почти везде безопасен, но `build_skill_trees.py`
+и `build_spawns.py` нужно запускать только на исходных файлах (`git checkout <коммит импорта> -- <файл>`).
+После изменения SQL-файлов таблицы в базе нужно перезалить.
