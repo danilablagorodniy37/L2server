@@ -130,7 +130,11 @@ public abstract class SkillTransferCoach extends GuildCoach {
 	}
 	
 	private static void deleteAcquireSkills(L2PcInstance player) {
-		for (var skillLearn : SkillTreesData.getInstance().getTransferSkillTree(player.getClassId()).values()) {
+		final var transferSkills = SkillTreesData.getInstance().getTransferSkillTree(player.getClassId());
+		if (transferSkills == null) {
+			return;
+		}
+		for (var skillLearn : transferSkills.values()) {
 			player.removeSkill(skillLearn.getSkillId());
 		}
 	}
