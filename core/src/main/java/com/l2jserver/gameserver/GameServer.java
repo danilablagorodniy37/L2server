@@ -18,6 +18,7 @@
  */
 package com.l2jserver.gameserver;
 
+import static com.l2jserver.gameserver.config.Configuration.chronicle;
 import static com.l2jserver.gameserver.config.Configuration.customs;
 import static com.l2jserver.gameserver.config.Configuration.database;
 import static com.l2jserver.gameserver.config.Configuration.general;
@@ -334,21 +335,29 @@ public final class GameServer {
 		ScriptEngineManager.getInstance().executeScript("com/l2jserver/datapack/ai/AILoader.java");
 		endTimedSection("AI", aiStart);
 		
-		final var instancesStart = startTimedSection("Instances");
-		ScriptEngineManager.getInstance().executeScript("com/l2jserver/datapack/instances/InstanceLoader.java");
-		endTimedSection("Instances", instancesStart);
-		
-		final var graciaStart = startTimedSection("Gracia");
-		ScriptEngineManager.getInstance().executeScript("com/l2jserver/datapack/gracia/GraciaLoader.java");
-		endTimedSection("Gracia", graciaStart);
-		
-		final var hellboundStart = startTimedSection("Hellbound");
-		ScriptEngineManager.getInstance().executeScript("com/l2jserver/datapack/hellbound/HellboundLoader.java");
-		endTimedSection("Hellbound", hellboundStart);
-		
+		if (chronicle().enableInstances()) {
+			final var instancesStart = startTimedSection("Instances");
+			ScriptEngineManager.getInstance().executeScript("com/l2jserver/datapack/instances/InstanceLoader.java");
+			endTimedSection("Instances", instancesStart);
+		}
+
+		if (chronicle().enableGracia()) {
+			final var graciaStart = startTimedSection("Gracia");
+			ScriptEngineManager.getInstance().executeScript("com/l2jserver/datapack/gracia/GraciaLoader.java");
+			endTimedSection("Gracia", graciaStart);
+		}
+
+		if (chronicle().enableHellbound()) {
+			final var hellboundStart = startTimedSection("Hellbound");
+			ScriptEngineManager.getInstance().executeScript("com/l2jserver/datapack/hellbound/HellboundLoader.java");
+			endTimedSection("Hellbound", hellboundStart);
+		}
+
 		final var questsStart = startTimedSection("Quests");
 		ScriptEngineManager.getInstance().executeScript("com/l2jserver/datapack/quests/QuestLoader.java");
-		ScriptEngineManager.getInstance().executeScript("com/l2jserver/datapack/quests/TerritoryWarScripts/TerritoryWarSuperClass.java");
+		if (chronicle().enableTerritoryWar()) {
+			ScriptEngineManager.getInstance().executeScript("com/l2jserver/datapack/quests/TerritoryWarScripts/TerritoryWarSuperClass.java");
+		}
 		endTimedSection("Quests", questsStart);
 		
 		final var scriptsStart = startTimedSection("Scripts");

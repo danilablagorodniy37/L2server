@@ -18,6 +18,7 @@
  */
 package com.l2jserver.gameserver.instancemanager;
 
+import static com.l2jserver.gameserver.config.Configuration.chronicle;
 import static com.l2jserver.gameserver.config.Configuration.graciaSeeds;
 
 import java.util.Calendar;
@@ -54,6 +55,9 @@ public final class GraciaSeedsManager {
 	
 	private GraciaSeedsManager() {
 		_SoDLastStateChangeDate = Calendar.getInstance();
+		if (!chronicle().enableGracia()) {
+			return;
+		}
 		loadData();
 		handleSodStages();
 	}

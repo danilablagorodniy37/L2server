@@ -19,6 +19,8 @@
 
 package com.l2jserver.gameserver.network.clientpackets;
 
+import static com.l2jserver.gameserver.config.Configuration.chronicle;
+
 import com.l2jserver.gameserver.instancemanager.TerritoryWarManager;
 import com.l2jserver.gameserver.model.ClanPrivilege;
 import com.l2jserver.gameserver.model.L2Clan;
@@ -52,7 +54,7 @@ public final class RequestJoinDominionWar extends L2GameClientPacket {
 		L2Clan clan = activeChar.getClan();
 		int castleId = _territoryId - 80;
 		
-		if (TerritoryWarManager.getInstance().getIsRegistrationOver()) {
+		if (!chronicle().enableTerritoryWar() || TerritoryWarManager.getInstance().getIsRegistrationOver()) {
 			activeChar.sendPacket(SystemMessageId.NOT_TERRITORY_REGISTRATION_PERIOD);
 			return;
 		} else if ((clan != null) && (TerritoryWarManager.getInstance().getTerritory(castleId).getOwnerClan() == clan)) {

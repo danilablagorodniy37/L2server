@@ -18,6 +18,8 @@
  */
 package com.l2jserver.gameserver.data.xml.impl;
 
+import static com.l2jserver.gameserver.config.Configuration.character;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -113,6 +115,9 @@ public final class PlayerTemplateData implements IXmlReader {
 							if ("level".equalsIgnoreCase(lvlNode.getNodeName())) {
 								attrs = lvlNode.getAttributes();
 								int level = parseInteger(attrs, "val");
+								if (level > character().getMaxPlayerLevel()) {
+									continue;
+								}
 								
 								for (Node valNode = lvlNode.getFirstChild(); valNode != null; valNode = valNode.getNextSibling()) {
 									String nodeName = valNode.getNodeName();

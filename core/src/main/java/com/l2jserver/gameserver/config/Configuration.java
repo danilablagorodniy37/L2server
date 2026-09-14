@@ -96,7 +96,9 @@ public class Configuration {
 	private static final TeleporterServiceConfiguration teleporterService = ConfigFactory.create(TeleporterServiceConfiguration.class);
 	
 	private static final DiscordConfiguration discord = ConfigFactory.create(DiscordConfiguration.class);
-	
+
+	private static final ChronicleConfiguration chronicle = ConfigFactory.create(ChronicleConfiguration.class);
+
 	private Configuration() {
 		// Do nothing.
 	}
@@ -191,6 +193,10 @@ public class Configuration {
 	
 	public static VitalityConfiguration vitality() {
 		return vitality;
+	}
+
+	public static ChronicleConfiguration chronicle() {
+		return chronicle;
 	}
 	
 	public static PvPConfiguration pvp() {

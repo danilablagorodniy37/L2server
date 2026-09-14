@@ -8,7 +8,9 @@ rem Dependency jars in game\libs are not touched.
 set ROOT=%~dp0..
 
 pushd "%ROOT%\core"
-call mvnw.cmd -B -q -DskipTests package
+rem Full path: the current directory may be excluded from command lookup
+rem (NoDefaultCurrentDirectoryInExePath).
+call "%ROOT%\core\mvnw.cmd" -B -q -DskipTests package
 if errorlevel 1 (
 	popd
 	echo Build failed.

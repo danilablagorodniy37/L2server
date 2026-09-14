@@ -19,6 +19,7 @@
 package com.l2jserver.gameserver.instancemanager;
 
 import static com.l2jserver.gameserver.config.Configuration.character;
+import static com.l2jserver.gameserver.config.Configuration.chronicle;
 import static com.l2jserver.gameserver.config.Configuration.territoryWar;
 import static java.util.concurrent.TimeUnit.MINUTES;
 
@@ -636,6 +637,9 @@ public final class TerritoryWarManager implements Siegable {
 				if (!_territoryList.containsKey(castleId)) {
 					_territoryList.put(castleId, new Territory(castleId));
 				}
+				if (!chronicle().enableTerritoryWar()) {
+					continue;
+				}
 				switch (spawnType) {
 					case 0: // town npcs
 					case 1: // fortress npcs
@@ -669,7 +673,7 @@ public final class TerritoryWarManager implements Siegable {
 						t.changeNPCsSpawn(0, true);
 					}
 					
-					if (!ownedWardIds.isEmpty()) {
+					if (chronicle().enableTerritoryWar() && !ownedWardIds.isEmpty()) {
 						for (String wardId : ownedWardIds.split(";")) {
 							if (Integer.parseInt(wardId) > 0) {
 								addTerritoryWard(Integer.parseInt(wardId), castleId, 0, false);

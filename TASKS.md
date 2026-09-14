@@ -25,15 +25,14 @@
 - [ ] Проверка входа клиентом и создания персонажа-Камаэля на новой базе
 
 ## Этап 1. Системы и конфиги
-- [ ] Максимальный уровень 80 (питомцы 81, сабклассы 80)
-- [ ] Vitality выключена
-- [ ] Nevit's Blessing (hunting system) выключен
-- [ ] Почта и вложения выключены
-- [ ] Handy's Block Checker, Bot Report выключены
-- [ ] Skill Transfer (Gracia) выключен
-- [ ] Флаги в ядре (`config/chronicle.properties`): Hellbound, Gracia (семена, аэропорты, дирижабли), Territory War
-- [ ] Инстансы поздних хроник выключены: Kamaloka, Pailaka, Nornils Garden, Crystal Caverns, Freya, Seven Signs-серия, Jinia и др.
-- [ ] Rainbow Springs Chateau выключен (клановые холлы Interlude остаются)
+- [x] Максимальный уровень 80 (питомцы 81, сабклассы 80); в ядре исправлен вылет за массив при капе ниже 85
+- [x] Vitality выключена
+- [x] Nevit's Blessing (hunting system) выключен
+- [x] Почта и вложения выключены, Item Auction выключен
+- [x] Handy's Block Checker, Bot Report выключены
+- [x] Skill Transfer (Gracia) выключен
+- [x] Флаги в ядре (`config/chronicle.properties`): Instances, Gracia, Hellbound, Territory War — все выключены
+- [x] Инстансы выключены целиком (`EnableInstances`): в Interlude их не было
 - [ ] Лишние AI-скрипты: Nevit's Herald, Subclass Certification, Den of Evil, Sel Mahum, Stakato Nest, Dragon Valley (H5), Forge of the Gods (H5) и т. д.
 - [?] **Крепости** (Fortress + Fort Siege) — в Interlude их не было, но они завязаны на ядро, NPC и базу. По умолчанию план: выключить
 - [?] **Атрибуты** (стихии на оружии и броне) — появились в хронике Kamael. По умолчанию план: выключить
