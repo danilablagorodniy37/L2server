@@ -33,7 +33,7 @@
 - [x] Skill Transfer (Gracia) выключен
 - [x] Флаги в ядре (`config/chronicle.properties`): Instances, Gracia, Hellbound, Territory War — все выключены
 - [x] Инстансы выключены целиком (`EnableInstances`): в Interlude их не было
-- [ ] Лишние AI-скрипты: Nevit's Herald, Subclass Certification, Den of Evil, Sel Mahum, Stakato Nest, Dragon Valley (H5), Forge of the Gods (H5) и т. д.
+- [x] AI-скрипты поздних хроник убраны из `AILoader.java` (74 из 195, список с причинами в `tools/interlude/build_ai.py`); скрипты крепостей оставлены до решения по крепостям
 - [?] **Крепости** (Fortress + Fort Siege) — в Interlude их не было, но они завязаны на ядро, NPC и базу. По умолчанию план: выключить
 - [?] **Атрибуты** (стихии на оружии и броне) — появились в хронике Kamael. По умолчанию план: выключить
 - [?] **Сабкласс-сертификация и скиллы 2-го сабкласса** — по умолчанию план: убрать
