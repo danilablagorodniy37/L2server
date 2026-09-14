@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="list">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="room">
+          <xs:complexType>
+            <xs:attribute name="type" type="xs:unsignedByte" use="required" />
+            <xs:attribute name="id" type="xs:unsignedByte" use="required" />
+            <xs:attribute name="xMin" type="xs:int" use="required" />
+            <xs:attribute name="xMax" type="xs:int" use="required" />
+            <xs:attribute name="yMin" type="xs:int" use="required" />
+            <xs:attribute name="yMax" type="xs:int" use="required" />
+            <xs:attribute name="zMin" type="xs:int" use="required" />
+            <xs:attribute name="zMax" type="xs:int" use="required" />
+            <xs:attribute name="xT" type="xs:int" use="required" />
+            <xs:attribute name="yT" type="xs:int" use="required" />
+            <xs:attribute name="zT" type="xs:int" use="required" />
+            <xs:attribute name="boss" type="xs:boolean" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

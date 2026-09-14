@@ -1,0 +1,2 @@
+INSERT IGNORE INTO `raidboss_spawnlist` (`boss_id`,`loc_x`,`loc_y`,`loc_z`,`heading`,`respawn_delay`,`respawn_random`,`currentHp`,`currentMp`) VALUES
+(25671,79634,-55428,-6104,0,86400,43200,743801,4022); -- Queen Shyeed (84)

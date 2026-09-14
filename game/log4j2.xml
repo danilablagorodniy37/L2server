@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+    <Appenders>
+        <!-- Консольный аппендер -->
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%level] %d{yyyy-MM-dd HH:mm:ss} %c{1}: %msg%n" />
+        </Console>
+
+        <!-- Основной файл логов -->
+        <RollingFile name="server" fileName="logs/server.log" filePattern="logs/server.%d{yyyy-MM-dd-HH-mm-ss}.log">
+            <PatternLayout pattern="[%level] %d{yyyy-MM-dd HH:mm:ss} %c{1}: %msg%n" />
+            <Policies>
+                <OnStartupTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="100 MB" />
+            </Policies>
+        </RollingFile>
+
+        <!-- Логи ошибок -->
+        <RollingFile name="error" fileName="logs/error/error.log" filePattern="logs/error/error.%d{yyyy-MM-dd-HH-mm-ss}.log">
+            <PatternLayout pattern="[%level] %d{yyyy-MM-dd HH:mm:ss} %c{1}: %msg%n" />
+            <Policies>
+                <OnStartupTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="100 MB" />
+            </Policies>
+        </RollingFile>
+
+        <!-- Пример детального логирования для пакетов -->
+        <RollingFile name="hikari" fileName="logs/hikari.log" filePattern="logs/hikari.%d{yyyy-MM-dd-HH-mm-ss}.log">
+            <PatternLayout pattern="[%level] %d{yyyy-MM-dd HH:mm:ss} %c{1}: %msg%n" />
+            <Policies>
+                <OnStartupTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="100 MB" />
+            </Policies>
+        </RollingFile>
+        
+        <!-- Дополнительные логи (можно расширить по необходимости) -->
+        <RollingFile name="audit" fileName="logs/audit/audit.log" filePattern="logs/audit/audit.%d{yyyy-MM-dd-HH-mm-ss}.log">
+            <PatternLayout pattern="[%level] %d{yyyy-MM-dd HH:mm:ss} %c{1}: %msg%n" />
+            <Policies>
+                <OnStartupTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="100 MB" />
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- Основной логгер -->
+        <Root level="DEBUG">
+            <AppenderRef ref="console" level="INFO" />
+            <AppenderRef ref="server" level="INFO" />
+            <AppenderRef ref="error" level="WARN" />
+        </Root>
+
+        <!-- Логи пакета HikariCP -->
+        <Logger name="com.zaxxer.hikari" level="DEBUG" additivity="false">
+            <AppenderRef ref="hikari" />
+        </Logger>
+
+        <!-- Логи пакета L2J -->
+        <Logger name="com.l2jserver" level="DEBUG" additivity="false">
+            <AppenderRef ref="server" />
+        </Logger>
+
+        <!-- Логирование по категориям -->
+        <Logger name="audit" level="INFO" additivity="false">
+            <AppenderRef ref="audit" />
+        </Logger>
+        <Logger name="accounting" level="INFO" additivity="false">
+            <AppenderRef ref="audit" />
+        </Logger>
+        <Logger name="chat" level="INFO" additivity="false">
+            <AppenderRef ref="audit" />
+        </Logger>
+    </Loggers>
+</Configuration>

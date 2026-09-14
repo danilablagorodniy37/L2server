@@ -1,0 +1,9 @@
+Tables in this folder are optional and extend the dataset of the original datapack tables. Unless you have enabled custom data loading, it is not a problem when this tables are missing from the database.
+
+Example:
+custom_spawnlist extends spawnlist with additional spawns. When the spawnlist table is updated by the L2J-Team you won't have to worry about duplicate IDs or data loss.
+
+Explanation of the tables in this folder:
+custom_npc_buffer -> In this table, you can define additional npc buffer data.
+custom_spawnlist -> In this table, you can define additional npc spawns. Usually this table is filled when using the //spawn admin command.
+custom_teleport -> In this table, you can define additional teleport locations. 

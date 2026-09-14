@@ -1,0 +1,17 @@
+CREATE TABLE
+IF
+  NOT EXISTS `accounts` (
+    `login` VARCHAR (45) NOT NULL DEFAULT '',
+    `password` VARCHAR (45),
+    `email` VARCHAR (255) DEFAULT NULL,
+    `created_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `lastactive` BIGINT (13) UNSIGNED NOT NULL DEFAULT '0',
+    `accessLevel` TINYINT NOT NULL DEFAULT 0,
+    `lastIP` CHAR(15) NULL DEFAULT NULL,
+    `lastServer` TINYINT DEFAULT 1,
+    `pcIp` CHAR(15) DEFAULT NULL,
+    `hop1` CHAR(15) DEFAULT NULL,
+    `hop2` CHAR(15) DEFAULT NULL,
+    `hop3` CHAR(15) DEFAULT NULL,
+    `hop4` CHAR(15) DEFAULT NULL,
+  PRIMARY KEY (`login`)) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;

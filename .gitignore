@@ -1,0 +1,19 @@
+# IDE
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# Geodata (~900 MB) - copied locally, see README
+game/data/geodata/
+
+# Runtime output
+logs/
+log/
+game/config/hexid.txt
+*.log
+
+# Build output
+core/target/
+build/
