@@ -67,9 +67,11 @@
 - [ ] Не перенесены мейкеры aCis со скриптовой логикой (события, день/ночь, сундуки, Royal Rush, `event`/`spawnTime`) — 2 608 обычных мейкеров с такими атрибутами и ~2 000 специальных; разобрать по зонам
 - [ ] Не перенесены NPC Interlude не-монстры (торговцы, L2Npc, Feedable Beast — ~120 записей)
 - [ ] Минионы (privates) мейкеров aCis не переносятся — проверить, что у лидеров есть миньоны в шаблонах H5
-- [ ] После изменения `spawnlist.sql` таблицу нужно перезалить: `mysql l2jdb_custom < game/sql/spawnlist.sql`
-- [ ] Рейд-боссы и эпики поздних хроник (`raidboss_spawnlist.sql`, `grandboss_data.sql`) (Beleth, Freya, Tiat, Ekimus и др.)
-- [ ] Телепорты гейткиперов в Hellbound, Gracia, Freya-зоны, Den of Evil и т. п.
+- [ ] После изменения `spawnlist.sql`/`teleport.sql` таблицы нужно перезалить (`mysql l2jdb_custom < game/sql/<файл>`); `grandboss_data`/`raidboss_spawnlist` при повторной заливке не удаляют старые строки
+- [x] Рейд-боссы и эпики поздних хроник убраны: 16 рейдов 81–85 ур. и Beleth (`tools/interlude/build_bosses.py`)
+- [ ] Zaken в H5 — инстанс (выключен вместе с инстансами), в Interlude он был открытым эпиком на корабле; Frintezza в `grandboss_data` закомментирован — проверить оба (Beleth, Freya, Tiat, Ekimus и др.)
+- [x] Телепорты в поздние зоны удалены: 73 точки (Seeds, дирижабли, Kratei's Cube, Sel Mahum, Field of Silence/Whispers, Giant's Cave, Shyeed's Cavern, оплата Olympiad Token) и 94 строки-ссылки в HTML (`tools/interlude/build_teleports.py`)
+- [ ] Ещё 67 телепортов далеко от точек aCis, но оставлены: крепости (решение) и места Interlude с другой точкой прибытия — просмотреть вручную (список печатает `build_teleports.py --dry-run`)
 - [ ] HTML гейткиперов и NPC со ссылками на удалённые места
 - [x] Квесты поздних хроник убраны из `QuestLoader.java` (133 квеста), камаэльские и dummy-квесты туториала оставлены (`tools/interlude/build_quests.py`)
 - [ ] Q179 Into the Large Cavern (Камаэли, 17 ур.) требует инстанс Nornils Garden, а инстансы выключены — включить только его или заменить квест

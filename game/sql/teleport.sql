@@ -41,7 +41,6 @@ INSERT INTO `teleport` VALUES
 ('Dwarven Village -> Eastern Mining Zone (Northeastern Shore)',17,169008,-208272,-3504,2400,0,57),
 ('Dwarven Village -> Abandoned Coal Mines',418,139714,-177456,-1536,690,0,57),
 ('Dwarven Village -> Mithril Mines Western Entrance',419,171946,-173352,3440,11000,0,57),
-('Dwarven Village -> Mithril Mines Eastern Entrance',137,178591,-184615,-360,12000,0,57),
 ('Dion -> Town of Gludio',18,-12787,122779,-3112,3400,0,57),
 ('Dion -> Town of Giran',19,83551,147945,-3400,6800,0,57),
 ('Cruma Tower 1st floor -> Cruma Tower Entrance',22,17253,114232,-3440,0,0,57),
@@ -82,8 +81,6 @@ INSERT INTO `teleport` VALUES
 ('Giran Harbor -> Giran Town',63,83551,147942,-3400,6300,0,57),
 ('Giran Harbor -> Heine',107,111455,219400,-3544,8500,0,57),
 ('Heine -> The Town of Dion',65,15472,142880,-2688,12000,0,57),
-('Heine -> Field of Silence',66,87691,162835,-3563,12000,0,57), -- retail
-('Heine -> Field of Whispers',67,82192,226128,-3664,5900,0,57), -- retail
 ('Heine -> Entrance to Alligator Islands',68,115583,192261,-3488,2100,0,57),
 ('Giran -> Heine',70,111455,219400,-3544,7600,0,57),
 ('Aden -> Coliseum',76,146440,46723,-3432,2000,0,57),
@@ -390,8 +387,6 @@ INSERT INTO `teleport` VALUES
 ('Clan Hall -> Seal of Shilen',542,184742,19745,-3168,500,0,57),
 ('Clan Hall -> Forsaken Plains',543,168217,37990,-4072,500,0,57),
 ('Clan Hall -> Tower of Insolence',544,114649,11115,-5120,500,0,57),
-('Clan Hall -> The Giants Cave Upper Layer',545,183985,61424,-3992,500,0,57),
-('Clan Hall -> The Giants Cave Lower Layer',546,191754,56760,-7624,500,0,57),
 -- Giran
 ('Clan Hall -> Village Square',547,81749,149171,-3464,0,0,57),
 ('Clan Hall -> North Gate Entrance',548,81525,143821,-3528,0,0,57),
@@ -421,7 +416,6 @@ INSERT INTO `teleport` VALUES
 ('Clan Hall -> Swamp of Screams',570,69340,-50203,-3314,500,0,57),
 ('Clan Hall -> Valley of Saints',571,65307,-71445,-3696,500,0,57),
 ('Clan Hall -> Monastery of Silence',572,106414,-87799,-2949,500,0,57),
-('Clan Hall -> Shyeeds Cavern',573,76911,-55295,-5824,500,0,57),
 -- Schuttgart
 ('Clan Hall -> Village Square',574,87379,-142322,-1336,0,0,57),
 ('Clan Hall -> West Gate Entrance',575,84753,-141051,-1536,0,0,57),
@@ -440,7 +434,6 @@ INSERT INTO `teleport` VALUES
 ('Giran Arena - 1000 adena',9002,73579,142709,-3768,1000,1,57), -- retail
 ('Center of the Forgotten Temple - 1000 adena',9010,-54026,179504,-4650,1000,1,57), -- retail
 ('Wastelands, Western Region  - 1000 adena',9011,-47506,179572,-3669,1000,1,57), -- retail
-('The Giant\'s Cave Upper Layer - 1000 adena',9020,183985,61424,-3992,1000,1,57), -- retail
 ('Plains of Glory - 1000 adena',9021,135580,19467,-3424,1000,1,57), -- retail
 ('War-Torn Plains - 1000 adena',9022,156898,11217,-4032,1000,1,57), -- retail
 ('Tower of Insolence, 3rd Floor - 1000 adena',9023,110848,16154,-2120,1000,1,57), -- retail
@@ -453,13 +446,11 @@ INSERT INTO `teleport` VALUES
 ('The Center of the Forest of Mirrors - 1000 adena',9030,166080,75574,-2992,1000,1,57), -- retail
 ('The Center of the Enchanted Valley - 1000 adena',9031,114674,44150,-3376,1000,1,57), -- retail
 ('Hunters Valley - 1000 adena',9032,114306,86573,-3112,1000,1,57), -- retail
-('The Giant\'s Cave Lower Layer - 1000 adena',9033,191754,56760,-7624,1000,1,57), -- retail
 ('Gorgon Flower Garden - 1000 adena',9040,113553,134813,-3540,1000,1,57), -- retail
 ('Hardin\'s Private Academy - 1000 adena',9046,105918,109759,-3170,1000,1,57), -- retail
 ('The Center of the Forest of the Dead - 1000 adena',9050,54425,-41692,-3072,1000,1,57), -- retail
 ('The Center of the Valley of Saints - 1000 adena',9051,84092,-80084,-3504,1000,1,57), -- retail
 ('Cursed Village - 1000 adena',9052,62084,-40935,-2802,1000,1,57), -- retail
-('Shyeed\'s Cavern - 1000 adena',9053,76911,-55295,-5824,1000,1,57), -- retail
 ('Monastery of Silence - 1000 adena',9054,106414,-87799,-2949,1000,1,57), -- retail
 ('Varka Silenos Village - 1000 adena',9060,107929,-52248,-2408,1000,1,57), -- retail
 ('Ketra Orc Village - 1000 adena',9061,149817,-80053,-5576,1000,1,57), -- retail
@@ -497,15 +488,12 @@ INSERT INTO `teleport` VALUES
 ('Garden of Eva - 3rd Level - 1000 adena',9125,77868,250400,-9328,1000,1,57), -- retail
 ('Garden of Eva - 4th Level - 1000 adena',9126,78721,253309,-9840,1000,1,57), -- retail
 ('Garden of Eva - 5th Level - 1000 adena',9127,82951,252354,-10592,1000,1,57), -- retail
-('Field of Silence Center - 1000 adena',9128,80987,182423,-3504,1000,1,57), -- retail
-('Field of Whispers Center - 1000 adena',9129,86147,218268,-3592,1000,1,57), -- retail
 -- Olympiad Token
 ('Gludin Arena - 1 Olympiad Token',9900,-87328,142266,-3640,1,1,13722), -- retail
 ('Coliseum - 1 Olympiad Token',9901,146440,46723,-3400,1,1,13722), -- retail
 ('Giran Arena - 1 Olympiad Token',9902,73579,142709,-3768,1,1,13722), -- retail
 ('Center of the Forgotten Temple - 1 Olympiad Token',9910,-54026,179504,-4650,1,1,13722), -- retail
 ('Wastelands, Western Region  - 1 Olympiad Token',9911,-47506,179572,-3669,1,1,13722), -- retail
-('The Giant\'s Cave Upper Layer - 1 Olympiad Token',9920,183985,61424,-3992,1,1,13722), -- retail
 ('Plains of Glory - 1 Olympiad Token',9921,135580,19467,-3424,1,1,13722), -- retail
 ('War-Torn Plains - 1 Olympiad Token',9922,156898,11217,-4032,1,1,13722), -- retail
 ('Tower of Insolence, 3rd Floor - 1 Olympiad Token',9923,110848,16154,-2120,1,1,13722), -- retail
@@ -518,13 +506,10 @@ INSERT INTO `teleport` VALUES
 ('The Center of the Forest of Mirrors - 1 Olympiad Token',9930,166080,75574,-2992,1,1,13722), -- retail
 ('The Center of the Enchanted Valley - 1 Olympiad Token',9931,114674,44150,-3376,1,1,13722), -- retail
 ('Hunters Valley - 1 Olympiad Token',9932,114306,86573,-3112,1,1,13722), -- retail
-('The Giant\'s Cave Lower Layer - 1 Olympiad Token',9933,191754,56760,-7624,1,1,13722), -- retail
 ('Gorgon Flower Garden - 1 Olympiad Token',9940,113553,134813,-3540,1,1,13722), -- retail
 ('Hardin\'s Private Academy - 1 Olympiad Token',9946,105918,109759,-3170,1,1,13722), -- retail
 ('The Center of the Forest of the Dead - 1 Olympiad Token',9950,54425,-41692,-3072,1,1,13722), -- retail
 ('The Center of the Valley of Saints - 1 Olympiad Token',9951,84092,-80084,-3504,1,1,13722), -- retail
-('Cursed Village - 1 Olympiad Token',9952,62084,-40935,-2802,1,1,13722), -- retail
-('Shyeed\'s Cavern - 1 Olympiad Token',9953,76911,-55295,-5824,1,1,13722), -- retail
 ('Monastery of Silence - 1 Olympiad Token',9954,106414,-87799,-2949,1,1,13722), -- retail
 ('Varka Silenos Village - 1000 adena',9960,107929,-52248,-2408,1,1,13722), -- retail
 ('Ketra Orc Village - 1000 adena',9961,149817,-80053,-5576,1,1,13722), -- retail
@@ -537,18 +522,14 @@ INSERT INTO `teleport` VALUES
 ('Imperial Tomb - 1000 adena',9968,186699,-75915,-2826,1,1,13722), -- retail
 ('Forge of the Gods - Top Level - 1000 adena',9970,173436,-112725,-3680,1,1,13722), -- retail
 ('Forge of the Gods - Lower Level - 1000 adena',9971,180260,-111913,-5851,1,1,13722), -- retail
-('Execution Grounds - 1 Olympiad Token',9980,50568,152408,-2656,1,1,13722), -- retail
-('Floran Agricultural Area - 1 Olympiad Token',9981,26810,172787,-3376,1,1,13722), -- retail
 ('The Center of the Cruma Marshlands - 1 Olympiad Token',9982,5941,125455,-3400,1,1,13722), -- retail
 ('Frost Lake - 1 Olympiad Token',9990,107577,-122392,-3632,1,1,13722), -- retail
 ('Grave Robber Hideout - 1 Olympiad Token',9991,44221,-114232,-2784,1,1,13722), -- retail
 ('Sky Wagon Relic - 1 Olympiad Token',9992,121618,-141554,-1496,1,1,13722), -- retail
 ('Evil Hunting Grounds - 1 Olympiad Token',10000,-6989,109503,-3040,1,1,13722), -- retail
 ('The Center of the Neutral Zone - 1 Olympiad Token',10001,-18415,85624,-3680,1,1,13722), -- retail
-('The Center of the Dark Forest - 1 Olympiad Token',10002,-14129,27094,-3680,1,1,13722), -- retail
 ('Center of the School of Dark Arts - 1 Olympiad Token',10003,-49185,49441,-5912,1,1,13722), -- retail
 ('Center of the Elven Ruins - 1 Olympiad Token',10004,49315,248452,-5960,1,1,13722), -- retail
-('Immortal Plateau, Northern Region - 1 Olympiad Token',10005,-25309,-131569,-680,1,1,13722), -- retail
 ('The Center of the Mithril Mines - 1 Olympiad Token',10006,175499,-181586,-904,1,1,13722), -- retail
 ('The Center of the Abandoned Coal Mines - 1 Olympiad Token',10007,144706,-173223,-1520,1,1,13722), -- retail
 ('Forest of Evil - 1 Olympiad Token',10010,93218,16969,-3904,1,1,13722), -- retail
@@ -572,8 +553,6 @@ INSERT INTO `teleport` VALUES
 ('Varka teleport - Town of Aden',10035,146783,25808,-2000,8700,0,57),
 ('Varka teleport - Wall of Argos',10036,165054,-47861,-3560,6800,0,57),
 ('Varka teleport - Hot Springs',10037,144880,-113468,-2560,11000,0,57),
-('Field of Silence Center - 1000 adena',10038,80987,182423,-3504,1,1,13722), -- retail
-('Field of Whispers Center - 1000 adena',10039,86147,218268,-3592,1,1,13722), -- retail
 ('Ketra teleport - Town of Schuttgart',10040,87126,-143520,-1288,8900,0,57),
 ('Varka teleport - Town of Schuttgart',10041,87126,-143520,-1288,9300,0,57);
 
@@ -587,16 +566,7 @@ INSERT INTO `teleport` VALUES
 ('Dwarven Village -> Kamael Village',12056,-117251,46771,360,32000,0,57),
 ('Soul Harbor -> Nornil\'s Garden',12057,-119534,87176,-12593,0,0,57),
 ('Nornil\'s Garden -> Soul Harbor',12058,-73494,53507,-3680,0,0,57),
-('Fantasy Isle -> Krateis Cube',12108,-70293,-71029,-1416,0,0,57),
-('Krateis Cube -> Fantasy Isle',12109,-59224,-56837,-2032,0,0,57),
-('Gludio -> Airship dock',12118,-149406,255247,-80,0,0,57),
 ('Airship dock -> Talking Island',12119,-84752,243122,-3728,0,0,57),
-('Talking Island -> Airship dock',12120,-149406,255247,-80,0,0,57),
-('Fantasy Isle -> Handys Block',12121,-57328,-60566,-2360,0,0,57),
-('Keucereus -> Heart of Infinity',12122,-204288,242026,1744,0,0,57),
-('Handys Block -> Fantasy Isle',12139,-59157,-56906,-2032,0,0,57),
-('Guide of Immortality -> Seed of Infinity',14000,-183292,206063,-12888,0,0,57),
-('Gatekeeper of the Abyss -> Seed of Infinity',14001,-212836,209824,4288,0,0,57),
 ('Gludio Castle -> Front of the Gludio Castle',13000,-15043,116596,-3208,0,0,57),
 ('Gludio Castle -> Gludio Town Square',13001,-14393,123671,-3144,0,0,57),
 ('Gludio Castle -> Front of the Shanty Fortress',13002,-58761,154663,-2701,0,0,57),
@@ -637,14 +607,10 @@ INSERT INTO `teleport` VALUES
 ('Aden Castle -> Blazing Swamp',13071,155310,-16339,-3320,500,0,57),
 ('Aden Castle -> Forest of Mirrors',13038,142065,81300,-3000,500,0,57),
 ('Aden Castle -> Anghel Waterfall',13039,166182,91560,-3168,500,0,57),
-('Aden Castle -> The Giants Cave Upper Layer',13072,183985,61424,-3992,500,0,57),
-('Aden Castle -> The Giants Cave Lower Layer',13073,191754,56760,-7624,500,0,57),
 ('Innadril Castle -> Front of Innadril Castle',13040,117608,241660,-1408,0,0,57),
 ('Innadril Castle -> Innadril Town Square',13041,111455,219400,-3546,0,0,57),
 ('Innadril Castle -> Front of the White Sands Fortress',13042,124651,207877,-3184,0,0,57),
 ('Innadril Castle -> The Center of Alligator Island',13043,113708,178387,-3232,500,0,57),
-('Innadril Castle -> Field of Silence',13044,80987,182423,-3504,500,0,57),
-('Innadril Castle -> Field of Whispers',13045,86147,218268,-3592,500,0,57),
 ('Innadril Castle -> Inside the Garden of Eva',13046,82693,242220,-6712,500,0,57),
 ('Goddard Castle -> Front of Goddard Castle',13047,153996,-50182,-2992,0,0,57),
 ('Goddard Castle -> Goddard Town Square',13048,147728,-56331,-2776,0,0,57),
@@ -662,7 +628,6 @@ INSERT INTO `teleport` VALUES
 ('Rune Castle -> Swamp of Screams',13060,69340,-50203,-3314,500,0,57),
 ('Rune Castle -> Valley of Saints',13061,65307,-71445,-3696,500,0,57),
 ('Rune Castle -> Monastery of Silence',13062,106414,-87799,-2949,500,0,57),
-('Rune Castle -> Shyeeds Cavern',14063,76911,-55295,-5824,500,0,57),
 ('Schuttgart Castle -> Front of Schuttgart Castle',13063,76358,-145548,-1176,0,0,57),
 ('Schuttgart Castle -> Schuttgart Town Square',13064,87379,-142322,-1336,0,0,57),
 ('Schuttgart Castle -> Front of the Archaic Fortress',13065,105007,-140874,-3360,0,0,57),
@@ -735,12 +700,8 @@ INSERT INTO `teleport` VALUES
 INSERT INTO `teleport` VALUES
 ('News Informer -> Forge of the Gods',200901,169018,-116303,-2432,10000,0,57),
 ('News Informer -> Primeval Isle Wharf',200902,11235,-24026,-3640,10000,0,57),
-('News Informer -> The Giant\'s Cave',200903,174491,50942,-4360,10000,0,57),
 ('News Informer -> Den of Evil',200904,68693,-110438,-1904,10000,0,57),
 ('News Informer -> Mithril Mines Western Entrance',200905,171946,-173352,3440,10000,0,57),
-('News Informer -> Mithril Mines Eastern Entrance',200906,178591,-184615,360,10000,0,57),
-('News Informer -> Field of Silence',200907,87691,162835,-3520,10000,0,57),
-('News Informer -> Field of Whispers',200908,82192,226128,-3656,10000,0,57),
 ('News Informer -> Crypts of Disgrace',200909,47692,-115745,-3744,10000,0,57),
 ('News Informer -> Stakato Nest',200910,89513,-44800,-2136,10000,0,57),
 ('News Informer -> Town of Giran',200911,83551,147945,-3400,100000,0,57),
@@ -751,26 +712,15 @@ INSERT INTO `teleport` VALUES
 ('Primeval Isle -> Rune Township',200916,43835,-47749,-792,50000,0,57),
 ('Rune Township -> Primeval Isle',200917,11235,-24026,-3640,6400,0,57),
 ('Heine -> Isle of Prayer',200918,149518,195280,-3736,7200,0,57),
-('Giant\'s Cave -> Lower',200919,191754,56760,-7624,0,0,57),
-('Giant\'s Cave -> Upper',200920,183985,61424,-3992,0,0,57),
 ('Giran Harbor -> Pirate\'s Palace',200921,52241,218775,-3224,0,0,57),
-('Aden GK -> The Giant\'s Cave',200922,174491,50942,-4360,7400,0,57), -- retail
 ('FoG Entrance -> FoG Upper Level',200923,173492,-112272,-5192,0,0,57),
 ('Krun -> Enter Mines ',200924,173462,-174011,3480,0,0,57),
-('Tarum -> Enter Mines ',200925,179299,-182831,-224,0,0,57),
 ('Goddard -> Forge of the Gods',200926,169018,-116303,-2432,10000,0,57),
 ('Rune -> Stakato Nest',126,89513,-44800,-2136,9100,0,57);
 
 -- Freya
 INSERT INTO `teleport` VALUES
-('Oren -> Sel Mahum Training Grounds (West Gate)',15000,76839,63851,-3648,2400,0,57),
-('Oren -> Sel Mahum Training Grounds (South Gate)',15001,79414,71496,-3448,3700,0,57),
-('Oren -> Sel Mahum Training Grounds (Center)',15002,87448,61460,-3664,1800,0,57),
-('Schuttgart -> Mithril Mines',15003,171946,-173352,3440,5300,0,57),
-('Enter the Seed of Annihilation -> Entrance SOA',15005,-178262,153430,2472,0,0,57),
-('Seed of Infinity Dock',15006,-212843,209695,4280,150000,0,57), -- retail
-('Seed of Destruction Dock',15007,-248535,250273,4336,150000,0,57), -- retail
-('Seed of Annihilation Dock',15008,-175520,154505,2712,150000,0,57); -- retail
+('Schuttgart -> Mithril Mines',15003,171946,-173352,3440,5300,0,57);
 
 -- High Five
 INSERT INTO `teleport` VALUES
@@ -782,17 +732,7 @@ INSERT INTO `teleport` VALUES
 ('Hunters (Noble) -> The Heart of Antharas Lair',16005,154396,121235,-3808,1,1,13722),
 ('Gludio -> Isle of Souls Harbor',16006,-73983,51956,-3680,9300,0,57),
 ('Aden -> Isle of Souls Harbor',16007,-73983,51956,-3680,22000,0,57),
-('Aden -> Ivory Tower',16008,85391,16228,-3672,6200,0,57),
-('Photo Snow - Book Castle',16009,-61926,-59504,-1728,0,0,57),
-('Photo Snow - Clock Tower',16010,-61342,-57686,-1388,0,0,57),
-('Photo Snow - House',16011,-57525,-54523,-1576,0,0,57),
-('Photo Snow - Tuba 1',16012,-55355,-56305,-1112,0,0,57),
-('Photo Snow - Tuba 2',16013,-55545,-56310,-1256,0,0,57),
-('Photo Snow - Tuba 3',16014,-55646,-56314,-1296,0,0,57),
-('Photo Snow - Tuba 4',16015,-55748,-56327,-1336,0,0,57),
-('Photo Snow - Parade Tunnel a',16016,-58151,-53110,-1688,0,0,57),
-('Photo Snow - Parade Tunnel b',16017,-55223,-58832,-1680,0,0,57),
-('Photo Snow - Book House',16018,-59075,-59464,-1464,0,0,57);
+('Aden -> Ivory Tower',16008,85391,16228,-3672,6200,0,57);
 
 -- Fortress Teleports
 INSERT INTO `teleport` VALUES
@@ -850,8 +790,6 @@ INSERT INTO `teleport` VALUES
 ('Narsell Fortress -> Enchanted Valley, Southern Region',20045,124904,61992,-3973,500,0,57), -- retail
 ('Narsell Fortress -> Enchanted Valley, Northern Region',20046,104426,33746,-3825,500,0,57), -- retail
 ('Narsell Fortress -> Blazing Swamp',20047,155310,-16339,-3320,500,0,57), -- retail
-('Narsell Fortress -> The Giant\'s Cave Upper Layer',20048,183985,61424,-3992,500,0,57), -- retail
-('Narsell Fortress -> The Giant\'s Cave Lower Layer',20049,191754,56760,-7624,500,0,57), -- retail
 -- Bayou Fortress
 ('Bayou Fortress -> Fortress North Gate',20050,189894,36746,-3408,0,0,57), -- retail
 ('Bayou Fortress -> Fortress South Gate',20051,189914,42242,-3408,0,0,57), -- retail
@@ -861,15 +799,11 @@ INSERT INTO `teleport` VALUES
 ('Bayou Fortress -> Enchanted Valley, Southern Region',20055,124904,61992,-3973,500,0,57), -- retail
 ('Bayou Fortress -> Enchanted Valley, Northern Region',20056,104426,33746,-3825,500,0,57), -- retail
 ('Bayou Fortress -> Blazing Swamp',20057,155310,-16339,-3320,500,0,57), -- retail
-('Bayou Fortress -> The Giant\'s Cave Upper Layer',20058,183985,61424,-3992,500,0,57), -- retail
-('Bayou Fortress -> The Giant\'s Cave Lower Layer',20059,191754,56760,-7624,500,0,57), -- retail
 -- White Sands Fortress
 ('White Sands Fortress -> Fortress West Gate',20060,116336,203775,-3336,0,0,57), -- retail
 ('White Sands Fortress -> Fortress East Gate',20061,120487,206093,-3336,0,0,57), -- retail
 ('White Sands Fortress -> Heine Town Square',20062,111455,219400,-3546,0,0,57), -- retail
 ('White Sands Fortress -> Front of the Innadril Castle Gate',20063,117608,241660,-1408,0,0,57), -- retail
-('White Sands Fortress -> Field of Silence Center',20064,80987,182423,-3504,500,0,57), -- retail
-('White Sands Fortress -> Field of Whispers Center',20065,86147,218268,-3592,500,0,57), -- retail
 ('White Sands Fortress -> The Center of Alligator Island',20066,113708,178387,-3232,500,0,57), -- retail
 ('White Sands Fortress -> Inside the Garden of Eva',20067,82693,242220,-6712,500,0,57), -- retail
 -- Borderland Fortress
@@ -890,7 +824,6 @@ INSERT INTO `teleport` VALUES
 ('Swamp Fortress -> Wild Beast Pastures',20081,43805,-88010,-2780,500,0,57), -- retail
 ('Swamp Fortress -> Swamp of Screams',20082,69340,-50203,-3314,500,0,57), -- retail
 ('Swamp Fortress -> Valley of Saints',20083,65307,-71445,-3696,500,0,57), -- retail
-('Swamp Fortress -> Shyeed\'s Cavern',20084,76911,-55295,-5824,500,0,57), -- retail
 -- Archaic Fortress
 ('Archaic Fortress -> Fortress West Gate',20085,107248,-140450,-2960,0,0,57), -- retail
 ('Archaic Fortress -> Fortress East Gate',20086,111769,-141775,-2920,0,0,57), -- retail
@@ -956,8 +889,6 @@ INSERT INTO `teleport` VALUES
 ('Western Fortress -> Ancient Battleground',20140,118509,-4779,-4000,500,0,57), -- retail
 ('Western Fortress -> Entrance to the Forge of the Gods',20141,169018,-116303,-2432,500,0,57), -- retail
 ('Western Fortress -> Wall of Argos',20142,165054,-47861,-3560,500,0,57), -- retail
-('Western Fortress -> The Giant\'s Cave Upper Layer',20143,183985,61424,-3992,500,0,57), -- retail
-('Western Fortress -> The Giant\'s Cave Lower Layer',20144,191754,56760,-7624,500,0,57), -- retail
 -- Hunter's Fortress
 ('Hunters Fortress -> Fortress North Gate',20145,124180,93249,-2144,0,0,57), -- retail
 ('Hunters Fortress -> Fortress South Gate',20146,126155,97124,-2144,0,0,57), -- retail
@@ -967,8 +898,6 @@ INSERT INTO `teleport` VALUES
 ('Hunters Fortress -> Blazing Swamp',20150,155310,-16339,-3320,500,0,57), -- retail
 ('Hunters Fortress -> Dragon Valley',20151,73024,118485,-3720,500,0,57), -- retail
 ('Hunters Fortress -> Tanor Canyon',20152,60374,164301,-2856,500,0,57), -- retail
-('Hunters Fortress -> The Giant\'s Cave Upper Layer',20153,183985,61424,-3992,500,0,57), -- retail
-('Hunters Fortress -> The Giant\'s Cave Lower Layer',20154,191754,56760,-7624,500,0,57), -- retail
 -- Aaru Fortress
 ('Aaru Fortress -> Fortress North Gate',20155,73205,183893,-2584,0,0,57), -- retail
 ('Aaru Fortress -> Fortress South Gate',20156,72822,188128,-2584,0,0,57), -- retail
@@ -987,7 +916,6 @@ INSERT INTO `teleport` VALUES
 ('Demon Fortress -> Valley of Saints',20168,65307,-71445,-3696,500,0,57), -- retail
 ('Demon Fortress -> Entrance to the Forge of the Gods',20169,169018,-116303,-2432,500,0,57), -- retail
 ('Demon Fortress -> Wall of Argos',20170,165054,-47861,-3560,500,0,57), -- retail
-('Demon Fortress -> Shyeed\'s Cavern',20171,76911,-55295,-5824,500,0,57), -- retail
 -- Monastic Fortress
 ('Monastic Fortress -> Fortress North Gate',20172,72388,-96770,-1424,0,0,57), -- retail
 ('Monastic Fortress -> Fortress South Gate',20173,71937,-92600,-1416,0,0,57), -- retail
@@ -996,5 +924,4 @@ INSERT INTO `teleport` VALUES
 ('Monastic Fortress -> Swamp of Screams',20176,69340,-50203,-3314,500,0,57), -- retail
 ('Monastic Fortress -> Valley of Saints',20177,65307,-71445,-3696,500,0,57), -- retail
 ('Monastic Fortress -> Den of Evil',20178,68693,-110438,-1946,500,0,57), -- retail
-('Monastic Fortress -> Ice Merchant Cabin',20179,113903,-108752,-860,500,0,57), -- retail
-('Monastic Fortress -> Shyeed\'s Cavern',20180,76911,-55295,-5824,500,0,57); -- retail
+('Monastic Fortress -> Ice Merchant Cabin',20179,113903,-108752,-860,500,0,57); -- retail
