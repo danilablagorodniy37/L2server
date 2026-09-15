@@ -916,23 +916,50 @@
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
-		<dropLists>
-			<death>
-				<group chance="0.11590000241994858">
-					<item id="6529" min="1" max="1" chance="100" /> <!-- Baby Duck Rod -->
-				</group>
-				<group chance="33.81489944458008">
-					<item id="6535" min="12" max="36" chance="35.7143" /> <!-- Fishing Shot (No-Grade) -->
-					<item id="6520" min="1" max="1" chance="25.7143" /> <!-- Green Colored Lure -->
-					<item id="6523" min="1" max="1" chance="17.1429" /> <!-- Purple Colored Lure -->
-					<item id="6526" min="1" max="1" chance="21.4285" /> <!-- Yellow Colored Lure -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="20" />
 			<height normal="10" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="0.1159">
+					<item id="6529" min="1" max="1" chance="100" /> <!-- Baby Duck Rod -->
+				</group>
+				<group chance="33.8151">
+					<item id="6519" min="1" max="1" chance="25.7142" /> <!-- Green Colored Lure - Low Grade -->
+					<item id="6522" min="1" max="1" chance="17.1428" /> <!-- Purple Colored Lure - Low Grade -->
+					<item id="6525" min="1" max="1" chance="21.4285" /> <!-- Yellow Colored Lure - Low Grade -->
+					<item id="6535" min="12" max="36" chance="35.7145" /> <!-- Fishing Shot (No-Grade) -->
+				</group>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18320" level="20" type="L2Monster" name="Caught Undine">
 		<!-- Confirmed CT2.5 -->
@@ -976,23 +1003,50 @@
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
-		<dropLists>
-			<death>
-				<group chance="0.05270000174641609">
-					<item id="6530" min="1" max="1" chance="100" /> <!-- Albatross Rod -->
-				</group>
-				<group chance="43.90399932861328">
-					<item id="6536" min="12" max="36" chance="25" /> <!-- Fishing Shot (D-Grade) -->
-					<item id="6520" min="1" max="1" chance="30" /> <!-- Green Colored Lure -->
-					<item id="6523" min="1" max="1" chance="20" /> <!-- Purple Colored Lure -->
-					<item id="6526" min="1" max="1" chance="25" /> <!-- Yellow Colored Lure -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="12" />
 			<height normal="27" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="0.0527">
+					<item id="6530" min="1" max="1" chance="100" /> <!-- Albatross Rod -->
+				</group>
+				<group chance="43.904">
+					<item id="6519" min="1" max="1" chance="30.0001" /> <!-- Green Colored Lure - Low Grade -->
+					<item id="6522" min="1" max="1" chance="20" /> <!-- Purple Colored Lure - Low Grade -->
+					<item id="6525" min="1" max="1" chance="24.9999" /> <!-- Yellow Colored Lure - Low Grade -->
+					<item id="6536" min="12" max="36" chance="25" /> <!-- Fishing Shot (D-Grade) -->
+				</group>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18321" level="30" type="L2Monster" name="Caught Rakul">
 		<!-- Confirmed CT2.5 -->
@@ -1037,23 +1091,50 @@
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
-		<dropLists>
-			<death>
-				<group chance="0.019999999552965164">
-					<item id="6531" min="1" max="1" chance="100" /> <!-- Pelican Rod -->
-				</group>
-				<group chance="39.58409881591797">
-					<item id="6537" min="12" max="36" chance="30" /> <!-- Fishing Shot (C-Grade) -->
-					<item id="6520" min="2" max="6" chance="8.4" /> <!-- Green Colored Lure -->
-					<item id="6523" min="1" max="1" chance="28" /> <!-- Purple Colored Lure -->
-					<item id="6526" min="1" max="1" chance="33.6" /> <!-- Yellow Colored Lure -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="30" />
 			<height normal="39" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="0.02">
+					<item id="6531" min="1" max="1" chance="100" /> <!-- Pelican Rod -->
+				</group>
+				<group chance="39.5842">
+					<item id="6520" min="2" max="6" chance="8.4" /> <!-- Green Colored Lure -->
+					<item id="6523" min="1" max="1" chance="27.9999" /> <!-- Purple Colored Lure -->
+					<item id="6526" min="1" max="1" chance="33.6001" /> <!-- Yellow Colored Lure -->
+					<item id="6537" min="12" max="36" chance="30" /> <!-- Fishing Shot (C-Grade) -->
+				</group>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18322" level="40" type="L2Monster" name="Caught Sea Giant">
 		<!-- Confirmed CT2.5 -->
@@ -1098,23 +1179,50 @@
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
-		<dropLists>
-			<death>
-				<group chance="0.01080000028014183">
-					<item id="6532" min="1" max="1" chance="100" /> <!-- KingFisher Rod -->
-				</group>
-				<group chance="32.69430160522461">
-					<item id="6538" min="15" max="45" chance="13.2231" /> <!-- Fishing Shot (B-Grade) -->
-					<item id="6520" min="2" max="6" chance="20.6612" /> <!-- Green Colored Lure -->
-					<item id="6523" min="1" max="1" chance="55.0964" /> <!-- Purple Colored Lure -->
-					<item id="6526" min="3" max="9" chance="11.0193" /> <!-- Yellow Colored Lure -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="13" />
 			<height normal="44" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="0.0108">
+					<item id="6532" min="1" max="1" chance="100" /> <!-- KingFisher Rod -->
+				</group>
+				<group chance="32.6944">
+					<item id="6520" min="2" max="6" chance="20.6613" /> <!-- Green Colored Lure -->
+					<item id="6523" min="1" max="1" chance="55.0965" /> <!-- Purple Colored Lure -->
+					<item id="6526" min="3" max="9" chance="11.0192" /> <!-- Yellow Colored Lure -->
+					<item id="6538" min="15" max="45" chance="13.223" /> <!-- Fishing Shot (B-Grade) -->
+				</group>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18323" level="50" type="L2Monster" name="Caught Sea Horse Soldier">
 		<!-- Confirmed CT2.5 -->
@@ -1159,23 +1267,50 @@
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
-		<dropLists>
-			<death>
-				<group chance="0.004100000020116568">
-					<item id="6533" min="1" max="1" chance="100" /> <!-- Cygnus Pole -->
-				</group>
-				<group chance="48.48109817504883">
-					<item id="6539" min="3" max="9" chance="34.8837" /> <!-- Fishing Shot (A-Grade) -->
-					<item id="6520" min="2" max="6" chance="13.9535" /> <!-- Green Colored Lure -->
-					<item id="6523" min="1" max="1" chance="41.8605" /> <!-- Purple Colored Lure -->
-					<item id="6526" min="2" max="6" chance="9.3023" /> <!-- Yellow Colored Lure -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="9" />
 			<height normal="32" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="0.0041">
+					<item id="6533" min="1" max="1" chance="100" /> <!-- Cygnus Pole -->
+				</group>
+				<group chance="48.4814">
+					<item id="6521" min="2" max="6" chance="13.9536" /> <!-- Green Colored Lure (High Grade) -->
+					<item id="6524" min="1" max="1" chance="41.8605" /> <!-- Purple Colored Lure (High Grade) -->
+					<item id="6527" min="2" max="6" chance="9.3023" /> <!-- Yellow Colored Lure (High Grade) -->
+					<item id="6539" min="3" max="9" chance="34.8836" /> <!-- Fishing Shot (A-Grade) -->
+				</group>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18324" level="60" type="L2Monster" name="Caught Homunculus">
 		<!-- Confirmed CT2.5 -->
@@ -1219,23 +1354,50 @@
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
-		<dropLists>
-			<death>
-				<group chance="0.006099999882280827">
-					<item id="6533" min="1" max="1" chance="100" /> <!-- Cygnus Pole -->
-				</group>
-				<group chance="58.48109817504883">
-					<item id="6539" min="3" max="9" chance="34.8837" /> <!-- Fishing Shot (A-Grade) -->
-					<item id="6520" min="2" max="6" chance="13.9535" /> <!-- Green Colored Lure -->
-					<item id="6523" min="1" max="1" chance="41.8605" /> <!-- Purple Colored Lure -->
-					<item id="6526" min="2" max="6" chance="9.3023" /> <!-- Yellow Colored Lure -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="12" />
 			<height normal="32.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="0.0061">
+					<item id="6533" min="1" max="1" chance="100" /> <!-- Cygnus Pole -->
+				</group>
+				<group chance="58.4812">
+					<item id="6521" min="2" max="6" chance="13.9535" /> <!-- Green Colored Lure (High Grade) -->
+					<item id="6524" min="1" max="1" chance="41.8607" /> <!-- Purple Colored Lure (High Grade) -->
+					<item id="6527" min="2" max="6" chance="9.3023" /> <!-- Yellow Colored Lure (High Grade) -->
+					<item id="6539" min="3" max="9" chance="34.8835" /> <!-- Fishing Shot (A-Grade) -->
+				</group>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18325" level="70" type="L2Monster" name="Caught Flava">
 		<!-- Confirmed CT2.5 -->
@@ -1279,23 +1441,50 @@
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
-		<dropLists>
-			<death>
-				<group chance="0.0017000000225380063">
-					<item id="6534" min="1" max="1" chance="100" /> <!-- Triton Pole -->
-				</group>
-				<group chance="47.18220138549805">
-					<item id="6540" min="3" max="9" chance="30" /> <!-- Fishing Shot (S-Grade) -->
-					<item id="6520" min="2" max="6" chance="15" /> <!-- Green Colored Lure -->
-					<item id="6523" min="1" max="1" chance="45" /> <!-- Purple Colored Lure -->
-					<item id="6526" min="2" max="6" chance="10" /> <!-- Yellow Colored Lure -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="18" />
 			<height normal="34" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="0.0017">
+					<item id="6534" min="1" max="1" chance="100" /> <!-- Triton Pole -->
+				</group>
+				<group chance="47.1824">
+					<item id="6521" min="2" max="6" chance="15" /> <!-- Green Colored Lure (High Grade) -->
+					<item id="6524" min="1" max="1" chance="45" /> <!-- Purple Colored Lure (High Grade) -->
+					<item id="6527" min="2" max="6" chance="10.0001" /> <!-- Yellow Colored Lure (High Grade) -->
+					<item id="6540" min="3" max="9" chance="29.9999" /> <!-- Fishing Shot (S-Grade) -->
+				</group>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18326" level="78" type="L2Monster" name="Caught Gigantic Eye">
 		<!-- Confirmed CT2.5 -->
@@ -1339,23 +1528,50 @@
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />
-		<dropLists>
-			<death>
-				<group chance="0.003000000026077032">
-					<item id="6534" min="1" max="1" chance="100" /> <!-- Triton Pole -->
-				</group>
-				<group chance="57.18220138549805">
-					<item id="6540" min="3" max="9" chance="30" /> <!-- Fishing Shot (S-Grade) -->
-					<item id="6520" min="2" max="6" chance="15" /> <!-- Green Colored Lure -->
-					<item id="6523" min="1" max="1" chance="45" /> <!-- Purple Colored Lure -->
-					<item id="6526" min="2" max="6" chance="10" /> <!-- Yellow Colored Lure -->
-				</group>
-			</death>
-		</dropLists>
 		<collision>
 			<radius normal="21" />
 			<height normal="55" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="0.003">
+					<item id="6534" min="1" max="1" chance="100" /> <!-- Triton Pole -->
+				</group>
+				<group chance="57.1824">
+					<item id="6521" min="2" max="6" chance="15" /> <!-- Green Colored Lure (High Grade) -->
+					<item id="6524" min="1" max="1" chance="45.0001" /> <!-- Purple Colored Lure (High Grade) -->
+					<item id="6527" min="2" max="6" chance="10" /> <!-- Yellow Colored Lure (High Grade) -->
+					<item id="6540" min="3" max="9" chance="29.9999" /> <!-- Fishing Shot (S-Grade) -->
+				</group>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18327" level="58" type="L2Monster" name="Freya's Servant">
 		<!-- Confirmed CT2.5 -->
@@ -1778,6 +1994,13 @@
 			<radius normal="21" grown="24" />
 			<height normal="50" grown="60" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="100">
+					<item id="8192" min="10" max="20" chance="100" /> <!-- Soul Breaking Arrow -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18335" level="83" type="L2Monster" name="Dark Choir Prima Donna">
 		<!-- Confirmed CT2.5 -->
@@ -2188,17 +2411,44 @@
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="300" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="15" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="100">
 					<item id="57" min="7" max="13" chance="100" /> <!-- Adena -->
 				</group>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" />
-			<height normal="15" />
-		</collision>
 	</npc>
 	<npc id="18343" level="78" type="L2Monster" name="Doorman Zombie">
 		<!-- Confirmed CT2.5 -->
@@ -2333,22 +2583,17 @@
 		<exCrtEffect>true</exCrtEffect>
 		<sNpcPropHpRate>0.25</sNpcPropHpRate>
 		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" />
-		<dropLists>
-			<death>
-				<group chance="39.7599983215332">
-					<item id="8787" min="1" max="1" chance="100" /> <!-- Sprigant's Fruit -->
-				</group>
-			</death>
-			<corpse>
-				<item id="960" min="1" max="1" chance="0.0931" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-				<item id="1894" min="1" max="1" chance="8.168" /> <!-- Crafted Leather -->
-				<item id="4039" min="1" max="1" chance="7.7596" /> <!-- Mold Glue -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="45" />
 			<height normal="67" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="25">
+					<item id="8787" min="1" max="1" chance="100" /> <!-- Sprigant's Fruit -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18346" level="78" type="L2Monster" name="Sprigant">
 		<!-- Confirmed CT2.5 -->
@@ -2391,22 +2636,17 @@
 		<exCrtEffect>true</exCrtEffect>
 		<sNpcPropHpRate>0.25</sNpcPropHpRate>
 		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" />
-		<dropLists>
-			<death>
-				<group chance="39.7599983215332">
-					<item id="8787" min="1" max="1" chance="100" /> <!-- Sprigant's Fruit -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6701" min="1" max="1" chance="0.6885" /> <!-- Sealed Imperial Crusader Breastplate Part -->
-				<item id="6901" min="1" max="1" chance="0.2328" /> <!-- Recipe: Shining Arrow (100%) -->
-				<item id="6702" min="1" max="1" chance="0.8863" /> <!-- Sealed Imperial Crusader Gaiters Pattern -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="45" />
 			<height normal="67" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="25">
+					<item id="8787" min="1" max="1" chance="100" /> <!-- Sprigant's Fruit -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18347" level="20" type="L2Monster" name="Garden Guard">
 		<!-- Confirmed CT2.5 -->

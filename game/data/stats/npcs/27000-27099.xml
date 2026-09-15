@@ -83,6 +83,37 @@
 			<radius normal="12" grown="14" />
 			<height normal="22" grown="26.4" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27003" level="9" type="L2Monster" name="Spirit Of Mirrors" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
@@ -206,6 +237,37 @@
 			<radius normal="10" />
 			<height normal="26" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27006" level="11" type="L2Monster" name="Bhato Bloodspear">
 		<!-- Confirmed CT2.5 -->
@@ -247,6 +309,37 @@
 			<radius normal="12" grown="14" />
 			<height normal="22" grown="26.4" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27007" level="11" type="L2Monster" name="Tanuki Skullcrusher">
 		<!-- Confirmed CT2.5 -->
@@ -288,6 +381,37 @@
 			<radius normal="12" grown="14" />
 			<height normal="22" grown="26.4" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27008" level="11" type="L2Monster" name="Kraacul Blackskull">
 		<!-- Confirmed CT2.5 -->
@@ -329,6 +453,37 @@
 			<radius normal="12" grown="14" />
 			<height normal="22" grown="26.4" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27009" level="11" type="L2Monster" name="Taarq Blackskull">
 		<!-- Confirmed CT2.5 -->
@@ -370,6 +525,37 @@
 			<radius normal="14" />
 			<height normal="25" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27016" level="22" type="L2Monster" name="Nerkas" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
@@ -458,6 +644,37 @@
 			<radius normal="13" />
 			<height normal="21" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27018" level="10" type="L2Monster" name="Orc Warrior">
 		<!-- Confirmed CT2.5 -->
@@ -540,6 +757,37 @@
 			<radius normal="12" grown="14" />
 			<height normal="22" grown="26.4" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27020" level="20" type="L2Monster" name="Varool Foulclaw" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
@@ -627,6 +875,37 @@
 			<radius normal="14" />
 			<height normal="36" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27022" level="22" type="L2Monster" name="Merkenis" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
@@ -669,6 +948,37 @@
 			<radius normal="10" />
 			<height normal="36" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27024" level="17" type="L2Monster" name="Undead Priest" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
@@ -885,6 +1195,37 @@
 			<radius normal="12" />
 			<height normal="30" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27033" level="12" type="L2Monster" name="Lizardman Scout" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
@@ -927,6 +1268,37 @@
 			<radius normal="10" />
 			<height normal="23" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27034" level="11" type="L2Monster" name="Lizardman Soldier" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
@@ -969,6 +1341,37 @@
 			<radius normal="10" />
 			<height normal="23" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27035" level="19" type="L2Monster" name="Tamil" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
@@ -1053,6 +1456,37 @@
 			<radius normal="12" grown="14" />
 			<height normal="22" grown="26.4" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27037" level="10" type="L2Monster" name="Calpico's Goons" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
@@ -1095,6 +1529,37 @@
 			<radius normal="10" />
 			<height normal="21" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27038" level="15" type="L2Monster" name="Cat's Eye Bandit" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
@@ -1187,6 +1652,37 @@
 			<radius normal="12" grown="14" />
 			<height normal="22" grown="26.4" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27042" level="12" type="L2Monster" name="Orc Escort" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
@@ -1233,6 +1729,37 @@
 			<radius normal="12" grown="14" />
 			<height normal="22" grown="26.4" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27043" level="11" type="L2Monster" name="Varangka's Tracker" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
@@ -1278,6 +1805,37 @@
 			<radius normal="10" />
 			<height normal="33.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27044" level="17" type="L2Monster" name="Kasha Bear Totem Spirit" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
@@ -1967,6 +2525,37 @@
 			<radius normal="12" grown="14" />
 			<height normal="22" grown="26.4" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27060" level="11" type="L2Monster" name="Kracha" title="Kaboo Chief">
 		<!-- Confirmed CT2.5 -->
@@ -2013,6 +2602,37 @@
 			<radius normal="14" />
 			<height normal="25" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27061" level="11" type="L2Monster" name="Batoh" title="Kaboo Chief">
 		<!-- Confirmed CT2.5 -->
@@ -2059,6 +2679,37 @@
 			<radius normal="12" grown="14" />
 			<height normal="22" grown="26.4" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27062" level="8" type="L2Monster" name="Tanukia" title="Kaboo Chief">
 		<!-- Confirmed CT2.5 -->
@@ -2196,6 +2847,37 @@
 			<radius normal="12" grown="14" />
 			<height normal="22" grown="26.4" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27065" level="8" type="L2Monster" name="Roko" title="Kaboo Chief">
 		<!-- Confirmed CT2.5 -->
@@ -2333,6 +3015,37 @@
 			<radius normal="12" grown="14" />
 			<height normal="22" grown="26.4" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27068" level="8" type="L2Monster" name="Murtika" title="Kaboo Chief">
 		<!-- Confirmed CT2.5 -->
@@ -2470,6 +3183,37 @@
 			<radius normal="12" grown="14" />
 			<height normal="22" grown="26.4" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="27077" level="30" type="L2Monster" name="Unicorn Of Eva" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->

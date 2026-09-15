@@ -717,6 +717,7 @@
 		<set name="affectScope" val="SINGLE" />
 	</skill>
 	<skill id="3125" levels="10" name="Item Skill: Battle Roar">
+		<table name="#il_mpConsume2"> 48 53 55 59 64 65 69 73 77 82 </table>
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> 440 481 521 562 602 640 677 711 743 789 </table>
 		<table name="#magicLvl"> 46 49 52 55 58 61 64 67 70 75 </table>
@@ -728,14 +729,14 @@
 		<set name="affectScope" val="SINGLE" />
 		<set name="effectPoint" val="#effectPoint" />
 		<set name="hitCancelTime" val="500" />
-		<set name="hitTime" val="4000" />
+		<set name="hitTime" val="1500" />
 		<set name="icon" val="icon.skill3123" />
 		<set name="isMagic" val="2" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume1" val="#mpConsume1" />
-		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="mpConsume2" val="#il_mpConsume2" />
 		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="300000" />
+		<set name="reuseDelay" val="180000" />
 		<set name="reuseDelayType" val="S" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="SELF" />
@@ -970,6 +971,7 @@
 		<set name="affectScope" val="SINGLE" />
 	</skill>
 	<skill id="3134" levels="10" name="Item Skill: Duel Might">
+		<table name="#il_value"> 1.01 1.02 1.03 1.04 1.05 1.06 1.07 1.08 1.09 1.10 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#effectPoint"> 440 481 521 562 602 640 677 711 743 789 </table>
 		<table name="#magicLvl"> 46 49 52 55 58 61 64 67 70 75 </table>
@@ -991,8 +993,8 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<mul stat="pvpPhysDmg" val="1.05" />
-				<mul stat="pvpPhysSkillsDmg" val="1.05" />
+				<mul stat="pvpPhysDmg" val="#il_value" />
+				<mul stat="pvpPhysSkillsDmg" val="#il_value" />
 			</effect>
 		</effects>
 		<set name="affectScope" val="SINGLE" />
@@ -1054,6 +1056,7 @@
 		<set name="affectScope" val="SINGLE" />
 	</skill>
 	<skill id="3137" levels="10" name="Item Skill: Duel Weakness">
+		<table name="#il_value"> 0.99 0.98 0.97 0.96 0.95 0.94 0.93 0.92 0.91 0.90 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#effectPoint"> -440 -481 -521 -562 -602 -640 -677 -711 -743 -789 </table>
 		<table name="#magicLvl"> 46 49 52 55 58 61 64 67 70 75 </table>
@@ -1081,8 +1084,8 @@
 		<set name="targetType" val="ENEMY_ONLY" />
 		<effects>
 			<effect name="Debuff">
-				<mul stat="pvpPhysDmg" val="0.95" />
-				<mul stat="pvpPhysSkillsDmg" val="0.95" />
+				<mul stat="pvpPhysDmg" val="#il_value" />
+				<mul stat="pvpPhysSkillsDmg" val="#il_value" />
 			</effect>
 		</effects>
 	</skill>
@@ -1248,7 +1251,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<mul stat="breath" val="7" />
+				<mul stat="breath" val="6" />
 			</effect>
 		</effects>
 		<set name="affectScope" val="SINGLE" />
@@ -1615,7 +1618,7 @@
 	<skill id="3158" levels="1" name="Item Skill: Lesser Celestial Shield">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="7" />
+		<set name="abnormalTime" val="10" />
 		<set name="abnormalType" val="INVINCIBILITY" />
 		<set name="effectPoint" val="659" />
 		<set name="hitTime" val="1000" />
@@ -1848,6 +1851,7 @@
 		</effects>
 	</skill>
 	<skill id="3167" levels="10" name="Item Skill: Hydro Blast">
+		<table name="#il_magicalAttackPower"> 61 66 72 77 82 78 92 78 102 110 </table>
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -436 -465 -493 -521 -547 -572 -595 -615 -633 -657 </table>
 		<table name="#magicLvl"> 46 49 52 55 58 61 64 67 70 75 </table>
@@ -1875,7 +1879,7 @@
 		<set name="targetType" val="ENEMY" />
 		<effects>
 			<effect name="MagicalAttack">
-				<param power="#magicalAttackPower" />
+				<param power="#il_magicalAttackPower" />
 			</effect>
 		</effects>
 	</skill>
@@ -2550,7 +2554,7 @@
 		<table name="#mpConsume2"> 33 35 38 40 43 45 48 50 52 55 </table>
 		<table name="#mpConsume1"> 9 9 10 10 11 12 12 13 13 14 </table>
 		<set name="abnormalLvl" val="3" />
-		<set name="abnormalTime" val="30" />
+		<set name="abnormalTime" val="5" />
 		<set name="abnormalType" val="ATTACK_TIME_UP" />
 		<set name="activateRate" val="40" />
 		<set name="affectScope" val="SINGLE" />
@@ -2584,7 +2588,7 @@
 		<table name="#mpConsume2"> 33 35 38 40 43 45 48 50 52 55 </table>
 		<table name="#mpConsume1"> 9 9 10 10 11 12 12 13 13 14 </table>
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="30" />
+		<set name="abnormalTime" val="9" />
 		<set name="abnormalType" val="STUN" />
 		<set name="abnormalVisualEffect" val="STUN" />
 		<set name="activateRate" val="40" />
@@ -2691,14 +2695,14 @@
 		<table name="#mpConsume2"> 33 35 38 40 43 45 48 50 52 55 </table>
 		<table name="#mpConsume1"> 9 9 10 10 11 12 12 13 13 14 </table>
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="15" />
+		<set name="abnormalTime" val="30" />
 		<set name="abnormalType" val="PARALYZE" />
 		<set name="activateRate" val="40" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="basicProperty" val="MEN" />
 		<set name="castRange" val="600" />
 		<set name="effectPoint" val="#effectPoint" />
-		<set name="effectRange" val="1100" />
+		<set name="effectRange" val="900" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="icon.skill3123" />
 		<set name="isDebuff" val="true" />
@@ -2708,7 +2712,7 @@
 		<set name="mpConsume2" val="#mpConsume2" />
 		<set name="mpConsume1" val="#mpConsume1" />
 		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="30000" />
+		<set name="reuseDelay" val="180000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="reuseDelayLock" val="true" />
 		<set name="targetType" val="ENEMY_ONLY" />
@@ -2779,7 +2783,7 @@
 		<table name="#mpConsume2"> 33 35 38 40 43 45 48 50 52 55 </table>
 		<table name="#mpConsume1"> 9 9 10 10 11 12 12 13 13 14 </table>
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="20" />
+		<set name="abnormalTime" val="2" />
 		<set name="abnormalType" val="TURN_FLEE" />
 		<set name="abnormalVisualEffect" val="TURN_FLEE" />
 		<set name="activateRate" val="40" />
@@ -2815,7 +2819,7 @@
 		<table name="#mpConsume2"> 33 35 38 40 43 45 48 50 52 55 </table>
 		<table name="#mpConsume1"> 9 9 10 10 11 12 12 13 13 14 </table>
 		<set name="abnormalLvl" val="#abnormalLvl" />
-		<set name="abnormalTime" val="30" />
+		<set name="abnormalTime" val="3" />
 		<set name="abnormalType" val="POISON" />
 		<set name="abnormalVisualEffect" val="DOT_POISON" />
 		<set name="activateRate" val="40" />
@@ -2854,7 +2858,7 @@
 		<table name="#mpConsume2"> 33 35 38 40 43 45 48 50 52 55 </table>
 		<table name="#mpConsume1"> 9 9 10 10 11 12 12 13 13 14 </table>
 		<set name="abnormalLvl" val="#abnormalLvl" />
-		<set name="abnormalTime" val="20" />
+		<set name="abnormalTime" val="3" />
 		<set name="abnormalType" val="BLEEDING" />
 		<set name="abnormalVisualEffect" val="DOT_BLEEDING" />
 		<set name="activateRate" val="40" />

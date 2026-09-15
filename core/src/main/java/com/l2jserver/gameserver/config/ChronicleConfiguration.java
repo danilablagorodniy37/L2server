@@ -47,4 +47,7 @@ public interface ChronicleConfiguration extends Config {
 
 	@Key("EnableTerritoryWar")
 	boolean enableTerritoryWar();
+
+	@Key("EnableAttributes")
+	boolean enableAttributes();
 }

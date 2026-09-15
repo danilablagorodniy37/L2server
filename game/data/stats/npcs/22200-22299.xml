@@ -55,55 +55,38 @@
 				<clan>ORNITHOMIMUS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.27140000462532043">
-					<item id="6365" min="1" max="1" chance="0.0719" /> <!-- Basalt Battlehammer -->
-					<item id="6366" min="1" max="1" chance="0.0719" /> <!-- Imperial Staff -->
-					<item id="6369" min="1" max="1" chance="0.0719" /> <!-- Dragon Hunter Axe -->
-					<item id="6689" min="1" max="1" chance="32.6218" /> <!-- Basalt Battlehammer Head -->
-					<item id="6690" min="1" max="1" chance="33.3116" /> <!-- Imperial Staff Head -->
-					<item id="6693" min="1" max="1" chance="33.8509" /> <!-- Dragon Hunter Axe Blade -->
-				</group>
-				<group chance="7.685500144958496">
-					<item id="1879" min="1" max="1" chance="60.3115" /> <!-- Cokes -->
-					<item id="1885" min="1" max="1" chance="30.1558" /> <!-- High-Grade Suede -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6901" min="1" max="1" chance="0.6779" /> <!-- Recipe: Shining Arrow (100%) -->
-				<item id="6694" min="1" max="1" chance="1.4918" /> <!-- Saint Spear Blade -->
-				<item id="960" min="1" max="1" chance="0.2712" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="15" />
 			<height normal="37.2" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4460" max="9095" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.3719">
+					<item id="5533" min="1" max="1" chance="20.0052" /> <!-- Elysian Head -->
+					<item id="5544" min="1" max="1" chance="40.0109" /> <!-- Branch of the Mother Tree Head -->
+					<item id="8342" min="1" max="1" chance="35.0095" /> <!-- Flaming Dragon Skull Piece -->
+					<item id="8349" min="1" max="1" chance="4.9744" /> <!-- Doom Crusher Head -->
+				</group>
+				<group chance="1.77">
+					<item id="8955" min="1" max="1" chance="4.2033" /> <!-- Green Primeval Crystal -->
+					<item id="8954" min="1" max="1" chance="5.2542" /> <!-- Blue Primeval Crystal -->
+					<item id="8888" min="1" max="1" chance="9.4632" /> <!-- Amulet: Pa'agrio's Fist -->
+					<item id="8886" min="1" max="1" chance="3.1525" /> <!-- Amulet: Victories of Pa'agrio -->
+					<item id="8879" min="1" max="1" chance="3.3898" /> <!-- Spellbook: Summon Magnus the Unicorn -->
+					<item id="8633" min="1" max="1" chance="36.6841" /> <!-- Elixir of Mental Strength (S-Grade) -->
+					<item id="8627" min="1" max="1" chance="35.757" /> <!-- Elixir of Life (S-Grade) -->
+					<item id="8956" min="1" max="1" chance="2.0959" /> <!-- Red Primeval Crystal -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1895" min="1" max="5" chance="50.025" /> <!-- Metallic Fiber -->
+				<item id="4040" min="1" max="1" chance="33.3333" /> <!-- Mold Lubricant -->
+				<item id="6695" min="1" max="1" chance="1.8181" /> <!-- Demon Splinter Blade -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="22201" level="80" type="L2Monster" name="Ornithomimus">
 		<!-- Confirmed CT2.5 -->
@@ -155,54 +138,32 @@
 				<clan>ORNITHOMIMUS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.27140000462532043">
-					<item id="6365" min="1" max="1" chance="0.0719" /> <!-- Basalt Battlehammer -->
-					<item id="6366" min="1" max="1" chance="0.0719" /> <!-- Imperial Staff -->
-					<item id="6369" min="1" max="1" chance="0.0719" /> <!-- Dragon Hunter Axe -->
-					<item id="6689" min="1" max="1" chance="32.6218" /> <!-- Basalt Battlehammer Head -->
-					<item id="6690" min="1" max="1" chance="33.3116" /> <!-- Imperial Staff Head -->
-					<item id="6693" min="1" max="1" chance="33.8509" /> <!-- Dragon Hunter Axe Blade -->
-				</group>
-				<group chance="7.685500144958496">
-					<item id="1879" min="1" max="1" chance="60.3115" /> <!-- Cokes -->
-					<item id="1885" min="1" max="1" chance="30.1558" /> <!-- High-Grade Suede -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="1895" min="1" max="5" chance="64.562" /> <!-- Metallic Fiber -->
-				<item id="4040" min="1" max="1" chance="13.558" /> <!-- Mold Lubricant -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="15" />
 			<height normal="37.2" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4468" max="9089" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.2201">
+					<item id="8342" min="1" max="1" chance="66.6971" /> <!-- Flaming Dragon Skull Piece -->
+					<item id="8349" min="1" max="1" chance="33.3029" /> <!-- Doom Crusher Head -->
+				</group>
+				<group chance="1.6038">
+					<item id="8627" min="1" max="1" chance="36.6752" /> <!-- Elixir of Life (S-Grade) -->
+					<item id="8633" min="1" max="1" chance="41.2899" /> <!-- Elixir of Mental Strength (S-Grade) -->
+					<item id="8879" min="1" max="1" chance="3.741" /> <!-- Spellbook: Summon Magnus the Unicorn -->
+					<item id="8882" min="1" max="1" chance="4.5703" /> <!-- Spellbook: Salvation -->
+					<item id="8889" min="1" max="1" chance="9.1531" /> <!-- Amulet: Gate Chant -->
+					<item id="8954" min="1" max="1" chance="4.5705" /> <!-- Blue Primeval Crystal -->
+				</group>
+			</death>
+			<corpse>
+				<item id="6696" min="1" max="1" chance="1.8867" /> <!-- Heavens Divider Edge -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="22202" level="80" type="L2Monster" name="Ornithomimus">
 		<!-- Confirmed CT2.5 -->
@@ -260,55 +221,31 @@
 				<clan>ORNITHOMIMUS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.27140000462532043">
-					<item id="6365" min="1" max="1" chance="0.0719" /> <!-- Basalt Battlehammer -->
-					<item id="6366" min="1" max="1" chance="0.0719" /> <!-- Imperial Staff -->
-					<item id="6369" min="1" max="1" chance="0.0719" /> <!-- Dragon Hunter Axe -->
-					<item id="6689" min="1" max="1" chance="32.6218" /> <!-- Basalt Battlehammer Head -->
-					<item id="6690" min="1" max="1" chance="33.3116" /> <!-- Imperial Staff Head -->
-					<item id="6693" min="1" max="1" chance="33.8509" /> <!-- Dragon Hunter Axe Blade -->
-				</group>
-				<group chance="7.685500144958496">
-					<item id="1879" min="1" max="1" chance="60.3115" /> <!-- Cokes -->
-					<item id="1885" min="1" max="1" chance="30.1558" /> <!-- High-Grade Suede -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6901" min="1" max="1" chance="0.6779" /> <!-- Recipe: Shining Arrow (100%) -->
-				<item id="6696" min="1" max="1" chance="1.4886" /> <!-- Heavens Divider Edge -->
-				<item id="6901" min="1" max="1" chance="0.6779" /> <!-- Recipe: Shining Arrow (100%) -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="15" />
 			<height normal="37.2" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4059" max="8279" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.5145">
+					<item id="5533" min="1" max="1" chance="7.6773" /> <!-- Elysian Head -->
+					<item id="5544" min="1" max="1" chance="30.7872" /> <!-- Branch of the Mother Tree Head -->
+					<item id="8342" min="1" max="1" chance="46.1614" /> <!-- Flaming Dragon Skull Piece -->
+					<item id="8349" min="1" max="1" chance="15.3741" /> <!-- Doom Crusher Head -->
+				</group>
+				<group chance="1.6843">
+					<item id="8954" min="1" max="1" chance="9.4044" /> <!-- Blue Primeval Crystal -->
+					<item id="8896" min="1" max="1" chance="4.6963" /> <!-- Ancient Tactical Manual: Symbol of Energy -->
+					<item id="8879" min="1" max="1" chance="3.5622" /> <!-- Spellbook: Summon Magnus the Unicorn -->
+					<item id="8633" min="1" max="1" chance="18.7851" /> <!-- Elixir of Mental Strength (S-Grade) -->
+					<item id="8627" min="1" max="1" chance="61.2068" /> <!-- Elixir of Life (S-Grade) -->
+					<item id="8955" min="1" max="1" chance="2.3452" /> <!-- Green Primeval Crystal -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="22203" level="80" type="L2Monster" name="Deinonychus">
 		<!-- Confirmed CT2.5 -->
@@ -365,51 +302,33 @@
 				<clan>DEINONYCHUS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.2741999924182892">
-					<item id="7575" min="1" max="1" chance="0.2135" /> <!-- Draconic Bow -->
-					<item id="7579" min="1" max="1" chance="99.7865" /> <!-- Draconic Bow Shaft -->
-				</group>
-				<group chance="7.685500144958496">
-					<item id="1879" min="1" max="1" chance="60.3115" /> <!-- Cokes -->
-					<item id="1885" min="1" max="1" chance="30.1558" /> <!-- High-Grade Suede -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6697" min="1" max="1" chance="1.4377" /> <!-- Arcana Mace Head -->
-				<item id="959" min="1" max="1" chance="0.0271" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-				<item id="1875" min="1" max="1" chance="45.1934" /> <!-- Stone of Purity -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="14" />
 			<height normal="14.3" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4308" max="8702" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.3378">
+					<item id="5534" min="1" max="1" chance="100" /> <!-- Soul Bow Stave -->
+				</group>
+				<group chance="1.5892">
+					<item id="8627" min="1" max="1" chance="35.1475" /> <!-- Elixir of Life (S-Grade) -->
+					<item id="8633" min="1" max="1" chance="44.6238" /> <!-- Elixir of Mental Strength (S-Grade) -->
+					<item id="8883" min="1" max="1" chance="5.3231" /> <!-- Spellbook: Mystic Immunity -->
+					<item id="8954" min="1" max="1" chance="11.7157" /> <!-- Blue Primeval Crystal -->
+					<item id="8955" min="1" max="1" chance="2.1267" /> <!-- Green Primeval Crystal -->
+					<item id="8956" min="1" max="1" chance="1.0632" /> <!-- Red Primeval Crystal -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1885" min="1" max="1" chance="35.2641" /> <!-- High-Grade Suede -->
+				<item id="6698" min="1" max="1" chance="16.6666" /> <!-- Sealed Tateossian Earring Part -->
+				<item id="6901" min="1" max="1" chance="0.7936" /> <!-- Recipe: Shining Arrow (100%) -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="22204" level="80" type="L2Monster" name="Deinonychus">
 		<!-- Confirmed CT2.5 -->
@@ -459,51 +378,31 @@
 				<clan>DEINONYCHUS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.2741999924182892">
-					<item id="7575" min="1" max="1" chance="0.2135" /> <!-- Draconic Bow -->
-					<item id="7579" min="1" max="1" chance="99.7865" /> <!-- Draconic Bow Shaft -->
-				</group>
-				<group chance="7.685500144958496">
-					<item id="1879" min="1" max="1" chance="60.3115" /> <!-- Cokes -->
-					<item id="1885" min="1" max="1" chance="30.1558" /> <!-- High-Grade Suede -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="1885" min="1" max="1" chance="56.4917" /> <!-- High-Grade Suede -->
-				<item id="6698" min="1" max="1" chance="13.3157" /> <!-- Sealed Tateossian Earring Part -->
-				<item id="6901" min="1" max="1" chance="0.6779" /> <!-- Recipe: Shining Arrow (100%) -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="14" />
 			<height normal="14.3" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4278" max="8729" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.2506">
+					<item id="5534" min="1" max="1" chance="100" /> <!-- Soul Bow Stave -->
+				</group>
+				<group chance="2.422">
+					<item id="8627" min="1" max="1" chance="27.5227" /> <!-- Elixir of Life (S-Grade) -->
+					<item id="8633" min="1" max="1" chance="44.8764" /> <!-- Elixir of Mental Strength (S-Grade) -->
+					<item id="8887" min="1" max="1" chance="10.3468" /> <!-- Amulet: Pa'agrio's Emblem -->
+					<item id="8954" min="1" max="1" chance="13.8067" /> <!-- Blue Primeval Crystal -->
+					<item id="8955" min="1" max="1" chance="3.4474" /> <!-- Green Primeval Crystal -->
+				</group>
+			</death>
+			<corpse>
+				<item id="6699" min="1" max="1" chance="25" /> <!-- Sealed Tateossian Ring Gem -->
+				<item id="6700" min="1" max="1" chance="25" /> <!-- Sealed Tateossian Necklace Chain -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="22205" level="80" type="L2Monster" name="Deinonychus">
 		<!-- Confirmed CT2.5 -->
@@ -561,50 +460,29 @@
 				<clan>DEINONYCHUS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.2741999924182892">
-					<item id="7575" min="1" max="1" chance="0.2135" /> <!-- Draconic Bow -->
-					<item id="7579" min="1" max="1" chance="99.7865" /> <!-- Draconic Bow Shaft -->
-				</group>
-				<group chance="7.685500144958496">
-					<item id="1879" min="1" max="1" chance="60.3115" /> <!-- Cokes -->
-					<item id="1885" min="1" max="1" chance="30.1558" /> <!-- High-Grade Suede -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6699" min="1" max="1" chance="14.7755" /> <!-- Sealed Tateossian Ring Gem -->
-				<item id="6901" min="1" max="1" chance="0.6779" /> <!-- Recipe: Shining Arrow (100%) -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="14" />
 			<height normal="14.3" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="3531" max="7199" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.2247">
+					<item id="5534" min="1" max="1" chance="100" /> <!-- Soul Bow Stave -->
+				</group>
+				<group chance="1.0289">
+					<item id="8627" min="1" max="1" chance="76.2661" /> <!-- Elixir of Life (S-Grade) -->
+					<item id="8633" min="1" max="1" chance="10.9146" /> <!-- Elixir of Mental Strength (S-Grade) -->
+					<item id="8880" min="1" max="1" chance="7.367" /> <!-- Spellbook: Summon Spectral Knight -->
+					<item id="8954" min="1" max="1" chance="5.4523" /> <!-- Blue Primeval Crystal -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1875" min="1" max="1" chance="68" /> <!-- Stone of Purity -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="22208" level="80" type="L2Monster" name="Pachycephalosaurus">
 		<!-- Confirmed CT2.5 -->
@@ -657,56 +535,28 @@
 		</skillList>
 		<exCrtEffect>false</exCrtEffect>
 		<ai aggroRange="300" clanHelpRange="500" />
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.2711000144481659">
-					<item id="6367" min="1" max="1" chance="0.2159" /> <!-- Angel Slayer -->
-					<item id="6691" min="1" max="1" chance="99.7841" /> <!-- Angel Slayer Blade -->
-				</group>
-				<group chance="0.2750000059604645">
-					<item id="8954" min="1" max="1" chance="52.0156" /> <!-- Blue Primeval Crystal -->
-					<item id="8955" min="1" max="1" chance="26.0078" /> <!-- Green Primeval Crystal -->
-					<item id="8956" min="1" max="1" chance="13.0039" /> <!-- Red Primeval Crystal -->
-					<item id="8752" min="1" max="1" chance="2.7091" /> <!-- High-Grade Life Stone - Level 76 -->
-					<item id="8762" min="1" max="1" chance="0.5418" /> <!-- Top-Grade Life Stone - Level 76 -->
-					<item id="959" min="1" max="1" chance="0.5202" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-					<item id="960" min="1" max="1" chance="5.2016" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6901" min="1" max="1" chance="0.6779" /> <!-- Recipe: Shining Arrow (100%) -->
-				<item id="6703" min="1" max="1" chance="9.6519" /> <!-- Sealed Imperial Crusader Gauntlets Design -->
-				<item id="959" min="1" max="1" chance="0.0271" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="22" />
 			<height normal="40" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4602" max="9334" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.2932">
+					<item id="5537" min="1" max="1" chance="100" /> <!-- Soul Separator Head -->
+				</group>
+				<group chance="0.2196">
+					<item id="960" min="1" max="1" chance="66.6667" /> <!-- Scroll: Enchant Armor (S-Grade) -->
+					<item id="8954" min="1" max="1" chance="33.3333" /> <!-- Blue Primeval Crystal -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1894" min="1" max="1" chance="64" /> <!-- Crafted Leather -->
+				<item id="6704" min="1" max="1" chance="25" /> <!-- Sealed Imperial Crusader Boots Design -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="22209" level="80" type="L2Monster" name="Pachycephalosaurus">
 		<!-- Confirmed CT2.5 -->
@@ -752,56 +602,23 @@
 		</skillList>
 		<exCrtEffect>false</exCrtEffect>
 		<ai aggroRange="300" clanHelpRange="500" />
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.2711000144481659">
-					<item id="6367" min="1" max="1" chance="0.2159" /> <!-- Angel Slayer -->
-					<item id="6691" min="1" max="1" chance="99.7841" /> <!-- Angel Slayer Blade -->
-				</group>
-				<group chance="0.2750000059604645">
-					<item id="8954" min="1" max="1" chance="52.0156" /> <!-- Blue Primeval Crystal -->
-					<item id="8955" min="1" max="1" chance="26.0078" /> <!-- Green Primeval Crystal -->
-					<item id="8956" min="1" max="1" chance="13.0039" /> <!-- Red Primeval Crystal -->
-					<item id="8752" min="1" max="1" chance="2.7091" /> <!-- High-Grade Life Stone - Level 76 -->
-					<item id="8762" min="1" max="1" chance="0.5418" /> <!-- Top-Grade Life Stone - Level 76 -->
-					<item id="959" min="1" max="1" chance="0.5202" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-					<item id="960" min="1" max="1" chance="5.2016" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="1894" min="1" max="1" chance="23.786" /> <!-- Crafted Leather -->
-				<item id="4042" min="1" max="1" chance="11.2983" /> <!-- Enria -->
-				<item id="6704" min="1" max="1" chance="9.6519" /> <!-- Sealed Imperial Crusader Boots Design -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="22" />
 			<height normal="40" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="5021" max="10140" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="1.1363">
+					<item id="5537" min="1" max="1" chance="100" /> <!-- Soul Separator Head -->
+				</group>
+				<group chance="0.7633">
+					<item id="8954" min="1" max="1" chance="100" /> <!-- Blue Primeval Crystal -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="22210" level="80" type="L2Monster" name="Pachycephalosaurus">
 		<!-- Confirmed CT2.5 -->
@@ -854,56 +671,24 @@
 		</skillList>
 		<exCrtEffect>false</exCrtEffect>
 		<ai aggroRange="500" clanHelpRange="500" />
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.2711000144481659">
-					<item id="6367" min="1" max="1" chance="0.2159" /> <!-- Angel Slayer -->
-					<item id="6691" min="1" max="1" chance="99.7841" /> <!-- Angel Slayer Blade -->
-				</group>
-				<group chance="0.2750000059604645">
-					<item id="8954" min="1" max="1" chance="52.0156" /> <!-- Blue Primeval Crystal -->
-					<item id="8955" min="1" max="1" chance="26.0078" /> <!-- Green Primeval Crystal -->
-					<item id="8956" min="1" max="1" chance="13.0039" /> <!-- Red Primeval Crystal -->
-					<item id="8752" min="1" max="1" chance="2.7091" /> <!-- High-Grade Life Stone - Level 76 -->
-					<item id="8762" min="1" max="1" chance="0.5418" /> <!-- Top-Grade Life Stone - Level 76 -->
-					<item id="959" min="1" max="1" chance="0.5202" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-					<item id="960" min="1" max="1" chance="5.2016" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6901" min="1" max="1" chance="0.6779" /> <!-- Recipe: Shining Arrow (100%) -->
-				<item id="6705" min="1" max="1" chance="9.454" /> <!-- Sealed Imperial Crusader Shield Part -->
-				<item id="6901" min="1" max="1" chance="0.6779" /> <!-- Recipe: Shining Arrow (100%) -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="22" />
 			<height normal="40" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="3927" max="7993" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.3802">
+					<item id="5537" min="1" max="1" chance="100" /> <!-- Soul Separator Head -->
+				</group>
+				<group chance="0.9762">
+					<item id="8633" min="1" max="1" chance="97.5518" /> <!-- Elixir of Mental Strength (S-Grade) -->
+					<item id="8884" min="1" max="1" chance="2.4482" /> <!-- Spellbook: Spell Turning -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="22211" level="80" type="L2Monster" name="Wild Strider">
 		<!-- Confirmed CT2.5 -->
@@ -956,53 +741,24 @@
 		</skillList>
 		<exCrtEffect>false</exCrtEffect>
 		<ai aggroRange="300" clanHelpRange="500" />
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.26600000262260437">
-					<item id="6371" min="1" max="1" chance="0.2201" /> <!-- Demon Splinter -->
-					<item id="6695" min="1" max="1" chance="99.7799" /> <!-- Demon Splinter Blade -->
-				</group>
-				<group chance="0.3723999857902527">
-					<item id="8954" min="1" max="1" chance="53.7634" /> <!-- Blue Primeval Crystal -->
-					<item id="8955" min="1" max="1" chance="26.8817" /> <!-- Green Primeval Crystal -->
-					<item id="8956" min="1" max="1" chance="13.4409" /> <!-- Red Primeval Crystal -->
-					<item id="959" min="1" max="1" chance="0.5376" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-					<item id="960" min="1" max="1" chance="5.3764" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6706" min="1" max="1" chance="10.9968" /> <!-- Sealed Imperial Crusader Helmet Pattern -->
-				<item id="960" min="1" max="1" chance="0.2712" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="32" />
 			<height normal="44.2" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4493" max="9173" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.877">
+					<item id="5538" min="1" max="1" chance="100" /> <!-- Dragon Grinder Edge -->
+				</group>
+				<group chance="0.146">
+					<item id="8954" min="1" max="1" chance="50" /> <!-- Blue Primeval Crystal -->
+					<item id="8956" min="1" max="1" chance="50" /> <!-- Red Primeval Crystal -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="22212" level="80" type="L2Monster" name="Wild Strider">
 		<!-- Confirmed CT2.5 -->
@@ -1050,54 +806,20 @@
 		</skillList>
 		<exCrtEffect>false</exCrtEffect>
 		<ai aggroRange="300" clanHelpRange="500" />
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.26600000262260437">
-					<item id="6371" min="1" max="1" chance="0.2201" /> <!-- Demon Splinter -->
-					<item id="6695" min="1" max="1" chance="99.7799" /> <!-- Demon Splinter Blade -->
-				</group>
-				<group chance="0.3723999857902527">
-					<item id="8954" min="1" max="1" chance="53.7634" /> <!-- Blue Primeval Crystal -->
-					<item id="8955" min="1" max="1" chance="26.8817" /> <!-- Green Primeval Crystal -->
-					<item id="8956" min="1" max="1" chance="13.4409" /> <!-- Red Primeval Crystal -->
-					<item id="959" min="1" max="1" chance="0.5376" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-					<item id="960" min="1" max="1" chance="5.3764" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="4041" min="1" max="1" chance="5.8948" /> <!-- Mold Hardener -->
-				<item id="6707" min="1" max="1" chance="3.3589" /> <!-- Sealed Draconic Leather Armor Part -->
-				<item id="6901" min="1" max="1" chance="0.6779" /> <!-- Recipe: Shining Arrow (100%) -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="32" />
 			<height normal="44.2" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4695" max="9552" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.6024">
+					<item id="8954" min="1" max="1" chance="100" /> <!-- Blue Primeval Crystal -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="22213" level="80" type="L2Monster" name="Wild Strider">
 		<!-- Confirmed CT2.5 -->
@@ -1150,54 +872,26 @@
 		</skillList>
 		<exCrtEffect>false</exCrtEffect>
 		<ai aggroRange="500" clanHelpRange="500" />
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.26600000262260437">
-					<item id="6371" min="1" max="1" chance="0.2201" /> <!-- Demon Splinter -->
-					<item id="6695" min="1" max="1" chance="99.7799" /> <!-- Demon Splinter Blade -->
-				</group>
-				<group chance="0.3723999857902527">
-					<item id="8954" min="1" max="1" chance="53.7634" /> <!-- Blue Primeval Crystal -->
-					<item id="8955" min="1" max="1" chance="26.8817" /> <!-- Green Primeval Crystal -->
-					<item id="8956" min="1" max="1" chance="13.4409" /> <!-- Red Primeval Crystal -->
-					<item id="959" min="1" max="1" chance="0.5376" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-					<item id="960" min="1" max="1" chance="5.3764" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6708" min="1" max="1" chance="9.6519" /> <!-- Sealed Draconic Leather Gloves Fabric -->
-				<item id="6901" min="1" max="1" chance="0.6779" /> <!-- Recipe: Shining Arrow (100%) -->
-				<item id="6709" min="1" max="1" chance="9.6519" /> <!-- Sealed Draconic Leather Boots Design -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="32" />
 			<height normal="44.2" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="3914" max="7955" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.1402">
+					<item id="5538" min="1" max="1" chance="100" /> <!-- Dragon Grinder Edge -->
+				</group>
+				<group chance="0.1402">
+					<item id="8955" min="1" max="1" chance="100" /> <!-- Green Primeval Crystal -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1875" min="1" max="1" chance="63" /> <!-- Stone of Purity -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="22214" level="80" type="L2Monster" name="Elroki">
 		<!-- Confirmed CT2.5 -->
@@ -1259,63 +953,30 @@
 		</skillList>
 		<exCrtEffect>false</exCrtEffect>
 		<ai aggroRange="300" clanHelpRange="300" />
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="1.788599967956543">
-					<item id="6676" min="1" max="1" chance="0.073" /> <!-- Sealed Imperial Crusader Gauntlet -->
-					<item id="6677" min="1" max="1" chance="0.073" /> <!-- Sealed Imperial Crusader Boots -->
-					<item id="6681" min="1" max="1" chance="0.073" /> <!-- Sealed Draconic Leather Glove -->
-					<item id="6682" min="1" max="1" chance="0.073" /> <!-- Sealed Draconic Leather Boots -->
-					<item id="6685" min="1" max="1" chance="0.073" /> <!-- Sealed Major Arcana Glove -->
-					<item id="6686" min="1" max="1" chance="0.073" /> <!-- Sealed Major Arcana Boots -->
-					<item id="6703" min="1" max="1" chance="16.5937" /> <!-- Sealed Imperial Crusader Gauntlets Design -->
-					<item id="6704" min="1" max="1" chance="16.5937" /> <!-- Sealed Imperial Crusader Boots Design -->
-					<item id="6708" min="1" max="1" chance="16.5937" /> <!-- Sealed Draconic Leather Gloves Fabric -->
-					<item id="6709" min="1" max="1" chance="16.5937" /> <!-- Sealed Draconic Leather Boots Design -->
-					<item id="6712" min="1" max="1" chance="16.5937" /> <!-- Sealed Major Arcana Gloves fabric -->
-					<item id="6713" min="1" max="1" chance="16.5935" /> <!-- Sealed Major Arcana Boots Design -->
-				</group>
-				<group chance="0.3723999857902527">
-					<item id="8954" min="1" max="1" chance="53.7634" /> <!-- Blue Primeval Crystal -->
-					<item id="8955" min="1" max="1" chance="26.8817" /> <!-- Green Primeval Crystal -->
-					<item id="8956" min="1" max="1" chance="13.4409" /> <!-- Red Primeval Crystal -->
-					<item id="959" min="1" max="1" chance="0.5376" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-					<item id="960" min="1" max="1" chance="5.3764" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="959" min="1" max="1" chance="0.0271" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-				<item id="5549" min="1" max="1" chance="67.7901" /> <!-- Metallic Thread -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="25" />
 			<height normal="33" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4478" max="9052" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="3.3198">
+					<item id="5502" min="1" max="1" chance="6.1961" /> <!-- Sealed Boots of Nightmare Lining -->
+					<item id="5503" min="1" max="1" chance="6.1961" /> <!-- Sealed Majestic Boots Lining -->
+					<item id="5514" min="1" max="1" chance="81.4116" /> <!-- Sealed Gauntlets of Nightmare Design -->
+					<item id="5515" min="1" max="1" chance="6.1962" /> <!-- Sealed Majestic Gauntlets Design -->
+				</group>
+				<group chance="0.2057">
+					<item id="8954" min="1" max="1" chance="100" /> <!-- Blue Primeval Crystal -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1889" min="1" max="1" chance="51" /> <!-- Compound Braid -->
+				<item id="5549" min="1" max="1" chance="75" /> <!-- Metallic Thread -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="22215" level="80" type="L2Monster" name="Tyrannosaurus">
 		<!-- Confirmed CT2.5 -->
@@ -1403,30 +1064,28 @@
 				<clan>ALL</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="96910" max="197846" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="8.003399848937988">
-					<item id="6370" min="1" max="1" chance="0.2121" /> <!-- Saint Spear -->
-					<item id="6694" min="1" max="1" chance="99.7879" /> <!-- Saint Spear Blade -->
-				</group>
-				<group chance="42.528099060058594">
-					<item id="1879" min="15" max="45" chance="10.5355" /> <!-- Cokes -->
-					<item id="1885" min="2" max="6" chance="39.508" /> <!-- High-Grade Suede -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6710" min="1" max="7" chance="79.7242" /> <!-- Sealed Draconic Leather Helmet Pattern -->
-				<item id="6901" min="1" max="1" chance="19.6584" /> <!-- Recipe: Shining Arrow (100%) -->
-				<item id="6711" min="1" max="3" chance="48.7016" /> <!-- Sealed Major Arcana Robe Part -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="60" />
 			<height normal="89.7" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="55210" max="110520" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="6.6666">
+					<item id="5541" min="1" max="1" chance="100" /> <!-- Tallum Glaive Edge -->
+				</group>
+				<group chance="16.4284">
+					<item id="8627" min="1" max="1" chance="27.668" /> <!-- Elixir of Life (S-Grade) -->
+					<item id="8633" min="1" max="1" chance="35.8058" /> <!-- Elixir of Mental Strength (S-Grade) -->
+					<item id="8894" min="1" max="1" chance="9.0849" /> <!-- Ancient Tactical Manual: Symbol of Resistance -->
+					<item id="8895" min="1" max="1" chance="5.9676" /> <!-- Ancient Tactical Manual: Symbol of Honor -->
+					<item id="8956" min="1" max="1" chance="3.0282" /> <!-- Red Primeval Crystal -->
+					<item id="8762" min="1" max="1" chance="18.4455" /> <!-- Top-Grade Life Stone - Level 76 -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="22216" level="80" type="L2Monster" name="Tyrannosaurus">
 		<!-- Confirmed CT2.5 -->
@@ -1512,30 +1171,25 @@
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
 		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" />
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="96910" max="197846" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="8.003399848937988">
-					<item id="6370" min="1" max="1" chance="0.2121" /> <!-- Saint Spear -->
-					<item id="6694" min="1" max="1" chance="99.7879" /> <!-- Saint Spear Blade -->
-				</group>
-				<group chance="42.528099060058594">
-					<item id="1879" min="15" max="45" chance="10.5355" /> <!-- Cokes -->
-					<item id="1885" min="2" max="6" chance="39.508" /> <!-- High-Grade Suede -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6901" min="1" max="1" chance="19.6584" /> <!-- Recipe: Shining Arrow (100%) -->
-				<item id="6712" min="1" max="5" chance="93.2982" /> <!-- Sealed Major Arcana Gloves fabric -->
-				<item id="960" min="1" max="1" chance="7.8634" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="60" />
 			<height normal="89.7" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="57070" max="100100" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="5.8823">
+					<item id="5541" min="1" max="1" chance="100" /> <!-- Tallum Glaive Edge -->
+				</group>
+				<group chance="43.3213">
+					<item id="8905" min="1" max="1" chance="5.63" /> <!-- Ancient Spellbook: Purification Field -->
+					<item id="8627" min="1" max="1" chance="80.7918" /> <!-- Elixir of Life (S-Grade) -->
+					<item id="8633" min="1" max="1" chance="13.5782" /> <!-- Elixir of Mental Strength (S-Grade) -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="22217" level="80" type="L2Monster" name="Tyrannosaurus">
 		<!-- Confirmed CT2.5 -->
@@ -1620,30 +1274,30 @@
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
 		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" />
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="96910" max="197846" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="8.003399848937988">
-					<item id="6370" min="1" max="1" chance="0.2121" /> <!-- Saint Spear -->
-					<item id="6694" min="1" max="1" chance="99.7879" /> <!-- Saint Spear Blade -->
-				</group>
-				<group chance="42.528099060058594">
-					<item id="1879" min="15" max="45" chance="10.5355" /> <!-- Cokes -->
-					<item id="1885" min="2" max="6" chance="39.508" /> <!-- High-Grade Suede -->
-				</group>
-			</death>
-			<corpse>
-				<item id="4042" min="1" max="7" chance="81.91" /> <!-- Enria -->
-				<item id="4043" min="1" max="13" chance="93.6114" /> <!-- Asofe -->
-				<item id="6713" min="1" max="5" chance="93.2982" /> <!-- Sealed Major Arcana Boots Design -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="60" />
 			<height normal="89.7" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="55710" max="109660" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="4.5454">
+					<item id="5541" min="1" max="1" chance="100" /> <!-- Tallum Glaive Edge -->
+				</group>
+				<group chance="15.7947">
+					<item id="8627" min="1" max="1" chance="21.1039" /> <!-- Elixir of Life (S-Grade) -->
+					<item id="8633" min="1" max="1" chance="57.557" /> <!-- Elixir of Mental Strength (S-Grade) -->
+					<item id="8903" min="1" max="1" chance="7.113" /> <!-- Ancient Spellbook: Gehenna -->
+					<item id="8908" min="1" max="1" chance="7.113" /> <!-- Ancient Spellbook: Mass Recharge -->
+					<item id="8954" min="1" max="1" chance="7.1131" /> <!-- Blue Primeval Crystal -->
+				</group>
+			</death>
+			<corpse>
+				<item id="4042" min="1" max="3" chance="30" /> <!-- Enria -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="22218" level="80" type="L2Monster" name="Velociraptor">
 		<!-- Confirmed CT2.5 -->
@@ -1693,31 +1347,27 @@
 				<clan>VELOCIRAPTOR</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.2732999920845032">
-					<item id="6364" min="1" max="1" chance="0.1071" /> <!-- Forgotten Blade -->
-					<item id="6372" min="1" max="1" chance="0.1071" /> <!-- Heaven's Divider -->
-					<item id="6688" min="1" max="1" chance="49.4997" /> <!-- Forgotten Blade Edge -->
-					<item id="6696" min="1" max="1" chance="50.2861" /> <!-- Heavens Divider Edge -->
-				</group>
-				<group chance="7.685500144958496">
-					<item id="1879" min="1" max="1" chance="60.3115" /> <!-- Cokes -->
-					<item id="1885" min="1" max="1" chance="30.1558" /> <!-- High-Grade Suede -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6688" min="1" max="1" chance="1.4653" /> <!-- Forgotten Blade Edge -->
-				<item id="6901" min="1" max="1" chance="0.6779" /> <!-- Recipe: Shining Arrow (100%) -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="20" />
 			<height normal="47.2" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4232" max="8612" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.9604">
+					<item id="5529" min="1" max="1" chance="66.7431" /> <!-- Dragon Slayer Edge -->
+					<item id="5546" min="1" max="1" chance="33.2569" /> <!-- Sword of Miracles Edge -->
+				</group>
+				<group chance="1.3502">
+					<item id="8627" min="1" max="1" chance="23.6556" /> <!-- Elixir of Life (S-Grade) -->
+					<item id="8633" min="1" max="1" chance="59.2507" /> <!-- Elixir of Mental Strength (S-Grade) -->
+					<item id="8906" min="1" max="1" chance="5.2658" /> <!-- Ancient Spellbook: Miracle -->
+					<item id="8954" min="1" max="1" chance="11.8279" /> <!-- Blue Primeval Crystal -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="22219" level="80" type="L2Monster" name="Ornithomimus">
 		<!-- Confirmed CT2.5 -->
@@ -1766,55 +1416,31 @@
 				<clan>ORNITHOMIMUS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.27140000462532043">
-					<item id="6365" min="1" max="1" chance="0.0719" /> <!-- Basalt Battlehammer -->
-					<item id="6366" min="1" max="1" chance="0.0719" /> <!-- Imperial Staff -->
-					<item id="6369" min="1" max="1" chance="0.0719" /> <!-- Dragon Hunter Axe -->
-					<item id="6689" min="1" max="1" chance="32.6218" /> <!-- Basalt Battlehammer Head -->
-					<item id="6690" min="1" max="1" chance="33.3116" /> <!-- Imperial Staff Head -->
-					<item id="6693" min="1" max="1" chance="33.8509" /> <!-- Dragon Hunter Axe Blade -->
-				</group>
-				<group chance="7.685500144958496">
-					<item id="1879" min="1" max="1" chance="60.3115" /> <!-- Cokes -->
-					<item id="1885" min="1" max="1" chance="30.1558" /> <!-- High-Grade Suede -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6901" min="1" max="1" chance="0.6779" /> <!-- Recipe: Shining Arrow (100%) -->
-				<item id="6694" min="1" max="1" chance="1.4918" /> <!-- Saint Spear Blade -->
-				<item id="960" min="1" max="1" chance="0.2712" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="15" />
 			<height normal="37.2" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4165" max="8486" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.4796">
+					<item id="5533" min="1" max="1" chance="40.013" /> <!-- Elysian Head -->
+					<item id="5544" min="1" max="1" chance="40.0123" /> <!-- Branch of the Mother Tree Head -->
+					<item id="8342" min="1" max="1" chance="19.9747" /> <!-- Flaming Dragon Skull Piece -->
+				</group>
+				<group chance="0.3954">
+					<item id="8878" min="1" max="1" chance="19.1704" /> <!-- Spellbook: Summon Feline King -->
+					<item id="8900" min="1" max="1" chance="32.3723" /> <!-- Ancient Spellbook: Cyclone -->
+					<item id="8954" min="1" max="1" chance="24.2286" /> <!-- Blue Primeval Crystal -->
+					<item id="8955" min="1" max="1" chance="24.2287" /> <!-- Green Primeval Crystal -->
+				</group>
+			</death>
+			<corpse>
+				<item id="6901" min="1" max="1" chance="0.7812" /> <!-- Recipe: Shining Arrow (100%) -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="22220" level="80" type="L2Monster" name="Deinonychus">
 		<!-- Confirmed CT2.5 -->
@@ -1863,51 +1489,25 @@
 				<clan>DEINONYCHUS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.2741999924182892">
-					<item id="7575" min="1" max="1" chance="0.2135" /> <!-- Draconic Bow -->
-					<item id="7579" min="1" max="1" chance="99.7865" /> <!-- Draconic Bow Shaft -->
-				</group>
-				<group chance="7.685500144958496">
-					<item id="1879" min="1" max="1" chance="60.3115" /> <!-- Cokes -->
-					<item id="1885" min="1" max="1" chance="30.1558" /> <!-- High-Grade Suede -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6697" min="1" max="1" chance="1.4377" /> <!-- Arcana Mace Head -->
-				<item id="959" min="1" max="1" chance="0.0271" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-				<item id="1875" min="1" max="1" chance="45.1934" /> <!-- Stone of Purity -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="14" />
 			<height normal="14.3" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="3866" max="7871" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.9231">
+					<item id="8627" min="1" max="1" chance="61.1961" /> <!-- Elixir of Life (S-Grade) -->
+					<item id="8633" min="1" max="1" chance="30.5925" /> <!-- Elixir of Mental Strength (S-Grade) -->
+					<item id="8879" min="1" max="1" chance="8.2114" /> <!-- Spellbook: Summon Magnus the Unicorn -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1875" min="1" max="1" chance="62" /> <!-- Stone of Purity -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="22221" level="80" type="L2Monster" name="Pachycephalosaurus">
 		<!-- Confirmed CT2.5 -->
@@ -1948,51 +1548,20 @@
 		</skillList>
 		<exCrtEffect>false</exCrtEffect>
 		<ai aggroRange="300" clanHelpRange="100" />
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.2711000144481659">
-					<item id="6367" min="1" max="1" chance="0.2159" /> <!-- Angel Slayer -->
-					<item id="6691" min="1" max="1" chance="99.7841" /> <!-- Angel Slayer Blade -->
-				</group>
-				<group chance="7.685500144958496">
-					<item id="1879" min="1" max="1" chance="60.3115" /> <!-- Cokes -->
-					<item id="1885" min="1" max="1" chance="30.1558" /> <!-- High-Grade Suede -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6901" min="1" max="1" chance="0.6779" /> <!-- Recipe: Shining Arrow (100%) -->
-				<item id="6703" min="1" max="1" chance="9.6519" /> <!-- Sealed Imperial Crusader Gauntlets Design -->
-				<item id="959" min="1" max="1" chance="0.0271" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="22" />
 			<height normal="40" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4503" max="9017" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.5586">
+					<item id="5537" min="1" max="1" chance="100" /> <!-- Soul Separator Head -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="22222" level="80" type="L2Monster" name="Wild Strider">
 		<!-- Confirmed CT2.5 -->
@@ -2037,56 +1606,23 @@
 		</skillList>
 		<exCrtEffect>false</exCrtEffect>
 		<ai aggroRange="300" clanHelpRange="100" />
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.26600000262260437">
-					<item id="6371" min="1" max="1" chance="0.2201" /> <!-- Demon Splinter -->
-					<item id="6695" min="1" max="1" chance="99.7799" /> <!-- Demon Splinter Blade -->
-				</group>
-				<group chance="0.2750000059604645">
-					<item id="8954" min="1" max="1" chance="52.0156" /> <!-- Blue Primeval Crystal -->
-					<item id="8955" min="1" max="1" chance="26.0078" /> <!-- Green Primeval Crystal -->
-					<item id="8956" min="1" max="1" chance="13.0039" /> <!-- Red Primeval Crystal -->
-					<item id="8752" min="1" max="1" chance="2.7091" /> <!-- High-Grade Life Stone - Level 76 -->
-					<item id="8762" min="1" max="1" chance="0.5418" /> <!-- Top-Grade Life Stone - Level 76 -->
-					<item id="959" min="1" max="1" chance="0.5202" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-					<item id="960" min="1" max="1" chance="5.2016" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6706" min="1" max="1" chance="10.9968" /> <!-- Sealed Imperial Crusader Helmet Pattern -->
-				<item id="960" min="1" max="1" chance="0.2712" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-				<item id="1875" min="1" max="1" chance="45.1934" /> <!-- Stone of Purity -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="32" />
 			<height normal="44.2" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4400" max="8907" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="1.3513">
+					<item id="5538" min="1" max="1" chance="100" /> <!-- Dragon Grinder Edge -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1875" min="1" max="1" chance="62" /> <!-- Stone of Purity -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="22223" level="80" type="L2Monster" name="Velociraptor">
 		<!-- Confirmed CT2.5 -->
@@ -2144,35 +1680,26 @@
 				<clan>VELOCIRAPTOR</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="5707" max="11651" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.6074000000953674">
-					<item id="81" min="1" max="1" chance="0.1131" /> <!-- Dragon Slayer -->
-					<item id="5529" min="1" max="1" chance="32.1652" /> <!-- Dragon Slayer Edge -->
-					<item id="151" min="1" max="1" chance="0.1131" /> <!-- Sword of Miracles -->
-					<item id="5546" min="1" max="1" chance="35.3304" /> <!-- Sword of Miracles Edge -->
-					<item id="2500" min="1" max="1" chance="0.1131" /> <!-- Dark Legion's Edge -->
-					<item id="5545" min="1" max="1" chance="32.1651" /> <!-- Dark Legion's Edge Blade -->
-				</group>
-				<group chance="16.358200073242188">
-					<item id="1879" min="1" max="1" chance="62.2136" /> <!-- Cokes -->
-					<item id="1885" min="1" max="1" chance="31.1068" /> <!-- High-Grade Suede -->
-					<item id="959" min="1" max="1" chance="0.0149" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-					<item id="960" min="1" max="1" chance="0.1494" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6688" min="1" max="1" chance="1.4653" /> <!-- Forgotten Blade Edge -->
-				<item id="6901" min="1" max="1" chance="0.6779" /> <!-- Recipe: Shining Arrow (100%) -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="20" />
 			<height normal="47.2" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4432" max="9023" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.207">
+					<item id="5545" min="1" max="1" chance="100" /> <!-- Dark Legion's Edge Blade -->
+				</group>
+				<group chance="0.8356">
+					<item id="8898" min="1" max="1" chance="10.2561" /> <!-- Ancient Tactical Manual: Symbol of the Assassin -->
+					<item id="8901" min="1" max="1" chance="15.3182" /> <!-- Ancient Spellbook: Raging Waves -->
+					<item id="8627" min="1" max="1" chance="24.7726" /> <!-- Elixir of Life (S-Grade) -->
+					<item id="8633" min="1" max="1" chance="49.6531" /> <!-- Elixir of Mental Strength (S-Grade) -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="22224" level="80" type="L2Monster" name="Ornithomimus">
 		<!-- Confirmed CT2.5 -->
@@ -2229,58 +1756,22 @@
 				<clan>ORNITHOMIMUS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.27140000462532043">
-					<item id="6365" min="1" max="1" chance="0.0719" /> <!-- Basalt Battlehammer -->
-					<item id="6366" min="1" max="1" chance="0.0719" /> <!-- Imperial Staff -->
-					<item id="6369" min="1" max="1" chance="0.0719" /> <!-- Dragon Hunter Axe -->
-					<item id="6689" min="1" max="1" chance="32.6218" /> <!-- Basalt Battlehammer Head -->
-					<item id="6690" min="1" max="1" chance="33.3116" /> <!-- Imperial Staff Head -->
-					<item id="6693" min="1" max="1" chance="33.8509" /> <!-- Dragon Hunter Axe Blade -->
-				</group>
-				<group chance="0.3723999857902527">
-					<item id="8954" min="1" max="1" chance="53.7634" /> <!-- Blue Primeval Crystal -->
-					<item id="8955" min="1" max="1" chance="26.8817" /> <!-- Green Primeval Crystal -->
-					<item id="8956" min="1" max="1" chance="13.4409" /> <!-- Red Primeval Crystal -->
-					<item id="959" min="1" max="1" chance="0.5376" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-					<item id="960" min="1" max="1" chance="5.3764" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6901" min="1" max="1" chance="0.6779" /> <!-- Recipe: Shining Arrow (100%) -->
-				<item id="6694" min="1" max="1" chance="1.4918" /> <!-- Saint Spear Blade -->
-				<item id="960" min="1" max="1" chance="0.2712" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="15" />
 			<height normal="37.2" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4589" max="9014" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="1.4544">
+					<item id="8627" min="1" max="1" chance="47.0884" /> <!-- Elixir of Life (S-Grade) -->
+					<item id="8897" min="1" max="1" chance="5.8233" /> <!-- Ancient Tactical Manual: Symbol of the Sniper -->
+					<item id="8955" min="1" max="1" chance="47.0883" /> <!-- Green Primeval Crystal -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="22225" level="80" type="L2Monster" name="Deinonychus">
 		<!-- Confirmed CT2.5 -->
@@ -2337,51 +1828,23 @@
 				<clan>DEINONYCHUS</clan>
 			</clanList>
 		</ai>
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.2741999924182892">
-					<item id="7575" min="1" max="1" chance="0.2135" /> <!-- Draconic Bow -->
-					<item id="7579" min="1" max="1" chance="99.7865" /> <!-- Draconic Bow Shaft -->
-				</group>
-				<group chance="7.685500144958496">
-					<item id="1879" min="1" max="1" chance="60.3115" /> <!-- Cokes -->
-					<item id="1885" min="1" max="1" chance="30.1558" /> <!-- High-Grade Suede -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6697" min="1" max="1" chance="1.4377" /> <!-- Arcana Mace Head -->
-				<item id="959" min="1" max="1" chance="0.0271" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-				<item id="1875" min="1" max="1" chance="45.1934" /> <!-- Stone of Purity -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="14" />
 			<height normal="14.3" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4308" max="8702" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.6849">
+					<item id="5534" min="1" max="1" chance="100" /> <!-- Soul Bow Stave -->
+				</group>
+				<group chance="3.4842">
+					<item id="8627" min="1" max="1" chance="100" /> <!-- Elixir of Life (S-Grade) -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="22226" level="80" type="L2Monster" name="Pachycephalosaurus">
 		<!-- Confirmed CT2.5 -->
@@ -2434,56 +1897,17 @@
 		</skillList>
 		<exCrtEffect>false</exCrtEffect>
 		<ai aggroRange="300" clanHelpRange="500" />
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.2711000144481659">
-					<item id="6367" min="1" max="1" chance="0.2159" /> <!-- Angel Slayer -->
-					<item id="6691" min="1" max="1" chance="99.7841" /> <!-- Angel Slayer Blade -->
-				</group>
-				<group chance="0.2750000059604645">
-					<item id="8954" min="1" max="1" chance="52.0156" /> <!-- Blue Primeval Crystal -->
-					<item id="8955" min="1" max="1" chance="26.0078" /> <!-- Green Primeval Crystal -->
-					<item id="8956" min="1" max="1" chance="13.0039" /> <!-- Red Primeval Crystal -->
-					<item id="8752" min="1" max="1" chance="2.7091" /> <!-- High-Grade Life Stone - Level 76 -->
-					<item id="8762" min="1" max="1" chance="0.5418" /> <!-- Top-Grade Life Stone - Level 76 -->
-					<item id="959" min="1" max="1" chance="0.5202" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-					<item id="960" min="1" max="1" chance="5.2016" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6901" min="1" max="1" chance="0.6779" /> <!-- Recipe: Shining Arrow (100%) -->
-				<item id="6703" min="1" max="1" chance="9.6519" /> <!-- Sealed Imperial Crusader Gauntlets Design -->
-				<item id="959" min="1" max="1" chance="0.0271" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="22" />
 			<height normal="40" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="5409" max="9915" chance="100" /> <!-- Adena -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="22227" level="80" type="L2Monster" name="Wild Strider">
 		<!-- Confirmed CT2.5 -->
@@ -2536,54 +1960,20 @@
 		</skillList>
 		<exCrtEffect>false</exCrtEffect>
 		<ai aggroRange="300" clanHelpRange="500" />
-		<dropLists>
-			<death>
-				<group chance="70">
-					<item id="57" min="3342" max="6823" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.26600000262260437">
-					<item id="6371" min="1" max="1" chance="0.2201" /> <!-- Demon Splinter -->
-					<item id="6695" min="1" max="1" chance="99.7799" /> <!-- Demon Splinter Blade -->
-				</group>
-				<group chance="0.3723999857902527">
-					<item id="8954" min="1" max="1" chance="53.7634" /> <!-- Blue Primeval Crystal -->
-					<item id="8955" min="1" max="1" chance="26.8817" /> <!-- Green Primeval Crystal -->
-					<item id="8956" min="1" max="1" chance="13.4409" /> <!-- Red Primeval Crystal -->
-					<item id="959" min="1" max="1" chance="0.5376" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-					<item id="960" min="1" max="1" chance="5.3764" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-				</group>
-				<group chance="42.0">
-					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
-					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="16.0">
-					<item id="8603" min="1" max="1" chance="7" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="81" /> <!-- Greater Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="12" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="15.0">
-					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
-					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
-				</group>
-				<group chance="1.0">
-					<item id="8613" min="1" max="1" chance="50" /> <!-- Herb of the Mystic -->
-					<item id="8614" min="1" max="1" chance="50" /> <!-- Herb of Recovery -->
-				</group>
-				<group chance="11.0">
-					<item id="8611" min="1" max="1" chance="94" /> <!-- Herb of Speed -->
-				</group>
-			</death>
-			<corpse>
-				<item id="6706" min="1" max="1" chance="10.9968" /> <!-- Sealed Imperial Crusader Helmet Pattern -->
-				<item id="960" min="1" max="1" chance="0.2712" /> <!-- Scroll: Enchant Armor (S-Grade) -->
-				<item id="1875" min="1" max="1" chance="45.1934" /> <!-- Stone of Purity -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="32" />
 			<height normal="44.2" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4826" max="9524" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="3.7037">
+					<item id="5538" min="1" max="1" chance="100" /> <!-- Dragon Grinder Edge -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="22228" level="1" type="L2Monster" name="Grey Elpy">
 		<!-- Confirmed CT2.5 -->

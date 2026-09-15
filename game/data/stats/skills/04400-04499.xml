@@ -170,6 +170,7 @@
 		<set name="targetType" val="SELF" />
 	</skill>
 	<skill id="4408" levels="20" name="HP Modifiers">
+		<table name="#il_regHp"> 1 1.1 1.21 1.33 1.46 1.61 1.77 0.25 0.50 2 3 4 5 6 7 8 9 10 11 12 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#icons"> icon.skill0000 icon.skill0000 icon.skill0000 icon.skill0000 icon.skill0000 icon.skill0000 icon.skill0000 icon.skill4381 icon.skill4311 icon.skill4303 icon.skill4304 icon.skill4305 icon.skill4306 icon.skill4307 icon.skill4308 icon.skill4309 icon.skill4310 icon.skill4408_x10 icon.skill4408_x11 icon.skill4408_x12 </table>
 		<table name="#maxHp"> 0 10 21 33 46 61 77 -75 -50 100 200 300 400 500 600 700 800 900 1000 1100 </table>
@@ -184,11 +185,12 @@
 				<param type="PER" />
 			</effect>
 			<effect name="Buff">
-				<mul stat="regHp" val="#regHp" />
+				<mul stat="regHp" val="#il_regHp" />
 			</effect>
 		</effects>
 	</skill>
 	<skill id="4409" levels="20" name="MP Modifiers">
+		<table name="#il_regHp"> 1 1.1 1.21 1.33 1.46 1.61 1.77 0.25 0.50 2 3 4 5 6 7 8 9 10 11 12 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#icons"> icon.skill0000 icon.skill0000 icon.skill0000 icon.skill0000 icon.skill0000 icon.skill0000 icon.skill0000 icon.skill4381 icon.skill4311 icon.skill4303 icon.skill4304 icon.skill4305 icon.skill4306 icon.skill4307 icon.skill4308 icon.skill4309 icon.skill4310 icon.skill4409_x10 icon.skill4409_x11 icon.skill4409_x12 </table>
 		<table name="#maxMp"> 0 10 21 33 46 61 77 -75 -50 100 200 300 400 500 600 700 800 900 1000 1100 </table>
@@ -203,7 +205,7 @@
 				<param type="PER" />
 			</effect>
 			<effect name="Buff">
-				<mul stat="regMp" val="#regHp" />
+				<mul stat="regMp" val="#il_regHp" />
 			</effect>
 		</effects>
 	</skill>
@@ -366,7 +368,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<add stat="firePower" val="10" />
+				<add stat="firePower" val="1" />
 				<add stat="fireRes" val="#vuln" />
 			</effect>
 		</effects>
@@ -380,7 +382,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<add stat="waterPower" val="10" />
+				<add stat="waterPower" val="1" />
 				<add stat="waterRes" val="#vuln" />
 			</effect>
 		</effects>
@@ -394,7 +396,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<add stat="windPower" val="10" />
+				<add stat="windPower" val="1" />
 				<add stat="windRes" val="#vuln" />
 			</effect>
 		</effects>
@@ -408,7 +410,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<add stat="earthPower" val="10" />
+				<add stat="earthPower" val="1" />
 				<add stat="earthRes" val="#vuln" />
 			</effect>
 		</effects>
@@ -422,7 +424,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<add stat="darkPower" val="10" />
+				<add stat="darkPower" val="1" />
 				<add stat="darkRes" val="#vuln" />
 			</effect>
 		</effects>
@@ -436,7 +438,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<add stat="holyPower" val="10" />
+				<add stat="holyPower" val="1" />
 				<add stat="holyRes" val="#vuln" />
 			</effect>
 		</effects>
@@ -944,6 +946,7 @@
 		</effects>
 	</skill>
 	<skill id="4463" levels="3" name="Surrender To Water">
+		<table name="#il_mpConsume2"> 20 35 65 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#abnormalLvl"> 2 3 4 </table>
 		<table name="#fire"> 7 12 15 </table>
@@ -966,7 +969,7 @@
 		<set name="isMagic" val="1" />
 		<set name="lvlBonusRate" val="2" />
 		<set name="magicLvl" val="#magicLvl" />
-		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="mpConsume2" val="#il_mpConsume2" />
 		<set name="mpConsume1" val="#mpConsume1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="8000" />
@@ -980,6 +983,7 @@
 		</effects>
 	</skill>
 	<skill id="4464" levels="3" name="Surrender To Wind">
+		<table name="#il_mpConsume2"> 20 35 65 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#abnormalLvl"> 2 3 4 </table>
 		<table name="#earth"> 7 12 15 </table>
@@ -1002,7 +1006,7 @@
 		<set name="isMagic" val="1" />
 		<set name="lvlBonusRate" val="2" />
 		<set name="magicLvl" val="#magicLvl" />
-		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="mpConsume2" val="#il_mpConsume2" />
 		<set name="mpConsume1" val="#mpConsume1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="8000" />
@@ -1016,6 +1020,7 @@
 		</effects>
 	</skill>
 	<skill id="4465" levels="3" name="Surrender To Earth">
+		<table name="#il_mpConsume2"> 20 35 65 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#abnormalLvl"> 2 3 4 </table>
 		<table name="#earth"> 15 25 30 </table>
@@ -1038,7 +1043,7 @@
 		<set name="isMagic" val="1" />
 		<set name="lvlBonusRate" val="2" />
 		<set name="magicLvl" val="#magicLvl" />
-		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="mpConsume2" val="#il_mpConsume2" />
 		<set name="mpConsume1" val="#mpConsume1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="8000" />
@@ -1052,6 +1057,7 @@
 		</effects>
 	</skill>
 	<skill id="4466" levels="3" name="Surrender To Darkness">
+		<table name="#il_mpConsume2"> 20 35 65 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#abnormalLvl"> 2 3 4 </table>
 		<table name="#dark"> 15 25 30 </table>
@@ -1074,7 +1080,7 @@
 		<set name="isMagic" val="1" />
 		<set name="lvlBonusRate" val="2" />
 		<set name="magicLvl" val="#magicLvl" />
-		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="mpConsume2" val="#il_mpConsume2" />
 		<set name="mpConsume1" val="#mpConsume1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="8000" />
@@ -1088,6 +1094,7 @@
 		</effects>
 	</skill>
 	<skill id="4467" levels="3" name="Surrender To Light">
+		<table name="#il_mpConsume2"> 20 35 65 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#abnormalLvl"> 2 3 4 </table>
 		<table name="#dark"> 7 12 15 </table>
@@ -1110,7 +1117,7 @@
 		<set name="isMagic" val="1" />
 		<set name="lvlBonusRate" val="2" />
 		<set name="magicLvl" val="#magicLvl" />
-		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="mpConsume2" val="#il_mpConsume2" />
 		<set name="mpConsume1" val="#mpConsume1" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="8000" />
@@ -1169,6 +1176,7 @@
 		<set name="targetType" val="TARGET" />
 	</skill>
 	<skill id="4471" levels="12" name="NPC Anger">
+		<table name="#il_mpConsume2"> 13 20 27 35 45 55 65 69 73 75 77 78 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#abnormalLvl"> 1 2 3 4 5 6 7 8 9 10 11 12 </table>
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -1182,7 +1190,7 @@
 		<set name="hitTime" val="1800" />
 		<set name="isMagic" val="1" />
 		<set name="magicLvl" val="#magicLvl" />
-		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="mpConsume2" val="#il_mpConsume2" />
 		<set name="mpConsume1" val="#mpConsume1" />
 		<set name="operateType" val="A2" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
@@ -1284,7 +1292,7 @@
 		<set name="isMagic" val="1" />
 		<set name="magicLvl" val="55" />
 		<set name="mpConsume1" val="10" />
-		<set name="mpConsume2" val="40" />
+		<set name="mpConsume2" val="50" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="3000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
@@ -1299,6 +1307,7 @@
 		</effects>
 	</skill>
 	<skill id="4476" levels="5" name="Silent Move">
+		<table name="#il_mpConsume2"> 13 20 27 35 45 </table>
 		<!-- High Five Confirmed -->
 		<table name="#abnormalTime"> 60 120 300 600 1200 </table>
 		<table name="#magicLvl"> 10 20 30 40 50 </table>
@@ -1316,7 +1325,7 @@
 		<set name="isMagic" val="1" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume1" val="#mpConsume1" />
-		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="mpConsume2" val="#il_mpConsume2" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="3000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
@@ -1326,6 +1335,7 @@
 		</effects>
 	</skill>
 	<skill id="4477" levels="12" name="NPC Frost Wall">
+		<table name="#il_mpConsume2"> 18 29 40 53 68 83 98 104 109 113 115 117 </table>
 		<!-- High Five Confirmed -->
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<table name="#magicalAttackPower"> 18 26 38 52 68 85 102 110 116 122 126 129 </table>
@@ -1344,7 +1354,7 @@
 		<set name="isMagic" val="1" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume1" val="#mpConsume1" />
-		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="mpConsume2" val="#il_mpConsume2" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="15000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
@@ -1393,7 +1403,7 @@
 		<set name="isMagic" val="1" />
 		<set name="magicLvl" val="64" />
 		<set name="mpConsume1" val="8" />
-		<set name="mpConsume2" val="31" />
+		<set name="mpConsume2" val="39" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="6000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
@@ -1419,7 +1429,7 @@
 		<set name="isMagic" val="1" />
 		<set name="magicLvl" val="64" />
 		<set name="mpConsume1" val="24" />
-		<set name="mpConsume2" val="93" />
+		<set name="mpConsume2" val="117" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="6000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
@@ -1445,7 +1455,7 @@
 		<set name="isMagic" val="1" />
 		<set name="magicLvl" val="64" />
 		<set name="mpConsume1" val="24" />
-		<set name="mpConsume2" val="93" />
+		<set name="mpConsume2" val="117" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="6000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
@@ -1479,6 +1489,7 @@
 		</effects>
 	</skill>
 	<skill id="4483" levels="12" name="Hold">
+		<table name="#il_mpConsume2"> 24 39 53 70 90 110 130 138 145 150 153 155 </table>
 		<!-- High Five Confirmed -->
 		<table name="#isMagic"> 0 1 1 1 1 1 1 1 1 1 1 1 </table>
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -1502,7 +1513,7 @@
 		<set name="isMagic" val="#isMagic" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume1" val="#mpConsume1" />
-		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="mpConsume2" val="#il_mpConsume2" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="8000" />
 		<set name="rideState" val="#rideState" />
@@ -1543,6 +1554,7 @@
 		<set name="targetType" val="TARGET" />
 	</skill>
 	<skill id="4486" levels="12" name="Decrease P. Def.">
+		<table name="#il_mpConsume2"> 24 39 53 70 90 110 130 138 145 150 153 155 </table>
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 2 3 3 3 3 3 3 3 3 3 </table>
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
@@ -1568,7 +1580,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume1" val="#mpConsume1" />
-		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="mpConsume2" val="#il_mpConsume2" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="6000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
@@ -1580,6 +1592,7 @@
 		</effects>
 	</skill>
 	<skill id="4487" levels="12" name="Decrease M. Def.">
+		<table name="#il_mpConsume2"> 24 39 53 70 90 110 130 138 145 150 153 155 </table>
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 2 3 3 3 3 3 3 3 3 3 </table>
 		<table name="#mDef"> 0.83 0.8 0.8 0.77 0.77 0.77 0.77 0.77 0.77 0.77 0.77 0.77 </table>
@@ -1604,7 +1617,7 @@
 		<set name="lvlBonusRate" val="1" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume1" val="#mpConsume1" />
-		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="mpConsume2" val="#il_mpConsume2" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="6000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
@@ -1619,6 +1632,8 @@
 		<!-- High Five Confirmed -->
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<table name="#mpConsume2"> 19 30 42 57 74 91 106 114 119 124 126 128 </table>
+		<set name="effectRange" val="1100" />
+		<set name="castRange" val="600" />
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="30" />
 		<set name="abnormalType" val="ROOT_MAGICALLY" />
@@ -1642,6 +1657,7 @@
 		</effects>
 	</skill>
 	<skill id="4489" levels="12" name="NPC Death MP Bomb">
+		<table name="#il_magicalAttackMpPower"> 52 78 112 55 203 255 305 328 348 364 377 387 </table>
 		<!-- High Five Confirmed -->
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<table name="#magicalAttackMpPower"> 52 78 112 155 203 255 305 328 348 364 377 387 </table>
@@ -1657,11 +1673,12 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="MagicalAttackMp">
-				<param power="#magicalAttackMpPower" />
+				<param power="#il_magicalAttackMpPower" />
 			</effect>
 		</effects>
 	</skill>
 	<skill id="4490" levels="12" name="NPC Holy Wall">
+		<table name="#il_mpConsume2"> 18 29 40 53 68 83 98 104 109 113 115 117 </table>
 		<!-- High Five Confirmed -->
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<table name="#magicalAttackPower"> 18 26 38 52 68 85 102 110 116 122 126 129 </table>
@@ -1680,7 +1697,7 @@
 		<set name="isMagic" val="1" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume1" val="#mpConsume1" />
-		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="mpConsume2" val="#il_mpConsume2" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="15000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
@@ -1723,7 +1740,7 @@
 				<param power="#physicalAttackPower" />
 			</effect>
 			<effect name="Buff">
-				<add stat="holyPower" val="20" />
+				<add stat="holyPower" val="1" />
 			</effect>
 		</effects>
 	</skill>
@@ -1759,6 +1776,7 @@
 		</effects>
 	</skill>
 	<skill id="4493" levels="12" name="NPC Debuff Shield Slow">
+		<table name="#il_mpConsume2"> 13 20 27 35 45 55 65 69 73 75 77 78 </table>
 		<!-- High Five Confirmed -->
 		<table name="#magicLvl"> 10 20 30 40 50 60 70 75 80 85 90 95 </table>
 		<table name="#mpConsume1"> 3 4 6 7 9 11 13 14 15 15 16 16 </table>
@@ -1775,7 +1793,7 @@
 		<set name="hitTime" val="2000" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume1" val="#mpConsume1" />
-		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="mpConsume2" val="#il_mpConsume2" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="8000" />
 		<set name="rideState" val="NONE" />

@@ -103,7 +103,7 @@
 		 -->
 		<effects>
 			<effect name="Buff">
-				<add stat="absorbDam" val="9" />
+				<add stat="absorbDam" val="18" />
 			</effect>
 		</effects>
 	</skill>
@@ -124,7 +124,7 @@
 		<set name="isMagic" val="1" />
 		<set name="magicLvl" val="74" />
 		<set name="mpConsume1" val="48" />
-		<set name="mpConsume2" val="217" />
+		<set name="mpConsume2" val="265" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="20000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
@@ -143,6 +143,7 @@
 		</effects>
 	</skill>
 	<skill id="7007" levels="4" name="Greater Seal of Flame">
+		<table name="#il_value"> 77 92 113 122 </table>
 		<!-- Needs to be done -->
 		<!-- This skill only has one level, 4. -->
 		<set name="abnormalLvl" val="8" />
@@ -157,7 +158,7 @@
 		<set name="isDebuff" val="true" />
 		<set name="isMagic" val="1" />
 		<set name="lvlBonusRate" val="1" />
-		<set name="mpConsume2" val="153" />
+		<set name="mpConsume2" val="#il_value" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="20000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
@@ -376,6 +377,10 @@
 		</effects>
 	</skill>
 	<skill id="7029" levels="4" name="Super Haste">
+		<table name="#il_reuse"> 0.75 0.50 0.25 0.01 </table>
+		<table name="#il_mAtkSpd"> 1.25 1.5 1.75 2 </table>
+		<table name="#il_runSpd"> 1.25 1.5 1.75 2 </table>
+		<table name="#il_pAtkSpd"> 1.25 1.5 1.75 2 </table>
 		<!-- High Five Confirmed -->
 		<!-- GM Skill -->
 		<table name="#amount"> 1 1 1 2 </table>
@@ -386,7 +391,7 @@
 		<table name="#reuse"> 0.01 0.01 0.01 1 </table>
 		<table name="#runSpd"> 2 3 3 1 </table>
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="1200" />
+		<set name="abnormalTime" val="10" />
 		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="effectPoint" val="1" />
@@ -397,22 +402,22 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<mul stat="pAtkSpd" val="#pAtkSpd" />
+				<mul stat="pAtkSpd" val="#il_pAtkSpd" />
 			</effect>
 			<effect name="Buff">
-				<mul stat="mAtkSpd" val="#mAtkSpd" />
+				<mul stat="mAtkSpd" val="#il_mAtkSpd" />
 			</effect>
 			<effect name="Buff">
-				<mul stat="mReuse" val="#reuse" />
+				<mul stat="mReuse" val="#il_reuse" />
 			</effect>
 			<effect name="Buff">
-				<mul stat="pReuse" val="#reuse" />
+				<mul stat="pReuse" val="#il_reuse" />
 			</effect>
 			<effect name="Buff">
 				<mul stat="pAtk" val="#pAtk" />
 			</effect>
 			<effect name="Buff">
-				<mul stat="runSpd" val="#runSpd" />
+				<mul stat="runSpd" val="#il_runSpd" />
 			</effect>
 			<effect name="MaxMp">
 				<param power="#maxMp" />
@@ -438,7 +443,7 @@
 		<set name="itemConsumeId" val="1458" />
 		<set name="magicLvl" val="1" />
 		<set name="mpConsume1" val="1" />
-		<set name="mpConsume2" val="2" />
+		<set name="mpConsume2" val="3" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="4500" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
@@ -462,7 +467,7 @@
 		<set name="itemConsumeId" val="1458" />
 		<set name="magicLvl" val="1" />
 		<set name="mpConsume1" val="1" />
-		<set name="mpConsume2" val="2" />
+		<set name="mpConsume2" val="3" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="4500" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
@@ -486,7 +491,7 @@
 		<set name="itemConsumeId" val="1458" />
 		<set name="magicLvl" val="1" />
 		<set name="mpConsume1" val="1" />
-		<set name="mpConsume2" val="2" />
+		<set name="mpConsume2" val="3" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="4500" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />

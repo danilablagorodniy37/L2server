@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="3200" levels="3" name="Item Skill: Spell Refresh">
+		<table name="#il_value"> 0.90 0.80 0.70 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#effectPoint"> 549 611 655 </table>
 		<table name="#magicLvl"> 55 64 75 </table>
@@ -22,7 +23,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<mul stat="mReuse" val="0.85" />
+				<mul stat="mReuse" val="#il_value" />
 			</effect>
 		</effects>
 		<set name="affectScope" val="SINGLE" />
@@ -55,6 +56,7 @@
 		<set name="affectScope" val="SINGLE" />
 	</skill>
 	<skill id="3202" levels="3" name="Item Skill: Refresh">
+		<table name="#il_value"> 0.95 0.90 0.85 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#effectPoint"> 549 611 655 </table>
 		<table name="#magicLvl"> 55 64 75 </table>
@@ -76,8 +78,8 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<mul stat="mReuse" val="0.85" />
-				<mul stat="pReuse" val="0.85" />
+				<mul stat="mReuse" val="#il_value" />
+				<mul stat="pReuse" val="#il_value" />
 				<mul stat="dReuse" val="0.85" />
 			</effect>
 		</effects>
@@ -86,7 +88,7 @@
 	<skill id="3203" levels="1" name="Item Skill: Mystery Skill">
 		<!-- Confirmed CT2.5 -->
 		<set name="abnormalLvl" val="0" />
-		<set name="abnormalTime" val="300" />
+		<set name="abnormalTime" val="120" />
 		<set name="abnormalType" val="ABNORMAL_ITEM" />
 		<set name="abnormalVisualEffect" val="BIG_HEAD" />
 		<set name="activateRate" val="0" />
@@ -95,13 +97,14 @@
 		<set name="magicLvl" val="1" />
 		<set name="mpConsume2" val="10" />
 		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="1800000" />
+		<set name="reuseDelay" val="300000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="SELF" />
 		<set name="trait" val="ETC" />
 		<set name="affectScope" val="SINGLE" />
 	</skill>
 	<skill id="3204" levels="3" name="Item Skill: Reflect Damage">
+		<table name="#il_reflectDam"> 5 7 10 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 379 438 495 </table>
@@ -110,7 +113,7 @@
 		<table name="#mpConsume1"> 5 6 7 </table>
 		<table name="#reflectDam"> 10 15 20 </table>
 		<set name="abnormalLvl" val="#abnormalLvl" />
-		<set name="abnormalTime" val="300" />
+		<set name="abnormalTime" val="120" />
 		<set name="abnormalType" val="ABNORMAL_ITEM" />
 		<set name="effectPoint" val="#effectPoint" />
 		<set name="hitTime" val="4000" />
@@ -120,12 +123,12 @@
 		<set name="mpConsume2" val="#mpConsume2" />
 		<set name="mpConsume1" val="#mpConsume1" />
 		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="6000" />
+		<set name="reuseDelay" val="300000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<add stat="reflectDam" val="#reflectDam" />
+				<add stat="reflectDam" val="#il_reflectDam" />
 			</effect>
 		</effects>
 		<set name="affectScope" val="SINGLE" />
@@ -790,6 +793,7 @@
 		</effects>
 	</skill>
 	<skill id="3243" levels="10" name="Item Skill: Duel Might">
+		<table name="#il_value"> 1.01 1.02 1.03 1.04 1.05 1.06 1.07 1.08 1.09 1.10 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#magicLvl"> 46 49 52 55 58 61 64 67 70 75 </table>
 		<set name="icon" val="icon.skill3238" />
@@ -798,8 +802,8 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<mul stat="pvpPhysDmg" val="1.05" />
-				<mul stat="pvpPhysSkillsDmg" val="1.05" />
+				<mul stat="pvpPhysDmg" val="#il_value" />
+				<mul stat="pvpPhysSkillsDmg" val="#il_value" />
 			</effect>
 		</effects>
 	</skill>
@@ -846,6 +850,7 @@
 		</effects>
 	</skill>
 	<skill id="3247" levels="10" name="Item Skill: Agility">
+		<table name="#il_value"> 0.4 0.8 1.2 1.6 2.0 2.4 2.8 3.2 3.6 4.0 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#magicLvl"> 46 49 52 55 58 61 64 67 70 75 </table>
 		<set name="icon" val="icon.skill3238" />
@@ -854,11 +859,12 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<add stat="rEvas" val="2" />
+				<add stat="rEvas" val="#il_value" />
 			</effect>
 		</effects>
 	</skill>
 	<skill id="3248" levels="10" name="Item Skill: Guidance">
+		<table name="#il_value"> 0.4 0.8 1.2 1.6 2.0 2.4 2.8 3.2 3.6 4.0 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#magicLvl"> 46 49 52 55 58 61 64 67 70 75 </table>
 		<set name="icon" val="icon.skill3238" />
@@ -867,7 +873,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<add stat="accCombat" val="2" />
+				<add stat="accCombat" val="#il_value" />
 			</effect>
 		</effects>
 	</skill>
@@ -898,6 +904,7 @@
 		</effects>
 	</skill>
 	<skill id="3251" levels="10" name="Item Skill: Weight Limit">
+		<table name="#il_value"> 1.05 1.10 1.15 1.20 1.25 1.30 1.35 1.40 1.45 1.50 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#magicLvl"> 46 49 52 55 58 61 64 67 70 75 </table>
 		<set name="icon" val="icon.skill3238" />
@@ -906,11 +913,12 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<mul stat="weightLimit" val="2" />
+				<mul stat="weightLimit" val="#il_value" />
 			</effect>
 		</effects>
 	</skill>
 	<skill id="3252" levels="10" name="Item Skill: Kiss of Eva">
+		<table name="#il_value"> 1.05 1.10 1.20 1.30 1.40 1.50 1.60 1.70 1.80 2.0 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#magicLvl"> 46 49 52 55 58 61 64 67 70 75 </table>
 		<set name="icon" val="icon.skill3238" />
@@ -919,7 +927,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<mul stat="breath" val="6" />
+				<mul stat="breath" val="#il_value" />
 			</effect>
 		</effects>
 	</skill>
@@ -1009,6 +1017,7 @@
 		</effects>
 	</skill>
 	<skill id="3259" levels="3" name="Item Skill: Reflect Damage">
+		<table name="#il_reflectDam"> 5 10 15 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#magicLvl"> 55 64 75 </table>
 		<table name="#reflectDam"> 10 15 20 </table>
@@ -1018,7 +1027,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<add stat="reflectDam" val="#reflectDam" />
+				<add stat="reflectDam" val="#il_reflectDam" />
 			</effect>
 		</effects>
 	</skill>
@@ -1027,7 +1036,7 @@
 		<set name="castRange" val="500" />
 		<set name="coolTime" val="800" />
 		<set name="effectPoint" val="-1" />
-		<set name="effectRange" val="700" />
+		<set name="effectRange" val="1000" />
 		<set name="hitCancelTime" val="500" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skill3260" />
@@ -1044,7 +1053,7 @@
 		</cond>
 		<effects>
 			<effect name="StaticDamage">
-				<param power="100" />
+				<param power="472" />
 			</effect>
 		</effects>
 	</skill>
@@ -1054,7 +1063,7 @@
 		<set name="castRange" val="500" />
 		<set name="coolTime" val="800" />
 		<set name="effectPoint" val="1" />
-		<set name="effectRange" val="700" />
+		<set name="effectRange" val="1000" />
 		<set name="hitCancelTime" val="500" />
 		<set name="hitTime" val="2500" />
 		<set name="icon" val="icon.skill3260" />
@@ -1072,7 +1081,7 @@
 		<set name="castRange" val="500" />
 		<set name="coolTime" val="800" />
 		<set name="effectPoint" val="-1" />
-		<set name="effectRange" val="700" />
+		<set name="effectRange" val="1000" />
 		<set name="hitCancelTime" val="500" />
 		<set name="hitTime" val="3200" />
 		<set name="icon" val="icon.skill3260" />
@@ -1089,7 +1098,7 @@
 		</cond>
 		<effects>
 			<effect name="StaticDamage">
-				<param power="200" />
+				<param power="944" />
 			</effect>
 		</effects>
 	</skill>
@@ -1120,6 +1129,8 @@
 	</skill>
 	<skill id="3264" levels="1" name="Blessed Escape">
 		<!-- High Five Confirmed -->
+		<set name="mpConsume1" val="31" />
+		<set name="mpConsume2" val="122" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="blockedInOlympiad" val="true" />
 		<set name="hitTime" val="200" />
@@ -1146,7 +1157,7 @@
 	</skill>
 	<skill id="3265" levels="1" name="Mysterious Ability">
 		<set name="abnormalLvl" val="0" />
-		<set name="abnormalTime" val="600" />
+		<set name="abnormalTime" val="300" />
 		<set name="abnormalType" val="BIG_HEAD" />
 		<set name="abnormalVisualEffect" val="BIG_HEAD" />
 		<set name="activateRate" val="0" />

@@ -2926,32 +2926,32 @@
 			<skill id="4416" level="2" /> <!--Magic Creatures -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
+		<collision>
+			<radius normal="8.5" />
+			<height normal="8.5" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
 					<item id="57" min="1370" max="2743" chance="100" /> <!-- Adena -->
 				</group>
-				<group chance="0.1363999992609024">
-					<item id="81" min="1" max="1" chance="0.0869" /> <!-- Dragon Slayer -->
-					<item id="5529" min="1" max="1" chance="32.1905" /> <!-- Dragon Slayer Edge -->
-					<item id="151" min="1" max="1" chance="0.0869" /> <!-- Sword of Miracles -->
-					<item id="5546" min="1" max="1" chance="35.3582" /> <!-- Sword of Miracles Edge -->
-					<item id="2500" min="1" max="1" chance="0.0869" /> <!-- Dark Legion's Edge -->
-					<item id="5545" min="1" max="1" chance="32.1906" /> <!-- Dark Legion's Edge Blade -->
+				<group chance="0.1369">
+					<item id="5545" min="1" max="1" chance="32.1438" /> <!-- Dark Legion's Edge Blade -->
+					<item id="5529" min="1" max="1" chance="32.1438" /> <!-- Dragon Slayer Edge -->
+					<item id="5546" min="1" max="1" chance="35.2848" /> <!-- Sword of Miracles Edge -->
+					<item id="2500" min="1" max="1" chance="0.1425" /> <!-- Dark Legion's Edge -->
+					<item id="151" min="1" max="1" chance="0.1425" /> <!-- Sword of Miracles -->
+					<item id="81" min="1" max="1" chance="0.1426" /> <!-- Dragon Slayer -->
 				</group>
-				<group chance="6.83050012588501">
-					<item id="1895" min="1" max="1" chance="80.3123" /> <!-- Metallic Fiber -->
-					<item id="4040" min="1" max="1" chance="5.6219" /> <!-- Mold Lubricant -->
-					<item id="4042" min="1" max="1" chance="4.6849" /> <!-- Enria -->
-					<item id="4043" min="1" max="1" chance="9.3698" /> <!-- Asofe -->
-					<item id="959" min="1" max="1" chance="0.0111" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
+				<group chance="6.8309">
+					<item id="1895" min="1" max="1" chance="80.3089" /> <!-- Metallic Fiber -->
+					<item id="959" min="1" max="1" chance="0.0116" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
+					<item id="4042" min="1" max="1" chance="4.6859" /> <!-- Enria -->
+					<item id="4043" min="1" max="1" chance="9.3706" /> <!-- Asofe -->
+					<item id="4040" min="1" max="1" chance="5.623" /> <!-- Mold Lubricant -->
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="8.5" />
-			<height normal="8.5" />
-		</collision>
 	</npc>
 	<npc id="18257" level="78" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
@@ -3272,12 +3272,26 @@
 			<skill id="4416" level="2" /> <!--Magic Creatures -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
-		<dropLists>
-		</dropLists>
 		<collision>
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="480" max="858" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="3.4902">
+					<item id="955" min="1" max="1" chance="10.7157" /> <!-- Scroll: Enchant Weapon (D-Grade) -->
+					<item id="956" min="1" max="1" chance="89.2843" /> <!-- Scroll: Enchant Armor (D-Grade) -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1864" min="1" max="1" chance="50" /> <!-- Stem -->
+				<item id="1869" min="1" max="1" chance="25" /> <!-- Iron Ore -->
+				<item id="1926" min="1" max="1" chance="2.381" /> <!-- Piece Bone Breastplate Fragment -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18266" level="24" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -3314,6 +3328,22 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="483" max="891" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="3.5977">
+					<item id="955" min="1" max="1" chance="10.7151" /> <!-- Scroll: Enchant Weapon (D-Grade) -->
+					<item id="956" min="1" max="1" chance="89.2849" /> <!-- Scroll: Enchant Armor (D-Grade) -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1928" min="1" max="1" chance="4" /> <!-- Piece Bone Gaiters Fragment -->
+				<item id="2151" min="1" max="1" chance="7.6923" /> <!-- Recipe: Necklace of Devotion -->
+				<item id="2176" min="1" max="1" chance="12.5" /> <!-- Recipe: Leather Boots -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18267" level="27" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -3350,6 +3380,22 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="484" max="932" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="3.6446">
+					<item id="955" min="1" max="1" chance="10.7144" /> <!-- Scroll: Enchant Weapon (D-Grade) -->
+					<item id="956" min="1" max="1" chance="89.2856" /> <!-- Scroll: Enchant Armor (D-Grade) -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1871" min="1" max="1" chance="33.3333" /> <!-- Charcoal -->
+				<item id="1899" min="1" max="1" chance="5" /> <!-- Necklace of Devotion Chain -->
+				<item id="5220" min="1" max="1" chance="1.2658" /> <!-- Metal Hardener -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18268" level="30" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -3386,6 +3432,22 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="708" max="1417" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="5.4171">
+					<item id="955" min="1" max="1" chance="10.7142" /> <!-- Scroll: Enchant Weapon (D-Grade) -->
+					<item id="956" min="1" max="1" chance="89.2858" /> <!-- Scroll: Enchant Armor (D-Grade) -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1061" min="1" max="1" chance="20" /> <!-- Greater Healing Potion -->
+				<item id="1900" min="1" max="1" chance="4" /> <!-- Enchanted Necklace Chain -->
+				<item id="2250" min="1" max="1" chance="9.0909" /> <!-- Recipe: Bone Arrow -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18269" level="33" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -3422,6 +3484,22 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="732" max="1465" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="5.5432">
+					<item id="955" min="1" max="1" chance="10.7158" /> <!-- Scroll: Enchant Weapon (D-Grade) -->
+					<item id="956" min="1" max="1" chance="89.2842" /> <!-- Scroll: Enchant Armor (D-Grade) -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1901" min="1" max="1" chance="5.8824" /> <!-- Tiger's Eye Earring Stone -->
+				<item id="1938" min="1" max="1" chance="2.9412" /> <!-- Mithril Banded Mail Material -->
+				<item id="2154" min="1" max="1" chance="4.7619" /> <!-- Recipe: Elven Earring -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18270" level="36" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -3458,6 +3536,22 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="758" max="1520" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="5.752">
+					<item id="955" min="1" max="1" chance="10.7145" /> <!-- Scroll: Enchant Weapon (D-Grade) -->
+					<item id="956" min="1" max="1" chance="89.2855" /> <!-- Scroll: Enchant Armor (D-Grade) -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1864" min="1" max="3" chance="51" /> <!-- Stem -->
+				<item id="1880" min="1" max="1" chance="5" /> <!-- Steel -->
+				<item id="1939" min="1" max="1" chance="4.5455" /> <!-- Mithril Banded Gaiters Material -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18271" level="39" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -3494,6 +3588,22 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="789" max="1572" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="5.9154">
+					<item id="955" min="1" max="1" chance="10.7144" /> <!-- Scroll: Enchant Weapon (D-Grade) -->
+					<item id="956" min="1" max="1" chance="89.2856" /> <!-- Scroll: Enchant Armor (D-Grade) -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1902" min="1" max="1" chance="5.8824" /> <!-- Elven Earring Beads -->
+				<item id="2157" min="1" max="1" chance="5" /> <!-- Recipe: Omen Beast's Eye Earring -->
+				<item id="2158" min="1" max="1" chance="7.1429" /> <!-- Recipe: Mithril Ring -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18272" level="42" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -3530,6 +3640,22 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="1257" max="2519" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="3.8025">
+					<item id="951" min="1" max="1" chance="11.9999" /> <!-- Scroll: Enchant Weapon (C-Grade) -->
+					<item id="952" min="1" max="1" chance="88.0001" /> <!-- Scroll: Enchant Armor (C-Grade) -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1866" min="1" max="1" chance="50" /> <!-- Suede -->
+				<item id="1871" min="1" max="1" chance="69" /> <!-- Charcoal -->
+				<item id="1905" min="1" max="1" chance="6.6667" /> <!-- Omen Beast's Eye Earring Gemstone -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18273" level="45" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -3566,6 +3692,22 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="1293" max="2582" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="3.836">
+					<item id="951" min="1" max="1" chance="12.002" /> <!-- Scroll: Enchant Weapon (C-Grade) -->
+					<item id="952" min="1" max="1" chance="87.998" /> <!-- Scroll: Enchant Armor (C-Grade) -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1908" min="1" max="1" chance="7.6923" /> <!-- Moonstone Earring Wire -->
+				<item id="2163" min="1" max="1" chance="4" /> <!-- Recipe: Earring of Protection -->
+				<item id="4553" min="1" max="1" chance="0.3175" /> <!-- Greater Dye of STR (Str+1 Con-1) -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18274" level="48" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -3602,6 +3744,22 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="1330" max="2656" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="3.8762">
+					<item id="951" min="1" max="1" chance="12.0011" /> <!-- Scroll: Enchant Weapon (C-Grade) -->
+					<item id="952" min="1" max="1" chance="87.9989" /> <!-- Scroll: Enchant Armor (C-Grade) -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1966" min="1" max="1" chance="3.3333" /> <!-- Plated Leather Fragment -->
+				<item id="1967" min="1" max="1" chance="5" /> <!-- Plated Leather Gaiters Material -->
+				<item id="2166" min="1" max="1" chance="3.0303" /> <!-- Recipe: Earrings of Binding (100%) -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18275" level="51" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -3638,6 +3796,22 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="1952" max="3909" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="5.5982">
+					<item id="951" min="1" max="1" chance="12.0002" /> <!-- Scroll: Enchant Weapon (C-Grade) -->
+					<item id="952" min="1" max="1" chance="87.9998" /> <!-- Scroll: Enchant Armor (C-Grade) -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1878" min="1" max="1" chance="50" /> <!-- Braided Hemp -->
+				<item id="1884" min="1" max="1" chance="63" /> <!-- Cord -->
+				<item id="4601" min="1" max="1" chance="0.2273" /> <!-- Greater Dye of STR (Str+3 Con-3) -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18276" level="54" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -3674,6 +3848,22 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="1997" max="3995" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="1.0644">
+					<item id="947" min="1" max="1" chance="13.7918" /> <!-- Scroll: Enchant Weapon (B-Grade) -->
+					<item id="948" min="1" max="1" chance="86.2082" /> <!-- Scroll: Enchant Armor (B-Grade) -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1984" min="1" max="1" chance="2.439" /> <!-- Theca Leather Armor Pattern -->
+				<item id="1985" min="1" max="1" chance="4" /> <!-- Theca Leather Gaiters Pattern -->
+				<item id="4126" min="1" max="1" chance="1.8868" /> <!-- Recipe: Adamantite Earrings (100%) -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18277" level="57" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -3710,6 +3900,21 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="2049" max="4095" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="1.039">
+					<item id="947" min="1" max="1" chance="13.7921" /> <!-- Scroll: Enchant Weapon (B-Grade) -->
+					<item id="948" min="1" max="1" chance="86.2079" /> <!-- Scroll: Enchant Armor (B-Grade) -->
+				</group>
+			</death>
+			<corpse>
+				<item id="4049" min="1" max="1" chance="6.6667" /> <!-- Adamantite Earring Gemstone -->
+				<item id="4129" min="1" max="1" chance="1.3889" /> <!-- Recipe: Earrings of Black Ore (100%) -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18278" level="60" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -3746,6 +3951,22 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="2683" max="5361" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="1.3609">
+					<item id="947" min="1" max="1" chance="13.7923" /> <!-- Scroll: Enchant Weapon (B-Grade) -->
+					<item id="948" min="1" max="1" chance="86.2077" /> <!-- Scroll: Enchant Armor (B-Grade) -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1867" min="1" max="5" chance="64" /> <!-- Animal Skin -->
+				<item id="1872" min="1" max="5" chance="64" /> <!-- Animal Bone -->
+				<item id="4613" min="1" max="5" chance="0.1984" /> <!-- Greater Dye of STR (Str+4 Con-4) -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18279" level="63" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -3782,6 +4003,22 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="2736" max="5473" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="1.3885">
+					<item id="947" min="1" max="1" chance="13.799" /> <!-- Scroll: Enchant Weapon (B-Grade) -->
+					<item id="948" min="1" max="1" chance="86.201" /> <!-- Scroll: Enchant Armor (B-Grade) -->
+				</group>
+			</death>
+			<corpse>
+				<item id="4052" min="1" max="1" chance="5.5556" /> <!-- Earring of Black Ore Piece -->
+				<item id="4053" min="1" max="1" chance="6.6667" /> <!-- Ring of Black Ore Gemstone -->
+				<item id="5230" min="1" max="1" chance="0.2128" /> <!-- Recipe: Mithril Arrow (100%) -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18280" level="66" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -3818,6 +4055,21 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="2790" max="5576" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.461">
+					<item id="729" min="1" max="1" chance="11.7787" /> <!-- Scroll: Enchant Weapon (A-Grade) -->
+					<item id="730" min="1" max="1" chance="88.2213" /> <!-- Scroll: Enchant Armor (A-Grade) -->
+				</group>
+			</death>
+			<corpse>
+				<item id="4054" min="1" max="1" chance="3.4483" /> <!-- Necklace of Black Ore Beads -->
+				<item id="5550" min="1" max="1" chance="2.381" /> <!-- Durable Metal Plate -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18281" level="69" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -3854,6 +4106,22 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="2849" max="5701" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.4712">
+					<item id="729" min="1" max="1" chance="11.7784" /> <!-- Scroll: Enchant Weapon (A-Grade) -->
+					<item id="730" min="1" max="1" chance="88.2216" /> <!-- Scroll: Enchant Armor (A-Grade) -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1874" min="1" max="1" chance="12.5" /> <!-- Oriharukon Ore -->
+				<item id="5434" min="1" max="1" chance="0.0721" /> <!-- Recipe: Dragon Slayer(60%) -->
+				<item id="5478" min="1" max="1" chance="1.6393" /> <!-- Sealed Dark Crystal Leather Armor Pattern -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18282" level="72" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -3890,6 +4158,17 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4009" max="8028" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.6635">
+					<item id="729" min="1" max="1" chance="11.7709" /> <!-- Scroll: Enchant Weapon (A-Grade) -->
+					<item id="730" min="1" max="1" chance="88.2291" /> <!-- Scroll: Enchant Armor (A-Grade) -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18283" level="75" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed CT2.5 -->
@@ -3926,6 +4205,20 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4078" max="8168" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.3146">
+					<item id="959" min="1" max="1" chance="9.0909" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
+					<item id="960" min="1" max="1" chance="90.9091" /> <!-- Scroll: Enchant Armor (S-Grade) -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1875" min="1" max="1" chance="16.6667" /> <!-- Stone of Purity -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18284" level="78" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -3962,6 +4255,17 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4146" max="8295" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.3195">
+					<item id="959" min="1" max="1" chance="9.1079" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
+					<item id="960" min="1" max="1" chance="90.8921" /> <!-- Scroll: Enchant Armor (S-Grade) -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18285" level="81" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -3998,6 +4302,22 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="5312" max="10638" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.4097">
+					<item id="959" min="1" max="1" chance="9.1042" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
+					<item id="960" min="1" max="1" chance="90.8958" /> <!-- Scroll: Enchant Armor (S-Grade) -->
+				</group>
+			</death>
+			<corpse>
+				<item id="4039" min="1" max="1" chance="9.0909" /> <!-- Mold Glue -->
+				<item id="4041" min="1" max="1" chance="2.381" /> <!-- Mold Hardener -->
+				<item id="5487" min="1" max="1" chance="1.25" /> <!-- Sealed Robe of Nightmare Fabric -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18286" level="84" type="L2Chest" name="Treasure Chest">
 		<!-- Confirmed High Five -->
@@ -4034,6 +4354,17 @@
 			<radius normal="8.5" />
 			<height normal="8.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="5393" max="10798" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="0.4158">
+					<item id="959" min="1" max="1" chance="9.0909" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
+					<item id="960" min="1" max="1" chance="90.9091" /> <!-- Scroll: Enchant Armor (S-Grade) -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18287" level="33" type="L2Chest" name="Otherworldly Invader Food">
 		<!-- Confirmed CT2.5 -->
@@ -4071,21 +4402,21 @@
 				<clan>SSQ</clan>
 			</clanList>
 		</ai>
+		<collision>
+			<radius normal="8.5" />
+			<height normal="8.5" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
 					<item id="57" min="186" max="372" chance="100" /> <!-- Adena -->
 				</group>
-				<group chance="1.4067000150680542">
-					<item id="955" min="1" max="1" chance="10.7143" /> <!-- Scroll: Enchant Weapon (D-Grade) -->
-					<item id="956" min="1" max="1" chance="89.2857" /> <!-- Scroll: Enchant Armor (D-Grade) -->
+				<group chance="1.4068">
+					<item id="955" min="1" max="1" chance="10.7193" /> <!-- Scroll: Enchant Weapon (D-Grade) -->
+					<item id="956" min="1" max="1" chance="89.2807" /> <!-- Scroll: Enchant Armor (D-Grade) -->
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="8.5" />
-			<height normal="8.5" />
-		</collision>
 	</npc>
 	<npc id="18288" level="35" type="L2Chest" name="Otherworldly Invader Food">
 		<!-- Confirmed CT2.5 -->
@@ -4123,21 +4454,21 @@
 				<clan>SSQ</clan>
 			</clanList>
 		</ai>
+		<collision>
+			<radius normal="8.5" />
+			<height normal="8.5" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
 					<item id="57" min="207" max="413" chance="100" /> <!-- Adena -->
 				</group>
-				<group chance="1.5676000118255615">
-					<item id="955" min="1" max="1" chance="10.7143" /> <!-- Scroll: Enchant Weapon (D-Grade) -->
-					<item id="956" min="1" max="1" chance="89.2857" /> <!-- Scroll: Enchant Armor (D-Grade) -->
+				<group chance="1.5676">
+					<item id="955" min="1" max="1" chance="10.7163" /> <!-- Scroll: Enchant Weapon (D-Grade) -->
+					<item id="956" min="1" max="1" chance="89.2837" /> <!-- Scroll: Enchant Armor (D-Grade) -->
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="8.5" />
-			<height normal="8.5" />
-		</collision>
 	</npc>
 	<npc id="18289" level="43" type="L2Chest" name="Dimension Invader Food">
 		<!-- Confirmed CT2.5 -->
@@ -4175,21 +4506,21 @@
 				<clan>SSQ</clan>
 			</clanList>
 		</ai>
+		<collision>
+			<radius normal="8.5" />
+			<height normal="8.5" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
 					<item id="57" min="308" max="617" chance="100" /> <!-- Adena -->
 				</group>
-				<group chance="0.9322999715805054">
-					<item id="951" min="1" max="1" chance="12" /> <!-- Scroll: Enchant Weapon (C-Grade) -->
-					<item id="952" min="1" max="1" chance="88" /> <!-- Scroll: Enchant Armor (C-Grade) -->
+				<group chance="0.9324">
+					<item id="951" min="1" max="1" chance="12.0012" /> <!-- Scroll: Enchant Weapon (C-Grade) -->
+					<item id="952" min="1" max="1" chance="87.9988" /> <!-- Scroll: Enchant Armor (C-Grade) -->
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="8.5" />
-			<height normal="8.5" />
-		</collision>
 	</npc>
 	<npc id="18290" level="45" type="L2Chest" name="Dimension Invader Food">
 		<!-- Confirmed CT2.5 -->
@@ -4227,21 +4558,21 @@
 				<clan>SSQ</clan>
 			</clanList>
 		</ai>
+		<collision>
+			<radius normal="8.5" />
+			<height normal="8.5" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
 					<item id="57" min="338" max="676" chance="100" /> <!-- Adena -->
 				</group>
-				<group chance="1.0037000179290771">
-					<item id="951" min="1" max="1" chance="12" /> <!-- Scroll: Enchant Weapon (C-Grade) -->
-					<item id="952" min="1" max="1" chance="88" /> <!-- Scroll: Enchant Armor (C-Grade) -->
+				<group chance="1.0038">
+					<item id="951" min="1" max="1" chance="12.0043" /> <!-- Scroll: Enchant Weapon (C-Grade) -->
+					<item id="952" min="1" max="1" chance="87.9957" /> <!-- Scroll: Enchant Armor (C-Grade) -->
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="8.5" />
-			<height normal="8.5" />
-		</collision>
 	</npc>
 	<npc id="18291" level="53" type="L2Chest" name="Purgatory Invader Food">
 		<!-- Confirmed CT2.5 -->
@@ -4279,21 +4610,21 @@
 				<clan>SSQ</clan>
 			</clanList>
 		</ai>
+		<collision>
+			<radius normal="8.5" />
+			<height normal="8.5" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
 					<item id="57" min="472" max="944" chance="100" /> <!-- Adena -->
 				</group>
-				<group chance="0.2513999938964844">
-					<item id="947" min="1" max="1" chance="13.7931" /> <!-- Scroll: Enchant Weapon (B-Grade) -->
-					<item id="948" min="1" max="1" chance="86.2069" /> <!-- Scroll: Enchant Armor (B-Grade) -->
+				<group chance="0.2515">
+					<item id="947" min="1" max="1" chance="13.7972" /> <!-- Scroll: Enchant Weapon (B-Grade) -->
+					<item id="948" min="1" max="1" chance="86.2028" /> <!-- Scroll: Enchant Armor (B-Grade) -->
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="8.5" />
-			<height normal="8.5" />
-		</collision>
 	</npc>
 	<npc id="18292" level="55" type="L2Chest" name="Purgatory Invader Food">
 		<!-- Confirmed CT2.5 -->
@@ -4331,21 +4662,21 @@
 				<clan>SSQ</clan>
 			</clanList>
 		</ai>
+		<collision>
+			<radius normal="8.5" />
+			<height normal="8.5" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
 					<item id="57" min="519" max="1010" chance="100" /> <!-- Adena -->
 				</group>
-				<group chance="0.27160000801086426">
-					<item id="947" min="1" max="1" chance="13.7931" /> <!-- Scroll: Enchant Weapon (B-Grade) -->
-					<item id="948" min="1" max="1" chance="86.2069" /> <!-- Scroll: Enchant Armor (B-Grade) -->
+				<group chance="0.2717">
+					<item id="947" min="1" max="1" chance="13.8019" /> <!-- Scroll: Enchant Weapon (B-Grade) -->
+					<item id="948" min="1" max="1" chance="86.1981" /> <!-- Scroll: Enchant Armor (B-Grade) -->
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="8.5" />
-			<height normal="8.5" />
-		</collision>
 	</npc>
 	<npc id="18293" level="63" type="L2Chest" name="Forbidden Path Invader Food">
 		<!-- Confirmed CT2.5 -->
@@ -4383,21 +4714,21 @@
 				<clan>SSQ</clan>
 			</clanList>
 		</ai>
+		<collision>
+			<radius normal="8.5" />
+			<height normal="8.5" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
 					<item id="57" min="681" max="1361" chance="100" /> <!-- Adena -->
 				</group>
-				<group chance="0.11249999701976776">
-					<item id="729" min="1" max="1" chance="11.7647" /> <!-- Scroll: Enchant Weapon (A-Grade) -->
-					<item id="730" min="1" max="1" chance="88.2353" /> <!-- Scroll: Enchant Armor (A-Grade) -->
+				<group chance="0.1126">
+					<item id="729" min="1" max="1" chance="11.8117" /> <!-- Scroll: Enchant Weapon (A-Grade) -->
+					<item id="730" min="1" max="1" chance="88.1883" /> <!-- Scroll: Enchant Armor (A-Grade) -->
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="8.5" />
-			<height normal="8.5" />
-		</collision>
 	</npc>
 	<npc id="18294" level="65" type="L2Chest" name="Forbidden Path Invader Food">
 		<!-- Confirmed CT2.5 -->
@@ -4435,21 +4766,21 @@
 				<clan>SSQ</clan>
 			</clanList>
 		</ai>
+		<collision>
+			<radius normal="8.5" />
+			<height normal="8.5" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
 					<item id="57" min="728" max="1457" chance="100" /> <!-- Adena -->
 				</group>
-				<group chance="0.12039999663829803">
-					<item id="729" min="1" max="1" chance="11.7647" /> <!-- Scroll: Enchant Weapon (A-Grade) -->
-					<item id="730" min="1" max="1" chance="88.2353" /> <!-- Scroll: Enchant Armor (A-Grade) -->
+				<group chance="0.1205">
+					<item id="729" min="1" max="1" chance="11.7842" /> <!-- Scroll: Enchant Weapon (A-Grade) -->
+					<item id="730" min="1" max="1" chance="88.2158" /> <!-- Scroll: Enchant Armor (A-Grade) -->
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="8.5" />
-			<height normal="8.5" />
-		</collision>
 	</npc>
 	<npc id="18295" level="73" type="L2Chest" name="Dark Omen Invader Food">
 		<!-- Confirmed CT2.5 -->
@@ -4487,21 +4818,21 @@
 				<clan>SSQ</clan>
 			</clanList>
 		</ai>
+		<collision>
+			<radius normal="8.5" />
+			<height normal="8.5" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
 					<item id="57" min="938" max="1879" chance="100" /> <!-- Adena -->
 				</group>
-				<group chance="0.15520000457763672">
-					<item id="729" min="1" max="1" chance="11.7647" /> <!-- Scroll: Enchant Weapon (A-Grade) -->
-					<item id="730" min="1" max="1" chance="88.2353" /> <!-- Scroll: Enchant Armor (A-Grade) -->
+				<group chance="0.1553">
+					<item id="729" min="1" max="1" chance="11.7836" /> <!-- Scroll: Enchant Weapon (A-Grade) -->
+					<item id="730" min="1" max="1" chance="88.2164" /> <!-- Scroll: Enchant Armor (A-Grade) -->
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="8.5" />
-			<height normal="8.5" />
-		</collision>
 	</npc>
 	<npc id="18296" level="75" type="L2Chest" name="Dark Omen Invader Food">
 		<!-- Confirmed CT2.5 -->
@@ -4539,21 +4870,21 @@
 				<clan>SSQ</clan>
 			</clanList>
 		</ai>
+		<collision>
+			<radius normal="8.5" />
+			<height normal="8.5" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
 					<item id="57" min="995" max="1993" chance="100" /> <!-- Adena -->
 				</group>
-				<group chance="0.07670000195503235">
-					<item id="959" min="1" max="1" chance="9.0909" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-					<item id="960" min="1" max="1" chance="90.9091" /> <!-- Scroll: Enchant Armor (S-Grade) -->
+				<group chance="0.0768">
+					<item id="959" min="1" max="1" chance="9.1145" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
+					<item id="960" min="1" max="1" chance="90.8855" /> <!-- Scroll: Enchant Armor (S-Grade) -->
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="8.5" />
-			<height normal="8.5" />
-		</collision>
 	</npc>
 	<npc id="18297" level="78" type="L2Chest" name="Messenger Invader Food">
 		<!-- Confirmed CT2.5 -->
@@ -4591,21 +4922,21 @@
 				<clan>SSQ</clan>
 			</clanList>
 		</ai>
+		<collision>
+			<radius normal="8.5" />
+			<height normal="8.5" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
 					<item id="57" min="1239" max="2481" chance="100" /> <!-- Adena -->
 				</group>
-				<group chance="0.09549999982118607">
-					<item id="959" min="1" max="1" chance="9.0909" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-					<item id="960" min="1" max="1" chance="90.9091" /> <!-- Scroll: Enchant Armor (S-Grade) -->
+				<group chance="0.0956">
+					<item id="959" min="1" max="1" chance="9.1004" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
+					<item id="960" min="1" max="1" chance="90.8996" /> <!-- Scroll: Enchant Armor (S-Grade) -->
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="8.5" />
-			<height normal="8.5" />
-		</collision>
 	</npc>
 	<npc id="18298" level="78" type="L2Chest" name="Messenger Invader Food">
 		<!-- Confirmed CT2.5 -->
@@ -4643,21 +4974,21 @@
 				<clan>SSQ</clan>
 			</clanList>
 		</ai>
+		<collision>
+			<radius normal="8.5" />
+			<height normal="8.5" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
 					<item id="57" min="1301" max="2604" chance="100" /> <!-- Adena -->
 				</group>
-				<group chance="0.10029999911785126">
-					<item id="959" min="1" max="1" chance="9.0909" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
-					<item id="960" min="1" max="1" chance="90.9091" /> <!-- Scroll: Enchant Armor (S-Grade) -->
+				<group chance="0.1004">
+					<item id="959" min="1" max="1" chance="9.1633" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
+					<item id="960" min="1" max="1" chance="90.8367" /> <!-- Scroll: Enchant Armor (S-Grade) -->
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="8.5" />
-			<height normal="8.5" />
-		</collision>
 	</npc>
 	<npc id="18299" level="35" type="L2Npc" name="Flame of the Branded">
 		<!-- Confirmed CT2.5 -->

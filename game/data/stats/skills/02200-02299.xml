@@ -784,6 +784,7 @@
 	</skill>
 	<skill id="2234" levels="1" name="Soul Breaking Arrow">
 		<!-- High Five Confirmed -->
+		<set name="coolTime" val="1000" />
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="1" />
 		<set name="abnormalType" val="STUN" />
@@ -793,7 +794,7 @@
 		<set name="effectPoint" val="-100" />
 		<set name="effectRange" val="1400" />
 		<set name="hitCancelTime" val="2000" />
-		<set name="hitTime" val="500" />
+		<set name="hitTime" val="2000" />
 		<set name="icon" val="icon.etc_destory_soul_arrow_i00" />
 		<set name="isDebuff" val="true" />
 		<set name="isMagic" val="2" />
@@ -801,7 +802,7 @@
 		<set name="itemConsumeId" val="8192" />
 		<set name="magicLvl" val="85" />
 		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="30000" />
+		<set name="reuseDelay" val="60000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="ENEMY" />
 		<set name="trait" val="SHOCK" />
@@ -914,6 +915,7 @@
 	</skill>
 	<skill id="2239" levels="1" name="Petrifaction Scroll">
 		<!-- High Five Confirmed -->
+		<set name="hitTime" val="500" />
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="5" />
 		<set name="abnormalType" val="TURN_STONE" />
@@ -955,16 +957,17 @@
 	</skill>
 	<skill id="2240" levels="1" name="Hot Spring Nectar">
 		<!-- High Five Confirmed -->
+		<set name="hitTime" val="500" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="castRange" val="40" />
 		<set name="effectPoint" val="100" />
-		<set name="effectRange" val="300" />
+		<set name="effectRange" val="400" />
 		<set name="isMagic" val="2" />
 		<set name="itemConsumeCount" val="1" />
 		<set name="itemConsumeId" val="8030" /> <!-- Hot Spring Nectar -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="reuseDelay" val="2000" />
+		<set name="reuseDelay" val="500" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="TARGET" />
 		<cond msgId="113" addName="1">
@@ -976,16 +979,17 @@
 	</skill>
 	<skill id="2241" levels="1" name="Hot Spring Mineral Water">
 		<!-- High Five Confirmed -->
+		<set name="hitTime" val="500" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="castRange" val="40" />
 		<set name="effectPoint" val="100" />
-		<set name="effectRange" val="300" />
+		<set name="effectRange" val="400" />
 		<set name="isMagic" val="2" />
 		<set name="itemConsumeCount" val="1" />
 		<set name="itemConsumeId" val="8031" /> <!-- Hot Spring Mineral Water -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="reuseDelay" val="2000" />
+		<set name="reuseDelay" val="500" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="TARGET" />
 		<cond msgId="113" addName="1">
@@ -997,16 +1001,17 @@
 	</skill>
 	<skill id="2242" levels="1" name="Hot Spring Fountain Water">
 		<!-- High Five Confirmed -->
+		<set name="hitTime" val="500" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="castRange" val="40" />
 		<set name="effectPoint" val="100" />
-		<set name="effectRange" val="300" />
+		<set name="effectRange" val="400" />
 		<set name="isMagic" val="2" />
 		<set name="itemConsumeCount" val="1" />
 		<set name="itemConsumeId" val="8032" /> <!-- Hot Spring Water -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="reuseDelay" val="2000" />
+		<set name="reuseDelay" val="500" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="TARGET" />
 		<cond msgId="113" addName="1">
@@ -1018,16 +1023,17 @@
 	</skill>
 	<skill id="2243" levels="1" name="Hot Spring Sulfur">
 		<!-- High Five Confirmed -->
+		<set name="hitTime" val="500" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="castRange" val="40" />
 		<set name="effectPoint" val="100" />
-		<set name="effectRange" val="300" />
+		<set name="effectRange" val="400" />
 		<set name="isMagic" val="2" />
 		<set name="itemConsumeCount" val="1" />
 		<set name="itemConsumeId" val="8033" /> <!-- Hot Spring Sulfur -->
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="reuseDelay" val="2000" />
+		<set name="reuseDelay" val="500" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="TARGET" />
 		<cond msgId="113" addName="1">
@@ -1059,7 +1065,7 @@
 				<param mode="DIFF" />
 			</effect>
 			<effect name="HpPerMax">
-				<param power="17" />
+				<param power="15" />
 			</effect>
 		</effects>
 	</skill>
@@ -1085,14 +1091,14 @@
 				<param mode="DIFF" />
 			</effect>
 			<effect name="MpPerMax">
-				<param power="4" />
+				<param power="12" />
 			</effect>
 		</effects>
 	</skill>
 	<skill id="2246" levels="1" name="Herb of Power">
 		<!-- High Five Confirmed -->
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="300" />
+		<set name="abnormalTime" val="120" />
 		<set name="abnormalType" val="PA_UP_HERB" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="effectPoint" val="100" />
@@ -1124,7 +1130,7 @@
 	<skill id="2247" levels="1" name="Herb of Magic">
 		<!-- High Five Confirmed -->
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="300" />
+		<set name="abnormalTime" val="120" />
 		<set name="abnormalType" val="MA_UP_HERB" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="effectPoint" val="100" />
@@ -1148,7 +1154,7 @@
 	</skill>
 	<skill id="2248" levels="1" name="Bless of Fire">
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="1200" />
+		<set name="abnormalTime" val="600" />
 		<set name="abnormalType" val="HOLY_ATTACK" />
 		<set name="hitTime" val="1000" />
 		<set name="icon" val="icon.etc_fire_crystal_i00" />
@@ -1162,14 +1168,14 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<add stat="firePower" val="20" />
+				<add stat="firePower" val="1" />
 			</effect>
 		</effects>
 		<set name="affectScope" val="SINGLE" />
 	</skill>
 	<skill id="2249" levels="1" name="Bless of Water">
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="1200" />
+		<set name="abnormalTime" val="600" />
 		<set name="abnormalType" val="HOLY_ATTACK" />
 		<set name="hitTime" val="1000" />
 		<set name="icon" val="icon.etc_water_crystal_i00" />
@@ -1183,14 +1189,14 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<add stat="waterPower" val="20" />
+				<add stat="waterPower" val="1" />
 			</effect>
 		</effects>
 		<set name="affectScope" val="SINGLE" />
 	</skill>
 	<skill id="2250" levels="1" name="Bless of Wind">
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="1200" />
+		<set name="abnormalTime" val="600" />
 		<set name="abnormalType" val="HOLY_ATTACK" />
 		<set name="hitTime" val="1000" />
 		<set name="icon" val="icon.etc_wind_crystal_i00" />
@@ -1204,14 +1210,14 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<add stat="windPower" val="20" />
+				<add stat="windPower" val="1" />
 			</effect>
 		</effects>
 		<set name="affectScope" val="SINGLE" />
 	</skill>
 	<skill id="2251" levels="1" name="Bless of Earth">
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="1200" />
+		<set name="abnormalTime" val="600" />
 		<set name="abnormalType" val="HOLY_ATTACK" />
 		<set name="hitTime" val="1000" />
 		<set name="icon" val="icon.etc_earth_crystal_i00" />
@@ -1225,14 +1231,14 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<add stat="earthPower" val="20" />
+				<add stat="earthPower" val="1" />
 			</effect>
 		</effects>
 		<set name="affectScope" val="SINGLE" />
 	</skill>
 	<skill id="2252" levels="1" name="Bless of Darkness">
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="1200" />
+		<set name="abnormalTime" val="600" />
 		<set name="abnormalType" val="HOLY_ATTACK" />
 		<set name="hitTime" val="1000" />
 		<set name="icon" val="icon.etc_unholy_crystal_i00" />
@@ -1246,14 +1252,14 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<add stat="darkPower" val="20" />
+				<add stat="darkPower" val="1" />
 			</effect>
 		</effects>
 		<set name="affectScope" val="SINGLE" />
 	</skill>
 	<skill id="2253" levels="1" name="Bless of Sacredness">
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="1200" />
+		<set name="abnormalTime" val="600" />
 		<set name="abnormalType" val="HOLY_ATTACK" />
 		<set name="hitTime" val="1000" />
 		<set name="icon" val="icon.etc_holy_crystal_i00" />
@@ -1267,7 +1273,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<add stat="holyPower" val="20" />
+				<add stat="holyPower" val="1" />
 			</effect>
 		</effects>
 		<set name="affectScope" val="SINGLE" />
@@ -1755,10 +1761,12 @@
 	</skill>
 	<skill id="2276" levels="1" name="Dewdrop of Destruction">
 		<!-- High Five Confirmed -->
+		<set name="coolTime" val="1000" />
+		<set name="reuseDelay" val="3000" />
 		<set name="affectScope" val="SINGLE" />
-		<set name="castRange" val="40" />
+		<set name="castRange" val="900" />
 		<set name="effectPoint" val="-100" />
-		<set name="effectRange" val="400" />
+		<set name="effectRange" val="1400" />
 		<set name="hitCancelTime" val="2000" />
 		<set name="hitTime" val="2000" />
 		<set name="isMagic" val="2" />
@@ -1823,6 +1831,7 @@
 		</effects>
 	</skill>
 	<skill id="2279" levels="3" name="Herb of Mana">
+		<table name="#il_mpPerMaxPower"> 12 18 100 </table>
 		<!-- High Five Confirmed -->
 		<table name="#mpPerMaxPower"> 11 18 100 </table>
 		<set name="affectScope" val="SINGLE" />
@@ -1841,7 +1850,7 @@
 		</cond>
 		<effects>
 			<effect name="MpPerMax">
-				<param power="#mpPerMaxPower" />
+				<param power="#il_mpPerMaxPower" />
 			</effect>
 		</effects>
 	</skill>
@@ -1849,7 +1858,7 @@
 		<!-- High Five Confirmed -->
 		<set name="abnormalInstant" val="true" />
 		<set name="abnormalLvl" val="3" />
-		<set name="abnormalTime" val="300" />
+		<set name="abnormalTime" val="120" />
 		<set name="abnormalType" val="PA_UP" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="effectPoint" val="100" />
@@ -1875,7 +1884,7 @@
 		<!-- High Five Confirmed -->
 		<set name="abnormalInstant" val="true" />
 		<set name="abnormalLvl" val="3" />
-		<set name="abnormalTime" val="300" />
+		<set name="abnormalTime" val="120" />
 		<set name="abnormalType" val="MA_UP" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="effectPoint" val="100" />
@@ -1901,7 +1910,7 @@
 		<!-- High Five Confirmed -->
 		<set name="abnormalInstant" val="true" />
 		<set name="abnormalLvl" val="2" />
-		<set name="abnormalTime" val="300" />
+		<set name="abnormalTime" val="120" />
 		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="effectPoint" val="100" />
@@ -1927,7 +1936,7 @@
 		<!-- High Five Confirmed -->
 		<set name="abnormalInstant" val="true" />
 		<set name="abnormalLvl" val="3" />
-		<set name="abnormalTime" val="300" />
+		<set name="abnormalTime" val="120" />
 		<set name="abnormalType" val="CASTING_TIME_DOWN" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="effectPoint" val="100" />
@@ -1953,7 +1962,7 @@
 		<!-- High Five Confirmed -->
 		<set name="abnormalInstant" val="true" />
 		<set name="abnormalLvl" val="3" />
-		<set name="abnormalTime" val="300" />
+		<set name="abnormalTime" val="120" />
 		<set name="abnormalType" val="CRITICAL_PROB_UP" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="effectPoint" val="100" />
@@ -1979,7 +1988,7 @@
 		<!-- High Five Confirmed -->
 		<set name="abnormalInstant" val="true" />
 		<set name="abnormalLvl" val="2" />
-		<set name="abnormalTime" val="300" />
+		<set name="abnormalTime" val="120" />
 		<set name="abnormalType" val="SPEED_UP" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="effectPoint" val="100" />
@@ -2028,6 +2037,7 @@
 		<!-- Confirmed CT2.5 -->
 		<table name="#amount"> 250 650 1100 1500 1900 2300 </table>
 		<table name="#levelRange"> 1;19 20;39 40;51 52;60 61;75 76;85 </table>
+		<set name="reuseDelay" val="300000" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="isMagic" val="2" />
 		<set name="magicLvl" val="1" />
@@ -2047,6 +2057,7 @@
 		<!-- Confirmed CT2.5 -->
 		<table name="#amount"> 60 140 220 290 360 420 </table>
 		<table name="#levelRange"> 1;19 20;39 40;51 52;60 61;75 76;85 </table>
+		<set name="reuseDelay" val="300000" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="isMagic" val="2" />
 		<set name="magicLvl" val="1" />
@@ -2066,6 +2077,7 @@
 		<!-- Confirmed CT2.5 -->
 		<table name="#amount"> 150 350 600 800 1000 1200 </table>
 		<table name="#levelRange"> 1;19 20;39 40;51 52;60 61;75 76;85 </table>
+		<set name="reuseDelay" val="300000" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="isMagic" val="2" />
 		<set name="magicLvl" val="1" />

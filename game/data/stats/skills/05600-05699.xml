@@ -106,17 +106,20 @@
 		<set name="affectScope" val="SINGLE" />
 	</skill>
 	<skill id="5605" levels="2" name="Power of Apella">
+		<table name="#il_value"> 2 5 </table>
 		<!-- Confirmed CT2.5 -->
 		<!-- Apella Heavy -->
 		<table name="#magicLvl"> 64 67 </table>
 		<table name="#rCrit"> 0 30 </table>
+		<set name="effectRange" val="1350" />
+		<set name="castRange" val="900" />
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="5" />
+		<set name="abnormalTime" val="#il_value" />
 		<set name="abnormalType" val="APELLA" />
 		<set name="isMagic" val="4" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="8000" />
+		<set name="reuseDelay" val="#il_value" />
 		<set name="rideState" val="NONE" />
 		<set name="targetType" val="SELF" />
 		<effects>
@@ -137,13 +140,15 @@
 		<!-- Apella Light -->
 		<table name="#magicLvl"> 64 67 </table>
 		<table name="#pAtkSpd"> 1 1.025 </table>
+		<set name="effectRange" val="1100" />
+		<set name="castRange" val="600" />
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="5" />
+		<set name="abnormalTime" val="2" />
 		<set name="abnormalType" val="APELLA" />
 		<set name="isMagic" val="4" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="8000" />
+		<set name="reuseDelay" val="0" />
 		<set name="rideState" val="NONE" />
 		<set name="targetType" val="SELF" />
 		<effects>
@@ -154,7 +159,7 @@
 				<sub stat="defCritDamageAdd" val="86"> <!-- critical damage is decreased by 86 -->
 					<using kind="LIGHT" />
 				</sub>
-				<mul stat="pAtkSpd" val="#pAtkSpd" />
+				<mul stat="pAtkSpd" val="0.77" />
 			</effect>
 		</effects>
 		<set name="affectScope" val="SINGLE" />
@@ -164,13 +169,15 @@
 		<!-- Apella Robe -->
 		<table name="#magicLvl"> 64 67 </table>
 		<table name="#mAtk"> 1 1.0625 </table>
+		<set name="effectRange" val="1100" />
+		<set name="castRange" val="600" />
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="5" />
+		<set name="abnormalTime" val="2" />
 		<set name="abnormalType" val="APELLA" />
 		<set name="isMagic" val="4" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="8000" />
+		<set name="reuseDelay" val="0" />
 		<set name="rideState" val="NONE" />
 		<set name="targetType" val="SELF" />
 		<effects>

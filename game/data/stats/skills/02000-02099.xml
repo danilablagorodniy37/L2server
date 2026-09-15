@@ -3,7 +3,7 @@
 	<skill id="2001" levels="1" name="Red Potion">
 		<!-- High Five Confirmed -->
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="15" />
+		<set name="abnormalTime" val="5" />
 		<set name="abnormalType" val="HP_RECOVER" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="isMagic" val="2" />
@@ -15,7 +15,7 @@
 	<skill id="2002" levels="1" name="Healing Drug">
 		<!-- High Five Confirmed -->
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="20" />
+		<set name="abnormalTime" val="5" />
 		<set name="abnormalType" val="HP_RECOVER" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="isMagic" val="2" />
@@ -76,7 +76,7 @@
 		<set name="itemConsumeId" val="6391" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
-		<set name="reuseDelay" val="2000" />
+		<set name="reuseDelay" val="1000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="OTHERS" />
 	</skill>
@@ -355,8 +355,9 @@
 	</skill>
 	<skill id="2031" levels="1" name="Lesser Healing Potion">
 		<!-- High Five Confirmed -->
+		<set name="reuseDelay" val="10000" />
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="15" />
+		<set name="abnormalTime" val="2" />
 		<set name="abnormalType" val="HP_RECOVER" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="icon" val="icon.etc_lesser_potion_red_i00" />
@@ -375,8 +376,9 @@
 	</skill>
 	<skill id="2032" levels="1" name="Healing Potion">
 		<!-- High Five Confirmed -->
+		<set name="reuseDelay" val="10000" />
 		<set name="abnormalLvl" val="2" />
-		<set name="abnormalTime" val="15" />
+		<set name="abnormalTime" val="2" />
 		<set name="abnormalType" val="HP_RECOVER" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="icon" val="icon.etc_potion_scarlet_i00" />
@@ -465,8 +467,9 @@
 	</skill>
 	<skill id="2037" levels="1" name="Greater Healing Potion">
 		<!-- High Five Confirmed -->
+		<set name="reuseDelay" val="10000" />
 		<set name="abnormalLvl" val="3" />
-		<set name="abnormalTime" val="15" />
+		<set name="abnormalTime" val="2" />
 		<set name="abnormalType" val="HP_RECOVER" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="icon" val="icon.etc_reagent_white_i00" />
@@ -658,7 +661,7 @@
 		<set name="effectPoint" val="1" />
 		<set name="effectRange" val="600" />
 		<set name="hitCancelTime" val="500" />
-		<set name="hitTime" val="3000" />
+		<set name="hitTime" val="15000" />
 		<set name="isMagic" val="2" />
 		<set name="itemConsumeCount" val="1" />
 		<set name="itemConsumeId" val="3936" />
@@ -924,7 +927,7 @@
 		<set name="effectPoint" val="1" />
 		<set name="effectRange" val="600" />
 		<set name="hitCancelTime" val="500" />
-		<set name="hitTime" val="3000" />
+		<set name="hitTime" val="15000" />
 		<set name="isMagic" val="2" />
 		<set name="itemConsumeCount" val="1" />
 		<set name="itemConsumeId" val="3959" />
@@ -1078,6 +1081,7 @@
 	</skill>
 	<skill id="2074" levels="1" name="Potion of Critical Escape">
 		<!-- High Five Confirmed -->
+		<set name="reuseDelay" val="30000" />
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="10" />
 		<set name="abnormalType" val="SPEED_DOWN" />
@@ -1528,7 +1532,7 @@
 		<set name="isMagic" val="2" />
 		<set name="magicLvl" val="1" />
 		<set name="mpConsume1" val="6" />
-		<set name="mpConsume2" val="20" />
+		<set name="mpConsume2" val="26" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="3000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
@@ -1539,7 +1543,7 @@
 		<table name="#magicLvl"> 10 20 30 </table>
 		<table name="#mpConsume2"> 4 6 8 </table>
 		<set name="affectScope" val="SINGLE" />
-		<set name="castRange" val="150" />
+		<set name="castRange" val="40" />
 		<set name="effectRange" val="400" />
 		<set name="hitCancelTime" val="500" />
 		<set name="hitTime" val="1800" />
@@ -1559,7 +1563,7 @@
 		<!-- High Five Confirmed -->
 		<set name="affectScope" val="SINGLE" />
 		<set name="castRange" val="20" />
-		<set name="effectRange" val="400" />
+		<set name="effectRange" val="100" />
 		<set name="hitCancelTime" val="500" />
 		<set name="hitTime" val="500" />
 		<set name="isMagic" val="2" />

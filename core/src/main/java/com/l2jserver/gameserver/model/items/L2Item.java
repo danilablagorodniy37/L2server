@@ -19,6 +19,7 @@
 package com.l2jserver.gameserver.model.items;
 
 import static com.l2jserver.gameserver.config.Configuration.character;
+import static com.l2jserver.gameserver.config.Configuration.chronicle;
 import static com.l2jserver.gameserver.config.Configuration.general;
 import static com.l2jserver.gameserver.config.Configuration.olympiad;
 
@@ -544,7 +545,7 @@ public abstract class L2Item extends ListenersContainer implements IIdentifiable
 	 * @return {@code true} if the item can be elemented, {@code false} otherwise.
 	 */
 	public final boolean isElementable() {
-		return _elementable;
+		return _elementable && chronicle().enableAttributes();
 	}
 	
 	/**

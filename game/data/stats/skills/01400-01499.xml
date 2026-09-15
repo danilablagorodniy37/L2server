@@ -31,7 +31,7 @@
 		<set name="mpConsume1" val="#mpConsume1" />
 		<set name="mpConsume2" val="#mpConsume2" />
 		<set name="operateType" val="A1" />
-		<set name="reuseDelay" val="4000" />
+		<set name="reuseDelay" val="20000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="ENEMY" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
@@ -85,6 +85,7 @@
 		</enchant3Effects>
 	</skill>
 	<skill id="1401" levels="11" name="Major Heal" enchantGroup1="2" enchantGroup2="2">
+		<table name="#il_mpConsume2"> 60 64 65 67 69 72 74 77 78 80 80 </table>
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> 403 421 439 457 474 490 506 520 534 546 546 </table>
 		<table name="#healPower"> 690 722 753 783 812 840 867 892 915 936 946 </table>
@@ -107,9 +108,9 @@
 		<set name="itemConsumeId" val="3031" /> <!-- Spirit Ore -->
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume1" val="#mpConsume1" />
-		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="mpConsume2" val="#il_mpConsume2" />
 		<set name="operateType" val="A1" />
-		<set name="reuseDelay" val="1000" />
+		<set name="reuseDelay" val="6000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="TARGET" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
@@ -128,6 +129,7 @@
 		</enchant1Effects>
 	</skill>
 	<skill id="1402" levels="5" name="Major Group Heal" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2">
+		<table name="#il_mpConsume2"> 189 199 214 228 239 </table>
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> 421 457 490 520 546 </table>
 		<table name="#healPower"> 902 979 1050 1115 1170 </table>
@@ -153,9 +155,9 @@
 		<set name="itemConsumeId" val="3031" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume1" val="#mpConsume1" />
-		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="mpConsume2" val="#il_mpConsume2" />
 		<set name="operateType" val="A1" />
-		<set name="reuseDelay" val="3000" />
+		<set name="reuseDelay" val="10000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="SELF" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
@@ -203,9 +205,9 @@
 		<set name="isMagic" val="1" />
 		<set name="magicLvl" val="56" />
 		<set name="mpConsume1" val="36" />
-		<set name="mpConsume2" val="144" />
+		<set name="mpConsume2" val="180" />
 		<set name="operateType" val="A1" />
-		<set name="reuseDelay" val="150000" />
+		<set name="reuseDelay" val="450000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="OTHERS" />
 		<cond>
@@ -239,9 +241,9 @@
 		<set name="itemConsumeId" val="3031" />
 		<set name="magicLvl" val="66" />
 		<set name="mpConsume1" val="64" />
-		<set name="mpConsume2" val="256" />
+		<set name="mpConsume2" val="320" />
 		<set name="operateType" val="A1" />
-		<set name="reuseDelay" val="900000" />
+		<set name="reuseDelay" val="60000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="OTHERS" />
 		<cond>
@@ -280,16 +282,16 @@
 		<table name="#ench1npcId"> 14871 14872 14873 14874 14875 14876 14877 14878 14879 14880 14881 14882 14883 14884 14885 </table>
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="affectScope" val="SINGLE" />
-		<set name="hitTime" val="6000" />
+		<set name="hitTime" val="15000" />
 		<set name="icon" val="icon.skill1406" />
 		<set name="isMagic" val="1" />
 		<set name="itemConsumeCount" val="4" />
 		<set name="itemConsumeId" val="3031" /> <!-- Spirit Ore -->
 		<set name="magicLvl" val="79" />
-		<set name="mpConsume2" val="115" />
-		<set name="mpConsume1" val="29" />
+		<set name="mpConsume2" val="116" />
+		<set name="mpConsume1" val="28" />
 		<set name="operateType" val="A1" />
-		<set name="reuseDelay" val="5000" />
+		<set name="reuseDelay" val="20000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="SELF" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
@@ -318,16 +320,16 @@
 		<table name="#ench1npcId"> 14886 14887 14888 14889 14890 14891 14892 14893 14894 14895 14896 14897 14898 14899 14900 </table>
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<set name="affectScope" val="SINGLE" />
-		<set name="hitTime" val="6000" />
+		<set name="hitTime" val="15000" />
 		<set name="icon" val="icon.skill1407" />
 		<set name="isMagic" val="1" />
 		<set name="itemConsumeCount" val="4" />
 		<set name="itemConsumeId" val="3031" /> <!-- Spirit Ore -->
 		<set name="magicLvl" val="79" />
-		<set name="mpConsume2" val="115" />
-		<set name="mpConsume1" val="29" />
+		<set name="mpConsume2" val="116" />
+		<set name="mpConsume1" val="28" />
 		<set name="operateType" val="A1" />
-		<set name="reuseDelay" val="5000" />
+		<set name="reuseDelay" val="20000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="SELF" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
@@ -357,16 +359,16 @@
 		<table name="#ench1NpcId"> 14901 14902 14903 14904 14905 14906 14907 14908 14909 14910 14911 14912 14913 14914 14915 </table>
 		<set name="affectScope" val="SINGLE" />
 		<set name="hitCancelTime" val="500" />
-		<set name="hitTime" val="6000" />
+		<set name="hitTime" val="15000" />
 		<set name="icon" val="icon.skill1408" />
 		<set name="isMagic" val="1" />
 		<set name="itemConsumeCount" val="4" />
 		<set name="itemConsumeId" val="3031" />
 		<set name="magicLvl" val="79" />
-		<set name="mpConsume1" val="29" />
-		<set name="mpConsume2" val="115" />
+		<set name="mpConsume1" val="28" />
+		<set name="mpConsume2" val="116" />
 		<set name="operateType" val="A1" />
-		<set name="reuseDelay" val="5000" />
+		<set name="reuseDelay" val="20000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="SELF" />
 		<enchant1 name="magicLvl" val="#ench1MagicLvl" />
@@ -405,7 +407,7 @@
 		<set name="mpConsume1" val="12" />
 		<set name="mpConsume2" val="46" />
 		<set name="operateType" val="A1" />
-		<set name="reuseDelay" val="8000" />
+		<set name="reuseDelay" val="32000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="TARGET" />
 		<effects>
@@ -431,7 +433,7 @@
 		<set name="itemConsumeId" val="8874" /> <!-- Einhasad's Holy Water -->
 		<set name="magicLvl" val="79" />
 		<set name="mpConsume1" val="18" />
-		<set name="mpConsume2" val="69" />
+		<set name="mpConsume2" val="87" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="3600000" />
 		<set name="reuseDelayLock" val="true" />
@@ -452,16 +454,16 @@
 		<set name="affectScope" val="SINGLE" />
 		<set name="castRange" val="400" />
 		<set name="effectPoint" val="1" />
-		<set name="effectRange" val="900" />
+		<set name="effectRange" val="600" />
 		<set name="hitCancelTime" val="500" />
 		<set name="hitTime" val="4000" />
 		<set name="icon" val="icon.skill1411" />
 		<set name="isMagic" val="1" />
 		<set name="magicLvl" val="79" />
 		<set name="mpConsume1" val="15" />
-		<set name="mpConsume2" val="58" />
+		<set name="mpConsume2" val="73" />
 		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="150000" />
+		<set name="reuseDelay" val="120000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="TARGET" />
 		<cond msgId="113" addName="1">
@@ -512,10 +514,10 @@
 		<set name="itemConsumeCount" val="40" />
 		<set name="itemConsumeId" val="3031" />
 		<set name="magicLvl" val="79" />
-		<set name="mpConsume1" val="58" />
-		<set name="mpConsume2" val="229" />
+		<set name="mpConsume1" val="57" />
+		<set name="mpConsume2" val="230" />
 		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="300000" />
+		<set name="reuseDelay" val="1200000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="SELF" />
 		<enchant1 name="abnormalTime" val="#ench1AbnormalTime" />
@@ -597,7 +599,7 @@
 		<set name="mpConsume1" val="57" />
 		<set name="mpConsume2" val="227" />
 		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="300000" />
+		<set name="reuseDelay" val="1200000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="SELF" />
 		<enchant1 name="abnormalTime" val="#ench1AbnormalTime" />
@@ -623,10 +625,10 @@
 				<mul stat="mAtkSpd" val="1.2" />
 			</effect>
 			<effect name="Buff">
-				<mul stat="mAtk" val="1.2" />
+				<mul stat="mAtk" val="1.20" />
 			</effect>
 			<effect name="Buff">
-				<mul stat="mDef" val="1.2" />
+				<mul stat="mDef" val="1.20" />
 			</effect>
 			<effect name="MaxCp">
 				<param power="20" />
@@ -712,10 +714,10 @@
 		<set name="icon" val="icon.skill1415" />
 		<set name="isMagic" val="1" />
 		<set name="magicLvl" val="78" />
-		<set name="mpConsume1" val="57" />
-		<set name="mpConsume2" val="227" />
+		<set name="mpConsume1" val="56" />
+		<set name="mpConsume2" val="228" />
 		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="300000" />
+		<set name="reuseDelay" val="1200000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="SELF" />
 		<enchant1 name="abnormalTime" val="#ench1AbnormalTime" />
@@ -753,10 +755,10 @@
 		<set name="itemConsumeCount" val="20" />
 		<set name="itemConsumeId" val="3031" />
 		<set name="magicLvl" val="79" />
-		<set name="mpConsume1" val="57" />
-		<set name="mpConsume2" val="227" />
+		<set name="mpConsume1" val="56" />
+		<set name="mpConsume2" val="228" />
 		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="300000" />
+		<set name="reuseDelay" val="1200000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="SELF" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
@@ -779,6 +781,7 @@
 		</enchant1Effects>
 	</skill>
 	<skill id="1417" levels="5" name="Aura Flash" enchantGroup1="2" enchantGroup2="2">
+		<table name="#il_mpConsume2"> 54 58 62 65 69 </table>
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -440 -466 -489 -508 -524 </table>
 		<table name="#itemConsumeCount"> 2 2 3 3 4 </table>
@@ -802,9 +805,9 @@
 		<set name="itemConsumeId" val="3031" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume1" val="#mpConsume1" />
-		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="mpConsume2" val="#il_mpConsume2" />
 		<set name="operateType" val="A1" />
-		<set name="reuseDelay" val="4000" />
+		<set name="reuseDelay" val="12000" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="SELF" />
 		<enchant1 name="magicLvl" val="#enchMagicLvl" />
@@ -850,9 +853,9 @@
 		<set name="isMagic" val="1" />
 		<set name="magicLvl" val="64" />
 		<set name="mpConsume1" val="12" />
-		<set name="mpConsume2" val="48" />
+		<set name="mpConsume2" val="60" />
 		<set name="operateType" val="A2" />
-		<set name="reuseDelay" val="600000" />
+		<set name="reuseDelay" val="2400000" />
 		<set name="reuseDelayLock" val="true" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="TARGET" />
@@ -870,6 +873,7 @@
 		</effects>
 	</skill>
 	<skill id="1419" levels="1" name="Volcano">
+		<set name="mpConsume2" val="36" />
 		<set name="affectLimit" val="15-25" />
 		<set name="affectObject" val="NOT_FRIEND" />
 		<set name="affectRange" val="200" />
@@ -903,6 +907,7 @@
 		</channelingEffects>
 	</skill>
 	<skill id="1420" levels="1" name="Cyclone">
+		<set name="mpConsume2" val="36" />
 		<set name="affectLimit" val="15-25" />
 		<set name="affectObject" val="NOT_FRIEND" />
 		<set name="affectRange" val="200" />
@@ -936,6 +941,7 @@
 		</channelingEffects>
 	</skill>
 	<skill id="1421" levels="1" name="Raging Waves">
+		<set name="mpConsume2" val="36" />
 		<set name="affectLimit" val="15-25" />
 		<set name="affectObject" val="NOT_FRIEND" />
 		<set name="affectRange" val="200" />
@@ -1000,6 +1006,7 @@
 		</effects>
 	</skill>
 	<skill id="1423" levels="1" name="Gehenna">
+		<set name="mpConsume2" val="36" />
 		<set name="affectLimit" val="15-25" />
 		<set name="affectObject" val="NOT_FRIEND" />
 		<set name="affectRange" val="200" />
@@ -1044,8 +1051,8 @@
 		<set name="itemConsumeCount" val="1" />
 		<set name="itemConsumeId" val="8876" />
 		<set name="magicLvl" val="80" />
-		<set name="mpConsume1" val="14" />
-		<set name="mpConsume2" val="56" />
+		<set name="mpConsume1" val="70" />
+		<set name="mpConsume2" val="70" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="1800000" />
 		<set name="reuseDelayLock" val="true" />
@@ -1065,20 +1072,21 @@
 	</skill>
 	<skill id="1425" levels="1" name="Purification Field">
 		<!-- High Five Confirmed -->
+		<set name="castRange" val="900" />
 		<set name="affectObject" val="FRIEND" />
 		<set name="affectRange" val="1000" />
 		<set name="affectScope" val="PLEDGE" />
 		<set name="blockedInOlympiad" val="true" />
-		<set name="hitTime" val="3000" />
+		<set name="hitTime" val="5000" />
 		<set name="icon" val="icon.skill1425" />
 		<set name="isMagic" val="1" />
 		<set name="itemConsumeCount" val="1" />
 		<set name="itemConsumeId" val="8876" />
 		<set name="magicLvl" val="80" />
-		<set name="mpConsume1" val="14" />
-		<set name="mpConsume2" val="56" />
+		<set name="mpConsume1" val="70" />
+		<set name="mpConsume2" val="70" />
 		<set name="operateType" val="A1" />
-		<set name="reuseDelay" val="1200000" />
+		<set name="reuseDelay" val="1800000" />
 		<set name="reuseDelayLock" val="true" />
 		<set name="rideState" val="NONE;STRIDER;WYVERN;WOLF" />
 		<set name="targetType" val="SELF" />
@@ -1101,7 +1109,7 @@
 		<set name="itemConsumeId" val="8876" />
 		<set name="magicLvl" val="80" />
 		<set name="mpConsume1" val="15" />
-		<set name="mpConsume2" val="57" />
+		<set name="mpConsume2" val="72" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="3600000" />
 		<set name="reuseDelayLock" val="true" />
@@ -1129,8 +1137,8 @@
 		<set name="itemConsumeCount" val="1" />
 		<set name="itemConsumeId" val="8876" />
 		<set name="magicLvl" val="80" />
-		<set name="mpConsume1" val="15" />
-		<set name="mpConsume2" val="58" />
+		<set name="mpConsume1" val="36" />
+		<set name="mpConsume2" val="37" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="1800000" />
 		<set name="reuseDelayLock" val="true" />
@@ -1159,7 +1167,7 @@
 		<set name="itemConsumeId" val="8876" />
 		<set name="magicLvl" val="80" />
 		<set name="mpConsume1" val="15" />
-		<set name="mpConsume2" val="58" />
+		<set name="mpConsume2" val="73" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="3600000" />
 		<set name="reuseDelayLock" val="true" />
@@ -1184,7 +1192,7 @@
 		<set name="itemConsumeId" val="8615" />
 		<set name="magicLvl" val="78" />
 		<set name="mpConsume1" val="57" />
-		<set name="mpConsume2" val="227" />
+		<set name="mpConsume2" val="284" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="600000" />
 		<set name="reuseDelayLock" val="true" />
@@ -1203,6 +1211,7 @@
 		</effects>
 	</skill>
 	<skill id="1430" levels="5" name="Invocation">
+		<table name="#il_mpConsume2"> 27 28 30 33 34 </table>
 		<!-- High Five Confirmed -->
 		<table name="#magicLvl"> 56 60 64 68 72 </table>
 		<table name="#mpConsume1"> 6 6 6 7 7 </table>
@@ -1220,7 +1229,7 @@
 		<set name="isMagic" val="1" />
 		<set name="magicLvl" val="#magicLvl" />
 		<set name="mpConsume1" val="#mpConsume1" />
-		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="mpConsume2" val="#il_mpConsume2" />
 		<set name="operateType" val="A2" />
 		<set name="reuseDelay" val="900000" />
 		<set name="reuseDelayLock" val="true" />
@@ -1229,7 +1238,7 @@
 		<effects>
 			<effect name="Stun" />
 			<effect name="Debuff">
-				<mul stat="pDef" val="0.1" />
+				<mul stat="pDef" val="0.2" />
 			</effect>
 			<effect name="TickMp">
 				<param power="#tickMpPower" />

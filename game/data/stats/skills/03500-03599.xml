@@ -10,7 +10,7 @@
 				<param power="41" />
 			</effect>
 			<effect name="Buff">
-				<mul stat="pDef" val="1.022" /> <!-- P. Def. +2.2% -->
+				<mul stat="pDef" val="1.02" /> <!-- P. Def. +2.2% -->
 			</effect>
 		</effects>
 	</skill>
@@ -54,7 +54,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<mul stat="mAtk" val="1.1025" /> <!-- M. Atk. +10.25% -->
+				<mul stat="mAtk" val="1.10" /> <!-- M. Atk. +10.25% -->
 				<mul stat="regMp" val="0.95" /> <!-- MP Regeneration -5% -->
 			</effect>
 		</effects>
@@ -125,7 +125,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<mul stat="pDef" val="1.0526" /> <!-- P. Def. +5.26% -->
+				<mul stat="pDef" val="1.0524" /> <!-- P. Def. +5.26% -->
 				<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
 			</effect>
 		</effects>
@@ -165,7 +165,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<mul stat="pDef" val="1.0526" /> <!-- P. Def. +5.26% -->
+				<mul stat="pDef" val="1.0524" /> <!-- P. Def. +5.26% -->
 			</effect>
 		</effects>
 	</skill>
@@ -176,7 +176,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<mul stat="mDef" val="1.0526" /> <!-- M. Def. +5.26% -->
+				<mul stat="mDef" val="1.0524" /> <!-- M. Def. +5.26% -->
 			</effect>
 		</effects>
 	</skill>
@@ -201,7 +201,7 @@
 				<param power="170.62" />
 			</effect>
 			<effect name="Buff">
-				<mul stat="pDef" val="1.0526" /> <!-- P. Def. +5.26% -->
+				<mul stat="pDef" val="1.0524" /> <!-- P. Def. +5.26% -->
 			</effect>
 		</effects>
 	</skill>
@@ -215,7 +215,7 @@
 				<param power="294.49" />
 			</effect>
 			<effect name="Buff">
-				<mul stat="pDef" val="1.0526" /> <!-- P. Def. +5.246 -->
+				<mul stat="pDef" val="1.0524" /> <!-- P. Def. +5.246 -->
 			</effect>
 		</effects>
 	</skill>
@@ -260,7 +260,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<mul stat="mAtk" val="1.1025" /> <!-- M. Atk. +10.25% -->
+				<mul stat="mAtk" val="1.10" /> <!-- M. Atk. +10.25% -->
 				<mul stat="regMp" val="0.95" /> <!-- MP Regeneration -5% -->
 			</effect>
 		</effects>
@@ -272,7 +272,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<mul stat="pDef" val="1.0526" /> <!-- P. Def. +5.26% -->
+				<mul stat="pDef" val="1.0547" /> <!-- P. Def. +5.26% -->
 				<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
 			</effect>
 		</effects>
@@ -310,7 +310,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<mul stat="pDef" val="1.0526" /> <!-- P. Def. +5.26% -->
+				<mul stat="pDef" val="1.0524" /> <!-- P. Def. +5.26% -->
 				<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
 			</effect>
 		</effects>
@@ -341,7 +341,7 @@
 				<param power="206" />
 			</effect>
 			<effect name="Buff">
-				<mul stat="regMp" val="1.0524" /> <!-- MP Regeneration +5.24% -->
+				<mul stat="regMp" val="1.0526" /> <!-- MP Regeneration +5.24% -->
 			</effect>
 		</effects>
 	</skill>
@@ -447,7 +447,7 @@
 				<mul stat="pDef" val="1.08" /> <!-- P. Def. +8% -->
 				<mul stat="mAtkSpd" val="1.15" /> <!-- Casting Spd. +15% -->
 				<add stat="runSpd" val="7" /> <!-- Speed +7 -->
-				<sub stat="cancel" val="50" /> <!-- Small decrease in chance of spell interruption -->
+				<sub stat="cancel" val="18" /> <!-- Small decrease in chance of spell interruption -->
 			</effect>
 			<effect name="DefenceTrait">
 				<param PARALYZE="50" />
@@ -477,7 +477,7 @@
 		<effects>
 			<effect name="Buff">
 				<mul stat="pAtk" val="1.04" /> <!-- P. Atk. +4% -->
-				<add stat="accCombat" val="3.1" /> <!-- Accuracy +3.1 -->
+				<add stat="accCombat" val="3" /> <!-- Accuracy +3.1 -->
 			</effect>
 			<effect name="DefenceTrait">
 				<param SHOCK="50" />
@@ -624,7 +624,7 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<mul stat="rShld" val="1.0526" />
+				<mul stat="rShld" val="1.0525" />
 			</effect>
 		</effects>
 	</skill>
@@ -1218,9 +1218,9 @@
 			</effect>
 			<effect name="Buff">
 				<mul stat="sDef" val="1.33" />
-				<mul stat="pvpPhysDmg" val="1.07" />
-				<mul stat="pvpMagicalDmg" val="1.07" />
-				<mul stat="pvpPhysSkillsDmg" val="1.07" />
+				<mul stat="pvpPhysDmg" val="1.05" />
+				<mul stat="pvpMagicalDmg" val="1.05" />
+				<mul stat="pvpPhysSkillsDmg" val="1.05" />
 				<add stat="reflectDam" val="9" />
 			</effect>
 		</effects>
@@ -1268,9 +1268,9 @@
 			</effect>
 			<effect name="Buff">
 				<mul stat="rShld" val="1.39" />
-				<mul stat="pvpPhysDmg" val="1.07" />
-				<mul stat="pvpMagicalDmg" val="1.07" />
-				<mul stat="pvpPhysSkillsDmg" val="1.07" />
+				<mul stat="pvpPhysDmg" val="1.05" />
+				<mul stat="pvpMagicalDmg" val="1.05" />
+				<mul stat="pvpPhysSkillsDmg" val="1.05" />
 				<add stat="reflectDam" val="9" />
 			</effect>
 		</effects>
@@ -1307,9 +1307,9 @@
 			<effect name="Buff">
 				<add stat="critDmgAdd" val="504" />
 				<add stat="critRate" val="78.7" />
-				<mul stat="pvpPhysDmg" val="1.07" />
-				<mul stat="pvpMagicalDmg" val="1.07" />
-				<mul stat="pvpPhysSkillsDmg" val="1.07" />
+				<mul stat="pvpPhysDmg" val="1.05" />
+				<mul stat="pvpMagicalDmg" val="1.05" />
+				<mul stat="pvpPhysSkillsDmg" val="1.05" />
 				<add stat="reflectSkillPhysic" val="10" />
 				<add stat="reflectSkillMagic" val="10" />
 			</effect>
@@ -1332,9 +1332,9 @@
 			</effect>
 			<effect name="Buff">
 				<mul stat="pAtkSpd" val="1.07" />
-				<mul stat="pvpPhysDmg" val="1.07" />
-				<mul stat="pvpMagicalDmg" val="1.07" />
-				<mul stat="pvpPhysSkillsDmg" val="1.07" />
+				<mul stat="pvpPhysDmg" val="1.05" />
+				<mul stat="pvpMagicalDmg" val="1.05" />
+				<mul stat="pvpPhysSkillsDmg" val="1.05" />
 				<add stat="reflectSkillPhysic" val="10" />
 				<add stat="reflectSkillMagic" val="10" />
 			</effect>
@@ -1384,9 +1384,9 @@
 			</effect>
 			<effect name="Buff">
 				<add stat="critRate" val="78.7" />
-				<mul stat="pvpPhysDmg" val="1.07" />
-				<mul stat="pvpMagicalDmg" val="1.07" />
-				<mul stat="pvpPhysSkillsDmg" val="1.07" />
+				<mul stat="pvpPhysDmg" val="1.05" />
+				<mul stat="pvpMagicalDmg" val="1.05" />
+				<mul stat="pvpPhysSkillsDmg" val="1.05" />
 				<add stat="reflectSkillPhysic" val="10" />
 				<add stat="reflectSkillMagic" val="10" />
 			</effect>
@@ -1436,9 +1436,9 @@
 			</effect>
 			<effect name="Buff">
 				<add stat="rEvas" val="3.15" />
-				<mul stat="pvpPhysDmg" val="1.07" />
-				<mul stat="pvpMagicalDmg" val="1.07" />
-				<mul stat="pvpPhysSkillsDmg" val="1.07" />
+				<mul stat="pvpPhysDmg" val="1.05" />
+				<mul stat="pvpMagicalDmg" val="1.05" />
+				<mul stat="pvpPhysSkillsDmg" val="1.05" />
 				<add stat="reflectSkillPhysic" val="10" />
 				<add stat="reflectSkillMagic" val="10" />
 			</effect>
@@ -1488,9 +1488,9 @@
 				<mul stat="critRatePos" val="1.22">
 					<player behind="true" />
 				</mul>
-				<mul stat="pvpPhysDmg" val="1.1" />
-				<mul stat="pvpMagicalDmg" val="1.1" />
-				<mul stat="pvpPhysSkillsDmg" val="1.1" />
+				<mul stat="pvpPhysDmg" val="1.05" />
+				<mul stat="pvpMagicalDmg" val="1.05" />
+				<mul stat="pvpPhysSkillsDmg" val="1.05" />
 				<add stat="absorbDam" val="2" />
 			</effect>
 		</effects>
@@ -1499,7 +1499,7 @@
 		<!-- Confirmed CT2.5 -->
 		<!-- Infinity Stinger Skill -->
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="120" />
+		<set name="abnormalTime" val="30" />
 		<set name="abnormalType" val="SILENCE" />
 		<set name="abnormalVisualEffect" val="SILENCE" />
 		<set name="activateRate" val="5" />
@@ -1536,12 +1536,12 @@
 			<effect name="Buff">
 				<mul stat="pAtkSpd" val="1.07" />
 				<add stat="accCombat" val="4.89" />
-				<mul stat="pvpPhysDmg" val="1.07" />
-				<mul stat="pvpMagicalDmg" val="1.07" />
-				<mul stat="pvpPhysSkillsDmg" val="1.07" />
-				<add stat="reflectSkillPhysic" val="20" />
-				<add stat="reflectSkillMagic" val="20" />
-				<add stat="atkCountMax" val="4" />
+				<mul stat="pvpPhysDmg" val="1.05" />
+				<mul stat="pvpMagicalDmg" val="1.05" />
+				<mul stat="pvpPhysSkillsDmg" val="1.05" />
+				<add stat="reflectSkillPhysic" val="10" />
+				<add stat="reflectSkillMagic" val="10" />
+				<add stat="atkCountMax" val="5" />
 			</effect>
 		</effects>
 	</skill>
@@ -1575,9 +1575,9 @@
 				<param type="PER" />
 			</effect>
 			<effect name="Buff">
-				<mul stat="pvpPhysDmg" val="1.07" />
-				<mul stat="pvpMagicalDmg" val="1.07" />
-				<mul stat="pvpPhysSkillsDmg" val="1.07" />
+				<mul stat="pvpPhysDmg" val="1.05" />
+				<mul stat="pvpMagicalDmg" val="1.05" />
+				<mul stat="pvpPhysSkillsDmg" val="1.05" />
 			</effect>
 		</effects>
 	</skill>
@@ -1585,7 +1585,7 @@
 		<!-- Confirmed Ct2.5 -->
 		<!-- Infinity Bow/Shooter Skill -->
 		<set name="abnormalLvl" val="3" />
-		<set name="abnormalTime" val="120" />
+		<set name="abnormalTime" val="30" />
 		<set name="abnormalType" val="SPEED_DOWN" />
 		<set name="activateRate" val="7" />
 		<set name="affectScope" val="SINGLE" />
@@ -1600,7 +1600,7 @@
 		<set name="targetType" val="ENEMY_ONLY" />
 		<effects>
 			<effect name="Debuff">
-				<mul stat="runSpd" val="0.7" />
+				<mul stat="runSpd" val="0.5" />
 			</effect>
 		</effects>
 	</skill>
@@ -1621,9 +1621,9 @@
 			<effect name="Buff">
 				<add stat="mAtk" val="29.67" />
 				<add stat="mCritRate" val="1" />
-				<mul stat="pvpPhysDmg" val="1.07" />
-				<mul stat="pvpMagicalDmg" val="1.07" />
-				<mul stat="pvpPhysSkillsDmg" val="1.07" />
+				<mul stat="pvpPhysDmg" val="1.05" />
+				<mul stat="pvpMagicalDmg" val="1.05" />
+				<mul stat="pvpPhysSkillsDmg" val="1.05" />
 				<mul stat="magicalMpConsumeRate" val="0.96" />
 				<sub stat="cancel" val="106" />
 			</effect>
@@ -1667,13 +1667,13 @@
 				<add stat="regMp" val="0.51" />
 			</effect>
 			<effect name="Buff">
-				<mul stat="pvpMagicalDmg" val="1.2" />
+				<mul stat="pvpMagicalDmg" val="1.05" />
 			</effect>
 			<effect name="Buff">
-				<mul stat="pvpPhysDmg" val="1.2" />
+				<mul stat="pvpPhysDmg" val="1.05" />
 			</effect>
 			<effect name="Buff">
-				<mul stat="pvpPhysSkillsDmg" val="1.2" />
+				<mul stat="pvpPhysSkillsDmg" val="1.05" />
 			</effect>
 		</effects>
 	</skill>

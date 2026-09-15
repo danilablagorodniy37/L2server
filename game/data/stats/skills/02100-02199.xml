@@ -727,7 +727,7 @@
 	<skill id="2139" levels="1" name="Special Tree Recovery Bonus">
 		<!-- High Five Confirmed -->
 		<set name="abnormalLvl" val="99" />
-		<set name="abnormalTime" val="45" />
+		<set name="abnormalTime" val="10" />
 		<set name="abnormalType" val="HP_REGEN_UP" />
 		<set name="affectObject" val="NOT_FRIEND" />
 		<set name="affectRange" val="200" />
@@ -963,6 +963,7 @@
 	</skill>
 	<skill id="2166" levels="2" name="CP Gauge Potion">
 		<table name="#amount"> 50 200 </table>
+		<set name="reuseDelay" val="50" />
 		<set name="isMagic" val="2" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
@@ -1353,7 +1354,7 @@
 		<set name="affectScope" val="SINGLE" />
 		<set name="castRange" val="40" />
 		<set name="effectPoint" val="-150" />
-		<set name="effectRange" val="200" />
+		<set name="effectRange" val="400" />
 		<set name="hitTime" val="1000" />
 		<set name="isMagic" val="2" />
 		<set name="itemConsumeCount" val="1" />
@@ -1369,7 +1370,7 @@
 		<set name="affectScope" val="SINGLE" />
 		<set name="castRange" val="40" />
 		<set name="effectPoint" val="-150" />
-		<set name="effectRange" val="200" />
+		<set name="effectRange" val="400" />
 		<set name="hitTime" val="1000" />
 		<set name="isMagic" val="2" />
 		<set name="itemConsumeCount" val="1" />

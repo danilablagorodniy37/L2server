@@ -62,39 +62,64 @@
 				<ignoreNpcId>20287</ignoreNpcId> <!-- Cave Maiden -->
 			</clanList>
 		</ai>
+		<collision>
+			<radius normal="14" />
+			<height normal="40" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
 					<item id="57" min="765" max="1528" chance="100" /> <!-- Adena -->
 				</group>
-				<group chance="0.694599986076355">
-					<item id="2397" min="1" max="1" chance="0.1646" /> <!-- Tunic of Zubei -->
-					<item id="4069" min="1" max="1" chance="30.262" /> <!-- Tunic of Zubei Fabric -->
-					<item id="2402" min="1" max="1" chance="0.2638" /> <!-- Stockings of Zubei -->
-					<item id="4070" min="1" max="1" chance="45.9482" /> <!-- Stockings of Zubei Fabric -->
-					<item id="2406" min="1" max="1" chance="0.1126" /> <!-- Avadon Robe -->
-					<item id="4071" min="1" max="1" chance="23.2488" /> <!-- Avadon Robe Fabric -->
+				<group chance="0.6947">
+					<item id="4071" min="1" max="1" chance="23.2459" /> <!-- Avadon Robe Fabric -->
+					<item id="4070" min="1" max="1" chance="45.9444" /> <!-- Stockings of Zubei Fabric -->
+					<item id="4069" min="1" max="1" chance="30.2552" /> <!-- Tunic of Zubei Fabric -->
+					<item id="2406" min="1" max="1" chance="0.1137" /> <!-- Avadon Robe -->
+					<item id="2402" min="1" max="1" chance="0.2701" /> <!-- Stockings of Zubei -->
+					<item id="2397" min="1" max="1" chance="0.1707" /> <!-- Tunic of Zubei -->
 				</group>
-				<group chance="28.691200256347656">
-					<item id="1864" min="1" max="1" chance="62.1614" /> <!-- Stem -->
-					<item id="1866" min="1" max="1" chance="20.7205" /> <!-- Suede -->
-					<item id="1878" min="1" max="1" chance="12.4323" /> <!-- Braided Hemp -->
-					<item id="1885" min="1" max="1" chance="2.5901" /> <!-- High-Grade Suede -->
-					<item id="1889" min="1" max="1" chance="2.072" /> <!-- Compound Braid -->
-					<item id="4197" min="1" max="1" chance="0.0237" /> <!-- Recipe: Demon's Dagger (100%) -->
+				<group chance="48.6915">
+					<item id="1889" min="1" max="1" chance="1.2209" /> <!-- Compound Braid -->
+					<item id="1885" min="1" max="1" chance="1.5263" /> <!-- High-Grade Suede -->
+					<item id="1878" min="1" max="1" chance="7.3256" /> <!-- Braided Hemp -->
+					<item id="1866" min="1" max="1" chance="12.2095" /> <!-- Suede -->
+					<item id="1864" min="1" max="1" chance="36.6284" /> <!-- Stem -->
+					<item id="1419" min="1" max="1" chance="41.0755" /> <!-- Blood Mark -->
+					<item id="4197" min="1" max="1" chance="0.0138" /> <!-- Recipe: Demon's Dagger (100%) -->
 				</group>
-				<group chance="20">
-					<item id="1419" min="1" max="1" chance="100" /> <!-- Blood Mark -->
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
 				</group>
 			</death>
 			<corpse>
 				<item id="1806" min="1" max="1" chance="1.0868" /> <!-- Recipe: Soulshot (B-Grade) -->
 			</corpse>
 		</dropLists>
-		<collision>
-			<radius normal="14" />
-			<height normal="40" />
-		</collision>
 	</npc>
 	<npc id="18002" level="60" type="L2Monster" name="Blood Queen">
 		<!-- Confirmed CT2.5 -->
@@ -162,6 +187,37 @@
 			<radius normal="14" />
 			<height normal="40" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18003" level="1" type="L2Monster" name="Bearded Keltir">
 		<!-- Confirmed CT2.5 -->
@@ -200,15 +256,64 @@
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
 		<ai type="BALANCED" aggroRange="1000" clanHelpRange="300" isAggressive="false" />
-		<dropLists>
-			<corpse>
-				<item id="1871" min="1" max="1" chance="0.9797" /> <!-- Charcoal -->
-			</corpse>
-		</dropLists>
 		<collision>
 			<radius normal="9.5" />
 			<height normal="10" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="8" max="12" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="100">
+					<item id="57" min="5" max="7" chance="100" /> <!-- Adena -->
+					<item id="112" min="1" max="1" chance="2.3992" /> <!-- Apprentice's Earring -->
+					<item id="1871" min="1" max="1" chance="0.4898" /> <!-- Charcoal -->
+					<item id="1868" min="1" max="1" chance="0.9797" /> <!-- Thread -->
+					<item id="1095" min="1" max="1" chance="1.045" /> <!-- Spellbook: Attack Aura -->
+				</group>
+				<group chance="3.2603">
+					<item id="426" min="1" max="1" chance="37.4045" /> <!-- Tunic -->
+					<item id="462" min="1" max="1" chance="62.5955" /> <!-- Stockings -->
+				</group>
+				<group chance="3.6113">
+					<item id="17" min="10" max="30" chance="60.1974" /> <!-- Wooden Arrow -->
+					<item id="1786" min="1" max="1" chance="8.4678" /> <!-- Recipe: Broad Sword -->
+					<item id="1868" min="1" max="1" chance="25.4062" /> <!-- Thread -->
+					<item id="1873" min="1" max="1" chance="5.9286" /> <!-- Silver Nugget -->
+				</group>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1871" min="1" max="1" chance="0.9797" /> <!-- Charcoal -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18004" level="49" type="L2Monster" name="Susceptor Prime">
 		<!-- Confirmed CT2.5 -->
@@ -342,6 +447,37 @@
 			<radius normal="15" grown="25" />
 			<height normal="45" grown="52" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18007" level="69" type="L2Monster" name="Limal Karinness">
 		<!-- Confirmed CT2.5 -->
@@ -395,6 +531,61 @@
 			<radius normal="14" />
 			<height normal="40" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="3680" max="7472" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="1.2117">
+					<item id="5305" min="1" max="1" chance="0.6848" /> <!-- Sealed Tallum Stockings -->
+					<item id="5489" min="1" max="1" chance="47.9822" /> <!-- Sealed Tallum Stockings Fabric -->
+					<item id="5486" min="1" max="1" chance="21.21" /> <!-- Sealed Dark Crystal Robe Fabric -->
+					<item id="5485" min="1" max="1" chance="30.123" /> <!-- Sealed Tallum Tunic Texture -->
+				</group>
+				<group chance="9.7791">
+					<item id="8730" min="1" max="1" chance="0.2147" /> <!-- Life Stone - Level 67 -->
+					<item id="4988" min="1" max="1" chance="1.8232" /> <!-- Recipe: Blue Wolf Stockings (60%) -->
+					<item id="4401" min="1" max="1" chance="0.5512" /> <!-- Green Dimensional Stone -->
+					<item id="4043" min="1" max="1" chance="8.5927" /> <!-- Asofe -->
+					<item id="4042" min="1" max="1" chance="5.0372" /> <!-- Enria -->
+					<item id="4040" min="1" max="1" chance="4.8235" /> <!-- Mold Lubricant -->
+					<item id="1895" min="1" max="1" chance="78.6611" /> <!-- Metallic Fiber -->
+					<item id="8740" min="1" max="1" chance="0.2964" /> <!-- Mid-Grade Life Stone - Level 67 -->
+				</group>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+			<corpse>
+				<item id="1807" min="1" max="1" chance="1.2195" /> <!-- Recipe: Soulshot (A-Grade) -->
+				<item id="1895" min="1" max="5" chance="87" /> <!-- Metallic Fiber -->
+				<item id="5479" min="1" max="1" chance="5.2632" /> <!-- Sealed Tallum Leather Armor Pattern -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18008" level="70" type="L2Monster" name="Karik">
 		<!-- Confirmed CT2.5 -->
@@ -447,6 +638,62 @@
 			<radius normal="25" grown="30" />
 			<height normal="90" grown="109" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="4318" max="8784" chance="100" /> <!-- Adena -->
+				</group>
+				<group chance="2.7759">
+					<item id="5292" min="1" max="1" chance="0.4607" /> <!-- Sealed Dark Crystal Shield -->
+					<item id="5289" min="1" max="1" chance="0.1545" /> <!-- Sealed Dark Crystal Helmet -->
+					<item id="5526" min="1" max="1" chance="30.7901" /> <!-- Sealed Tallum Helm Design -->
+					<item id="5525" min="1" max="1" chance="31.0569" /> <!-- Sealed Dark Crystal Helmet Design -->
+					<item id="5494" min="1" max="1" chance="37.5378" /> <!-- Sealed Dark Crystal Shield Fragment -->
+				</group>
+				<group chance="37.6963">
+					<item id="1876" min="1" max="1" chance="16.5798" /> <!-- Mithril Ore -->
+					<item id="8730" min="1" max="1" chance="0.0679" /> <!-- Life Stone - Level 67 -->
+					<item id="1868" min="3" max="9" chance="26.5278" /> <!-- Thread -->
+					<item id="1873" min="1" max="1" chance="33.1602" /> <!-- Silver Nugget -->
+					<item id="5006" min="1" max="1" chance="0.0567" /> <!-- Recipe: Bellion Cestus (60%) -->
+					<item id="4042" min="1" max="1" chance="1.4988" /> <!-- Enria -->
+					<item id="1895" min="1" max="1" chance="22.0976" /> <!-- Metallic Fiber -->
+					<item id="8740" min="1" max="1" chance="0.0112" /> <!-- Mid-Grade Life Stone - Level 67 -->
+				</group>
+				<group chance="42">
+					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
+					<item id="8601" min="1" max="1" chance="38" /> <!-- Greater Herb of Life -->
+					<item id="8602" min="1" max="1" chance="7" /> <!-- Superior Herb of Life -->
+				</group>
+				<group chance="10">
+					<item id="8607" min="1" max="1" chance="50" /> <!-- Herb of Magic -->
+					<item id="8609" min="1" max="1" chance="50" /> <!-- Herb of Casting Spd. -->
+				</group>
+				<group chance="11">
+					<item id="8603" min="1" max="1" chance="55" /> <!-- Herb of Mana -->
+					<item id="8604" min="1" max="1" chance="38" /> <!-- Greater Herb of Mana -->
+					<item id="8605" min="1" max="1" chance="7" /> <!-- Superior Herb of Mana -->
+				</group>
+				<group chance="25">
+					<item id="8606" min="1" max="1" chance="34" /> <!-- Herb of Power -->
+					<item id="8608" min="1" max="1" chance="33" /> <!-- Herb of Alacrity -->
+					<item id="8610" min="1" max="1" chance="33" /> <!-- Herb of Critical Attack - Probability -->
+				</group>
+				<group chance="10">
+					<item id="8611" min="1" max="1" chance="100" /> <!-- Herb of Speed -->
+				</group>
+				<group chance="1">
+					<item id="8612" min="1" max="1" chance="33" /> <!-- Herb of the Warrior -->
+					<item id="8613" min="1" max="1" chance="33" /> <!-- Herb of the Mystic -->
+					<item id="8614" min="1" max="1" chance="34" /> <!-- Herb of Recovery -->
+				</group>
+			</death>
+			<corpse>
+				<item id="3035" min="1" max="1" chance="1.4286" /> <!-- Recipe: Spiritshot A -->
+				<item id="4077" min="1" max="2" chance="50" /> <!-- Doom Shield Fragment -->
+				<item id="4078" min="1" max="1" chance="16.6667" /> <!-- Blue Wolf Breastplate Part -->
+			</corpse>
+		</dropLists>
 	</npc>
 	<npc id="18009" level="34" type="L2FestivalMonster" name="Offering of the Branded, Elder">
 		<!-- Confirmed CT2.5 -->
@@ -552,6 +799,13 @@
 			<radius normal="10" />
 			<height normal="21" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="173" max="347" chance="100" /> <!-- Adena -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18011" level="28" type="L2FestivalMonster" name="Offering of the Branded, Archer">
 		<!-- Confirmed CT2.5 -->
@@ -643,6 +897,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="10" grown="12" />
+			<height normal="23" grown="27.6" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -650,10 +908,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" grown="12" />
-			<height normal="23" grown="27.6" />
-		</collision>
 	</npc>
 	<npc id="18013" level="29" type="L2FestivalMonster" name="Offering of the Branded, Follower">
 		<!-- Confirmed CT2.5 -->
@@ -703,6 +957,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai type="BALANCED" aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="9" />
+			<height normal="22" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -710,10 +968,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="9" />
-			<height normal="22" />
-		</collision>
 	</npc>
 	<npc id="18014" level="37" type="L2FestivalMonster" name="Offering of the Branded, Berserker">
 		<!-- Confirmed CT2.5 -->
@@ -761,6 +1015,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="23" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -768,10 +1026,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" />
-			<height normal="23" />
-		</collision>
 	</npc>
 	<npc id="18015" level="34" type="L2FestivalMonster" name="Offering of the Branded, Zealot">
 		<!-- Confirmed CT2.5 -->
@@ -819,6 +1073,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="12" />
+			<height normal="26.4" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -826,10 +1084,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="12" />
-			<height normal="26.4" />
-		</collision>
 	</npc>
 	<npc id="18016" level="32" type="L2FestivalMonster" name="Offering of the Branded, Marksman">
 		<!-- Confirmed CT2.5 -->
@@ -918,6 +1172,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="9" />
+			<height normal="21.5" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -925,10 +1183,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="9" />
-			<height normal="21.5" />
-		</collision>
 	</npc>
 	<npc id="18018" level="39" type="L2FestivalMonster" name="Offering of the Branded, Saint">
 		<!-- Confirmed CT2.5 -->
@@ -975,6 +1229,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="25.3" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -982,10 +1240,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" />
-			<height normal="25.3" />
-		</collision>
 	</npc>
 	<npc id="18019" level="45" type="L2FestivalMonster" name="Apostate's Offering, Elder">
 		<!-- Confirmed CT2.5 -->
@@ -1086,6 +1340,13 @@
 			<radius normal="12" grown="14" />
 			<height normal="22" grown="26.4" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="305" max="611" chance="100" /> <!-- Adena -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18021" level="39" type="L2FestivalMonster" name="Apostate's Offering, Archer">
 		<!-- Confirmed CT2.5 -->
@@ -1177,6 +1438,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="20" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -1184,10 +1449,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" />
-			<height normal="20" />
-		</collision>
 	</npc>
 	<npc id="18023" level="40" type="L2FestivalMonster" name="Apostate's Offering, Follower">
 		<!-- Confirmed CT2.5 -->
@@ -1237,6 +1498,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai type="BALANCED" aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="11" />
+			<height normal="16" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -1244,10 +1509,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="11" />
-			<height normal="16" />
-		</collision>
 	</npc>
 	<npc id="18024" level="48" type="L2FestivalMonster" name="Apostate's Offering, Berserker">
 		<!-- Confirmed CT2.5 -->
@@ -1294,6 +1555,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="11" />
+			<height normal="32" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -1301,10 +1566,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="11" />
-			<height normal="32" />
-		</collision>
 	</npc>
 	<npc id="18025" level="45" type="L2FestivalMonster" name="Apostate's Offering, Zealot">
 		<!-- Confirmed CT2.5 -->
@@ -1353,6 +1614,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="25.3" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -1360,10 +1625,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" />
-			<height normal="25.3" />
-		</collision>
 	</npc>
 	<npc id="18026" level="43" type="L2FestivalMonster" name="Apostate's Offering, Marksman">
 		<!-- Confirmed CT2.5 -->
@@ -1452,6 +1713,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="12" grown="14.5" />
+			<height normal="24" grown="28.8" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -1459,10 +1724,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="12" grown="14.5" />
-			<height normal="24" grown="28.8" />
-		</collision>
 	</npc>
 	<npc id="18028" level="50" type="L2FestivalMonster" name="Apostate's Offering, Saint">
 		<!-- Confirmed CT2.5 -->
@@ -1509,6 +1770,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="14" />
+			<height normal="28.8" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -1516,10 +1781,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="14" />
-			<height normal="28.8" />
-		</collision>
 	</npc>
 	<npc id="18029" level="56" type="L2FestivalMonster" name="Witch's Offering, Elder">
 		<!-- Confirmed CT2.5 -->
@@ -1620,6 +1881,13 @@
 			<radius normal="9" />
 			<height normal="21.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="486" max="972" chance="100" /> <!-- Adena -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18031" level="50" type="L2FestivalMonster" name="Witch's Offering, Archer">
 		<!-- Confirmed CT2.5 -->
@@ -1711,6 +1979,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="20" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -1718,10 +1990,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" />
-			<height normal="20" />
-		</collision>
 	</npc>
 	<npc id="18033" level="51" type="L2FestivalMonster" name="Witch's Offering, Follower">
 		<!-- Confirmed CT2.5 -->
@@ -1771,6 +2039,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai type="BALANCED" aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="11" />
+			<height normal="16" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -1778,10 +2050,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="11" />
-			<height normal="16" />
-		</collision>
 	</npc>
 	<npc id="18034" level="59" type="L2FestivalMonster" name="Witch's Offering, Berserker">
 		<!-- Confirmed CT2.5 -->
@@ -1829,6 +2097,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="12" />
+			<height normal="30" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -1836,10 +2108,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="12" />
-			<height normal="30" />
-		</collision>
 	</npc>
 	<npc id="18035" level="56" type="L2FestivalMonster" name="Witch's Offering, Zealot">
 		<!-- Confirmed CT2.5 -->
@@ -1888,6 +2156,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="25.3" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -1895,10 +2167,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" />
-			<height normal="25.3" />
-		</collision>
 	</npc>
 	<npc id="18036" level="54" type="L2FestivalMonster" name="Witch's Offering, Marksman">
 		<!-- Confirmed CT2.5 -->
@@ -1987,6 +2255,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="12" grown="14.5" />
+			<height normal="24" grown="28.8" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -1994,10 +2266,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="12" grown="14.5" />
-			<height normal="24" grown="28.8" />
-		</collision>
 	</npc>
 	<npc id="18038" level="61" type="L2FestivalMonster" name="Witch's Offering, Saint">
 		<!-- Confirmed CT2.5 -->
@@ -2044,6 +2312,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="14" />
+			<height normal="28.8" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -2051,10 +2323,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="14" />
-			<height normal="28.8" />
-		</collision>
 	</npc>
 	<npc id="18039" level="67" type="L2FestivalMonster" name="Dark Omen Offering Elder">
 		<!-- Confirmed CT2.5 -->
@@ -2155,6 +2423,13 @@
 			<radius normal="9" />
 			<height normal="21.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="721" max="1443" chance="100" /> <!-- Adena -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18041" level="61" type="L2FestivalMonster" name="Dark Omen Offering Archer">
 		<!-- Confirmed CT2.5 -->
@@ -2246,6 +2521,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="20" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -2253,10 +2532,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" />
-			<height normal="20" />
-		</collision>
 	</npc>
 	<npc id="18043" level="62" type="L2FestivalMonster" name="Dark Omen Offering Follower">
 		<!-- Confirmed CT2.5 -->
@@ -2306,6 +2581,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai type="BALANCED" aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="11" />
+			<height normal="16" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -2313,10 +2592,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="11" />
-			<height normal="16" />
-		</collision>
 	</npc>
 	<npc id="18044" level="70" type="L2FestivalMonster" name="Dark Omen Offering Berserker">
 		<!-- Confirmed CT2.5 -->
@@ -2364,6 +2639,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="12" />
+			<height normal="30" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -2371,10 +2650,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="12" />
-			<height normal="30" />
-		</collision>
 	</npc>
 	<npc id="18045" level="67" type="L2FestivalMonster" name="Dark Omen Offering Zealot">
 		<!-- Confirmed CT2.5 -->
@@ -2423,6 +2698,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai type="BALANCED" aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="25.3" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -2430,10 +2709,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" />
-			<height normal="25.3" />
-		</collision>
 	</npc>
 	<npc id="18046" level="65" type="L2FestivalMonster" name="Dark Omen Offering Marksman">
 		<!-- Confirmed CT2.5 -->
@@ -2522,6 +2797,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="12" grown="14.5" />
+			<height normal="24" grown="28.8" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -2529,10 +2808,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="12" grown="14.5" />
-			<height normal="24" grown="28.8" />
-		</collision>
 	</npc>
 	<npc id="18048" level="72" type="L2FestivalMonster" name="Dark Omen Offering Saint">
 		<!-- Confirmed CT2.5 -->
@@ -2579,6 +2854,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="14" />
+			<height normal="28.8" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -2586,10 +2865,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="14" />
-			<height normal="28.8" />
-		</collision>
 	</npc>
 	<npc id="18049" level="78" type="L2FestivalMonster" name="Offering of Forbidden Path, Elder">
 		<!-- Confirmed CT2.5 -->
@@ -2690,6 +2965,13 @@
 			<radius normal="10" />
 			<height normal="20" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="902" max="1804" chance="100" /> <!-- Adena -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18051" level="78" type="L2FestivalMonster" name="Offering of Forbidden Path, Archer">
 		<!-- Confirmed CT2.5 -->
@@ -2781,6 +3063,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="12" grown="14" />
+			<height normal="24" grown="28.8" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -2788,10 +3074,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="12" grown="14" />
-			<height normal="24" grown="28.8" />
-		</collision>
 	</npc>
 	<npc id="18053" level="78" type="L2FestivalMonster" name="Offering of Forbidden Path, Follower">
 		<!-- Confirmed CT2.5 -->
@@ -2841,6 +3123,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai type="BALANCED" aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="23" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -2848,10 +3134,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" />
-			<height normal="23" />
-		</collision>
 	</npc>
 	<npc id="18054" level="78" type="L2FestivalMonster" name="Offering of Forbidden Path, Berserker">
 		<!-- Confirmed CT2.5 -->
@@ -2899,6 +3181,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="13" />
+			<height normal="35" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -2906,10 +3192,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="13" />
-			<height normal="35" />
-		</collision>
 	</npc>
 	<npc id="18055" level="78" type="L2FestivalMonster" name="Offering of Forbidden Path, Zealot">
 		<!-- Confirmed CT2.5 -->
@@ -2958,6 +3240,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai type="BALANCED" aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="14" />
+			<height normal="34.8" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -2965,10 +3251,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="14" />
-			<height normal="34.8" />
-		</collision>
 	</npc>
 	<npc id="18056" level="76" type="L2FestivalMonster" name="Offering of Forbidden Path, Marksman">
 		<!-- Confirmed CT2.5 -->
@@ -3057,6 +3339,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="12" />
+			<height normal="24" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -3064,10 +3350,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="12" />
-			<height normal="24" />
-		</collision>
 	</npc>
 	<npc id="18058" level="78" type="L2FestivalMonster" name="Offering of Forbidden Path, Saint">
 		<!-- Confirmed CT2.5 -->
@@ -3114,6 +3396,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="14" />
+			<height normal="28.8" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -3121,10 +3407,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="14" />
-			<height normal="28.8" />
-		</collision>
 	</npc>
 	<npc id="18059" level="34" type="L2FestivalMonster" name="Offering of the Branded, Elder">
 		<!-- Confirmed CT2.5 -->
@@ -3225,6 +3507,13 @@
 			<radius normal="10" />
 			<height normal="21" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="173" max="347" chance="100" /> <!-- Adena -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18061" level="28" type="L2FestivalMonster" name="Offering of the Branded, Archer">
 		<!-- Confirmed CT2.5 -->
@@ -3316,6 +3605,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="10" grown="12" />
+			<height normal="23" grown="27.6" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -3323,10 +3616,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" grown="12" />
-			<height normal="23" grown="27.6" />
-		</collision>
 	</npc>
 	<npc id="18063" level="29" type="L2FestivalMonster" name="Offering of the Branded, Follower">
 		<!-- Confirmed CT2.5 -->
@@ -3376,6 +3665,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai type="BALANCED" aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="9" />
+			<height normal="22" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -3383,10 +3676,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="9" />
-			<height normal="22" />
-		</collision>
 	</npc>
 	<npc id="18064" level="37" type="L2FestivalMonster" name="Offering of the Branded, Berserker">
 		<!-- Confirmed CT2.5 -->
@@ -3434,6 +3723,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="23" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -3441,10 +3734,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" />
-			<height normal="23" />
-		</collision>
 	</npc>
 	<npc id="18065" level="34" type="L2FestivalMonster" name="Offering of the Branded, Zealot">
 		<!-- Confirmed CT2.5 -->
@@ -3493,6 +3782,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="12" />
+			<height normal="26.4" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -3500,10 +3793,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="12" />
-			<height normal="26.4" />
-		</collision>
 	</npc>
 	<npc id="18066" level="32" type="L2FestivalMonster" name="Offering of the Branded, Marksman">
 		<!-- Confirmed CT2.5 -->
@@ -3592,6 +3881,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="9" />
+			<height normal="21.5" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -3599,10 +3892,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="9" />
-			<height normal="21.5" />
-		</collision>
 	</npc>
 	<npc id="18068" level="39" type="L2FestivalMonster" name="Offering of the Branded, Saint">
 		<!-- Confirmed CT2.5 -->
@@ -3649,6 +3938,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="25.3" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -3656,10 +3949,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" />
-			<height normal="25.3" />
-		</collision>
 	</npc>
 	<npc id="18069" level="45" type="L2FestivalMonster" name="Apostate's Offering, Elder">
 		<!-- Confirmed CT2.5 -->
@@ -3760,6 +4049,13 @@
 			<radius normal="12" grown="14" />
 			<height normal="22" grown="26.4" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="305" max="611" chance="100" /> <!-- Adena -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18071" level="39" type="L2FestivalMonster" name="Apostate's Offering, Archer">
 		<!-- Confirmed CT2.5 -->
@@ -3851,6 +4147,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="20" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -3858,10 +4158,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" />
-			<height normal="20" />
-		</collision>
 	</npc>
 	<npc id="18073" level="40" type="L2FestivalMonster" name="Apostate's Offering, Follower">
 		<!-- Confirmed CT2.5 -->
@@ -3911,6 +4207,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai type="BALANCED" aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="11" />
+			<height normal="16" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -3918,10 +4218,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="11" />
-			<height normal="16" />
-		</collision>
 	</npc>
 	<npc id="18074" level="48" type="L2FestivalMonster" name="Apostate's Offering, Berserker">
 		<!-- Confirmed CT2.5 -->
@@ -3969,6 +4265,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="11" />
+			<height normal="32" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -3976,10 +4276,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="11" />
-			<height normal="32" />
-		</collision>
 	</npc>
 	<npc id="18075" level="45" type="L2FestivalMonster" name="Apostate's Offering, Zealot">
 		<!-- Confirmed CT2.5 -->
@@ -4028,6 +4324,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="25.3" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -4035,10 +4335,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" />
-			<height normal="25.3" />
-		</collision>
 	</npc>
 	<npc id="18076" level="43" type="L2FestivalMonster" name="Apostate's Offering, Marksman">
 		<!-- Confirmed CT2.5 -->
@@ -4127,6 +4423,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="12" grown="14.5" />
+			<height normal="24" grown="28.8" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -4134,10 +4434,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="12" grown="14.5" />
-			<height normal="24" grown="28.8" />
-		</collision>
 	</npc>
 	<npc id="18078" level="50" type="L2FestivalMonster" name="Apostate's Offering, Saint">
 		<!-- Confirmed CT2.5 -->
@@ -4184,6 +4480,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="14" />
+			<height normal="28.8" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -4191,10 +4491,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="14" />
-			<height normal="28.8" />
-		</collision>
 	</npc>
 	<npc id="18079" level="56" type="L2FestivalMonster" name="Witch's Offering, Elder">
 		<!-- Confirmed CT2.5 -->
@@ -4295,6 +4591,13 @@
 			<radius normal="9" />
 			<height normal="21.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="486" max="972" chance="100" /> <!-- Adena -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18081" level="50" type="L2FestivalMonster" name="Witch's Offering, Archer">
 		<!-- Confirmed CT2.5 -->
@@ -4386,6 +4689,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="20" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -4393,10 +4700,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" />
-			<height normal="20" />
-		</collision>
 	</npc>
 	<npc id="18083" level="51" type="L2FestivalMonster" name="Witch's Offering, Follower">
 		<!-- Confirmed CT2.5 -->
@@ -4446,6 +4749,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai type="BALANCED" aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="11" />
+			<height normal="16" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -4453,10 +4760,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="11" />
-			<height normal="16" />
-		</collision>
 	</npc>
 	<npc id="18084" level="59" type="L2FestivalMonster" name="Witch's Offering, Berserker">
 		<!-- Confirmed CT2.5 -->
@@ -4504,6 +4807,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="12" />
+			<height normal="30" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -4511,10 +4818,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="12" />
-			<height normal="30" />
-		</collision>
 	</npc>
 	<npc id="18085" level="56" type="L2FestivalMonster" name="Witch's Offering, Zealot">
 		<!-- Confirmed CT2.5 -->
@@ -4563,6 +4866,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="25.3" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -4570,10 +4877,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" />
-			<height normal="25.3" />
-		</collision>
 	</npc>
 	<npc id="18086" level="54" type="L2FestivalMonster" name="Witch's Offering, Marksman">
 		<!-- Confirmed CT2.5 -->
@@ -4662,6 +4965,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="12" grown="14.5" />
+			<height normal="24" grown="28.8" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -4669,10 +4976,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="12" grown="14.5" />
-			<height normal="24" grown="28.8" />
-		</collision>
 	</npc>
 	<npc id="18088" level="61" type="L2FestivalMonster" name="Witch's Offering, Saint">
 		<!-- Confirmed CT2.5 -->
@@ -4719,6 +5022,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="14" />
+			<height normal="28.8" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -4726,10 +5033,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="14" />
-			<height normal="28.8" />
-		</collision>
 	</npc>
 	<npc id="18089" level="67" type="L2FestivalMonster" name="Dark Omen Offering Elder">
 		<!-- Confirmed CT2.5 -->
@@ -4830,6 +5133,13 @@
 			<radius normal="9" />
 			<height normal="21.5" />
 		</collision>
+		<dropLists>
+			<death>
+				<group chance="70">
+					<item id="57" min="721" max="1443" chance="100" /> <!-- Adena -->
+				</group>
+			</death>
+		</dropLists>
 	</npc>
 	<npc id="18091" level="61" type="L2FestivalMonster" name="Dark Omen Offering Archer">
 		<!-- Confirmed CT2.5 -->
@@ -4921,6 +5231,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="20" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -4928,10 +5242,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" />
-			<height normal="20" />
-		</collision>
 	</npc>
 	<npc id="18093" level="62" type="L2FestivalMonster" name="Dark Omen Offering Follower">
 		<!-- Confirmed CT2.5 -->
@@ -4981,6 +5291,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai type="BALANCED" aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="11" />
+			<height normal="16" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -4988,10 +5302,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="11" />
-			<height normal="16" />
-		</collision>
 	</npc>
 	<npc id="18094" level="70" type="L2FestivalMonster" name="Dark Omen Offering Berserker">
 		<!-- Confirmed CT2.5 -->
@@ -5039,6 +5349,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="12" />
+			<height normal="30" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -5046,10 +5360,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="12" />
-			<height normal="30" />
-		</collision>
 	</npc>
 	<npc id="18095" level="67" type="L2FestivalMonster" name="Dark Omen Offering Zealot">
 		<!-- Confirmed CT2.5 -->
@@ -5098,6 +5408,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai type="BALANCED" aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="10" />
+			<height normal="25.3" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -5105,10 +5419,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="10" />
-			<height normal="25.3" />
-		</collision>
 	</npc>
 	<npc id="18096" level="65" type="L2FestivalMonster" name="Dark Omen Offering Marksman">
 		<!-- Confirmed CT2.5 -->
@@ -5197,6 +5507,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="12" grown="14.5" />
+			<height normal="24" grown="28.8" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -5204,10 +5518,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="12" grown="14.5" />
-			<height normal="24" grown="28.8" />
-		</collision>
 	</npc>
 	<npc id="18098" level="72" type="L2FestivalMonster" name="Dark Omen Offering Saint">
 		<!-- Confirmed CT2.5 -->
@@ -5254,6 +5564,10 @@
 		<corpseTime>3</corpseTime>
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" clanHelpRange="500" isAggressive="false" />
+		<collision>
+			<radius normal="14" />
+			<height normal="28.8" />
+		</collision>
 		<dropLists>
 			<death>
 				<group chance="70">
@@ -5261,10 +5575,6 @@
 				</group>
 			</death>
 		</dropLists>
-		<collision>
-			<radius normal="14" />
-			<height normal="28.8" />
-		</collision>
 	</npc>
 	<npc id="18099" level="78" type="L2FestivalMonster" name="Offering of Forbidden Path, Elder">
 		<!-- Confirmed CT2.5 -->

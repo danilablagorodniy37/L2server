@@ -173,7 +173,6 @@ import com.l2jserver.datapack.quests.Q00173_ToTheIsleOfSouls.Q00173_ToTheIsleOfS
 import com.l2jserver.datapack.quests.Q00174_SupplyCheck.Q00174_SupplyCheck;
 import com.l2jserver.datapack.quests.Q00175_TheWayOfTheWarrior.Q00175_TheWayOfTheWarrior;
 import com.l2jserver.datapack.quests.Q00178_IconicTrinity.Q00178_IconicTrinity;
-import com.l2jserver.datapack.quests.Q00179_IntoTheLargeCavern.Q00179_IntoTheLargeCavern;
 import com.l2jserver.datapack.quests.Q00182_NewRecruits.Q00182_NewRecruits;
 import com.l2jserver.datapack.quests.Q00211_TrialOfTheChallenger.Q00211_TrialOfTheChallenger;
 import com.l2jserver.datapack.quests.Q00212_TrialOfDuty.Q00212_TrialOfDuty;
@@ -543,7 +542,6 @@ public class QuestLoader {
 		Q00174_SupplyCheck.class,
 		Q00175_TheWayOfTheWarrior.class,
 		Q00178_IconicTrinity.class,
-		Q00179_IntoTheLargeCavern.class,
 		Q00182_NewRecruits.class,
 		Q00201_HumanFighterTutorial.class,
 		Q00202_HumanMageTutorial.class,

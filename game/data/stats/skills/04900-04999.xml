@@ -714,10 +714,12 @@
 	</skill>
 	<skill id="4989" levels="1" name="Npc - Hot Spring Nectar">
 		<!-- High Five Confirmed -->
+		<set name="hitTime" val="500" />
+		<set name="reuseDelay" val="500" />
 		<set name="affectScope" val="SINGLE" />
-		<set name="castRange" val="200" />
+		<set name="castRange" val="150" />
 		<set name="effectPoint" val="-100" />
-		<set name="effectRange" val="300" />
+		<set name="effectRange" val="1100" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="rideState" val="NONE" />
@@ -730,10 +732,12 @@
 	</skill>
 	<skill id="4990" levels="1" name="Npc - Hot Spring Mineral">
 		<!-- High Five Confirmed -->
+		<set name="hitTime" val="500" />
+		<set name="reuseDelay" val="500" />
 		<set name="affectScope" val="SINGLE" />
-		<set name="castRange" val="200" />
+		<set name="castRange" val="150" />
 		<set name="effectPoint" val="-100" />
-		<set name="effectRange" val="300" />
+		<set name="effectRange" val="1100" />
 		<set name="magicLvl" val="1" />
 		<set name="operateType" val="A1" />
 		<set name="rideState" val="NONE" />
@@ -747,8 +751,10 @@
 	</skill>
 	<skill id="4991" levels="1" name="Hot Spring Sulfur">
 		<!-- High Five Confirmed -->
+		<set name="effectRange" val="400" />
+		<set name="castRange" val="40" />
 		<set name="abnormalLvl" val="5" />
-		<set name="abnormalTime" val="5" />
+		<set name="abnormalTime" val="30" />
 		<set name="abnormalType" val="ALL_SPEED_DOWN" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="effectPoint" val="-100" />
@@ -769,6 +775,10 @@
 	</skill>
 	<skill id="4992" levels="1" name="Stun">
 		<!-- High Five Confirmed -->
+		<set name="effectRange" val="1500" />
+		<set name="castRange" val="1500" />
+		<set name="coolTime" val="500" />
+		<set name="hitTime" val="500" />
 		<set name="abnormalLvl" val="1" />
 		<set name="abnormalTime" val="9" />
 		<set name="abnormalType" val="STUN" />
@@ -789,27 +799,29 @@
 	<skill id="4993" levels="1" name="Venom - Strike">
 		<!-- High Five Confirmed -->
 		<!-- Venom Skills -->
+		<set name="mpConsume1" val="17" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="castRange" val="40" />
 		<set name="coolTime" val="660" />
 		<set name="effectPoint" val="-100" />
-		<set name="effectRange" val="200" />
+		<set name="effectRange" val="400" />
 		<set name="hitCancelTime" val="500" />
 		<set name="hitTime" val="830" />
 		<set name="magicLvl" val="79" />
-		<set name="mpConsume2" val="88" />
+		<set name="mpConsume2" val="70" />
 		<set name="operateType" val="A1" />
 		<set name="rideState" val="NONE" />
 		<set name="targetType" val="ENEMY" />
 		<effects>
 			<effect name="PhysicalAttack">
-				<param power="57742" />
+				<param power="14000" />
 			</effect>
 		</effects>
 	</skill>
 	<skill id="4994" levels="1" name="Venom - Sonic Storm">
 		<!-- High Five Confirmed -->
 		<!-- Venom Skills -->
+		<set name="mpConsume1" val="17" />
 		<set name="affectObject" val="NOT_FRIEND" />
 		<set name="affectRange" val="150" />
 		<set name="affectScope" val="RANGE" />
@@ -819,14 +831,14 @@
 		<set name="hitCancelTime" val="500" />
 		<set name="hitTime" val="1900" />
 		<set name="magicLvl" val="79" />
-		<set name="mpConsume2" val="88" />
+		<set name="mpConsume2" val="70" />
 		<set name="operateType" val="A1" />
 		<set name="reuseDelay" val="20000" />
 		<set name="rideState" val="NONE" />
 		<set name="targetType" val="ENEMY" />
 		<effects>
 			<effect name="PhysicalAttack">
-				<param power="28871" />
+				<param power="12450" />
 			</effect>
 		</effects>
 	</skill>
@@ -875,44 +887,48 @@
 		<set name="targetType" val="SELF" />
 		<effects>
 			<effect name="Buff">
-				<mul stat="regHp" val="2" />
+				<mul stat="regHp" val="10" />
 			</effect>
 		</effects>
 	</skill>
 	<skill id="4998" levels="1" name="Lidia - Twister">
 		<!-- High Five Confirmed -->
+		<set name="reuseDelay" val="2000" />
+		<set name="mpConsume1" val="23" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="castRange" val="750" />
 		<set name="effectPoint" val="-100" />
 		<set name="effectRange" val="1250" />
 		<set name="hitCancelTime" val="500" />
-		<set name="hitTime" val="2500" />
+		<set name="hitTime" val="2000" />
 		<set name="magicLvl" val="77" />
-		<set name="mpConsume2" val="116" />
+		<set name="mpConsume2" val="92" />
 		<set name="operateType" val="A1" />
 		<set name="rideState" val="NONE" />
 		<set name="targetType" val="ENEMY" />
 		<effects>
 			<effect name="MagicalAttack">
-				<param power="112" />
+				<param power="287" />
 			</effect>
 		</effects>
 	</skill>
 	<skill id="4999" levels="1" name="Lidia - Range Life Drain">
 		<!-- High Five Confirmed -->
+		<set name="reuseDelay" val="2000" />
+		<set name="mpConsume1" val="25" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="castRange" val="1000" />
 		<set name="effectPoint" val="-100" />
-		<set name="effectRange" val="2000" />
+		<set name="effectRange" val="1500" />
 		<set name="hitTime" val="2000" />
 		<set name="magicLvl" val="77" />
-		<set name="mpConsume2" val="126" />
+		<set name="mpConsume2" val="100" />
 		<set name="operateType" val="A1" />
 		<set name="rideState" val="NONE" />
 		<set name="targetType" val="ENEMY" />
 		<effects>
 			<effect name="HpDrain">
-				<param power="112" />
+				<param power="144" />
 				<param drain="40" />
 			</effect>
 		</effects>
