@@ -20,6 +20,7 @@ LOGIN = ds.ROOT / "login"
 GAME = ds.GAME
 PORTS = (2106, 7777, 9014)
 BOOT_TIMEOUT = 600
+LOADED = re.compile(r"Server \w+ loaded in \d+ seconds")
 
 
 def port_open(port):
@@ -63,7 +64,7 @@ def boot_log():
 			cwd=GAME, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 		def loaded():
-			return log.exists() and log.stat().st_mtime >= started and "loaded in" in log.read_text(encoding="utf-8", errors="replace")
+			return log.exists() and log.stat().st_mtime >= started and LOADED.search(log.read_text(encoding="utf-8", errors="replace"))
 
 		booted = wait_for(loaded, BOOT_TIMEOUT, game)
 		text = log.read_text(encoding="utf-8", errors="replace") if log.exists() else ""
@@ -77,7 +78,7 @@ def boot_log():
 
 def test_game_server_loads(boot_log):
 	text, _ = boot_log
-	assert re.search(r"Server \w+ loaded in \d+ seconds", text)
+	assert LOADED.search(text)
 
 
 def test_registers_on_login_server(boot_log):
