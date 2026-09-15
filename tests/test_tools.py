@@ -115,3 +115,24 @@ def test_properties_parser(tmp_path, monkeypatch):
 ])
 def test_interlude_like_weapon(name, expected):
 	assert kamael._is_interlude_like_weapon(name, {"Health", "Haste"}) is expected
+
+
+class TestFloatingSpawns:
+	def test_spawn_row_keeps_everything_but_z(self):
+		import fix_floating_spawns as ffs
+		row = '("unset", 1, 20050, -72321, 110988, -3194, 0, 0, 10000, 60, 0, 0, 0),'
+		m = ffs.SPAWN_ROW.match(row)
+		assert (m.group(2), m.group(3), m.group(4), m.group(5)) == ("20050", "-72321", "110988", "-3194")
+		assert f"{m.group(1)}-3544{m.group(6)}" == row.replace("-3194", "-3544")
+
+	def test_boss_row(self):
+		import fix_floating_spawns as ffs
+		row = "(25375,22500,80300,-2772,0,129600,86400,87696,426), -- Zombie Lord Farakelsus (20)"
+		m = ffs.BOSS_ROW.match(row)
+		assert f"{m.group(1)}22522,80427,-3184{m.group(6)}" == "(25375,22522,80427,-3184,0,129600,86400,87696,426), -- Zombie Lord Farakelsus (20)"
+
+
+def test_extra_npcs_are_spawned():
+	"""Every NPC build_spawns imports on purpose is in the generated spawnlist."""
+	spawned = {npc_id for npc_id, _ in checks.enabled_xml_spawns()}
+	assert set(build_spawns.EXTRA_NPCS) <= spawned, sorted(set(build_spawns.EXTRA_NPCS) - spawned)

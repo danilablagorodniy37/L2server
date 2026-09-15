@@ -191,13 +191,22 @@ def skill_references():
 	return missing
 
 
-def _html_links(kinds):
+@cache
+def html_texts():
+	"""(path relative to game/, text) of every NPC dialog; read once for all checks."""
+	return tuple((f.relative_to(ds.GAME).as_posix(), f.read_text(encoding="utf-8", errors="replace")) for f in ds.html_files())
+
+
+@cache
+def _all_html_links():
 	link = re.compile(r"bypass -h npc_%objectId%_(multisell|exc_multisell|Buy|goto) (\d+)")
-	for f in ds.html_files():
-		rel = f.relative_to(ds.GAME).as_posix()
-		for kind, value in link.findall(f.read_text(encoding="utf-8", errors="replace")):
-			if kind in kinds:
-				yield int(value), rel
+	return tuple((kind, int(value), rel) for rel, text in html_texts() for kind, value in link.findall(text))
+
+
+def _html_links(kinds):
+	for kind, value, rel in _all_html_links():
+		if kind in kinds:
+			yield value, rel
 
 
 def html_multisell_links():
@@ -253,14 +262,14 @@ def quest_dialog_links():
 	loaded = set(re.findall(r"^\t+(Q\d{5}_\w+)\.class", (quests / "QuestLoader.java").read_text(encoding="utf-8"), re.M))
 	link = re.compile(r"bypass -h Quest (Q\d{5}_\w+) ([\w-]+\.html?)\b")
 	missing = defaultdict(list)
-	for f in ds.html_files():
-		for quest, dialog in link.findall(f.read_text(encoding="utf-8", errors="replace")):
+	for rel, text in html_texts():
+		for quest, dialog in link.findall(text):
 			folder = quests / quest
 			if quest not in loaded or (folder / dialog).exists():
 				continue
 			sources = "".join(p.read_text(encoding="utf-8", errors="replace") for p in folder.glob("*.java"))
 			if f'"{dialog}"' not in sources:
-				missing[f"{quest}/{dialog}"].append(f.relative_to(ds.GAME).as_posix())
+				missing[f"{quest}/{dialog}"].append(rel)
 	# Dialogs the scripts open by name (event case labels are not files). Tutorial pages live in data/html.
 	literal = re.compile(r'"(\w[\w-]*-[\w-]*\.html?)"')
 	for quest in loaded:
@@ -495,7 +504,40 @@ def database_tables():
 	return problems
 
 
-# name -> function; database checks run only with a database.
+# ---------------------------------------------------------------- geodata
+
+FLOAT_LIMIT = 300
+
+
+def floating_spawns():
+	"""Spawns with fixed coordinates stand on the geodata floor, not more than 300 above it (the server corrects only 100)."""
+	import geo
+
+	points, places = [], []
+	for m in re.finditer(r'^\("[^"]*", *\d+, *(\d+), *(-?\d+), *(-?\d+), *(-?\d+),', (ds.GAME / "sql" / "spawnlist.sql").read_text(encoding="utf-8"), re.M):
+		points.append(tuple(int(v) for v in m.groups()[1:]))
+		places.append((int(m.group(1)), "spawnlist.sql"))
+	for m in re.finditer(r"^\((\d+),(-?\d+),(-?\d+),(-?\d+),", (ds.GAME / "sql" / "raidboss_spawnlist.sql").read_text(encoding="utf-8"), re.M):
+		points.append(tuple(int(v) for v in m.groups()[1:]))
+		places.append((int(m.group(1)), "raidboss_spawnlist.sql"))
+	for f in ds._xml_files(DATA / "spawnlist"):
+		root = ET.parse(f).getroot()
+		if root.get("enabled", "true") == "true":
+			for npc in root.iter("npc"):
+				if npc.get("x") is not None:
+					points.append((int(npc.get("x")), int(npc.get("y")), int(npc.get("z"))))
+					places.append((int(npc.get("id")), "spawnlist/" + f.name))
+	problems = defaultdict(list)
+	for (x, y, z), (npc_id, place), floor in zip(points, places, geo.floors(points)):
+		template = npcs().get(npc_id)
+		if floor is None or z - floor <= FLOAT_LIMIT or (template and template[0].find(".//*[@flying='true']") is not None):
+			continue
+		problems[f"{npc_id} at {x},{y},{z}"].append(f"{place}, floor {floor}")
+	return problems
+
+
+# name -> function; database checks run only with a database, geodata checks only with geodata and a JDK.
+GEO_CHECKS = {"floating_spawns": floating_spawns}
 DATAPACK_CHECKS = {f.__name__: f for f in (
 	item_references, npc_references, boss_positions, skill_references,
 	html_multisell_links, html_buylist_links, html_teleport_links, script_shop_calls, quest_dialog_links, quest_npcs, loader_classes, xml_schemas,

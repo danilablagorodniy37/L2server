@@ -11,6 +11,7 @@ Exit code 1 when any check fails; problems listed in checks.KNOWN do not fail.
 import sys
 
 import checks
+import geo
 
 
 def report(name, func, shown):
@@ -34,6 +35,10 @@ def report(name, func, shown):
 def main():
 	shown = 10**9 if "--all" in sys.argv else 8
 	selected = dict(checks.DATAPACK_CHECKS)
+	if geo.available():
+		selected.update(checks.GEO_CHECKS)
+	else:
+		print("[SKIP] geodata checks: no geodata in game/data/geodata or no JDK")
 	if "--db" in sys.argv:
 		selected.update(checks.DATABASE_CHECKS)
 	failed = [name for name, func in selected.items() if not report(name, func, shown)]

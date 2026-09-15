@@ -69,11 +69,10 @@
 - [x] NPC поздних хроник, которые стоят и на острове Камаэлей, убраны из остального мира: Dimensional Merchant, Sinister Worshipper, Altar Guard (67 строк, `build_spawns.py` больше не оставляет их)
 - [x] Монстры Interlude, которых в H5 нигде нет, перенесены из aCis: 593 мейкера и территории (`data/spawnlist/interlude.xml`, `data/zones/npcSpawnTerritories/interlude.xml`)
 - [ ] Не перенесены мейкеры aCis со скриптовой логикой (события, день/ночь, сундуки, Royal Rush, `event`/`spawnTime`) — 2 608 обычных мейкеров с такими атрибутами и ~2 000 специальных; разобрать по зонам
-- [ ] Не перенесены NPC Interlude не-монстры (торговцы, L2Npc, Feedable Beast — ~120 записей)
+- [x] NPC Interlude не-монстры: звери фермы, торговцы и NPC квестов перенесены; остальные ~150 L2Npc появляются динамически (Seven Signs, осады, Dimensional Rift, Four Sepulchers, ивенты)
 - [ ] Минионы (privates) мейкеров aCis не переносятся — проверить, что у лидеров есть миньоны в шаблонах H5
 - [ ] После изменения `spawnlist.sql`/`teleport.sql` таблицы нужно перезалить (`mysql l2jdb_custom < game/sql/<файл>`); `grandboss_data`/`raidboss_spawnlist` при повторной заливке не удаляют старые строки
 - [x] Рейд-боссы и эпики поздних хроник убраны: 16 рейдов 81–85 ур. и Beleth (`tools/interlude/build_bosses.py`)
-- [ ] Zaken в H5 — инстанс (выключен вместе с инстансами), в Interlude он был открытым эпиком на корабле; Frintezza в `grandboss_data` закомментирован — проверить оба (Beleth, Freya, Tiat, Ekimus и др.)
 - [x] Телепорты в поздние зоны удалены: 73 точки (Seeds, дирижабли, Kratei's Cube, Sel Mahum, Field of Silence/Whispers, Giant's Cave, Shyeed's Cavern, оплата Olympiad Token) и 94 строки-ссылки в HTML (`tools/interlude/build_teleports.py`)
 - [ ] Ещё 67 телепортов далеко от точек aCis, но оставлены: крепости (решение) и места Interlude с другой точкой прибытия — просмотреть вручную (список печатает `build_teleports.py --dry-run`)
 - [ ] HTML гейткиперов и NPC со ссылками на удалённые места
@@ -89,6 +88,9 @@
 - [x] Ферма зверей: Alpine Kookaburra/Buffalo/Cougar не спавнились (тип L2FeedableBeast не переносился), нет продавца корма Quigby; добавлены вместе с NPC квестов 120, 617, 625, 651, 652, которых не было в датапаке H5. AI Тунатуна H5 (кнут) убран
 - [x] 13 рейд-боссов Interlude, закомментированных в H5, расставлены (Black Lily, Cursed Clara, Ancient Weird Drake, Lord Ishka, Bloody Priest Rudelto, Antharas Priest Cloe, Necrosentinel Royal Guard, Water Spirit Lian, Gwindorr, Giant Marpanak, Hekaton Prime, Gorgolos, Last Titan Utenus); у 7 без координат в H5 — центр территории aCis, высота из геодаты
 - [x] 16 торговцев Interlude (продавцы чертежей, книг, амулетов, Natasha, Galman, Terava) расставлены: дублей рядом нет; у H5 были их диалоги и магазины, но не спавны; Galman и Terava получили диалоги и магазины из aCis, Natasha — кнопку магазина
+- [x] Висящие в воздухе спавны H5 опущены на пол геодаты: 25 монстров, 4 рейд-босса с примерными координатами поставлены в центр территории aCis (`fix_floating_spawns.py`, тест `test_geodata.py`)
+- [ ] 53 монстра Interlude не расставлены: их мейкеры в aCis со спец-AI (динозавры Primeval Isle для Q642, призраки Batur для Q645, Ragna Orc Sorcerer для Q646, Andreas' Royal Guards и др.) — перенести как обычные спавны
+- [?] Эпики и боссы, которые в H5 живут в инстансах (инстансы выключены, их нет в `grandboss_data`): Zaken (в Interlude — открытый эпик на корабле), Frintezza/Scarlet van Halisha, Sailren, Andreas Van Halter — решить, как открывать
 - [ ] Не перенесены: Corpse of Hutaku, Vervato (не нужны скриптам H5); дверники замка Rune дублируют Gatekeeper H5 — не переносить
 - [ ] Остров Камаэлей (Isle of Souls, Kamael Village) и путь оттуда на материк
 
@@ -100,6 +102,11 @@
 - [ ] Прокачка 1–80 на тестовом персонаже (GM-команды), изучение скиллов у тренеров
 - [ ] Магазины, мультиселлы, крафт — нет предметов поздних хроник
 - [ ] Олимпиада, осады замков, осады клан-холлов, Seven Signs
+
+## Оптимизация
+- [x] UPnP выключен в игровом и логин-сервере: поиск роутера задерживал «Server loaded» на ~9 с
+- [x] Проверки датапака читают HTML один раз: 11 → 6,6 с; весь pytest ~15 с
+- [ ] Старт игрового сервера ~30 с, из них ~15 с — компиляция 1 299 скриптов при каждом запуске (Handlers 7 с, Quests 4 с, AI 3,6 с). Ускорение: собирать скрипты заранее в jar и загружать классы (правка ядра `ScriptEngineManager`)
 
 ## Этап 6. Клиент (High Five)
 - [?] Что делать с кнопками интерфейса H5 для выключенных систем (почта, аукцион, Vitality, атрибуты)? Скрыть — правка `Interface.u`, это сложно. По умолчанию план: оставить, сервер просто не отвечает

@@ -6,12 +6,13 @@
 | Файл | Что проверяет | Когда пропускается |
 |---|---|---|
 | `test_datapack.py` | Проверки из `tools/interlude/checks.py`: битые ссылки на предметы, NPC, скиллы, магазины, мультиселлы, телепорты; XML по XSD; контент поздних хроник в магазинах, дропе, спавнах, деревьях скиллов, загрузчиках скриптов; конфиги Interlude | нет aCis в `../acis_public-master` |
+| `test_geodata.py` | NPC с точными координатами стоят на полу геодаты, а не висят выше 300 (исправление: `fix_floating_spawns.py`) | нет геодаты или JDK |
 | `test_scripts.py` | Все скрипты `game/script` компилируются против `l2jserver.jar` (как при старте сервера, ~10 с) | нет `javac` |
 | `test_tools.py` | Функции скриптов `tools/interlude`, которые переписывают файлы датапака | никогда |
 | `test_database.py` | Таблицы `l2jdb_custom` совпадают с `game/sql` | MySQL на порту 3307 недоступен |
 | `test_server_boot.py` | Логин и игровой сервер стартуют, сервер регистрируется на логине, в логе нет WARN/ERROR (~1 мин) | без `--run-server` или если сервер уже запущен |
 
-Тесты ядра (JUnit, 231 тест): `core\mvnw.cmd test` или `tools\test.bat --core`.
+Тесты ядра (JUnit, 232 теста): `core\mvnw.cmd test` или `tools\test.bat --core`.
 
 ## Что делать, если тест упал
 - Сообщение показывает первые проблемы; полный список: `python tools/interlude/validate.py --all`.
