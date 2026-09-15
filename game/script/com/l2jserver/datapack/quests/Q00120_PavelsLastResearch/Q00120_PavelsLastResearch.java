@@ -946,7 +946,7 @@ public final class Q00120_PavelsLastResearch extends Quest {
 				} else if (qs.isStarted()) {
 					switch (qs.getMemoState()) {
 						case 1: {
-							html = "32046-09.html";
+							html = "32046-09.htm";
 							break;
 						}
 						case 2: {

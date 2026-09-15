@@ -174,7 +174,7 @@ public final class Q00386_StolenDignity extends Quest {
 			int ask = Integer.parseInt(event);
 			switch (ask) {
 				case 3:
-					return "30843-09a.html";
+					return "30843-09a.htm";
 				case 5:
 					return "30843-03.html";
 				case 6: {
@@ -182,7 +182,7 @@ public final class Q00386_StolenDignity extends Quest {
 					return "30843-08.html";
 				}
 				case 9:
-					return "30843-09.htm";
+					return "30843-09.html";
 				case 8: {
 					if (qs.getQuestItemsCount(Q_STOLEN_INF_ORE) >= 100) {
 						qs.takeItems(Q_STOLEN_INF_ORE, 100);

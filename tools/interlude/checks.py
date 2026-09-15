@@ -237,6 +237,33 @@ def script_shop_calls():
 	return missing
 
 
+def quest_dialog_links():
+	"""Dialog links of loaded quests (bypass -h Quest <quest> <file>.htm) open a dialog that exists or an event the script handles."""
+	quests = ds.GAME / "script" / "com" / "l2jserver" / "datapack" / "quests"
+	loaded = set(re.findall(r"^\t+(Q\d{5}_\w+)\.class", (quests / "QuestLoader.java").read_text(encoding="utf-8"), re.M))
+	link = re.compile(r"bypass -h Quest (Q\d{5}_\w+) ([\w-]+\.html?)\b")
+	missing = defaultdict(list)
+	for f in ds.html_files():
+		for quest, dialog in link.findall(f.read_text(encoding="utf-8", errors="replace")):
+			folder = quests / quest
+			if quest not in loaded or (folder / dialog).exists():
+				continue
+			sources = "".join(p.read_text(encoding="utf-8", errors="replace") for p in folder.glob("*.java"))
+			if f'"{dialog}"' not in sources:
+				missing[f"{quest}/{dialog}"].append(f.relative_to(ds.GAME).as_posix())
+	# Dialogs the scripts open by name (event case labels are not files). Tutorial pages live in data/html.
+	literal = re.compile(r'"(\w[\w-]*-[\w-]*\.html?)"')
+	for quest in loaded:
+		for java in (quests / quest).glob("*.java"):
+			for line in java.read_text(encoding="utf-8", errors="replace").splitlines():
+				if line.lstrip().startswith("case ") or "showTutorialHTML" in line:
+					continue
+				for dialog in literal.findall(line):
+					if not (quests / quest / dialog).exists():
+						missing[f"{quest}/{dialog}"].append(java.name)
+	return missing
+
+
 def loader_classes():
 	"""Every script class registered in QuestLoader and AILoader has a source file."""
 	missing = defaultdict(list)
@@ -436,7 +463,7 @@ def database_tables():
 # name -> function; database checks run only with a database.
 DATAPACK_CHECKS = {f.__name__: f for f in (
 	item_references, npc_references, skill_references,
-	html_multisell_links, html_buylist_links, html_teleport_links, script_shop_calls, loader_classes, xml_schemas,
+	html_multisell_links, html_buylist_links, html_teleport_links, script_shop_calls, quest_dialog_links, loader_classes, xml_schemas,
 	shops_interlude_items, drops_interlude_items, spawns_interlude_npcs, interlude_skill_trees, interlude_config,
 	interlude_loaders, starting_equipment,
 )}

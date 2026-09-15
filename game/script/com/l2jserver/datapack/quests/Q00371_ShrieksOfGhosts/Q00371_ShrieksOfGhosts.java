@@ -157,7 +157,7 @@ public final class Q00371_ShrieksOfGhosts extends Quest {
 		QuestState qs = getQuestState(player, true);
 		String htmltext = getNoQuestMsg(player);
 		if (qs.isCreated()) {
-			htmltext = (player.getLevel() >= MIN_LEVEL) ? "30867-01.htm" : "30867-03.htm";
+			htmltext = (player.getLevel() >= MIN_LEVEL) ? "30867-01.htm" : "30867-03.html";
 		} else if (qs.isStarted()) {
 			if (npc.getId() == REVA) {
 				htmltext = (hasQuestItems(player, ANCIENT_PORCELAIN)) ? "30867-04.html" : "30867-10.html";

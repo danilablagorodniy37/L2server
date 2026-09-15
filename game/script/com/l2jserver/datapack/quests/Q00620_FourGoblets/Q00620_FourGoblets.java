@@ -395,7 +395,7 @@ public class Q00620_FourGoblets extends Quest {
 		final QuestState st = getQuestState(player, true);
 		String htmltext = getNoQuestMsg(player);
 		if (st.isCreated()) {
-			htmltext = (player.getLevel() >= MIN_LEVEL) ? "31453-01.htm" : "31453-13.html";
+			htmltext = (player.getLevel() >= MIN_LEVEL) ? "31453-01.htm" : "31453-13.htm";
 		} else if (st.isStarted()) {
 			switch (npc.getId()) {
 				case NAMELESS_SPIRIT: {

@@ -170,7 +170,7 @@ public class Q00663_SeductiveWhispers extends Quest {
 								htmltext = "30846-17.html";
 							} else {
 								final int winCount = (qs.getMemoState() / 10) + 1;
-								htmltext = getHtml(player, "30846-16.html", 0, 0, winCount, 0);
+								htmltext = getHtml(player, "30846-16.htm", 0, 0, winCount, 0);
 							}
 							break;
 						}

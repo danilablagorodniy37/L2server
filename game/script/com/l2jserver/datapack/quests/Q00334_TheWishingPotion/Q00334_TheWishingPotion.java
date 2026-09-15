@@ -132,7 +132,7 @@ public final class Q00334_TheWishingPotion extends Quest {
 			case ALCHEMIST_MATILD: {
 				if (qs.isCreated()) {
 					if (player.getLevel() < 30) {
-						return "30738-01.htm";
+						return "30738-01.html";
 					}
 					return "30738-02.html";
 				}
@@ -257,7 +257,7 @@ public final class Q00334_TheWishingPotion extends Quest {
 								qs.giveItems(Q_SILVER_CIRCLET, 1);
 							}
 						}
-						html = "30743-06.htm";
+						html = "30743-06.html";
 					}
 					qs.set(FLAG, 0);
 					npc.deleteMe();
