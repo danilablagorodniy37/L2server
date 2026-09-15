@@ -264,6 +264,31 @@ def quest_dialog_links():
 	return missing
 
 
+def quest_npcs():
+	"""NPCs that loaded quests bind to (talk, kill, droplists, monster tables) exist."""
+	quests = ds.GAME / "script" / "com" / "l2jserver" / "datapack" / "quests"
+	loaded = set(re.findall(r"^\t+(Q\d{5}_\w+)\.class", (quests / "QuestLoader.java").read_text(encoding="utf-8"), re.M))
+	known = npcs()
+	calls = re.compile(r"(?:bindStartNpc|bindTalk|bindFirstTalk|bindKill|bindAttack|bindSpawn|withNpcs|addSingleDrop|addGroupedDrop\w*)\(([^;]*?)\)")
+	const = re.compile(r"\b([A-Z][A-Z0-9_]*)\s*=\s*(\d+)\s*;")
+	missing = defaultdict(list)
+	for quest in sorted(loaded):
+		for java in (quests / quest).glob("*.java"):
+			src = java.read_text(encoding="utf-8", errors="replace")
+			consts = {k: int(v) for k, v in const.findall(src)}
+			ids = set()
+			for args in calls.findall(src):
+				first = re.match(r"\s*([A-Z][A-Z0-9_]*|\d+)", args)
+				# addSingleDrop(npcId, item, ...) and addGrouped*(npcId, ...): only the first argument is an NPC.
+				tokens = re.findall(r"[A-Z][A-Z0-9_]*|\d+", args) if not first or "Drop" not in args else [first.group(1)]
+				ids |= {int(t) if t.isdigit() else consts.get(t, 0) for t in tokens}
+			ids |= {int(v) for v in re.findall(r"(?:MOBS|MONSTERS|CHANCES)\.put\((\d+),", src)}
+			for npc_id in ids:
+				if 18000 <= npc_id < 40000 and npc_id not in known:
+					missing[npc_id].append(quest)
+	return missing
+
+
 def loader_classes():
 	"""Every script class registered in QuestLoader and AILoader has a source file."""
 	missing = defaultdict(list)
@@ -463,7 +488,7 @@ def database_tables():
 # name -> function; database checks run only with a database.
 DATAPACK_CHECKS = {f.__name__: f for f in (
 	item_references, npc_references, skill_references,
-	html_multisell_links, html_buylist_links, html_teleport_links, script_shop_calls, quest_dialog_links, loader_classes, xml_schemas,
+	html_multisell_links, html_buylist_links, html_teleport_links, script_shop_calls, quest_dialog_links, quest_npcs, loader_classes, xml_schemas,
 	shops_interlude_items, drops_interlude_items, spawns_interlude_npcs, interlude_skill_trees, interlude_config,
 	interlude_loaders, starting_equipment,
 )}

@@ -47,6 +47,7 @@ public class Q00618_IntoTheFlame extends Quest {
 	static {
 		MONSTERS.put(21274, 630);
 		MONSTERS.put(21276, 630);
+		MONSTERS.put(21275, 630);
 		MONSTERS.put(21282, 670);
 		MONSTERS.put(21283, 670);
 		MONSTERS.put(21284, 670);

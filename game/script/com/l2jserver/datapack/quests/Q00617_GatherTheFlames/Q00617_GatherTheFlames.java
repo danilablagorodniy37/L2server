@@ -55,23 +55,34 @@ public class Q00617_GatherTheFlames extends Quest {
 	// Monsters
 	private static final Map<Integer, Integer> MOBS = new HashMap<>();
 	
+	// Interlude Forge of the Gods monsters, chance per mille (aCis)
 	static {
-		MOBS.put(22634, 639);
-		MOBS.put(22635, 611);
-		MOBS.put(22636, 649);
-		MOBS.put(22637, 639);
-		MOBS.put(22638, 639);
-		MOBS.put(22639, 645);
-		MOBS.put(22640, 559);
-		MOBS.put(22641, 588);
-		MOBS.put(22642, 537);
-		MOBS.put(22643, 618);
-		MOBS.put(22644, 633);
-		MOBS.put(22645, 550);
-		MOBS.put(22646, 593);
-		MOBS.put(22647, 688);
-		MOBS.put(22648, 632);
-		MOBS.put(22649, 685);
+		MOBS.put(21376, 480); // Scarlet Stakato Worker
+		MOBS.put(21377, 480); // Scarlet Stakato Soldier
+		MOBS.put(21378, 490); // Scarlet Stakato Noble
+		MOBS.put(21379, 590); // Tepra Scorpion
+		MOBS.put(21380, 490); // Tepra Scarab
+		MOBS.put(21381, 510); // Assassin Beetle
+		MOBS.put(21382, 600); // Mercenary of Destruction
+		MOBS.put(21383, 510); // Knight of Destruction
+		MOBS.put(21384, 640); // Necromancer of Destruction
+		MOBS.put(21385, 520); // Lavastone Golem
+		MOBS.put(21386, 520); // Magma Golem
+		MOBS.put(21387, 530); // Arimanes of Destruction
+		MOBS.put(21388, 530); // Iblis of Destruction
+		MOBS.put(21389, 550); // Balrog of Destruction
+		MOBS.put(21390, 560); // Ashuras of Destruction
+		MOBS.put(21391, 550); // Lavasillisk
+		MOBS.put(21392, 560); // Blazing Ifrit
+		MOBS.put(21393, 580); // Magma Drake
+		MOBS.put(21394, 510); // Lavasaurus
+		MOBS.put(21395, 560); // Elder Lavasaurus
+		MOBS.put(21652, 490); // Scarlet Stakato Noble
+		MOBS.put(21653, 510); // Assassin Beetle
+		MOBS.put(21654, 520); // Necromancer of Destruction
+		MOBS.put(21655, 530); // Arimanes of Destruction
+		MOBS.put(21656, 690); // Ashuras of Destruction
+		MOBS.put(21657, 570); // Magma Drake
 	}
 	
 	public Q00617_GatherTheFlames() {
