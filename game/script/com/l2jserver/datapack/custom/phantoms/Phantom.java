@@ -30,6 +30,36 @@ import com.l2jserver.gameserver.network.serverpackets.SocialAction;
  * Chat is decided by {@link Phantoms}, which can pair two bots into a dialog.
  */
 public class Phantom {
+	/** How a bot types, so the town chat does not look like one person talking. */
+	public enum Style {
+		/** Plain text. */
+		PLAIN,
+		/** No capitals, no dots: the usual town chat. */
+		LAZY,
+		/** Short words: u, r, ty, pls. */
+		SHORT,
+		/** Adds a lol or a hm at the end. */
+		CHATTY;
+
+		private static final String[] TAILS = {
+			" lol", " xd", " hm", "", "", ""
+		};
+
+		public String apply(String text) {
+			switch (this) {
+				case LAZY:
+					// No dots and no question marks: someone typing in a hurry. Names keep their capitals.
+					return text.replace(".", "").replace("?", "");
+				case SHORT:
+					return text.replace(" you ", " u ").replace(" are ", " r ").replace("thanks", "ty").replace("please", "pls");
+				case CHATTY:
+					return text + TAILS[Rnd.get(TAILS.length)];
+				default:
+					return text;
+			}
+		}
+	}
+
 	private static final int[] EMOTES = {
 		2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
 	};
@@ -38,8 +68,10 @@ public class Phantom {
 	private final Location _home;
 	private final Location _spawn;
 	private final int _radius;
+	private final Style _style = Style.values()[Rnd.get(Style.values().length)];
 	private long _nextAction;
 	private long _nextChat;
+	private long _nextReaction;
 
 	public Phantom(L2PcInstance player, Location home, int radius) {
 		_player = player;
@@ -51,6 +83,19 @@ public class Phantom {
 
 	public L2PcInstance player() {
 		return _player;
+	}
+
+	public Style style() {
+		return _style;
+	}
+
+	/** Bots do not comment on every single event they see. */
+	public boolean canReact(long now) {
+		return now >= _nextReaction;
+	}
+
+	public void reacted(long now) {
+		_nextReaction = now + Rnd.get(45000, 120000);
 	}
 
 	/** True when the bot has left the place it was spawned at. */

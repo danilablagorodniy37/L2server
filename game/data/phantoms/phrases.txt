@@ -184,3 +184,125 @@ gg
 not a bot lol
 im just slow
 who? me? no
+
+# ---------------------------------------------------------------------------
+# What the bots saw happen next to them. Slots: {subject} who, {object} what or
+# whom, {extra}, {ago} how long ago.
+# ---------------------------------------------------------------------------
+
+[seen death]
+{subject} just died to {object} right here
+rip {subject}
+oh no, {subject} got killed by {object}
+{subject} dont run into {object} like that
+someone rez {subject}, poor guy
+i saw {subject} die {ago}, brutal
+
+[seen levelup]
+gz {subject}!
+grats on {object}, {subject}
+nice, {subject} hit {object}
+{subject} is {object} now, gz
+
+[seen profession]
+gz {subject}, {object} finally!
+{subject} became {object}, respect
+welcome to the club {subject}
+
+[seen login]
+hi {subject}
+o/ {subject}
+look who is back, {subject}
+
+[seen logout]
+bye {subject}
+{subject} left already?
+
+[seen raidkill]
+we just saw {subject} kill {object}!
+{object} died right here {ago}
+{subject} took {object} down, what dropped?
+
+[seen pvp]
+{subject} just killed {object} here
+pvp in town area? {subject} vs {object}
+{subject} is farming people again
+
+# ---------------------------------------------------------------------------
+# Server news: everybody heard about it.
+# ---------------------------------------------------------------------------
+
+[news raidkill]
+{object} is down, {subject} got it {ago}
+who killed {object}? ah, {subject}
+{subject} killed {object} {ago}, grats
+{object} dead again... {subject} camps it
+anyone got a drop from {object}?
+
+[news pvp]
+{subject} killed {object} again
+{subject} is on a killing spree
+watch out for {subject}, {object} just died to him
+
+[news levelup]
+{subject} hit {object}! gz
+gz {subject} on {object}
+{subject} is {object} now, grats
+
+[news profession]
+gz {subject}, {object} at last
+{subject} is a {object} now
+
+[news clan]
+new clan {object} by {subject}, gl
+{subject} made a clan, {object}
+{object} is recruiting i heard
+
+[news olympiad]
+{subject} beat {object} at the olympiad
+olympiad: {subject} won against {object}
+{subject} is doing well in olympiad
+
+[news siegestart]
+siege of {extra} started!
+{extra} siege is on, gl everyone
+everyone to {extra}, siege started
+
+[news siegeend]
+siege of {extra} is over
+{extra} siege ended {ago}
+
+[news owner]
+{subject} took {extra}!
+{extra} belongs to {subject} now
+gz {subject} on {extra}
+
+# ---------------------------------------------------------------------------
+# Conversations of a few turns. Turns are separated by =>, the bots alternate.
+# ---------------------------------------------------------------------------
+
+[chain general]
+anyone here from {town}? => born here => same, never left
+what are you doing? => waiting for party to {zone} => can i come? => sure, come
+im broke again => same, shots eat everything => i craft mine now => teach me
+how long have you played? => since the start => veteran then => not really, still {me.level}
+this place is quiet today => wait for evening => true, people log in later
+where can i buy {weapon}? => try the trade chat => or the blacksmith in {town} => ty
+what is your class? => {me.class} => nice, easy leveling? => not really
+
+[chain raid]
+did you see {object}? => yes, {subject} took it => any drop? => nothing good, as always
+{object} is dead again => who got it this time => {subject} of course => they camp it
+should we try a raid? => which one => something for {me.level} => bring a healer then
+
+[chain siege]
+siege of {extra} soon => are you going? => yes, my clan is registered => good luck
+who holds {extra} now? => {castle.owner} => not for long i think => we will see
+
+[chain pvp]
+{subject} is killing everyone => where => near {zone} => avoid that place then
+i lost my karma finally => how long did it take => two hours of grinding => ouch
+
+[chain level]
+gz on level => ty, took all night => where did you grind => {zone}, its fine for {me.level}
+im stuck at {me.level} => try {zone} => with a party? => yes, solo is slow

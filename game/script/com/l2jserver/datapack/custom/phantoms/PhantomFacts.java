@@ -84,6 +84,13 @@ public class PhantomFacts {
 	 * @return the line with slots replaced
 	 */
 	public String fill(String text, L2PcInstance bot, String playerName) {
+		return fill(text, bot, playerName, null);
+	}
+
+	/**
+	 * @param news the event the line talks about, for {subject} {object} {extra} {ago}
+	 */
+	public String fill(String text, L2PcInstance bot, String playerName, PhantomNews.Item news) {
 		if (text.indexOf('{') < 0) {
 			return text;
 		}
@@ -105,7 +112,7 @@ public class PhantomFacts {
 			if (filled == null) {
 				// value() may remember helper values (the price of the item, the chosen castle),
 				// so it must not run inside computeIfAbsent on the same map.
-				filled = value(slot, bot, playerName, line);
+				filled = value(slot, bot, playerName, line, news);
 				line.put(slot, filled);
 			}
 			sb.append(filled);
@@ -114,8 +121,16 @@ public class PhantomFacts {
 		return sb.toString();
 	}
 
-	private String value(String slot, L2PcInstance bot, String playerName, Map<String, String> line) {
+	private String value(String slot, L2PcInstance bot, String playerName, Map<String, String> line, PhantomNews.Item news) {
 		switch (slot) {
+			case "subject":
+				return (news != null) && !news.subject().isEmpty() ? news.subject() : "someone";
+			case "object":
+				return (news != null) && !news.object().isEmpty() ? news.object() : "something";
+			case "extra":
+				return (news != null) && !news.extra().isEmpty() ? news.extra() : "";
+			case "ago":
+				return (news != null) ? PhantomNews.ago(news.time()) : "just now";
 			case "me":
 				return bot.getName();
 			case "me.class":
@@ -156,7 +171,8 @@ public class PhantomFacts {
 			case "dawn":
 				return SevenSigns.getCabalName(SevenSigns.getInstance().getCabalHighestScore());
 			case "online":
-				return String.valueOf(onlinePlayers());
+				final int online = onlinePlayers();
+				return (online > 0) ? String.valueOf(online) : "not many";
 			case "need":
 				return ROLES[Rnd.get(ROLES.length)];
 			default:

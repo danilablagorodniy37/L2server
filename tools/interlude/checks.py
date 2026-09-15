@@ -475,7 +475,10 @@ def starting_equipment():
 PHANTOMS = DATA / "phantoms"
 # Slots PhantomFacts can fill; keep in sync with its value() method.
 PHANTOM_SLOTS = {"me", "me.class", "me.level", "me.race", "town", "player", "zone", "zone.low", "zone.any", "grade",
-	"weapon", "weapon.other", "armor", "price", "raid", "raid.dead", "epic", "castle", "castle.owner", "dawn", "online", "need"}
+	"weapon", "weapon.other", "armor", "price", "raid", "raid.dead", "epic", "castle", "castle.owner", "dawn", "online", "need",
+	"subject", "object", "extra", "ago"}
+# Event kinds PhantomNews records; [seen <kind>] and [news <kind>] sections use them.
+PHANTOM_KINDS = {"raidkill", "pvp", "death", "levelup", "profession", "login", "logout", "clan", "olympiad", "siegestart", "siegeend", "owner"}
 PHANTOM_GRADES = {"NONE", "D", "C", "B", "A", "S"}
 
 
@@ -515,14 +518,19 @@ def phantom_phrases():
 			sections[section] += 0
 			continue
 		sections[section] += 1
-		if (section == "dialog") and ("=>" not in line):
-			problems[line].append("a dialog line needs '=>'")
+		if ((section == "dialog") or section.startswith("chain")) and ("=>" not in line):
+			problems[line].append("a dialog or chain line needs '=>'")
 	for slot in set(re.findall(r"\{([^}]*)\}", text)):
 		if slot not in PHANTOM_SLOTS:
 			problems["{" + slot + "}"].append("unknown slot, see PhantomFacts")
 	for name, count in sections.items():
 		if count == 0:
 			problems[f"[{name}]"].append("section without lines")
+		kind = name.split(" ", 1)
+		if (kind[0] in ("seen", "news")) and ((len(kind) < 2) or (kind[1] not in PHANTOM_KINDS)):
+			problems[f"[{name}]"].append("unknown event kind, see PhantomNews")
+		elif kind[0] not in ("general", "trade", "shout", "dialog", "reply", "seen", "news", "chain"):
+			problems[f"[{name}]"].append("unknown section")
 	for required in ("general", "trade", "shout", "dialog"):
 		if required not in sections:
 			problems[f"[{required}]"].append("section missing")

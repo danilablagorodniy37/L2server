@@ -43,6 +43,7 @@ public class PhraseBook {
 	}
 
 	private final Map<String, List<String>> _lines = new HashMap<>();
+	private final Map<String, List<List<String>>> _chains = new HashMap<>();
 	private final List<Dialog> _dialogs = new ArrayList<>();
 	private final List<Intent> _intents = new ArrayList<>();
 
@@ -73,6 +74,19 @@ public class PhraseBook {
 				}
 				continue;
 			}
+			if (section.startsWith("chain")) {
+				final String topic = section.length() > 5 ? section.substring(5).trim() : "general";
+				final List<String> turns = new ArrayList<>();
+				for (String turn : line.split("=>")) {
+					if (!turn.isBlank()) {
+						turns.add(turn.trim());
+					}
+				}
+				if (turns.size() > 1) {
+					_chains.computeIfAbsent(topic, s -> new ArrayList<>()).add(turns);
+				}
+				continue;
+			}
 			switch (section) {
 				case "reply" -> {
 					if (intent != null) {
@@ -93,6 +107,20 @@ public class PhraseBook {
 	public String random(String section) {
 		final List<String> lines = _lines.get(section);
 		return ((lines == null) || lines.isEmpty()) ? null : lines.get(Rnd.get(lines.size()));
+	}
+
+	/** A conversation of three or four turns on a topic; falls back to the general ones. */
+	public List<String> randomChain(String topic) {
+		List<List<String>> chains = _chains.get(topic);
+		if ((chains == null) || chains.isEmpty()) {
+			chains = _chains.get("general");
+		}
+		return ((chains == null) || chains.isEmpty()) ? null : chains.get(Rnd.get(chains.size()));
+	}
+
+	public boolean has(String section) {
+		final List<String> lines = _lines.get(section);
+		return (lines != null) && !lines.isEmpty();
 	}
 
 	public Dialog randomDialog() {
@@ -126,6 +154,11 @@ public class PhraseBook {
 		}
 		for (Intent intent : _intents) {
 			count += intent.replies().size();
+		}
+		for (List<List<String>> chains : _chains.values()) {
+			for (List<String> chain : chains) {
+				count += chain.size();
+			}
 		}
 		return count;
 	}

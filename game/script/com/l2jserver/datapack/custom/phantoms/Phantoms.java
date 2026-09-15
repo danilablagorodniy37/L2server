@@ -60,13 +60,19 @@ public class Phantoms {
 
 	private static final int DIALOG_RANGE = 700;
 	private static final int REPLY_RANGE = 900;
+	/** How far a bot notices what happens: deaths, level ups, someone arriving. */
+	private static final int SIGHT_RANGE = 1600;
+	private static final long SEEN_MEMORY = 5 * 60 * 1000L;
+	private static final long NEWS_MEMORY = 20 * 60 * 1000L;
 
 	private final List<Phantom> _phantoms = new ArrayList<>();
 	private final Set<Integer> _objectIds = new HashSet<>();
 	private final Map<Integer, Long> _regionChat = new HashMap<>();
+	private final Map<Integer, Long> _regionChain = new HashMap<>();
 
 	private final Properties _config = new Properties();
 	private PhraseBook _phrases;
+	private PhantomNews _news;
 	private PhantomFacts _facts;
 	private PhantomFactory _factory;
 	private String[] _towns;
@@ -152,11 +158,15 @@ public class Phantoms {
 			return;
 		}
 
+		_news = new PhantomNews(this, this::onNews);
 		ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(this::tick, 5, 2, TimeUnit.SECONDS);
 		if (_replyToPlayers) {
 			Containers.Global().addListener(new ConsumerEventListener(Containers.Global(), EventType.PLAYER_CHAT, (PlayerChat event) -> onPlayerChat(event), this));
 		}
 		LOG.info("{} bots in the world ({} created), {} phrases.", _phantoms.size(), created, _phrases.size());
+		if (Boolean.parseBoolean(_config.getProperty("DebugNews", "False").trim())) {
+			ThreadPoolManager.getInstance().scheduleGeneral(this::injectDebugNews, 25, TimeUnit.SECONDS);
+		}
 		ThreadPoolManager.getInstance().scheduleGeneral(() -> {
 			final long moved = _phantoms.stream().filter(Phantom::hasMoved).count();
 			LOG.info("{} of {} bots are walking around.", moved, _phantoms.size());
@@ -201,27 +211,92 @@ public class Phantoms {
 	}
 
 	private void speak(Phantom phantom, long now) {
+		// 1. Something the bot saw happen next to it.
+		final PhantomNews.Item seen = _news.seenNear(phantom.player().getX(), phantom.player().getY(), SIGHT_RANGE, SEEN_MEMORY);
+		if ((seen != null) && _phrases.has("seen " + seen.kind()) && (Rnd.get(100) < 45)) {
+			_news.mention(seen);
+			say(phantom, Say2.ALL, _phrases.random("seen " + seen.kind()), null, seen);
+			return;
+		}
+		
+		// 2. Server news everybody talks about.
+		final PhantomNews.Item news = _news.recentGlobal(NEWS_MEMORY);
+		if ((news != null) && _phrases.has("news " + news.kind()) && (Rnd.get(100) < 25)) {
+			_news.mention(news);
+			final int channel = (Rnd.get(100) < 25) && regionFree(phantom, now) ? Say2.SHOUT : Say2.ALL;
+			say(phantom, channel, _phrases.random("news " + news.kind()), null, news);
+			return;
+		}
+		
+		// 3. A conversation with a bot nearby, on the topic of the latest news.
 		final Phantom listener = neighbour(phantom, DIALOG_RANGE);
-		if ((listener != null) && (Rnd.get(100) < 35)) {
+		if ((listener != null) && (Rnd.get(100) < 45) && chainFree(phantom, now)) {
+			final List<String> chain = _phrases.randomChain(topic(news, seen));
+			if (chain != null) {
+				startChain(phantom, listener, chain, (seen != null) ? seen : news);
+				return;
+			}
 			final PhraseBook.Dialog dialog = _phrases.randomDialog();
 			if (dialog != null) {
-				say(phantom, Say2.ALL, dialog.line(), null);
+				say(phantom, Say2.ALL, dialog.line(), null, null);
 				listener.delayChat(15000);
-				ThreadPoolManager.getInstance().scheduleGeneral(() -> say(listener, Say2.ALL, dialog.answer(), null), Rnd.get(3000, 8000));
+				ThreadPoolManager.getInstance().scheduleGeneral(() -> say(listener, Say2.ALL, dialog.answer(), null, null), Rnd.get(3000, 8000));
 				return;
 			}
 		}
-
+		
+		// 4. Small talk.
 		final int roll = Rnd.get(100);
 		if ((roll < 12) && regionFree(phantom, now)) {
-			say(phantom, Say2.TRADE, _phrases.random("trade"), null);
+			say(phantom, Say2.TRADE, _phrases.random("trade"), null, null);
 		} else if ((roll < 20) && regionFree(phantom, now)) {
-			say(phantom, Say2.SHOUT, _phrases.random("shout"), null);
+			say(phantom, Say2.SHOUT, _phrases.random("shout"), null, null);
 		} else {
-			say(phantom, Say2.ALL, _phrases.random("general"), null);
+			say(phantom, Say2.ALL, _phrases.random("general"), null, null);
 		}
 	}
-
+	
+	private static String topic(PhantomNews.Item news, PhantomNews.Item seen) {
+		final PhantomNews.Item item = (seen != null) ? seen : news;
+		if (item == null) {
+			return "general";
+		}
+		return switch (item.kind()) {
+			case "raidkill" -> "raid";
+			case "siegestart", "siegeend", "owner" -> "siege";
+			case "pvp", "death" -> "pvp";
+			case "levelup", "profession" -> "level";
+			default -> "general";
+		};
+	}
+	
+	/** Two bots talk in turns, a few seconds apart. */
+	private void startChain(Phantom first, Phantom second, List<String> turns, PhantomNews.Item about) {
+		long delay = 0;
+		for (int i = 0; i < turns.size(); i++) {
+			final Phantom speaker = ((i % 2) == 0) ? first : second;
+			final String text = turns.get(i);
+			speaker.delayChat(((turns.size() - i) * 8000L) + 10000);
+			if (i == 0) {
+				say(speaker, Say2.ALL, text, null, about);
+			} else {
+				delay += Rnd.get(3000, 7000);
+				ThreadPoolManager.getInstance().scheduleGeneral(() -> say(speaker, Say2.ALL, text, null, about), delay);
+			}
+		}
+	}
+	
+	/** Only one conversation at a time per town, otherwise everybody talks over each other. */
+	private boolean chainFree(Phantom phantom, long now) {
+		final int region = MapRegionManager.getInstance().getMapRegionLocId(phantom.player());
+		final Long last = _regionChain.get(region);
+		if ((last != null) && ((now - last) < 60000)) {
+			return false;
+		}
+		_regionChain.put(region, now);
+		return true;
+	}
+	
 	/** Trade and shout are heard by a whole region, so they are rate limited per region. */
 	private boolean regionFree(Phantom phantom, long now) {
 		final int region = MapRegionManager.getInstance().getMapRegionLocId(phantom.player());
@@ -243,13 +318,13 @@ public class Phantoms {
 		return near.isEmpty() ? null : near.get(Rnd.get(near.size()));
 	}
 
-	private void say(Phantom phantom, int type, String text, String playerName) {
+	private void say(Phantom phantom, int type, String text, String playerName, PhantomNews.Item news) {
 		if ((text == null) || !phantom.player().isVisible()) {
 			return;
 		}
 		final var handler = ChatHandler.getInstance().getHandler(type);
 		if (handler != null) {
-			final String line = _facts.fill(text, phantom.player(), playerName);
+			final String line = phantom.style().apply(_facts.fill(text, phantom.player(), playerName, news));
 			handler.handleChat(type, phantom.player(), null, line);
 			LOG_CHAT.info("[phantom] {} says [{}].", phantom.player().getName(), line);
 		}
@@ -275,10 +350,57 @@ public class Phantoms {
 		final String answer = _phrases.answerTo(event.text(), phantom.player().getName());
 		if (answer != null) {
 			phantom.delayChat(20000);
-			ThreadPoolManager.getInstance().scheduleGeneral(() -> say(phantom, Say2.ALL, answer, player.getName()), Rnd.get(2000, 6000));
+			ThreadPoolManager.getInstance().scheduleGeneral(() -> say(phantom, Say2.ALL, answer, player.getName(), null), Rnd.get(2000, 6000));
 		}
 	}
 
+	/** Right after something happens, a bot or two who saw it say something. */
+	private void onNews(PhantomNews.Item item) {
+		final String section = (item.global() ? "news " : "seen ") + item.kind();
+		if (!_phrases.has(section)) {
+			return;
+		}
+		final long now = System.currentTimeMillis();
+		final List<Phantom> witnesses = new ArrayList<>();
+		for (Phantom phantom : _phantoms) {
+			if (!phantom.player().isVisible() || !phantom.canReact(now)) {
+				continue;
+			}
+			final boolean near = (Math.abs(phantom.player().getX() - item.x()) < SIGHT_RANGE) && (Math.abs(phantom.player().getY() - item.y()) < SIGHT_RANGE);
+			if (near || item.global()) {
+				witnesses.add(phantom);
+			}
+		}
+		if (witnesses.isEmpty()) {
+			return;
+		}
+		
+		final int speakers = item.global() ? 2 : 1;
+		for (int i = 0; i < speakers; i++) {
+			final Phantom phantom = witnesses.get(Rnd.get(witnesses.size()));
+			if (!phantom.canReact(now)) {
+				continue;
+			}
+			phantom.reacted(now);
+			phantom.delayChat(30000);
+			_news.mention(item);
+			ThreadPoolManager.getInstance().scheduleGeneral(() -> say(phantom, Say2.ALL, _phrases.random(section), null, item), Rnd.get(3000, 12000));
+		}
+	}
+	
+	/** Made up events for DebugNews: the bots should react to them like to real ones. */
+	private void injectDebugNews() {
+		final long now = System.currentTimeMillis();
+		final Phantom sample = _phantoms.get(Rnd.get(_phantoms.size()));
+		final int x = sample.player().getX();
+		final int y = sample.player().getY();
+		_news.add(new PhantomNews.Item("raidkill", now, x, y, "Testhunter", "Ancient Weird Drake", "60", true));
+		_news.add(new PhantomNews.Item("death", now, x, y, "Testvictim", "Cave Ant", "", false));
+		_news.add(new PhantomNews.Item("levelup", now, x, y, "Testnewbie", "40", "", false));
+		_news.add(new PhantomNews.Item("siegestart", now, 0, 0, "", "", "Giran", true));
+		LOG.info("DebugNews: four made up events sent around {}.", sample.player().getName());
+	}
+	
 	public static void main(String[] args) {
 		new Phantoms();
 	}
