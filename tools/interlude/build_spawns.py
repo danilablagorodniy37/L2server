@@ -117,7 +117,9 @@ def main():
 		if npc_id is not None:
 			by_region[region].add(npc_id)
 	kamael_npcs = kamael.npc_ids(npcs, by_region)
-	keep_ids = acis_npcs | kamael_npcs
+	# Rows on the Isle of Souls are always kept (remove_rows); elsewhere only NPCs
+	# of Kamael scripts, not everything that also stands on the island.
+	keep_ids = acis_npcs | (kamael.referenced_ids() & set(npcs))
 
 	text, removed = remove_rows(lines, keep_ids)
 	SPAWNLIST_SQL.write_text(text, encoding="utf-8", newline="\n")

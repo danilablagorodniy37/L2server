@@ -14,7 +14,22 @@ import sys
 
 import datasets as ds
 
-_LINK = re.compile(r'<a action="bypass -h npc_%objectId%_(multisell|exc_multisell|Buy) (\d+)"[^>]*>.*?</a>(?:<br1?>)?', re.I)
+LINK = re.compile(r'<a action="bypass -h npc_%objectId%_(multisell|exc_multisell|Buy) (\d+)"[^>]*>.*?</a>(?:<br1?>)?', re.I)
+
+
+def remove_links(text, is_broken):
+	"""Returns (text without links for which is_broken(kind, id) is true, number removed)."""
+	out, removed = [], 0
+	for line in text.splitlines(keepends=True):
+		matches = [m for m in LINK.finditer(line) if is_broken(m.group(1), int(m.group(2)))]
+		if not matches:
+			out.append(line)
+			continue
+		removed += len(matches)
+		rest = LINK.sub(lambda m: "" if is_broken(m.group(1), int(m.group(2))) else m.group(0), line)
+		if rest.strip():
+			out.append(rest)
+	return "".join(out), removed
 
 
 def main():
@@ -22,32 +37,21 @@ def main():
 	multisells = ds.multisell_ids()
 	buylists = ds.buylist_ids()
 
-	def broken(m):
-		ids = buylists if m.group(1) == "Buy" else multisells
-		return int(m.group(2)) not in ids
+	def is_broken(kind, list_id):
+		return list_id not in (buylists if kind == "Buy" else multisells)
 
 	files, links = 0, 0
 	for path in sorted(ds.html_files()):
 		with open(path, encoding="utf-8", errors="surrogateescape", newline="") as f:
-			text = f.read()
-		if not any(broken(m) for m in _LINK.finditer(text)):
+			text, removed = remove_links(f.read(), is_broken)
+		if not removed:
 			continue
-		out, removed = [], 0
-		for line in text.splitlines(keepends=True):
-			matches = [m for m in _LINK.finditer(line) if broken(m)]
-			if not matches:
-				out.append(line)
-				continue
-			removed += len(matches)
-			rest = _LINK.sub(lambda m: "" if broken(m) else m.group(0), line)
-			if rest.strip():
-				out.append(rest)
 		print(f"{path.relative_to(ds.GAME).as_posix()}: {removed}")
 		files += 1
 		links += removed
 		if not dry_run:
 			with open(path, "w", encoding="utf-8", errors="surrogateescape", newline="") as f:
-				f.write("".join(out))
+				f.write(text)
 	print(f"{'would remove' if dry_run else 'removed'} {links} links in {files} files")
 
 

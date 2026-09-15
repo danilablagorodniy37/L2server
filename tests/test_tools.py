@@ -1,0 +1,117 @@
+"""Unit tests of the helpers in tools/interlude that rewrite datapack files."""
+
+import re
+
+import pytest
+
+import build_html_links
+import build_spawns
+import checks
+import datasets as ds
+import kamael
+
+
+class TestRemoveLinks:
+	@staticmethod
+	def broken(kind, list_id):
+		return list_id in (2, 3)
+
+	def test_removes_whole_line(self):
+		text = (
+			'<html><body>Trader:<br>\r\n'
+			'<a action="bypass -h npc_%objectId%_Buy 1">Buy weapons.</a><br>\r\n'
+			'<a action="bypass -h npc_%objectId%_multisell 2">Buy talismans.</a><br>\r\n'
+			'<a action="bypass -h npc_%objectId%_Quest">Quest</a>\r\n'
+			'</body></html>'
+		)
+		result, removed = build_html_links.remove_links(text, self.broken)
+		assert removed == 1
+		assert "multisell 2" not in result
+		assert 'Buy 1">Buy weapons.</a><br>\r\n<a action="bypass -h npc_%objectId%_Quest">' in result
+
+	def test_cuts_link_out_of_longer_line_and_keeps_the_rest(self):
+		text = 'Text <a action="bypass -h npc_%objectId%_exc_multisell 3">Enhance.</a><br1><a action="bypass -h npc_%objectId%_Buy 1">Buy.</a>\n'
+		result, removed = build_html_links.remove_links(text, self.broken)
+		assert removed == 1
+		assert result == 'Text <a action="bypass -h npc_%objectId%_Buy 1">Buy.</a>\n'
+
+	def test_leaves_other_bypasses_alone(self):
+		text = '<a action="bypass -h npc_%objectId%_Chat 2">Chat.</a><br>\n<a action="bypass -h Quest Q00001_Letters 2">Q</a>\n'
+		assert build_html_links.remove_links(text, self.broken) == (text, 0)
+
+
+class TestSpawnlistSql:
+	def test_row_pattern(self):
+		row = '("unset", 1, 32478, 148400, 26576, -2200, 0, 0, 16500, 60, 0, 0, 0),'
+		assert ds._SPAWN_ROW.match(row).groups() == ("32478", "148400", "26576", "-2200")
+
+	def test_fix_separators_terminates_statements_and_drops_empty_inserts(self):
+		lines = [
+			"INSERT INTO `spawnlist` VALUES",
+			'("a", 1, 1, 0, 0, 0, 0, 0, 0, 60, 0, 0, 0),',
+			'("b", 1, 2, 0, 0, 0, 0, 0, 0, 60, 0, 0, 0),',
+			"INSERT INTO `spawnlist` VALUES",
+			"-- nothing left here",
+			"INSERT INTO `spawnlist` VALUES",
+			'("c", 1, 3, 0, 0, 0, 0, 0, 0, 60, 0, 0, 0);',
+			'("d", 1, 4, 0, 0, 0, 0, 0, 0, 60, 0, 0, 0);',
+		]
+		assert build_spawns.fix_separators(lines) == [
+			"INSERT INTO `spawnlist` VALUES",
+			'("a", 1, 1, 0, 0, 0, 0, 0, 0, 60, 0, 0, 0),',
+			'("b", 1, 2, 0, 0, 0, 0, 0, 0, 60, 0, 0, 0);',
+			"-- nothing left here",
+			"INSERT INTO `spawnlist` VALUES",
+			'("c", 1, 3, 0, 0, 0, 0, 0, 0, 60, 0, 0, 0),',
+			'("d", 1, 4, 0, 0, 0, 0, 0, 0, 60, 0, 0, 0);',
+		]
+
+	def test_remove_rows_keeps_isle_of_souls(self):
+		region = next(iter(kamael.REGIONS))
+		lines = [
+			("-- [20_20]", "20_20", None),
+			("INSERT INTO `spawnlist` VALUES", "20_20", None),
+			("-- Late NPC", "20_20", None),
+			('("x", 1, 99, 0, 0, 0, 0, 0, 0, 60, 0, 0, 0),', "20_20", 99),
+			("-- Guard", "20_20", None),
+			('("x", 1, 7, 0, 0, 0, 0, 0, 0, 60, 0, 0, 0);', "20_20", 7),
+			(f"-- [{region}]", region, None),
+			("INSERT INTO `spawnlist` VALUES", region, None),
+			('("x", 1, 99, 0, 0, 0, 0, 0, 0, 60, 0, 0, 0);', region, 99),
+		]
+		text, removed = build_spawns.remove_rows(lines, keep_ids={7})
+		assert removed == {99: 1}
+		assert "Late NPC" not in text
+		assert text.count("99,") == 1 and "-- Guard" in text
+
+	@pytest.mark.parametrize("value,expected", [("", 0), ("30sec", 30), ("5min", 300), ("2hour", 7200)])
+	def test_seconds(self, value, expected):
+		assert build_spawns.seconds(value) == expected
+
+
+class TestSqlPatterns:
+	def test_teleport_row_with_escaped_quote(self):
+		sql = "('Giran -> Hardin\\'s Private Academy',28,105918,109759,-3192,4400,0,57),\n('Plain',2,1,1,1,1,0,57);"
+		assert [int(v) for v in re.findall(checks.TELEPORT_ROW, sql, re.M)] == [28, 2]
+
+	def test_boss_row(self):
+		sql = "(25001,-54416,146480,-2887,0,129600,86400,95986,514), -- Greyclaw Kutus (23)"
+		assert re.findall(checks.BOSS_ROW, sql, re.M) == ["25001"]
+
+
+def test_properties_parser(tmp_path, monkeypatch):
+	(tmp_path / "x.properties").write_text("# comment\n! other\nMaxPlayerLevel = 80\nReward=6651,50;57,1\n\nEmpty =\n", encoding="utf-8")
+	monkeypatch.setattr(checks, "CONFIG", tmp_path)
+	assert checks.properties("x.properties") == {"MaxPlayerLevel": "80", "Reward": "6651,50;57,1", "Empty": ""}
+
+
+@pytest.mark.parametrize("name,expected", [
+	("Sword of Valhalla", True),
+	("Sword of Valhalla - Health", True),
+	("Sword of Valhalla - Unknown Ability", False),
+	("Dynasty Rapier", False),
+	("Rapier {PvP}", False),
+	("Rapier (Event)", False),
+])
+def test_interlude_like_weapon(name, expected):
+	assert kamael._is_interlude_like_weapon(name, {"Health", "Haste"}) is expected
