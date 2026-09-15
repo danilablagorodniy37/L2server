@@ -113,7 +113,6 @@ import com.l2jserver.datapack.ai.npc.Teleports.TeleportToFantasy.TeleportToFanta
 import com.l2jserver.datapack.ai.npc.Teleports.TeleportToRaceTrack.TeleportToRaceTrack;
 import com.l2jserver.datapack.ai.npc.Teleports.TeleportWithCharm.TeleportWithCharm;
 import com.l2jserver.datapack.ai.npc.TownPets.TownPets;
-import com.l2jserver.datapack.ai.npc.Tunatun.Tunatun;
 import com.l2jserver.datapack.ai.npc.VarkaSilenosSupport.VarkaSilenosSupport;
 import com.l2jserver.datapack.ai.npc.VillageMasters.FirstClassTransferTalk.FirstClassTransferTalk;
 import com.l2jserver.datapack.ai.npc.WyvernManager.WyvernManager;
@@ -211,7 +210,6 @@ public class AILoader {
 		TeleportToRaceTrack.class,
 		TeleportWithCharm.class,
 		TownPets.class,
-		Tunatun.class,
 		VarkaSilenosSupport.class,
 		FirstClassTransferTalk.class,
 		WyvernManager.class,

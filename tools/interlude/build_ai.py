@@ -33,6 +33,8 @@ REMOVED = {
 	"GolemTrader", "Asher", "Klemis", "MithrilMinesTeleporter", "StakatoNestTeleporter",
 	"SteelCitadelTeleport", "Survivor", "TeleportToUndergroundColiseum", "Tolonis", "WeaverOlf",
 	"DelusionTeleport", "ToIVortex", "HandysBlockCheckerEvent",
+	# Beast Farm: H5 Beast Handler's Whip (Tunatun keeps his Interlude dialog)
+	"Tunatun",
 }
 
 

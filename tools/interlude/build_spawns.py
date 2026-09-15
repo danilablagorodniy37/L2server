@@ -2,7 +2,7 @@
 
 1. game/sql/spawnlist.sql: rows of NPCs absent from aCis are removed, except on
    the Isle of Souls and for Kamael NPCs (see kamael.py).
-2. Interlude monsters that are no longer spawned anywhere in H5 are imported
+2. Interlude monsters (and feedable beasts) no longer spawned anywhere in H5 are imported
    from the aCis spawnlist (plain "default_maker" makers only; event, day/night
    and scripted makers are skipped):
    - territories -> game/data/zones/npcSpawnTerritories/interlude.xml
@@ -25,6 +25,19 @@ SPAWNLIST_SQL = ds.GAME / "sql" / "spawnlist.sql"
 ZONES_OUT = ds.GAME / "data" / "zones" / "npcSpawnTerritories" / "interlude.xml"
 SPAWNS_OUT = ds.GAME / "data" / "spawnlist" / "interlude.xml"
 ZONE_PREFIX = "il_"
+# Monsters and the Beast Farm animals (Alpine Kookaburra, Buffalo, Cougar: quests 20, 631, 655).
+IMPORTED_TYPES = {"L2Monster", "L2FeedableBeast"}
+# Other Interlude NPCs missing from the H5 datapack that quests and systems need.
+# Makers with several random positions get the first one.
+EXTRA_NPCS = {
+	35628: "Quigby, sells Golden/Crystal Spice for the Beast Farm",
+	32042: "Weathermaster, quest 120",
+	32044: "Weathermaster, quest 120",
+	31542: "Yeti's Table, quest 625",
+	32012: "Tantan, quest 652",
+	32014: "Ivan, quest 651",
+	32049: "Rooney, quest 617 (the H5 Forge of the Gods AI that spawned him is off)",
+}
 _REGION = re.compile(r"-- \[(\d+_\d+)\]")
 _DURATION = re.compile(r"^(\d+)(sec|min|hour)$")
 
@@ -147,7 +160,7 @@ def main():
 					skipped["no H5 template"] += 1
 				elif npc_id in still_spawned:
 					skipped["already spawned in H5"] += 1
-				elif template["type"] != "L2Monster":
+				elif template["type"] not in IMPORTED_TYPES and npc_id not in EXTRA_NPCS:
 					skipped["not a monster: " + template["type"]] += 1
 				else:
 					entries.append((npc, template))
@@ -196,7 +209,7 @@ def write_spawns(spawns):
 		for npc, template in entries:
 			attrs = f'id="{npc.get("id")}"'
 			if npc.get("pos"):
-				x, y, z, heading = npc.get("pos").split(";")
+				x, y, z, heading = npc.get("pos").split(";")[:4]
 				attrs += f' x="{x}" y="{y}" z="{z}" heading="{heading}"'
 			attrs += f' count="{npc.get("total")}" respawnDelay="{seconds(npc.get("respawn"))}"'
 			if npc.get("respawnRand"):

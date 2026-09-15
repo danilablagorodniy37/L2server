@@ -1087,6 +1087,12 @@
 		<node X="48267" Y="246318" />
 		<node X="47688" Y="246327" />
 	</zone>
+	<zone name="il_godard05_npc2414_02" type="NpcSpawnTerritory" shape="NPoly" minZ="-2436" maxZ="-2236">
+		<node X="157036" Y="-121572" />
+		<node X="157236" Y="-121572" />
+		<node X="157236" Y="-121372" />
+		<node X="157036" Y="-121372" />
+	</zone>
 	<zone name="il_godard08_2514_01" type="NpcSpawnTerritory" shape="NPoly" minZ="-3647" maxZ="-3447">
 		<node X="179651" Y="-116994" />
 		<node X="179519" Y="-116706" />
@@ -1401,6 +1407,12 @@
 		<node X="187759" Y="-110498" />
 		<node X="187131" Y="-110466" />
 		<node X="187015" Y="-111754" />
+	</zone>
+	<zone name="il_godard09_npc2514_08" type="NpcSpawnTerritory" shape="NPoly" minZ="-3663" maxZ="-3463">
+		<node X="179580" Y="-115572" />
+		<node X="179780" Y="-115572" />
+		<node X="179780" Y="-115372" />
+		<node X="179580" Y="-115372" />
 	</zone>
 	<zone name="il_innadril03_2223_03" type="NpcSpawnTerritory" shape="NPoly" minZ="-3832" maxZ="-2632">
 		<node X="78188" Y="187653" />
@@ -1817,6 +1829,12 @@
 		<node X="81620" Y="69048" />
 		<node X="76704" Y="69084" />
 	</zone>
+	<zone name="il_oren31_npc2217_004" type="NpcSpawnTerritory" shape="NPoly" minZ="-3858" maxZ="-1858">
+		<node X="97880" Y="-15080" />
+		<node X="98011" Y="-298" />
+		<node X="76929" Y="-375" />
+		<node X="78724" Y="-6910" />
+	</zone>
 	<zone name="il_rune06_2115_01" type="NpcSpawnTerritory" shape="NPoly" minZ="-3548" maxZ="-3248">
 		<node X="52862" Y="-76747" />
 		<node X="54218" Y="-76727" />
@@ -1829,6 +1847,18 @@
 		<node X="51779" Y="-77393" />
 		<node X="51559" Y="-75785" />
 		<node X="49995" Y="-76245" />
+	</zone>
+	<zone name="il_rune06_2115_03" type="NpcSpawnTerritory" shape="NPoly" minZ="-3441" maxZ="-3241">
+		<node X="50723" Y="-76012" />
+		<node X="51551" Y="-75760" />
+		<node X="51431" Y="-75228" />
+		<node X="50595" Y="-75376" />
+	</zone>
+	<zone name="il_rune06_2115_04" type="NpcSpawnTerritory" shape="NPoly" minZ="-3567" maxZ="-3367">
+		<node X="48825" Y="-76661" />
+		<node X="49353" Y="-76429" />
+		<node X="49165" Y="-75973" />
+		<node X="48701" Y="-76121" />
 	</zone>
 	<zone name="il_rune06_2115_05" type="NpcSpawnTerritory" shape="NPoly" minZ="-3564" maxZ="-3364">
 		<node X="48762" Y="-78785" />
@@ -2072,6 +2102,12 @@
 		<node X="51289" Y="-84497" />
 		<node X="51833" Y="-83605" />
 		<node X="51529" Y="-83281" />
+	</zone>
+	<zone name="il_rune07_npc2115_04" type="NpcSpawnTerritory" shape="NPoly" minZ="-1388" maxZ="-1188">
+		<node X="60780" Y="-94420" />
+		<node X="60980" Y="-94420" />
+		<node X="60980" Y="-94220" />
+		<node X="60780" Y="-94220" />
 	</zone>
 	<zone name="il_rune13_2315_01" type="NpcSpawnTerritory" shape="NPoly" minZ="-3460" maxZ="-3160">
 		<node X="109723" Y="-85857" />
@@ -3404,6 +3440,12 @@
 		<node X="174317" Y="-177270" />
 		<node X="173817" Y="-177293" />
 	</zone>
+	<zone name="il_schuttgart11_npc2313_03" type="NpcSpawnTerritory" shape="NPoly" minZ="-5504" maxZ="1496">
+		<node X="102174" Y="-157331" />
+		<node X="120416" Y="-162120" />
+		<node X="127417" Y="-141721" />
+		<node X="100259" Y="-138263" />
+	</zone>
 	<zone name="il_schuttgart14_2214_01" type="NpcSpawnTerritory" shape="NPoly" minZ="-4350" maxZ="-3950">
 		<node X="90451" Y="-128694" />
 		<node X="90897" Y="-129200" />
@@ -3630,6 +3672,18 @@
 		<node X="95751" Y="-130717" />
 		<node X="96867" Y="-128005" />
 		<node X="96041" Y="-127250" />
+	</zone>
+	<zone name="il_schuttgart14_npc2214_34" type="NpcSpawnTerritory" shape="NPoly" minZ="-3412" maxZ="-3012">
+		<node X="90412" Y="-110524" />
+		<node X="90938" Y="-109857" />
+		<node X="90521" Y="-109482" />
+		<node X="89965" Y="-109892" />
+	</zone>
+	<zone name="il_schuttgart14_npc2214_73" type="NpcSpawnTerritory" shape="NPoly" minZ="-3392" maxZ="-2992">
+		<node X="85741" Y="-105707" />
+		<node X="85723" Y="-106128" />
+		<node X="86196" Y="-106149" />
+		<node X="86215" Y="-105713" />
 	</zone>
 	<zone name="il_schuttgart16_2114_01s" type="NpcSpawnTerritory" shape="NPoly" minZ="-3184" maxZ="-2984">
 		<node X="61664" Y="-118176" />

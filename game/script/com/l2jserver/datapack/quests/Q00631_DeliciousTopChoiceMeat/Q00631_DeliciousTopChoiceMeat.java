@@ -1,18 +1,18 @@
 /*
  * Copyright © 2004-2024 L2J DataPack
- * 
+ *
  * This file is part of L2J DataPack.
- * 
+ *
  * L2J DataPack is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * 
+ *
  * L2J DataPack is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
  * General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
@@ -20,137 +20,135 @@ package com.l2jserver.datapack.quests.Q00631_DeliciousTopChoiceMeat;
 
 import com.l2jserver.gameserver.model.actor.L2Npc;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
-import com.l2jserver.gameserver.model.holders.QuestItemChanceHolder;
+import com.l2jserver.gameserver.model.holders.ItemHolder;
 import com.l2jserver.gameserver.model.quest.Quest;
 import com.l2jserver.gameserver.model.quest.QuestDroplist;
 import com.l2jserver.gameserver.model.quest.QuestState;
 
 /**
- * Delicious Top Choice Meat (631)
- * @author Adry_85
+ * Delicious Top Choice Meat (631), Interlude version (ported from aCis).<br>
+ * Grown Beast Farm animals drop Top-Quality Meat; 120 pieces buy a crafting material.
  */
 public class Q00631_DeliciousTopChoiceMeat extends Quest {
-	// Misc
-	private static final int MIN_LEVEL = 82;
 	// NPC
 	private static final int TUNATUN = 31537;
-	// Items
+	// Item
 	private static final int TOP_QUALITY_MEAT = 7546;
-	private static final QuestItemChanceHolder PRIME_MEAT = new QuestItemChanceHolder(15534, 120L);
-	// Droplist
+	private static final int REQUIRED_COUNT = 120;
+	// Droplist: grown Kookaburras, Buffalos and Cougars
 	private static final QuestDroplist DROPLIST = QuestDroplist.builder()
-		.addSingleDrop(18878, PRIME_MEAT, 17.2) // Full Grown Kookaburra
-		.addSingleDrop(18879, PRIME_MEAT, 33.4) // Full Grown Kookaburra
-		.addSingleDrop(18885, PRIME_MEAT, 17.2) // Full Grown Cougar
-		.addSingleDrop(18886, PRIME_MEAT, 33.4) // Full Grown Cougar
-		.addSingleDrop(18892, PRIME_MEAT, 18.2) // Full Grown Buffalo
-		.addSingleDrop(18893, PRIME_MEAT, 34.9) // Full Grown Buffalo
-		.addSingleDrop(18899, PRIME_MEAT, 18.2) // Full Grown Grendel
-		.addSingleDrop(18900, PRIME_MEAT, 34.9) // Full Grown Grendel
+		.addSingleDrop(21460, TOP_QUALITY_MEAT, 60.1)
+		.addSingleDrop(21461, TOP_QUALITY_MEAT, 48.0)
+		.addSingleDrop(21462, TOP_QUALITY_MEAT, 44.7)
+		.addSingleDrop(21463, TOP_QUALITY_MEAT, 80.8)
+		.addSingleDrop(21464, TOP_QUALITY_MEAT, 44.7)
+		.addSingleDrop(21465, TOP_QUALITY_MEAT, 80.8)
+		.addSingleDrop(21466, TOP_QUALITY_MEAT, 44.7)
+		.addSingleDrop(21467, TOP_QUALITY_MEAT, 80.8)
+		.addSingleDrop(21479, TOP_QUALITY_MEAT, 47.7)
+		.addSingleDrop(21480, TOP_QUALITY_MEAT, 86.3)
+		.addSingleDrop(21481, TOP_QUALITY_MEAT, 47.7)
+		.addSingleDrop(21482, TOP_QUALITY_MEAT, 86.3)
+		.addSingleDrop(21483, TOP_QUALITY_MEAT, 47.7)
+		.addSingleDrop(21484, TOP_QUALITY_MEAT, 86.3)
+		.addSingleDrop(21485, TOP_QUALITY_MEAT, 47.7)
+		.addSingleDrop(21486, TOP_QUALITY_MEAT, 86.3)
+		.addSingleDrop(21498, TOP_QUALITY_MEAT, 50.9)
+		.addSingleDrop(21499, TOP_QUALITY_MEAT, 92.0)
+		.addSingleDrop(21500, TOP_QUALITY_MEAT, 50.9)
+		.addSingleDrop(21501, TOP_QUALITY_MEAT, 92.0)
+		.addSingleDrop(21502, TOP_QUALITY_MEAT, 50.9)
+		.addSingleDrop(21503, TOP_QUALITY_MEAT, 92.0)
+		.addSingleDrop(21504, TOP_QUALITY_MEAT, 50.9)
+		.addSingleDrop(21505, TOP_QUALITY_MEAT, 92.0)
 		.build();
-	// Rewards
-	private static final int[] RECIPE = {
-		10373, // Recipe - Icarus Sawsword (60%)
-		10374, // Recipe - Icarus Disperser (60%)
-		10375, // Recipe - Icarus Spirit (60%)
-		10376, // Recipe - Icarus Heavy Arms (60%)
-		10377, // Recipe - Icarus Trident (60%)
-		10378, // Recipe - Icarus Hammer (60%)
-		10379, // Recipe - Icarus Hand (60%)
-		10380, // Recipe - Icarus Hall (60%)
-		10381, // Recipe - Icarus Spitter (60%)
+	// Rewards, chosen by index in 31537-05.htm
+	private static final ItemHolder[] REWARDS = {
+		new ItemHolder(4039, 15), // Mold Glue
+		new ItemHolder(4043, 15), // Asofe
+		new ItemHolder(4044, 15), // Thons
+		new ItemHolder(4040, 10), // Mold Lubricant
+		new ItemHolder(4042, 10), // Enria
+		new ItemHolder(4041, 5), // Mold Hardener
 	};
-	
-	private static final int[] PIECE = {
-		10397, // Icarus Sawsword Piece
-		10398, // Icarus Disperser Piece
-		10399, // Icarus Spirit Piece
-		10400, // Icarus Heavy Arms Piece
-		10401, // Icarus Trident Piece
-		10402, // Icarus Hammer Piece
-		10403, // Icarus Hand Piece
-		10404, // Icarus Hall Piece
-		10405, // Icarus Spitter Piece
-	};
-	
-	private static final int GOLDEN_SPICE_CRATE = 15482;
-	private static final int CRYSTAL_SPICE_COMPRESSED_PACK = 15483;
-	
+	// Misc
+	private static final int MIN_LEVEL = 65;
+
 	public Q00631_DeliciousTopChoiceMeat() {
 		super(631, Q00631_DeliciousTopChoiceMeat.class.getSimpleName(), "Delicious Top Choice Meat");
 		bindStartNpc(TUNATUN);
 		bindTalk(TUNATUN);
 		bindKill(DROPLIST.getNpcIds());
-		registerQuestItems(TOP_QUALITY_MEAT, PRIME_MEAT.getId());
+		registerQuestItems(TOP_QUALITY_MEAT);
 	}
-	
+
 	@Override
 	public String onEvent(String event, L2Npc npc, L2PcInstance player) {
-		final QuestState st = getQuestState(player, false);
-		if (st == null) {
+		final QuestState qs = getQuestState(player, false);
+		if (qs == null) {
 			return null;
 		}
-		
+
 		String htmltext = null;
 		switch (event) {
-			case "quest_accept": {
+			case "31537-03.htm": {
+				if (!qs.isCreated()) {
+					break;
+				}
 				if (player.getLevel() >= MIN_LEVEL) {
-					st.startQuest();
-					htmltext = "31537-02.html";
+					qs.startQuest();
+					htmltext = event;
 				} else {
-					htmltext = "31537-03.html";
+					htmltext = "31537-02.htm";
 				}
 				break;
 			}
-			case "31537-06.html": {
-				if (st.isCond(2) && hasItemsAtLimit(player, PRIME_MEAT)) {
-					switch (getRandom(10)) {
-						case 0 -> st.rewardItems(RECIPE[getRandom(RECIPE.length)], 1);
-						case 1 -> st.rewardItems(PIECE[getRandom(PIECE.length)], 1);
-						case 2 -> st.rewardItems(PIECE[getRandom(PIECE.length)], 2);
-						case 3 -> st.rewardItems(PIECE[getRandom(PIECE.length)], 3);
-						case 4 -> st.rewardItems(PIECE[getRandom(PIECE.length)], getRandom(5) + 2);
-						case 5 -> st.rewardItems(PIECE[getRandom(PIECE.length)], getRandom(7) + 2);
-						case 6 -> st.rewardItems(GOLDEN_SPICE_CRATE, 1);
-						case 7 -> st.rewardItems(GOLDEN_SPICE_CRATE, 2);
-						case 8 -> st.rewardItems(CRYSTAL_SPICE_COMPRESSED_PACK, 1);
-						case 9 -> st.rewardItems(CRYSTAL_SPICE_COMPRESSED_PACK, 2);
-					}
-					st.exitQuest(true, true);
+			case "31537-05.htm": {
+				if (qs.isCond(2)) {
 					htmltext = event;
+				}
+				break;
+			}
+			case "0", "1", "2", "3", "4", "5": {
+				if (!qs.isStarted()) {
+					break;
+				}
+				if (getQuestItemsCount(player, TOP_QUALITY_MEAT) >= REQUIRED_COUNT) {
+					takeItems(player, TOP_QUALITY_MEAT, -1);
+					rewardItems(player, REWARDS[Integer.parseInt(event)]);
+					qs.exitQuest(true, true);
+					htmltext = "31537-06.htm";
+				} else {
+					qs.setCond(1);
+					htmltext = "31537-07.htm";
 				}
 				break;
 			}
 		}
 		return htmltext;
 	}
-	
+
 	@Override
-	public String onKill(L2Npc npc, L2PcInstance player, boolean isSummon) {
-		final QuestState st = getRandomPartyMemberState(player, 1, 3, npc);
-		if (st != null) {
-			if (giveItemRandomly(st.getPlayer(), npc, DROPLIST.get(npc), true)) {
-				st.setCond(2);
-			}
+	public String onKill(L2Npc npc, L2PcInstance killer, boolean isSummon) {
+		final QuestState qs = getRandomPartyMemberState(killer, 1, 3, npc);
+		if ((qs != null) && giveItemRandomly(qs.getPlayer(), npc, qs.getPlayer(), DROPLIST.get(npc).drop(), REQUIRED_COUNT, true)) {
+			qs.setCond(2);
 		}
-		return super.onKill(npc, player, isSummon);
+		return super.onKill(npc, killer, isSummon);
 	}
-	
+
 	@Override
 	public String onTalk(L2Npc npc, L2PcInstance player) {
-		final QuestState st = getQuestState(player, true);
+		final QuestState qs = getQuestState(player, true);
 		String htmltext = getNoQuestMsg(player);
-		if (st.isCreated()) {
+		if (qs.isCreated()) {
 			htmltext = "31537-01.htm";
-		} else if (st.isStarted()) {
-			if (st.isCond(1)) {
-				if (!hasItemsAtLimit(st.getPlayer(), PRIME_MEAT)) {
-					htmltext = "31537-04.html";
-				}
-			} else if (st.isCond(2)) {
-				if (hasItemsAtLimit(st.getPlayer(), PRIME_MEAT)) {
-					htmltext = "31537-05.html";
-				}
+		} else if (qs.isStarted()) {
+			if (qs.isCond(2) && (getQuestItemsCount(player, TOP_QUALITY_MEAT) >= REQUIRED_COUNT)) {
+				htmltext = "31537-04.htm";
+			} else {
+				qs.setCond(1);
+				htmltext = "31537-03a.htm";
 			}
 		}
 		return htmltext;
