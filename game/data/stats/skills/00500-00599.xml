@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
-	<skill id="500" levels="2" name="True Berserker" enchantGroup1="1" enchantGroup2="1">
+	<skill id="500" levels="2" name="True Berserker">
 		<!-- Confirmed CT2.5 -->
 		<table name="#amount"> 1.05 1.08 </table>
 		<table name="#amount2"> 2 4 </table>
@@ -51,7 +51,7 @@
 			</effect>
 		</enchant2Effects>
 	</skill>
-	<skill id="501" levels="12" name="Violent Temper" enchantGroup1="1" enchantGroup2="1">
+	<skill id="501" levels="12" name="Violent Temper">
 		<!-- Confirmed CT2.5 -->
 		<table name="#effectPoint"> -234 -248 -262 -275 -283 -291 -299 -306 -312 -318 -323 -328 </table>
 		<table name="#magicLvl"> 49 52 55 58 60 62 64 66 68 70 72 74 </table>
@@ -89,7 +89,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="502" levels="5" name="Life to Soul" enchantGroup1="1" enchantGroup2="1">
+	<skill id="502" levels="5" name="Life to Soul">
 		<!-- Confirmed CT2.5 -->
 		<table name="#hpConsume"> 193 237 279 311 328 </table>
 		<table name="#magicLvl"> 40 49 58 66 72 </table>
@@ -150,7 +150,7 @@
 		<set name="rideState" val="NONE" />
 		<set name="targetType" val="ENEMY" />
 	</skill>
-	<skill id="504" levels="37" name="Triple Thrust" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
+	<skill id="504" levels="37" name="Triple Thrust">
 		<!-- Confirmed CT2.5 -->
 		<table name="#effectPoint"> -183 -188 -193 -198 -203 -208 -213 -218 -223 -228 -233 -237 -242 -247 -252 -257 -261 -266 -271 -275 -279 -284 -288 -292 -296 -300 -304 -307 -311 -314 -317 -320 -323 -326 -328 -331 -333 </table>
 		<table name="#magicLvl"> 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 </table>
@@ -225,7 +225,7 @@
 			</effect>
 		</enchant7pveEffects>
 	</skill>
-	<skill id="505" levels="28" name="Shining Edge" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
+	<skill id="505" levels="28" name="Shining Edge">
 		<!-- Confirmed CT2.5 -->
 		<table name="#effectPoint"> -228 -233 -237 -242 -247 -252 -257 -261 -266 -271 -275 -279 -284 -288 -292 -296 -300 -304 -307 -311 -314 -317 -320 -323 -326 -328 -331 -333 </table>
 		<table name="#magicLvl"> 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 </table>
@@ -305,7 +305,7 @@
 			</effect>
 		</enchant7pveEffects>
 	</skill>
-	<skill id="506" levels="4" name="Checkmate" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2">
+	<skill id="506" levels="4" name="Checkmate">
 		<!-- Confirmed CT2.5 -->
 		<table name="#effectPoint"> -252 -288 -311 -328 </table>
 		<table name="#magicLvl"> 52 60 66 72 </table>
@@ -383,7 +383,7 @@
 			</effect>
 		</enchant4pveEffects>
 	</skill>
-	<skill id="507" levels="37" name="Twin Shot" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
+	<skill id="507" levels="37" name="Twin Shot">
 		<!-- Confirmed CT2.5 -->
 		<table name="#effectPoint"> -366 -375 -385 -395 -405 -415 -425 -435 -445 -455 -465 -474 -484 -494 -503 -513 -522 -532 -541 -550 -558 -567 -575 -583 -591 -599 -607 -614 -621 -627 -634 -640 -646 -651 -656 -661 -665 </table>
 		<table name="#magicLvl"> 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 </table>
@@ -455,7 +455,7 @@
 			</effect>
 		</enchant7pveEffects>
 	</skill>
-	<skill id="508" levels="31" name="Rising Shot" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2" enchantGroup6="2" enchantGroup7="2">
+	<skill id="508" levels="31" name="Rising Shot">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -213 -218 -223 -228 -233 -237 -242 -247 -252 -257 -261 -266 -271 -275 -279 -284 -288 -292 -296 -300 -304 -307 -311 -314 -317 -320 -323 -326 -328 -331 -333 </table>
 		<table name="#magicLvl"> 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 </table>
@@ -527,7 +527,7 @@
 			</effect>
 		</enchant7pveEffects>
 	</skill>
-	<skill id="509" levels="34" name="Bleeding Shot" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
+	<skill id="509" levels="34" name="Bleeding Shot">
 		<!-- Confirmed CT2.5 -->
 		<table name="#dot"> -44 -44 -44 -44 -44 -44 -44 -44 -44 -54 -54 -54 -54 -54 -54 -54 -54 -54 -54 -62 -62 -62 -62 -62 -62 -62 -62 -62 -62 -67 -67 -67 -67 -67 </table>
 		<table name="#effectPoint"> -395 -405 -415 -425 -435 -445 -455 -465 -474 -484 -494 -503 -513 -522 -532 -541 -550 -558 -567 -575 -583 -591 -599 -607 -614 -621 -627 -634 -640 -646 -651 -656 -661 -665 </table>
@@ -593,7 +593,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="510" levels="5" name="Deadly Roulette" enchantGroup1="2" enchantGroup2="2">
+	<skill id="510" levels="5" name="Deadly Roulette">
 		<!-- Confirmed CT2.5 -->
 		<table name="#lethalStrikeRate"> 30 35 40 45 50 </table>
 		<table name="#magicLvl"> 66 68 70 72 74 </table>
@@ -703,7 +703,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="514" levels="9" name="Fire Trap" enchantGroup1="2" enchantGroup2="2">
+	<skill id="514" levels="9" name="Fire Trap">
 		<!-- Confirmed CT2.5 and Updated to H5 -->
 		<table name="#magicLvl"> 28 36 43 49 55 60 64 68 72 </table>
 		<table name="#npcId"> 13037 13038 13039 13040 13041 13042 13043 13044 13045 </table>
@@ -747,7 +747,7 @@
 		</enchant2Effects>
 		<set name="affectScope" val="SINGLE" />
 	</skill>
-	<skill id="515" levels="6" name="Poison Trap" enchantGroup1="2" enchantGroup2="2">
+	<skill id="515" levels="6" name="Poison Trap">
 		<!-- Confirmed CT2.5 and Updated to H5 -->
 		<table name="#magicLvl"> 49 55 60 64 68 72 </table>
 		<table name="#npcId"> 13046 13047 13048 13049 13050 13051 </table>
@@ -791,7 +791,7 @@
 		</enchant2Effects>
 		<set name="affectScope" val="SINGLE" />
 	</skill>
-	<skill id="516" levels="6" name="Slow Trap" enchantGroup1="2" enchantGroup2="2">
+	<skill id="516" levels="6" name="Slow Trap">
 		<!-- Confirmed CT2.5 and Updated to H5 -->
 		<table name="#magicLvl"> 52 58 62 66 70 74 </table>
 		<table name="#npcId"> 13065 13066 13067 13068 13069 13070 </table>
@@ -835,7 +835,7 @@
 		</enchant2Effects>
 		<set name="affectScope" val="SINGLE" />
 	</skill>
-	<skill id="517" levels="5" name="Flash Trap" enchantGroup1="2" enchantGroup2="2">
+	<skill id="517" levels="5" name="Flash Trap">
 		<!-- Confirmed CT2.5 and Updated to H5 -->
 		<table name="#magicLvl"> 55 60 64 68 72 </table>
 		<table name="#npcId"> 13052 13053 13054 13055 13056 </table>
@@ -879,7 +879,7 @@
 		</enchant2Effects>
 		<set name="affectScope" val="SINGLE" />
 	</skill>
-	<skill id="518" levels="8" name="Binding Trap" enchantGroup1="2" enchantGroup2="2">
+	<skill id="518" levels="8" name="Binding Trap">
 		<!-- Confirmed CT2.5 and Updated to H5 -->
 		<table name="#magicLvl"> 40 46 52 58 62 66 70 74 </table>
 		<table name="#npcId"> 13057 13058 13059 13060 13061 13062 13063 13064 </table>
@@ -979,7 +979,7 @@
 			<effect name="RestorationRandom" />
 		</effects>
 	</skill>
-	<skill id="521" levels="8" name="Sharpshooting" enchantGroup1="1" enchantGroup2="1">
+	<skill id="521" levels="8" name="Sharpshooting">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 4 5 6 7 8 </table>
 		<table name="#accCombat"> 3 3 4 4 5 5 6 6 </table>
@@ -1061,7 +1061,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="522" levels="4" name="Real Target" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1" enchantGroup4="1">
+	<skill id="522" levels="4" name="Real Target">
 		<!-- Confirmed CT2.5 and Updated to H5 -->
 		<table name="#abnormalLvl"> 1 2 3 4 </table>
 		<table name="#castRange"> 600 700 800 900 </table>
@@ -1200,7 +1200,7 @@
 		</effects>
 		<set name="affectScope" val="SINGLE" />
 	</skill>
-	<skill id="525" levels="6" name="Decoy" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
+	<skill id="525" levels="6" name="Decoy">
 		<!-- Confirmed CT2.5 -->
 		<table name="#magicLvl"> 43 52 60 66 70 74 </table>
 		<table name="#mpConsume2"> 60 75 88 98 104 109 </table>
@@ -1239,7 +1239,7 @@
 		</enchant3Effects>
 		<set name="affectScope" val="SINGLE" />
 	</skill>
-	<skill id="526" levels="1" name="Enuma Elish" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6" enchantGroup4="6">
+	<skill id="526" levels="1" name="Enuma Elish">
 		<!-- High Five Confirmed -->
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#enchMpConsume2"> 77 74 72 69 67 64 61 59 56 53 51 48 45 43 40 </table>
@@ -1328,7 +1328,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="528" levels="1" name="Shield of Faith" enchantGroup1="5" enchantGroup2="5" enchantGroup3="5">
+	<skill id="528" levels="1" name="Shield of Faith">
 		<!-- High Five Confirmed -->
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#ench1mDef"> 2790 2880 2970 3060 3150 3240 3330 3420 3510 3600 3690 3780 3870 3960 4050 </table>
@@ -1379,7 +1379,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="529" levels="1" name="Song of Elemental" enchantGroup1="5" enchantGroup2="5">
+	<skill id="529" levels="1" name="Song of Elemental">
 		<!-- High Five Confirmed -->
 		<table name="#ench1AbnormalTime"> 128 136 144 152 160 168 176 184 192 200 208 216 224 232 240 </table>
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
@@ -1420,7 +1420,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="530" levels="1" name="Dance of Alignment" enchantGroup1="5" enchantGroup2="5">
+	<skill id="530" levels="1" name="Dance of Alignment">
 		<!-- High Five Confirmed -->
 		<table name="#ench1AbnormalTime"> 128 136 144 152 160 168 176 184 192 200 208 216 224 232 240 </table>
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>

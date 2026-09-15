@@ -690,7 +690,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1146" levels="3" name="Mighty Servitor" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1146" levels="3" name="Mighty Servitor">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 331 457 532 </table>
@@ -762,7 +762,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1148" levels="13" name="Death Spike" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
+	<skill id="1148" levels="13" name="Death Spike" enchantGroup1="2" enchantGroup2="2">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -418 -457 -495 -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
 		<table name="#magicLvl"> 44 48 52 56 58 60 62 64 66 68 70 72 74 </table>
@@ -982,7 +982,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1157" levels="5" name="Body To Mind" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
+	<skill id="1157" levels="5" name="Body To Mind">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> 243 379 495 549 611 </table>
 		<table name="#hpConsume"> 131 209 280 318 366 </table>
@@ -1077,7 +1077,7 @@
 			</effect>
 		</enchant2Effects>
 	</skill>
-	<skill id="1160" levels="15" name="Slow" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
+	<skill id="1160" levels="15" name="Slow" enchantGroup1="1" enchantGroup2="1">
 		<table name="#il_runSpd"> 0.7 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 </table>
 		<table name="#abnormalLvl"> 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </table>
 		<table name="#effectPoint"> -331 -379 -418 -457 -495 -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
@@ -1157,7 +1157,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1164" levels="19" name="Curse: Weakness" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1" enchantGroup4="1">
+	<skill id="1164" levels="19" name="Curse: Weakness" enchantGroup1="1" enchantGroup2="1">
 		<table name="#abnormalLvl"> 1 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </table>
 		<table name="#effectPoint"> -162 -204 -243 -285 -331 -379 -418 -457 -495 -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
 		<table name="#magicLvl"> 14 20 25 30 35 40 44 48 52 56 58 60 62 64 66 68 70 72 74 </table>
@@ -1218,7 +1218,7 @@
 			</effect>
 		</enchant4Effects>
 	</skill>
-	<skill id="1167" levels="6" name="Poisonous Cloud" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
+	<skill id="1167" levels="6" name="Poisonous Cloud">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 3 4 5 6 7 8 </table>
 		<table name="#effectPoint"> -243 -331 -457 -532 -597 -655 </table>
@@ -1316,7 +1316,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1169" levels="14" name="Curse Fear" enchantGroup1="2" enchantGroup2="2">
+	<skill id="1169" levels="14" name="Curse Fear">
 		<table name="#effectPoint"> -379 -418 -457 -495 -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
 		<table name="#magicLvl"> 40 44 48 52 56 58 60 62 64 66 68 70 72 74 </table>
 		<table name="#mpConsume2"> 28 31 35 38 41 43 44 46 48 49 51 52 53 55 </table>
@@ -1419,7 +1419,7 @@
 			</effect>
 		</endEffects>
 	</skill>
-	<skill id="1171" levels="19" name="Blazing Circle" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
+	<skill id="1171" levels="19" name="Blazing Circle" enchantGroup1="2" enchantGroup2="2">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -180 -190 -200 -209 -219 -229 -239 -248 -257 -266 -275 -283 -291 -299 -306 -312 -318 -323 -328 </table>
 		<table name="#magicLvl"> 38 40 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 </table>
@@ -1500,7 +1500,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1174" levels="22" name="Frost Wall" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
+	<skill id="1174" levels="22" name="Frost Wall" enchantGroup1="2" enchantGroup2="2">
 		<table name="#il_magicalAttackPower"> 48.0 50.0 53.0 55.0 56.0 57.0 59.0 60.0 61.0 62.0 63.0 65.0 66.0 67.0 68.0 69.0 70.0 72.0 73.0 74.0 75.0 76.0 </table>
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -286 -297 -309 -319 -325 -330 -335 -340 -345 -349 -354 -358 -363 -367 -371 -374 -378 -381 -385 -388 -390 -393 </table>
@@ -1587,7 +1587,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1176" levels="15" name="Tempest" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
+	<skill id="1176" levels="15" name="Tempest" enchantGroup1="2" enchantGroup2="2">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -219 -229 -239 -248 -257 -266 -275 -283 -291 -299 -306 -312 -318 -323 -328 </table>
 		<table name="#magicLvl"> 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 </table>
@@ -1732,7 +1732,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1182" levels="3" name="Resist Aqua" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
+	<skill id="1182" levels="3" name="Resist Aqua" enchantGroup1="1" enchantGroup2="1">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 243 379 418 </table>
@@ -1873,7 +1873,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1189" levels="3" name="Resist Wind" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
+	<skill id="1189" levels="3" name="Resist Wind" enchantGroup1="1" enchantGroup2="1">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 331 379 418 </table>
@@ -1933,7 +1933,7 @@
 			</effect>
 		</enchant3Effects>
 	</skill>
-	<skill id="1191" levels="3" name="Resist Fire" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
+	<skill id="1191" levels="3" name="Resist Fire" enchantGroup1="1" enchantGroup2="1">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 285 379 418 </table>

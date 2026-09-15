@@ -70,6 +70,16 @@ def npc_ids(npcs, spawns_by_region):
 	return result
 
 
+# Items of the Kamael chronicle that quests of the Kamael race hand out; they are
+# not quest items, so they need naming here.
+EXTRA_ITEMS = {
+	9716,  # Scroll of Escape: Kamael Village, quest 173
+	10122,  # Red Crescent Earring, quest 182
+	10124,  # Ring of Devotion, quest 182
+	10164,  # Animal Slayer's List, the Kamael branch of quest 419
+}
+
+
 def item_ids(items):
 	"""Kamael weapons and bolts up to S grade, starting equipment, Kamael quest items."""
 	suffixes = _interlude_weapon_suffixes()
@@ -79,4 +89,5 @@ def item_ids(items):
 		if int(block[0]) in ds.KAMAEL_CLASS_IDS:
 			result |= {int(i) for i in re.findall(r'<item id="(\d+)"', block[1])}
 	result |= {i for i in referenced_ids() if i in items and items[i]["quest_item"]}
+	result |= EXTRA_ITEMS & set(items)
 	return result

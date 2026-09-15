@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
-	<skill id="1400" levels="10" name="Turn Undead" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1" enchantGroup4="1">
+	<skill id="1400" levels="10" name="Turn Undead" enchantGroup1="1" enchantGroup2="1">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
 		<table name="#itemConsumeCount"> 3 3 4 4 4 4 5 5 5 5 </table>
@@ -128,7 +128,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1402" levels="5" name="Major Group Heal" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2">
+	<skill id="1402" levels="5" name="Major Group Heal" enchantGroup1="2" enchantGroup2="2">
 		<table name="#il_mpConsume2"> 189 199 214 228 239 </table>
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> 421 457 490 520 546 </table>
@@ -277,7 +277,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1406" levels="1" name="Summon Feline King" enchantGroup1="5">
+	<skill id="1406" levels="1" name="Summon Feline King">
 		<!-- Confirmed CT2.5 and Updated to H5 -->
 		<table name="#ench1npcId"> 14871 14872 14873 14874 14875 14876 14877 14878 14879 14880 14881 14882 14883 14884 14885 </table>
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
@@ -315,7 +315,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1407" levels="1" name="Summon Magnus the Unicorn" enchantGroup1="5">
+	<skill id="1407" levels="1" name="Summon Magnus the Unicorn">
 		<!-- Confirmed CT2.5 and Updated to H5 -->
 		<table name="#ench1npcId"> 14886 14887 14888 14889 14890 14891 14892 14893 14894 14895 14896 14897 14898 14899 14900 </table>
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
@@ -353,7 +353,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1408" levels="1" name="Summon Spectral Lord" enchantGroup1="5">
+	<skill id="1408" levels="1" name="Summon Spectral Lord">
 		<!-- High Five Confirmed -->
 		<table name="#ench1MagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#ench1NpcId"> 14901 14902 14903 14904 14905 14906 14907 14908 14909 14910 14911 14912 14913 14914 14915 </table>
@@ -494,7 +494,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1413" levels="1" name="Magnus' Chant" enchantGroup1="5" enchantGroup2="5">
+	<skill id="1413" levels="1" name="Magnus' Chant">
 		<!-- High Five Confirmed -->
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#ench1AbnormalTime"> 320 340 360 380 400 420 440 460 480 500 520 540 560 580 600 </table>
@@ -574,7 +574,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1414" levels="1" name="Victory of Pa'agrio" enchantGroup1="5" enchantGroup2="5" enchantGroup3="5">
+	<skill id="1414" levels="1" name="Victory of Pa'agrio">
 		<!-- High Five Confirmed -->
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#ench1AbnormalTime"> 320 340 360 380 400 420 440 460 480 500 520 540 560 580 600 </table>
@@ -695,7 +695,7 @@
 			</effect>
 		</enchant3Effects>
 	</skill>
-	<skill id="1415" levels="1" name="Pa'agrio's Emblem" enchantGroup1="5" enchantGroup2="5">
+	<skill id="1415" levels="1" name="Pa'agrio's Emblem">
 		<!-- High Five Confirmed -->
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#ench1AbnormalTime"> 320 340 360 380 400 420 440 460 480 500 520 540 560 580 600 </table>
@@ -734,7 +734,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1416" levels="1" name="Pa'agrio's Fist" enchantGroup1="5" enchantGroup2="5">
+	<skill id="1416" levels="1" name="Pa'agrio's Fist">
 		<!-- High Five Confirmed -->
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#ench1MaxCp"> 810 820 830 840 850 860 870 880 890 900 910 920 930 940 950 </table>
@@ -1374,7 +1374,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1435" levels="10" name="Death Mark" enchantGroup1="2" enchantGroup2="2">
+	<skill id="1435" levels="10" name="Death Mark">
 		<!-- Confirmed CT2.5 -->
 		<table name="#abnormalLvl"> 1 2 3 4 5 6 7 8 9 10 </table>
 		<table name="#amount"> 0.8 0.8 0.77 0.77 0.77 0.77 0.77 0.77 0.77 0.77 </table>
@@ -1428,7 +1428,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1436" levels="30" name="Soul of Pain" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2">
+	<skill id="1436" levels="30" name="Soul of Pain">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -369 -379 -399 -408 -428 -438 -457 -467 -486 -495 -514 -523 -541 -549 -558 -566 -574 -582 -590 -597 -604 -611 -617 -624 -630 -635 -641 -646 -650 -655 </table>
 		<table name="#magicLvl"> 39 40 42 43 45 46 48 49 51 52 54 55 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 </table>
@@ -1510,7 +1510,7 @@
 			</effect>
 		</enchant4pvpEffects>
 	</skill>
-	<skill id="1437" levels="26" name="Dark Flame" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2" enchantGroup5="2">
+	<skill id="1437" levels="26" name="Dark Flame">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -428 -438 -457 -467 -486 -495 -514 -523 -541 -549 -558 -566 -574 -582 -590 -597 -604 -611 -617 -624 -630 -635 -641 -646 -650 -655 </table>
 		<table name="#magicLvl"> 45 46 48 49 51 52 54 55 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 </table>
@@ -1596,7 +1596,7 @@
 			</effect>
 		</enchant5Effects>
 	</skill>
-	<skill id="1438" levels="9" name="Annihilation Circle" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2">
+	<skill id="1438" levels="9" name="Annihilation Circle">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -275 -283 -291 -299 -306 -312 -318 -323 -328 </table>
 		<table name="#magicLvl"> 58 60 62 64 66 68 70 72 74 </table>
@@ -1755,7 +1755,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1442" levels="3" name="Protection from Darkness" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1442" levels="3" name="Protection from Darkness">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#darkResPower"> 15 23 30 </table>
@@ -1809,7 +1809,7 @@
 			</effect>
 		</enchant2Effects>
 	</skill>
-	<skill id="1443" levels="1" name="Dark Weapon" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1443" levels="1" name="Dark Weapon">
 		<!-- High Five Confirmed -->
 		<table name="#ench1DarkPower"> 30 31 32 32 33 34 34 35 36 36 37 38 38 39 40 40 41 42 42 43 44 44 45 46 46 47 48 48 49 50 </table>
 		<table name="#ench2AbnormalTime"> 1240 1280 1320 1360 1400 1440 1480 1520 1560 1600 1640 1680 1720 1760 1800 1840 1880 1920 1960 2000 2040 2080 2120 2160 2200 2240 2280 2320 2360 2400 </table>
@@ -1854,7 +1854,7 @@
 			</effect>
 		</enchant2Effects>
 	</skill>
-	<skill id="1444" levels="1" name="Pride of Kamael" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1" enchantGroup4="1">
+	<skill id="1444" levels="1" name="Pride of Kamael">
 		<!-- High Five Confirmed -->
 		<table name="#ench4AbnormalTime"> 186 192 198 204 210 216 222 228 234 240 246 252 258 264 270 276 282 288 294 300 306 312 318 324 330 336 342 348 354 360 </table>
 		<table name="#enchPower"> 1.11 1.12 1.13 1.14 1.15 1.16 1.17 1.18 1.19 1.2 1.21 1.22 1.23 1.24 1.25 1.26 1.27 1.28 1.29 1.3 1.31 1.32 1.33 1.34 1.35 1.36 1.37 1.38 1.39 1.4 </table>
@@ -1941,7 +1941,7 @@
 			</effect>
 		</enchant3Effects>
 	</skill>
-	<skill id="1445" levels="18" name="Surrender to the Unholy" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
+	<skill id="1445" levels="18" name="Surrender to the Unholy">
 		<!-- Confirmed CT2.5 -->
 		<table name="#abnormalLvl"> 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 </table>
 		<table name="#castRange"> 750 750 750 900 900 900 900 900 900 900 900 900 900 900 900 900 900 900 </table>
@@ -1998,7 +1998,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1446" levels="11" name="Shadow Bind" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1446" levels="11" name="Shadow Bind">
 		<!-- Confirmed CT2.5 -->
 		<table name="#effectPoint"> -495 -523 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
 		<table name="#magicLvl"> 52 55 58 60 62 64 66 68 70 72 74 </table>
@@ -2039,7 +2039,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1447" levels="9" name="Voice Bind" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1447" levels="9" name="Voice Bind">
 		<!-- Confirmed CT2.5 -->
 		<table name="#effectPoint"> -549 -566 -582 -597 -611 -624 -635 -646 -650 </table>
 		<table name="#magicLvl"> 58 60 62 64 66 68 70 72 74 </table>
@@ -2077,7 +2077,7 @@
 			<effect name="Mute" />
 		</effects>
 	</skill>
-	<skill id="1448" levels="1" name="Blink" enchantGroup1="2" enchantGroup2="2">
+	<skill id="1448" levels="1" name="Blink">
 		<!-- High Five Confirmed -->
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#ench1MpConsume1"> 49 48 47 46 45 45 44 43 42 41 40 40 39 38 37 36 35 35 34 33 32 31 30 30 29 28 27 26 25 25 </table>
@@ -2159,7 +2159,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1450" levels="1" name="Chain Lightning" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6" enchantGroup4="6">
+	<skill id="1450" levels="1" name="Chain Lightning">
 		<!-- High Five Confirmed -->
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#ench1Power"> 202 204 206 208 210 212 214 216 218 220 222 224 226 228 230 </table>
@@ -2218,7 +2218,7 @@
 			</effect>
 		</enchant4pveEffects>
 	</skill>
-	<skill id="1451" levels="1" name="Fire Vortex Buster" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6">
+	<skill id="1451" levels="1" name="Fire Vortex Buster">
 		<!-- High Five Confirmed -->
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#ench1MagicalAttackPower"> 198 198 199 199 200 201 201 202 202 203 203 204 204 205 206 </table>
@@ -2268,7 +2268,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1452" levels="1" name="Count of Fire" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6">
+	<skill id="1452" levels="1" name="Count of Fire">
 		<table name="#ench1Power"> -176 -178 -180 -182 -183 -185 -187 -189 -190 -192 -194 -196 -197 -199 -201 </table>
 		<table name="#ench2MpConsume2"> 84 81 78 74 72 69 66 62 61 58 54 52 49 46 42 </table>
 		<table name="#ench2MpConsume1"> 21 20 19 19 18 17 16 16 15 14 14 13 12 11 11 </table>
@@ -2317,7 +2317,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1453" levels="1" name="Ice Vortex Crusher" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6">
+	<skill id="1453" levels="1" name="Ice Vortex Crusher">
 		<!-- High Five Confirmed -->
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#ench1MagicalAttackPower"> 198 198 199 199 200 201 201 202 202 203 203 204 204 205 206 </table>
@@ -2367,7 +2367,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1454" levels="1" name="Diamond Dust" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6">
+	<skill id="1454" levels="1" name="Diamond Dust">
 		<!-- High Five Confirmed -->
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#ench1Power"> 71 73 74 76 77 79 80 82 83 85 86 88 89 91 92 </table>
@@ -2422,7 +2422,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1455" levels="1" name="Throne of Ice" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6">
+	<skill id="1455" levels="1" name="Throne of Ice">
 		<!-- High Five Confirmed -->
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#ench1Power"> -176 -178 -180 -182 -183 -185 -187 -189 -190 -192 -194 -196 -197 -199 -201 </table>
@@ -2474,7 +2474,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1456" levels="1" name="Wind Vortex Slug" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6">
+	<skill id="1456" levels="1" name="Wind Vortex Slug">
 		<!-- High Five Confirmed -->
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#ench1MagicalAttackPower"> 198 198 199 199 200 201 201 202 202 203 203 204 204 205 206 </table>
@@ -2524,7 +2524,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1457" levels="1" name="Empowering Echo" enchantGroup1="5" enchantGroup2="5">
+	<skill id="1457" levels="1" name="Empowering Echo">
 		<!-- High Five Confirmed -->
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#ench1AbnormalTime"> 1240 1280 1320 1360 1400 1440 1480 1520 1560 1600 1640 1680 1720 1760 1800 </table>
@@ -2560,7 +2560,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1458" levels="1" name="Throne of Wind" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6">
+	<skill id="1458" levels="1" name="Throne of Wind">
 		<table name="#ench1Power"> -176 -178 -180 -182 -183 -185 -187 -189 -190 -192 -194 -196 -197 -199 -201 </table>
 		<table name="#ench2MpConsume2"> 105 101 97 93 90 86 82 78 76 72 68 65 61 57 53 </table>
 		<table name="#ench3AttributePower"> 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 </table>
@@ -2607,7 +2607,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1459" levels="1" name="Divine Power" enchantGroup1="5" enchantGroup2="5">
+	<skill id="1459" levels="1" name="Divine Power">
 		<!-- High Five Confirmed -->
 		<table name="#ench1MagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#ench1Power"> 1033 1066 1100 1133 1166 1200 1233 1266 1300 1333 1366 1400 1433 1466 1500 </table>
@@ -2645,7 +2645,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1460" levels="1" name="Mana Gain" enchantGroup1="5" enchantGroup2="5">
+	<skill id="1460" levels="1" name="Mana Gain">
 		<!-- High Five Confirmed -->
 		<table name="#ench1AbnormalTimes"> 1240 1280 1320 1360 1400 1440 1480 1520 1560 1600 1640 1680 1720 1760 1800 </table>
 		<table name="#ench2MpConsume1"> 34 33 32 31 30 28 27 26 25 24 22 21 20 19 18 </table>
@@ -2682,7 +2682,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1461" levels="1" name="Chant of Protection" enchantGroup1="5" enchantGroup2="5">
+	<skill id="1461" levels="1" name="Chant of Protection">
 		<!-- High Five Confirmed -->
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#ench1AbnormalTime"> 1280 1360 1440 1520 1600 1680 1760 1840 1920 2000 2080 2160 2240 2320 2400 </table>
@@ -2717,7 +2717,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1462" levels="1" name="Seal of Blockade" enchantGroup1="6" enchantGroup2="6">
+	<skill id="1462" levels="1" name="Seal of Blockade">
 		<!-- High Five Confirmed -->
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#ench1ActivateRate"> 82 83 84 86 87 88 90 91 92 94 95 96 97 99 100 </table>
@@ -2947,7 +2947,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1469" levels="1" name="Leopold" enchantGroup1="6" enchantGroup2="6" enchantGroup3="6" enchantGroup4="6">
+	<skill id="1469" levels="1" name="Leopold">
 		<!-- High Five Confirmed -->
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#ench1Power"> 235 235 236 237 237 238 238 239 239 240 241 241 242 242 243 </table>
@@ -3006,7 +3006,7 @@
 			</effect>
 		</enchant4pveEffects>
 	</skill>
-	<skill id="1470" levels="1" name="Prahnah" enchantGroup1="5" enchantGroup2="5" enchantGroup3="5" enchantGroup4="5">
+	<skill id="1470" levels="1" name="Prahnah">
 		<!-- High Five Confirmed -->
 		<table name="#ench1mDef"> 3033 3066 3100 3133 3166 3200 3233 3266 3300 3333 3366 3400 3433 3466 3500 </table>
 		<table name="#enchMagicLvl"> 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
@@ -3129,7 +3129,7 @@
 			<effect name="ConvertItem" />
 		</effects>
 	</skill>
-	<skill id="1474" levels="1" name="Abyssal Power" enchantGroup1="1">
+	<skill id="1474" levels="1" name="Abyssal Power">
 		<!-- Confirmed CT2.5 -->
 		<table name="#ench1mAtk"> 1.101 1.103 1.105 1.106 1.108 1.11 1.111 1.113 1.115 1.116 1.118 1.12 1.121 1.123 1.125 1.126 1.128 1.13 1.131 1.133 1.135 1.136 1.138 1.14 1.141 1.143 1.145 1.146 1.148 1.15 </table>
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
@@ -3177,7 +3177,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1476" levels="3" name="Appetite for Destruction" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
+	<skill id="1476" levels="3" name="Appetite for Destruction">
 		<!-- High Five Confirmed -->
 		<table name="#critDmg"> 1.3 1.4 1.5 </table>
 		<table name="#critRate"> 1.3 1.4 1.5 </table>
@@ -3229,7 +3229,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1477" levels="3" name="Vampiric Impulse" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
+	<skill id="1477" levels="3" name="Vampiric Impulse">
 		<!-- High Five Confirmed -->
 		<table name="#absorbDam"> 60 70 80 </table>
 		<table name="#effectPoint"> 495 597 646 </table>
@@ -3273,7 +3273,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1478" levels="2" name="Protection Instinct" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
+	<skill id="1478" levels="2" name="Protection Instinct">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> 438 566 </table>
 		<table name="#mDef"> 900 1350 </table>
@@ -3321,7 +3321,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1479" levels="3" name="Magic Impulse" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
+	<skill id="1479" levels="3" name="Magic Impulse">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> 523 582 624 </table>
 		<table name="#mAtk"> 1.75 1.85 1.95 </table>
@@ -3372,7 +3372,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1480" levels="1" name="Soul Harmony" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
+	<skill id="1480" levels="1" name="Soul Harmony">
 		<!-- High Five Confirmed -->
 		<!-- NOTE: Client says "Consumes 20 Souls" but is client typo -->
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
@@ -3418,7 +3418,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1481" levels="7" name="Oblivion" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1481" levels="7" name="Oblivion">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -408 -467 -523 -566 -597 -624 -646 </table>
 		<table name="#magicLvl"> 43 49 55 60 64 68 72 </table>
@@ -3469,7 +3469,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1482" levels="4" name="Weak Constitution" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1482" levels="4" name="Weak Constitution">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -582 -611 -635 -655 </table>
 		<table name="#magicLvl"> 62 66 70 74 </table>
@@ -3520,7 +3520,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1483" levels="7" name="Thin Skin" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1483" levels="7" name="Thin Skin">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -438 -495 -549 -582 -611 -635 -655 </table>
 		<table name="#magicLvl"> 46 52 58 62 66 70 74 </table>
@@ -3571,7 +3571,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1484" levels="4" name="Enervation" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1484" levels="4" name="Enervation">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -566 -597 -624 -646 </table>
 		<table name="#magicLvl"> 60 64 68 72 </table>
@@ -3622,7 +3622,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1485" levels="3" name="Spite" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1485" levels="3" name="Spite">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -611 -635 -655 </table>
 		<table name="#magicLvl"> 66 70 74 </table>
@@ -3689,7 +3689,7 @@
 			</effect>
 		</enchant2Effects>
 	</skill>
-	<skill id="1486" levels="4" name="Mental Impoverish" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1486" levels="4" name="Mental Impoverish">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -624 -635 -646 -655 </table>
 		<table name="#magicLvl"> 68 70 72 74 </table>
@@ -3757,7 +3757,7 @@
 			</effect>
 		</enchant2Effects>
 	</skill>
-	<skill id="1487" levels="8" name="Restoration" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1487" levels="8" name="Restoration">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> 362 440 521 602 653 700 743 780 </table>
 		<table name="#magicLvl"> 40 46 52 58 62 66 70 74 </table>
@@ -3808,7 +3808,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1488" levels="3" name="Restoration Impact" enchantGroup1="1">
+	<skill id="1488" levels="3" name="Restoration Impact">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> 701 941 1083 </table>
 		<table name="#hpPerMaxPower"> 10 15 20 </table>

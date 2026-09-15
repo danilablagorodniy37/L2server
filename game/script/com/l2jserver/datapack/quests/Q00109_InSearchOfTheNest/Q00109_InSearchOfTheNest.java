@@ -34,7 +34,8 @@ public class Q00109_InSearchOfTheNest extends Quest {
 	private static final int SCOUTS_CORPSE = 32015;
 	private static final int KAHMAN = 31554;
 	// Items
-	private static final int SCOUTS_NOTE = 14858;
+	// Interlude: the Scout's Memo, H5 replaced it with the Scout's Note (14858).
+	private static final int SCOUTS_NOTE = 8083;
 	
 	public Q00109_InSearchOfTheNest() {
 		super(109, Q00109_InSearchOfTheNest.class.getSimpleName(), "In Search of the Nest");

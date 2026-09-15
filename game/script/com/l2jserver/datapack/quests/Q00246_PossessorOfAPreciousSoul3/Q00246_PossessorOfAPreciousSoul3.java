@@ -55,10 +55,8 @@ public class Q00246_PossessorOfAPreciousSoul3 extends Quest {
 	private static final int EVERGREEN = 7592;
 	private static final int RAIN_SONG = 7593;
 	private static final int RELIC_BOX = 7594;
-	private static final int FRAGMENTS = 21725;
 	// Rewards
 	private static final int CHANCE_FOR_DROP = 30;
-	private static final int CHANCE_FOR_DROP_FRAGMENTS = 60;
 	
 	public Q00246_PossessorOfAPreciousSoul3() {
 		super(246, Q00246_PossessorOfAPreciousSoul3.class.getSimpleName(), "Possessor Of A Precious Soul 3");
@@ -66,7 +64,7 @@ public class Q00246_PossessorOfAPreciousSoul3 extends Quest {
 		bindTalk(LADD, CARADINE, OSSIAN);
 		bindKill(PILGRIM_OF_SPLENDOR, JUDGE_OF_SPLENDOR, BARAKIEL);
 		bindKill(MOBS);
-		registerQuestItems(WATERBINDER, EVERGREEN, FRAGMENTS, RAIN_SONG, RELIC_BOX);
+		registerQuestItems(WATERBINDER, EVERGREEN, RAIN_SONG, RELIC_BOX);
 	}
 	
 	@Override
@@ -101,9 +99,8 @@ public class Q00246_PossessorOfAPreciousSoul3 extends Quest {
 				}
 				break;
 			case "31741-9.html":
-				if (st.isCond(5) && (st.hasQuestItems(RAIN_SONG) || (st.getQuestItemsCount(FRAGMENTS) >= 100))) {
+				if (st.isCond(5) && st.hasQuestItems(RAIN_SONG)) {
 					st.takeItems(RAIN_SONG, -1);
-					st.takeItems(FRAGMENTS, -1);
 					st.giveItems(RELIC_BOX, 1);
 					st.setCond(6, true);
 				} else {
@@ -192,16 +189,8 @@ public class Q00246_PossessorOfAPreciousSoul3 extends Quest {
 					return super.onKill(npc, player, isSummon);
 				}
 				
-				if (Util.contains(MOBS, npc.getId()) && (st.getQuestItemsCount(FRAGMENTS) < 100) && (st.isCond(4))) {
-					if (getRandom(100) < CHANCE_FOR_DROP_FRAGMENTS) {
-						st.giveItems(FRAGMENTS, 1);
-						if (st.getQuestItemsCount(FRAGMENTS) < 100) {
-							st.playSound(Sound.ITEMSOUND_QUEST_ITEMGET);
-						} else {
-							st.setCond(5, true);
-						}
-					}
-				}
+				// H5 let the Staff of Goddess fragments replace the Rain Song; in Interlude
+				// only the Pilgrim of Splendor drops it.
 				break;
 		}
 		return super.onKill(npc, player, isSummon);
@@ -245,7 +234,7 @@ public class Q00246_PossessorOfAPreciousSoul3 extends Quest {
 								htmltext = "31741-8.html";
 								break;
 							case 5:
-								if (st.hasQuestItems(RAIN_SONG) || (st.getQuestItemsCount(FRAGMENTS) >= 100)) {
+								if (st.hasQuestItems(RAIN_SONG)) {
 									htmltext = "31741-7.html";
 								} else {
 									htmltext = "31741-8.html";

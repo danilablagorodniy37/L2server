@@ -428,7 +428,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="625" levels="1" name="Soul Gathering" enchantGroup1="1" enchantGroup2="1">
+	<skill id="625" levels="1" name="Soul Gathering">
 		<!-- Confirmed CT2.5 -->
 		<table name="#ench1hpConsume"> 196 193 190 186 183 180 176 173 170 166 163 160 156 153 150 146 143 140 136 133 130 126 123 120 116 113 110 106 103 100 </table>
 		<table name="#ench2reuseDelay"> 1770000 1710000 1710000 1680000 1650000 1620000 1590000 1560000 1530000 1500000 1470000 1410000 1410000 1380000 1350000 1320000 1290000 1260000 1230000 1200000 1170000 1110000 1110000 1080000 1050000 1020000 990000 960000 930000 900000 </table>
@@ -461,7 +461,7 @@
 		</effects>
 		<set name="affectScope" val="SINGLE" />
 	</skill>
-	<skill id="626" levels="4" name="Critical Sense" enchantGroup1="1" enchantGroup2="1">
+	<skill id="626" levels="4" name="Critical Sense">
 		<!-- Confirmed CT2.5 -->
 		<table name="#cAtk"> 111 177 253 317 </table>
 		<table name="#magicLvl"> 43 52 60 66 </table>
@@ -494,7 +494,7 @@
 			</effect>
 		</enchant2Effects>
 	</skill>
-	<skill id="627" levels="40" name="Soul Shock" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2" enchantGroup4="2">
+	<skill id="627" levels="40" name="Soul Shock">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -337 -346 -356 -366 -375 -385 -395 -405 -415 -425 -435 -445 -455 -465 -474 -484 -494 -503 -513 -522 -532 -541 -550 -558 -567 -575 -583 -591 -599 -607 -614 -621 -627 -634 -640 -646 -651 -656 -661 -665 </table>
 		<table name="#magicLvl"> 34 35 36 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 </table>

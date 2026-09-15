@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
-	<skill id="1001" levels="10" name="Soul Cry" enchantGroup1="1">
+	<skill id="1001" levels="10" name="Soul Cry">
 		<table name="#il_mpConsume1"> 2 3 5 6 7 9 11 11 13 14 </table>
 		<!-- High Five Confirmed -->
 		<table name="#consumeMPower"> 0 0 -1 -2 -2 -2 -3 -3 -4 -4 </table>
@@ -677,7 +677,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1028" levels="19" name="Might of Heaven" enchantGroup1="2" enchantGroup2="2" enchantGroup3="2">
+	<skill id="1028" levels="19" name="Might of Heaven" enchantGroup1="2" enchantGroup2="2">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -360 -379 -399 -418 -438 -457 -477 -495 -514 -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
 		<table name="#magicLvl"> 38 40 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 </table>
@@ -767,7 +767,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1032" levels="3" name="Invigor" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
+	<skill id="1032" levels="3" name="Invigor" enchantGroup1="1" enchantGroup2="1">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#defenceTraitPower"> 30 40 50 </table>
@@ -815,7 +815,7 @@
 			</effect>
 		</enchant3Effects>
 	</skill>
-	<skill id="1033" levels="3" name="Resist Poison" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
+	<skill id="1033" levels="3" name="Resist Poison" enchantGroup1="1" enchantGroup2="1">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#defenceTraitPower"> 30 40 50 </table>
@@ -864,7 +864,7 @@
 			</effect>
 		</enchant3Effects>
 	</skill>
-	<skill id="1034" levels="13" name="Repose" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1034" levels="13" name="Repose">
 		<!-- High Five Confirmed -->
 		<table name="#magicLvl"> 44 48 52 56 58 60 62 64 66 68 70 72 74 </table>
 		<table name="#mpConsume1"> 12 13 14 16 16 17 18 18 19 19 20 20 21 </table>
@@ -1029,7 +1029,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1042" levels="12" name="Hold Undead" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
+	<skill id="1042" levels="12" name="Hold Undead" enchantGroup1="1" enchantGroup2="1">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -457 -495 -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
 		<table name="#magicLvl"> 48 52 56 58 60 62 64 66 68 70 72 74 </table>
@@ -1210,7 +1210,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1047" levels="4" name="Mana Regeneration" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1047" levels="4" name="Mana Regeneration">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 4 </table>
 		<table name="#effectPoint"> 379 457 566 635 </table>
@@ -1631,7 +1631,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1071" levels="14" name="Surrender To Water" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
+	<skill id="1071" levels="14" name="Surrender To Water" enchantGroup1="1" enchantGroup2="1">
 		<table name="#il_value"> 750 750 750 900 900 900 900 900 900 900 900 900 900 900 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#effectPoint"> -379 -418 -457 -495 -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
@@ -1779,7 +1779,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1074" levels="14" name="Surrender To Wind" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
+	<skill id="1074" levels="14" name="Surrender To Wind" enchantGroup1="1" enchantGroup2="1">
 		<table name="#il_value"> 750 750 750 900 900 900 900 900 900 900 900 900 900 900 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#effectPoint"> -379 -418 -457 -495 -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
@@ -1940,7 +1940,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1083" levels="17" name="Surrender To Fire" enchantGroup1="1" enchantGroup2="1" enchantGroup3="1">
+	<skill id="1083" levels="17" name="Surrender To Fire" enchantGroup1="1" enchantGroup2="1">
 		<!-- Confirmed CT2.5 -->
 		<table name="#abnormalLvl"> 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 </table>
 		<table name="#castRange"> 750 750 750 900 900 900 900 900 900 900 900 900 900 900 900 900 900 </table>
@@ -2153,7 +2153,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1092" levels="19" name="Fear" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1092" levels="19" name="Fear">
 		<table name="#effectPoint"> -162 -204 -243 -285 -331 -379 -418 -457 -495 -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
 		<table name="#magicLvl"> 14 20 25 30 35 40 44 48 52 56 58 60 62 64 66 68 70 72 74 </table>
 		<table name="#mpConsume2"> 12 16 18 21 24 28 31 35 38 41 43 44 46 48 49 51 52 53 55 </table>

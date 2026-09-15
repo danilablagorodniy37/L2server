@@ -89,8 +89,6 @@ public final class Q00334_TheWishingPotion extends Quest {
 	private static final int DEMONS_GLOVES_FABRIC = 2953;
 	private static final int Q_MUSICNOTE_LOVE = 4408;
 	private static final int Q_MUSICNOTE_BATTLE = 4409;
-	private static final int Q_GOLD_CIRCLET = 12766;
-	private static final int Q_SILVER_CIRCLET = 12767;
 	
 	private static final int DEMONS_TUNIC = 441;
 	private static final int DEMONS_HOSE = 472;
@@ -248,15 +246,8 @@ public final class Q00334_TheWishingPotion extends Quest {
 						}
 						html = "30743-05.html";
 					} else if (random >= 95) {
-						switch (getRandom(2)) {
-							case 0: {
-								qs.giveItems(Q_GOLD_CIRCLET, 1);
-								break;
-							}
-							case 1: {
-								qs.giveItems(Q_SILVER_CIRCLET, 1);
-							}
-						}
+						// Interlude: the rare reward is the Necklace of Grace, H5 gives circlets here.
+						qs.giveItems(NECKLACE_OF_GRACE, 1);
 						html = "30743-06.html";
 					}
 					qs.set(FLAG, 0);

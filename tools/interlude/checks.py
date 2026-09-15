@@ -32,6 +32,10 @@ KNOWN = {
 	"skill_references": {
 		"5885 lvl 2": "original H5: raid bosses 25642 and 25648 use a skill level that does not exist",
 	},
+	"quest_rewards": {
+		"14362 White Cloth": "quest 234 was reworked in H5 around the white cloth step; porting the aCis version is a separate task",
+		"14854 Recipe - Spiteful Soul Energy": "quest 503 got the Spiteful Soul step in H5; porting the aCis version is a separate task",
+	},
 }
 
 
@@ -369,6 +373,45 @@ def drops_interlude_items():
 	return late
 
 
+def quest_rewards():
+	"""Loaded quests hand out only Interlude or Kamael items."""
+	quests = ds.GAME / "script" / "com" / "l2jserver" / "datapack" / "quests"
+	loaded = set(re.findall(r"^\t+(Q\d{5}_\w+)\.class", (quests / "QuestLoader.java").read_text(encoding="utf-8"), re.M))
+	# giveItems(player, ID, count), st.rewardItems(ID, count), new ItemHolder(ID, count)
+	call = re.compile(r"(?:give|reward)Items\(\s*(?:player|killer|qs\.getPlayer\(\))?\s*,?\s*([A-Z][A-Z0-9_]*|\d+)\s*[,)\[]")
+	holder = re.compile(r"new ItemHolder\(\s*([A-Z][A-Z0-9_]*|\d+)\s*,")
+	const = re.compile(r"\b([A-Z][A-Z0-9_]*)\s*=\s*(\d+)\s*;")
+	array = re.compile(r"\b([A-Z][A-Z0-9_]*)\s*=\s*\{(.*?)\};", re.S)
+	problems = defaultdict(list)
+	for quest in sorted(loaded):
+		folder = quests / quest
+		if not folder.is_dir():
+			continue
+		source = "".join(f.read_text(encoding="utf-8", errors="replace") for f in folder.glob("*.java"))
+		numbers = {name: [int(value)] for name, value in const.findall(source)}
+		arrays = {}
+		for name, body in array.findall(source):
+			if "ItemHolder" in body:
+				continue
+			# {{id, count}, {id, count}}: only the first number of a pair is an item.
+			pairs = re.findall(r"\{([^{}]*)\}", body)
+			if pairs:
+				arrays[name] = [int(re.findall(r"\d+", pair)[0]) for pair in pairs if re.findall(r"\d+", pair)]
+			else:
+				arrays[name] = [int(value) for value in re.findall(r"\b(\d{2,5})\b", body)]
+		ids = set()
+		for token in call.findall(source) + holder.findall(source):
+			if token.isdigit():
+				ids.add(int(token))
+			else:
+				ids.update(numbers.get(token, ()))
+				ids.update(arrays.get(token, ()))
+		for item_id in ids:
+			if (item_id in items()) and (item_id not in allowed_items()):
+				problems[_item_name(item_id)].append(quest)
+	return problems
+
+
 def spawns_interlude_npcs():
 	"""Spawns (spawnlist.sql outside the Isle of Souls, enabled XML spawnlists, bosses) are Interlude or Kamael NPCs."""
 	allowed = acis_npcs() | kamael_npcs()
@@ -414,6 +457,21 @@ def interlude_skill_trees():
 		"collectSkillTree.xml", "forgottenSkillTree.xml", "subPledgeSkillTree.xml", "transformSkillTree.xml"):
 		if (DATA / "skillTrees" / late_tree).exists():
 			problems[late_tree].append("post-Interlude skill tree is back")
+	return problems
+
+
+def interlude_enchant_routes():
+	"""Skills can be enchanted only as in Interlude: the same skills and the same number of routes (build_enchant_skills.py)."""
+	import build_enchant_skills
+
+	acis = build_enchant_skills.acis_routes()
+	problems = defaultdict(list)
+	for f in ds._xml_files(DATA / "stats" / "skills"):
+		for s in ET.parse(f).getroot().findall("skill"):
+			routes = len([k for k in s.attrib if k.startswith("enchantGroup")])
+			expected = acis.get(int(s.get("id")), 0)
+			if routes != expected:
+				problems[f"{s.get('id')} {s.get('name')}"].append(f"{routes} routes, Interlude has {expected}")
 	return problems
 
 
@@ -627,7 +685,7 @@ GEO_CHECKS = {"floating_spawns": floating_spawns}
 DATAPACK_CHECKS = {f.__name__: f for f in (
 	item_references, npc_references, boss_positions, skill_references,
 	html_multisell_links, html_buylist_links, html_teleport_links, script_shop_calls, quest_dialog_links, quest_npcs, loader_classes, xml_schemas,
-	shops_interlude_items, drops_interlude_items, spawns_interlude_npcs, interlude_skill_trees, interlude_config,
+	shops_interlude_items, drops_interlude_items, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_config,
 	interlude_loaders, starting_equipment, phantom_gear, phantom_phrases, phantom_config,
 )}
 DATABASE_CHECKS = {"database_tables": database_tables}
