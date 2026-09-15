@@ -164,6 +164,16 @@ def npc_references():
 	return missing
 
 
+def boss_positions():
+	"""Raid boss rows that spawn have real coordinates (H5 keeps unused bosses as 0,0,0 rows)."""
+	problems = defaultdict(list)
+	text = (ds.GAME / "sql" / "raidboss_spawnlist.sql").read_text(encoding="utf-8")
+	for boss, x, y in re.findall(r"^\((\d+),(-?\d+),(-?\d+),", text, re.M):
+		if int(x) == 0 and int(y) == 0:
+			problems[int(boss)].append("raidboss_spawnlist.sql")
+	return problems
+
+
 def skill_references():
 	"""Skills used by skill trees and NPC skill lists exist with that level."""
 	missing = defaultdict(list)
@@ -487,7 +497,7 @@ def database_tables():
 
 # name -> function; database checks run only with a database.
 DATAPACK_CHECKS = {f.__name__: f for f in (
-	item_references, npc_references, skill_references,
+	item_references, npc_references, boss_positions, skill_references,
 	html_multisell_links, html_buylist_links, html_teleport_links, script_shop_calls, quest_dialog_links, quest_npcs, loader_classes, xml_schemas,
 	shops_interlude_items, drops_interlude_items, spawns_interlude_npcs, interlude_skill_trees, interlude_config,
 	interlude_loaders, starting_equipment,

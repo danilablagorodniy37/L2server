@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list enabled="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/spawnlist.xsd">
 	<!-- Interlude monsters imported from aCis by tools/interlude/build_spawns.py -->
+	<!-- [17_22] -->
+	<spawn name="gludio06_npc1722_05401" zone="il_gludio06_npc1722_054">
+		<npc id="31432" x="-82915" y="155355" z="-3169" heading="24000" count="1" respawnDelay="60" />	<!-- Reeya -->
+	</spawn>
 	<!-- [18_19] -->
 	<spawn name="oren10_1819_20m1" zone="il_oren10_1819_20">
 		<npc id="20367" count="2" respawnDelay="60" respawnRandom="15" />	<!-- Merkenis's Escort -->
@@ -91,6 +95,10 @@
 	<spawn name="rune14_1916_41m2" zone="il_rune14_1916_41">
 		<npc id="22150" count="2" respawnDelay="0" />	<!-- Triol's Believer -->
 	</spawn>
+	<!-- [19_21] -->
+	<spawn name="gludio06_npc1921_03101" zone="il_gludio08_npc1921_031">
+		<npc id="31433" x="-15145" y="124606" z="-3113" heading="24000" count="1" respawnDelay="60" />	<!-- Ronaldo -->
+	</spawn>
 	<!-- [20_17] -->
 	<spawn name="rune18_2017_13m1" zone="il_rune18_2017_13">
 		<npc id="22227" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Wild Strider -->
@@ -143,12 +151,20 @@
 		<npc id="22227" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Wild Strider -->
 		<npc id="22226" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Pachycephalosaurus -->
 	</spawn>
+	<!-- [20_18] -->
+	<spawn name="oren09_npc2018_01701" zone="il_oren09_npc2018_017">
+		<npc id="31415" x="10736" y="14496" z="-4240" heading="48000" count="1" respawnDelay="60" />	<!-- Triya -->
+	</spawn>
 	<!-- [20_20] -->
 	<spawn name="oren05_2020_32m1" zone="il_oren05_2020_32">
 		<npc id="20492" count="5" respawnDelay="71" respawnRandom="25" />	<!-- Kirunak's Guards -->
 	</spawn>
 	<spawn name="oren05_2020_33m1" zone="il_oren05_2020_33">
 		<npc id="20492" count="2" respawnDelay="71" respawnRandom="25" />	<!-- Kirunak's Guards -->
+	</spawn>
+	<!-- [20_22] -->
+	<spawn name="dion09_npc2022_03301" zone="il_dion09_npc2022_033">
+		<npc id="31427" x="19920" y="143136" z="-3041" heading="4000" count="1" respawnDelay="60" />	<!-- Urgal -->
 	</spawn>
 	<!-- [20_23] -->
 	<spawn name="dion14_2023_01" zone="il_dion14_2023_01">
@@ -496,6 +512,12 @@
 		<npc id="35628" x="60880" y="-94320" z="-1349" heading="27000" count="1" respawnDelay="60" />	<!-- Quigby -->
 	</spawn>
 	<!-- [21_16] -->
+	<spawn name="rune02_npc2116_0201" zone="il_rune02_npc2116_02">
+		<npc id="31306" x="45408" y="-47424" z="-796" heading="49000" count="1" respawnDelay="60" />	<!-- Natasha -->
+	</spawn>
+	<spawn name="rune02_npc2116_0701" zone="il_rune02_npc2116_07">
+		<npc id="31318" x="45392" y="-48496" z="-800" heading="16500" count="1" respawnDelay="60" />	<!-- Greta -->
+	</spawn>
 	<spawn name="rune14_2116_01m1" zone="il_rune14_2116_01">
 		<npc id="18343" x="35348" y="-49857" z="-760" heading="16384" count="1" respawnDelay="15" />	<!-- Doorman Zombie -->
 		<npc id="18343" x="35349" y="-49662" z="-760" heading="49152" count="1" respawnDelay="15" />	<!-- Doorman Zombie -->
@@ -505,6 +527,10 @@
 	<spawn name="rune14_2116_01m2" zone="il_rune14_2116_02">
 		<npc id="18343" x="35033" y="-49669" z="-760" heading="49152" count="1" respawnDelay="15" />	<!-- Doorman Zombie -->
 		<npc id="18343" x="35035" y="-49850" z="-760" heading="16384" count="1" respawnDelay="15" />	<!-- Doorman Zombie -->
+	</spawn>
+	<!-- [21_19] -->
+	<spawn name="oren04_npc2119_01901" zone="il_oren04_npc2119_019">
+		<npc id="31414" x="45440" y="52032" z="-2800" heading="16000" count="1" respawnDelay="60" />	<!-- Lynn -->
 	</spawn>
 	<!-- [21_22] -->
 	<spawn name="dion13_2122_01" zone="il_dion13_2122_01">
@@ -547,6 +573,10 @@
 	<!-- [21_25] -->
 	<spawn name="gludio29_2125_18m1" zone="il_gludio29_2125_18">
 		<npc id="20118" count="2" respawnDelay="100" respawnRandom="30" />	<!-- Dre Vanul Scout -->
+	</spawn>
+	<!-- [22_13] -->
+	<spawn name="schuttgart20_npc2213_55m1" zone="il_schuttgart20_npc2213_55">
+		<npc id="31962" x="88271" y="-139797" z="-1534" heading="11851" count="1" respawnDelay="60" />	<!-- Altair -->
 	</spawn>
 	<!-- [22_14] -->
 	<spawn name="schuttgart14_2214_01m1" zone="il_schuttgart14_2214_01">
@@ -1212,6 +1242,16 @@
 	<spawn name="giran03_2221_p47m1" zone="il_giran03_2221_p47">
 		<npc id="20758" count="2" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
 	</spawn>
+	<!-- [22_22] -->
+	<spawn name="giran11_npc2222_4701" zone="il_giran11_npc2222_47">
+		<npc id="31428" x="80421" y="144461" z="-3536" heading="0" count="1" respawnDelay="60" />	<!-- Shafa -->
+	</spawn>
+	<spawn name="giran11_npc2222_4801" zone="il_giran11_npc2222_48">
+		<npc id="31420" x="85904" y="152896" z="-3494" heading="16500" count="1" respawnDelay="60" />	<!-- Tomanel -->
+	</spawn>
+	<spawn name="giran11_npc2222_4901" zone="il_giran11_npc2222_49">
+		<npc id="31419" x="84576" y="148528" z="-3400" heading="0" count="1" respawnDelay="60" />	<!-- Lorel -->
+	</spawn>
 	<!-- [22_23] -->
 	<spawn name="innadril03_2223_0301" zone="il_innadril03_2223_03">
 		<npc id="21034" count="5" respawnDelay="25" respawnRandom="10" />	<!-- Ogre -->
@@ -1608,6 +1648,10 @@
 		<npc id="22134" count="1" respawnDelay="50" />	<!-- Guardian of the Holy Land -->
 		<npc id="22134" count="1" respawnDelay="50" />	<!-- Guardian of the Holy Land -->
 	</spawn>
+	<!-- [23_20] -->
+	<spawn name="aden14_npc2320_12501" zone="il_aden14_npc2320_125">
+		<npc id="31668" x="117376" y="75024" z="-2648" heading="10000" count="1" respawnDelay="60" />	<!-- Tangen -->
+	</spawn>
 	<!-- [23_21] -->
 	<spawn name="giran03_2321_p06_1m1" zone="il_giran03_2321_p06_1">
 		<npc id="20758" count="2" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
@@ -1654,9 +1698,24 @@
 	<spawn name="giran03_2321_p51m1" zone="il_giran03_2321_p51">
 		<npc id="20758" count="2" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
 	</spawn>
+	<spawn name="giran03_npc2321_11m1" zone="il_giran03_npc2321_11">
+		<npc id="31044" x="122904" y="110828" z="-3728" heading="24576" count="1" respawnDelay="60" />	<!-- Galman -->
+	</spawn>
+	<!-- [23_24] -->
+	<spawn name="innadril09_npc2324_2501" zone="il_innadril09_npc2324_25">
+		<npc id="31436" x="107682" y="218987" z="-3657" heading="58000" count="1" respawnDelay="60" />	<!-- Dani -->
+	</spawn>
 	<!-- [24_14] -->
 	<spawn name="godard05_npc2414_0201" zone="il_godard05_npc2414_02">
 		<npc id="31542" x="157136" y="-121456" z="-2363" heading="40000" count="1" respawnDelay="129600" />	<!-- Yeti's Table -->
+	</spawn>
+	<!-- [24_16] -->
+	<spawn name="godard02_npc2416_4301" zone="il_godard02_npc2416_43">
+		<npc id="31291" x="144252" y="-55584" z="-2965" heading="51000" count="1" respawnDelay="60" />	<!-- Terava -->
+	</spawn>
+	<!-- [24_18] -->
+	<spawn name="aden13_npc2418_4501" zone="il_aden13_npc2418_45">
+		<npc id="31438" x="150928" y="28384" z="-2246" heading="33000" count="1" respawnDelay="60" />	<!-- Lara -->
 	</spawn>
 	<!-- [24_21] -->
 	<spawn name="giran05_2421_01m1" zone="il_giran05_2421_01">

@@ -317,6 +317,18 @@
 		<node X="184570" Y="60104" />
 		<node X="183150" Y="60163" />
 	</zone>
+	<zone name="il_aden13_npc2418_45" type="NpcSpawnTerritory" shape="NPoly" minZ="-2288" maxZ="-2088">
+		<node X="150812" Y="28056" />
+		<node X="151012" Y="28054" />
+		<node X="151012" Y="28478" />
+		<node X="150812" Y="28463" />
+	</zone>
+	<zone name="il_aden14_npc2320_125" type="NpcSpawnTerritory" shape="NPoly" minZ="-2772" maxZ="-2572">
+		<node X="117100" Y="75204" />
+		<node X="117400" Y="74956" />
+		<node X="117780" Y="75468" />
+		<node X="117500" Y="75700" />
+	</zone>
 	<zone name="il_aden22_2519_11" type="NpcSpawnTerritory" shape="NPoly" minZ="-4272" maxZ="-3872">
 		<node X="166280" Y="52288" />
 		<node X="167896" Y="52304" />
@@ -374,6 +386,12 @@
 		<node X="175792" Y="44880" />
 		<node X="173184" Y="44264" />
 		<node X="172332" Y="40752" />
+	</zone>
+	<zone name="il_dion09_npc2022_033" type="NpcSpawnTerritory" shape="NPoly" minZ="-3104" maxZ="-2904">
+		<node X="19840" Y="143076" />
+		<node X="20040" Y="143060" />
+		<node X="20084" Y="143332" />
+		<node X="19896" Y="143368" />
 	</zone>
 	<zone name="il_dion13_2122_01" type="NpcSpawnTerritory" shape="NPoly" minZ="-3869" maxZ="-2869">
 		<node X="34507" Y="162123" />
@@ -692,6 +710,12 @@
 		<node X="124720" Y="119284" />
 		<node X="122960" Y="121324" />
 		<node X="119920" Y="120000" />
+	</zone>
+	<zone name="il_giran03_npc2321_11" type="NpcSpawnTerritory" shape="NPoly" minZ="-3872" maxZ="-3472">
+		<node X="122568" Y="110568" />
+		<node X="122912" Y="110656" />
+		<node X="123016" Y="110972" />
+		<node X="122532" Y="111028" />
 	</zone>
 	<zone name="il_giran05_2421_01" type="NpcSpawnTerritory" shape="NPoly" minZ="-3748" maxZ="-3548">
 		<node X="135505" Y="113767" />
@@ -1081,11 +1105,47 @@
 		<node X="152665" Y="122140" />
 		<node X="151924" Y="121881" />
 	</zone>
+	<zone name="il_giran11_npc2222_47" type="NpcSpawnTerritory" shape="NPoly" minZ="-3588" maxZ="-3388">
+		<node X="80348" Y="144276" />
+		<node X="80532" Y="144284" />
+		<node X="80532" Y="144640" />
+		<node X="80332" Y="144636" />
+	</zone>
+	<zone name="il_giran11_npc2222_48" type="NpcSpawnTerritory" shape="NPoly" minZ="-3536" maxZ="-3336">
+		<node X="85788" Y="152796" />
+		<node X="85988" Y="152796" />
+		<node X="85988" Y="152996" />
+		<node X="85788" Y="152996" />
+	</zone>
+	<zone name="il_giran11_npc2222_49" type="NpcSpawnTerritory" shape="NPoly" minZ="-3451" maxZ="-3251">
+		<node X="84476" Y="148444" />
+		<node X="84676" Y="148444" />
+		<node X="84676" Y="148644" />
+		<node X="84476" Y="148644" />
+	</zone>
+	<zone name="il_gludio06_npc1722_054" type="NpcSpawnTerritory" shape="NPoly" minZ="-3225" maxZ="-3025">
+		<node X="-83235" Y="155295" />
+		<node X="-82876" Y="155276" />
+		<node X="-82876" Y="155476" />
+		<node X="-83237" Y="155475" />
+	</zone>
+	<zone name="il_gludio08_npc1921_031" type="NpcSpawnTerritory" shape="NPoly" minZ="-3157" maxZ="-2957">
+		<node X="-15488" Y="124524" />
+		<node X="-15100" Y="124524" />
+		<node X="-15100" Y="124724" />
+		<node X="-15491" Y="124713" />
+	</zone>
 	<zone name="il_gludio29_2125_18" type="NpcSpawnTerritory" shape="NPoly" minZ="-6723" maxZ="-6523">
 		<node X="47690" Y="245471" />
 		<node X="48248" Y="245467" />
 		<node X="48267" Y="246318" />
 		<node X="47688" Y="246327" />
+	</zone>
+	<zone name="il_godard02_npc2416_43" type="NpcSpawnTerritory" shape="NPoly" minZ="-3000" maxZ="-2800">
+		<node X="144140" Y="-55876" />
+		<node X="144340" Y="-55876" />
+		<node X="144312" Y="-55576" />
+		<node X="144164" Y="-55512" />
 	</zone>
 	<zone name="il_godard05_npc2414_02" type="NpcSpawnTerritory" shape="NPoly" minZ="-2436" maxZ="-2236">
 		<node X="157036" Y="-121572" />
@@ -1598,6 +1658,18 @@
 		<node X="72400" Y="218506" />
 		<node X="73740" Y="216446" />
 	</zone>
+	<zone name="il_innadril09_npc2324_25" type="NpcSpawnTerritory" shape="NPoly" minZ="-3697" maxZ="-3497">
+		<node X="107657" Y="218716" />
+		<node X="108196" Y="218693" />
+		<node X="108191" Y="219031" />
+		<node X="107665" Y="219022" />
+	</zone>
+	<zone name="il_oren04_npc2119_019" type="NpcSpawnTerritory" shape="NPoly" minZ="-2845" maxZ="-2645">
+		<node X="45340" Y="51948" />
+		<node X="45540" Y="51948" />
+		<node X="45540" Y="52148" />
+		<node X="45340" Y="52148" />
+	</zone>
 	<zone name="il_oren05_2020_32" type="NpcSpawnTerritory" shape="NPoly" minZ="-3882" maxZ="-3632">
 		<node X="9241" Y="78078" />
 		<node X="10288" Y="78059" />
@@ -1609,6 +1681,12 @@
 		<node X="9208" Y="78319" />
 		<node X="9213" Y="78564" />
 		<node X="8979" Y="78569" />
+	</zone>
+	<zone name="il_oren09_npc2018_017" type="NpcSpawnTerritory" shape="NPoly" minZ="-4283" maxZ="-4083">
+		<node X="10652" Y="14380" />
+		<node X="10852" Y="14380" />
+		<node X="10852" Y="14580" />
+		<node X="10652" Y="14580" />
 	</zone>
 	<zone name="il_oren10_1819_20" type="NpcSpawnTerritory" shape="NPoly" minZ="-5459" maxZ="-5209">
 		<node X="-48216" Y="44882" />
@@ -1834,6 +1912,18 @@
 		<node X="98011" Y="-298" />
 		<node X="76929" Y="-375" />
 		<node X="78724" Y="-6910" />
+	</zone>
+	<zone name="il_rune02_npc2116_02" type="NpcSpawnTerritory" shape="NPoly" minZ="-824" maxZ="-624">
+		<node X="44812" Y="-47528" />
+		<node X="45512" Y="-47492" />
+		<node X="45496" Y="-47292" />
+		<node X="44852" Y="-47292" />
+	</zone>
+	<zone name="il_rune02_npc2116_07" type="NpcSpawnTerritory" shape="NPoly" minZ="-864" maxZ="-664">
+		<node X="45292" Y="-48564" />
+		<node X="45784" Y="-48572" />
+		<node X="45784" Y="-48356" />
+		<node X="45292" Y="-48364" />
 	</zone>
 	<zone name="il_rune06_2115_01" type="NpcSpawnTerritory" shape="NPoly" minZ="-3548" maxZ="-3248">
 		<node X="52862" Y="-76747" />
@@ -3985,6 +4075,12 @@
 		<node X="46821" Y="-125220" />
 		<node X="46820" Y="-124613" />
 		<node X="46225" Y="-124613" />
+	</zone>
+	<zone name="il_schuttgart20_npc2213_55" type="NpcSpawnTerritory" shape="NPoly" minZ="-1576" maxZ="-1376">
+		<node X="88372" Y="-139904" />
+		<node X="88524" Y="-139856" />
+		<node X="88524" Y="-139656" />
+		<node X="88324" Y="-139656" />
 	</zone>
 	<zone name="il_schuttgart21_2214_31" type="NpcSpawnTerritory" shape="NPoly" minZ="-3508" maxZ="-3108">
 		<node X="90881" Y="-111469" />

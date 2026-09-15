@@ -87,7 +87,9 @@
   - в H5 те же шаги, исправлены уровень и награды: Q114, Q120, Q121 (цепочка Pavel); монстры Interlude: Q617, Q618
   - совпадают с Interlude, отличия несущественные: Q22, Q348, Q403, Q416, Q420, Q628, Q663
 - [x] Ферма зверей: Alpine Kookaburra/Buffalo/Cougar не спавнились (тип L2FeedableBeast не переносился), нет продавца корма Quigby; добавлены вместе с NPC квестов 120, 617, 625, 651, 652, которых не было в датапаке H5. AI Тунатуна H5 (кнут) убран
-- [ ] Не расставлены NPC Interlude, которых нет в H5: 13 рейд-боссов (Black Lily, Cursed Clara, Ancient Drake, Hekaton Prime, Last Titan Utenus и др.), 16 торговцев (Reeya, Ronaldo, Natasha, Greta…, часть стоит рядом с похожими NPC H5 — проверить на дубли), Corpse of Hutaku, Vervato; дверники замков Rune дублируют Gatekeeper H5 — не переносить
+- [x] 13 рейд-боссов Interlude, закомментированных в H5, расставлены (Black Lily, Cursed Clara, Ancient Weird Drake, Lord Ishka, Bloody Priest Rudelto, Antharas Priest Cloe, Necrosentinel Royal Guard, Water Spirit Lian, Gwindorr, Giant Marpanak, Hekaton Prime, Gorgolos, Last Titan Utenus); у 7 без координат в H5 — центр территории aCis, высота из геодаты
+- [x] 16 торговцев Interlude (продавцы чертежей, книг, амулетов, Natasha, Galman, Terava) расставлены: дублей рядом нет; у H5 были их диалоги и магазины, но не спавны; Galman и Terava получили диалоги и магазины из aCis, Natasha — кнопку магазина
+- [ ] Не перенесены: Corpse of Hutaku, Vervato (не нужны скриптам H5); дверники замка Rune дублируют Gatekeeper H5 — не переносить
 - [ ] Остров Камаэлей (Isle of Souls, Kamael Village) и путь оттуда на материк
 
 ## Этап 5. Проверка

@@ -37,6 +37,15 @@ EXTRA_NPCS = {
 	32012: "Tantan, quest 652",
 	32014: "Ivan, quest 651",
 	32049: "Rooney, quest 617 (the H5 Forge of the Gods AI that spawned him is off)",
+	# Interlude merchants with H5 dialogs and buylists that H5 never spawned
+	31044: "Valley Trader Galman, Giran", 31291: "Amulet Seller Terava, Goddard",
+	31306: "Trader Natasha, Rune", 31318: "Blueprint Seller Greta, Rune",
+	31414: "Spellbook Seller Lynn, Oren", 31415: "Spellbook Seller Triya, Oren",
+	31419: "Spellbook Seller Lorel, Giran", 31420: "Spellbook Seller Tomanel, Giran",
+	31427: "Amulet Seller Urgal, Dion", 31428: "Amulet Seller Shafa, Giran",
+	31432: "Blueprint Seller Reeya, Gludio", 31433: "Blueprint Seller Ronaldo, Gludio",
+	31436: "Blueprint Seller Dani, Heine", 31438: "Blueprint Seller Lara, Aden",
+	31668: "Blueprint Seller Tangen, Aden", 31962: "Blueprint Seller Altair, Schuttgart",
 }
 _REGION = re.compile(r"-- \[(\d+_\d+)\]")
 _DURATION = re.compile(r"^(\d+)(sec|min|hour)$")
