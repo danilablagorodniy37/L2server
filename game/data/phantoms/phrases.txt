@@ -1,0 +1,186 @@
+# Phrase book of the phantom players (bots).
+#
+# Sections:
+#   [general]  said in normal chat to players nearby
+#   [trade]    trade chat (+), heard in the whole region
+#   [shout]    shout (!), heard in the whole region
+#   [dialog]   "line => answer": one bot says the line, a bot nearby answers
+#   [reply <intent>: word|word|...]  answers to a player nearby whose message
+#              contains one of the words (or the bot's name for [reply name])
+#
+# Slots are filled from the live server, the same slot in one line keeps its value:
+#   {me} {me.class} {me.level} {me.race} {town}   the bot itself
+#   {player}          the player the bot answers
+#   {zone}            hunting zone for the bot's level, {zone.any} any zone
+#   {zone.low}        zone for a lower level
+#   {weapon} {armor}  weapon / armor set of the bot's grade, {grade} that grade
+#   {price}           price for the weapon/armor of the line (reference price +-30%)
+#   {raid}            a raid boss that is alive now, {raid.dead} one that is dead
+#   {epic}            Antharas, Valakas, Baium, Queen Ant, Core, Orfen and its state
+#   {castle}          a castle, {castle.owner} its owner clan or "nobody"
+#   {dawn}            the Seven Signs side that leads now
+#   {online}          real players online
+#   {need}            a party role (healer, tank, spoiler...)
+
+[general]
+anyone going to {zone}?
+{zone} is so crowded today
+finally {me.level}, grinding at {zone} was painful
+lol who is spamming skills near the gatekeeper
+need 2 more for {zone}, pm me
+brb food
+back
+who knows where to buy soulshots cheaper
+{town} looks nice at night
+my {weapon} is still not enchanted, too scared to break it
+anyone seen my clan leader?
+gg
+lag or is it just me?
+ok who wants to go {zone} with a {me.class}?
+im so poor, spent everything on shots
+how much is a {weapon} these days?
+{raid} is up btw
+{raid.dead} got killed already, too late
+{castle.owner} holds {castle} now
+siege this weekend? {castle} maybe
+dawn or dusk this week? i think {dawn} is winning
+{epic}
+leveling {me.class} is so slow after {me.level}
+anyone doing {zone.any} tonight?
+wtb patience
+do not trust random trades guys, check the window twice
+just got a nice drop, not telling what lol
+who is the best spoiler here?
+my party left me at {zone}...
+{online} people online, not bad
+why is everyone afk in {town}
+running out of spirit ore again
+does anyone use the auction here? oh wait there is none
+cruma was better in the old days
+im farming adena for {armor}
+anyone knows a good {need}?
+lf clan, active {me.class} {me.level}
+recruiting for our clan, lvl 40+, pm me
+this town needs more warehouses
+where do you guys buy mp potions
+craft or buy... always the same question
+who wants to duel? just kidding
+my pet died again
+who is the lord of {castle}? ah, {castle.owner}
+brb recharge shots
+ok going back to {zone}
+does {raid} drop anything good?
+has anyone done the noblesse quest?
+subclass quest is killing me
+leaving {town} soon, bye all
+anyone from {town} want to party?
+selling my old {weapon}, pm
+3rd class soon, can't wait
+olympiad is brutal this period
+last night we wiped at {zone} twice
+guys, where is the blacksmith in {town}?
+ty for the buff earlier whoever that was
+spoil sweep spoil sweep...
+{me.race} life is hard
+
+[trade]
+WTS {weapon} {price}
+WTS {armor} set {price}
+WTB {weapon} pay {price}
+WTB {armor} full set, {price}
+WTS {weapon} cheap, pm
+WTB soulshots {grade} in bulk
+WTS spiritshots {grade}, pm offers
+WTB enchant weapon {grade} scrolls
+WTS {weapon} +3 {price}
+WTB crystals {grade}
+WTS recipes, pm for list
+WTB {weapon} or trade my {weapon.other}
+WTS mats: animal bones, coarse bone powder, leather
+craft {armor} with your mats, pm
+
+[shout]
+LF {need} for {zone}!
+{zone} party needs {need}, pm!
+LFP {me.class} {me.level}
+{raid} is alive, who wants it?
+clan recruiting! all levels, active only
+anyone for {castle} siege?
+selling {weapon} in {town}, come!
+{epic}
+
+[dialog]
+where do you level at {me.level}? => {zone}, but bring a healer
+anyone going {zone}? => maybe later, my shots are out
+how much is {weapon} now? => around {price}
+is {raid} up? => last time i checked yes
+who owns {castle}? => {castle.owner}
+dawn or dusk? => {dawn} for sure
+lf party => what level?
+brb => ok
+this server is laggy => not for me
+wtb {weapon} => i have one, pm me
+nice {weapon} => thanks, took forever
+anyone seen {raid.dead}? => it got killed an hour ago
+im bored => go {zone.any}
+is {zone} crowded? => a bit, go early
+should i craft or buy {armor}? => craft if you have friends with mats
+gz on level! => ty ty
+who is the best {need} here? => not me lol
+
+[reply name: {me}]
+yes?
+hm?
+{player} what
+im here
+sup {player}
+
+[reply greet: hi|hello|hey|yo|sup|hallo|privet]
+hi {player}
+hey
+yo
+hello there
+hi, looking for party?
+
+[reply where: where|zone|level|lvl|farm|grind|spot]
+at your level try {zone.any}
+{zone} is good for {me.level}, not sure about you
+go {zone.any}, bring shots
+i farm at {zone}
+
+[reply trade: wts|wtb|sell|buy|price|adena]
+how much?
+pm me the price
+{weapon} is around {price} now
+not buying now sorry
+too expensive lol
+
+[reply party: party|lfp|lf |group|pt]
+what class?
+i can come later
+full already, sorry
+im {me.class} {me.level}, invite
+
+[reply clan: clan|ally|recruit]
+our clan is full sorry
+{castle.owner} is recruiting i heard
+no clan for me yet
+
+[reply boss: boss|raid|epic|baium|antharas|valakas|queen|zaken]
+{raid} is alive right now
+{epic}
+{raid.dead} is dead, check later
+
+[reply siege: siege|castle|lord]
+{castle.owner} holds {castle}
+siege soon, everyone is preparing
+
+[reply thanks: thanks|thx|ty|gg]
+np
+yw
+gg
+
+[reply bot: bot|npc|real|afk]
+not a bot lol
+im just slow
+who? me? no

@@ -470,6 +470,84 @@ def starting_equipment():
 	return problems
 
 
+# ---------------------------------------------------------------- phantom players (bots)
+
+PHANTOMS = DATA / "phantoms"
+# Slots PhantomFacts can fill; keep in sync with its value() method.
+PHANTOM_SLOTS = {"me", "me.class", "me.level", "me.race", "town", "player", "zone", "zone.low", "zone.any", "grade",
+	"weapon", "weapon.other", "armor", "price", "raid", "raid.dead", "epic", "castle", "castle.owner", "dawn", "online", "need"}
+PHANTOM_GRADES = {"NONE", "D", "C", "B", "A", "S"}
+
+
+def phantom_gear():
+	"""Bots wear only Interlude or Kamael items (data/phantoms/gear.txt, built by build_phantom_gear.py)."""
+	problems = defaultdict(list)
+	for line in (PHANTOMS / "gear.txt").read_text(encoding="utf-8").splitlines():
+		parts = line.split("#")[0].split()
+		if not parts:
+			continue
+		if parts[1] not in PHANTOM_GRADES:
+			problems[line.strip()].append("unknown grade")
+			continue
+		ids = [int(parts[4])] if parts[0] == "weapon" else [int(v) for v in parts[3:9]]
+		for item_id in ids:
+			if item_id == 0:
+				continue
+			if item_id not in items():
+				problems[item_id].append("no item template")
+			elif item_id not in allowed_items():
+				problems[_item_name(item_id)].append("not an Interlude or Kamael item")
+	return problems
+
+
+def phantom_phrases():
+	"""Phrases of the bots use only slots the script can fill, and every section has lines."""
+	problems = defaultdict(list)
+	text = (PHANTOMS / "phrases.txt").read_text(encoding="utf-8")
+	sections = defaultdict(int)
+	section = None
+	for raw in text.splitlines():
+		line = raw.strip()
+		if not line or line.startswith("#"):
+			continue
+		if line.startswith("[") and line.endswith("]"):
+			section = line[1:-1].strip()
+			sections[section] += 0
+			continue
+		sections[section] += 1
+		if (section == "dialog") and ("=>" not in line):
+			problems[line].append("a dialog line needs '=>'")
+	for slot in set(re.findall(r"\{([^}]*)\}", text)):
+		if slot not in PHANTOM_SLOTS:
+			problems["{" + slot + "}"].append("unknown slot, see PhantomFacts")
+	for name, count in sections.items():
+		if count == 0:
+			problems[f"[{name}]"].append("section without lines")
+	for required in ("general", "trade", "shout", "dialog"):
+		if required not in sections:
+			problems[f"[{required}]"].append("section missing")
+	return problems
+
+
+def phantom_config():
+	"""The towns of config/phantoms.properties exist and the hunting zones parse."""
+	problems = defaultdict(list)
+	config = properties("phantoms.properties")
+	regions = {f.stem for f in (DATA / "mapregion").glob("*.xml")}
+	for town in config.get("Towns", "").split(","):
+		if town.strip() and town.strip() not in regions:
+			problems[town.strip()].append("no such region in data/mapregion")
+	if int(config.get("Count", "0")) < 1:
+		problems["Count"].append("must be at least 1")
+	for line in (PHANTOMS / "zones.txt").read_text(encoding="utf-8").splitlines():
+		parts = line.split("#")[0].split(None, 2)
+		if not parts:
+			continue
+		if (len(parts) != 3) or not parts[0].isdigit() or not parts[1].isdigit() or (int(parts[0]) > int(parts[1])):
+			problems[line.strip()].append("expected: <min level> <max level> <name>")
+	return problems
+
+
 # ---------------------------------------------------------------- database
 
 def mysql_available():
@@ -542,7 +620,7 @@ DATAPACK_CHECKS = {f.__name__: f for f in (
 	item_references, npc_references, boss_positions, skill_references,
 	html_multisell_links, html_buylist_links, html_teleport_links, script_shop_calls, quest_dialog_links, quest_npcs, loader_classes, xml_schemas,
 	shops_interlude_items, drops_interlude_items, spawns_interlude_npcs, interlude_skill_trees, interlude_config,
-	interlude_loaders, starting_equipment,
+	interlude_loaders, starting_equipment, phantom_gear, phantom_phrases, phantom_config,
 )}
 DATABASE_CHECKS = {"database_tables": database_tables}
 
