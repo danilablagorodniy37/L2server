@@ -52,7 +52,7 @@ public class Q00121_PavelTheGiant extends Quest {
 				st.startQuest();
 				break;
 			case "32041-02.html":
-				st.addExpAndSp(346320, 26069);
+				st.addExpAndSp(10000, 0);
 				st.exitQuest(false, true);
 				break;
 		}
@@ -67,7 +67,7 @@ public class Q00121_PavelTheGiant extends Quest {
 			case NEWYEAR:
 				switch (st.getState()) {
 					case State.CREATED:
-						htmltext = (player.getLevel() >= 70) ? "31961-01.htm" : "31961-00.htm";
+						htmltext = (player.getLevel() >= 46) ? "31961-01.htm" : "31961-00.htm";
 						break;
 					case State.STARTED:
 						htmltext = "31961-03.html";

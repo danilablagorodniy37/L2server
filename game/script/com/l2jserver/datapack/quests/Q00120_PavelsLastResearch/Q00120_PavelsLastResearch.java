@@ -54,7 +54,7 @@ public final class Q00120_PavelsLastResearch extends Quest {
 	private static final SkillHolder QUEST_TRAP_POWER_SHOT = new SkillHolder(5073, 5);
 	private static final SkillHolder NPC_DEFAULT = new SkillHolder(7000);
 	// Rewards
-	private static final int SEALED_PHOENIX_EARRING = 6324;
+	private static final int EARRING_OF_BINDING = 854;
 	
 	public Q00120_PavelsLastResearch() {
 		super(120, Q00120_PavelsLastResearch.class.getSimpleName(), "Pavel's Last Research");
@@ -84,7 +84,7 @@ public final class Q00120_PavelsLastResearch extends Quest {
 			}
 			case "quest_accept": {
 				if (qs.isCreated() && player.hasQuestCompleted(Q00114_ResurrectionOfAnOldManager.class.getSimpleName())) {
-					if (player.getLevel() >= 70) {
+					if (player.getLevel() >= 50) {
 						qs.startQuest();
 						qs.setMemoState(1);
 						html = "32046-08.htm";
@@ -405,9 +405,7 @@ public final class Q00120_PavelsLastResearch extends Quest {
 			case "32041-34.html": {
 				if (qs.isMemoState(26) && hasQuestItems(player, WENDYS_NECKLACE)) {
 					takeItems(player, WENDYS_NECKLACE, -1);
-					rewardItems(player, SEALED_PHOENIX_EARRING, 1);
-					giveAdena(player, 783720, true);
-					addExpAndSp(player, 3447315, 272615);
+					giveItems(player, EARRING_OF_BINDING, 1);
 					qs.exitQuest(false, true);
 					html = event;
 				}

@@ -135,7 +135,6 @@ public class Q00114_ResurrectionOfAnOldManager extends Quest {
 				st.setCond(19, true);
 				break;
 			case "32046-07.html":
-				st.addExpAndSp(1846611, 144270);
 				st.exitQuest(false, true);
 				break;
 			// Wendy
@@ -340,7 +339,7 @@ public class Q00114_ResurrectionOfAnOldManager extends Quest {
 				switch (st.getState()) {
 					case State.CREATED:
 						if (player.hasQuestCompleted(Q00121_PavelTheGiant.class.getSimpleName())) {
-							htmltext = (player.getLevel() >= 70) ? "32041-02.htm" : "32041-03.htm";
+							htmltext = (player.getLevel() >= 49) ? "32041-02.htm" : "32041-03.htm";
 						} else {
 							htmltext = "32041-01.htm";
 						}
