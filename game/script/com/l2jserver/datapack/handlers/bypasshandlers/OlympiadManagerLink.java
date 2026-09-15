@@ -181,11 +181,8 @@ public class OlympiadManagerLink implements IBypassHandler {
 							activeChar.sendPacket(html);
 						}
 						break;
-					case 7: // Equipment Rewards
+					case 7: // Noblesse Gate Pass shop (Interlude)
 						MultisellData.getInstance().separateAndSend(102, activeChar, (L2Npc) target, false);
-						break;
-					case 8: // Misc. Rewards
-						MultisellData.getInstance().separateAndSend(103, activeChar, (L2Npc) target, false);
 						break;
 					case 9: // Your Grand Olympiad Score from the previous period is %points% point(s) | TODO: cleanup (not used anymore)
 						int point = Olympiad.getInstance().getLastNobleOlympiadPoints(activeChar.getObjectId());

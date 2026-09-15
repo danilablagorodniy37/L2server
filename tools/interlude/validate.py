@@ -18,6 +18,7 @@ import sys
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 
+import build_ai
 import datasets as ds
 import kamael
 
@@ -143,13 +144,13 @@ def check_references(items, npcs, skills):
 
 
 def check_html_links():
-	multisells = {int(f.stem) for f in (DATA / "multisell").glob("*.xml") if f.stem.isdigit()}
-	buylists = {int(f.stem) for f in (DATA / "buylists").glob("*.xml") if f.stem.isdigit()}
+	multisells = ds.multisell_ids()
+	buylists = ds.buylist_ids()
 	teleports = set(sql_ids("teleport.sql", _TELEPORT_ROW))
 	broken = {"multisell": defaultdict(list), "buylist": defaultdict(list), "teleport": defaultdict(list)}
 	link = re.compile(r"bypass -h npc_%objectId%_(multisell|exc_multisell|Buy|goto) (\d+)")
-	for f in (DATA / "html").rglob("*.htm*"):
-		rel = f.relative_to(DATA / "html").as_posix()
+	for f in ds.html_files():
+		rel = f.relative_to(ds.GAME).as_posix()
 		for kind, value in link.findall(f.read_text(encoding="utf-8", errors="replace")):
 			value = int(value)
 			if kind in ("multisell", "exc_multisell") and value not in multisells:
@@ -163,6 +164,17 @@ def check_html_links():
 	report("NPC HTML links to multisells that exist", broken["multisell"])
 	report("NPC HTML links to buylists that exist", broken["buylist"])
 	report("NPC HTML links to teleports that exist", broken["teleport"])
+
+	java = defaultdict(list)
+	call = re.compile(r"(separateAndSend|showBuyWindow)\((?:player, *)?(\d+) *[,)]")
+	disabled = build_ai.REMOVED | {"hellbound"}
+	for f in (ds.GAME / "script").rglob("*.java"):
+		if disabled & set(f.parts):
+			continue
+		for kind, value in call.findall(f.read_text(encoding="utf-8", errors="replace")):
+			if int(value) not in (multisells if kind == "separateAndSend" else buylists):
+				java[f"{kind} {value}"].append(f.relative_to(ds.GAME / "script").as_posix())
+	report("scripts open multisells and buylists that exist (loaded scripts only)", java)
 
 
 def check_interlude(items, npcs):

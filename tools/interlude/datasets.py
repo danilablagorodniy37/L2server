@@ -101,5 +101,19 @@ def h5_spawns():
 	return spawns
 
 
+def multisell_ids():
+	return {int(f.stem) for f in (GAME / "data" / "multisell").glob("*.xml") if f.stem.isdigit()}
+
+
+def buylist_ids():
+	return {int(f.stem) for f in (GAME / "data" / "buylists").glob("*.xml") if f.stem.isdigit()}
+
+
+def html_files():
+	"""NPC dialogs: data/html and the HTML files next to scripts."""
+	yield from (GAME / "data" / "html").rglob("*.htm*")
+	yield from (GAME / "script").rglob("*.htm*")
+
+
 def is_kamael_item(item):
 	return item["weapon_type"] in KAMAEL_WEAPON_TYPES or (item["etcitem_type"] or "").upper() == "BOLT"
