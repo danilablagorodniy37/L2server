@@ -135,33 +135,33 @@ hm?
 im here
 sup {player}
 
-[reply greet: hi|hello|hey|yo|sup|hallo|privet]
+[reply greet: hi|hello|hey|yo|sup|hallo|privet|priv|zdarova|hi all]
 hi {player}
 hey
 yo
 hello there
 hi, looking for party?
 
-[reply where: where|zone|level|lvl|farm|grind|spot]
+[reply where: where|zone|level|lvl|farm|grind|spot|gde|kachat|kach|lokac]
 at your level try {zone.any}
 {zone} is good for {me.level}, not sure about you
 go {zone.any}, bring shots
 i farm at {zone}
 
-[reply trade: wts|wtb|sell|buy|price|adena]
+[reply trade: wts|wtb|sell|buy|price|adena|prodam|kuplu|cena|skolko]
 how much?
 pm me the price
 {weapon} is around {price} now
 not buying now sorry
 too expensive lol
 
-[reply party: party|lfp|lf |group|pt]
+[reply party: party|lfp|lf |group|pt|grupp|pati|invite]
 what class?
 i can come later
 full already, sorry
 im {me.class} {me.level}, invite
 
-[reply clan: clan|ally|recruit]
+[reply clan: clan|ally|recruit|klan|alyans]
 our clan is full sorry
 {castle.owner} is recruiting i heard
 no clan for me yet
@@ -175,7 +175,7 @@ no clan for me yet
 {castle.owner} holds {castle}
 siege soon, everyone is preparing
 
-[reply thanks: thanks|thx|ty|gg]
+[reply thanks: thanks|thx|ty|gg|spasibo|sps]
 np
 yw
 gg
@@ -306,3 +306,39 @@ i lost my karma finally => how long did it take => two hours of grinding => ouch
 [chain level]
 gz on level => ty, took all night => where did you grind => {zone}, its fine for {me.level}
 im stuck at {me.level} => try {zone} => with a party? => yes, solo is slow
+
+# ---------------------------------------------------------------------------
+# Answers when a player speaks to a bot directly: says its name or writes a
+# private message. The bot always answers, even when nothing else fits.
+# ---------------------------------------------------------------------------
+
+[reply direct]
+yes?
+hm? what is it {player}?
+im listening
+what do you need?
+sup {player}
+im here, whats up
+hey {player}
+yeah?
+say it
+one sec, im reading
+what
+tell me
+
+[reply followup]
+hm
+i see
+yeah
+right
+sure
+go on
+aha
+ok ok
+that is true
+maybe
+not sure to be honest
+ye, same here
+lol
+interesting
+i was thinking the same

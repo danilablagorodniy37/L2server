@@ -57,7 +57,7 @@ public class PhraseBook {
 			}
 			if (line.startsWith("[") && line.endsWith("]")) {
 				final String header = line.substring(1, line.length() - 1).trim();
-				if (header.startsWith("reply ")) {
+				if (header.startsWith("reply ") && header.contains(":")) {
 					final String[] parts = header.substring(6).split(":", 2);
 					final List<String> keywords = new ArrayList<>();
 					for (String keyword : (parts.length > 1 ? parts[1] : "").split("\\|")) {

@@ -27,6 +27,14 @@ SPAWNS_OUT = ds.GAME / "data" / "spawnlist" / "interlude.xml"
 ZONE_PREFIX = "il_"
 # Monsters and the Beast Farm animals (Alpine Kookaburra, Buffalo, Cougar: quests 20, 631, 655).
 IMPORTED_TYPES = {"L2Monster", "L2FeedableBeast"}
+# Makers with their own logic in aCis whose monsters may still be imported as plain
+# spawns when they are nowhere else in the world (day and night cycles, groups,
+# the Primeval Isle dinosaurs). Instances, events, treasure chests and boss rooms stay out.
+ORPHAN_MAKERS = {
+	"on_day_night_spawn", "random_spawn", "random_maker", "random_spawn_pawn", "default_use_db_maker",
+	"no_on_start_maker", "exclusive_spawn_normal", "farm_maker", "warrior_passive_weakness_maker",
+	"velociraptor_maker", "rhamphorhynchus_maker", "tyrannosaurus_maker",
+}
 # Other Interlude NPCs missing from the H5 datapack that quests and systems need.
 # Makers with several random positions get the first one.
 EXTRA_NPCS = {
@@ -48,7 +56,9 @@ EXTRA_NPCS = {
 	31668: "Blueprint Seller Tangen, Aden", 31962: "Blueprint Seller Altair, Schuttgart",
 }
 _REGION = re.compile(r"-- \[(\d+_\d+)\]")
-_DURATION = re.compile(r"^(\d+)(sec|min|hour)$")
+_DURATION = re.compile(r"^(\d+)(sec|min|hour|day)$")
+# Respawn for monsters of makers that manage respawn themselves in aCis.
+DEFAULT_RESPAWN = 60
 
 
 def seconds(value):
@@ -56,8 +66,11 @@ def seconds(value):
 		return 0
 	m = _DURATION.match(value)
 	if not m:
+		# Makers with their own logic use respawn="no"; as plain spawns they get a default.
+		if value == "no":
+			return DEFAULT_RESPAWN
 		raise ValueError(f"Unknown duration {value}")
-	return int(m.group(1)) * {"sec": 1, "min": 60, "hour": 3600}[m.group(2)]
+	return int(m.group(1)) * {"sec": 1, "min": 60, "hour": 3600, "day": 86400}[m.group(2)]
 
 
 def read_sql():
@@ -152,13 +165,36 @@ def main():
 	territories = {}
 	spawns = []
 	skipped = Counter()
+	collect(npcs, still_spawned, territories, spawns, skipped, plain_makers_only=True)
+	# Second pass: monsters that are nowhere else in the world, from makers with their
+	# own logic in aCis (day and night, groups, Primeval Isle). They become plain spawns.
+	orphans = {npc_id for *_, entries in spawns for npc, _ in entries for npc_id in [int(npc.get("id"))]}
+	collect(npcs, still_spawned | orphans, territories, spawns, skipped, plain_makers_only=False)
+
+	write_zones(territories)
+	write_spawns(spawns)
+
+	print(f"spawnlist.sql: removed {sum(removed.values())} rows of {len(removed)} NPCs, Kamael NPC whitelist {len(kamael_npcs)}")
+	print(f"imported from aCis: {len(spawns)} makers, {len(territories)} territories, {sum(len(e) for *_, e in spawns)} npc entries")
+	for key, count in skipped.most_common():
+		print(f"  skipped {key}: {count}")
+
+
+def collect(npcs, spawned, territories, spawns, skipped, plain_makers_only):
+	"""Adds makers of aCis to the import. Only NPCs not in {@code spawned} are taken."""
 	for f in ds._xml_files(ds.ACIS.parent / "xml" / "spawnlist"):
 		root = ET.parse(f).getroot()
 		file_territories = {t.get("name"): t for t in root.findall("territory")}
 		for maker in root.findall("npcmaker"):
 			ai = maker.find("ai")
 			ai_type = ai.get("type") if ai is not None else None
-			if ai_type != "default_maker" or maker.get("event") or maker.get("spawnTime") or maker.get("ban"):
+			if maker.get("event") or maker.get("spawnTime") or maker.get("ban"):
+				skipped["maker with event or time"] += 1
+				continue
+			if plain_makers_only:
+				if ai_type != "default_maker":
+					continue
+			elif (ai_type == "default_maker") or (ai_type not in ORPHAN_MAKERS):
 				skipped["maker " + str(ai_type)] += 1
 				continue
 			entries = []
@@ -167,7 +203,7 @@ def main():
 				template = npcs.get(npc_id)
 				if template is None:
 					skipped["no H5 template"] += 1
-				elif npc_id in still_spawned:
+				elif npc_id in spawned:
 					skipped["already spawned in H5"] += 1
 				elif template["type"] not in IMPORTED_TYPES and npc_id not in EXTRA_NPCS:
 					skipped["not a monster: " + template["type"]] += 1
@@ -182,14 +218,6 @@ def main():
 			zone_name = ZONE_PREFIX + territory.get("name")
 			territories[zone_name] = territory
 			spawns.append((f.stem, maker.get("name"), zone_name, entries))
-
-	write_zones(territories)
-	write_spawns(spawns)
-
-	print(f"spawnlist.sql: removed {sum(removed.values())} rows of {len(removed)} NPCs, Kamael NPC whitelist {len(kamael_npcs)}")
-	print(f"imported from aCis: {len(spawns)} makers, {len(territories)} territories, {sum(len(e) for *_, e in spawns)} npc entries")
-	for key, count in skipped.most_common():
-		print(f"  skipped {key}: {count}")
 
 
 def write_zones(territories):

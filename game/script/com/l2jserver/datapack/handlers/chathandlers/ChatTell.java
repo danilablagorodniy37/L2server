@@ -23,6 +23,7 @@ import static com.l2jserver.gameserver.config.Configuration.general;
 
 import com.l2jserver.gameserver.handler.IChatHandler;
 import com.l2jserver.gameserver.model.BlockList;
+import com.l2jserver.datapack.custom.phantoms.Phantoms;
 import com.l2jserver.gameserver.model.L2World;
 import com.l2jserver.gameserver.model.PcCondOverride;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
@@ -70,6 +71,11 @@ public class ChatTell implements IChatHandler {
 			}
 			if (receiver.isChatBanned()) {
 				activeChar.sendPacket(SystemMessageId.THE_PERSON_IS_IN_MESSAGE_REFUSAL_MODE);
+				return;
+			}
+			if (Phantoms.isPhantom(receiver)) {
+				// A bot has no client: it reads the message through the chat event and answers itself.
+				activeChar.sendPacket(new CreatureSay(activeChar.getObjectId(), type, "->" + receiver.getName(), text));
 				return;
 			}
 			if ((receiver.getClient() == null) || receiver.getClient().isDetached()) {

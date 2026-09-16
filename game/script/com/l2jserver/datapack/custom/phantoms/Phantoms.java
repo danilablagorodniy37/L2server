@@ -27,6 +27,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
@@ -55,6 +56,8 @@ import com.l2jserver.gameserver.network.clientpackets.Say2;
  */
 public class Phantoms {
 	private static final Logger LOG = LoggerFactory.getLogger(Phantoms.class);
+	/** The running manager, so the chat handlers can tell a bot from a player. */
+	private static Phantoms _instance;
 	/** Bot lines go to the usual chat log, so they can be read in game/logs/chat. */
 	private static final Logger LOG_CHAT = LoggerFactory.getLogger("chat");
 
@@ -80,6 +83,7 @@ public class Phantoms {
 	private int _regionChatInterval;
 	private int _radius;
 	private boolean _replyToPlayers;
+	private boolean _debugChat;
 
 	public Phantoms() {
 		final File root = server().getDatapackRoot();
@@ -109,6 +113,7 @@ public class Phantoms {
 		_regionChatInterval = number("RegionChatInterval", 40);
 		_radius = number("WanderRadius", 1500);
 		_replyToPlayers = Boolean.parseBoolean(_config.getProperty("ReplyToPlayers", "True").trim());
+		_debugChat = Boolean.parseBoolean(_config.getProperty("DebugChat", "False").trim());
 
 		final int count = number("Count", 100);
 		ThreadPoolManager.getInstance().scheduleGeneral(() -> spawnAll(count), number("StartDelay", 30), TimeUnit.SECONDS);
@@ -159,6 +164,7 @@ public class Phantoms {
 		}
 
 		_news = new PhantomNews(this, this::onNews);
+		_instance = this;
 		ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(this::tick, 5, 2, TimeUnit.SECONDS);
 		if (_replyToPlayers) {
 			Containers.Global().addListener(new ConsumerEventListener(Containers.Global(), EventType.PLAYER_CHAT, (PlayerChat event) -> onPlayerChat(event), this));
@@ -319,20 +325,57 @@ public class Phantoms {
 	}
 
 	private void say(Phantom phantom, int type, String text, String playerName, PhantomNews.Item news) {
+		say(phantom, type, text, playerName, news, null);
+	}
+
+	/**
+	 * @param tellTo name of the player the line goes to as a private message, null for the channel
+	 */
+	private void say(Phantom phantom, int type, String text, String playerName, PhantomNews.Item news, String tellTo) {
 		if ((text == null) || !phantom.player().isVisible()) {
 			return;
 		}
 		final var handler = ChatHandler.getInstance().getHandler(type);
 		if (handler != null) {
 			final String line = phantom.style().apply(_facts.fill(text, phantom.player(), playerName, news));
-			handler.handleChat(type, phantom.player(), null, line);
-			LOG_CHAT.info("[phantom] {} says [{}].", phantom.player().getName(), line);
+			handler.handleChat(type, phantom.player(), tellTo, line);
+			LOG_CHAT.info("[phantom] {} says [{}]{}.", phantom.player().getName(), line, (tellTo != null) ? " to " + tellTo : "");
 		}
 	}
 
 	private void onPlayerChat(PlayerChat event) {
 		final L2PcInstance player = event.player();
-		if ((player == null) || _objectIds.contains(player.getObjectId()) || (event.chatType() != Say2.ALL)) {
+		if ((player == null) || (_objectIds.contains(player.getObjectId()) && !_debugChat)) {
+			return;
+		}
+		final String text = event.text();
+		if ((text == null) || text.isBlank()) {
+			return;
+		}
+
+		// A private message is answered by the bot it was sent to.
+		if (event.chatType() == Say2.TELL) {
+			final Phantom addressed = byObjectId(event.target());
+			if (addressed != null) {
+				answer(addressed, player, text, Say2.TELL, true);
+			}
+			return;
+		}
+		if ((event.chatType() != Say2.ALL) && (event.chatType() != Say2.SHOUT) && (event.chatType() != Say2.TRADE)) {
+			return;
+		}
+
+		// The name of a bot standing nearby was said: that bot answers, not a random one.
+		final Phantom named = byName(text, player);
+		if (named != null) {
+			answer(named, player, text, Say2.ALL, true);
+			return;
+		}
+
+		// The player keeps talking to the bot that answered a moment ago.
+		final Phantom talking = stillTalkingTo(player);
+		if (talking != null) {
+			answer(talking, player, text, Say2.ALL, true);
 			return;
 		}
 
@@ -342,16 +385,73 @@ public class Phantoms {
 				near.add(phantom);
 			}
 		}
-		if (near.isEmpty()) {
+		if (!near.isEmpty()) {
+			answer(near.get(Rnd.get(near.size())), player, text, Say2.ALL, false);
+		}
+	}
+
+	/** The bot a private message was sent to. */
+	private Phantom byObjectId(L2PcInstance target) {
+		if (target == null) {
+			return null;
+		}
+		for (Phantom phantom : _phantoms) {
+			if (phantom.player().getObjectId() == target.getObjectId()) {
+				return phantom;
+			}
+		}
+		return null;
+	}
+
+	/** A bot within sight whose name is in the message. */
+	private Phantom byName(String text, L2PcInstance player) {
+		final String lower = text.toLowerCase(Locale.ROOT);
+		for (Phantom phantom : _phantoms) {
+			if (lower.contains(phantom.player().getName().toLowerCase(Locale.ROOT)) && phantom.player().isVisible() && (phantom.player().calculateDistance(player, false, false) < SIGHT_RANGE)) {
+				return phantom;
+			}
+		}
+		return null;
+	}
+
+	private Phantom stillTalkingTo(L2PcInstance player) {
+		final long now = System.currentTimeMillis();
+		for (Phantom phantom : _phantoms) {
+			if (phantom.isTalkingTo(player.getName(), now) && phantom.player().isVisible() && (phantom.player().calculateDistance(player, false, false) < REPLY_RANGE)) {
+				return phantom;
+			}
+		}
+		return null;
+	}
+
+	/**
+	 * Answers a player.
+	 * @param direct true when the player addressed this bot by name or by a private message: then the
+	 *            bot always says something, stops walking and turns to the player
+	 */
+	private void answer(Phantom phantom, L2PcInstance player, String text, int channel, boolean direct) {
+		final long now = System.currentTimeMillis();
+		final boolean followup = phantom.isTalkingTo(player.getName(), now);
+		String line = _phrases.answerTo(text, phantom.player().getName());
+		if ((line == null) || line.equals(phantom.lastAnswer())) {
+			if (!direct && (line == null)) {
+				return;
+			}
+			line = _phrases.random(followup ? "reply followup" : "reply direct");
+		}
+		if (line == null) {
 			return;
 		}
 
-		final Phantom phantom = near.get(Rnd.get(near.size()));
-		final String answer = _phrases.answerTo(event.text(), phantom.player().getName());
-		if (answer != null) {
-			phantom.delayChat(20000);
-			ThreadPoolManager.getInstance().scheduleGeneral(() -> say(phantom, Say2.ALL, answer, player.getName(), null), Rnd.get(2000, 6000));
+		final String answer = line;
+		phantom.startTalking(player.getName(), answer, now);
+		phantom.delayChat(20000);
+		if (direct) {
+			phantom.lookAt(player);
 		}
+		// A short pause, as if the bot were typing.
+		final String tellTo = (channel == Say2.TELL) ? player.getName() : null;
+		ThreadPoolManager.getInstance().scheduleGeneral(() -> say(phantom, channel, answer, player.getName(), null, tellTo), Rnd.get(1200, 3500));
 	}
 
 	/** Right after something happens, a bot or two who saw it say something. */
@@ -401,6 +501,13 @@ public class Phantoms {
 		LOG.info("DebugNews: four made up events sent around {}.", sample.player().getName());
 	}
 	
+	/**
+	 * @return true when this player is a bot; the chat handlers use it, a bot has no client but reads messages
+	 */
+	public static boolean isPhantom(L2PcInstance player) {
+		return (player != null) && (_instance != null) && _instance._objectIds.contains(player.getObjectId());
+	}
+
 	public static void main(String[] args) {
 		new Phantoms();
 	}

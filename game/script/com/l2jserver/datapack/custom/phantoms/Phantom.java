@@ -24,6 +24,8 @@ import com.l2jserver.gameserver.ai.CtrlIntention;
 import com.l2jserver.gameserver.model.Location;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jserver.gameserver.network.serverpackets.SocialAction;
+import com.l2jserver.gameserver.network.serverpackets.ValidateLocation;
+import com.l2jserver.gameserver.util.Util;
 
 /**
  * One bot: walks around its town square, stands, sits down and uses emotes.
@@ -60,6 +62,9 @@ public class Phantom {
 		}
 	}
 
+	/** How long a bot remembers who talked to it, so a follow-up message keeps the same bot. */
+	private static final long TALK_MEMORY = 90000;
+
 	private static final int[] EMOTES = {
 		2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
 	};
@@ -72,6 +77,9 @@ public class Phantom {
 	private long _nextAction;
 	private long _nextChat;
 	private long _nextReaction;
+	private String _talkingTo;
+	private long _talkUntil;
+	private String _lastAnswer;
 
 	public Phantom(L2PcInstance player, Location home, int radius) {
 		_player = player;
@@ -96,6 +104,36 @@ public class Phantom {
 
 	public void reacted(long now) {
 		_nextReaction = now + Rnd.get(45000, 120000);
+	}
+
+	/** True while the bot is in the middle of a conversation with this player. */
+	public boolean isTalkingTo(String playerName, long now) {
+		return playerName.equals(_talkingTo) && (now < _talkUntil);
+	}
+
+	public void startTalking(String playerName, String answer, long now) {
+		_talkingTo = playerName;
+		_talkUntil = now + TALK_MEMORY;
+		_lastAnswer = answer;
+	}
+
+	public String lastAnswer() {
+		return _lastAnswer;
+	}
+
+	/** Stops walking and turns to the player who is talking to the bot. */
+	public void lookAt(L2PcInstance player) {
+		if ((_player == null) || !_player.isVisible()) {
+			return;
+		}
+		if (_player.isSitting()) {
+			_player.standUp();
+		}
+		_player.getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE);
+		_player.setHeading(Util.calculateHeadingFrom(_player, player));
+		_player.broadcastPacket(new ValidateLocation(_player));
+		// Stay put while the conversation lasts.
+		_nextAction = System.currentTimeMillis() + Rnd.get(15000, 25000);
 	}
 
 	/** True when the bot has left the place it was spawned at. */
