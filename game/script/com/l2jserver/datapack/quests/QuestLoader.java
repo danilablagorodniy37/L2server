@@ -147,6 +147,7 @@ import com.l2jserver.datapack.quests.Q00123_TheLeaderAndTheFollower.Q00123_TheLe
 import com.l2jserver.datapack.quests.Q00124_MeetingTheElroki.Q00124_MeetingTheElroki;
 import com.l2jserver.datapack.quests.Q00125_TheNameOfEvil1.Q00125_TheNameOfEvil1;
 import com.l2jserver.datapack.quests.Q00126_TheNameOfEvil2.Q00126_TheNameOfEvil2;
+import com.l2jserver.datapack.quests.Q00127_KamaelAWindowToTheFuture.Q00127_KamaelAWindowToTheFuture;
 import com.l2jserver.datapack.quests.Q00151_CureForFever.Q00151_CureForFever;
 import com.l2jserver.datapack.quests.Q00152_ShardsOfGolem.Q00152_ShardsOfGolem;
 import com.l2jserver.datapack.quests.Q00153_DeliverGoods.Q00153_DeliverGoods;
@@ -269,6 +270,7 @@ import com.l2jserver.datapack.quests.Q00348_AnArrogantSearch.Q00348_AnArrogantSe
 import com.l2jserver.datapack.quests.Q00350_EnhanceYourWeapon.Q00350_EnhanceYourWeapon;
 import com.l2jserver.datapack.quests.Q00351_BlackSwan.Q00351_BlackSwan;
 import com.l2jserver.datapack.quests.Q00352_HelpRoodRaiseANewPet.Q00352_HelpRoodRaiseANewPet;
+import com.l2jserver.datapack.quests.Q00353_PowerOfDarkness.Q00353_PowerOfDarkness;
 import com.l2jserver.datapack.quests.Q00354_ConquestOfAlligatorIsland.Q00354_ConquestOfAlligatorIsland;
 import com.l2jserver.datapack.quests.Q00355_FamilyHonor.Q00355_FamilyHonor;
 import com.l2jserver.datapack.quests.Q00356_DigUpTheSeaOfSpores.Q00356_DigUpTheSeaOfSpores;
@@ -288,6 +290,8 @@ import com.l2jserver.datapack.quests.Q00370_AnElderSowsSeeds.Q00370_AnElderSowsS
 import com.l2jserver.datapack.quests.Q00371_ShrieksOfGhosts.Q00371_ShrieksOfGhosts;
 import com.l2jserver.datapack.quests.Q00372_LegacyOfInsolence.Q00372_LegacyOfInsolence;
 import com.l2jserver.datapack.quests.Q00373_SupplierOfReagents.Q00373_SupplierOfReagents;
+import com.l2jserver.datapack.quests.Q00374_WhisperOfDreamsPart1.Q00374_WhisperOfDreamsPart1;
+import com.l2jserver.datapack.quests.Q00375_WhisperOfDreamsPart2.Q00375_WhisperOfDreamsPart2;
 import com.l2jserver.datapack.quests.Q00376_ExplorationOfTheGiantsCavePart1.Q00376_ExplorationOfTheGiantsCavePart1;
 import com.l2jserver.datapack.quests.Q00377_ExplorationOfTheGiantsCavePart2.Q00377_ExplorationOfTheGiantsCavePart2;
 import com.l2jserver.datapack.quests.Q00378_GrandFeast.Q00378_GrandFeast;
@@ -368,6 +372,7 @@ import com.l2jserver.datapack.quests.Q00636_TruthBeyond.Q00636_TruthBeyond;
 import com.l2jserver.datapack.quests.Q00637_ThroughOnceMore.Q00637_ThroughOnceMore;
 import com.l2jserver.datapack.quests.Q00638_SeekersOfTheHolyGrail.Q00638_SeekersOfTheHolyGrail;
 import com.l2jserver.datapack.quests.Q00639_GuardiansOfTheHolyGrail.Q00639_GuardiansOfTheHolyGrail;
+import com.l2jserver.datapack.quests.Q00640_TheZeroHour.Q00640_TheZeroHour;
 import com.l2jserver.datapack.quests.Q00641_AttackSailren.Q00641_AttackSailren;
 import com.l2jserver.datapack.quests.Q00642_APowerfulPrimevalCreature.Q00642_APowerfulPrimevalCreature;
 import com.l2jserver.datapack.quests.Q00643_RiseAndFallOfTheElrokiTribe.Q00643_RiseAndFallOfTheElrokiTribe;
@@ -516,6 +521,7 @@ public class QuestLoader {
 		Q00124_MeetingTheElroki.class,
 		Q00125_TheNameOfEvil1.class,
 		Q00126_TheNameOfEvil2.class,
+		Q00127_KamaelAWindowToTheFuture.class,
 		Q00151_CureForFever.class,
 		Q00152_ShardsOfGolem.class,
 		Q00153_DeliverGoods.class,
@@ -647,6 +653,7 @@ public class QuestLoader {
 		Q00350_EnhanceYourWeapon.class,
 		Q00351_BlackSwan.class,
 		Q00352_HelpRoodRaiseANewPet.class,
+		Q00353_PowerOfDarkness.class,
 		Q00354_ConquestOfAlligatorIsland.class,
 		Q00355_FamilyHonor.class,
 		Q00356_DigUpTheSeaOfSpores.class,
@@ -666,6 +673,8 @@ public class QuestLoader {
 		Q00371_ShrieksOfGhosts.class,
 		Q00372_LegacyOfInsolence.class,
 		Q00373_SupplierOfReagents.class,
+		Q00374_WhisperOfDreamsPart1.class,
+		Q00375_WhisperOfDreamsPart2.class,
 		Q00376_ExplorationOfTheGiantsCavePart1.class,
 		Q00377_ExplorationOfTheGiantsCavePart2.class,
 		Q00378_GrandFeast.class,
@@ -746,6 +755,7 @@ public class QuestLoader {
 		Q00637_ThroughOnceMore.class,
 		Q00638_SeekersOfTheHolyGrail.class,
 		Q00639_GuardiansOfTheHolyGrail.class,
+		Q00640_TheZeroHour.class,
 		Q00641_AttackSailren.class,
 		Q00642_APowerfulPrimevalCreature.class,
 		Q00643_RiseAndFallOfTheElrokiTribe.class,

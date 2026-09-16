@@ -485,6 +485,8 @@ def interlude_config():
 		"general.properties": {"AllowMail": "False", "AllowAttachments": "False", "EnableBlockCheckerEvent": "False",
 			"EnableBotReportButton": "False"},
 		"olympiad.properties": {"CompetitionRewardItem": "6651"},
+		# H5 gives every NPC a random weapon glow (+4..+21); Interlude NPCs have plain weapons.
+		"npc.properties": {"RandomEnchantEffect": "False"},
 	}
 	problems = defaultdict(list)
 	for file, keys in expected.items():

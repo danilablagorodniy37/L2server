@@ -55,6 +55,11 @@ EXTRA_NPCS = {
 	31436: "Blueprint Seller Dani, Heine", 31438: "Blueprint Seller Lara, Aden",
 	31668: "Blueprint Seller Tangen, Aden", 31962: "Blueprint Seller Altair, Schuttgart",
 }
+# Monsters H5 keeps only a few of, far from where Interlude put them: their aCis makers
+# are imported even though H5 spawns the NPC somewhere (plain makers, first pass only).
+UNDERSPAWNED = {
+	20629: "Karik, 2 rows in Death Pass instead of the Lair of Antharas (quest 375 needs 100 horns)",
+}
 _REGION = re.compile(r"-- \[(\d+_\d+)\]")
 _DURATION = re.compile(r"^(\d+)(sec|min|hour|day)$")
 # Respawn for monsters of makers that manage respawn themselves in aCis.
@@ -203,7 +208,7 @@ def collect(npcs, spawned, territories, spawns, skipped, plain_makers_only):
 				template = npcs.get(npc_id)
 				if template is None:
 					skipped["no H5 template"] += 1
-				elif npc_id in spawned:
+				elif npc_id in spawned and not (plain_makers_only and (npc_id in UNDERSPAWNED)):
 					skipped["already spawned in H5"] += 1
 				elif template["type"] not in IMPORTED_TYPES and npc_id not in EXTRA_NPCS:
 					skipped["not a monster: " + template["type"]] += 1

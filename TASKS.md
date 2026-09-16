@@ -81,7 +81,10 @@
 - [ ] HTML гейткиперов и NPC со ссылками на удалённые места
 - [x] Квесты поздних хроник убраны из `QuestLoader.java` (133 квеста), камаэльские и dummy-квесты туториала оставлены (`tools/interlude/build_quests.py`)
 - [x] Q179 Into the Large Cavern убран: не нужен для профессий Камаэлей, инстанс не включали
-- [ ] Квесты Interlude, которых нет в H5: 127, 353, 374, 375, 640
+- [x] Квесты Interlude, которых нет в H5, перенесены из aCis (код, диалоги, `QuestLoader.java`):
+  Q127 (Kamael: A Window to the Future — обход пяти рас, сцена Камаэлей у Родемая; в aCis награды нет, диалог о ней говорит),
+  Q353 (Power of Darkness — Stone of Contract у суккубов Dragon Valley), Q374/Q375 (Whisper of Dreams — Лес Зеркал и Логово Антараса),
+  Q640 (The Zero Hour — клыки стакатов у Кахмана; H5-версия этого квеста под номером 146 осталась выключенной)
 - [x] Квесты 376, 377 (Giant's Cave) и 645 (Ghosts of Batur) перенесены из aCis: в H5 они были переделаны под 79–80 уровень с наградой мультиселлом рецептов Dynasty. Теперь как в Interlude: 51+/57+ ур., пергаменты и книги Титанов → главы → рецепты A/S-брони; 645 — 23+ ур., 180 Cursed Grave Goods → материалы на выбор
 - [x] Ошибки диалогов квестов H5: Q331 нельзя было бросить (ссылки на несуществующие файлы), в Q13, 120, 334, 371, 386, 620, 663 код открывал файл с неверным расширением или несуществующий — пустое окно
 - [x] Квесты Interlude, переделанные в H5, приведены к aCis (сравнение уровней, NPC, монстров и предметов со всеми квестами aCis):
@@ -92,6 +95,7 @@
 - [x] 13 рейд-боссов Interlude, закомментированных в H5, расставлены (Black Lily, Cursed Clara, Ancient Weird Drake, Lord Ishka, Bloody Priest Rudelto, Antharas Priest Cloe, Necrosentinel Royal Guard, Water Spirit Lian, Gwindorr, Giant Marpanak, Hekaton Prime, Gorgolos, Last Titan Utenus); у 7 без координат в H5 — центр территории aCis, высота из геодаты
 - [x] 16 торговцев Interlude (продавцы чертежей, книг, амулетов, Natasha, Galman, Terava) расставлены: дублей рядом нет; у H5 были их диалоги и магазины, но не спавны; Galman и Terava получили диалоги и магазины из aCis, Natasha — кнопку магазина
 - [x] Висящие в воздухе спавны H5 опущены на пол геодаты: 25 монстров, 4 рейд-босса с примерными координатами поставлены в центр территории aCis (`fix_floating_spawns.py`, тест `test_geodata.py`)
+- [x] Karik (20629) расставлен в Логове Антараса: 55 монстров из aCis вместо 2 строк H5 в Death Pass — Q375 требует 100 рогов (`build_spawns.UNDERSPAWNED`)
 - [ ] 53 монстра Interlude не расставлены: их мейкеры в aCis со спец-AI (динозавры Primeval Isle для Q642, призраки Batur для Q645, Ragna Orc Sorcerer для Q646, Andreas' Royal Guards и др.) — перенести как обычные спавны
 - [?] Эпики и боссы, которые в H5 живут в инстансах (инстансы выключены, их нет в `grandboss_data`): Zaken (в Interlude — открытый эпик на корабле), Frintezza/Scarlet van Halisha, Sailren, Andreas Van Halter — решить, как открывать
 - [ ] Не перенесены: Corpse of Hutaku, Vervato (не нужны скриптам H5); дверники замка Rune дублируют Gatekeeper H5 — не переносить
@@ -118,8 +122,8 @@
 - [ ] Дальше по желанию: торговые лавки, реакция на осады и эпики, ответы по контексту предыдущей реплики
 
 ## Внешний вид и клиент (от 2026-09-16)
-- [ ] Убрать заточку оружия у NPC в городах и у мобов (в шаблонах `weaponEnchant` нигде не задан — найти источник: возможно, клиентская подсветка или спавн с заточкой)
-- [ ] Ники игроков сделать белыми (проверить цвета из уровней доступа `accessLevels.xml` и `OfflineSetNameColor`/`OfflineNameColor` в `customs.properties`)
+- [x] Заточка оружия у NPC убрана: `RandomEnchantEffect = False` в `npc.properties` (правило H5 — случайная подсветка +4..+21 каждому NPC с оружием), проверка в `checks.interlude_config`
+- [x] Ники белые у всех уровней доступа (`accessLevels.xml`, `nameColor="FFFFFF"`); цвет уровня доступа остался только в титуле, `OfflineSetNameColor = False`
 - [ ] Переработать клиент: убрать лишнее (кнопки и окна систем поздних хроник)
 
 ## Оптимизация
