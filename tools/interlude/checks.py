@@ -32,10 +32,6 @@ KNOWN = {
 	"skill_references": {
 		"5885 lvl 2": "original H5: raid bosses 25642 and 25648 use a skill level that does not exist",
 	},
-	"quest_rewards": {
-		"14362 White Cloth": "quest 234 was reworked in H5 around the white cloth step; porting the aCis version is a separate task",
-		"14854 Recipe - Spiteful Soul Energy": "quest 503 got the Spiteful Soul step in H5; porting the aCis version is a separate task",
-	},
 }
 
 

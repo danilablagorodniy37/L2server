@@ -53,7 +53,8 @@ public final class Q00503_PursuitOfClanAmbition extends Quest {
 	private static final int THUNDER_WYRM = 20243;
 	private static final int THUNDER_WYRM2 = 20282;
 	private static final int GRAVE_GUARD = 20668;
-	private static final int SPITEFUL_SOUL_LEADER = 20974;
+	private static final int LESSER_GIANT_SOLDIER = 20654;
+	private static final int LESSER_GIANT_SCOUT = 20656;
 	// Quest Monster
 	private static final int GRAVE_KEYMASTER = 27179;
 	private static final int IMPERIAL_GRAVEKEEPER = 27181;
@@ -65,14 +66,15 @@ public final class Q00503_PursuitOfClanAmbition extends Quest {
 	private static final int GUSTAVS_3RD_LETTER = 3868;
 	private static final int SCEPTER_OF_JUDGMENT = 3869;
 	private static final int BLACK_ANVIL_COIN = 3871;
-	private static final int RECIPE_SPITEFUL_SOUL_ENERGY = 14854;
-	private static final int SPITEFUL_SOUL_VENGEANCE = 14856;
+	private static final int RECIPE_TITAN_POWERSTONE = 3838;
+	private static final int BROKEN_TITAN_POWERSTONE = 3845;
 	private static final QuestItemChanceHolder MIST_DRAKES_EGG = new QuestItemChanceHolder(3839, 10.0, 10);
 	private static final QuestItemChanceHolder BLITZ_WYRM_EGG = new QuestItemChanceHolder(3840, 10L);
 	private static final QuestItemChanceHolder DRAKES_EGG = new QuestItemChanceHolder(3841, 50.0, 10);
 	private static final QuestItemChanceHolder THUNDER_WYRM_EGG = new QuestItemChanceHolder(3842, 50.0, 10);
 	private static final QuestItemChanceHolder IMPERIAL_KEY = new QuestItemChanceHolder(3847, 6L);
-	private static final QuestItemChanceHolder SPITEFUL_SOUL_ENERGY = new QuestItemChanceHolder(14855, 10L);
+	private static final QuestItemChanceHolder NEBULITE_CRYSTALS = new QuestItemChanceHolder(3844, 10L);
+	private static final QuestItemChanceHolder TITAN_POWERSTONE = new QuestItemChanceHolder(3846, 10L);
 	// Reward
 	private static final int SEAL_OF_ASPIRATION = 3870;
 	
@@ -80,10 +82,11 @@ public final class Q00503_PursuitOfClanAmbition extends Quest {
 		super(503, Q00503_PursuitOfClanAmbition.class.getSimpleName(), "Pursuit Of Clan Ambition");
 		bindStartNpc(SIR_GUSTAV_ATHEBALDT);
 		bindTalk(SIR_GUSTAV_ATHEBALDT, HEAD_BLACKSMITH_KUSTO, MARTIEN, WITCH_ATHREA, WITCH_KALIS, CORPSE_OF_FRITZ, CORPSE_OF_LUTZ, CORPSE_OF_KURTZ, BALTHAZAR, IMPERIAL_COFFER, WITCH_CLEO, SIR_ERIC_RODEMAI);
-		bindKill(DRAKE, DRAKE2, THUNDER_WYRM, THUNDER_WYRM2, GRAVE_GUARD, SPITEFUL_SOUL_LEADER, GRAVE_KEYMASTER, BLITZ_WYRM, IMPERIAL_GRAVEKEEPER);
+		bindKill(DRAKE, DRAKE2, THUNDER_WYRM, THUNDER_WYRM2, GRAVE_GUARD, LESSER_GIANT_SOLDIER, LESSER_GIANT_SCOUT, GRAVE_KEYMASTER, BLITZ_WYRM, IMPERIAL_GRAVEKEEPER);
 		bindSpawn(WITCH_ATHREA, WITCH_KALIS, IMPERIAL_COFFER, BLITZ_WYRM);
-		registerQuestItems(MIST_DRAKES_EGG.getId(), BLITZ_WYRM_EGG.getId(), DRAKES_EGG.getId(), THUNDER_WYRM_EGG.getId(), BROOCH_OF_THE_MAGPIE, IMPERIAL_KEY.getId(), GUSTAVS_1ST_LETTER, GUSTAVS_2ND_LETTER, GUSTAVS_3RD_LETTER, SCEPTER_OF_JUDGMENT, BLACK_ANVIL_COIN, RECIPE_SPITEFUL_SOUL_ENERGY, SPITEFUL_SOUL_ENERGY
-			.getId(), SPITEFUL_SOUL_VENGEANCE);
+		// As in Interlude, the recipe and the broken powerstones stay with the player.
+		registerQuestItems(MIST_DRAKES_EGG.getId(), BLITZ_WYRM_EGG.getId(), DRAKES_EGG.getId(), THUNDER_WYRM_EGG.getId(), BROOCH_OF_THE_MAGPIE, IMPERIAL_KEY.getId(), GUSTAVS_1ST_LETTER, GUSTAVS_2ND_LETTER, GUSTAVS_3RD_LETTER, SCEPTER_OF_JUDGMENT, BLACK_ANVIL_COIN, NEBULITE_CRYSTALS.getId(), TITAN_POWERSTONE
+			.getId());
 	}
 	
 	@Override
@@ -215,7 +218,7 @@ public final class Q00503_PursuitOfClanAmbition extends Quest {
 			case "30764-06.html": {
 				takeItems(player, GUSTAVS_2ND_LETTER, -1);
 				takeItems(player, BLACK_ANVIL_COIN, -1);
-				giveItems(player, RECIPE_SPITEFUL_SOUL_ENERGY, 1);
+				giveItems(player, RECIPE_TITAN_POWERSTONE, 1);
 				qs.setMemoState(5000);
 				qs.setCond(5, true);
 				htmltext = event;
@@ -330,13 +333,16 @@ public final class Q00503_PursuitOfClanAmbition extends Quest {
 					}
 				}
 			}
-			case SPITEFUL_SOUL_LEADER -> {
+			case LESSER_GIANT_SOLDIER, LESSER_GIANT_SCOUT -> {
+				// The Titans of the Titan Cave carry the powerstone, its fuel, or a broken stone.
 				if (leaderQS.getMemoState() == 5000) {
 					final int rand = getRandom(100);
 					if (rand < 10) {
-						giveItemRandomly(leader, npc, SPITEFUL_SOUL_ENERGY, false);
-					} else if (rand < 60) {
-						giveItems(leader, SPITEFUL_SOUL_VENGEANCE, 1);
+						giveItemRandomly(leader, npc, TITAN_POWERSTONE, false);
+					} else if (rand < 30) {
+						giveItemRandomly(leader, npc, NEBULITE_CRYSTALS, false);
+					} else if (rand < 80) {
+						giveItems(leader, BROKEN_TITAN_POWERSTONE, 1);
 					}
 				}
 			}
@@ -510,10 +516,11 @@ public final class Q00503_PursuitOfClanAmbition extends Quest {
 								htmltext = "30764-04.html";
 							}
 						} else if ((qs.getMemoState() == 5000)) {
-							if (!hasItemsAtLimit(player, SPITEFUL_SOUL_ENERGY)) {
+							if (!hasItemsAtLimit(player, NEBULITE_CRYSTALS, TITAN_POWERSTONE)) {
 								htmltext = "30764-07a.html";
 							} else {
-								takeItems(player, SPITEFUL_SOUL_ENERGY.getId(), -1);
+								takeItems(player, NEBULITE_CRYSTALS.getId(), -1);
+								takeItems(player, TITAN_POWERSTONE.getId(), -1);
 								qs.setMemoState(6000);
 								qs.setCond(6, true);
 								htmltext = "30764-08a.html";
