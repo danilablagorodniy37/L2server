@@ -419,6 +419,9 @@
 	<npc id="20745" level="35" type="L2Monster" name="Gigantiops">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20746" count="2" respawnTime="0" weightPoint="1" />	<!-- Young Gigantiops -->
+			</minions>
 			<param name="MoveAroundSocial" value="100" />
 			<param name="MoveAroundSocial1" value="100" />
 			<param name="MoveAroundSocial2" value="100" />
@@ -631,6 +634,9 @@
 	<npc id="20747" level="32" type="L2Monster" name="Roxide">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20748" count="2" respawnTime="0" weightPoint="1" />	<!-- Roxide Cohort -->
+			</minions>
 			<param name="MoveAroundSocial" value="110" />
 			<param name="MoveAroundSocial1" value="110" />
 			<param name="MoveAroundSocial2" value="110" />
@@ -824,6 +830,9 @@
 	<npc id="20749" level="32" type="L2Monster" name="Death Fire">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20750" count="2" respawnTime="0" weightPoint="1" />	<!-- Fire Archer -->
+			</minions>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="0" />
 			<param name="MoveAroundSocial2" value="0" />
@@ -1388,6 +1397,10 @@
 	<npc id="20755" level="30" type="L2Monster" name="Talakin">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20756" count="1" respawnTime="0" weightPoint="1" />	<!-- Talakin Archer -->
+				<npc id="20757" count="1" respawnTime="0" weightPoint="1" />	<!-- Talakin Raider -->
+			</minions>
 			<param name="MoveAroundSocial" value="90" />
 			<param name="MoveAroundSocial1" value="90" />
 			<param name="MoveAroundSocial2" value="90" />
@@ -1704,6 +1717,10 @@
 	<npc id="20758" level="49" type="L2Monster" name="Dragon Bearer Chief">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20759" count="1" respawnTime="0" weightPoint="1" />	<!-- Dragon Bearer Warrior -->
+				<npc id="20760" count="1" respawnTime="0" weightPoint="1" />	<!-- Dragon Bearer Archer -->
+			</minions>
 			<param name="MoveAroundSocial" value="110" />
 			<param name="MoveAroundSocial1" value="110" />
 			<param name="MoveAroundSocial2" value="110" />
@@ -2042,6 +2059,9 @@
 	<npc id="20761" level="69" type="L2Monster" name="Pytan">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20762" count="2" respawnTime="0" weightPoint="1" />	<!-- Pytan Knight -->
+			</minions>
 			<param name="MoveAroundSocial" value="60" />
 			<param name="MoveAroundSocial1" value="60" />
 			<param name="MoveAroundSocial2" value="60" />
@@ -2217,6 +2237,11 @@
 	<npc id="20763" level="40" type="L2Monster" name="Lord of the Plains">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20764" count="1" respawnTime="0" weightPoint="1" />	<!-- Shaman of the Plains -->
+				<npc id="20765" count="1" respawnTime="0" weightPoint="1" />	<!-- Warrior of the Plains -->
+				<npc id="20766" count="1" respawnTime="0" weightPoint="1" />	<!-- Scout of the Plains -->
+			</minions>
 			<param name="MoveAroundSocial" value="70" />
 			<param name="MoveAroundSocial1" value="70" />
 			<param name="MoveAroundSocial2" value="70" />
@@ -2652,6 +2677,11 @@
 	<npc id="20767" level="45" type="L2Monster" name="Timak Orc Troop Leader">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20768" count="1" respawnTime="0" weightPoint="1" />	<!-- Timak Orc Troop Shaman -->
+				<npc id="20769" count="1" respawnTime="0" weightPoint="1" />	<!-- Timak Orc Troop Warrior -->
+				<npc id="20770" count="1" respawnTime="0" weightPoint="1" />	<!-- Timak Orc Troop Archer -->
+			</minions>
 			<param name="MoveAroundSocial" value="60" />
 			<param name="MoveAroundSocial1" value="60" />
 			<param name="MoveAroundSocial2" value="60" />
@@ -3099,6 +3129,9 @@
 	<npc id="20771" level="64" type="L2Monster" name="Barif">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20772" count="3" respawnTime="0" weightPoint="1" />	<!-- Barif's Pet -->
+			</minions>
 			<param name="MoveAroundSocial" value="110" />
 			<param name="MoveAroundSocial1" value="110" />
 			<param name="MoveAroundSocial2" value="110" />
@@ -3268,6 +3301,9 @@
 	<npc id="20773" level="72" type="L2Monster" name="Conjurer Bat Lord">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20774" count="3" respawnTime="0" weightPoint="1" />	<!-- Conjurer Bat -->
+			</minions>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="0" />
 			<param name="MoveAroundSocial2" value="0" />

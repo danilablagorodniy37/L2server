@@ -1120,6 +1120,9 @@
 	<npc id="21512" level="70" type="L2Monster" name="Splinter Stakato Drone">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="21518" count="2" respawnTime="0" weightPoint="1" />	<!-- Frenzy Stakato Soldier -->
+			</minions>
 			<param name="MoveAroundSocial" value="62" />
 			<param name="MoveAroundSocial1" value="62" />
 			<param name="MoveAroundSocial2" value="62" />
@@ -1668,6 +1671,9 @@
 	<npc id="21517" level="74" type="L2Monster" name="Needle Stakato Drone">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="21519" count="2" respawnTime="0" weightPoint="1" />	<!-- Frenzy Stakato Drone -->
+			</minions>
 			<param name="MoveAroundSocial" value="62" />
 			<param name="MoveAroundSocial1" value="62" />
 			<param name="MoveAroundSocial2" value="62" />

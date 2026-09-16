@@ -3766,6 +3766,10 @@
 	<npc id="21058" level="60" type="L2Monster" name="Beast Lord">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="21059" count="2" respawnTime="0" weightPoint="1" />	<!-- Beast Guardian -->
+				<npc id="21060" count="2" respawnTime="0" weightPoint="1" />	<!-- Beast Seer -->
+			</minions>
 			<param name="MoveAroundSocial" value="90" />
 			<param name="MoveAroundSocial1" value="30" />
 			<param name="MoveAroundSocial2" value="90" />
@@ -5233,6 +5237,10 @@
 	<npc id="21075" level="63" type="L2Monster" name="Slaughter Bathin">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="21076" count="1" respawnTime="0" weightPoint="1" />	<!-- Bathin's Knight -->
+				<npc id="21077" count="1" respawnTime="0" weightPoint="1" />	<!-- Bathin's Wizard -->
+			</minions>
 			<param name="MoveAroundSocial" value="74" />
 			<param name="MoveAroundSocial1" value="74" />
 			<param name="MoveAroundSocial2" value="74" />
@@ -5502,6 +5510,10 @@
 	<npc id="21078" level="70" type="L2Monster" name="Magus Valac">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="21079" count="1" respawnTime="0" weightPoint="1" />	<!-- Valac's Creature -->
+				<npc id="21080" count="1" respawnTime="0" weightPoint="1" />	<!-- Valac's Guardian Spirit -->
+			</minions>
 			<param name="MoveAroundSocial" value="114" />
 			<param name="MoveAroundSocial1" value="114" />
 			<param name="MoveAroundSocial2" value="114" />
@@ -5795,6 +5807,10 @@
 	<npc id="21081" level="75" type="L2Monster" name="Power Angel Amon">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="21082" count="1" respawnTime="0" weightPoint="1" />	<!-- Amon's Captain of the Guards -->
+				<npc id="21083" count="1" respawnTime="0" weightPoint="1" />	<!-- Amon's Spirits -->
+			</minions>
 			<param name="MoveAroundSocial" value="50" />
 			<param name="MoveAroundSocial1" value="50" />
 			<param name="MoveAroundSocial2" value="50" />
@@ -6623,6 +6639,10 @@
 	<npc id="21090" level="75" type="L2Monster" name="Bloody Guardian">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="21091" count="1" respawnTime="0" weightPoint="1" />	<!-- Bloody Keeper -->
+				<npc id="21092" count="1" respawnTime="0" weightPoint="1" />	<!-- Bloody Mystic -->
+			</minions>
 			<param name="MoveAroundSocial" value="80" />
 			<param name="MoveAroundSocial1" value="80" />
 			<param name="MoveAroundSocial2" value="80" />

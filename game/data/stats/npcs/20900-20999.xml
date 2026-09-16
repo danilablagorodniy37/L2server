@@ -2156,6 +2156,11 @@
 	<npc id="20939" level="46" type="L2Monster" name="Tanor Silenos Warrior">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20936" count="1" respawnTime="0" weightPoint="1" />	<!-- Tanor Silenos -->
+				<npc id="20937" count="1" respawnTime="0" weightPoint="1" />	<!-- Tanor Silenos Grunt -->
+				<npc id="20938" count="1" respawnTime="0" weightPoint="1" />	<!-- Tanor Silenos Scout -->
+			</minions>
 			<param name="MoveAroundSocial" value="60" />
 			<param name="MoveAroundSocial1" value="50" />
 			<param name="MoveAroundSocial2" value="60" />
@@ -2381,6 +2386,9 @@
 	<npc id="20941" level="50" type="L2Monster" name="Tanor Silenos Chieftain">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20940" count="3" respawnTime="0" weightPoint="1" />	<!-- Tanor Silenos Shaman -->
+			</minions>
 			<param name="MoveAroundSocial" value="90" />
 			<param name="MoveAroundSocial1" value="60" />
 			<param name="MoveAroundSocial2" value="90" />
@@ -2700,6 +2708,10 @@
 	<npc id="20944" level="47" type="L2Monster" name="Nightmare Lord">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20942" count="1" respawnTime="0" weightPoint="1" />	<!-- Nightmare Guide -->
+				<npc id="20943" count="2" respawnTime="0" weightPoint="1" />	<!-- Nightmare Keeper -->
+			</minions>
 			<param name="MoveAroundSocial" value="110" />
 			<param name="MoveAroundSocial1" value="110" />
 			<param name="MoveAroundSocial2" value="110" />
@@ -3033,6 +3045,10 @@
 	<npc id="20947" level="54" type="L2Monster" name="Connabi">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20945" count="2" respawnTime="0" weightPoint="1" />	<!-- Cadeine -->
+				<npc id="20946" count="1" respawnTime="0" weightPoint="1" />	<!-- Sanhidro -->
+			</minions>
 			<param name="MoveAroundSocial" value="124" />
 			<param name="MoveAroundSocial1" value="124" />
 			<param name="MoveAroundSocial2" value="124" />
@@ -3372,6 +3388,10 @@
 	<npc id="20950" level="60" type="L2Monster" name="Innersen">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20948" count="1" respawnTime="0" weightPoint="1" />	<!-- Bartal -->
+				<npc id="20949" count="2" respawnTime="0" weightPoint="1" />	<!-- Luminun -->
+			</minions>
 			<param name="MoveAroundSocial" value="149" />
 			<param name="MoveAroundSocial1" value="149" />
 			<param name="MoveAroundSocial2" value="149" />
@@ -3697,6 +3717,10 @@
 	<npc id="20953" level="57" type="L2Monster" name="Pobby">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20951" count="2" respawnTime="0" weightPoint="1" />	<!-- Pobby's Maid -->
+				<npc id="20952" count="1" respawnTime="0" weightPoint="1" />	<!-- Pobby Escort -->
+			</minions>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="0" />
 			<param name="MoveAroundSocial2" value="0" />
@@ -4038,6 +4062,10 @@
 	<npc id="20956" level="64" type="L2Monster" name="Past Knight">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20954" count="2" respawnTime="0" weightPoint="1" />	<!-- Hungered Corpse -->
+				<npc id="20955" count="2" respawnTime="0" weightPoint="1" />	<!-- Ghostly Warrior -->
+			</minions>
 			<param name="MoveAroundSocial" value="215" />
 			<param name="MoveAroundSocial1" value="215" />
 			<param name="MoveAroundSocial2" value="215" />
@@ -4378,6 +4406,10 @@
 	<npc id="20959" level="70" type="L2Monster" name="Dark Guard">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20957" count="2" respawnTime="0" weightPoint="1" />	<!-- Nihil Invader -->
+				<npc id="20958" count="2" respawnTime="0" weightPoint="1" />	<!-- Death Agent -->
+			</minions>
 			<param name="MoveAroundSocial" value="110" />
 			<param name="MoveAroundSocial1" value="110" />
 			<param name="MoveAroundSocial2" value="110" />
@@ -4827,6 +4859,11 @@
 	<npc id="20963" level="68" type="L2Monster" name="Bloody Lord">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20960" count="2" respawnTime="0" weightPoint="1" />	<!-- Bloody Ghost -->
+				<npc id="20961" count="1" respawnTime="0" weightPoint="1" />	<!-- Bloody Knight -->
+				<npc id="20962" count="1" respawnTime="0" weightPoint="1" />	<!-- Bloody Priest -->
+			</minions>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="0" />
 			<param name="MoveAroundSocial2" value="0" />
@@ -5131,6 +5168,10 @@
 	<npc id="20966" level="74" type="L2Monster" name="Changed Creation">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20964" count="2" respawnTime="0" weightPoint="1" />	<!-- Huge Footmark -->
+				<npc id="20965" count="2" respawnTime="0" weightPoint="1" />	<!-- Chimera Piece -->
+			</minions>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="0" />
 			<param name="MoveAroundSocial2" value="0" />
@@ -5451,6 +5492,10 @@
 	<npc id="20969" level="78" type="L2Monster" name="Giant's Shadow">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20967" count="2" respawnTime="0" weightPoint="1" />	<!-- Past Creature -->
+				<npc id="20968" count="2" respawnTime="0" weightPoint="1" />	<!-- Nonexistent Man -->
+			</minions>
 			<param name="MoveAroundSocial" value="120" />
 			<param name="MoveAroundSocial1" value="120" />
 			<param name="MoveAroundSocial2" value="120" />
@@ -5868,6 +5913,11 @@
 	<npc id="20973" level="77" type="L2Monster" name="Forgotten Ancient People">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20970" count="2" respawnTime="0" weightPoint="1" />	<!-- Soldier of Ancient Times -->
+				<npc id="20971" count="1" respawnTime="0" weightPoint="1" />	<!-- Warrior of Ancient Times -->
+				<npc id="20972" count="1" respawnTime="0" weightPoint="1" />	<!-- Shaman of Ancient Times -->
+			</minions>
 			<param name="MoveAroundSocial" value="110" />
 			<param name="MoveAroundSocial1" value="110" />
 			<param name="MoveAroundSocial2" value="110" />
@@ -5970,6 +6020,10 @@
 	<npc id="20974" level="65" type="L2Monster" name="Spiteful Soul Leader">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20975" count="2" respawnTime="0" weightPoint="1" />	<!-- Spiteful Soul Wizard -->
+				<npc id="20976" count="3" respawnTime="0" weightPoint="1" />	<!-- Spiteful Soul Fighter -->
+			</minions>
 			<param name="MoveAroundSocial" value="80" />
 			<param name="MoveAroundSocial1" value="80" />
 			<param name="MoveAroundSocial2" value="80" />
@@ -6295,6 +6349,11 @@
 	<npc id="20977" level="65" type="L2Monster" name="Elmoradan's Lady">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20978" count="1" respawnTime="0" weightPoint="1" />	<!-- Elmoradan's Archer Escort -->
+				<npc id="20979" count="1" respawnTime="0" weightPoint="1" />	<!-- Elmoradan's Maid -->
+				<npc id="21073" count="1" respawnTime="0" weightPoint="1" />	<!-- Guardian Warrior of Elmoreden -->
+			</minions>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="0" />
 			<param name="MoveAroundSocial2" value="0" />
@@ -6555,6 +6614,10 @@
 	<npc id="20980" level="68" type="L2Monster" name="Hallate's Follower Mul">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20981" count="1" respawnTime="0" weightPoint="1" />	<!-- Mul's Wizard -->
+				<npc id="20982" count="1" respawnTime="0" weightPoint="1" />	<!-- Mul's Knight -->
+			</minions>
 			<param name="MoveAroundSocial" value="114" />
 			<param name="MoveAroundSocial1" value="114" />
 			<param name="MoveAroundSocial2" value="114" />
@@ -6847,6 +6910,11 @@
 	<npc id="20983" level="73" type="L2Monster" name="Binder">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20984" count="1" respawnTime="0" weightPoint="1" />	<!-- Bound Warrior -->
+				<npc id="20985" count="1" respawnTime="0" weightPoint="1" />	<!-- Bound Archer -->
+				<npc id="21074" count="1" respawnTime="0" weightPoint="1" />	<!-- Bound Shaman -->
+			</minions>
 			<param name="MoveAroundSocial" value="90" />
 			<param name="MoveAroundSocial1" value="74" />
 			<param name="MoveAroundSocial2" value="90" />
@@ -7400,6 +7468,9 @@
 	<npc id="20989" level="38" type="L2Monster" name="Lageos">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20990" count="1" respawnTime="0" weightPoint="1" />	<!-- Pageos -->
+			</minions>
 			<param name="MoveAroundSocial" value="20" />
 			<param name="MoveAroundSocial1" value="60" />
 			<param name="MoveAroundSocial2" value="20" />
@@ -7616,6 +7687,10 @@
 	<npc id="20991" level="45" type="L2Monster" name="Swamp Tribe">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20992" count="2" respawnTime="0" weightPoint="1" />	<!-- Swamp Alligator -->
+				<npc id="20993" count="3" respawnTime="0" weightPoint="1" />	<!-- Swamp Warrior -->
+			</minions>
 			<param name="MoveAroundSocial" value="70" />
 			<param name="MoveAroundSocial1" value="90" />
 			<param name="MoveAroundSocial2" value="70" />
@@ -7899,6 +7974,9 @@
 	<npc id="20994" level="50" type="L2Monster" name="Garden Guard Leader">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20995" count="4" respawnTime="0" weightPoint="1" />	<!-- Garden Guard -->
+			</minions>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="0" />
 			<param name="MoveAroundSocial2" value="0" />

@@ -742,6 +742,9 @@
 	<npc id="22109" level="74" type="L2Monster" name="Male Spiked Stakato">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22108" count="1" respawnTime="0" weightPoint="1" />	<!-- Female Spiked Stakato -->
+			</minions>
 			<param name="MoveAroundSocial" value="57" />
 			<param name="MoveAroundSocial1" value="62" />
 			<param name="MoveAroundSocial2" value="57" />
@@ -1091,6 +1094,9 @@
 	<npc id="22113" level="75" type="L2Monster" name="Cannibalistic Stakato Leader">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22112" count="1" respawnTime="0" weightPoint="1" />	<!-- Cannibalistic Stakato Follower -->
+			</minions>
 			<param name="MoveAroundSocial" value="80" />
 			<param name="MoveAroundSocial1" value="80" />
 			<param name="MoveAroundSocial2" value="81" />
@@ -1502,6 +1508,9 @@
 	<npc id="22118" level="78" type="L2Monster" name="Spiked Stakato Nurse">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22120" count="1" respawnTime="0" weightPoint="1" />	<!-- Spiked Stakato Baby -->
+			</minions>
 			<param name="MoveAroundSocial" value="20" />
 			<param name="MoveAroundSocial1" value="60" />
 			<param name="MoveAroundSocial2" value="20" />
@@ -1934,6 +1943,9 @@
 	<npc id="22123" level="78" type="L2Monster" name="Monastic Crusader">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22122" count="3" respawnTime="0" weightPoint="1" />	<!-- Monastic Pilgrim -->
+			</minions>
 			<param name="MoveAroundSocial" value="90" />
 			<param name="MoveAroundSocial1" value="98" />
 			<param name="MoveAroundSocial2" value="90" />
@@ -2987,6 +2999,10 @@
 	<npc id="22135" level="78" type="L2Monster" name="Beholder of Light">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22130" count="1" respawnTime="0" weightPoint="1" />	<!-- Divine Advocate -->
+				<npc id="22131" count="1" respawnTime="0" weightPoint="1" />	<!-- Pilgrim of Light -->
+			</minions>
 			<param name="MoveAroundSocial" value="80" />
 			<param name="MoveAroundSocial1" value="80" />
 			<param name="MoveAroundSocial2" value="122" />
@@ -4637,6 +4653,11 @@
 	<npc id="22155" level="78" type="L2Monster" name="Triol's High Priest">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22156" count="2" respawnTime="0" weightPoint="1" />	<!-- Triol's Priest -->
+				<npc id="22157" count="1" respawnTime="0" weightPoint="1" />	<!-- Triol's Priest -->
+				<npc id="22158" count="2" respawnTime="0" weightPoint="1" />	<!-- Triol's Believer -->
+			</minions>
 			<param name="MoveAroundSocial" value="80" />
 			<param name="MoveAroundSocial1" value="80" />
 			<param name="MoveAroundSocial2" value="98" />
@@ -4967,6 +4988,11 @@
 	<npc id="22159" level="78" type="L2Monster" name="Triol's High Priest">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22160" count="1" respawnTime="0" weightPoint="1" />	<!-- Triol's Priest -->
+				<npc id="22161" count="2" respawnTime="0" weightPoint="1" />	<!-- Ritual Sacrifice -->
+				<npc id="22162" count="2" respawnTime="0" weightPoint="1" />	<!-- Triol's Believer -->
+			</minions>
 			<param name="MoveAroundSocial" value="80" />
 			<param name="MoveAroundSocial1" value="80" />
 			<param name="MoveAroundSocial2" value="98" />
@@ -5292,6 +5318,11 @@
 	<npc id="22163" level="78" type="L2Monster" name="Triol's High Priest">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22164" count="2" respawnTime="0" weightPoint="1" />	<!-- Triol's Believer -->
+				<npc id="22165" count="1" respawnTime="0" weightPoint="1" />	<!-- Triol's Priest -->
+				<npc id="22166" count="2" respawnTime="0" weightPoint="1" />	<!-- Triol's Believer -->
+			</minions>
 			<param name="MoveAroundSocial" value="80" />
 			<param name="MoveAroundSocial1" value="80" />
 			<param name="MoveAroundSocial2" value="98" />
@@ -5623,6 +5654,11 @@
 	<npc id="22167" level="78" type="L2Monster" name="Triol's High Priest">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22168" count="1" respawnTime="0" weightPoint="1" />	<!-- Triol's Priest -->
+				<npc id="22169" count="1" respawnTime="0" weightPoint="1" />	<!-- Ritual Sacrifice -->
+				<npc id="22170" count="3" respawnTime="0" weightPoint="1" />	<!-- Triol's Believer -->
+			</minions>
 			<param name="MoveAroundSocial" value="80" />
 			<param name="MoveAroundSocial1" value="80" />
 			<param name="MoveAroundSocial2" value="98" />
@@ -5944,6 +5980,11 @@
 	<npc id="22171" level="78" type="L2Monster" name="Triol's High Priest">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22172" count="2" respawnTime="0" weightPoint="1" />	<!-- Ritual Sacrifice -->
+				<npc id="22173" count="1" respawnTime="0" weightPoint="1" />	<!-- Triol's Priest -->
+				<npc id="22174" count="2" respawnTime="0" weightPoint="1" />	<!-- Triol's Priest -->
+			</minions>
 			<param name="MoveAroundSocial" value="80" />
 			<param name="MoveAroundSocial1" value="80" />
 			<param name="MoveAroundSocial2" value="98" />
@@ -6430,6 +6471,10 @@
 	<npc id="22188" level="78" type="L2Monster" name="Andreas' Captain of the Royal Guard">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22189" count="2" respawnTime="0" weightPoint="1" />	<!-- Andreas' Royal Guards -->
+				<npc id="22190" count="1" respawnTime="0" weightPoint="1" />	<!-- Ritual Sacrifice -->
+			</minions>
 			<param name="MoveAroundSocial" value="80" />
 			<param name="MoveAroundSocial1" value="80" />
 			<param name="MoveAroundSocial2" value="98" />
@@ -7002,6 +7047,9 @@
 	<npc id="22196" level="80" type="L2Monster" name="Velociraptor">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22197" count="2" respawnTime="0" weightPoint="1" />	<!-- Velociraptor -->
+			</minions>
 			<param name="ag_type" value="1" />
 			<param name="ProbSelfRangeBuff1" value="100" />
 			<param name="ProbPhysicalSpecial1" value="10" />
@@ -7160,6 +7208,9 @@
 	<npc id="22198" level="80" type="L2Monster" name="Velociraptor">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22197" count="2" respawnTime="0" weightPoint="1" />	<!-- Velociraptor -->
+			</minions>
 			<param name="mobile_type" value="1" />
 			<param name="ProbSelfRangeBuff1" value="100" />
 			<param name="ProbPhysicalSpecial1" value="10" />

@@ -1418,6 +1418,9 @@
 	<npc id="27036" level="13" type="L2Monster" name="Calpico" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="27037" count="4" respawnTime="0" weightPoint="1" />	<!-- Calpico's Goons -->
+			</minions>
 			<param name="MoveAroundSocial" value="75" />
 			<param name="MoveAroundSocial1" value="75" />
 			<param name="MoveAroundSocial2" value="75" />
@@ -1610,6 +1613,9 @@
 	<npc id="27041" level="12" type="L2Monster" name="Varangka's Messenger" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="27042" count="5" respawnTime="0" weightPoint="1" />	<!-- Orc Escort -->
+			</minions>
 			<param name="MoveAroundSocial" value="75" />
 			<param name="MoveAroundSocial1" value="75" />
 			<param name="MoveAroundSocial2" value="75" />
@@ -2714,6 +2720,9 @@
 	<npc id="27062" level="8" type="L2Monster" name="Tanukia" title="Kaboo Chief">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="27063" count="2" respawnTime="0" weightPoint="1" />	<!-- Tanukia's Warhound -->
+			</minions>
 			<param name="MoveAroundSocial" value="75" />
 			<param name="MoveAroundSocial1" value="75" />
 			<param name="MoveAroundSocial2" value="75" />
@@ -2882,6 +2891,9 @@
 	<npc id="27065" level="8" type="L2Monster" name="Roko" title="Kaboo Chief">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="27066" count="2" respawnTime="0" weightPoint="1" />	<!-- Roko's Warhound -->
+			</minions>
 			<param name="MoveAroundSocial" value="104" />
 			<param name="MoveAroundSocial1" value="104" />
 			<param name="MoveAroundSocial2" value="104" />
@@ -3050,6 +3062,9 @@
 	<npc id="27068" level="8" type="L2Monster" name="Murtika" title="Kaboo Chief">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="27069" count="2" respawnTime="0" weightPoint="1" />	<!-- Murtika's Warhound -->
+			</minions>
 			<param name="MoveAroundSocial" value="104" />
 			<param name="MoveAroundSocial1" value="104" />
 			<param name="MoveAroundSocial2" value="104" />
@@ -3744,6 +3759,9 @@
 	<npc id="27093" level="37" type="L2Monster" name="Delu Chief Kalkis" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="20253" count="4" respawnTime="0" weightPoint="1" />	<!-- Delu Lizardman Warrior -->
+			</minions>
 			<param name="MoveAroundSocial" value="65" />
 			<param name="MoveAroundSocial1" value="40" />
 			<param name="MoveAroundSocial2" value="65" />

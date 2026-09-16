@@ -2899,6 +2899,9 @@
 	<npc id="22028" level="40" type="L2Monster" name="Vagabond of the Ruins">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22027" count="3" respawnTime="0" weightPoint="1" />	<!-- Forgotten Crewman -->
+			</minions>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="90" />
 			<param name="MoveAroundSocial2" value="187" />
@@ -6236,6 +6239,9 @@
 	<npc id="22060" level="52" type="L2Monster" name="Horrifying Cannon Golem">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22053" count="2" respawnTime="0" weightPoint="1" />	<!-- Horrifying Cannon Golem I -->
+			</minions>
 			<param name="MoveAroundSocial" value="80" />
 			<param name="MoveAroundSocial1" value="80" />
 			<param name="MoveAroundSocial2" value="93" />
@@ -7670,6 +7676,9 @@
 	<npc id="22074" level="53" type="L2Monster" name="Epic Cannon Golem">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22075" count="2" respawnTime="0" weightPoint="1" />	<!-- Epic Cannon Golem Adjunct -->
+			</minions>
 			<param name="MoveAroundSocial" value="80" />
 			<param name="MoveAroundSocial1" value="80" />
 			<param name="MoveAroundSocial2" value="93" />
@@ -8256,6 +8265,9 @@
 	<npc id="22080" level="54" type="L2Monster" name="Massive Lost Bandersnatch">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22079" count="3" respawnTime="0" weightPoint="1" />	<!-- Lost Bandersnatch -->
+			</minions>
 			<param name="MoveAroundSocial" value="78" />
 			<param name="MoveAroundSocial1" value="78" />
 			<param name="MoveAroundSocial2" value="78" />
@@ -8701,6 +8713,9 @@
 	<npc id="22084" level="56" type="L2Monster" name="Panthera">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22083" count="3" respawnTime="0" weightPoint="1" />	<!-- Baby Panthera -->
+			</minions>
 			<param name="MoveAroundSocial" value="90" />
 			<param name="MoveAroundSocial1" value="30" />
 			<param name="MoveAroundSocial2" value="90" />
@@ -9590,6 +9605,9 @@
 	<npc id="22092" level="59" type="L2Monster" name="Frost Iron Golem">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22091" count="3" respawnTime="0" weightPoint="1" />	<!-- Lost Iron Golem -->
+			</minions>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="0" />
 			<param name="MoveAroundSocial2" value="0" />
@@ -10042,6 +10060,9 @@
 	<npc id="22096" level="62" type="L2Monster" name="Ursus">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22095" count="3" respawnTime="0" weightPoint="1" />	<!-- Ursus Cub -->
+			</minions>
 			<param name="MoveAroundSocial" value="100" />
 			<param name="MoveAroundSocial1" value="100" />
 			<param name="MoveAroundSocial2" value="100" />

@@ -235,6 +235,11 @@
 		<npc id="22039" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Commander -->
 		<npc id="22040" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Sniper -->
 	</spawn>
+	<spawn name="schuttgart16_2114_02m1" zone="il_schuttgart16_2114_02">
+		<npc id="22046" count="4" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
+		<npc id="22047" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22049" count="5" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Succubus -->
+	</spawn>
 	<spawn name="schuttgart16_2114_03m1" zone="il_schuttgart16_2114_03">
 		<npc id="22038" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Hero -->
 		<npc id="22039" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Commander -->
@@ -242,6 +247,10 @@
 	</spawn>
 	<spawn name="burial_2114_09m1" zone="il_schuttgart17_2114_09">
 		<npc id="22008" count="4" respawnDelay="25" />	<!-- Grave Robber Fighter -->
+	</spawn>
+	<spawn name="burial_2114_10m1" zone="il_schuttgart17_2114_10">
+		<npc id="22007" count="10" respawnDelay="25" />	<!-- Ghost of a Soldier -->
+		<npc id="22008" count="10" respawnDelay="25" />	<!-- Grave Robber Fighter -->
 	</spawn>
 	<spawn name="burial_2114_13m1" zone="il_schuttgart17_2114_13">
 		<npc id="22008" count="3" respawnDelay="25" />	<!-- Grave Robber Fighter -->
@@ -277,20 +286,44 @@
 		<npc id="22009" count="3" respawnDelay="25" />	<!-- Ghost of a Loyal Vassal -->
 		<npc id="22010" count="3" respawnDelay="25" />	<!-- Ghost of a General -->
 	</spawn>
+	<spawn name="burial_2114_31m1" zone="il_schuttgart17_2114_31">
+		<npc id="22007" count="4" respawnDelay="25" />	<!-- Ghost of a Soldier -->
+		<npc id="22009" count="2" respawnDelay="25" />	<!-- Ghost of a Loyal Vassal -->
+	</spawn>
 	<spawn name="burial_2114_32m1" zone="il_schuttgart17_2114_32">
 		<npc id="22011" x="50158" y="-119238" z="-3733" heading="48928" count="1" respawnDelay="3600" respawnRandom="600" />	<!-- Ghost of a Batur Chief -->
+	</spawn>
+	<spawn name="burial_2114_33m1" zone="il_schuttgart17_2114_33">
+		<npc id="22007" count="4" respawnDelay="25" />	<!-- Ghost of a Soldier -->
+		<npc id="22009" count="2" respawnDelay="25" />	<!-- Ghost of a Loyal Vassal -->
 	</spawn>
 	<spawn name="burial_2114_34m1" zone="il_schuttgart17_2114_34">
 		<npc id="22012" x="48196" y="-122142" z="-3444" heading="55320" count="1" respawnDelay="3600" respawnRandom="600" />	<!-- Ghost of a Batur Chief -->
 	</spawn>
+	<spawn name="burial_2114_35m1" zone="il_schuttgart17_2114_35">
+		<npc id="22007" count="4" respawnDelay="25" />	<!-- Ghost of a Soldier -->
+		<npc id="22009" count="2" respawnDelay="25" />	<!-- Ghost of a Loyal Vassal -->
+	</spawn>
 	<spawn name="burial_2114_36m1" zone="il_schuttgart17_2114_36">
 		<npc id="22013" x="52036" y="-122009" z="-3445" heading="32432" count="1" respawnDelay="3600" respawnRandom="600" />	<!-- Ghost of a Morek Chief -->
+	</spawn>
+	<spawn name="burial_2114_37m1" zone="il_schuttgart17_2114_37">
+		<npc id="22007" count="4" respawnDelay="25" />	<!-- Ghost of a Soldier -->
+		<npc id="22009" count="2" respawnDelay="25" />	<!-- Ghost of a Loyal Vassal -->
 	</spawn>
 	<spawn name="burial_2114_38m1" zone="il_schuttgart17_2114_38">
 		<npc id="22014" x="53770" y="-124818" z="-3205" heading="25760" count="1" respawnDelay="3600" respawnRandom="600" />	<!-- Ghost of a Morek Chief -->
 	</spawn>
+	<spawn name="burial_2114_39m1" zone="il_schuttgart17_2114_39">
+		<npc id="22007" count="4" respawnDelay="25" />	<!-- Ghost of a Soldier -->
+		<npc id="22009" count="2" respawnDelay="25" />	<!-- Ghost of a Loyal Vassal -->
+	</spawn>
 	<spawn name="burial_2114_40m1" zone="il_schuttgart17_2114_40">
 		<npc id="22015" x="50091" y="-124801" z="-3248" heading="15456" count="1" respawnDelay="3600" respawnRandom="600" />	<!-- Ghost of a Turka Chief -->
+	</spawn>
+	<spawn name="burial_2114_41m1" zone="il_schuttgart17_2114_41">
+		<npc id="22007" count="4" respawnDelay="25" />	<!-- Ghost of a Soldier -->
+		<npc id="22009" count="2" respawnDelay="25" />	<!-- Ghost of a Loyal Vassal -->
 	</spawn>
 	<spawn name="burial_2114_42m1" zone="il_schuttgart17_2114_42">
 		<npc id="22016" x="46519" y="-124749" z="-3237" heading="3424" count="1" respawnDelay="3600" respawnRandom="600" />	<!-- Ghost of a Turka Chief -->
@@ -799,9 +832,34 @@
 		<npc id="22047" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
 		<npc id="22048" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
 	</spawn>
+	<spawn name="schuttgart16_2214_12m1" zone="il_schuttgart16_2214_12">
+		<npc id="22045" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Dark Corpse -->
+		<npc id="22047" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22048" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
+	</spawn>
+	<spawn name="schuttgart16_2214_13m1" zone="il_schuttgart16_2214_13">
+		<npc id="22045" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Dark Corpse -->
+		<npc id="22047" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22048" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
+	</spawn>
 	<spawn name="schuttgart16_2214_14m1" zone="il_schuttgart16_2214_14">
 		<npc id="22045" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Dark Corpse -->
 		<npc id="22047" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22048" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
+	</spawn>
+	<spawn name="schuttgart16_2214_15m1" zone="il_schuttgart16_2214_15">
+		<npc id="22045" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Dark Corpse -->
+		<npc id="22047" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22048" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
+	</spawn>
+	<spawn name="schuttgart16_2214_16m1" zone="il_schuttgart16_2214_16">
+		<npc id="22045" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Dark Corpse -->
+		<npc id="22047" count="4" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22048" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
+	</spawn>
+	<spawn name="schuttgart16_2214_17m1" zone="il_schuttgart16_2214_17">
+		<npc id="22045" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Dark Corpse -->
+		<npc id="22047" count="4" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
 		<npc id="22048" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
 	</spawn>
 	<spawn name="schuttgart16_2214_18m1" zone="il_schuttgart16_2214_18">
@@ -809,10 +867,40 @@
 		<npc id="22047" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
 		<npc id="22048" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
 	</spawn>
+	<spawn name="schuttgart16_2214_19m1" zone="il_schuttgart16_2214_19">
+		<npc id="22045" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Dark Corpse -->
+		<npc id="22047" count="4" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22048" count="4" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
+	</spawn>
+	<spawn name="schuttgart16_2214_20m1" zone="il_schuttgart16_2214_20">
+		<npc id="22045" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Dark Corpse -->
+		<npc id="22047" count="4" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22048" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
+	</spawn>
+	<spawn name="schuttgart16_2214_21m1" zone="il_schuttgart16_2214_21">
+		<npc id="22046" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
+		<npc id="22047" count="4" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22048" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
+	</spawn>
 	<spawn name="schuttgart16_2214_22m1" zone="il_schuttgart16_2214_22">
 		<npc id="22046" count="4" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
 		<npc id="22047" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
 		<npc id="22048" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
+	</spawn>
+	<spawn name="schuttgart16_2214_23m1" zone="il_schuttgart16_2214_23">
+		<npc id="22046" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
+		<npc id="22047" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22048" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
+	</spawn>
+	<spawn name="schuttgart16_2214_24m1" zone="il_schuttgart16_2214_24">
+		<npc id="22046" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
+		<npc id="22047" count="4" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22048" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
+	</spawn>
+	<spawn name="schuttgart16_2214_25m1" zone="il_schuttgart16_2214_25">
+		<npc id="22046" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
+		<npc id="22047" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22048" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Dark Spider -->
 	</spawn>
 	<spawn name="schuttgart16_2214_26m1" zone="il_schuttgart16_2214_26">
 		<npc id="22046" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
@@ -838,6 +926,16 @@
 		<npc id="22046" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
 		<npc id="22047" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
 		<npc id="22049" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Succubus -->
+	</spawn>
+	<spawn name="schuttgart16_2214_31m1" zone="il_schuttgart16_2214_31">
+		<npc id="22046" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
+		<npc id="22047" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22049" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Succubus -->
+	</spawn>
+	<spawn name="schuttgart16_2214_32m1" zone="il_schuttgart16_2214_32">
+		<npc id="22046" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
+		<npc id="22047" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
+		<npc id="22049" count="4" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Succubus -->
 	</spawn>
 	<spawn name="schuttgart16_2214_33m1" zone="il_schuttgart16_2214_33">
 		<npc id="22046" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Dre Vanul -->
@@ -2446,6 +2544,13 @@
 		<npc id="21652" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Noble -->
 		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
 	</spawn>
+	<spawn name="godard08_2514_05m1" zone="il_godard08_2514_05">
+		<npc id="21377" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Soldier -->
+		<npc id="21376" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Worker -->
+		<npc id="21378" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Noble -->
+		<npc id="21652" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Noble -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
 	<spawn name="godard08_2514_06m1" zone="il_godard08_2514_06">
 		<npc id="21377" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Soldier -->
 		<npc id="21376" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Worker -->
@@ -2460,7 +2565,63 @@
 		<npc id="21652" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Scarlet Stakato Noble -->
 		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
 	</spawn>
+	<spawn name="godard08_2514_08m1" zone="il_godard08_2514_08">
+		<npc id="21379" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scorpion -->
+		<npc id="21380" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scarab -->
+		<npc id="21381" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Assassin Beetle -->
+		<npc id="21653" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Assassin Beetle -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_09m1" zone="il_godard08_2514_09">
+		<npc id="21379" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scorpion -->
+		<npc id="21380" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scarab -->
+		<npc id="21381" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Assassin Beetle -->
+		<npc id="21653" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Assassin Beetle -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_10m1" zone="il_godard08_2514_10">
+		<npc id="21379" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scorpion -->
+		<npc id="21380" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scarab -->
+		<npc id="21381" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Assassin Beetle -->
+		<npc id="21653" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Assassin Beetle -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_11m1" zone="il_godard08_2514_11">
+		<npc id="21379" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scorpion -->
+		<npc id="21380" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scarab -->
+		<npc id="21381" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Assassin Beetle -->
+		<npc id="21653" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Assassin Beetle -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_12m1" zone="il_godard08_2514_12">
+		<npc id="21379" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scorpion -->
+		<npc id="21380" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scarab -->
+		<npc id="21381" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Assassin Beetle -->
+		<npc id="21653" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Assassin Beetle -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_13m1" zone="il_godard08_2514_13">
+		<npc id="21379" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scorpion -->
+		<npc id="21380" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scarab -->
+		<npc id="21381" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Assassin Beetle -->
+		<npc id="21653" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Assassin Beetle -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_14m1" zone="il_godard08_2514_14">
+		<npc id="21379" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scorpion -->
+		<npc id="21380" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scarab -->
+		<npc id="21381" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Assassin Beetle -->
+		<npc id="21653" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Assassin Beetle -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
 	<spawn name="godard08_2514_15m1" zone="il_godard08_2514_15">
+		<npc id="21379" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scorpion -->
+		<npc id="21380" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scarab -->
+		<npc id="21381" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Assassin Beetle -->
+		<npc id="21653" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Assassin Beetle -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_16m1" zone="il_godard08_2514_16">
 		<npc id="21379" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scorpion -->
 		<npc id="21380" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Tepra Scarab -->
 		<npc id="21381" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Assassin Beetle -->
@@ -2489,6 +2650,13 @@
 		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
 	</spawn>
 	<spawn name="godard08_2514_20m1" zone="il_godard08_2514_20">
+		<npc id="21382" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Mercenary of Destruction -->
+		<npc id="21383" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Knight of Destruction -->
+		<npc id="21384" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Necromancer of Destruction -->
+		<npc id="21654" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Necromancer of Destruction -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_21m1" zone="il_godard08_2514_21">
 		<npc id="21382" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Mercenary of Destruction -->
 		<npc id="21383" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Knight of Destruction -->
 		<npc id="21384" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Necromancer of Destruction -->
@@ -2530,7 +2698,21 @@
 		<npc id="21655" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Arimanes of Destruction -->
 		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
 	</spawn>
+	<spawn name="godard08_2514_27m1" zone="il_godard08_2514_27">
+		<npc id="21385" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Lavastone Golem -->
+		<npc id="21386" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Magma Golem -->
+		<npc id="21387" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Arimanes of Destruction -->
+		<npc id="21655" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Arimanes of Destruction -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
 	<spawn name="godard08_2514_28m1" zone="il_godard08_2514_28">
+		<npc id="21385" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Lavastone Golem -->
+		<npc id="21386" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Magma Golem -->
+		<npc id="21387" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Arimanes of Destruction -->
+		<npc id="21655" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Arimanes of Destruction -->
+		<npc id="21394" count="1" respawnDelay="90" respawnRandom="30" />	<!-- Lavasaurus -->
+	</spawn>
+	<spawn name="godard08_2514_29m1" zone="il_godard08_2514_29">
 		<npc id="21385" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Lavastone Golem -->
 		<npc id="21386" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Magma Golem -->
 		<npc id="21387" count="2" respawnDelay="110" respawnRandom="35" />	<!-- Arimanes of Destruction -->
@@ -2561,6 +2743,23 @@
 		<npc id="21389" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Balrog of Destruction -->
 		<npc id="21390" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Ashuras of Destruction -->
 		<npc id="21656" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Ashuras of Destruction -->
+	</spawn>
+	<spawn name="godard09_2514_04m1" zone="il_godard09_2514_04">
+		<npc id="21388" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Iblis of Destruction -->
+		<npc id="21389" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Balrog of Destruction -->
+		<npc id="21390" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Ashuras of Destruction -->
+		<npc id="21656" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Ashuras of Destruction -->
+	</spawn>
+	<spawn name="godard09_2514_05m1" zone="il_godard09_2514_05">
+		<npc id="21388" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Iblis of Destruction -->
+		<npc id="21389" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Balrog of Destruction -->
+		<npc id="21390" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Ashuras of Destruction -->
+		<npc id="21656" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Ashuras of Destruction -->
+	</spawn>
+	<spawn name="godard09_2514_06m1" zone="il_godard09_2514_06">
+		<npc id="21391" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Lavasillisk -->
+		<npc id="21393" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Magma Drake -->
+		<npc id="21657" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Magma Drake -->
 	</spawn>
 	<spawn name="godard09_2514_07m1" zone="il_godard09_2514_07">
 		<npc id="21391" count="3" respawnDelay="110" respawnRandom="35" />	<!-- Lavasillisk -->
@@ -3166,6 +3365,15 @@
 		<npc id="22044" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Sorcerer -->
 	</spawn>
 	<!-- [25_15] -->
+	<spawn name="godard14_09_03" zone="il_godard14_2515_09">
+		<npc id="21409" count="4" respawnDelay="35" />	<!-- Royal Guard of Empire -->
+	</spawn>
+	<spawn name="godard14_10_03" zone="il_godard14_2515_10">
+		<npc id="21409" count="4" respawnDelay="35" />	<!-- Royal Guard of Empire -->
+	</spawn>
+	<spawn name="godard14_11_03" zone="il_godard14_2515_11">
+		<npc id="21409" count="4" respawnDelay="35" />	<!-- Royal Guard of Empire -->
+	</spawn>
 	<spawn name="godard14_15_01" zone="il_godard14_2515_15">
 		<npc id="21422" count="10" respawnDelay="45" respawnRandom="20" />	<!-- Dancer of Empire -->
 		<npc id="21423" count="10" respawnDelay="45" respawnRandom="20" />	<!-- Dancer of Empire -->

@@ -339,6 +339,9 @@
 	<npc id="27108" level="37" type="L2Monster" name="Stenoa Gorgon Queen" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="27109" count="1" respawnTime="0" weightPoint="1" />	<!-- Handmaiden of Stenoa -->
+			</minions>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="0" />
 			<param name="MoveAroundSocial2" value="0" />
@@ -422,6 +425,9 @@
 	<npc id="27110" level="36" type="L2Monster" name="Shyslassys" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="27111" count="6" respawnTime="0" weightPoint="1" />	<!-- Cave Basilisk -->
+			</minions>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="0" />
 			<param name="MoveAroundSocial2" value="0" />
@@ -539,6 +545,9 @@
 	<npc id="27112" level="36" type="L2Monster" name="Gorr" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="27111" count="6" respawnTime="0" weightPoint="1" />	<!-- Cave Basilisk -->
+			</minions>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="0" />
 			<param name="MoveAroundSocial2" value="0" />
@@ -584,6 +593,9 @@
 	<npc id="27113" level="36" type="L2Monster" name="Baraham" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="27111" count="6" respawnTime="0" weightPoint="1" />	<!-- Cave Basilisk -->
+			</minions>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="0" />
 			<param name="MoveAroundSocial2" value="0" />
@@ -629,6 +641,9 @@
 	<npc id="27114" level="34" type="L2Monster" name="Succubus Queen" title="Quest Monster">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="27115" count="2" respawnTime="0" weightPoint="1" />	<!-- Claw Of Succubus -->
+			</minions>
 			<param name="MoveAroundSocial" value="110" />
 			<param name="MoveAroundSocial1" value="110" />
 			<param name="MoveAroundSocial2" value="110" />

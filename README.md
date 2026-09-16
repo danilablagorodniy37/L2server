@@ -65,6 +65,7 @@
 | `build_quests.py` | Убирает квесты поздних хроник из `QuestLoader` |
 | `build_ai.py` | Убирает AI-скрипты поздних зон и систем из `AILoader` |
 | `build_spawns.py` | Чистит `spawnlist.sql`, переносит монстров Interlude из aCis |
+| `build_minions.py` | Возвращает лидерам миньонов Interlude (`privates` aCis) в шаблоны NPC и в `MinionSpawnManager` |
 | `build_shops.py` | Чистит магазины и мультиселлы |
 | `build_items.py` | Чистит дроп, рецепты, стартовую экипировку |
 | `build_teleports.py` | Убирает телепорты в поздние зоны и ссылки на них в HTML |

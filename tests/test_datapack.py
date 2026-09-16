@@ -85,3 +85,25 @@ def test_quest_dialog_links_reports_a_case_label_that_is_neither_file_nor_link(t
 	monkeypatch.setattr(checks, "html_texts",
 		lambda: (("data/html/x.htm", '<a action="bypass -h Quest Q00999_Example 30000-02.htm">go</a>'),))
 	assert set(checks.quest_dialog_links()) == {"Q00999_Example/30000-99.htm"}
+
+
+def test_leader_minions_reports_a_leader_whose_privates_are_gone(monkeypatch):
+	"""Male Spiked Stakato brings the female along; without her, quest 640 loses a monster."""
+	import build_minions
+	leader, minion = 22109, 22108
+	assert minion in build_minions.template_minions().get(leader, set()), "run tools/interlude/build_minions.py"
+	stripped = {k: (v - {minion} if k == leader else v) for k, v in build_minions.template_minions().items()}
+	monkeypatch.setattr(build_minions, "template_minions", lambda: stripped)
+	problems = checks.leader_minions()
+	assert [k for k in problems if k.startswith(f"{leader} ")], problems
+
+
+def test_leader_minions_reports_a_leader_the_manager_does_not_know(tmp_path, monkeypatch):
+	"""A Privates block nobody spawns is dead weight, so the leader must be in MinionSpawnManager."""
+	import build_minions
+	manager = tmp_path / "MinionSpawnManager.java"
+	manager.write_text("NPC.add(1);\n", encoding="utf-8")
+	monkeypatch.setattr(build_minions, "MANAGER", manager)
+	problems = checks.leader_minions()
+	assert problems, "every leader with minions should now be unknown to the manager"
+	assert all(places == ["not in MinionSpawnManager"] for places in problems.values()), problems

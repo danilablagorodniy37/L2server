@@ -7582,6 +7582,9 @@
 	<npc id="21369" level="78" type="L2Monster" name="Varka's Commander">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="21370" count="2" respawnTime="0" weightPoint="1" />	<!-- Varka's Elite Guard -->
+			</minions>
 			<param name="MoveAroundSocial" value="90" />
 			<param name="MoveAroundSocial1" value="90" />
 			<param name="MoveAroundSocial2" value="90" />
@@ -7762,6 +7765,9 @@
 	<npc id="21371" level="78" type="L2Monster" name="Varka's Head Magus">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="21372" count="2" respawnTime="0" weightPoint="1" />	<!-- Varka's Head Guard -->
+			</minions>
 			<param name="MoveAroundSocial" value="123" />
 			<param name="MoveAroundSocial1" value="123" />
 			<param name="MoveAroundSocial2" value="123" />
@@ -7935,6 +7941,10 @@
 	<npc id="21373" level="78" type="L2Monster" name="Varka's Prophet">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="21374" count="1" respawnTime="0" weightPoint="1" />	<!-- Prophet's Guard -->
+				<npc id="21375" count="1" respawnTime="0" weightPoint="1" />	<!-- Disciple of Prophet -->
+			</minions>
 			<param name="MoveAroundSocial" value="123" />
 			<param name="MoveAroundSocial1" value="123" />
 			<param name="MoveAroundSocial2" value="123" />

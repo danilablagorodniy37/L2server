@@ -362,7 +362,8 @@ def quest_npcs():
 def quest_kill_targets():
 	"""Monsters that loaded quests need killed and that aCis puts in the world are spawned here too."""
 	quests = ds.GAME / "script" / "com" / "l2jserver" / "datapack" / "quests"
-	call = re.compile(r"bindKill\(([^;]*?)\)")
+	# bindKill(...) names the monsters directly; a droplist passed to it names them in its own calls.
+	call = re.compile(r"bindKill\(([^;]*?)\)|withNpcs\(([^;)]*)\)|addSingleDrop\(\s*([A-Z][A-Z0-9_]*|\d+)")
 	# Four Sepulchers monsters are placed by the core, not by the datapack.
 	core_spawned_types = {"L2SepulcherMonster", "L2SepulcherNpc"}
 	available = world_spawned() | script_spawned()
@@ -372,8 +373,8 @@ def quest_kill_targets():
 			src = java.read_text(encoding="utf-8", errors="replace")
 			consts = {k: int(v) for k, v in CONSTANT.findall(src)}
 			ids = set()
-			for args in call.findall(src):
-				for token in re.findall(r"[A-Z][A-Z0-9_]*|\d+", args):
+			for groups in call.findall(src):
+				for token in re.findall(r"[A-Z][A-Z0-9_]*|\d+", "".join(groups)):
 					ids.add(int(token) if token.isdigit() else consts.get(token, 0))
 			for npc_id in ids:
 				if npc_id in available or npc_id not in acis_spawned():
@@ -383,6 +384,31 @@ def quest_kill_targets():
 					continue
 				missing[f"{npc_id} {template[0].get('name') if template else '?'}"].append(quest)
 	return missing
+
+
+def leader_minions():
+	"""Leaders of the world carry the minions aCis gives them, and MinionSpawnManager knows them (build_minions.py)."""
+	import build_minions
+
+	spawned = world_spawned()
+	by_script = script_spawned()
+	in_template = build_minions.template_minions()
+	manager = build_minions.MANAGER.read_text(encoding="utf-8")
+	registered = {int(v) for v in re.findall(r"NPC\.add\((\d+)\);", manager)}
+	problems = defaultdict(list)
+	for leader, minions in build_minions.acis_privates().items():
+		template = npcs().get(leader)
+		if (leader not in spawned) or (template is None) or (template[0].get("type") in build_minions.BOSS_TYPES):
+			continue
+		wanted = {m for m in minions if (m in npcs()) and (m not in by_script)}
+		if not wanted:
+			continue
+		missing = wanted - in_template.get(leader, set())
+		if missing:
+			problems[f"{leader} {template[0].get('name')}"].append("no minions " + ", ".join(str(m) for m in sorted(missing)))
+		elif leader not in registered:
+			problems[f"{leader} {template[0].get('name')}"].append("not in MinionSpawnManager")
+	return problems
 
 
 def spawn_zones():
@@ -790,7 +816,7 @@ GEO_CHECKS = {"floating_spawns": floating_spawns}
 DATAPACK_CHECKS = {f.__name__: f for f in (
 	item_references, npc_references, boss_positions, skill_references,
 	html_multisell_links, html_buylist_links, html_teleport_links, script_shop_calls, quest_dialog_links, quest_npcs, quest_kill_targets,
-	spawn_zones, loader_classes, xml_schemas,
+	spawn_zones, leader_minions, loader_classes, xml_schemas,
 	shops_interlude_items, drops_interlude_items, recipes_interlude_items, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_config,
 	interlude_loaders, starting_equipment, phantom_gear, phantom_phrases, phantom_config,
 )}

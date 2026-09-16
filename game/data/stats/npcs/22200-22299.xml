@@ -3,6 +3,9 @@
 	<npc id="22200" level="80" type="L2Monster" name="Ornithomimus">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22201" count="3" respawnTime="0" weightPoint="1" />	<!-- Ornithomimus -->
+			</minions>
 			<param name="ag_type" value="0" />
 			<param name="ProbSelfRangeBuff1" value="50" />
 			<param name="ProbPhysicalSpecial1" value="33" />
@@ -168,6 +171,9 @@
 	<npc id="22202" level="80" type="L2Monster" name="Ornithomimus">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22201" count="3" respawnTime="0" weightPoint="1" />	<!-- Ornithomimus -->
+			</minions>
 			<param name="ag_type" value="0" />
 			<param name="mobile_type" value="1" />
 			<param name="ProbSelfRangeBuff1" value="50" />
@@ -250,6 +256,9 @@
 	<npc id="22203" level="80" type="L2Monster" name="Deinonychus">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22204" count="4" respawnTime="0" weightPoint="1" />	<!-- Deinonychus -->
+			</minions>
 			<param name="ag_type" value="0" />
 			<param name="ProbSelfRangeBuff1" value="100" />
 			<param name="ProbPhysicalSpecial1" value="33" />
@@ -407,6 +416,9 @@
 	<npc id="22205" level="80" type="L2Monster" name="Deinonychus">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22204" count="4" respawnTime="0" weightPoint="1" />	<!-- Deinonychus -->
+			</minions>
 			<param name="ag_type" value="0" />
 			<param name="mobile_type" value="1" />
 			<param name="ProbSelfRangeBuff1" value="100" />
@@ -487,6 +499,9 @@
 	<npc id="22208" level="80" type="L2Monster" name="Pachycephalosaurus">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22209" count="3" respawnTime="0" weightPoint="1" />	<!-- Pachycephalosaurus -->
+			</minions>
 			<param name="ag_type" value="1" />
 			<param name="ProbSelfRangeBuff1" value="50" />
 			<param name="ProbPhysicalSpecial1" value="33" />
@@ -623,6 +638,9 @@
 	<npc id="22210" level="80" type="L2Monster" name="Pachycephalosaurus">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22209" count="3" respawnTime="0" weightPoint="1" />	<!-- Pachycephalosaurus -->
+			</minions>
 			<param name="mobile_type" value="1" />
 			<param name="ProbSelfRangeBuff1" value="50" />
 			<param name="ProbPhysicalSpecial1" value="33" />
@@ -693,6 +711,9 @@
 	<npc id="22211" level="80" type="L2Monster" name="Wild Strider">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22212" count="3" respawnTime="0" weightPoint="1" />	<!-- Wild Strider -->
+			</minions>
 			<param name="ag_type" value="1" />
 			<param name="ProbSelfRangeBuff1" value="100" />
 			<param name="ProbPhysicalSpecial1" value="3" />
@@ -824,6 +845,9 @@
 	<npc id="22213" level="80" type="L2Monster" name="Wild Strider">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22212" count="3" respawnTime="0" weightPoint="1" />	<!-- Wild Strider -->
+			</minions>
 			<param name="mobile_type" value="1" />
 			<param name="ProbSelfRangeBuff1" value="100" />
 			<param name="ProbPhysicalSpecial1" value="3" />
@@ -1627,6 +1651,9 @@
 	<npc id="22223" level="80" type="L2Monster" name="Velociraptor">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22197" count="1" respawnTime="0" weightPoint="1" />	<!-- Velociraptor -->
+			</minions>
 			<param name="ag_type" value="1" />
 			<param name="ProbSelfRangeBuff1" value="100" />
 			<param name="ProbPhysicalSpecial1" value="3" />
@@ -1704,6 +1731,9 @@
 	<npc id="22224" level="80" type="L2Monster" name="Ornithomimus">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22201" count="1" respawnTime="0" weightPoint="1" />	<!-- Ornithomimus -->
+			</minions>
 			<param name="ag_type" value="0" />
 			<param name="ProbSelfRangeBuff1" value="50" />
 			<param name="ProbPhysicalSpecial1" value="33" />
@@ -1776,6 +1806,9 @@
 	<npc id="22225" level="80" type="L2Monster" name="Deinonychus">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22204" count="1" respawnTime="0" weightPoint="1" />	<!-- Deinonychus -->
+			</minions>
 			<param name="ag_type" value="0" />
 			<param name="ProbSelfRangeBuff1" value="100" />
 			<param name="ProbPhysicalSpecial1" value="33" />
@@ -1849,6 +1882,9 @@
 	<npc id="22226" level="80" type="L2Monster" name="Pachycephalosaurus">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22209" count="1" respawnTime="0" weightPoint="1" />	<!-- Pachycephalosaurus -->
+			</minions>
 			<param name="ag_type" value="1" />
 			<param name="ProbSelfRangeBuff1" value="50" />
 			<param name="ProbPhysicalSpecial1" value="33" />
@@ -1912,6 +1948,9 @@
 	<npc id="22227" level="80" type="L2Monster" name="Wild Strider">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
+			<minions name="Privates">
+				<npc id="22212" count="1" respawnTime="0" weightPoint="1" />	<!-- Wild Strider -->
+			</minions>
 			<param name="ag_type" value="1" />
 			<param name="ProbSelfRangeBuff1" value="100" />
 			<param name="ProbPhysicalSpecial1" value="3" />

@@ -391,6 +391,30 @@ public final class MinionSpawnManager extends AbstractNpcAI {
 		NPC.add(29141); // Lost Captain
 		NPC.add(29144); // Lost Captain
 		NPC.add(29147); // Lost Captain
+		// Interlude leaders whose privates were missing (tools/interlude/build_minions.py)
+		NPC.add(20763); // Lord of the Plains
+		NPC.add(20771); // Barif
+		NPC.add(20947); // Connabi
+		NPC.add(20950); // Innersen
+		NPC.add(20953); // Pobby
+		NPC.add(20966); // Changed Creation
+		NPC.add(20969); // Giant's Shadow
+		NPC.add(20973); // Forgotten Ancient People
+		NPC.add(20989); // Lageos
+		NPC.add(21058); // Beast Lord
+		NPC.add(22060); // Horrifying Cannon Golem
+		NPC.add(22074); // Epic Cannon Golem
+		NPC.add(22109); // Male Spiked Stakato
+		NPC.add(22113); // Cannibalistic Stakato Leader
+		NPC.add(22118); // Spiked Stakato Nurse
+		NPC.add(22123); // Monastic Crusader
+		NPC.add(22135); // Beholder of Light
+		NPC.add(22200); // Ornithomimus
+		NPC.add(22203); // Deinonychus
+		NPC.add(22208); // Pachycephalosaurus
+		NPC.add(22211); // Wild Strider
+		NPC.add(22226); // Pachycephalosaurus
+		NPC.add(22227); // Wild Strider
 	}
 	
 	private static final NpcStringId[] ON_ATTACK_MSG = {

@@ -33,7 +33,7 @@ IMPORTED_TYPES = {"L2Monster", "L2FeedableBeast"}
 ORPHAN_MAKERS = {
 	"on_day_night_spawn", "random_spawn", "random_maker", "random_spawn_pawn", "default_use_db_maker",
 	"no_on_start_maker", "exclusive_spawn_normal", "farm_maker", "warrior_passive_weakness_maker",
-	"velociraptor_maker", "rhamphorhynchus_maker", "tyrannosaurus_maker",
+	"velociraptor_maker", "rhamphorhynchus_maker", "tyrannosaurus_maker", "maker_instant_spawn_random",
 }
 # Other Interlude NPCs missing from the H5 datapack that quests and systems need.
 # Makers with several random positions get the first one.
@@ -193,7 +193,9 @@ def collect(npcs, spawned, territories, spawns, skipped, plain_makers_only):
 		for maker in root.findall("npcmaker"):
 			ai = maker.find("ai")
 			ai_type = ai.get("type") if ai is not None else None
-			if maker.get("event") or maker.get("spawnTime") or maker.get("ban"):
+			# "ban" only keeps the monsters out of a few pockets inside the territory;
+			# as a plain spawn the whole territory is used, which is close enough.
+			if maker.get("event") or maker.get("spawnTime"):
 				skipped["maker with event or time"] += 1
 				continue
 			if plain_makers_only:
