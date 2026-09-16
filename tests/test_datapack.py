@@ -107,3 +107,14 @@ def test_leader_minions_reports_a_leader_the_manager_does_not_know(tmp_path, mon
 	problems = checks.leader_minions()
 	assert problems, "every leader with minions should now be unknown to the manager"
 	assert all(places == ["not in MinionSpawnManager"] for places in problems.values()), problems
+
+
+def test_html_quest_buttons_reports_a_button_of_an_unloaded_script(monkeypatch):
+	"""The gatekeepers used to offer "Call Alegria" although the birthday event is not loaded."""
+	import build_html_links
+	monkeypatch.setattr(checks, "html_texts", lambda: (
+		("data/html/teleporter/30080.htm", '<a action="bypass -h npc_%objectId%_Quest CharacterBirthday">Call Alegria</a>'),
+		("script/com/l2jserver/datapack/gracia/x.htm", '<a action="bypass -h npc_%objectId%_Quest CharacterBirthday">not shown</a>'),
+	))
+	monkeypatch.setattr(build_html_links, "loaded_script_names", lambda: {"NoblesseTeleport"})
+	assert dict(checks.html_quest_buttons()) == {"CharacterBirthday": ["data/html/teleporter/30080.htm"]}

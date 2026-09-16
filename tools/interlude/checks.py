@@ -284,6 +284,23 @@ def html_teleport_links():
 	return missing
 
 
+def html_quest_buttons():
+	"""NPC dialogs open only quests and AI scripts that the loaders still load (build_html_links.py)."""
+	import build_html_links
+
+	names = build_html_links.loaded_script_names()
+	button = re.compile(r"bypass -h npc_%objectId%_Quest ([\w-]+)")
+	dead = defaultdict(list)
+	for rel, text in html_texts():
+		# A dialog inside the folder of an unloaded script is never shown, so it may keep its buttons.
+		if not rel.startswith("data/html/"):
+			continue
+		for name in button.findall(text):
+			if name not in names:
+				dead[name].append(rel)
+	return dead
+
+
 def script_shop_calls():
 	"""Loaded scripts open multisells and buylists that exist."""
 	multisells, buylists = ds.multisell_ids(), ds.buylist_ids()
@@ -815,7 +832,7 @@ def floating_spawns():
 GEO_CHECKS = {"floating_spawns": floating_spawns}
 DATAPACK_CHECKS = {f.__name__: f for f in (
 	item_references, npc_references, boss_positions, skill_references,
-	html_multisell_links, html_buylist_links, html_teleport_links, script_shop_calls, quest_dialog_links, quest_npcs, quest_kill_targets,
+	html_multisell_links, html_buylist_links, html_teleport_links, html_quest_buttons, script_shop_calls, quest_dialog_links, quest_npcs, quest_kill_targets,
 	spawn_zones, leader_minions, loader_classes, xml_schemas,
 	shops_interlude_items, drops_interlude_items, recipes_interlude_items, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_config,
 	interlude_loaders, starting_equipment, phantom_gear, phantom_phrases, phantom_config,
