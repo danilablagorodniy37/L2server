@@ -1,6 +1,8 @@
 """Unit tests of the helpers in tools/interlude that rewrite datapack files."""
 
 import re
+import xml.etree.ElementTree as ET
+from collections import defaultdict
 
 import pytest
 
@@ -9,6 +11,7 @@ import build_spawns
 import checks
 import datasets as ds
 import kamael
+import port_quest_html
 
 
 class TestRemoveLinks:
@@ -136,3 +139,59 @@ def test_extra_npcs_are_spawned():
 	"""Every NPC build_spawns imports on purpose is in the generated spawnlist."""
 	spawned = {npc_id for npc_id, _ in checks.enabled_xml_spawns()}
 	assert set(build_spawns.EXTRA_NPCS) <= spawned, sorted(set(build_spawns.EXTRA_NPCS) - spawned)
+
+
+def test_underspawned_npcs_got_their_acis_makers():
+	"""Monsters listed as underspawned are imported with as many spawns as aCis has."""
+	imported = defaultdict(int)
+	for f in ds._xml_files(ds.GAME / "data" / "spawnlist"):
+		root = ET.parse(f).getroot()
+		if root.get("enabled", "true") == "true":
+			for npc in root.iter("npc"):
+				imported[int(npc.get("id"))] += int(npc.get("count", 1))
+	for npc_id in build_spawns.UNDERSPAWNED:
+		assert imported[npc_id] >= 10, f"{npc_id} has only {imported[npc_id]} spawns"
+
+
+def test_script_spawned_finds_npcs_that_only_a_script_places():
+	"""Grave Keymaster (quest 503) stands nowhere in the world; the quest spawns him."""
+	assert 27179 not in checks.world_spawned()
+	assert 27179 in checks.script_spawned()
+
+
+class TestPortQuestHtml:
+	@staticmethod
+	def build(tmp_path, acis_files):
+		acis = tmp_path / "acis" / "Q353_PowerOfDarkness"
+		acis.mkdir(parents=True)
+		for name, text in acis_files.items():
+			(acis / name).write_text(text, encoding="utf-8")
+		h5 = tmp_path / "h5" / "Q00353_PowerOfDarkness"
+		h5.mkdir(parents=True)
+		return acis.parent, h5.parent
+
+	def test_renames_bypasses_and_drops_the_old_dialogs(self, tmp_path, monkeypatch):
+		acis_root, h5_root = self.build(tmp_path, {
+			"31044-01.htm": '<a action="bypass -h Quest Q353_PowerOfDarkness 31044-02.htm">Ask</a>\n\n',
+			"31044-02.htm": "<html><body>Second</body></html>",
+		})
+		stale = h5_root / "Q00353_PowerOfDarkness" / "31044-77.html"
+		stale.write_text("old H5 dialog", encoding="utf-8")
+		monkeypatch.setattr(port_quest_html, "ACIS_HTML", acis_root)
+		monkeypatch.setattr(port_quest_html, "H5_QUESTS", h5_root)
+
+		port_quest_html.port(353)
+
+		ported = h5_root / "Q00353_PowerOfDarkness"
+		assert not stale.exists()
+		assert sorted(f.name for f in ported.glob("*.htm*")) == ["31044-01.htm", "31044-02.htm"]
+		text = (ported / "31044-01.htm").read_text(encoding="utf-8")
+		assert "bypass -h Quest Q00353_PowerOfDarkness 31044-02.htm" in text
+		assert text.endswith(">Ask</a>\n"), repr(text)
+
+	def test_refuses_a_quest_that_is_not_there(self, tmp_path, monkeypatch):
+		acis_root, h5_root = self.build(tmp_path, {"31044-01.htm": "x"})
+		monkeypatch.setattr(port_quest_html, "ACIS_HTML", acis_root)
+		monkeypatch.setattr(port_quest_html, "H5_QUESTS", h5_root)
+		with pytest.raises(SystemExit):
+			port_quest_html.port(640)

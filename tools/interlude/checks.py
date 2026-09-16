@@ -23,6 +23,8 @@ CONFIG = ds.GAME / "config"
 MYSQL = r"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe"
 TELEPORT_ROW = r"^\('(?:[^'\\]|\\.)*', *(\d+),"
 BOSS_ROW = r"^\((\d+),"
+# "private static final int NAME = 1234;" in a script
+CONSTANT = re.compile(r"\b([A-Z][A-Z0-9_]*)\s*=\s*(\d+)\s*;")
 
 INTERLUDE_CLASS_IDS = range(0, 119)
 MAX_LEVEL = 80
@@ -90,6 +92,47 @@ def enabled_xml_spawns():
 		if root.get("enabled", "true") == "true":
 			for npc in root.iter("npc"):
 				yield int(npc.get("id")), f.name
+
+
+@cache
+def world_spawned():
+	"""NPC ids the world spawns by itself: spawnlist.sql, enabled XML spawnlists, boss tables."""
+	ids = {int(m.group(1)) for line in (ds.GAME / "sql" / "spawnlist.sql").read_text(encoding="utf-8").splitlines() if (m := ds._SPAWN_ROW.match(line))}
+	ids |= {npc_id for npc_id, _ in enabled_xml_spawns()}
+	for table in ("raidboss_spawnlist.sql", "grandboss_data.sql"):
+		ids |= set(sql_ids(table, BOSS_ROW))
+	return ids
+
+
+@cache
+def script_spawned():
+	"""NPC ids a datapack script spawns itself (addSpawn, createOnePrivate)."""
+	call = re.compile(r"(?:addSpawn|createOnePrivate\w*)\s*\(\s*([A-Z][A-Z0-9_]*|\d+)")
+	ids = set()
+	for java in (ds.GAME / "script").rglob("*.java"):
+		src = java.read_text(encoding="utf-8", errors="replace")
+		if "addSpawn" not in src and "createOnePrivate" not in src:
+			continue
+		consts = {k: int(v) for k, v in CONSTANT.findall(src)}
+		for token in call.findall(src):
+			ids.add(int(token) if token.isdigit() else consts.get(token, 0))
+	return ids
+
+
+@cache
+def acis_spawned():
+	"""NPC ids the aCis spawnlist places in the world."""
+	ids = set()
+	for f in ds._xml_files(ds.ACIS.parent / "xml" / "spawnlist"):
+		for npc in ET.parse(f).getroot().iter("npc"):
+			ids.add(int(npc.get("id")))
+	return ids
+
+
+def loaded_quests():
+	"""Folder names of the quests registered in QuestLoader."""
+	loader = ds.GAME / "script" / "com" / "l2jserver" / "datapack" / "quests" / "QuestLoader.java"
+	return set(re.findall(r"^\t+(Q\d{5}_\w+)\.class", loader.read_text(encoding="utf-8"), re.M))
 
 
 def sql_ids(file, pattern):
@@ -270,16 +313,24 @@ def quest_dialog_links():
 			sources = "".join(p.read_text(encoding="utf-8", errors="replace") for p in folder.glob("*.java"))
 			if f'"{dialog}"' not in sources:
 				missing[f"{quest}/{dialog}"].append(rel)
-	# Dialogs the scripts open by name (event case labels are not files). Tutorial pages live in data/html.
+	# Every dialog name a bypass leads to, so case labels can be told from missing files.
+	linked = defaultdict(set)
+	for _, text in html_texts():
+		for quest, dialog in link.findall(text):
+			linked[quest].add(dialog)
+	# Dialogs the scripts open by name. A case label may also be an event a dialog links to.
+	# Tutorial pages live in data/html.
 	literal = re.compile(r'"(\w[\w-]*-[\w-]*\.html?)"')
 	for quest in loaded:
 		for java in (quests / quest).glob("*.java"):
 			for line in java.read_text(encoding="utf-8", errors="replace").splitlines():
-				if line.lstrip().startswith("case ") or "showTutorialHTML" in line:
+				if "showTutorialHTML" in line:
 					continue
+				is_label = line.lstrip().startswith("case ")
 				for dialog in literal.findall(line):
-					if not (quests / quest / dialog).exists():
-						missing[f"{quest}/{dialog}"].append(java.name)
+					if (quests / quest / dialog).exists() or (is_label and (dialog in linked[quest])):
+						continue
+					missing[f"{quest}/{dialog}"].append(java.name)
 	return missing
 
 
@@ -306,6 +357,62 @@ def quest_npcs():
 				if 18000 <= npc_id < 40000 and npc_id not in known:
 					missing[npc_id].append(quest)
 	return missing
+
+
+def quest_kill_targets():
+	"""Monsters that loaded quests need killed and that aCis puts in the world are spawned here too."""
+	quests = ds.GAME / "script" / "com" / "l2jserver" / "datapack" / "quests"
+	call = re.compile(r"bindKill\(([^;]*?)\)")
+	# Four Sepulchers monsters are placed by the core, not by the datapack.
+	core_spawned_types = {"L2SepulcherMonster", "L2SepulcherNpc"}
+	available = world_spawned() | script_spawned()
+	missing = defaultdict(list)
+	for quest in sorted(loaded_quests()):
+		for java in (quests / quest).glob("*.java"):
+			src = java.read_text(encoding="utf-8", errors="replace")
+			consts = {k: int(v) for k, v in CONSTANT.findall(src)}
+			ids = set()
+			for args in call.findall(src):
+				for token in re.findall(r"[A-Z][A-Z0-9_]*|\d+", args):
+					ids.add(int(token) if token.isdigit() else consts.get(token, 0))
+			for npc_id in ids:
+				if npc_id in available or npc_id not in acis_spawned():
+					continue
+				template = npcs().get(npc_id)
+				if template is not None and template[0].get("type") in core_spawned_types:
+					continue
+				missing[f"{npc_id} {template[0].get('name') if template else '?'}"].append(quest)
+	return missing
+
+
+def spawn_zones():
+	"""Territory spawns of the XML spawnlists point at an NpcSpawnTerritory that exists."""
+	zones = {z.get("name") for f in ds._xml_files(DATA / "zones" / "npcSpawnTerritories") for z in ET.parse(f).getroot().findall("zone")}
+	missing = defaultdict(list)
+	for f in ds._xml_files(DATA / "spawnlist"):
+		root = ET.parse(f).getroot()
+		if root.get("enabled", "true") != "true":
+			continue
+		for spawn in root.findall("spawn"):
+			zone = spawn.get("zone")
+			if zone and zone not in zones:
+				missing[zone].append("spawnlist/" + f.name)
+	return missing
+
+
+def recipes_interlude_items():
+	"""Recipes, their materials and their products are Interlude or Kamael items."""
+	allowed = allowed_items()
+	problems = defaultdict(list)
+	for recipe in ET.parse(DATA / "recipes.xml").getroot().findall("item"):
+		where = "recipe " + (recipe.get("name") or recipe.get("id"))
+		ids = {int(recipe.get("itemId"))} if recipe.get("itemId") else set()
+		for entry in recipe.iter():
+			if entry.tag in ("ingredient", "production") and entry.get("id"):
+				ids.add(int(entry.get("id")))
+		for item_id in sorted(ids - allowed):
+			problems[_item_name(item_id)].append(where)
+	return problems
 
 
 def loader_classes():
@@ -682,8 +789,9 @@ def floating_spawns():
 GEO_CHECKS = {"floating_spawns": floating_spawns}
 DATAPACK_CHECKS = {f.__name__: f for f in (
 	item_references, npc_references, boss_positions, skill_references,
-	html_multisell_links, html_buylist_links, html_teleport_links, script_shop_calls, quest_dialog_links, quest_npcs, loader_classes, xml_schemas,
-	shops_interlude_items, drops_interlude_items, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_config,
+	html_multisell_links, html_buylist_links, html_teleport_links, script_shop_calls, quest_dialog_links, quest_npcs, quest_kill_targets,
+	spawn_zones, loader_classes, xml_schemas,
+	shops_interlude_items, drops_interlude_items, recipes_interlude_items, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_config,
 	interlude_loaders, starting_equipment, phantom_gear, phantom_phrases, phantom_config,
 )}
 DATABASE_CHECKS = {"database_tables": database_tables}

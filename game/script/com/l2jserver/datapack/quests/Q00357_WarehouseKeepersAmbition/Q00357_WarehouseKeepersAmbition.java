@@ -57,7 +57,6 @@ public final class Q00357_WarehouseKeepersAmbition extends Quest {
 		String htmltext = null;
 		if (qs != null) {
 			switch (event) {
-				case "30686-01.htm":
 				case "30686-03.htm":
 				case "30686-04.htm":
 				case "30686-10.html": {

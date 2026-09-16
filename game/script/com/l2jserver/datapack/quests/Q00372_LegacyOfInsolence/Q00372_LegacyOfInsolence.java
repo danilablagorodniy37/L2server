@@ -225,7 +225,7 @@ public final class Q00372_LegacyOfInsolence extends Quest {
 				}
 			}
 			case "30844-09.html" -> qs.exitQuest(true, true);
-			case "30844-03.htm", "30844-05.html", "30844-05a.html", "30844-08.html", "30844-10.html", "30844-11.html" -> {
+			case "30844-03.htm", "30844-05.html", "30844-05a.html", "30844-08.html", "30844-11.html" -> {
 				return event;
 			}
 			default -> {
