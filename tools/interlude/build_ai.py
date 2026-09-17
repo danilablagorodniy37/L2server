@@ -35,6 +35,9 @@ REMOVED = {
 	"DelusionTeleport", "ToIVortex", "HandysBlockCheckerEvent",
 	# Beast Farm: H5 Beast Handler's Whip (Tunatun keeps his Interlude dialog)
 	"Tunatun",
+	# Alexandria: H5 agathion bracelets (Little Angel, Little Devil); she keeps her armor shops
+	# with data/html/default/30098.htm
+	"Alexandria",
 }
 
 

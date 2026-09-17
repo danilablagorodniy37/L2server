@@ -58,7 +58,6 @@ import com.l2jserver.datapack.ai.individual.Sailren.Sailren;
 import com.l2jserver.datapack.ai.individual.Venom.Venom;
 import com.l2jserver.datapack.ai.npc.Abercrombie.Abercrombie;
 import com.l2jserver.datapack.ai.npc.AdventureGuildsman.AdventureGuildsman;
-import com.l2jserver.datapack.ai.npc.Alexandria.Alexandria;
 import com.l2jserver.datapack.ai.npc.ArenaManager.ArenaManager;
 import com.l2jserver.datapack.ai.npc.Asamah.Asamah;
 import com.l2jserver.datapack.ai.npc.BlackJudge.BlackJudge;
@@ -155,7 +154,6 @@ public class AILoader {
 		// NPC
 		Abercrombie.class,
 		AdventureGuildsman.class,
-		Alexandria.class,
 		ArenaManager.class,
 		Asamah.class,
 		BlackJudge.class,

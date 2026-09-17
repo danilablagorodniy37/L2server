@@ -44,6 +44,24 @@ def h5_items():
 	return items
 
 
+# Item ids that exist in aCis but that H5 reused for a different, later item: the id alone
+# would let these through as Interlude items. Renames of the same item (153 Sickle -> Sigil,
+# 6622 Secret Book of Giants -> Giant's Codex) and unused placeholders are not listed.
+H5_REUSED_ITEM_IDS = frozenset({
+	52,  # Hemp Cloak -> Vesper Dual Sword (S80)
+	53, 54, 55, 56,  # cloaks and undergarments -> agathion packs, "(Not In Use)" agathion boxes
+	136, 137, 138, 139, 140, 141, 163, 170,  # swords -> agathion packs and boxes
+	5342, 5343,  # Recipe: Phoenix Earring -> Echo Crystal
+	5906, 5907, 5909, 5910, 5912, 5913,  # unused soul crystals -> 5th Anniversary Gift Boxes
+	*range(8663, 8678),  # oils -> event potions (face, hair, dye)
+})
+
+
+def interlude_item_ids():
+	"""Item ids of Interlude: defined by aCis and not reused by H5 for another item."""
+	return acis_ids("items") - H5_REUSED_ITEM_IDS
+
+
 def acis_ids(kind):
 	"""IDs defined by aCis for kind in {'items', 'npcs', 'skills'}."""
 	tag = {"items": "item", "npcs": "npc", "skills": "skill"}[kind]

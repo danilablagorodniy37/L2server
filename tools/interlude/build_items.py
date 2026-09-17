@@ -8,6 +8,8 @@ Allowed items are those defined by aCis plus Kamael items (see build_shops.py).
   allowed are removed.
 - data/stats/initialEquipment.xml: non-Kamael classes keep only aCis items,
   Kamael classes keep only allowed items.
+- data/seeds.xml: manor crops whose seed, crop, mature crop or rewards are not allowed
+  are removed (H5 added the level 79-82 Coba seeds to the castle manors).
 
 Usage: python tools/interlude/build_items.py
 """
@@ -18,6 +20,9 @@ import datasets as ds
 from build_shops import allowed_ids
 
 NPCS = ds.GAME / "data" / "stats" / "npcs"
+SEEDS = ds.GAME / "data" / "seeds.xml"
+_CROP = re.compile(r'[ \t]*<crop [^>]*/>\r?\n')
+_CROP_IDS = re.compile(r'\b(?:id|seedId|mature_Id|reward1|reward2)="(\d+)"')
 RECIPES = ds.GAME / "data" / "recipes.xml"
 INITIAL_EQUIPMENT = ds.GAME / "data" / "stats" / "initialEquipment.xml"
 
@@ -83,7 +88,7 @@ def clean_recipes(allowed):
 
 
 def clean_initial_equipment(allowed):
-	acis_items = ds.acis_ids("items")
+	acis_items = ds.interlude_item_ids()
 	text = INITIAL_EQUIPMENT.read_text(encoding="utf-8").replace("\r\n", "\n")
 	removed = []
 
@@ -103,11 +108,34 @@ def clean_initial_equipment(allowed):
 	print(f"initial equipment: removed {len(removed)} entries, items {sorted({i for _, i in removed})}")
 
 
+def without_late_crops(text, allowed):
+	"""(seeds.xml text without crops that involve items outside allowed, removed seed ids)."""
+	removed = []
+
+	def crop(match):
+		ids = [int(v) for v in _CROP_IDS.findall(match.group(0))]
+		if all(i in allowed for i in ids):
+			return match.group(0)
+		removed.append(int(re.search(r'seedId="(\d+)"', match.group(0)).group(1)))
+		return ""
+
+	return _CROP.sub(crop, text), removed
+
+
+def clean_manor(allowed):
+	raw = SEEDS.read_bytes()
+	text, removed = without_late_crops(raw.decode("utf-8"), allowed)
+	if removed:
+		SEEDS.write_bytes(text.encode("utf-8"))
+	print(f"manor: removed {len(removed)} crops, seeds {sorted(set(removed))}")
+
+
 def main():
 	allowed = allowed_ids()
 	clean_drops(allowed)
 	clean_recipes(allowed)
 	clean_initial_equipment(allowed)
+	clean_manor(allowed)
 
 
 if __name__ == "__main__":

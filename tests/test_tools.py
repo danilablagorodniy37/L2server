@@ -195,3 +195,27 @@ class TestPortQuestHtml:
 		monkeypatch.setattr(port_quest_html, "H5_QUESTS", h5_root)
 		with pytest.raises(SystemExit):
 			port_quest_html.port(640)
+
+
+@pytest.mark.parametrize("item_id,interlude", [
+	(52, False),  # Hemp Cloak in Interlude, Vesper Dual Sword in H5
+	(139, False),  # Dusk Sword in Interlude, an agathion pack in H5
+	(153, True),  # Sickle, only renamed Sigil in H5
+	(6622, True),  # Secret Book of Giants, renamed Giant's Codex
+])
+def test_reused_item_ids_are_not_interlude(item_id, interlude):
+	assert (item_id in ds.interlude_item_ids()) is interlude
+	assert item_id in ds.acis_ids("items")
+
+
+def test_without_late_crops_keeps_interlude_crops():
+	import build_items
+	text = (
+		'\t<castle id="1">\n'
+		'\t\t<crop id="5073" seedId="5016" mature_Id="5103" reward1="1864" reward2="1878" alternative="false" />\n'
+		'\t\t<crop id="6545" seedId="15327" mature_Id="6559" reward1="4044" reward2="4042" alternative="false" />\n'
+		'\t</castle>\n'
+	)
+	result, removed = build_items.without_late_crops(text, allowed={5073, 5016, 5103, 1864, 1878, 6545, 6559, 4044, 4042})
+	assert removed == [15327]
+	assert 'seedId="5016"' in result and 'seedId="15327"' not in result

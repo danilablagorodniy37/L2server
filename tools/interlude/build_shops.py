@@ -23,7 +23,7 @@ _ENTRY_ID = re.compile(r'<(?:ingredient|production)\b[^>]*\bid="(-?\d+)"')
 
 def allowed_ids():
 	items = ds.h5_items()
-	return ds.acis_ids("items") | kamael.item_ids(items)
+	return ds.interlude_item_ids() | kamael.item_ids(items)
 
 
 def filter_buylist(path, allowed):

@@ -66,7 +66,7 @@ def skill_levels():
 
 @cache
 def acis_items():
-	return ds.acis_ids("items")
+	return ds.interlude_item_ids()
 
 
 @cache
@@ -519,6 +519,21 @@ def drops_interlude_items():
 	return late
 
 
+def manor_interlude_items():
+	"""Castle manors sell seeds and buy crops of Interlude items only (build_items.py)."""
+	import build_items
+
+	allowed = allowed_items()
+	problems = defaultdict(list)
+	for castle in ET.parse(build_items.SEEDS).getroot().findall("castle"):
+		for crop in castle.findall("crop"):
+			for attr in ("id", "seedId", "mature_Id", "reward1", "reward2"):
+				item_id = int(crop.get(attr))
+				if item_id not in allowed:
+					problems[_item_name(item_id)].append(f"castle {castle.get('id')} {attr}")
+	return problems
+
+
 def quest_rewards():
 	"""Loaded quests hand out only Interlude or Kamael items."""
 	quests = ds.GAME / "script" / "com" / "l2jserver" / "datapack" / "quests"
@@ -880,7 +895,7 @@ DATAPACK_CHECKS = {f.__name__: f for f in (
 	item_references, npc_references, boss_positions, skill_references,
 	html_multisell_links, html_buylist_links, html_teleport_links, html_quest_buttons, script_shop_calls, quest_dialog_links, quest_npcs, quest_kill_targets,
 	spawn_zones, leader_minions, loader_classes, xml_schemas,
-	shops_interlude_items, drops_interlude_items, recipes_interlude_items, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_enchant_costs, interlude_residence_skills, interlude_config,
+	shops_interlude_items, drops_interlude_items, recipes_interlude_items, manor_interlude_items, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_enchant_costs, interlude_residence_skills, interlude_config,
 	interlude_loaders, starting_equipment, phantom_gear, phantom_phrases, phantom_config,
 )}
 DATABASE_CHECKS = {"database_tables": database_tables}

@@ -162,3 +162,17 @@ def test_build_residence_skills_keeps_fortresses_and_drops_empty_skills():
 	assert (entries, skills) == (2, 1)
 	assert "<residenceId>106</residenceId>" in result and "<residenceId>1</residenceId>" not in result
 	assert "skillId=\"848\"" not in result
+
+
+def test_manor_interlude_items_reports_a_coba_seed(tmp_path, monkeypatch):
+	"""H5 put the level 79-82 Coba seeds into the castle manors."""
+	import build_items
+	seeds = tmp_path / "seeds.xml"
+	seeds.write_text(
+		'<?xml version="1.0" encoding="UTF-8"?><list><castle id="1">'
+		'<crop id="5073" seedId="5016" mature_Id="5103" reward1="1864" reward2="1878" />'
+		'<crop id="6545" seedId="15327" mature_Id="6559" reward1="4044" reward2="4042" />'
+		'</castle></list>', encoding="utf-8")
+	monkeypatch.setattr(build_items, "SEEDS", seeds)
+	problems = checks.manor_interlude_items()
+	assert {key.split()[0] for key in problems} == {"15327"}, problems
