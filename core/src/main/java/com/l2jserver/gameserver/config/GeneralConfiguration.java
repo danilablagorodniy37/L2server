@@ -262,6 +262,9 @@ public interface GeneralConfiguration extends Mutable, Reloadable {
 	@Key("PreciseDropCalculation")
 	boolean preciseDropCalculation();
 	
+	@Key("PreciseDropMultipliesStackableOnly")
+	boolean preciseDropMultipliesStackableOnly();
+
 	@Key("PreciseDropMultipleGroupRolls")
 	boolean preciseDropMultipleGroupRolls();
 	

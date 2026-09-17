@@ -248,3 +248,36 @@ def test_phantom_hunting_reports_a_level_without_a_ground(tmp_path, monkeypatch)
 	problems = checks.phantom_hunting()
 	assert "Nowhere" in problems and "Cruma Tower" in problems
 	assert [key for key in problems if key.startswith("level ")], problems
+
+
+def test_phantom_trade_reports_an_item_the_core_refuses(tmp_path, monkeypatch):
+	"""A quest item or a non-tradable one makes the store stay empty and the log fill with warnings."""
+	import build_phantom_trade as trade
+	out = tmp_path / "trade.txt"
+	out.write_text("# <item id> <price> <name>\n79 100 Sword of Damascus\n5011 100 Star of Destiny\n", encoding="utf-8")
+	monkeypatch.setattr(trade, "OUT", out)
+	problems = checks.phantom_trade()
+	assert [key for key in problems if key.startswith("5011 ")], problems
+	assert not [key for key in problems if key.startswith("79 ")], problems
+
+
+def test_server_rates_reports_multiplied_amounts(tmp_path, monkeypatch):
+	"""Multiplying the amount instead of the chance is what makes a monster drop fifteen swords."""
+	rates = {key: str(checks.RATE) for key in (
+		"RateXp", "RateSp", "RatePartyXp", "RatePartySp", "RateDropManor", "PetXpRate", "SinEaterXpRate",
+		"DeathDropChanceMultiplier", "CorpseDropChanceMultiplier", "RaidDropChanceMultiplier",
+		"QuestDropChanceMultiplier", "RateQuestRewardXP", "RateQuestRewardSP", "RateQuestRewardAdena")}
+	rates.update({
+		"DeathDropAmountMultiplier": "44", "CorpseDropAmountMultiplier": "1", "RaidDropAmountMultiplier": "1",
+		"QuestDropAmountMultiplier": "1", "DropAmountMultiplierByItemId": f"57,{checks.RATE}",
+		"DropChanceMultiplierByItemId": "57,1", "UseQuestRewardMultipliers": "False"})
+	(tmp_path / "rates.properties").write_text(
+		"".join(f"{key} = {value}\n" for key, value in rates.items()), encoding="utf-8")
+	(tmp_path / "general.properties").write_text("PreciseDropMultipliesStackableOnly = True\n", encoding="utf-8")
+	monkeypatch.setattr(checks, "CONFIG", tmp_path)
+
+	problems = checks.server_rates()
+
+	assert "rates.properties DeathDropAmountMultiplier" in problems, problems
+	assert "rates.properties UseQuestRewardMultipliers" in problems, problems
+	assert "rates.properties RateXp" not in problems, problems

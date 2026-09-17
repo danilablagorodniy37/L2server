@@ -69,15 +69,11 @@ public interface IGroupedItemDropCalculationStrategy {
 					// Grouped item chance rates should not be modified (the whole magic was already done by normalizing thus the items' chance sum is always 100%).
 					totalChance += item2.getChance();
 					if (totalChance > random) {
-						int amountMultiply = 1;
-						if (dropItem.isPreciseCalculated() && (normalized.getChance() >= 100)) {
-							amountMultiply = (int) (normalized.getChance()) / 100;
-							if ((normalized.getChance() % 100) > (Rnd.nextDouble() * 100)) {
-								amountMultiply++;
-							}
-						}
+						final int amountMultiplier = dropItem.isPreciseCalculated()
+							? IDropCalculationStrategy.amountMultiplier(normalized.getChance(), IDropCalculationStrategy.piles(item2.getItemId()), Rnd.nextDouble() * 100)
+							: 1;
 						
-						return Collections.singletonList(new ItemHolder(item2.getItemId(), Rnd.get(item2.getMin(victim), item2.getMax(victim)) * amountMultiply));
+						return Collections.singletonList(new ItemHolder(item2.getItemId(), Rnd.get(item2.getMin(victim), item2.getMax(victim)) * amountMultiplier));
 					}
 				}
 			}

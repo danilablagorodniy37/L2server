@@ -20,6 +20,7 @@ import kamael
 
 DATA = ds.GAME / "data"
 CONFIG = ds.GAME / "config"
+RATE = 44  # what the server multiplies experience and drop chances by
 MYSQL = r"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe"
 TELEPORT_ROW = r"^\('(?:[^'\\]|\\.)*', *(\d+),"
 BOSS_ROW = r"^\((\d+),"
@@ -780,6 +781,33 @@ def interlude_config():
 	return problems
 
 
+def server_rates():
+	"""The server runs at x44, and the rates multiply chances, not the size of a single drop (rates.properties)."""
+	problems = defaultdict(list)
+	rates = properties("rates.properties")
+	for key in ("RateXp", "RateSp", "RatePartyXp", "RatePartySp", "RateDropManor", "PetXpRate", "SinEaterXpRate",
+		"DeathDropChanceMultiplier", "CorpseDropChanceMultiplier", "RaidDropChanceMultiplier",
+		"QuestDropChanceMultiplier", "RateQuestRewardXP", "RateQuestRewardSP", "RateQuestRewardAdena"):
+		if rates.get(key) != str(RATE):
+			problems[f"rates.properties {key}"].append(f"is {rates.get(key, '<missing>')}, expected {RATE}")
+	# A monster dropping fifteen swords comes from multiplying the amount: the amounts stay as Interlude wrote them.
+	for key in ("DeathDropAmountMultiplier", "CorpseDropAmountMultiplier", "RaidDropAmountMultiplier",
+		"QuestDropAmountMultiplier"):
+		if rates.get(key) != "1":
+			problems[f"rates.properties {key}"].append(f"is {rates.get(key, '<missing>')}, the amount of a drop is not multiplied")
+	# adena is the one item that comes in a bigger pile instead of dropping more often
+	if rates.get("DropAmountMultiplierByItemId") != f"57,{RATE}":
+		problems["rates.properties DropAmountMultiplierByItemId"].append(f"expected 57,{RATE} (adena)")
+	if rates.get("DropChanceMultiplierByItemId") != "57,1":
+		problems["rates.properties DropChanceMultiplierByItemId"].append("expected 57,1 (adena drops as often as in Interlude)")
+	# with False the quest multiplier also applies to a rewarded weapon, and the player gets 44 of them
+	if rates.get("UseQuestRewardMultipliers", "").lower() != "true":
+		problems["rates.properties UseQuestRewardMultipliers"].append("must be True, or quest reward gear is multiplied too")
+	if properties("general.properties").get("PreciseDropMultipliesStackableOnly", "").lower() != "true":
+		problems["general.properties PreciseDropMultipliesStackableOnly"].append("must be True, or a chance over 100% drops several swords")
+	return problems
+
+
 def interlude_loaders():
 	"""Quests and AI scripts of later chronicles stay out of QuestLoader and AILoader."""
 	problems = defaultdict(list)
@@ -861,6 +889,28 @@ def phantom_hunting():
 	for level in range(20, 81):
 		if not [g for g in grounds if (g[0] - 2) <= level <= (g[1] + 5)]:
 			problems[f"level {level}"].append("no hunting ground")
+	return problems
+
+
+def phantom_trade():
+	"""The bot shops sell Interlude items a player may actually put in a store (build_phantom_trade.py)."""
+	import build_phantom_trade as trade
+
+	allowed = allowed_items()
+	sellable = trade.prices()
+	problems = defaultdict(list)
+	for line in trade.OUT.read_text(encoding="utf-8").splitlines():
+		line = line.strip()
+		if not line or line.startswith("#"):
+			continue
+		item_id, price, _name = line.split(None, 2)
+		item_id, price = int(item_id), int(price)
+		if item_id not in allowed:
+			problems[_item_name(item_id)].append("not an Interlude or Kamael item")
+		if item_id not in sellable:
+			problems[_item_name(item_id)].append("the core refuses it in a private store")
+		if price <= 0:
+			problems[_item_name(item_id)].append("no price")
 	return problems
 
 
@@ -997,8 +1047,8 @@ DATAPACK_CHECKS = {f.__name__: f for f in (
 	item_references, npc_references, boss_positions, skill_references,
 	html_multisell_links, html_buylist_links, html_teleport_links, html_quest_buttons, script_shop_calls, quest_dialog_links, quest_npcs, quest_kill_targets,
 	spawn_zones, leader_minions, loader_classes, xml_schemas,
-	shops_interlude_items, drops_interlude_items, recipes_interlude_items, manor_interlude_items, teleports_interlude, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_enchant_costs, interlude_residence_skills, interlude_npc_stats, kamael_isle, interlude_config,
-	interlude_loaders, starting_equipment, phantom_gear, phantom_hunting, phantom_phrases, phantom_config,
+	shops_interlude_items, drops_interlude_items, recipes_interlude_items, manor_interlude_items, teleports_interlude, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_enchant_costs, interlude_residence_skills, interlude_npc_stats, kamael_isle, interlude_config, server_rates,
+	interlude_loaders, starting_equipment, phantom_gear, phantom_hunting, phantom_trade, phantom_phrases, phantom_config,
 )}
 DATABASE_CHECKS = {"database_tables": database_tables}
 
