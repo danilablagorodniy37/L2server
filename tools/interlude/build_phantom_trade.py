@@ -25,13 +25,14 @@ GRADES = ("NONE", "D", "C", "B", "A", "S")
 
 
 def prices():
-	"""item id -> price of the item template."""
+	"""item id -> price, for items a player may put in a store (the core refuses the others)."""
 	out = {}
 	for f in ds._xml_files(ds.GAME / "data" / "stats" / "items"):
 		for item in ET.parse(f).getroot().findall("item"):
-			for s in item.findall("set"):
-				if s.get("name") == "price":
-					out[int(item.get("id"))] = int(s.get("val"))
+			sets = {s.get("name"): s.get("val") for s in item.findall("set")}
+			tradable = sets.get("is_tradable", "true") == "true" and sets.get("is_sellable", "true") == "true"
+			if tradable and (sets.get("is_questitem") != "true") and sets.get("price"):
+				out[int(item.get("id"))] = int(sets["price"])
 	return out
 
 

@@ -1,48 +1,44 @@
 # What the bots sell in Giran, built by tools/interlude/build_phantom_trade.py.
 # <item id> <price> <name>
-47 70320 Helmet
-58 169320 Mithril Breastplate
-68 225600 Falchion
+1 708 Short Sword
+3 11520 Broadsword
+22 2244 Leather Shirt
+30 4584 Hard Leather Pants
+45 28920 Bone Helmet
 73 2651640 Shamshir
-81 24889200 Dragon Slayer
 86 594600 Tomahawk
-113 744 Mystic's Earring
 117 372720 Ring of Mana
-122 49920 Handmade Sword
 148 8016600 Sword of Valhalla
-152 7440 Heavy Chisel
+151 24889200 Sword of Miracles
 171 12109680 Deadman's Glory
 172 1288800 Heavy Bone Club
+176 126000 Apprentice's Staff
 189 1664400 Staff of Life
 240 892200 Conjurer's Knife
 249 13 Elven Mystic Fist
+257 225600 Viper Fang
 275 594600 Long Bow
 291 378000 Trident
 306 42360000 Dragon Claw Axe
-310 126000 Relic of the Saints
 321 1406280 Demon Fangs
+350 169320 Dwarven Scale Mail
 357 1915200 Zubei's Breastplate
 386 2671200 Gaiters of Valor
-411 10856400 Dragon Leather Armor
-415 87840 Mithril Banded Gaiters
-429 7344 Leather Tunic
-431 55308 Robe of Magic
-465 36120 Cursed Stockings
-470 129240 Mithril Stockings
+433 92280 Elven Tunic
+469 87840 Stockings of Knowledge
 472 424800 Demon's Stockings
 477 1392360 Stockings of Solar Eclipse
 505 1113960 Wolf Helmet
-510 2438400 Red Flame Helmet
+516 2438400 Dark Vagian Helm
 533 495120 Hood of Solar Eclipse
 544 718320 Hood of Blessing
 551 495120 Helmet of Pledge
-555 1626000 Dragon Boots
+583 1626000 Majestic Boots
 600 478920 Sealed Avadon Boots
 601 742560 Sealed Doom Boots
-614 25080 Knight's Cloak
 618 193200 Cloak of Self Protection
-625 11880 Bone Shield
-628 49200 Hoplon
+629 72360 Kite Shield
+634 2338800 Dragon Shield
 658 779760 Shield of Black Ore
 671 502800 Blood Shield
 677 12480 One-Piece Swimsuit
@@ -51,32 +47,30 @@
 685 1572000 Crystal Swimsuit Set
 738 17040 Sword of Solidarity
 749 42960 0
-849 59280 Tiger's Eye Earring
-868 1797600 Earring of Phantom
+872 1797600 Cerberus Earring
+878 9840 Blue Coral Ring
+880 39600 Black Pearl Ring
+881 57480 Elven Ring
 886 260640 Ring of Seal
-889 2616000 Tateossian Ring
 902 804000 Phoenix Ring
 903 1198800 Cerberus Ring
-945 3168 Skeleton Buckler
+913 114960 Elven Necklace
+920 5233200 Tateossian Necklace
 998 33 Book of Aklantoth - Part 1
-1296 79920 Gladius
-1320 27480 Crafted Leather Gloves
-1329 1315200 Shield of Victory
+1102 34080 Tunic of Magic
+1119 564 Short Leather Gloves
+1124 68880 Boots of Power
+1333 49920 Brandish
 1472 490800 Dreadbane
-2368 127 Training Gloves
-2374 23400 Red Sunset Dagger
-2382 6945600 Tallum Plate Armor
-2411 103320 Brigandine Helmet
-2420 3340800 Dragon Headgear
+2372 23400 Dagger of Adept
+2412 135360 Plate Helmet
+2421 3340800 The Hood
 2433 116520 Boots of Seal
 2435 226560 Demon's Boots
 2437 330120 Drake Leather Boots
-2446 46920 Reinforced Leather Gloves
-2451 90240 Sage's Worn Gloves
+2444 2227200 The Boots
 2455 137280 Plated Leather Gloves
 2458 148680 Rind Leather Gloves
-2473 2227200 The Gloves
-2484 1626000 Cerberus Gloves
 2488 1068000 Phoenix Gloves
 2497 346560 Full Plate Shield
 2518 981360 Saber*Spinebone Sword
@@ -85,62 +79,68 @@
 2589 7227120 Katana*Tsurugi
 2605 8813280 Raid Sword*Samurai Long Sword
 2615 8016600 Sword of Limit*Tsurugi
-3907 270000 Fang of Cerberus
+3892 17040 Wolf's Hard Leather Armor
 3916 223200 Hatchling's Steel Coat
-3919 120000 Serpent Fang
-3925 960000 Antiplague
+3920 186000 Viperbite
+3923 456000 Torturer
+4234 1879200 Hatchling's Level 65 Armor
 4696 3965160 Caliburs - Guidance
 4708 5656200 Samurai Longsword - Focus
 4726 2115480 Big Hammer - Health
 4749 8016600 Heavy War Axe - Rsk. Focus
 4755 12109680 Art of Battle Axe - Haste
-4783 21960000 Bloody Orchid - Evasion
+4784 21960000 Bloody Orchid - Focus
 4798 2651640 Knuckle Duster - Rsk. Evasion
 4865 2115480 Heavy Doom Hammer - Mental Shield
 4883 3965160 Sage's Staff - Magic Poison
 4899 8016600 Sprite's Staff - Magic Hold
 4902 12109680 Staff of Evil Spirits - Magic Poison
-5304 3205200 Sealed Tallum Tunic
+5178 2040000 Assault Alicorn
+5217 36650 Wolf's Level 75 Weapon
+5293 6945600 Sealed Tallum Plate Armor
+5313 1626000 Sealed Gauntlets of Nightmare
 5590 1 Squeaking Shoes
-5608 16917600 Carnage Bow - Light
-5613 24889200 Soul Bow - Critical Poison
-5640 16917600 Elemental Sword - Empower
-5648 24889200 Dark Legion's Edge - Health
+5609 16917600 Carnage Bow - Critical Bleed
+5617 24889200 Soul Separator - Guidance
+5649 24889200 Dark Legion's Edge - Rsk. Focus
 5739 742560 Doom Boots - Light Armor
 5765 1068000 Dark Crystal Gloves - Heavy Armor
-5772 1626000 Gauntlets of Nightmare - Light Armor
-6366 51311280 Imperial Staff
-6372 51311280 Heaven's Divider
+5773 1626000 Gauntlets of Nightmare - Robe
+6367 51311280 Angel Slayer
 6377 4026000 Imperial Crusader Shield
 6380 3834000 Draconic Leather Gloves
-6386 5751600 Major Arcana Circlet
+6382 5751600 Draconic Leather Helmet
+6385 3834000 Major Arcana Boots
 6531 480000 Pelican Rod
 6532 1440000 KingFisher Rod
+6533 4800000 Cygnus Pole
 6534 12000000 Triton Pole
-6583 51311280 Forgotten Blade - Focus
-6588 51311280 Imperial Staff - MP Regeneration
-6596 51311280 Dragon Hunter Axe - HP Regeneration
-6601 51311280 Saint Spear - Haste
-6606 51311280 Heavens Divider - Health
-6657 5928000 Necklace of Valakas
-6676 3834000 Sealed Imperial Crusader Gauntlet
-6685 3834000 Sealed Major Arcana Glove
-6726 5233200 Sealed Tateossian Necklace
-6843 600000 Cat Ears
-7575 51311280 Draconic Bow
+6579 51311280 Arcana Mace
+6584 51311280 Basalt Battlehammer - HP Drain
+6589 51311280 Imperial Staff - Magic Hold
+6597 51311280 Dragon Hunter Axe - Health
+6602 51311280 Demon Splinter - Focus
+6607 51311280 Heavens Divider - Focus
+6681 3834000 Sealed Draconic Leather Glove
+6686 3834000 Sealed Major Arcana Boots
+6725 2616000 Sealed Tateossian Ring
+7576 51311280 Draconic Bow - Cheap Shot
+7682 600000 Maiden's Hairpin
+7852 46920 Clan Oath Gauntlets - Heavy Armor
 7865 1068000 Apella Leather Gloves - Light Armor
+7884 16917600 Infernal Master
 7897 5656200 Dwarven Hammer
 8123 3965160 Karik Horn - Focus
 8144 12109680 Kaim Vanul's Bones - Mana Up
-8189 600000 Fairy Antennae
-8685 32362080 Sobekk's Hurricane
-8763 300000 Elrokian Trap
-8801 32362080 Naga Storm - Critical Damage
-8818 32362080 Daimon Crystal - Mana Up
+8191 4140000 Necklace of Frintezza
+8686 32362080 Themis' Tongue
+8802 32362080 Naga Storm - Back Blow
+8819 32362080 Daimon Crystal - Acumen
+8913 600000 Butterfly Hairpin
 9255 2651640 Chevalier Rapier - Critical Poison
 9304 8016600 Military Fleuret
-9332 16917600 Divine Pain
-9346 24889200 Undertaker - Critical Bleed
-9365 51311280 Laevateinn - Haste
-9370 51311280 Gram - Health
+9333 16917600 Divine Pain - Haste
+9347 24889200 Undertaker - Critical Drain
+9366 51311280 Laevateinn - Health
+9371 51311280 Gram - Focus
 10003 594600 Fleuret
