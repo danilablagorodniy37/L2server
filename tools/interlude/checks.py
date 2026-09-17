@@ -724,6 +724,35 @@ def interlude_npc_stats():
 	return problems
 
 
+def kamael_isle():
+	"""The Isle of Souls has its services and a way to the mainland: village masters, shops, warehouse and gatekeepers whose dialogs open the teleports."""
+	spawned = world_spawned()
+	problems = defaultdict(list)
+	# the services a Kamael needs on the island
+	services = {
+		32139: "village master", 32140: "village master", 32146: "village master",
+		32163: "gatekeeper Ragara", 32189: "gatekeeper Largo of the harbour",
+		32164: "grocer", 32170: "warehouse keeper", 32135: "newbie guide", 32138: "Kekropus",
+	}
+	for npc_id, what in services.items():
+		if npc_id not in spawned:
+			problems[f"{npc_id} {what}"].append("not spawned on the isle")
+	# Ragara offers the mainland, the mainland gatekeepers offer the isle
+	rows = {int(m.group(2)) for line in (ds.GAME / "sql" / "teleport.sql").read_text(encoding="utf-8").split("\n")
+		if (m := re.match(r"^\('((?:[^'\\]|\\.)*)',(\d+),", line))}
+	linked = defaultdict(set)
+	for rel, text in html_texts():
+		for tid in re.findall(r"npc_%objectId%_goto (\d+)", text):
+			linked[int(tid)].add(rel)
+	# Kamael Village -> the seven towns, and the towns -> Kamael Village
+	for tid in list(range(1122, 1128)) + [1139] + list(range(12050, 12057)):
+		if tid not in rows:
+			problems[f"teleport {tid}"].append("missing from teleport.sql")
+		elif not linked.get(tid):
+			problems[f"teleport {tid}"].append("no dialog opens it")
+	return problems
+
+
 def interlude_config():
 	"""Server switches keep Interlude values: level cap, disabled later systems, Olympiad rewards."""
 	expected = {
@@ -937,7 +966,7 @@ DATAPACK_CHECKS = {f.__name__: f for f in (
 	item_references, npc_references, boss_positions, skill_references,
 	html_multisell_links, html_buylist_links, html_teleport_links, html_quest_buttons, script_shop_calls, quest_dialog_links, quest_npcs, quest_kill_targets,
 	spawn_zones, leader_minions, loader_classes, xml_schemas,
-	shops_interlude_items, drops_interlude_items, recipes_interlude_items, manor_interlude_items, teleports_interlude, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_enchant_costs, interlude_residence_skills, interlude_npc_stats, interlude_config,
+	shops_interlude_items, drops_interlude_items, recipes_interlude_items, manor_interlude_items, teleports_interlude, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_enchant_costs, interlude_residence_skills, interlude_npc_stats, kamael_isle, interlude_config,
 	interlude_loaders, starting_equipment, phantom_gear, phantom_phrases, phantom_config,
 )}
 DATABASE_CHECKS = {"database_tables": database_tables}

@@ -222,3 +222,14 @@ def test_interlude_npc_stats_reports_h5_values(tmp_path, monkeypatch):
 		'\t</npc>\n</list>\n', encoding="utf-8")
 	monkeypatch.setattr(build_npc_stats, "NPCS", tmp_path)
 	assert set(checks.interlude_npc_stats()) == {"20001"}
+
+
+def test_kamael_isle_reports_a_gatekeeper_that_is_gone(monkeypatch):
+	"""Without Ragara a Kamael cannot leave the Isle of Souls."""
+	ragara = 32163
+	assert ragara in checks.world_spawned()
+	# keep everything else, take Ragara away
+	world = checks.world_spawned() - {ragara}
+	monkeypatch.setattr(checks, "world_spawned", lambda: world)
+	problems = checks.kamael_isle()
+	assert [key for key in problems if key.startswith(f"{ragara} ")], problems
