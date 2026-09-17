@@ -40,7 +40,7 @@ INSERT INTO `teleport` VALUES
 ('Dwarven Village -> Town of Gludio',16,-12787,122779,-3112,32000,0,57),
 ('Dwarven Village -> Eastern Mining Zone (Northeastern Shore)',17,169008,-208272,-3504,2400,0,57),
 ('Dwarven Village -> Abandoned Coal Mines',418,139714,-177456,-1536,690,0,57),
-('Dwarven Village -> Mithril Mines Western Entrance',419,171946,-173352,3440,11000,0,57),
+('Dwarven Village -> Mithril Mines Western Entrance',419,171946,-173352,3440,2200,0,57),
 ('Dion -> Town of Gludio',18,-12787,122779,-3112,3400,0,57),
 ('Dion -> Town of Giran',19,83551,147945,-3400,6800,0,57),
 ('Cruma Tower 1st floor -> Cruma Tower Entrance',22,17253,114232,-3440,0,0,57),
@@ -78,8 +78,8 @@ INSERT INTO `teleport` VALUES
 ('Cruma Tower 3rd floor -> Cruma Tower 2nd Floor',58,17731,119465,-9067,0,0,57),
 ('Heine -> The Town of Giran',59,83551,147945,-3400,7600,0,57),
 ('Heine -> Giran Harbor',60,47938,186864,-3480,7100,0,57),
-('Giran Harbor -> Giran Town',63,83551,147942,-3400,6300,0,57),
-('Giran Harbor -> Heine',107,111455,219400,-3544,8500,0,57),
+('Giran Harbor -> Giran Town',63,83551,147942,-3400,5200,0,57),
+('Giran Harbor -> Heine',107,111455,219400,-3544,7100,0,57),
 ('Heine -> The Town of Dion',65,15472,142880,-2688,12000,0,57),
 ('Heine -> Entrance to Alligator Islands',68,115583,192261,-3488,2100,0,57),
 ('Giran -> Heine',70,111455,219400,-3544,7600,0,57),
@@ -97,7 +97,7 @@ INSERT INTO `teleport` VALUES
 ('Orc Village -> Immortal Plateau,Southern Region',94,-4190,-80040,-2696,2000,0,57),
 ('Orc Village -> Frozen Waterfall',96,8652,-139941,-1144,1600,0,57),
 ('Orc Village -> Cave of Trials',471,9340,-112509,-2536,1500,0,57),
-('Oren -> Plains of Lizardmen',97,87252,85514,-3056,3900,0,57),
+('Oren -> Plains of Lizardmen',97,87252,85514,-3056,1900,0,57),
 ('Oren -> Sea of Spores',98,64328,26803,-3768,2500,0,57),
 ('Oren -> Outlaw Forest',1077,91539,-12204,-2440,5200,0,57),
 ('Hunters -> Northern Pathway of Enchanted Valley',99,104426,33746,-3800,3600,0,57),
@@ -291,15 +291,15 @@ INSERT INTO `teleport` VALUES
 ('Goddard -> Oren',1094,82971,53207,-1488,37000,0,57),
 ('Goddard -> Hot Springs',1095,144880,-113468,-2560,9300,0,57),
 ('Goddard -> Wall of Argos',1096,165054,-47861,-3560,2200,0,57),
-('Goddard -> Monastery of silence',1097,106414,-87799,-2920,10000,0,57),
+('Goddard -> Monastery of silence',1097,124161,-74828,-2904,10000,0,57),
 ('Rune -> Dion',1098,15472,142880,-2688,57000,0,57),
 ('Rune Township -> The Town of Gludio',1099,-12787,122779,-3114,53000,0,57), -- retail
 ('Rune -> Heine',1100,111455,219400,-3544,82000,0,57),
 ('Rune -> Schuttgart',1101,87126,-143520,-1288,10000,0,57),
 ('Rune -> Oren',1102,82971,53207,-1488,10000,0,57),
-('Rune -> Wild Beast Pastures',1103,53516,-82831,-2700,7200,0,57),
+('Rune -> Wild Beast Pastures',1103,43805,-88010,-2752,4800,0,57),
 ('Rune -> Valley of Saints',1104,65307,-71445,-3688,3800,0,57),
-('Rune -> Monastery of Silence',1105,106414,-87799,-2920,14000,0,57),
+('Rune -> Monastery of Silence',1105,124161,-74828,-2904,14000,0,57),
 ('Schuttgart -> Rune',1106,43835,-47749,-792,10000,0,57),
 ('Schuttgart -> Goddard',1107,148024,-55281,-2728,10000,0,57),
 ('Schuttgart -> Aden',1108,146783,25808,-2008,53000,0,57),
@@ -310,11 +310,11 @@ INSERT INTO `teleport` VALUES
 ('Schuttgart -> Gludio',1113,-12787,122779,-3112,85000,0,57),
 ('Schuttgart -> Orc Village',1114,-45158,-112583,-240,13000,0,57),
 ('Schuttgart -> Dwarven Village',1115,115120,-178224,-880,4400,0,57),
-('Schuttgart -> Den of Evil',1116,68693,-110438,-1904,7500,0,57),
+('Schuttgart -> Den of Evil',1116,68693,-110438,-1904,3000,0,57),
 ('Schuttgart -> Plunderous Plains',1117,111965,-154172,-1528,1600,0,57),
 ('Schuttgart -> Icemans Hut',1118,113903,-108752,-856,3500,0,57),
-('Schuttgart -> Crypt of Disgrace',1119,47692,-115745,-3744,9600,0,57),
-('Schuttgart -> Pavel Ruins',1120,91280,-117152,-3928,5300,0,57),
+('Schuttgart -> Crypt of Disgrace',1119,47692,-115745,-3744,1900,0,57),
+('Schuttgart -> Pavel Ruins',1120,91280,-117152,-3928,2100,0,57),
 ('Kamael Vilage -> The Town of Gludio',1139,-12672,122776,-3116,12000,0,57),
 ('Kamael Vilage -> Town of Aden',1122,146331,25762,-2018,26000,0,57),
 ('Kamael Vilage -> Talking Island Village',1123,-84318,244579,-3730,20000,0,57),
@@ -450,7 +450,7 @@ INSERT INTO `teleport` VALUES
 ('Hardin\'s Private Academy - 1000 adena',9046,105918,109759,-3170,1000,1,57), -- retail
 ('The Center of the Forest of the Dead - 1000 adena',9050,54425,-41692,-3072,1000,1,57), -- retail
 ('The Center of the Valley of Saints - 1000 adena',9051,84092,-80084,-3504,1000,1,57), -- retail
-('Cursed Village - 1000 adena',9052,62084,-40935,-2802,1000,1,57), -- retail
+('Cursed Village - 1000 adena',9052,57670,-41672,-3154,1000,1,57), -- retail
 ('Monastery of Silence - 1000 adena',9054,106414,-87799,-2949,1000,1,57), -- retail
 ('Varka Silenos Village - 1000 adena',9060,107929,-52248,-2408,1000,1,57), -- retail
 ('Ketra Orc Village - 1000 adena',9061,149817,-80053,-5576,1000,1,57), -- retail
@@ -458,29 +458,29 @@ INSERT INTO `teleport` VALUES
 ('Garden of Wild Beasts - 1000 adena',9063,132997,-60608,-2960,1000,1,57), -- retail
 ('The Center of the Hot Springs - 1000 adena',9064,144625,-101291,-3384,1000,1,57), -- retail
 ('The Center of the Wall of Argos - 1000 adena',9065,183140,-53307,-1896,1000,1,57), -- retail
-('Shrine of Loyalty - 1000 adena',9066,191257,-59388,-2898,1000,1,57), -- retail
+('Shrine of Loyalty - 1000 adena',9066,187987,-59566,-2826,1000,1,57), -- retail
 ('Four Sepulchers - 1000 adena',9067,178127,-84435,-7215,1000,1,57), -- retail
 ('Imperial Tomb - 1000 adena',9068,186699,-75915,-2826,1000,1,57), -- retail
 ('Forge of the Gods - Top Level - 1000 adena',9070,173436,-112725,-3680,1000,1,57), -- retail
 ('Forge of the Gods - Lower Level - 1000 adena',9071,180260,-111913,-5851,1000,1,57), -- retail
-('Execution Grounds - 1000 adena',9080,50568,152408,-2656,1000,1,57), -- retail
-('Floran Agricultural Area - 1000 adena',9081,26810,172787,-3376,1000,1,57), -- retail
+('Execution Grounds - 1000 adena',9080,46165,150008,-3208,1000,1,57), -- retail
+('Floran Agricultural Area - 1000 adena',9081,15227,161866,-3608,1000,1,57), -- retail
 ('The Center of the Cruma Marshlands - 1000 adena',9082,5941,125455,-3400,1000,1,57), -- retail
 ('Frost Lake - 1000 adena',9090,107577,-122392,-3632,1000,1,57), -- retail
 ('Grave Robber Hideout - 1000 adena',9091,44221,-114232,-2784,1000,1,57), -- retail
 ('Sky Wagon Relic - 1000 adena',9092,121618,-141554,-1496,1000,1,57), -- retail
 ('Evil Hunting Grounds - 1000 adena',9100,-6989,109503,-3040,1000,1,57), -- retail
-('The Center of the Neutral Zone - 1000 adena',9101,-18415,85624,-3680,1000,1,57), -- retail
-('The Center of the Dark Forest - 1000 adena',9102,-14129,27094,-3680,1000,1,57), -- retail
+('The Center of the Neutral Zone - 1000 adena',9101,-10612,75881,-3592,1000,1,57), -- retail
+('The Center of the Dark Forest - 1000 adena',9102,-22224,14168,-3232,1000,1,57), -- retail
 ('Center of the School of Dark Arts - 1000 adena',9103,-49185,49441,-5912,1000,1,57), -- retail
 ('Center of the Elven Ruins - 1000 adena',9104,49315,248452,-5960,1000,1,57), -- retail
-('Immortal Plateau, Northern Region - 1000 adena',9105,-25309,-131569,-680,1000,1,57), -- retail
+('Immortal Plateau, Northern Region - 1000 adena',9105,-8804,-114748,-3030,1000,1,57), -- retail
 ('The Center of the Mithril Mines - 1000 adena',9106,175499,-181586,-904,1000,1,57), -- retail
 ('The Center of the Abandoned Coal Mines - 1000 adena',9107,144706,-173223,-1520,1000,1,57), -- retail
 ('Forest of Evil - 1000 adena',9110,93218,16969,-3904,1000,1,57), -- retail
 ('Timak Outpost - 1000 adena',9111,67097,68815,-3648,1000,1,57), -- retail
 ('Altar of Rites - 1000 adena',9112,-44566,77508,-3736,1000,1,57), -- retail
-('Field of Silence (Western Section) - 1000 adena',9120,75387,195263,-3000,1000,1,57), -- retail
+('Field of Silence (Western Section) - 1000 adena',9120,69748,186111,-2872,1000,1,57), -- retail
 ('Field of Whispers (Eastern Section) - 1000 adena',9121,97786,209303,-3040,1000,1,57), -- retail
 ('The Center of Alligator Island - 1000 adena',9122,113708,178387,-3232,1000,1,57), -- retail
 ('Inside the Garden of Eva - 1000 adena',9123,82693,242220,-6712,1000,1,57), -- retail
@@ -489,60 +489,60 @@ INSERT INTO `teleport` VALUES
 ('Garden of Eva - 4th Level - 1000 adena',9126,78721,253309,-9840,1000,1,57), -- retail
 ('Garden of Eva - 5th Level - 1000 adena',9127,82951,252354,-10592,1000,1,57), -- retail
 -- Olympiad Token
-('Gludin Arena - 1 Olympiad Token',9900,-87328,142266,-3640,1,1,13722), -- retail
-('Coliseum - 1 Olympiad Token',9901,146440,46723,-3400,1,1,13722), -- retail
-('Giran Arena - 1 Olympiad Token',9902,73579,142709,-3768,1,1,13722), -- retail
-('Center of the Forgotten Temple - 1 Olympiad Token',9910,-54026,179504,-4650,1,1,13722), -- retail
-('Wastelands, Western Region  - 1 Olympiad Token',9911,-47506,179572,-3669,1,1,13722), -- retail
-('Plains of Glory - 1 Olympiad Token',9921,135580,19467,-3424,1,1,13722), -- retail
-('War-Torn Plains - 1 Olympiad Token',9922,156898,11217,-4032,1,1,13722), -- retail
-('Tower of Insolence, 3rd Floor - 1 Olympiad Token',9923,110848,16154,-2120,1,1,13722), -- retail
-('Tower of Insolence, 5th Floor - 1 Olympiad Token',9924,118404,15988,832,1,1,13722), -- retail
-('Tower of Insolence, 7th Floor - 1 Olympiad Token',9925,115064,12181,2960,1,1,13722), -- retail
-('Tower of Insolence. 10th Floor - 1 Olympiad Token',9926,118525,16455,5984,1,1,13722), -- retail
-('Tower of Insolence. 13th Floor - 1 Olympiad Token',9927,115384,16820,9000,1,1,13722), -- retail
-('Hunters Valley - 1 Olympiad Token',9928,114306,86573,-3112,1,1,13722), -- retail
-('Anghel Waterfall - 1 Olympiad Token',9929,166182,91560,-3168,1,1,13722), -- retail
-('The Center of the Forest of Mirrors - 1 Olympiad Token',9930,166080,75574,-2992,1,1,13722), -- retail
-('The Center of the Enchanted Valley - 1 Olympiad Token',9931,114674,44150,-3376,1,1,13722), -- retail
-('Hunters Valley - 1 Olympiad Token',9932,114306,86573,-3112,1,1,13722), -- retail
-('Gorgon Flower Garden - 1 Olympiad Token',9940,113553,134813,-3540,1,1,13722), -- retail
-('Hardin\'s Private Academy - 1 Olympiad Token',9946,105918,109759,-3170,1,1,13722), -- retail
-('The Center of the Forest of the Dead - 1 Olympiad Token',9950,54425,-41692,-3072,1,1,13722), -- retail
-('The Center of the Valley of Saints - 1 Olympiad Token',9951,84092,-80084,-3504,1,1,13722), -- retail
-('Monastery of Silence - 1 Olympiad Token',9954,106414,-87799,-2949,1,1,13722), -- retail
-('Varka Silenos Village - 1000 adena',9960,107929,-52248,-2408,1,1,13722), -- retail
-('Ketra Orc Village - 1000 adena',9961,149817,-80053,-5576,1,1,13722), -- retail
-('Devil\'s Pass - 1000 adena',9962,106349,-61870,-2904,1,1,13722), -- retail
-('Garden of Wild Beasts - 1000 adena',9963,132997,-60608,-2960,1,1,13722), -- retail
-('The Center of the Hot Springs - 1000 adena',9964,144625,-101291,-3384,1,1,13722), -- retail
-('The Center of the Wall of Argos - 1000 adena',9965,183140,-53307,-1896,1,1,13722), -- retail
-('Shrine of Loyalty - 1000 adena',9966,191257,-59388,-2898,1,1,13722), -- retail
-('Four Sepulchers - 1000 adena',9967,178127,-84435,-7215,1,1,13722), -- retail
-('Imperial Tomb - 1000 adena',9968,186699,-75915,-2826,1,1,13722), -- retail
-('Forge of the Gods - Top Level - 1000 adena',9970,173436,-112725,-3680,1,1,13722), -- retail
-('Forge of the Gods - Lower Level - 1000 adena',9971,180260,-111913,-5851,1,1,13722), -- retail
-('The Center of the Cruma Marshlands - 1 Olympiad Token',9982,5941,125455,-3400,1,1,13722), -- retail
-('Frost Lake - 1 Olympiad Token',9990,107577,-122392,-3632,1,1,13722), -- retail
-('Grave Robber Hideout - 1 Olympiad Token',9991,44221,-114232,-2784,1,1,13722), -- retail
-('Sky Wagon Relic - 1 Olympiad Token',9992,121618,-141554,-1496,1,1,13722), -- retail
-('Evil Hunting Grounds - 1 Olympiad Token',10000,-6989,109503,-3040,1,1,13722), -- retail
-('The Center of the Neutral Zone - 1 Olympiad Token',10001,-18415,85624,-3680,1,1,13722), -- retail
-('Center of the School of Dark Arts - 1 Olympiad Token',10003,-49185,49441,-5912,1,1,13722), -- retail
-('Center of the Elven Ruins - 1 Olympiad Token',10004,49315,248452,-5960,1,1,13722), -- retail
-('The Center of the Mithril Mines - 1 Olympiad Token',10006,175499,-181586,-904,1,1,13722), -- retail
-('The Center of the Abandoned Coal Mines - 1 Olympiad Token',10007,144706,-173223,-1520,1,1,13722), -- retail
-('Forest of Evil - 1 Olympiad Token',10010,93218,16969,-3904,1,1,13722), -- retail
-('Timak Outpost - 1 Olympiad Token',10011,67097,68815,-3648,1,1,13722), -- retail
-('Altar of Rites - 1 Olympiad Token',10012,-44566,77508,-3736,1,1,13722), -- retail
-('Field of Silence (Western Section) - 1 Olympiad Token',10020,75387,195263,-3000,1,1,13722), -- retail
-('Field of Whispers (Eastern Section) - 1 Olympiad Token',10021,97786,209303,-3040,1,1,13722), -- retail
-('The Center of Alligator Island - 1 Olympiad Token',10022,113708,178387,-3232,1,1,13722), -- retail
-('Inside the Garden of Eva - 1 Olympiad Token',10023,82693,242220,-6712,1,1,13722), -- retail
-('Garden of Eva - 2nd Level - 1 Olympiad Token',10024,79248,247390,-8816,1,1,13722), -- retail
-('Garden of Eva - 3rd Level - 1 Olympiad Token',10025,77868,250400,-9328,1,1,13722), -- retail
-('Garden of Eva - 4th Level - 1 Olympiad Token',10026,78721,253309,-9840,1,1,13722), -- retail
-('Garden of Eva - 5th Level - 1 Olympiad Token',10027,82951,252354,-10592,1,1,13722), -- retail
+('Gludin Arena - 1 Noblesse Gate Pass',9900,-87328,142266,-3640,1,1,6651), -- retail
+('Coliseum - 1 Noblesse Gate Pass',9901,146440,46723,-3400,1,1,6651), -- retail
+('Giran Arena - 1 Noblesse Gate Pass',9902,73579,142709,-3768,1,1,6651), -- retail
+('Center of the Forgotten Temple - 1 Noblesse Gate Pass',9910,-54026,179504,-4650,1,1,6651), -- retail
+('Wastelands, Western Region  - 1 Noblesse Gate Pass',9911,-47506,179572,-3669,1,1,6651), -- retail
+('Plains of Glory - 1 Noblesse Gate Pass',9921,135580,19467,-3424,1,1,6651), -- retail
+('War-Torn Plains - 1 Noblesse Gate Pass',9922,156898,11217,-4032,1,1,6651), -- retail
+('Tower of Insolence, 3rd Floor - 1 Noblesse Gate Pass',9923,110848,16154,-2120,1,1,6651), -- retail
+('Tower of Insolence, 5th Floor - 1 Noblesse Gate Pass',9924,118404,15988,832,1,1,6651), -- retail
+('Tower of Insolence, 7th Floor - 1 Noblesse Gate Pass',9925,115064,12181,2960,1,1,6651), -- retail
+('Tower of Insolence. 10th Floor - 1 Noblesse Gate Pass',9926,118525,16455,5984,1,1,6651), -- retail
+('Tower of Insolence. 13th Floor - 1 Noblesse Gate Pass',9927,115384,16820,9000,1,1,6651), -- retail
+('Hunters Valley - 1 Noblesse Gate Pass',9928,114306,86573,-3112,1,1,6651), -- retail
+('Anghel Waterfall - 1 Noblesse Gate Pass',9929,166182,91560,-3168,1,1,6651), -- retail
+('The Center of the Forest of Mirrors - 1 Noblesse Gate Pass',9930,166080,75574,-2992,1,1,6651), -- retail
+('The Center of the Enchanted Valley - 1 Noblesse Gate Pass',9931,114674,44150,-3376,1,1,6651), -- retail
+('Hunters Valley - 1 Noblesse Gate Pass',9932,114306,86573,-3112,1,1,6651), -- retail
+('Gorgon Flower Garden - 1 Noblesse Gate Pass',9940,113553,134813,-3540,1,1,6651), -- retail
+('Hardin\'s Private Academy - 1 Noblesse Gate Pass',9946,105918,109759,-3170,1,1,6651), -- retail
+('The Center of the Forest of the Dead - 1 Noblesse Gate Pass',9950,54425,-41692,-3072,1,1,6651), -- retail
+('The Center of the Valley of Saints - 1 Noblesse Gate Pass',9951,84092,-80084,-3504,1,1,6651), -- retail
+('Monastery of Silence - 1 Noblesse Gate Pass',9954,106414,-87799,-2949,1,1,6651), -- retail
+('Varka Silenos Village - 1000 adena',9960,107929,-52248,-2408,1,1,6651), -- retail
+('Ketra Orc Village - 1000 adena',9961,149817,-80053,-5576,1,1,6651), -- retail
+('Devil\'s Pass - 1000 adena',9962,106349,-61870,-2904,1,1,6651), -- retail
+('Garden of Wild Beasts - 1000 adena',9963,132997,-60608,-2960,1,1,6651), -- retail
+('The Center of the Hot Springs - 1000 adena',9964,144625,-101291,-3384,1,1,6651), -- retail
+('The Center of the Wall of Argos - 1000 adena',9965,183140,-53307,-1896,1,1,6651), -- retail
+('Shrine of Loyalty - 1000 adena',9966,187987,-59566,-2826,1,1,6651), -- retail
+('Four Sepulchers - 1000 adena',9967,178127,-84435,-7215,1,1,6651), -- retail
+('Imperial Tomb - 1000 adena',9968,186699,-75915,-2826,1,1,6651), -- retail
+('Forge of the Gods - Top Level - 1000 adena',9970,173436,-112725,-3680,1,1,6651), -- retail
+('Forge of the Gods - Lower Level - 1000 adena',9971,180260,-111913,-5851,1,1,6651), -- retail
+('The Center of the Cruma Marshlands - 1 Noblesse Gate Pass',9982,5941,125455,-3400,1,1,6651), -- retail
+('Frost Lake - 1 Noblesse Gate Pass',9990,107577,-122392,-3632,1,1,6651), -- retail
+('Grave Robber Hideout - 1 Noblesse Gate Pass',9991,44221,-114232,-2784,1,1,6651), -- retail
+('Sky Wagon Relic - 1 Noblesse Gate Pass',9992,121618,-141554,-1496,1,1,6651), -- retail
+('Evil Hunting Grounds - 1 Noblesse Gate Pass',10000,-6989,109503,-3040,1,1,6651), -- retail
+('The Center of the Neutral Zone - 1 Noblesse Gate Pass',10001,-10612,75881,-3592,1,1,6651), -- retail
+('Center of the School of Dark Arts - 1 Noblesse Gate Pass',10003,-49185,49441,-5912,1,1,6651), -- retail
+('Center of the Elven Ruins - 1 Noblesse Gate Pass',10004,49315,248452,-5960,1,1,6651), -- retail
+('The Center of the Mithril Mines - 1 Noblesse Gate Pass',10006,175499,-181586,-904,1,1,6651), -- retail
+('The Center of the Abandoned Coal Mines - 1 Noblesse Gate Pass',10007,144706,-173223,-1520,1,1,6651), -- retail
+('Forest of Evil - 1 Noblesse Gate Pass',10010,93218,16969,-3904,1,1,6651), -- retail
+('Timak Outpost - 1 Noblesse Gate Pass',10011,67097,68815,-3648,1,1,6651), -- retail
+('Altar of Rites - 1 Noblesse Gate Pass',10012,-44566,77508,-3736,1,1,6651), -- retail
+('Field of Silence (Western Section) - 1 Noblesse Gate Pass',10020,69748,186111,-2872,1,1,6651), -- retail
+('Field of Whispers (Eastern Section) - 1 Noblesse Gate Pass',10021,97786,209303,-3040,1,1,6651), -- retail
+('The Center of Alligator Island - 1 Noblesse Gate Pass',10022,113708,178387,-3232,1,1,6651), -- retail
+('Inside the Garden of Eva - 1 Noblesse Gate Pass',10023,82693,242220,-6712,1,1,6651), -- retail
+('Garden of Eva - 2nd Level - 1 Noblesse Gate Pass',10024,79248,247390,-8816,1,1,6651), -- retail
+('Garden of Eva - 3rd Level - 1 Noblesse Gate Pass',10025,77868,250400,-9328,1,1,6651), -- retail
+('Garden of Eva - 4th Level - 1 Noblesse Gate Pass',10026,78721,253309,-9840,1,1,6651), -- retail
+('Garden of Eva - 5th Level - 1 Noblesse Gate Pass',10027,82951,252354,-10592,1,1,6651), -- retail
 ('Ketra teleport - Town of Goddard',10028,148024,-55281,-2728,2400,0,57),
 ('Ketra teleport - Rune Township',10029,43835,-47749,-792,11000,0,57),
 ('Ketra teleport - Town of Aden',10030,146783,25808,-2000,10000,0,57),
@@ -729,7 +729,7 @@ INSERT INTO `teleport` VALUES
 ('Hunters -> Antharas Lair',16002,131557,114509,-3712,7000,0,57),
 ('Hunters -> Ivory Tower',16003,85391,16228,-3672,13000,0,57),
 ('Hunters (Noble) -> The Heart of Antharas Lair',16004,154396,121235,-3808,1000,1,57),
-('Hunters (Noble) -> The Heart of Antharas Lair',16005,154396,121235,-3808,1,1,13722),
+('Hunters (Noble) -> The Heart of Antharas Lair',16005,154396,121235,-3808,1,1,6651),
 ('Gludio -> Isle of Souls Harbor',16006,-73983,51956,-3680,9300,0,57),
 ('Aden -> Isle of Souls Harbor',16007,-73983,51956,-3680,22000,0,57),
 ('Aden -> Ivory Tower',16008,85391,16228,-3672,6200,0,57);

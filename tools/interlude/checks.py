@@ -573,6 +573,34 @@ def quest_rewards():
 	return problems
 
 
+def teleports_interlude():
+	"""Teleports cost adena or Interlude items, and the reviewed ones land and cost as in Interlude (fix_teleports.py)."""
+	import fix_teleports
+
+	allowed = allowed_items()
+	problems = defaultdict(list)
+	rows = {}
+	for line in fix_teleports.TELEPORT_SQL.read_text(encoding="utf-8").split("\n"):
+		m = fix_teleports._ROW.match(line)
+		if not m:
+			continue
+		tid, item = int(m.group(2)), int(m.group(8))
+		rows[tid] = m
+		if item not in allowed:
+			problems[f"{tid} {m.group(1)}"].append(f"paid with {_item_name(item)}")
+	for tid, (npc, desc) in fix_teleports.MOVED.items():
+		x, y, z, _ = fix_teleports.acis_point(npc, desc)
+		m = rows.get(tid)
+		if m and (int(m.group(3)), int(m.group(4)), int(m.group(5))) != (x, y, z):
+			problems[f"{tid} {m.group(1)}"].append(f"lands off the Interlude point {x},{y},{z}")
+	for tid, (npc, desc) in fix_teleports.PRICES.items():
+		price = fix_teleports.acis_point(npc, desc)[3]
+		m = rows.get(tid)
+		if m and int(m.group(6)) != price:
+			problems[f"{tid} {m.group(1)}"].append(f"costs {m.group(6)} instead of {price}")
+	return problems
+
+
 def spawns_interlude_npcs():
 	"""Spawns (spawnlist.sql outside the Isle of Souls, enabled XML spawnlists, bosses) are Interlude or Kamael NPCs."""
 	allowed = acis_npcs() | kamael_npcs()
@@ -895,7 +923,7 @@ DATAPACK_CHECKS = {f.__name__: f for f in (
 	item_references, npc_references, boss_positions, skill_references,
 	html_multisell_links, html_buylist_links, html_teleport_links, html_quest_buttons, script_shop_calls, quest_dialog_links, quest_npcs, quest_kill_targets,
 	spawn_zones, leader_minions, loader_classes, xml_schemas,
-	shops_interlude_items, drops_interlude_items, recipes_interlude_items, manor_interlude_items, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_enchant_costs, interlude_residence_skills, interlude_config,
+	shops_interlude_items, drops_interlude_items, recipes_interlude_items, manor_interlude_items, teleports_interlude, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_enchant_costs, interlude_residence_skills, interlude_config,
 	interlude_loaders, starting_equipment, phantom_gear, phantom_phrases, phantom_config,
 )}
 DATABASE_CHECKS = {"database_tables": database_tables}

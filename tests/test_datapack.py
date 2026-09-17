@@ -176,3 +176,31 @@ def test_manor_interlude_items_reports_a_coba_seed(tmp_path, monkeypatch):
 	monkeypatch.setattr(build_items, "SEEDS", seeds)
 	problems = checks.manor_interlude_items()
 	assert {key.split()[0] for key in problems} == {"15327"}, problems
+
+
+def test_teleports_interlude_reports_token_price_and_moved_point(tmp_path, monkeypatch):
+	"""An Olympiad Token price and the H5 landing point of the Cursed Village must both be noticed."""
+	import fix_teleports
+	sql = tmp_path / "teleport.sql"
+	sql.write_text(
+		"INSERT INTO `teleport` VALUES\n"
+		"('Coliseum - 1 Olympiad Token',9900,146440,46723,-3400,1,1,13722),\n"
+		"('Cursed Village - 1000 adena',9052,62084,-40935,-2802,1000,1,57);\n", encoding="utf-8")
+	monkeypatch.setattr(fix_teleports, "TELEPORT_SQL", sql)
+	problems = checks.teleports_interlude()
+	assert set(problems) == {"9900 Coliseum - 1 Olympiad Token", "9052 Cursed Village - 1000 adena"}, problems
+
+
+def test_fix_teleports_changes_currency_and_point():
+	import fix_teleports
+	text = (
+		"('Coliseum - 1 Olympiad Token',9900,146440,46723,-3400,1,1,13722),\n"
+		"('Cursed Village - 1000 adena',9052,62084,-40935,-2802,1000,1,57), -- retail\n"
+		"('Rune -> Den of Evil',1116,68693,-110438,-1904,7500,0,57);"
+	)
+	result, changed = fix_teleports.fixed_rows(text)
+	assert changed == 3
+	assert "('Coliseum - 1 Noblesse Gate Pass',9900,146440,46723,-3400,1,1,6651)," in result
+	assert "('Cursed Village - 1000 adena',9052,57670,-41672,-3154,1000,1,57), -- retail" in result
+	assert result.endswith("('Rune -> Den of Evil',1116,68693,-110438,-1904,3000,0,57);")
+	assert fix_teleports.fixed_rows(result) == (result, 0)
