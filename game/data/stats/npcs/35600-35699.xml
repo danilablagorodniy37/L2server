@@ -1266,7 +1266,7 @@
 			<height normal="32" grown="39" />
 		</collision>
 	</npc>
-	<npc id="35629" level="78" type="L2Monster" name="Lidia von Hellmann">
+	<npc id="35629" level="73" type="L2Monster" name="Lidia von Hellmann">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="AreaName1" value="lidia_zone1" />
@@ -1280,16 +1280,16 @@
 		<sex>FEMALE</sex>
 		<equipment rhand="8209" /> <!-- rhand: Monster Only (Lidia Von Helmann Sword) -->
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="903214.01529417" hpRegen="37.3" mp="1607.4" mpRegen="3" />
-			<attack physical="1575.77421162885" magical="556.495115206205" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="998.10183" magical="486.91174" />
+			<vitals hp="785486" hpRegen="143.8139" mp="2987.676" mpRegen="9.7103" />
+			<attack physical="5243.5512" magical="7229.901" random="30" critical="65" accuracy="4.75" attackSpeed="410" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="1506.6" magical="1629.1692" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="40" water="40" wind="40" earth="40" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="20" />
-				<run ground="180" />
+				<walk ground="32.4" />
+				<run ground="291.6" />
 			</speed>
 			<hitTime>430</hitTime>
 		</stats>
@@ -1302,14 +1302,10 @@
 			<skill id="4095" level="1" /> <!--Damage Shield -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4410" level="14" /> <!--Average P. Atk. -->
+			<skill id="4411" level="14" /> <!--Average M. Atk. -->
+			<skill id="4412" level="8" /> <!--Average P. Def. -->
+			<skill id="4413" level="8" /> <!--Average M. Def. -->
 			<skill id="4416" level="9" /> <!--Demons -->
 			<skill id="4997" level="1" /> <!--Lidia - Regen -->
 			<skill id="4998" level="1" /> <!--Lidia - Twister -->
@@ -1326,7 +1322,7 @@
 			<height normal="25.4" />
 		</collision>
 	</npc>
-	<npc id="35630" level="77" type="L2Defender" name="Alfred von Hellmann">
+	<npc id="35630" level="72" type="L2Defender" name="Alfred von Hellmann">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="AreaName" value="lidia_zone3" />
@@ -1337,16 +1333,16 @@
 		<sex>MALE</sex>
 		<equipment rhand="8679" /> <!-- rhand: Sword of Ipos -->
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="110191.515554098" hpRegen="22.5" mp="1574.0" mpRegen="3" />
-			<attack physical="1440.0352703072" magical="124.100601309407" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="80" distance="80" width="120" />
-			<defence physical="984.81219" magical="480.42854" />
+			<vitals hp="97979" hpRegen="86.2155" mp="2777.22" mpRegen="9.6503" />
+			<attack physical="4812.129" magical="1609.1197" random="30" critical="65" accuracy="4.75" attackSpeed="410" type="SWORD" range="80" distance="80" width="120" />
+			<defence physical="1474.76" magical="1597.31" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="40" water="40" wind="40" earth="40" holy="-32" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="60" />
-				<run ground="180" />
+				<walk ground="97.2" />
+				<run ground="291.6" />
 			</speed>
 		</stats>
 		<status undying="false" />
@@ -1358,14 +1354,10 @@
 			<skill id="4095" level="1" /> <!--Damage Shield -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="13" /> <!--Two-handed Sword -->
+			<skill id="4410" level="14" /> <!--Average P. Atk. -->
+			<skill id="4411" level="14" /> <!--Average M. Atk. -->
+			<skill id="4412" level="8" /> <!--Average P. Def. -->
+			<skill id="4413" level="8" /> <!--Average M. Def. -->
 			<skill id="4416" level="9" /> <!--Demons -->
 			<skill id="5000" level="1" /> <!--Alfred - Super Strike -->
 			<skill id="5001" level="1" /> <!--Alfred - Life Drain -->
@@ -1381,7 +1373,7 @@
 			<height normal="35" grown="42.9" />
 		</collision>
 	</npc>
-	<npc id="35631" level="77" type="L2Defender" name="Giselle von Hellmann">
+	<npc id="35631" level="72" type="L2Defender" name="Giselle von Hellmann">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="AreaName1" value="lidia_zone1" />
@@ -1393,16 +1385,16 @@
 		<sex>FEMALE</sex>
 		<equipment rhand="99" /> <!-- rhand: Apprentice's Spellbook -->
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="110191.515554098" hpRegen="22.5" mp="1574.0" mpRegen="3" />
-			<attack physical="1440.0352703072" magical="124.100601309407" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="984.81219" magical="480.42854" />
+			<vitals hp="97979" hpRegen="86.2155" mp="2777.22" mpRegen="9.6503" />
+			<attack physical="4812.129" magical="1609.1197" random="30" critical="65" accuracy="4.75" attackSpeed="410" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="1474.76" magical="1597.31" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="40" water="40" wind="40" earth="40" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="46" />
-				<run ground="180" />
+				<walk ground="74.52" />
+				<run ground="291.6" />
 			</speed>
 			<hitTime>460</hitTime>
 		</stats>
@@ -1415,14 +1407,10 @@
 			<skill id="4095" level="1" /> <!--Damage Shield -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4410" level="14" /> <!--Average P. Atk. -->
+			<skill id="4411" level="14" /> <!--Average M. Atk. -->
+			<skill id="4412" level="8" /> <!--Average P. Def. -->
+			<skill id="4413" level="8" /> <!--Average M. Def. -->
 			<skill id="4416" level="9" /> <!--Demons -->
 			<skill id="5002" level="1" /> <!--Giselle - Vampiric Rage -->
 			<skill id="5003" level="1" /> <!--Giselle - Tempest -->
@@ -1438,7 +1426,7 @@
 			<height normal="28" grown="34.5" />
 		</collision>
 	</npc>
-	<npc id="35632" level="73" type="L2Defender" name="Vampire Adept">
+	<npc id="35632" level="68" type="L2Defender" name="Vampire Adept">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -1450,16 +1438,16 @@
 		<sex>FEMALE</sex>
 		<equipment rhand="946" /> <!-- rhand: Skeleton Dagger -->
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="7144.07596150875" hpRegen="8.5" mp="1442.4" mpRegen="3" />
-			<attack physical="1722.93049617806" magical="136.904519716845" random="10" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
-			<defence physical="310.02959" magical="226.8662" />
+			<vitals hp="6058" hpRegen="18.6045" mp="1450.336" mpRegen="5.1716" />
+			<attack physical="2513.256" magical="171.4254" random="10" critical="88" accuracy="0" attackSpeed="278" type="DAGGER" range="40" distance="80" width="120" />
+			<defence physical="426.8678" magical="381.0833" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="64" />
-				<run ground="120" />
+				<walk ground="70.4" />
+				<run ground="132" />
 			</speed>
 			<hitTime>500</hitTime>
 		</stats>
@@ -1470,14 +1458,10 @@
 			<skill id="4085" level="1" /> <!--Critical Damage -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="7" /> <!--Daggers -->
+			<skill id="4410" level="13" /> <!--Average P. Atk. -->
+			<skill id="4411" level="13" /> <!--Average M. Atk. -->
+			<skill id="4412" level="9" /> <!--Average P. Def. -->
+			<skill id="4413" level="9" /> <!--Average M. Def. -->
 			<skill id="4416" level="9" /> <!--Demons -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -1491,7 +1475,7 @@
 			<height normal="21.5" grown="25.8" />
 		</collision>
 	</npc>
-	<npc id="35633" level="74" type="L2Defender" name="Vampire Soldier">
+	<npc id="35633" level="69" type="L2Defender" name="Vampire Soldier">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -1502,16 +1486,16 @@
 		<sex>MALE</sex>
 		<equipment rhand="234" /> <!-- rhand: Demon's Dagger -->
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="7896.58908" hpRegen="8.5" mp="1475.0" mpRegen="3" />
-			<attack physical="1709.62599479499" magical="528.41601" random="10" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
-			<defence physical="314.65987" magical="230.25444" />
+			<vitals hp="6734" hpRegen="18.723" mp="1301.496" mpRegen="5.2045" />
+			<attack physical="2529.264" magical="675.3282" random="10" critical="88" accuracy="0" attackSpeed="278" type="DAGGER" range="40" distance="80" width="120" />
+			<defence physical="437.2295" magical="390.3336" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="60" />
-				<run ground="120" />
+				<walk ground="66" />
+				<run ground="132" />
 			</speed>
 			<hitTime>450</hitTime>
 		</stats>
@@ -1521,14 +1505,10 @@
 			<skill id="4085" level="1" /> <!--Critical Damage -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="7" /> <!--Daggers -->
+			<skill id="4410" level="13" /> <!--Average P. Atk. -->
+			<skill id="4411" level="13" /> <!--Average M. Atk. -->
+			<skill id="4412" level="9" /> <!--Average P. Def. -->
+			<skill id="4413" level="9" /> <!--Average M. Def. -->
 			<skill id="4416" level="9" /> <!--Demons -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -1542,7 +1522,7 @@
 			<height normal="23.5" grown="29" />
 		</collision>
 	</npc>
-	<npc id="35634" level="75" type="L2Defender" name="Vampire Caster">
+	<npc id="35634" level="70" type="L2Defender" name="Vampire Caster">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -1554,16 +1534,16 @@
 		<sex>FEMALE</sex>
 		<equipment rhand="946" /> <!-- rhand: Skeleton Dagger -->
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="8029.97562" hpRegen="8.5" mp="1507.8" mpRegen="3" />
-			<attack physical="3526.34865872365" magical="542.68324" random="10" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
-			<defence physical="319.24623" magical="233.61053" />
+			<vitals hp="6886" hpRegen="18.8415" mp="1338.34" mpRegen="5.2375" />
+			<attack physical="5290.884" magical="707.8403" random="10" critical="88" accuracy="0" attackSpeed="278" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="447.6685" magical="399.6529" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="40" water="40" wind="40" earth="40" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="64" />
-				<run ground="140" />
+				<walk ground="70.4" />
+				<run ground="154" />
 			</speed>
 			<hitTime>500</hitTime>
 		</stats>
@@ -1573,14 +1553,10 @@
 			<skill id="4085" level="1" /> <!--Critical Damage -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="9" /> <!--Bows -->
+			<skill id="4410" level="13" /> <!--Average P. Atk. -->
+			<skill id="4411" level="13" /> <!--Average M. Atk. -->
+			<skill id="4412" level="9" /> <!--Average P. Def. -->
+			<skill id="4413" level="9" /> <!--Average M. Def. -->
 			<skill id="4416" level="9" /> <!--Demons -->
 			<skill id="5056" level="7" /> <!--Castle DD Wind -->
 		</skillList>
@@ -1596,7 +1572,7 @@
 			<height normal="21.5" grown="25.8" />
 		</collision>
 	</npc>
-	<npc id="35635" level="76" type="L2Defender" name="Vampire Magister">
+	<npc id="35635" level="71" type="L2Defender" name="Vampire Magister">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="95" />
@@ -1608,16 +1584,16 @@
 		<sex>FEMALE</sex>
 		<equipment rhand="99" /> <!-- rhand: Apprentice's Spellbook -->
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="8274.17769984" hpRegen="8.5" mp="1540.8" mpRegen="3" />
-			<attack physical="1922.69132349405" magical="562.9734023" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="323.78455" magical="236.93149" />
+			<vitals hp="7037" hpRegen="18.96" mp="1564.528" mpRegen="5.2704" />
+			<attack physical="2893.44" magical="741.1423" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="458.1784" magical="409.0356" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="40" water="40" wind="40" earth="40" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="46" />
-				<run ground="155" />
+				<walk ground="50.6" />
+				<run ground="170.5" />
 			</speed>
 			<hitTime>460</hitTime>
 		</stats>
@@ -1626,14 +1602,10 @@
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4410" level="13" /> <!--Average P. Atk. -->
+			<skill id="4411" level="13" /> <!--Average M. Atk. -->
+			<skill id="4412" level="9" /> <!--Average P. Def. -->
+			<skill id="4413" level="9" /> <!--Average M. Def. -->
 			<skill id="4416" level="9" /> <!--Demons -->
 			<skill id="5051" level="6" /> <!--Castle Self AE Fire -->
 		</skillList>
@@ -1648,7 +1620,7 @@
 			<height normal="28" grown="34.5" />
 		</collision>
 	</npc>
-	<npc id="35636" level="77" type="L2Defender" name="Vampire Warlord">
+	<npc id="35636" level="72" type="L2Defender" name="Vampire Warlord">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="100" />
@@ -1660,16 +1632,16 @@
 		<sex>MALE</sex>
 		<equipment rhand="6723" /> <!-- rhand: Monster Only(Vampire Warrior) -->
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="8570.3061768948" hpRegen="8.5" mp="1574.0" mpRegen="3" />
-			<attack physical="1712.88111790828" magical="584.837886935576" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="80" distance="80" width="120" />
-			<defence physical="328.27073" magical="240.21427" />
+			<vitals hp="7186" hpRegen="19.0785" mp="1603.08" mpRegen="5.3033" />
+			<attack physical="2577.288" magical="775.1999" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="80" distance="80" width="120" />
+			<defence physical="468.7525" magical="418.4755" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="40" water="40" wind="40" earth="40" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="43" />
-				<run ground="160" />
+				<walk ground="47.3" />
+				<run ground="176" />
 			</speed>
 		</stats>
 		<status undying="false" />
@@ -1680,14 +1652,10 @@
 			<skill id="4085" level="1" /> <!--Critical Damage -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="13" /> <!--Two-handed Sword -->
+			<skill id="4410" level="13" /> <!--Average P. Atk. -->
+			<skill id="4411" level="13" /> <!--Average M. Atk. -->
+			<skill id="4412" level="9" /> <!--Average P. Def. -->
+			<skill id="4413" level="9" /> <!--Average M. Def. -->
 			<skill id="4416" level="9" /> <!--Demons -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -1701,7 +1669,7 @@
 			<height normal="31.5" grown="38" />
 		</collision>
 	</npc>
-	<npc id="35637" level="78" type="L2Defender" name="Vampire Leader">
+	<npc id="35637" level="73" type="L2Defender" name="Vampire Leader">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="130" />
@@ -1711,16 +1679,16 @@
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="8923.07059194948" hpRegen="8.5" mp="1607.4" mpRegen="3" />
-			<attack physical="1556.42253864287" magical="608.096657928153" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="332.70061" magical="243.45587" />
+			<vitals hp="7333" hpRegen="19.197" mp="1641.876" mpRegen="5.3363" />
+			<attack physical="2340.576" magical="809.2784" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="479.3839" magical="427.9666" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="40" water="40" wind="40" earth="40" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="15" />
-				<run ground="170" />
+				<walk ground="16.5" />
+				<run ground="187" />
 			</speed>
 			<hitTime>560</hitTime>
 		</stats>
@@ -1731,14 +1699,10 @@
 			<skill id="4085" level="1" /> <!--Critical Damage -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4410" level="14" /> <!--Average P. Atk. -->
+			<skill id="4411" level="14" /> <!--Average M. Atk. -->
+			<skill id="4412" level="8" /> <!--Average P. Def. -->
+			<skill id="4413" level="8" /> <!--Average M. Def. -->
 			<skill id="4416" level="9" /> <!--Demons -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -2096,16 +2060,16 @@
 		<sex>FEMALE</sex>
 		<equipment rhand="946" /> <!-- rhand: Skeleton Dagger -->
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="6886" hpRegen="7.5" mp="1251.0" mpRegen="2.7" />
-			<attack physical="2773" magical="426.74754" random="10" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
-			<defence physical="281.55251" magical="206.02791" />
+			<vitals hp="6886" hpRegen="18.8415" mp="1526.22" mpRegen="5.2375" />
+			<attack physical="5290.884" magical="707.8403" random="10" critical="88" accuracy="0" attackSpeed="278" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="447.6685" magical="399.6529" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="64" />
-				<run ground="140" />
+				<walk ground="70.4" />
+				<run ground="154" />
 			</speed>
 			<hitTime>500</hitTime>
 		</stats>
@@ -2115,14 +2079,10 @@
 			<skill id="4085" level="1" /> <!--Critical Damage -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="9" /> <!--Bows -->
+			<skill id="4410" level="13" /> <!--Average P. Atk. -->
+			<skill id="4411" level="13" /> <!--Average M. Atk. -->
+			<skill id="4412" level="9" /> <!--Average P. Def. -->
+			<skill id="4413" level="9" /> <!--Average M. Def. -->
 			<skill id="4416" level="9" /> <!--Demons -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -2146,16 +2106,16 @@
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="7333" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
-			<attack physical="1204" magical="470.40463" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="295.91597" magical="216.53847" />
+			<vitals hp="7333" hpRegen="19.197" mp="1641.876" mpRegen="5.3363" />
+			<attack physical="2340.576" magical="809.9751" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="479.3839" magical="427.9666" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="15" />
-				<run ground="170" />
+				<walk ground="16.5" />
+				<run ground="187" />
 			</speed>
 			<hitTime>560</hitTime>
 		</stats>
@@ -2166,14 +2126,10 @@
 			<skill id="4085" level="1" /> <!--Critical Damage -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4410" level="14" /> <!--Average P. Atk. -->
+			<skill id="4411" level="14" /> <!--Average M. Atk. -->
+			<skill id="4412" level="8" /> <!--Average P. Def. -->
+			<skill id="4413" level="8" /> <!--Average M. Def. -->
 			<skill id="4416" level="9" /> <!--Demons -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>

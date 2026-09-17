@@ -14,30 +14,22 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
-			<vitals hp="2295.48154" hpRegen="7.5" mp="1251.0" mpRegen="2.7" />
-			<attack physical="624.93199" magical="426.74754" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
-			<defence physical="281.55251" magical="206.02791" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2295" hpRegen="58.4158" mp="1540.68" mpRegen="4.8138" />
+			<attack physical="1225.4861" magical="739.3929" random="10" critical="44" accuracy="4.75" attackSpeed="272" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="458.8428" magical="376.0343" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="80" />
-				<run ground="120" />
+				<walk ground="21.78" />
+				<run ground="185.13" />
 			</speed>
 			<hitTime>460</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="1" /> <!--Bare Hands -->
 			<skill id="4416" level="3" /> <!--Beasts -->
 			<skill id="5186" level="2" /> <!--Pet Haste -->
 			<skill id="5187" level="4" /> <!--Pet Vampiric Rage -->
@@ -75,30 +67,22 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
-			<vitals hp="2295.48154" hpRegen="7.5" mp="1251.0" mpRegen="2.7" />
-			<attack physical="624.93199" magical="426.74754" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
-			<defence physical="281.55251" magical="206.02791" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2295" hpRegen="58.4158" mp="1540.68" mpRegen="4.8138" />
+			<attack physical="1225.4861" magical="739.3929" random="10" critical="44" accuracy="4.75" attackSpeed="272" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="458.8428" magical="376.0343" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="80" />
-				<run ground="120" />
+				<walk ground="21.78" />
+				<run ground="185.13" />
 			</speed>
 			<hitTime>460</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="1" /> <!--Bare Hands -->
 			<skill id="4416" level="3" /> <!--Beasts -->
 			<skill id="5190" level="6" /> <!--Pet Blessed Soul -->
 			<skill id="5192" level="2" /> <!--Pet Wind Walk -->
@@ -136,30 +120,22 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
-			<vitals hp="2395.45533" hpRegen="7.5" mp="1314.0" mpRegen="2.7" />
-			<attack physical="667.50361" magical="455.81844" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
-			<defence physical="291.15063" magical="213.05139" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2395" hpRegen="59.1647" mp="1618.38" mpRegen="4.8756" />
+			<attack physical="1343.1264" magical="830.8678" random="10" critical="44" accuracy="4.75" attackSpeed="272" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="486.956" magical="399.0421" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="60" />
-				<run ground="120" />
+				<walk ground="65.34" />
+				<run ground="190.08" />
 			</speed>
 			<hitTime>450</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="1" /> <!--Bare Hands -->
 			<skill id="4416" level="3" /> <!--Beasts -->
 			<skill id="5186" level="2" /> <!--Pet Haste -->
 			<skill id="5187" level="4" /> <!--Pet Vampiric Rage -->
@@ -197,30 +173,22 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
-			<vitals hp="2395.45533" hpRegen="7.5" mp="1314.0" mpRegen="2.7" />
-			<attack physical="667.50361" magical="455.81844" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
-			<defence physical="291.15063" magical="213.05139" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2395" hpRegen="59.1647" mp="1618.38" mpRegen="4.8756" />
+			<attack physical="1343.1264" magical="830.8678" random="10" critical="44" accuracy="4.75" attackSpeed="272" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="486.956" magical="399.0421" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="60" />
-				<run ground="120" />
+				<walk ground="65.34" />
+				<run ground="190.08" />
 			</speed>
 			<hitTime>450</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="1" /> <!--Bare Hands -->
 			<skill id="4416" level="3" /> <!--Beasts -->
 			<skill id="5190" level="6" /> <!--Pet Blessed Soul -->
 			<skill id="5192" level="2" /> <!--Pet Wind Walk -->
@@ -258,30 +226,22 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
-			<vitals hp="2193.43142" hpRegen="7.5" mp="1188.8" mpRegen="2.7" />
-			<attack physical="582.81759" magical="397.98887" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
-			<defence physical="271.89033" magical="198.95754" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2193" hpRegen="57.6668" mp="1464.09" mpRegen="4.7521" />
+			<attack physical="1114.5658" magical="654.9544" random="10" critical="44" accuracy="4.75" attackSpeed="272" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="431.2924" magical="354.5296" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="23" />
-				<run ground="120" />
+				<walk ground="24.75" />
+				<run ground="206.91" />
 			</speed>
 			<hitTime>500</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="1" /> <!--Bare Hands -->
 			<skill id="4416" level="3" /> <!--Beasts -->
 			<skill id="5186" level="2" /> <!--Pet Haste -->
 			<skill id="5187" level="4" /> <!--Pet Vampiric Rage -->
@@ -319,30 +279,22 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
-			<vitals hp="2193.43142" hpRegen="7.5" mp="1188.8" mpRegen="2.7" />
-			<attack physical="582.81759" magical="397.98887" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
-			<defence physical="271.89033" magical="198.95754" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2193" hpRegen="57.6668" mp="1464.09" mpRegen="4.7521" />
+			<attack physical="1114.5658" magical="654.9544" random="10" critical="44" accuracy="4.75" attackSpeed="272" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="431.2924" magical="354.5296" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="23" />
-				<run ground="120" />
+				<walk ground="24.75" />
+				<run ground="206.91" />
 			</speed>
 			<hitTime>500</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="1" /> <!--Bare Hands -->
 			<skill id="4416" level="3" /> <!--Beasts -->
 			<skill id="5190" level="6" /> <!--Pet Blessed Soul -->
 			<skill id="5192" level="2" /> <!--Pet Wind Walk -->
@@ -390,15 +342,15 @@
 		<sex>MALE</sex>
 		<acquire expRate="0.478" sp="200" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
-			<vitals hp="2295.48154" hpRegen="7.5" mp="1251.0" mpRegen="2.7" />
-			<attack physical="624.93199" magical="426.74754" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
-			<defence physical="281.55251" magical="206.02791" />
+			<vitals hp="2295.4815" hpRegen="18.486" mp="1601.28" mpRegen="5.3914" />
+			<attack physical="1169.8727" magical="681.3814" random="10" critical="44" accuracy="4.75" attackSpeed="278" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="439.2219" magical="411.3965" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="30" />
-				<run ground="120" />
+				<walk ground="33" />
+				<run ground="132" />
 			</speed>
 			<hitTime>480</hitTime>
 		</stats>
@@ -409,14 +361,6 @@
 			<skill id="4067" level="6" /> <!--NPC Mortal Blow -->
 			<skill id="4072" level="6" /> <!--Stun -->
 			<skill id="4074" level="2" /> <!--NPC Haste -->
-			<skill id="4408" level="9" /> <!--HP Increase (1/2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="1" /> <!--Bare Hands -->
 			<skill id="4416" level="3" /> <!--Beasts -->
 		</skillList>
 		<shots soul="2" spirit="2" />
@@ -449,29 +393,21 @@
 		<sex>MALE</sex>
 		<acquire expRate="0.478" sp="200" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
-			<vitals hp="2295.48154" hpRegen="7.5" mp="1251.0" mpRegen="2.7" />
-			<attack physical="624.93199" magical="426.74754" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
-			<defence physical="281.55251" magical="206.02791" />
+			<vitals hp="2295.4815" hpRegen="18.486" mp="1601.28" mpRegen="5.3914" />
+			<attack physical="1169.8727" magical="681.3814" random="10" critical="44" accuracy="4.75" attackSpeed="278" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="439.2219" magical="411.3965" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="30" />
-				<run ground="120" />
+				<walk ground="33" />
+				<run ground="132" />
 			</speed>
 			<hitTime>480</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="9" /> <!--HP Increase (1/2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="1" /> <!--Bare Hands -->
 			<skill id="4416" level="3" /> <!--Beasts -->
 			<skill id="5186" level="2" /> <!--Pet Haste -->
 			<skill id="5187" level="4" /> <!--Pet Vampiric Rage -->
@@ -520,15 +456,15 @@
 		<sex>MALE</sex>
 		<acquire expRate="0.478" sp="218" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
-			<vitals hp="2395.45533" hpRegen="7.5" mp="1314.0" mpRegen="2.7" />
-			<attack physical="667.50361" magical="455.81844" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
-			<defence physical="291.15063" magical="213.05139" />
+			<vitals hp="2395.4553" hpRegen="18.723" mp="1681.92" mpRegen="5.4605" />
+			<attack physical="1265.5868" magical="746.5796" random="10" critical="44" accuracy="4.75" attackSpeed="278" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="460.018" magical="430.8751" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="28" />
-				<run ground="120" />
+				<walk ground="30.8" />
+				<run ground="132" />
 			</speed>
 			<hitTime>480</hitTime>
 		</stats>
@@ -539,14 +475,6 @@
 			<skill id="4073" level="6" /> <!--Stun -->
 			<skill id="4074" level="2" /> <!--NPC Haste -->
 			<skill id="4232" level="6" /> <!--NPC AE Strike -->
-			<skill id="4408" level="9" /> <!--HP Increase (1/2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="1" /> <!--Bare Hands -->
 			<skill id="4416" level="3" /> <!--Beasts -->
 		</skillList>
 		<shots soul="2" spirit="2" />
@@ -579,29 +507,21 @@
 		<sex>MALE</sex>
 		<acquire expRate="0.478" sp="218" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
-			<vitals hp="2395.45533" hpRegen="7.5" mp="1314.0" mpRegen="2.7" />
-			<attack physical="667.50361" magical="455.81844" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
-			<defence physical="291.15063" magical="213.05139" />
+			<vitals hp="2395.4553" hpRegen="18.723" mp="1681.92" mpRegen="5.4605" />
+			<attack physical="1265.5868" magical="746.5796" random="10" critical="44" accuracy="4.75" attackSpeed="278" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="460.018" magical="430.8751" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="28" />
-				<run ground="120" />
+				<walk ground="30.8" />
+				<run ground="132" />
 			</speed>
 			<hitTime>480</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="9" /> <!--HP Increase (1/2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="1" /> <!--Bare Hands -->
 			<skill id="4416" level="3" /> <!--Beasts -->
 			<skill id="5186" level="2" /> <!--Pet Haste -->
 			<skill id="5187" level="4" /> <!--Pet Vampiric Rage -->
@@ -651,15 +571,15 @@
 		<sex>MALE</sex>
 		<acquire expRate="0.478" sp="183" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
-			<vitals hp="2193.43142" hpRegen="7.5" mp="1188.8" mpRegen="2.7" />
-			<attack physical="582.81759" magical="397.98887" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
-			<defence physical="271.89033" magical="198.95754" />
+			<vitals hp="2193.4314" hpRegen="18.249" mp="1521.664" mpRegen="5.3222" />
+			<attack physical="1077.0469" magical="619.2734" random="10" critical="44" accuracy="4.75" attackSpeed="278" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="418.7111" magical="392.1851" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="13" />
-				<run ground="120" />
+				<walk ground="14.3" />
+				<run ground="132" />
 			</speed>
 			<hitTime>500</hitTime>
 		</stats>
@@ -668,14 +588,6 @@
 			<skill id="2188" level="1" /> <!--Golden Spice -->
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
 			<skill id="4160" level="6" /> <!--NPC Aura Burn - Magic -->
-			<skill id="4408" level="9" /> <!--HP Increase (1/2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="1" /> <!--Bare Hands -->
 			<skill id="4416" level="3" /> <!--Beasts -->
 			<skill id="4566" level="6" /> <!--NPC Eruption - Magic -->
 			<skill id="4571" level="6" /> <!--NPC Blazing Circle -->
@@ -711,29 +623,21 @@
 		<sex>MALE</sex>
 		<acquire expRate="0.478" sp="183" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="25">
-			<vitals hp="2193.43142" hpRegen="7.5" mp="1188.8" mpRegen="2.7" />
-			<attack physical="582.81759" magical="397.98887" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
-			<defence physical="271.89033" magical="198.95754" />
+			<vitals hp="2193.4314" hpRegen="18.249" mp="1521.664" mpRegen="5.3222" />
+			<attack physical="1077.0469" magical="619.2734" random="10" critical="44" accuracy="4.75" attackSpeed="278" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="418.7111" magical="392.1851" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="13" />
-				<run ground="120" />
+				<walk ground="14.3" />
+				<run ground="132" />
 			</speed>
 			<hitTime>500</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="9" /> <!--HP Increase (1/2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="1" /> <!--Bare Hands -->
 			<skill id="4416" level="3" /> <!--Beasts -->
 			<skill id="5190" level="6" /> <!--Pet Blessed Soul -->
 			<skill id="5192" level="2" /> <!--Pet Wind Walk -->

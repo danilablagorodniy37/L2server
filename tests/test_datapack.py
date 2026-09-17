@@ -204,3 +204,21 @@ def test_fix_teleports_changes_currency_and_point():
 	assert "('Cursed Village - 1000 adena',9052,57670,-41672,-3154,1000,1,57), -- retail" in result
 	assert result.endswith("('Rune -> Den of Evil',1116,68693,-110438,-1904,3000,0,57);")
 	assert fix_teleports.fixed_rows(result) == (result, 0)
+
+
+def test_interlude_npc_stats_reports_h5_values(tmp_path, monkeypatch):
+	"""The H5 Gremlin (P. Atk. 8.47 with an Average P. Atk. passive) is not the Interlude one."""
+	import build_npc_stats
+	(tmp_path / "npcs.xml").write_text(
+		'<?xml version="1.0" encoding="UTF-8"?>\n<list>\n'
+		'\t<npc id="20001" level="1" type="L2Monster">\n'
+		'\t\t<acquire expRate="29.39" sp="2" />\n'
+		'\t\t<stats str="40" int="21" dex="30" wit="20" con="43" men="20">\n'
+		'\t\t\t<vitals hp="39.74519" hpRegen="2" mp="40.0" mpRegen="0.9" />\n'
+		'\t\t\t<attack physical="8.47458" magical="5.78704" random="30" critical="4" accuracy="4.75" attackSpeed="253" />\n'
+		'\t\t\t<defence physical="44.44444" magical="29.59" />\n'
+		'\t\t</stats>\n'
+		'\t\t<skillList>\n\t\t\t<skill id="4410" level="11" />\n\t\t</skillList>\n'
+		'\t</npc>\n</list>\n', encoding="utf-8")
+	monkeypatch.setattr(build_npc_stats, "NPCS", tmp_path)
+	assert set(checks.interlude_npc_stats()) == {"20001"}

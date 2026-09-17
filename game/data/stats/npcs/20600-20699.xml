@@ -17,31 +17,27 @@
 		<race>GIANT</race>
 		<sex>MALE</sex>
 		<equipment rhand="88" /> <!-- rhand: Morning Star -->
-		<acquire expRate="2.05632" sp="212" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="966.57792" hpRegen="4.5" mp="478.8" mpRegen="1.8" />
-			<attack physical="176.36077" magical="120.43155" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="156.55035" magical="104.232986928232" />
+		<acquire expRate="1.7131" sp="177" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="966" hpRegen="14.4916" mp="589.41" mpRegen="2.6347" />
+			<attack physical="301.86" magical="133.0159" random="50" critical="11" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="184.1346" magical="164.3821" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="55" />
-				<run ground="174" />
+				<walk ground="59.4" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>280</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4073" level="4" /> <!--Stun -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="11" /> <!--Giants -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -124,31 +120,23 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="2" /> <!-- rhand: Long Sword -->
-		<acquire expRate="1.74528" sp="192" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1008.23781" hpRegen="5.5" mp="504.8" mpRegen="2.1" />
-			<attack physical="187.11878" magical="127.77787" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="160.69002" magical="106.989225133249" />
+		<acquire expRate="1.4539" sp="160" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1008" hpRegen="17.8493" mp="621.6" mpRegen="3.088" />
+			<attack physical="295.074" magical="145.3981" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="210.912" magical="170.7069" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="80" />
-				<run ground="174" />
+				<walk ground="87.12" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>460</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4317" level="1" /> <!--Increase Rage Might -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -231,31 +219,23 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="14" /> <!-- rhand: Bow -->
-		<acquire expRate="2.2506432" sp="264" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1050.81652" hpRegen="5.5" mp="531.0" mpRegen="2.1" />
-			<attack physical="198.34591" magical="135.44454" random="10" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
-			<defence physical="164.88513" magical="109.782377202178" />
+		<acquire expRate="1.8753" sp="220" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1051" hpRegen="17.9866" mp="653.79" mpRegen="3.1118" />
+			<attack physical="707.0856" magical="159.1619" random="10" critical="88" accuracy="0" attackSpeed="244" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="219.687" magical="178.1273" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="45" />
-				<run ground="174" />
+				<walk ground="48.51" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>960</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4040" level="4" /> <!--NPC Bow Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="9" /> <!--Bows -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -337,30 +317,26 @@
 		</parameters>
 		<race>BUG</race>
 		<sex>MALE</sex>
-		<acquire expRate="1.76256" sp="221" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1094.28943" hpRegen="5.5" mp="557.4" mpRegen="2.1" />
-			<attack physical="210.04832" magical="143.43577" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="169.13417" magical="112.611442266143" />
+		<acquire expRate="1.4684" sp="184" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1094" hpRegen="18.1239" mp="685.98" mpRegen="3.1355" />
+			<attack physical="310.9392" magical="173.296" random="30" critical="132" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="252.252" magical="185.6408" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="72" />
-				<run ground="174" />
+				<walk ground="78.21" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>260</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="12" /> <!--Bugs -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -449,31 +425,27 @@
 		<race>GIANT</race>
 		<sex>MALE</sex>
 		<equipment rhand="89" /> <!-- rhand: Big Hammer -->
-		<acquire expRate="2.05632" sp="272" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1138.62924" hpRegen="5.5" mp="584.0" mpRegen="2.1" />
-			<attack physical="222.23112" magical="151.75505" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="173.43552" magical="115.475328468187" />
+		<acquire expRate="1.7133" sp="227" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1139" hpRegen="18.2612" mp="719.28" mpRegen="3.1593" />
+			<attack physical="404.586" magical="189.963" random="50" critical="11" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="216.8166" magical="193.2477" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="45" />
-				<run ground="174" />
+				<walk ground="48.51" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>460</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4073" level="4" /> <!--Stun -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="11" /> <!--Giants -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -551,17 +523,17 @@
 		</parameters>
 		<race>DRAGON</race>
 		<sex>MALE</sex>
-		<acquire expRate="1.7801856" sp="251" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1183.80594" hpRegen="5.5" mp="610.8" mpRegen="2.1" />
-			<attack physical="234.89829" magical="160.40508" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="177.78746" magical="118.372898457316" />
+		<acquire expRate="1.4835" sp="209" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1184" hpRegen="18.3985" mp="751.47" mpRegen="3.183" />
+			<attack physical="394.0404" magical="205.9778" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="248.7576" magical="200.9477" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="70" />
-				<run ground="174" />
+				<walk ground="76.23" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>840</hitTime>
 		</stats>
@@ -569,14 +541,6 @@
 		<skillList>
 			<skill id="4071" level="5" /> <!--Resist Bow/Crossbow Weapons -->
 			<skill id="4078" level="4" /> <!--NPC Flamestrike -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="10" /> <!--Dragons -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -660,17 +624,17 @@
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<acquire expRate="3.130596" sp="116" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="515.17856" hpRegen="3.5" mp="286.92" mpRegen="1.5" />
-			<attack physical="74.99121" magical="51.20928" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="108.28767" magical="72.0991544841329" />
+		<acquire expRate="2.6064" sp="96" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="515" hpRegen="20.2708" mp="352.98" mpRegen="1.97" />
+			<attack physical="100.753" magical="54.8249" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="152.076" magical="114.2616" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="47" />
-				<run ground="110" />
+				<walk ground="50.49" />
+				<run ground="119.79" />
 			</speed>
 			<hitTime>540</hitTime>
 		</stats>
@@ -678,13 +642,10 @@
 		<skillList>
 			<skill id="4032" level="2" /> <!--NPC Strike -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -764,17 +725,17 @@
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<acquire expRate="3.080904" sp="127" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="543.79576" hpRegen="3.5" mp="300.96" mpRegen="1.5" />
-			<attack physical="80.54056" magical="54.99876" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="111.61368" magical="74.3136496629463" />
+		<acquire expRate="2.5664" sp="106" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="544" hpRegen="20.4455" mp="370.74" mpRegen="1.987" />
+			<attack physical="134.0539" magical="60.7319" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="131.157" magical="119.7661" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="47" />
-				<run ground="110" />
+				<walk ground="50.49" />
+				<run ground="119.79" />
 			</speed>
 			<hitTime>540</hitTime>
 		</stats>
@@ -782,13 +743,10 @@
 		<skillList>
 			<skill id="4073" level="2" /> <!--Stun -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -870,18 +828,18 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="14" /> <!-- rhand: Bow -->
-		<acquire expRate="2.9180424" sp="132" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="573.42917" hpRegen="3.5" mp="315.12" mpRegen="1.5" />
-			<attack physical="86.42002" magical="59.01367" random="10" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
-			<defence physical="115.00598" magical="76.5722740603874" />
+		<acquire expRate="2.4304" sp="110" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="573" hpRegen="20.6203" mp="387.39" mpRegen="2.004" />
+			<attack physical="295.4767" magical="66.8173" random="10" critical="88" accuracy="0" attackSpeed="244" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="151.335" magical="125.3479" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="40" />
-				<run ground="140" />
+				<walk ground="43.56" />
+				<run ground="152.46" />
 			</speed>
 			<hitTime>800</hitTime>
 		</stats>
@@ -889,13 +847,6 @@
 		<skillList>
 			<skill id="4274" level="1" /> <!--Blunt Weapon Weak Point -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="9" /> <!--Bows -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -979,17 +930,17 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>MALE</sex>
-		<acquire expRate="2.850624" sp="140" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="604.08419" hpRegen="3.5" mp="329.4" mpRegen="1.5" />
-			<attack physical="92.64226" magical="63.26266" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="118.46427" magical="78.8748547991048" />
+		<acquire expRate="2.3734" sp="116" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="604" hpRegen="20.795" mp="405.15" mpRegen="2.021" />
+			<attack physical="119.952" magical="63.5878" random="50" critical="132" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="156.7825" magical="114.4428" />
 			<attribute>
 				<defence fire="110" water="-5" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="64" />
-				<run ground="96" />
+				<walk ground="69.3" />
+				<run ground="103.95" />
 			</speed>
 			<hitTime>200</hitTime>
 		</stats>
@@ -999,13 +950,10 @@
 			<skill id="4100" level="3" /> <!--NPC Prominence -->
 			<skill id="4104" level="3" /> <!--Flame -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="7" /> <!--Spirits -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -1090,17 +1038,17 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire expRate="2.705184" sp="144" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="635.76437" hpRegen="4.5" mp="343.8" mpRegen="1.8" />
-			<attack physical="99.21986" magical="67.7543" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="121.98819" magical="81.2211098160515" />
+		<acquire expRate="2.254" sp="120" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="635" hpRegen="26.9611" mp="422.91" mpRegen="2.4509" />
+			<attack physical="158.256" magical="71.3501" random="30" critical="132" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="135.66" magical="119.4538" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="90" />
-				<run ground="90" />
+				<walk ground="98.01" />
+				<run ground="98.01" />
 			</speed>
 			<hitTime>300</hitTime>
 		</stats>
@@ -1111,13 +1059,10 @@
 			<skill id="4094" level="3" /> <!--NPC Cancel Magic -->
 			<skill id="4098" level="3" /> <!--Silence -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="2" /> <!--Magic Creatures -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -1202,18 +1147,18 @@
 		</parameters>
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
-		<acquire expRate="2.705184" sp="156" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="668.47132" hpRegen="4.5" mp="358.32" mpRegen="1.8" />
-			<attack physical="106.16525" magical="72.49711" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="125.57727" magical="83.6107570481808" />
+		<acquire expRate="2.254" sp="130" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="668" hpRegen="27.1858" mp="440.67" mpRegen="2.4713" />
+			<attack physical="171.7716" magical="78.2117" random="30" critical="132" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="141.933" magical="125.553" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-13" dark="184" />
 			</attribute>
 			<speed>
-				<walk ground="80" />
-				<run ground="80" />
+				<walk ground="87.12" />
+				<run ground="87.12" />
 			</speed>
 			<hitTime>350</hitTime>
 		</stats>
@@ -1223,13 +1168,10 @@
 			<skill id="4047" level="3" /> <!--Hold -->
 			<skill id="4098" level="3" /> <!--Silence -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="9" /> <!--Demons -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -1322,17 +1264,17 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>MALE</sex>
-		<acquire expRate="2.907636" sp="181" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="702.20463" hpRegen="4.5" mp="372.96" mpRegen="1.8" />
-			<attack physical="113.49065" magical="77.49941" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="129.23095" magical="86.043423444366" />
+		<acquire expRate="2.4224" sp="150" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="702" hpRegen="27.4105" mp="458.43" mpRegen="2.4917" />
+			<attack physical="154.7448" magical="86.4237" random="50" critical="132" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="179.401" magical="131.7366" />
 			<attribute>
 				<defence fire="110" water="-5" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="64" />
-				<run ground="96" />
+				<walk ground="69.3" />
+				<run ground="103.95" />
 			</speed>
 			<hitTime>200</hitTime>
 		</stats>
@@ -1342,13 +1284,10 @@
 			<skill id="4035" level="3" /> <!--Poison -->
 			<skill id="4100" level="3" /> <!--NPC Prominence -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="7" /> <!--Spirits -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -1432,17 +1371,17 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="291" /> <!-- rhand: Trident -->
-		<acquire expRate="3.130596" sp="116" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="515.17856" hpRegen="3.5" mp="286.92" mpRegen="1.5" />
-			<attack physical="74.99121" magical="51.20928" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="108.28767" magical="72.0991544841329" />
+		<acquire expRate="2.6064" sp="96" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="515" hpRegen="20.2708" mp="352.98" mpRegen="1.97" />
+			<attack physical="111.4714" magical="54.8249" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="137.75" magical="114.2616" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="43" />
-				<run ground="130" />
+				<walk ground="46.53" />
+				<run ground="141.57" />
 			</speed>
 			<hitTime>480</hitTime>
 		</stats>
@@ -1450,13 +1389,6 @@
 		<skillList>
 			<skill id="4067" level="2" /> <!--NPC Mortal Blow -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -1538,30 +1470,27 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="2507" /> <!-- rhand: Lizardspear -->
-		<acquire expRate="2.8792176" sp="119" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="543.79576" hpRegen="3.5" mp="300.96" mpRegen="1.5" />
-			<attack physical="80.54056" magical="54.99876" random="10" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
-			<defence physical="111.61368" magical="74.3136496629463" />
+		<acquire expRate="2.398" sp="98" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="544" hpRegen="20.4455" mp="370.74" mpRegen="1.987" />
+			<attack physical="246.4862" magical="60.7319" random="10" critical="132" accuracy="0" attackSpeed="244" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="158.9445" magical="119.7661" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="43" />
-				<run ground="130" />
+				<walk ground="46.53" />
+				<run ground="141.57" />
 			</speed>
 			<hitTime>720</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="9" /> <!--Bows -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -1642,18 +1571,18 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="73" /> <!-- rhand: Shamshir -->
-		<acquire expRate="3.122448" sp="140" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="573.42917" hpRegen="3.5" mp="315.12" mpRegen="1.5" />
-			<attack physical="86.42002" magical="59.01367" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="115.00598" magical="76.5722740603874" />
+		<acquire expRate="2.6016" sp="116" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="573" hpRegen="20.6203" mp="387.39" mpRegen="2.004" />
+			<attack physical="133.019" magical="66.8173" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="151.335" magical="125.3479" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="60" />
-				<run ground="140" />
+				<walk ground="65.34" />
+				<run ground="152.46" />
 			</speed>
 			<hitTime>300</hitTime>
 		</stats>
@@ -1662,13 +1591,6 @@
 			<skill id="4073" level="2" /> <!--Stun -->
 			<skill id="4274" level="1" /> <!--Blunt Weapon Weak Point -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -1751,17 +1673,17 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>FEMALE</sex>
-		<acquire expRate="3.8251308" sp="188" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="604.08419" hpRegen="3.5" mp="329.4" mpRegen="1.5" />
-			<attack physical="92.64226" magical="63.26266" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="118.46427" magical="78.8748547991048" />
+		<acquire expRate="3.1866" sp="156" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="604" hpRegen="20.795" mp="405.15" mpRegen="2.021" />
+			<attack physical="144.942" magical="63.5878" random="50" critical="88" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="129.472" magical="114.4428" />
 			<attribute>
 				<defence fire="-5" water="110" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="60" />
-				<run ground="60" />
+				<walk ground="65.34" />
+				<run ground="65.34" />
 			</speed>
 			<hitTime>350</hitTime>
 		</stats>
@@ -1771,13 +1693,10 @@
 			<skill id="4247" level="3" /> <!--NPC Windstrike - Slow -->
 			<skill id="4284" level="5" /> <!--Resist Bleed Attacks -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="18" /> <!--Extremely Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="7" /> <!--Spirits -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -1870,17 +1789,17 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire expRate="2.731968" sp="145" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="635.76437" hpRegen="4.5" mp="343.8" mpRegen="1.8" />
-			<attack physical="99.21986" magical="67.7543" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="121.98819" magical="81.2211098160515" />
+		<acquire expRate="2.2748" sp="120" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="635" hpRegen="26.9611" mp="422.91" mpRegen="2.4509" />
+			<attack physical="130.032" magical="71.3501" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="164.22" magical="119.4538" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="90" />
-				<run ground="90" />
+				<walk ground="98.01" />
+				<run ground="98.01" />
 			</speed>
 			<hitTime>390</hitTime>
 		</stats>
@@ -1891,13 +1810,10 @@
 			<skill id="4088" level="3" /> <!--Bleed -->
 			<skill id="4094" level="3" /> <!--NPC Cancel Magic -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="2" /> <!--Magic Creatures -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -1980,18 +1896,18 @@
 		</parameters>
 		<race>DEMONIC</race>
 		<sex>FEMALE</sex>
-		<acquire expRate="2.850624" sp="164" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="668.47132" hpRegen="4.5" mp="358.32" mpRegen="1.8" />
-			<attack physical="106.16525" magical="72.49711" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="125.57727" magical="83.6107570481808" />
+		<acquire expRate="2.375" sp="136" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="668" hpRegen="27.1858" mp="440.67" mpRegen="2.4713" />
+			<attack physical="171.7716" magical="78.2117" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="141.933" magical="125.553" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-13" dark="184" />
 			</attribute>
 			<speed>
-				<walk ground="60" />
-				<run ground="100" />
+				<walk ground="65.34" />
+				<run ground="108.9" />
 			</speed>
 			<hitTime>840</hitTime>
 		</stats>
@@ -2001,13 +1917,10 @@
 			<skill id="4066" level="3" /> <!--NPC Twister -->
 			<skill id="4088" level="3" /> <!--Bleed -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="9" /> <!--Demons -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -2088,17 +2001,17 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>FEMALE</sex>
-		<acquire expRate="2.7592872" sp="173" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="702.20463" hpRegen="4.5" mp="372.96" mpRegen="1.8" />
-			<attack physical="113.49065" magical="77.49941" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="129.23095" magical="86.043423444366" />
+		<acquire expRate="2.2994" sp="144" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="702" hpRegen="27.4105" mp="458.43" mpRegen="2.4917" />
+			<attack physical="154.7448" magical="86.4237" random="50" critical="88" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="179.401" magical="131.7366" />
 			<attribute>
 				<defence fire="-5" water="110" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="60" />
-				<run ground="60" />
+				<walk ground="65.34" />
+				<run ground="65.34" />
 			</speed>
 			<hitTime>350</hitTime>
 		</stats>
@@ -2107,13 +2020,10 @@
 			<skill id="4151" level="3" /> <!--NPC Windstrike - Magic -->
 			<skill id="4160" level="3" /> <!--NPC Aura Burn - Magic -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="7" /> <!--Spirits -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -2196,17 +2106,17 @@
 		</parameters>
 		<race>GIANT</race>
 		<sex>MALE</sex>
-		<acquire expRate="4.164048" sp="1363" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1985.55926" hpRegen="7.5" mp="1066.8" mpRegen="2.7" />
-			<attack physical="501.08068" magical="342.17315" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="252.49346" magical="168.112997103103" />
+		<acquire expRate="3.4701" sp="1134" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1985" hpRegen="84.2535" mp="1314.24" mpRegen="4.6287" />
+			<attack physical="999.936" magical="506.9357" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="345.72" magical="311.8046" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="55" />
-				<run ground="174" />
+				<walk ground="59.4" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>610</hitTime>
 		</stats>
@@ -2214,13 +2124,10 @@
 		<skillList>
 			<skill id="4028" level="3" /> <!--NPC Might -->
 			<skill id="4408" level="11" /> <!--HP Increase (3x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="11" /> <!--Giants -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -2307,17 +2214,17 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire expRate="4.3447104" sp="1488" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2037.81082" hpRegen="7.5" mp="1097.0" mpRegen="2.7" />
-			<attack physical="521.12391" magical="355.86007" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="257.34267" magical="171.341654516443" />
+		<acquire expRate="3.6204" sp="1239" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2037" hpRegen="84.8152" mp="1350.87" mpRegen="4.6596" />
+			<attack physical="1053.2794" magical="541.1834" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="357.1301" magical="322.0626" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="80" />
-				<run ground="174" />
+				<walk ground="87.12" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>100</hitTime>
 		</stats>
@@ -2327,13 +2234,10 @@
 			<skill id="4100" level="6" /> <!--NPC Prominence -->
 			<skill id="4117" level="6" /> <!--Paralysis -->
 			<skill id="4408" level="11" /> <!--HP Increase (3x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="2" /> <!--Magic Creatures -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -2420,18 +2324,18 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="221" /> <!-- rhand: Assassin Knife -->
-		<acquire expRate="4.4931492" sp="1610" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2089.92274" hpRegen="7.5" mp="1127.4" mpRegen="2.7" />
-			<attack physical="541.44774" magical="369.73862" random="10" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
-			<defence physical="262.19426" magical="174.571895122369" />
+		<acquire expRate="3.7437" sp="1341" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2090" hpRegen="85.3769" mp="1388.61" mpRegen="4.6904" />
+			<attack physical="970.368" magical="577.237" random="10" critical="132" accuracy="0" attackSpeed="310" type="DAGGER" range="40" distance="80" width="120" />
+			<defence physical="368.6608" magical="332.429" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="80" />
-				<run ground="174" />
+				<walk ground="87.12" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>520</hitTime>
 		</stats>
@@ -2441,13 +2345,10 @@
 			<skill id="4085" level="1" /> <!--Critical Damage -->
 			<skill id="4086" level="1" /> <!--Critical Chance -->
 			<skill id="4408" level="11" /> <!--HP Increase (3x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="7" /> <!--Daggers -->
 			<skill id="4416" level="1" /> <!--Undead -->
 			<skill id="4438" level="2" /> <!--Greater Resist Sleep -->
 		</skillList>
@@ -2511,17 +2412,17 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="2507" /> <!-- rhand: Lizardspear -->
-		<acquire expRate="5.805222" sp="2177" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2141.82127" hpRegen="7.5" mp="1158.0" mpRegen="2.7" />
-			<attack physical="562.02275" magical="383.78868" random="10" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
-			<defence physical="267.04468" magical="177.801362329617" />
+		<acquire expRate="4.8368" sp="1812" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2142" hpRegen="114.5848" mp="1426.35" mpRegen="4.7213" />
+			<attack physical="2142.6854" magical="615.1444" random="10" critical="132" accuracy="0" attackSpeed="244" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="460.2699" magical="342.9038" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="43" />
-				<run ground="174" />
+				<walk ground="46.53" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>720</hitTime>
 		</stats>
@@ -2529,13 +2430,10 @@
 		<skillList>
 			<skill id="4124" level="6" /> <!--NPC Spear Attack -->
 			<skill id="4408" level="12" /> <!--HP Increase (4x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="9" /> <!--Bows -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -2598,17 +2496,17 @@
 		</parameters>
 		<race>GIANT</race>
 		<sex>MALE</sex>
-		<acquire expRate="5.7225912" sp="2246" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2193.43142" hpRegen="7.5" mp="1188.8" mpRegen="2.7" />
-			<attack physical="582.81759" magical="397.98887" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="271.89033" magical="181.027644954078" />
+		<acquire expRate="4.7688" sp="1872" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2193" hpRegen="115.3337" mp="1464.09" mpRegen="4.7521" />
+			<attack physical="1013.1475" magical="654.9544" random="30" critical="132" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="474.628" magical="354.5296" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="45" />
-				<run ground="174" />
+				<walk ground="48.51" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>460</hitTime>
 		</stats>
@@ -2616,13 +2514,10 @@
 		<skillList>
 			<skill id="4074" level="2" /> <!--NPC Haste -->
 			<skill id="4408" level="12" /> <!--HP Increase (4x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="11" /> <!--Giants -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -2682,18 +2577,18 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="78" /> <!-- rhand: Great Sword -->
-		<acquire expRate="5.5432512" sp="2273" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2244.67715" hpRegen="7.5" mp="1219.8" mpRegen="2.7" />
-			<attack physical="603.79903" magical="412.31647" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="276.72752" magical="184.248304515217" />
+		<acquire expRate="4.6188" sp="1892" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2244" hpRegen="116.0826" mp="1501.83" mpRegen="4.783" />
+			<attack physical="1062.432" magical="695.644" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="489.1335" magical="365.2277" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="40" />
-				<run ground="174" />
+				<walk ground="43.56" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>170</hitTime>
 		</stats>
@@ -2701,13 +2596,10 @@
 		<skillList>
 			<skill id="4073" level="6" /> <!--Stun -->
 			<skill id="4408" level="12" /> <!--HP Increase (4x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -2771,18 +2663,18 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="77" /> <!-- rhand: Tsurugi -->
-		<acquire expRate="7.7203104" sp="3300" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2295.48154" hpRegen="7.5" mp="1251.0" mpRegen="2.7" />
-			<attack physical="624.93199" magical="426.74754" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="281.55251" magical="187.460838840844" />
+		<acquire expRate="6.4336" sp="2748" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2295" hpRegen="116.8315" mp="1540.68" mpRegen="4.8138" />
+			<attack physical="1483.3728" magical="739.3929" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="378.3624" magical="376.0343" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="27" />
-				<run ground="174" />
+				<walk ground="28.71" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>710</hitTime>
 		</stats>
@@ -2790,13 +2682,10 @@
 		<skillList>
 			<skill id="4032" level="6" /> <!--NPC Strike -->
 			<skill id="4408" level="12" /> <!--HP Increase (4x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="13" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="13" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="16" /> <!--Very Strong P. Def. -->
 			<skill id="4413" level="9" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -2863,18 +2752,18 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="1472" /> <!-- rhand: Dreadbane -->
-		<acquire expRate="6.4421568" sp="2878" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2345.76698" hpRegen="7.5" mp="1282.4" mpRegen="2.7" />
-			<attack physical="646.17968" magical="441.25696" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="286.3615" magical="190.662718462344" />
+		<acquire expRate="5.3675" sp="2395" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2346" hpRegen="146.9756" mp="1579.53" mpRegen="4.8447" />
+			<attack physical="1283.9837" magical="784.0934" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="472.3031" magical="388.0122" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="100" />
-				<run ground="174" />
+				<walk ground="108.9" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>450</hitTime>
 		</stats>
@@ -2885,13 +2774,6 @@
 			<skill id="4094" level="6" /> <!--NPC Cancel Magic -->
 			<skill id="4098" level="6" /> <!--Silence -->
 			<skill id="4408" level="13" /> <!--HP Increase (5x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -2956,18 +2838,18 @@
 		</parameters>
 		<race>DEMONIC</race>
 		<sex>FEMALE</sex>
-		<acquire expRate="6.741792" sp="3140" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2395.45533" hpRegen="7.5" mp="1314.0" mpRegen="2.7" />
-			<attack physical="667.50361" magical="455.81844" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="291.15063" magical="193.851368417065" />
+		<acquire expRate="5.6175" sp="2615" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2395" hpRegen="147.9117" mp="1618.38" mpRegen="4.8756" />
+			<attack physical="1477.9699" magical="830.8678" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="442.4948" magical="399.0421" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-13" dark="184" />
 			</attribute>
 			<speed>
-				<walk ground="80" />
-				<run ground="174" />
+				<walk ground="87.12" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>500</hitTime>
 		</stats>
@@ -2977,13 +2859,10 @@
 			<skill id="4047" level="6" /> <!--Hold -->
 			<skill id="4117" level="6" /> <!--Paralysis -->
 			<skill id="4408" level="13" /> <!--HP Increase (5x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="9" /> <!--Demons -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -3045,18 +2924,18 @@
 		</parameters>
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
-		<acquire expRate="8.0626128" sp="3917" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2444.46819" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
-			<attack physical="688.86373" magical="470.40463" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="295.91597" magical="197.024195544734" />
+		<acquire expRate="6.7185" sp="3260" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2444" hpRegen="148.8479" mp="1657.23" mpRegen="4.9064" />
+			<attack physical="1433.6712" magical="776.2652" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="427.7259" magical="364.0636" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-13" dark="184" />
 			</attribute>
 			<speed>
-				<walk ground="37" />
-				<run ground="174" />
+				<walk ground="39.6" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>450</hitTime>
 		</stats>
@@ -3068,13 +2947,9 @@
 			<skill id="4086" level="1" /> <!--Critical Chance -->
 			<skill id="4091" level="1" /> <!--NPC Ogre Spirit Totem -->
 			<skill id="4408" level="13" /> <!--HP Increase (5x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="13" /> <!--Slightly Strong P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="9" /> <!--Demons -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -3133,30 +3008,22 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="127" /> <!-- rhand: Crimson Sword -->
-		<acquire expRate="1.74528" sp="180" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="966.57792" hpRegen="4.5" mp="478.8" mpRegen="1.8" />
-			<attack physical="176.36077" magical="120.43155" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="156.55035" magical="104.232986928232" />
+		<acquire expRate="1.4544" sp="150" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="966" hpRegen="14.4916" mp="589.41" mpRegen="2.6347" />
+			<attack physical="274.6926" magical="133.0159" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="202.2462" magical="164.3821" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="45" />
-				<run ground="174" />
+				<walk ground="48.51" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>460</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -3242,31 +3109,28 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="14" /> <!-- rhand: Bow -->
-		<acquire expRate="2.2506432" sp="247" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1008.23781" hpRegen="5.5" mp="504.8" mpRegen="2.1" />
-			<attack physical="187.11878" magical="127.77787" random="10" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
-			<defence physical="160.69002" magical="106.989225133249" />
+		<acquire expRate="1.8751" sp="206" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1008" hpRegen="17.8493" mp="621.6" mpRegen="3.088" />
+			<attack physical="597.246" magical="145.3981" random="10" critical="88" accuracy="0" attackSpeed="244" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="197.73" magical="170.7069" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="45" />
-				<run ground="174" />
+				<walk ground="48.51" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>910</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4040" level="4" /> <!--NPC Bow Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
 			<skill id="4414" level="3" /> <!--Light Armor Type -->
-			<skill id="4415" level="9" /> <!--Bows -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -3361,31 +3225,27 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="75" /> <!-- rhand: Caliburs -->
-		<acquire expRate="2.139396" sp="251" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1050.81652" hpRegen="5.5" mp="531.0" mpRegen="2.1" />
-			<attack physical="198.34591" magical="135.44454" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="164.88513" magical="109.782377202178" />
+		<acquire expRate="1.7823" sp="209" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1051" hpRegen="17.9866" mp="653.79" mpRegen="3.1118" />
+			<attack physical="349.4556" magical="159.1619" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="200.2728" magical="178.1273" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="36" />
-				<run ground="174" />
+				<walk ground="38.61" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>540</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4032" level="4" /> <!--NPC Strike -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -3472,17 +3332,17 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="9" /> <!-- rhand: Cedar Staff -->
-		<acquire expRate="1.991364" sp="248" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1094.28943" hpRegen="5.5" mp="557.4" mpRegen="2.1" />
-			<attack physical="210.04832" magical="143.43577" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="169.13417" magical="112.611442266143" />
+		<acquire expRate="1.6593" sp="207" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1094" hpRegen="18.1239" mp="685.98" mpRegen="3.1355" />
+			<attack physical="310.9392" magical="173.296" random="50" critical="11" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="252.252" magical="185.6408" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="10" />
-				<run ground="174" />
+				<walk ground="10.89" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>340</hitTime>
 		</stats>
@@ -3491,14 +3351,10 @@
 			<skill id="4065" level="4" /> <!--NPC Heal -->
 			<skill id="4157" level="4" /> <!--NPC Blaze - Magic -->
 			<skill id="4160" level="4" /> <!--NPC Aura Burn - Magic -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -3585,17 +3441,17 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="75" lhand="104" /> <!-- rhand: Caliburs lhand: Shield of Victory -->
-		<acquire expRate="3.64938" sp="484" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1138.62924" hpRegen="5.5" mp="584.0" mpRegen="2.1" />
-			<attack physical="222.23112" magical="151.75505" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="173.43552" magical="115.475328468187" shield="87" shieldRate="20" />
+		<acquire expRate="3.0402" sp="402" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1139" hpRegen="36.5223" mp="719.28" mpRegen="3.1593" />
+			<attack physical="334.0428" magical="189.963" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="262.4622" magical="193.2477" shield="87" shieldRate="20" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="36" />
-				<run ground="174" />
+				<walk ground="38.61" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>540</hitTime>
 		</stats>
@@ -3603,13 +3459,10 @@
 		<skillList>
 			<skill id="4032" level="4" /> <!--NPC Strike -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -3695,31 +3548,27 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire expRate="1.76256" sp="248" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1183.80594" hpRegen="5.5" mp="610.8" mpRegen="2.1" />
-			<attack physical="234.89829" magical="160.40508" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="177.78746" magical="118.372898457316" />
+		<acquire expRate="1.4686" sp="207" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1184" hpRegen="18.3985" mp="751.47" mpRegen="3.183" />
+			<attack physical="433.758" magical="205.9778" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="225.7632" magical="200.9477" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="90" />
-				<run ground="174" />
+				<walk ground="98.01" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>390</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4039" level="4" /> <!--NPC MP Drain -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="2" /> <!--Magic Creatures -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -3796,32 +3645,28 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire expRate="1.8776556" sp="282" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1229.78678" hpRegen="5.5" mp="637.8" mpRegen="2.1" />
-			<attack physical="248.0526" magical="169.38777" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="182.18816" magical="121.302932993263" />
+		<acquire expRate="1.5643" sp="235" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1230" hpRegen="18.5358" mp="784.77" mpRegen="3.2068" />
+			<attack physical="465.426" magical="224.6321" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="234.819" magical="208.7411" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="80" />
-				<run ground="174" />
+				<walk ground="87.12" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>390</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4093" level="1" /> <!--Evasion -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -3916,32 +3761,28 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire expRate="1.8776556" sp="298" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1276.53628" hpRegen="5.5" mp="665.0" mpRegen="2.1" />
-			<attack physical="261.69549" magical="178.7041" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="186.63569" magical="124.264149144103" />
+		<acquire expRate="1.5645" sp="248" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1276" hpRegen="18.6731" mp="819.18" mpRegen="3.2305" />
+			<attack physical="497.5152" magical="243.7724" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="243.984" magical="217.6843" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="80" />
-				<run ground="174" />
+				<walk ground="87.12" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>410</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4093" level="1" /> <!--Evasion -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -4033,32 +3874,28 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire expRate="1.8776556" sp="316" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1324.01623" hpRegen="5.5" mp="692.4" mpRegen="2.1" />
-			<attack physical="275.82705" magical="188.35412" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="191.12803" magical="127.255200286259" />
+		<acquire expRate="1.5647" sp="263" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1323" hpRegen="18.8104" mp="852.48" mpRegen="3.2543" />
+			<attack physical="532.1628" magical="264.549" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="254.3268" magical="225.6719" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="80" />
-				<run ground="174" />
+				<walk ground="87.12" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>390</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4093" level="1" /> <!--Evasion -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -4147,17 +3984,17 @@
 		</parameters>
 		<race>FAIRY</race>
 		<sex>MALE</sex>
-		<acquire expRate="4.2525492" sp="755" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1372.18568" hpRegen="5.5" mp="720.0" mpRegen="2.1" />
-			<attack physical="290.44588" magical="198.33688" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="195.66302" magical="130.274648808072" />
+		<acquire expRate="3.5436" sp="628" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1372" hpRegen="37.8954" mp="886.89" mpRegen="3.2781" />
+			<attack physical="470.3868" magical="287.0173" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="319.6908" magical="234.8249" />
 			<attribute>
 				<defence fire="20" water="20" wind="53" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="80" />
-				<run ground="174" />
+				<walk ground="87.12" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>390</hitTime>
 		</stats>
@@ -4168,13 +4005,10 @@
 			<skill id="4094" level="4" /> <!--NPC Cancel Magic -->
 			<skill id="4095" level="1" /> <!--Damage Shield -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="13" /> <!--Fairies -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -4260,30 +4094,22 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="88" lhand="945" /> <!-- rhand: Morning Star lhand: Skeleton Buckler -->
-		<acquire expRate="1.74528" sp="329" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1421.00103" hpRegen="5.5" mp="747.8" mpRegen="2.1" />
-			<attack physical="305.54906" magical="208.6504" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="200.23844" magical="133.321011603844" shield="100" shieldRate="20" />
+		<acquire expRate="1.4544" sp="274" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1421" hpRegen="19.085" mp="921.3" mpRegen="3.3018" />
+			<attack physical="509.4072" magical="264.3813" random="50" critical="11" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="274.3582" magical="226.652" shield="100" shieldRate="20" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="37" />
-				<run ground="174" />
+				<walk ground="39.6" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>280</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -4369,31 +4195,23 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="70" /> <!-- rhand: Claymore -->
-		<acquire expRate="2.0768832" sp="412" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1470.41596" hpRegen="6.5" mp="775.8" mpRegen="2.4" />
-			<attack physical="321.13207" magical="219.29157" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="204.85194" magical="136.392732777413" />
+		<acquire expRate="1.7305" sp="343" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1470" hpRegen="22.7172" mp="955.71" mpRegen="3.8073" />
+			<attack physical="543.312" magical="285.4694" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="284.284" magical="234.3432" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="37" />
-				<run ground="174" />
+				<walk ground="39.6" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>280</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4032" level="5" /> <!--NPC Strike -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -4481,17 +4299,17 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="14" /> <!-- rhand: Bow -->
-		<acquire expRate="1.8702624" sp="391" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1520.38155" hpRegen="6.5" mp="804.0" mpRegen="2.4" />
-			<attack physical="337.18867" magical="230.25615" random="10" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
-			<defence physical="209.50106" magical="139.488165444537" />
+		<acquire expRate="1.5584" sp="326" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1520" hpRegen="22.8795" mp="990.12" mpRegen="3.8345" />
+			<attack physical="1169.5104" magical="309.141" random="10" critical="88" accuracy="0" attackSpeed="244" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="324.3564" magical="243.1383" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="37" />
-				<run ground="174" />
+				<walk ground="39.6" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>930</hitTime>
 		</stats>
@@ -4499,14 +4317,10 @@
 		<skillList>
 			<skill id="4085" level="1" /> <!--Critical Damage -->
 			<skill id="4096" level="3" /> <!--NPC Hawkeye -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="9" /> <!--Bows -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -4593,31 +4407,27 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="291" /> <!-- rhand: Trident -->
-		<acquire expRate="1.850688" sp="409" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1570.8463" hpRegen="6.5" mp="832.4" mpRegen="2.4" />
-			<attack physical="353.71092" magical="241.5387" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="214.18326" magical="142.605626325743" />
+		<acquire expRate="1.5422" sp="341" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1570" hpRegen="23.0418" mp="1024.53" mpRegen="3.8617" />
+			<attack physical="676.8288" magical="333.3992" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="278.2632" magical="253.0589" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="40" />
-				<run ground="174" />
+				<walk ground="43.56" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>560</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4030" level="3" /> <!--NPC Clan Might -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -4704,17 +4514,17 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="9" /> <!-- rhand: Cedar Staff -->
-		<acquire expRate="1.74528" sp="406" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1621.75618" hpRegen="6.5" mp="861.0" mpRegen="2.4" />
-			<attack physical="370.68904" magical="253.13256" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="218.89589" magical="145.743350252286" />
+		<acquire expRate="1.4544" sp="338" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1622" hpRegen="23.204" mp="1060.05" mpRegen="3.8889" />
+			<attack physical="719.6904" magical="359.3097" random="50" critical="11" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="288.3452" magical="262.0632" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="43" />
-				<run ground="174" />
+				<walk ground="46.53" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>630</hitTime>
 		</stats>
@@ -4723,14 +4533,10 @@
 			<skill id="4076" level="3" /> <!--Decrease Speed -->
 			<skill id="4155" level="5" /> <!--NPC Twister - Magic -->
 			<skill id="4160" level="5" /> <!--NPC Aura Burn - Magic -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -4817,17 +4623,17 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="221" /> <!-- rhand: Assassin Knife -->
-		<acquire expRate="3.7831512" sp="924" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
-			<attack physical="388.11142" magical="265.02979" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="223.6362" magical="148.899508363765" />
+		<acquire expRate="3.1524" sp="770" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1673" hpRegen="46.7326" mp="1095.57" mpRegen="3.9161" />
+			<attack physical="631.4112" magical="386.9231" random="30" critical="132" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="361.9296" magical="271.1686" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="53" />
-				<run ground="174" />
+				<walk ground="57.42" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>460</hitTime>
 		</stats>
@@ -4837,13 +4643,10 @@
 			<skill id="4085" level="1" /> <!--Critical Damage -->
 			<skill id="4086" level="1" /> <!--Critical Chance -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -4901,17 +4704,17 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>MALE</sex>
-		<acquire expRate="2.850624" sp="696" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
-			<attack physical="388.11142" magical="265.02979" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="223.6362" magical="148.899508363765" />
+		<acquire expRate="2.3748" sp="580" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1673" hpRegen="46.7326" mp="1095.57" mpRegen="3.9161" />
+			<attack physical="764.1216" magical="386.9231" random="50" critical="132" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="298.5408" magical="271.1686" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="60" />
-				<run ground="170" />
+				<walk ground="65.34" />
+				<run ground="185.13" />
 			</speed>
 			<hitTime>450</hitTime>
 		</stats>
@@ -4919,13 +4722,10 @@
 		<skillList>
 			<skill id="4088" level="5" /> <!--Bleed -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="3" /> <!--Beasts -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -5014,17 +4814,17 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire expRate="2.7592872" sp="710" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1724.6831" hpRegen="6.5" mp="918.8" mpRegen="2.4" />
-			<attack physical="405.96455" magical="277.22116" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="228.40135" magical="152.072199009316" />
+		<acquire expRate="2.2992" sp="592" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1724" hpRegen="47.0571" mp="1131.09" mpRegen="3.9433" />
+			<attack physical="811.188" magical="416.2905" random="50" critical="132" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="309.8795" magical="281.4211" />
 			<attribute>
 				<defence fire="20" water="20" wind="-5" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="70" />
-				<run ground="110" />
+				<walk ground="76.23" />
+				<run ground="119.79" />
 			</speed>
 			<hitTime>410</hitTime>
 		</stats>
@@ -5033,13 +4833,10 @@
 			<skill id="4001" level="5" /> <!--NPC Windstrike -->
 			<skill id="4276" level="1" /> <!--Weak Point against Bow/Crossbow Weapons -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="2" /> <!--Magic Creatures -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -5133,17 +4930,17 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire expRate="3.024396" sp="816" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1776.58018" hpRegen="6.5" mp="948.0" mpRegen="2.4" />
-			<attack physical="424.23295" magical="289.69611" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="233.18839" magical="155.259456846417" />
+		<acquire expRate="2.5202" sp="680" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1776" hpRegen="47.3817" mp="1167.72" mpRegen="3.9705" />
+			<attack physical="858.8304" magical="447.4638" random="50" critical="132" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="320.3094" magical="290.7356" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="80" />
-				<run ground="140" />
+				<walk ground="87.12" />
+				<run ground="152.46" />
 			</speed>
 			<hitTime>100</hitTime>
 		</stats>
@@ -5151,13 +4948,9 @@
 		<skillList>
 			<skill id="4034" level="5" /> <!--Decrease Speed -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="13" /> <!--Slightly Strong P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="2" /> <!--Magic Creatures -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -5247,17 +5040,17 @@
 		</parameters>
 		<race>BUG</race>
 		<sex>MALE</sex>
-		<acquire expRate="2.907636" sp="827" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1828.68266" hpRegen="6.5" mp="977.4" mpRegen="2.4" />
-			<attack physical="442.8992" magical="302.44274" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="237.99429" magical="158.459289236126" />
+		<acquire expRate="2.4228" sp="688" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1828" hpRegen="47.7062" mp="1203.24" mpRegen="3.9977" />
+			<attack physical="909.1656" magical="479.3752" random="50" critical="132" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="331.8966" magical="301.2118" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="60" />
-				<run ground="140" />
+				<walk ground="65.34" />
+				<run ground="152.46" />
 			</speed>
 			<hitTime>650</hitTime>
 		</stats>
@@ -5265,13 +5058,10 @@
 		<skillList>
 			<skill id="4035" level="5" /> <!--Poison -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="12" /> <!--Bugs -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -5361,17 +5151,17 @@
 		</parameters>
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
-		<acquire expRate="3.0411504" sp="905" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1880.92519" hpRegen="6.5" mp="1007.0" mpRegen="2.4" />
-			<attack physical="461.94387" magical="315.44778" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="242.81593" magical="161.669585254993" />
+		<acquire expRate="2.5338" sp="754" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1880" hpRegen="48.0307" mp="1239.87" mpRegen="4.0249" />
+			<attack physical="961.1712" magical="514.3026" random="50" critical="132" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="342.5608" magical="310.7356" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="37" />
-				<run ground="170" />
+				<walk ground="39.6" />
+				<run ground="185.13" />
 			</speed>
 			<hitTime>450</hitTime>
 		</stats>
@@ -5379,13 +5169,10 @@
 		<skillList>
 			<skill id="4073" level="5" /> <!--Stun -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="4" /> <!--Animals -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -5474,30 +5261,27 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire expRate="2.731968" sp="853" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1933.24044" hpRegen="6.5" mp="1036.8" mpRegen="2.4" />
-			<attack physical="481.34551" magical="328.69659" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="247.65008" magical="164.888215781956" />
+		<acquire expRate="2.2762" sp="710" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1933" hpRegen="48.3553" mp="1276.5" mpRegen="4.0521" />
+			<attack physical="783.001" magical="473.4557" random="50" critical="132" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="404.3115" magical="301.6548" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="80" />
-				<run ground="170" />
+				<walk ground="87.12" />
+				<run ground="185.13" />
 			</speed>
 			<hitTime>460</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="2" /> <!--Magic Creatures -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -5580,17 +5364,17 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire expRate="2.7866076" sp="913" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1985.55926" hpRegen="7.5" mp="1066.8" mpRegen="2.7" />
-			<attack physical="501.08068" magical="342.17315" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="252.49346" magical="168.112997103103" />
+		<acquire expRate="2.322" sp="760" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1985" hpRegen="56.169" mp="1314.24" mpRegen="4.6287" />
+			<attack physical="825.552" magical="506.9357" random="50" critical="132" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="418.08" magical="311.8046" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="80" />
-				<run ground="170" />
+				<walk ground="87.12" />
+				<run ground="185.13" />
 			</speed>
 			<hitTime>720</hitTime>
 		</stats>
@@ -5598,13 +5382,10 @@
 		<skillList>
 			<skill id="4037" level="2" /> <!--Decrease P. Atk. -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="2" /> <!--Magic Creatures -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -5692,30 +5473,23 @@
 		<race>GIANT</race>
 		<sex>MALE</sex>
 		<equipment rhand="3937" /> <!-- rhand: Giant Bar -->
-		<acquire expRate="3.92688" sp="1286" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1985.55926" hpRegen="7.5" mp="1066.8" mpRegen="2.7" />
-			<attack physical="501.08068" magical="342.17315" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="252.49346" magical="168.112997103103" />
+		<acquire expRate="3.2718" sp="1071" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1985" hpRegen="84.2535" mp="1314.24" mpRegen="4.6287" />
+			<attack physical="908.208" magical="506.9357" random="50" critical="44" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="379.89" magical="311.8046" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="15" />
-				<run ground="180" />
+				<walk ground="15.84" />
+				<run ground="196.02" />
 			</speed>
 			<hitTime>580</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4408" level="11" /> <!--HP Increase (3x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="11" /> <!--Giants -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -5749,17 +5523,17 @@
 		<race>GIANT</race>
 		<sex>MALE</sex>
 		<equipment rhand="3937" /> <!-- rhand: Giant Bar -->
-		<acquire expRate="5.8289448" sp="1997" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2037.81082" hpRegen="7.5" mp="1097.0" mpRegen="2.7" />
-			<attack physical="521.12391" magical="355.86007" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="257.34267" magical="171.341654516443" />
+		<acquire expRate="4.8573" sp="1662" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2037" hpRegen="84.8152" mp="1350.87" mpRegen="4.6596" />
+			<attack physical="1158.8102" magical="541.1834" random="50" critical="44" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="324.7557" magical="322.0626" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="15" />
-				<run ground="180" />
+				<walk ground="15.84" />
+				<run ground="196.02" />
 			</speed>
 			<hitTime>580</hitTime>
 		</stats>
@@ -5767,13 +5541,10 @@
 		<skillList>
 			<skill id="4073" level="6" /> <!--Stun -->
 			<skill id="4408" level="11" /> <!--HP Increase (3x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="13" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="13" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="16" /> <!--Very Strong P. Def. -->
 			<skill id="4413" level="9" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="11" /> <!--Giants -->
 			<skill id="4439" level="2" /> <!--Greater Resist Hold -->
 		</skillList>
@@ -5836,17 +5607,17 @@
 		<race>GIANT</race>
 		<sex>MALE</sex>
 		<equipment rhand="4028" /> <!-- rhand: Giant Cannon -->
-		<acquire expRate="4.6123992" sp="1652" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2089.92274" hpRegen="7.5" mp="1127.4" mpRegen="2.7" />
-			<attack physical="541.44774" magical="369.73862" random="10" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
-			<defence physical="262.19426" magical="174.571895122369" />
+		<acquire expRate="3.8436" sp="1377" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2090" hpRegen="85.3769" mp="1388.61" mpRegen="4.6904" />
+			<attack physical="2241.0394" magical="577.237" random="10" critical="132" accuracy="0" attackSpeed="244" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="405.3232" magical="332.429" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="80" />
-				<run ground="180" />
+				<walk ground="87.12" />
+				<run ground="196.02" />
 			</speed>
 			<hitTime>630</hitTime>
 		</stats>
@@ -5854,13 +5625,7 @@
 		<skillList>
 			<skill id="4071" level="5" /> <!--Resist Bow/Crossbow Weapons -->
 			<skill id="4408" level="11" /> <!--HP Increase (3x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
 			<skill id="4412" level="13" /> <!--Slightly Strong P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="9" /> <!--Bows -->
 			<skill id="4416" level="11" /> <!--Giants -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -5922,17 +5687,17 @@
 		<race>GIANT</race>
 		<sex>MALE</sex>
 		<equipment rhand="4028" /> <!-- rhand: Giant Cannon -->
-		<acquire expRate="4.2080916" sp="1508" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2089.92274" hpRegen="7.5" mp="1127.4" mpRegen="2.7" />
-			<attack physical="541.44774" magical="369.73862" random="10" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
-			<defence physical="262.19426" magical="174.571895122369" />
+		<acquire expRate="3.5064" sp="1257" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2090" hpRegen="85.3769" mp="1388.61" mpRegen="4.6904" />
+			<attack physical="2241.0394" magical="577.237" random="10" critical="132" accuracy="0" attackSpeed="244" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="344.2192" magical="332.429" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="80" />
-				<run ground="180" />
+				<walk ground="87.12" />
+				<run ground="196.02" />
 			</speed>
 			<hitTime>630</hitTime>
 		</stats>
@@ -5941,13 +5706,7 @@
 			<skill id="4086" level="1" /> <!--Critical Chance -->
 			<skill id="4105" level="6" /> <!--NPC Straight Beam Cannon -->
 			<skill id="4408" level="11" /> <!--HP Increase (3x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
 			<skill id="4414" level="3" /> <!--Light Armor Type -->
-			<skill id="4415" level="9" /> <!--Bows -->
 			<skill id="4416" level="11" /> <!--Giants -->
 			<skill id="4438" level="2" /> <!--Greater Resist Sleep -->
 		</skillList>
@@ -6011,17 +5770,17 @@
 		<race>GIANT</race>
 		<sex>MALE</sex>
 		<equipment rhand="3938" /> <!-- rhand: Giant Rod -->
-		<acquire expRate="3.2294664" sp="1211" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2141.82127" hpRegen="7.5" mp="1158.0" mpRegen="2.7" />
-			<attack physical="562.02275" magical="383.78868" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="267.04468" magical="177.801362329617" />
+		<acquire expRate="2.691" sp="1008" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2142" hpRegen="57.2924" mp="1426.35" mpRegen="4.7213" />
+			<attack physical="1166.9616" magical="615.1444" random="50" critical="44" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="380.3121" magical="342.9038" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="15" />
-				<run ground="180" />
+				<walk ground="15.84" />
+				<run ground="196.02" />
 			</speed>
 			<hitTime>560</hitTime>
 		</stats>
@@ -6031,13 +5790,10 @@
 			<skill id="4156" level="6" /> <!--NPC Curve Beam Cannon - Magic -->
 			<skill id="4160" level="6" /> <!--NPC Aura Burn - Magic -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="13" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="11" /> <!--Giants -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -6131,17 +5887,17 @@
 		<race>GIANT</race>
 		<sex>MALE</sex>
 		<equipment rhand="3938" /> <!-- rhand: Giant Rod -->
-		<acquire expRate="3.024396" sp="1187" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2193.43142" hpRegen="7.5" mp="1188.8" mpRegen="2.7" />
-			<attack physical="582.81759" magical="397.98887" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="271.89033" magical="181.027644954078" />
+		<acquire expRate="2.5202" sp="988" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2193" hpRegen="57.6668" mp="1464.09" mpRegen="4.7521" />
+			<attack physical="1225.2979" magical="654.9544" random="50" critical="44" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="392.084" magical="354.5296" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="15" />
-				<run ground="180" />
+				<walk ground="15.84" />
+				<run ground="196.02" />
 			</speed>
 			<hitTime>560</hitTime>
 		</stats>
@@ -6154,13 +5910,10 @@
 			<skill id="4094" level="6" /> <!--NPC Cancel Magic -->
 			<skill id="4273" level="3" /> <!--Resist Daggers/Rapier Weapon -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="13" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="11" /> <!--Giants -->
 			<skill id="4438" level="2" /> <!--Greater Resist Sleep -->
 			<skill id="4439" level="2" /> <!--Greater Resist Hold -->
@@ -6250,18 +6003,18 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire expRate="2.443392" sp="344" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1183.80594" hpRegen="5.5" mp="610.8" mpRegen="2.1" />
-			<attack physical="234.89829" magical="160.40508" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="177.78746" magical="118.372898457316" />
+		<acquire expRate="2.036" sp="287" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1184" hpRegen="18.3985" mp="751.47" mpRegen="3.183" />
+			<attack physical="394.0404" magical="205.9778" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="248.7576" magical="200.9477" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="15" />
-				<run ground="15" />
+				<walk ground="15.84" />
+				<run ground="15.84" />
 			</speed>
 			<hitTime>430</hitTime>
 		</stats>
@@ -6270,14 +6023,7 @@
 			<skill id="4071" level="5" /> <!--Resist Bow/Crossbow Weapons -->
 			<skill id="4248" level="4" /> <!--NPC HP Drain - Slow -->
 			<skill id="4284" level="5" /> <!--Resist Bleed Attacks -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
 			<skill id="4413" level="19" /> <!--Extremely Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -6361,32 +6107,29 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="14" /> <!-- rhand: Bow -->
-		<acquire expRate="2.2956564" sp="344" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1229.78678" hpRegen="5.5" mp="637.8" mpRegen="2.1" />
-			<attack physical="248.0526" magical="169.38777" random="10" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
-			<defence physical="182.18816" magical="121.302932993263" />
+		<acquire expRate="1.913" sp="287" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1230" hpRegen="18.5358" mp="784.77" mpRegen="3.2068" />
+			<attack physical="1034.046" magical="224.6321" random="10" critical="88" accuracy="0" attackSpeed="244" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="200.07" magical="208.7411" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="40" />
-				<run ground="174" />
+				<walk ground="43.56" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>800</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4120" level="4" /> <!--Stun -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
 			<skill id="4414" level="3" /> <!--Light Armor Type -->
-			<skill id="4415" level="9" /> <!--Bows -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -6470,31 +6213,23 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="946" /> <!-- rhand: Skeleton Dagger -->
-		<acquire expRate="2.0768832" sp="329" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1276.53628" hpRegen="5.5" mp="665.0" mpRegen="2.1" />
-			<attack physical="261.69549" magical="178.7041" random="10" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
-			<defence physical="186.63569" magical="124.264149144103" />
+		<acquire expRate="1.7306" sp="274" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1276" hpRegen="18.6731" mp="819.18" mpRegen="3.2305" />
+			<attack physical="395.6784" magical="243.7724" random="10" critical="132" accuracy="0" attackSpeed="310" type="DAGGER" range="40" distance="80" width="120" />
+			<defence physical="268.3824" magical="217.6843" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="80" />
-				<run ground="174" />
+				<walk ground="87.12" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>610</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4067" level="4" /> <!--NPC Mortal Blow -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="7" /> <!--Daggers -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -6584,31 +6319,23 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="221" /> <!-- rhand: Assassin Knife -->
-		<acquire expRate="2.0768832" sp="349" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1324.01623" hpRegen="5.5" mp="692.4" mpRegen="2.1" />
-			<attack physical="275.82705" magical="188.35412" random="10" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
-			<defence physical="191.12803" magical="127.255200286259" />
+		<acquire expRate="1.7305" sp="291" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1323" hpRegen="18.8104" mp="852.48" mpRegen="3.2543" />
+			<attack physical="423.1656" magical="264.549" random="10" critical="132" accuracy="0" attackSpeed="310" type="DAGGER" range="40" distance="80" width="120" />
+			<defence physical="278.9046" magical="225.6719" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="80" />
-				<run ground="174" />
+				<walk ground="87.12" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>610</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4067" level="4" /> <!--NPC Mortal Blow -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="7" /> <!--Daggers -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -6697,31 +6424,27 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>FEMALE</sex>
-		<acquire expRate="1.74528" sp="310" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1372.18568" hpRegen="5.5" mp="720.0" mpRegen="2.1" />
-			<attack physical="290.44588" magical="198.33688" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="195.66302" magical="130.274648808072" />
+		<acquire expRate="1.4544" sp="258" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1372" hpRegen="18.9477" mp="886.89" mpRegen="3.2781" />
+			<attack physical="569.4156" magical="287.0173" random="30" critical="132" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="263.718" magical="234.8249" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="50" />
-				<run ground="174" />
+				<walk ground="54.45" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>520</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4047" level="4" /> <!--Hold -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="3" /> <!--Beasts -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -6803,31 +6526,27 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire expRate="1.76256" sp="332" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1421.00103" hpRegen="5.5" mp="747.8" mpRegen="2.1" />
-			<attack physical="305.54906" magical="208.6504" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="200.23844" magical="133.321011603844" />
+		<acquire expRate="1.4688" sp="277" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1421" hpRegen="19.085" mp="921.3" mpRegen="3.3018" />
+			<attack physical="560.448" magical="264.3813" random="30" critical="132" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="249.6857" magical="226.652" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="70" />
-				<run ground="174" />
+				<walk ground="76.23" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>410</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4039" level="5" /> <!--NPC MP Drain -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="2" /> <!--Magic Creatures -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -6912,31 +6631,27 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="69" /> <!-- rhand: Bastard Sword -->
-		<acquire expRate="2.0768832" sp="412" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1470.41596" hpRegen="6.5" mp="775.8" mpRegen="2.4" />
-			<attack physical="321.13207" magical="219.29157" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="204.85194" magical="136.392732777413" />
+		<acquire expRate="1.7305" sp="343" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1470" hpRegen="22.7172" mp="955.71" mpRegen="3.8073" />
+			<attack physical="493.92" magical="285.4694" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="313.11" magical="234.3432" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="45" />
-				<run ground="174" />
+				<walk ground="48.51" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>460</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4032" level="5" /> <!--NPC Strike -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -7034,31 +6749,27 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="72" /> <!-- rhand: Stormbringer -->
-		<acquire expRate="2.0768832" sp="434" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1520.38155" hpRegen="6.5" mp="804.0" mpRegen="2.4" />
-			<attack physical="337.18867" magical="230.25615" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="209.50106" magical="139.488165444537" />
+		<acquire expRate="1.7304" sp="362" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1520" hpRegen="22.8795" mp="990.12" mpRegen="3.8345" />
+			<attack physical="636.5304" magical="309.141" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="268.2948" magical="243.1383" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="45" />
-				<run ground="174" />
+				<walk ground="48.51" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>460</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4073" level="5" /> <!--Stun -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -7145,31 +6856,23 @@
 		</parameters>
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
-		<acquire expRate="2.05632" sp="454" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1570.8463" hpRegen="6.5" mp="832.4" mpRegen="2.4" />
-			<attack physical="353.71092" magical="241.5387" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="214.18326" magical="142.605626325743" />
+		<acquire expRate="1.7134" sp="378" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1570" hpRegen="23.0418" mp="1024.53" mpRegen="3.8617" />
+			<attack physical="615.4848" magical="333.3992" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="306.4928" magical="253.0589" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="37" />
-				<run ground="174" />
+				<walk ground="39.6" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>450</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4073" level="5" /> <!--Stun -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="4" /> <!--Animals -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -7254,17 +6957,17 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire expRate="1.76256" sp="409" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1621.75618" hpRegen="6.5" mp="861.0" mpRegen="2.4" />
-			<attack physical="370.68904" magical="253.13256" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="218.89589" magical="145.743350252286" />
+		<acquire expRate="1.4688" sp="341" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1622" hpRegen="23.204" mp="1060.05" mpRegen="3.8889" />
+			<attack physical="595.1088" magical="359.3097" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="349.2632" magical="262.0632" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="140" />
-				<run ground="174" />
+				<walk ground="152.46" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>370</hitTime>
 		</stats>
@@ -7273,14 +6976,10 @@
 			<skill id="4078" level="5" /> <!--NPC Flamestrike -->
 			<skill id="4273" level="3" /> <!--Resist Daggers/Rapier Weapon -->
 			<skill id="4274" level="1" /> <!--Blunt Weapon Weak Point -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="2" /> <!--Magic Creatures -->
 			<skill id="4444" level="2" /> <!--Higher Resist Bow/Crossbow Weapons -->
 		</skillList>
@@ -7369,31 +7068,27 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="75" /> <!-- rhand: Caliburs -->
-		<acquire expRate="2.1184212" sp="517" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
-			<attack physical="388.11142" magical="265.02979" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="223.6362" magical="148.899508363765" />
+		<acquire expRate="1.7653" sp="431" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1673" hpRegen="23.3663" mp="1095.57" mpRegen="3.9161" />
+			<attack physical="764.1216" magical="386.9231" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="298.5408" magical="271.1686" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="36" />
-				<run ground="174" />
+				<walk ground="38.61" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>540</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4073" level="5" /> <!--Stun -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -7479,17 +7174,17 @@
 		</parameters>
 		<race>DRAGON</race>
 		<sex>MALE</sex>
-		<acquire expRate="1.76256" sp="577" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1985.55926" hpRegen="7.5" mp="1066.8" mpRegen="2.7" />
-			<attack physical="501.08068" magical="342.17315" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="252.49346" magical="168.112997103103" />
+		<acquire expRate="1.4687" sp="481" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1985" hpRegen="28.0845" mp="1314.24" mpRegen="4.6287" />
+			<attack physical="999.936" magical="506.9357" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="345.72" magical="311.8046" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="70" />
-				<run ground="174" />
+				<walk ground="76.23" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>840</hitTime>
 		</stats>
@@ -7497,14 +7192,10 @@
 		<skillList>
 			<skill id="4071" level="5" /> <!--Resist Bow/Crossbow Weapons -->
 			<skill id="4100" level="6" /> <!--NPC Prominence -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="10" /> <!--Dragons -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -7589,31 +7280,27 @@
 		</parameters>
 		<race>BUG</race>
 		<sex>MALE</sex>
-		<acquire expRate="1.7801856" sp="610" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2037.81082" hpRegen="7.5" mp="1097.0" mpRegen="2.7" />
-			<attack physical="521.12391" magical="355.86007" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="257.34267" magical="171.341654516443" />
+		<acquire expRate="1.4834" sp="508" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2037" hpRegen="28.2717" mp="1350.87" mpRegen="4.6596" />
+			<attack physical="1053.2794" magical="541.1834" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="357.1301" magical="322.0626" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="25" />
-				<run ground="174" />
+				<walk ground="26.73" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>430</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4098" level="6" /> <!--Silence -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="12" /> <!--Bugs -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -7706,17 +7393,17 @@
 		<race>BEAST</race>
 		<sex>MALE</sex>
 		<equipment rhand="127" /> <!-- rhand: Crimson Sword -->
-		<acquire expRate="1.74528" sp="625" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2089.92274" hpRegen="7.5" mp="1127.4" mpRegen="2.7" />
-			<attack physical="541.44774" magical="369.73862" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="262.19426" magical="174.571895122369" />
+		<acquire expRate="1.4543" sp="521" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2090" hpRegen="28.459" mp="1388.61" mpRegen="4.6904" />
+			<attack physical="916.2317" magical="577.237" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="446.0592" magical="332.429" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="70" />
-				<run ground="174" />
+				<walk ground="76.23" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>460</hitTime>
 		</stats>
@@ -7726,14 +7413,10 @@
 			<skill id="4046" level="6" /> <!--Sleep -->
 			<skill id="4094" level="6" /> <!--NPC Cancel Magic -->
 			<skill id="4098" level="6" /> <!--Silence -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="3" /> <!--Beasts -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -7823,31 +7506,27 @@
 		<race>BEAST</race>
 		<sex>FEMALE</sex>
 		<equipment rhand="73" /> <!-- rhand: Shamshir -->
-		<acquire expRate="1.76256" sp="661" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2141.82127" hpRegen="7.5" mp="1158.0" mpRegen="2.7" />
-			<attack physical="562.02275" magical="383.78868" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="267.04468" magical="177.801362329617" />
+		<acquire expRate="1.4688" sp="551" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2142" hpRegen="28.6462" mp="1426.35" mpRegen="4.7213" />
+			<attack physical="964.4141" magical="615.1444" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="460.2699" magical="342.9038" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="70" />
-				<run ground="174" />
+				<walk ground="76.23" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>430</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4046" level="6" /> <!--Sleep -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="3" /> <!--Beasts -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -7933,18 +7612,18 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="1472" /> <!-- rhand: Dreadbane -->
-		<acquire expRate="2.4566568" sp="965" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2193.43142" hpRegen="7.5" mp="1188.8" mpRegen="2.7" />
-			<attack physical="582.81759" magical="397.98887" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="271.89033" magical="181.027644954078" />
+		<acquire expRate="2.0471" sp="804" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2193" hpRegen="28.8334" mp="1464.09" mpRegen="4.7521" />
+			<attack physical="1225.2979" magical="654.9544" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="392.084" magical="354.5296" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="100" />
-				<run ground="174" />
+				<walk ground="108.9" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>450</hitTime>
 		</stats>
@@ -7953,14 +7632,10 @@
 			<skill id="4073" level="6" /> <!--Stun -->
 			<skill id="4090" level="1" /> <!--NPC Wolf Spirit Totem -->
 			<skill id="4101" level="6" /> <!--NPC Spinning Slash -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -8051,31 +7726,27 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire expRate="1.832544" sp="346" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1421.00103" hpRegen="5.5" mp="747.8" mpRegen="2.1" />
-			<attack physical="305.54906" magical="208.6504" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="200.23844" magical="133.321011603844" />
+		<acquire expRate="1.5268" sp="288" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1421" hpRegen="19.085" mp="921.3" mpRegen="3.3018" />
+			<attack physical="463.3704" magical="264.3813" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="301.9914" magical="226.652" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="80" />
-				<run ground="174" />
+				<walk ground="87.12" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>100</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4029" level="3" /> <!--NPC Shield -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="2" /> <!--Magic Creatures -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -8159,17 +7830,17 @@
 		</parameters>
 		<race>PLANT</race>
 		<sex>MALE</sex>
-		<acquire expRate="1.76256" sp="692" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2193.43142" hpRegen="7.5" mp="1188.8" mpRegen="2.7" />
-			<attack physical="582.81759" magical="397.98887" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="271.89033" magical="181.027644954078" />
+		<acquire expRate="1.4686" sp="577" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2193" hpRegen="28.8334" mp="1464.09" mpRegen="4.7521" />
+			<attack physical="1225.2979" magical="654.9544" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="392.084" magical="354.5296" />
 			<attribute>
 				<defence fire="-34" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="55" />
-				<run ground="174" />
+				<walk ground="59.4" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>480</hitTime>
 		</stats>
@@ -8177,14 +7848,10 @@
 		<skillList>
 			<skill id="4102" level="1" /> <!--Surrender To Fire -->
 			<skill id="4277" level="5" /> <!--Resist Poison Attacks -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="5" /> <!--Plants -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -8267,17 +7934,17 @@
 		</parameters>
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
-		<acquire expRate="1.919808" sp="787" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2244.67715" hpRegen="7.5" mp="1219.8" mpRegen="2.7" />
-			<attack physical="603.79903" magical="412.31647" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="276.72752" magical="184.248304515217" />
+		<acquire expRate="1.5996" sp="656" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2244" hpRegen="29.0206" mp="1501.83" mpRegen="4.783" />
+			<attack physical="1169.7168" magical="695.644" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="444.478" magical="365.2277" />
 			<attribute>
 				<defence fire="20" water="20" wind="-5" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="60" />
-				<run ground="174" />
+				<walk ground="65.34" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>500</hitTime>
 		</stats>
@@ -8285,14 +7952,6 @@
 		<skillList>
 			<skill id="4088" level="5" /> <!--Bleed -->
 			<skill id="4276" level="1" /> <!--Weak Point against Bow/Crossbow Weapons -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="4" /> <!--Animals -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -8374,32 +8033,28 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire expRate="1.74528" sp="385" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1570.8463" hpRegen="6.5" mp="832.4" mpRegen="2.4" />
-			<attack physical="353.71092" magical="241.5387" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="214.18326" magical="142.605626325743" />
+		<acquire expRate="1.4543" sp="321" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1570" hpRegen="23.0418" mp="1024.53" mpRegen="3.8617" />
+			<attack physical="676.8288" magical="333.3992" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="278.2632" magical="253.0589" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="15" />
-				<run ground="174" />
+				<walk ground="15.84" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>450</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4078" level="5" /> <!--NPC Flamestrike -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -8482,17 +8137,17 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire expRate="1.728" sp="402" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1621.75618" hpRegen="6.5" mp="861.0" mpRegen="2.4" />
-			<attack physical="370.68904" magical="253.13256" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="218.89589" magical="145.743350252286" />
+		<acquire expRate="1.44" sp="335" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1622" hpRegen="23.204" mp="1060.05" mpRegen="3.8889" />
+			<attack physical="654.8256" magical="359.3097" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="317.7889" magical="262.0632" />
 			<attribute>
 				<defence fire="20" water="20" wind="-5" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="140" />
-				<run ground="174" />
+				<walk ground="152.46" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>370</hitTime>
 		</stats>
@@ -8502,14 +8157,6 @@
 			<skill id="4102" level="1" /> <!--Surrender To Fire -->
 			<skill id="4273" level="3" /> <!--Resist Daggers/Rapier Weapon -->
 			<skill id="4274" level="1" /> <!--Blunt Weapon Weak Point -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="2" /> <!--Magic Creatures -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -8598,17 +8245,17 @@
 		</parameters>
 		<race>DRAGON</race>
 		<sex>MALE</sex>
-		<acquire expRate="1.76256" sp="431" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1673.05473" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
-			<attack physical="388.11142" magical="265.02979" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="223.6362" magical="148.899508363765" />
+		<acquire expRate="1.4688" sp="359" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1673" hpRegen="23.3663" mp="1095.57" mpRegen="3.9161" />
+			<attack physical="764.1216" magical="386.9231" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="298.5408" magical="271.1686" />
 			<attribute>
 				<defence fire="20" water="20" wind="-5" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="70" />
-				<run ground="174" />
+				<walk ground="76.23" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>840</hitTime>
 		</stats>
@@ -8616,14 +8263,10 @@
 		<skillList>
 			<skill id="4071" level="3" /> <!--Resist Bow/Crossbow Weapons -->
 			<skill id="4100" level="5" /> <!--NPC Prominence -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="10" /> <!--Dragons -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -8709,31 +8352,23 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="88" /> <!-- rhand: Morning Star -->
-		<acquire expRate="1.832544" sp="258" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1183.80594" hpRegen="5.5" mp="610.8" mpRegen="2.1" />
-			<attack physical="234.89829" magical="160.40508" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="177.78746" magical="118.372898457316" />
+		<acquire expRate="1.5269" sp="215" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1184" hpRegen="18.3985" mp="751.47" mpRegen="3.183" />
+			<attack physical="394.0404" magical="205.9778" random="50" critical="11" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="248.7576" magical="200.9477" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="34" />
-				<run ground="174" />
+				<walk ground="36.63" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>460</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4029" level="3" /> <!--NPC Shield -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -8819,31 +8454,23 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="21735" lhand="18" /> <!-- rhand: Tarbar - Event lhand: Leather Shield -->
-		<acquire expRate="1.74528" sp="262" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1229.78678" hpRegen="5.5" mp="637.8" mpRegen="2.1" />
-			<attack physical="248.0526" magical="169.38777" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="182.18816" magical="121.302932993263" shield="91" shieldRate="20" />
+		<acquire expRate="1.4542" sp="218" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1230" hpRegen="18.5358" mp="784.77" mpRegen="3.2068" />
+			<attack physical="422.253" magical="224.6321" random="50" critical="11" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="257.985" magical="208.7411" shield="91" shieldRate="20" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="34" />
-				<run ground="174" />
+				<walk ground="36.63" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>460</hitTime>
 		</stats>
 		<status undying="false" canBeSown="true" />
 		<skillList>
 			<skill id="4099" level="2" /> <!--NPC Berserk -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -8927,17 +8554,17 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="5" /> <!-- rhand: Mace -->
-		<acquire expRate="2.1753516" sp="344" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1276.53628" hpRegen="5.5" mp="665.0" mpRegen="2.1" />
-			<attack physical="261.69549" magical="178.7041" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="186.63569" magical="124.264149144103" />
+		<acquire expRate="1.8126" sp="287" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1276" hpRegen="18.6731" mp="819.18" mpRegen="3.2305" />
+			<attack physical="411.5904" magical="243.7724" random="50" critical="11" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="295.9632" magical="217.6843" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="34" />
-				<run ground="174" />
+				<walk ground="36.63" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>460</hitTime>
 		</stats>
@@ -8945,14 +8572,10 @@
 		<skillList>
 			<skill id="4032" level="4" /> <!--NPC Strike -->
 			<skill id="4085" level="1" /> <!--Critical Damage -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -9039,17 +8662,17 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="160" /> <!-- rhand: Battle Axe -->
-		<acquire expRate="2.1816" sp="367" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1324.01623" hpRegen="5.5" mp="692.4" mpRegen="2.1" />
-			<attack physical="275.82705" magical="188.35412" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="191.12803" magical="127.255200286259" />
+		<acquire expRate="1.8177" sp="306" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1323" hpRegen="18.8104" mp="852.48" mpRegen="3.2543" />
+			<attack physical="532.1628" magical="264.549" random="50" critical="11" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="254.3268" magical="225.6719" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="36" />
-				<run ground="174" />
+				<walk ground="38.61" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>390</hitTime>
 		</stats>
@@ -9057,14 +8680,10 @@
 		<skillList>
 			<skill id="4073" level="4" /> <!--Stun -->
 			<skill id="4093" level="1" /> <!--Evasion -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -9155,17 +8774,17 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="9" /> <!-- rhand: Cedar Staff -->
-		<acquire expRate="1.74528" sp="310" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1372.18568" hpRegen="5.5" mp="720.0" mpRegen="2.1" />
-			<attack physical="290.44588" magical="198.33688" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="195.66302" magical="130.274648808072" />
+		<acquire expRate="1.4544" sp="258" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1372" hpRegen="18.9477" mp="886.89" mpRegen="3.2781" />
+			<attack physical="569.4156" magical="287.0173" random="50" critical="11" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="263.718" magical="234.8249" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="29" />
-				<run ground="174" />
+				<walk ground="30.69" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>220</hitTime>
 		</stats>
@@ -9174,14 +8793,10 @@
 			<skill id="4076" level="3" /> <!--Decrease Speed -->
 			<skill id="4155" level="4" /> <!--NPC Twister - Magic -->
 			<skill id="4160" level="4" /> <!--NPC Aura Burn - Magic -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
 			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
 			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />
@@ -9266,17 +8881,17 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="75" /> <!-- rhand: Caliburs -->
-		<acquire expRate="3.4923048" sp="658" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1421.00103" hpRegen="5.5" mp="747.8" mpRegen="2.1" />
-			<attack physical="305.54906" magical="208.6504" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="200.23844" magical="133.321011603844" />
+		<acquire expRate="2.9096" sp="548" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="1421" hpRegen="38.17" mp="921.3" mpRegen="3.3018" />
+			<attack physical="463.3704" magical="264.3813" random="30" critical="44" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="301.9914" magical="226.652" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="27" />
-				<run ground="174" />
+				<walk ground="28.71" />
+				<run ground="189.09" />
 			</speed>
 			<hitTime>390</hitTime>
 		</stats>
@@ -9284,13 +8899,10 @@
 		<skillList>
 			<skill id="4065" level="5" /> <!--NPC Heal -->
 			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
 			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
 			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
 			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
 			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<shots shotChance="30" spiritChance="30" />

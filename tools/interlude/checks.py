@@ -710,6 +710,20 @@ def interlude_residence_skills():
 	return problems
 
 
+def interlude_npc_stats():
+	"""Monsters and bosses of Interlude fight with the Interlude level, stats, experience and modifier passives (build_npc_stats.py)."""
+	import build_npc_stats
+
+	monsters = build_npc_stats.acis_monsters()
+	problems = defaultdict(list)
+	for path in sorted(build_npc_stats.NPCS.glob("*.xml")):
+		text = path.read_text(encoding="utf-8")
+		for npc_id, m in build_npc_stats.npc_blocks(text):
+			if npc_id in monsters and "<stats " in m.group(0) and build_npc_stats.with_stats(m.group(0), *monsters[npc_id]) != m.group(0):
+				problems[str(npc_id)].append(path.name)
+	return problems
+
+
 def interlude_config():
 	"""Server switches keep Interlude values: level cap, disabled later systems, Olympiad rewards."""
 	expected = {
@@ -923,7 +937,7 @@ DATAPACK_CHECKS = {f.__name__: f for f in (
 	item_references, npc_references, boss_positions, skill_references,
 	html_multisell_links, html_buylist_links, html_teleport_links, html_quest_buttons, script_shop_calls, quest_dialog_links, quest_npcs, quest_kill_targets,
 	spawn_zones, leader_minions, loader_classes, xml_schemas,
-	shops_interlude_items, drops_interlude_items, recipes_interlude_items, manor_interlude_items, teleports_interlude, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_enchant_costs, interlude_residence_skills, interlude_config,
+	shops_interlude_items, drops_interlude_items, recipes_interlude_items, manor_interlude_items, teleports_interlude, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_enchant_costs, interlude_residence_skills, interlude_npc_stats, interlude_config,
 	interlude_loaders, starting_equipment, phantom_gear, phantom_phrases, phantom_config,
 )}
 DATABASE_CHECKS = {"database_tables": database_tables}

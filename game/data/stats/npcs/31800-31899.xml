@@ -1805,30 +1805,22 @@
 		</parameters>
 		<race>FAIRY</race>
 		<sex>FEMALE</sex>
-		<acquire expRate="1.2" sp="226" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1421.00103" hpRegen="5.5" mp="747.8" mpRegen="2.1" />
-			<attack physical="305.54906" magical="208.6504" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="200.23844" magical="146.5258" />
+		<acquire expRate="0" sp="226" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="2140" hpRegen="43.3043" mp="3685.2" mpRegen="6.6036" />
+			<attack physical="2300.2137" magical="21095.9665" random="30" critical="130" accuracy="5" attackSpeed="590" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="274.3582" magical="906.608" />
 			<attribute>
 				<defence fire="150" water="150" wind="150" earth="150" holy="150" dark="150" default="150" />
 			</attribute>
 			<speed>
-				<walk ground="64" />
-				<run ground="120" />
+				<walk ground="150.17" />
+				<run ground="282.85" />
 			</speed>
 			<hitTime>500</hitTime>
 		</stats>
 		<status attackable="false" undying="false" />
 		<skillList>
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="13" /> <!--Fairies -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -1887,7 +1879,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="31846" level="80" type="L2Monster" name="Satyros">
+	<npc id="31846" level="50" type="L2Monster" name="Satyros">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="71" />
@@ -1896,30 +1888,22 @@
 		<race>FAIRY</race>
 		<sex>MALE</sex>
 		<equipment rhand="291" /> <!-- rhand: Trident -->
-		<acquire expRate="1.2" sp="226" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="3290.11306877694" hpRegen="8.5" mp="1674.8" mpRegen="3" />
-			<attack physical="970.537548504614" magical="662.751329129412" random="30" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
-			<defence physical="341.375" magical="249.80341" />
+		<acquire expRate="0" sp="226" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="2140" hpRegen="43.3043" mp="3685.2" mpRegen="6.6036" />
+			<attack physical="2300.2137" magical="21095.9665" random="30" critical="65" accuracy="0" attackSpeed="590" type="POLE" range="80" distance="80" width="120" />
+			<defence physical="274.3582" magical="906.608" />
 			<attribute>
 				<defence fire="150" water="150" wind="150" earth="150" holy="150" dark="150" default="150" />
 			</attribute>
 			<speed>
-				<walk ground="45" />
-				<run ground="110" />
+				<walk ground="104.98" />
+				<run ground="259.52" />
 			</speed>
 			<hitTime>580</hitTime>
 		</stats>
 		<status attackable="false" undying="false" />
 		<skillList>
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="16" /> <!--Very Strong P. Atk. -->
-			<skill id="4411" level="16" /> <!--Very Strong M. Atk. -->
-			<skill id="4412" level="16" /> <!--Very Strong P. Def. -->
-			<skill id="4413" level="16" /> <!--Very Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="11" /> <!--Spears -->
 			<skill id="4416" level="13" /> <!--Fairies -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -1933,7 +1917,7 @@
 			<height normal="35" />
 		</collision>
 	</npc>
-	<npc id="31847" level="80" type="L2Monster" name="Pan">
+	<npc id="31847" level="50" type="L2Monster" name="Pan">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="71" />
@@ -1942,30 +1926,22 @@
 		<race>FAIRY</race>
 		<sex>MALE</sex>
 		<equipment rhand="291" /> <!-- rhand: Trident -->
-		<acquire expRate="1.2" sp="226" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="3290.11306877694" hpRegen="8.5" mp="1674.8" mpRegen="3" />
-			<attack physical="970.537548504614" magical="662.751329129412" random="30" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
-			<defence physical="341.375" magical="249.80341" />
+		<acquire expRate="0" sp="226" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="2140" hpRegen="43.3043" mp="3685.2" mpRegen="6.6036" />
+			<attack physical="2300.2137" magical="21095.9665" random="30" critical="65" accuracy="0" attackSpeed="590" type="POLE" range="80" distance="80" width="120" />
+			<defence physical="274.3582" magical="906.608" />
 			<attribute>
 				<defence fire="150" water="150" wind="150" earth="150" holy="150" dark="150" default="150" />
 			</attribute>
 			<speed>
-				<walk ground="45" />
-				<run ground="110" />
+				<walk ground="104.98" />
+				<run ground="259.52" />
 			</speed>
 			<hitTime>580</hitTime>
 		</stats>
 		<status attackable="false" undying="false" />
 		<skillList>
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="16" /> <!--Very Strong P. Atk. -->
-			<skill id="4411" level="16" /> <!--Very Strong M. Atk. -->
-			<skill id="4412" level="16" /> <!--Very Strong P. Def. -->
-			<skill id="4413" level="16" /> <!--Very Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="11" /> <!--Spears -->
 			<skill id="4416" level="13" /> <!--Fairies -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -2024,7 +2000,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="31849" level="80" type="L2Monster" name="Red Arachne">
+	<npc id="31849" level="50" type="L2Monster" name="Red Arachne">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -2032,30 +2008,22 @@
 		</parameters>
 		<race>FAIRY</race>
 		<sex>FEMALE</sex>
-		<acquire expRate="1.2" sp="226" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="3290.11306877694" hpRegen="8.5" mp="1674.8" mpRegen="3" />
-			<attack physical="970.537548504614" magical="662.751329129412" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="341.375" magical="249.80341" />
+		<acquire expRate="0" sp="226" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="2140" hpRegen="43.3043" mp="3685.2" mpRegen="6.6036" />
+			<attack physical="2300.2137" magical="21095.9665" random="30" critical="130" accuracy="5" attackSpeed="590" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="274.3582" magical="906.608" />
 			<attribute>
 				<defence fire="150" water="150" wind="150" earth="150" holy="150" dark="150" default="150" />
 			</attribute>
 			<speed>
-				<walk ground="64" />
-				<run ground="120" />
+				<walk ground="150.17" />
+				<run ground="282.85" />
 			</speed>
 			<hitTime>500</hitTime>
 		</stats>
 		<status attackable="false" undying="false" />
 		<skillList>
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="16" /> <!--Very Strong P. Atk. -->
-			<skill id="4411" level="16" /> <!--Very Strong M. Atk. -->
-			<skill id="4412" level="16" /> <!--Very Strong P. Def. -->
-			<skill id="4413" level="16" /> <!--Very Strong M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="13" /> <!--Fairies -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>

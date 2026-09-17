@@ -219,3 +219,20 @@ def test_without_late_crops_keeps_interlude_crops():
 	result, removed = build_items.without_late_crops(text, allowed={5073, 5016, 5103, 1864, 1878, 6545, 6559, 4044, 4042})
 	assert removed == [15327]
 	assert 'seedId="5016"' in result and 'seedId="15327"' not in result
+
+
+def test_interlude_stats_apply_the_acis_formulas():
+	"""Level 70, STR 40, INT 21, DEX 30, CON 43, MEN 20: lvlMod 1.59 and the aCis stat bonuses."""
+	import build_npc_stats as b
+	s = {"level": "70", "str": "40", "int": "21", "dex": "30", "wit": "20", "con": "43", "men": "20", "exp": "4900", "sp": "300",
+		"hp": "1000", "hpRegen": "10", "mp": "500", "mpRegen": "2", "pAtk": "100", "mAtk": "50", "pDef": "200", "mDef": "150",
+		"crit": "4", "atkSpd": "253", "walkSpd": "60", "runSpd": "120"}
+	stats = b.interlude_stats(s)
+	lvl_mod = 1.59
+	assert stats["hp"] == 1000  # both cores multiply HP by CON
+	assert stats["pAtk"] == pytest.approx(100 * b.STR[40] * lvl_mod)
+	assert stats["mAtk"] == pytest.approx(50 * b.INT[21] ** 2 * lvl_mod ** 2)
+	assert stats["pDef"] == pytest.approx(200 * lvl_mod)
+	assert stats["mDef"] == pytest.approx(150 * b.MEN[20] * lvl_mod)
+	assert stats["crit"] == round(4 * b.DEX[30] * 10)
+	assert b.STR[40] == 1.2 and b.CON[43] == 1.58  # same values as data/stats/statBonus.xml of H5

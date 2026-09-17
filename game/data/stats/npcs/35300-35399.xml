@@ -3082,36 +3082,28 @@
 			<height normal="23.5" />
 		</collision>
 	</npc>
-	<npc id="35368" level="73" type="L2Monster" name="Bloody Lord Nurka">
+	<npc id="35368" level="55" type="L2Monster" name="Bloody Lord Nurka">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="72" /> <!-- rhand: Stormbringer -->
-		<acquire expRate="0.5" sp="1" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1150000" hpRegen="8.5" mp="1442.4" mpRegen="3" />
-			<attack physical="752.73928" magical="514.02335" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="310.02959" magical="226.8662" />
+		<acquire expRate="0.4998" sp="1" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="800000" hpRegen="143.7926" mp="1095.57" mpRegen="3.9161" />
+			<attack physical="694.656" magical="386.9231" random="30" critical="44" accuracy="4.75" attackSpeed="276" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="329.2128" magical="271.1686" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="70" />
-				<run ground="110" />
+				<walk ground="76.23" />
+				<run ground="119.79" />
 			</speed>
 			<hitTime>480</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="12" /> <!--HP Increase (4x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -3126,36 +3118,28 @@
 			<height normal="37" grown="44.5" />
 		</collision>
 	</npc>
-	<npc id="35369" level="70" type="L2Monster" name="Partisan Healer">
+	<npc id="35369" level="40" type="L2Monster" name="Partisan Healer">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="7" /> <!-- rhand: Apprentice's Rod -->
 		<acquire expRate="0.5" sp="1" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2444.46819" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
-			<attack physical="688.86373" magical="470.40463" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="295.91597" magical="216.53847" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="966" hpRegen="14.4916" mp="589.41" mpRegen="7.5175" />
+			<attack physical="274.6926" magical="133.0159" random="50" critical="11" accuracy="9" attackSpeed="276" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="202.2462" magical="164.3821" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="50" />
-				<run ground="120" />
+				<walk ground="54.45" />
+				<run ground="130.68" />
 			</speed>
 			<hitTime>300</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -3169,36 +3153,28 @@
 			<height normal="16" />
 		</collision>
 	</npc>
-	<npc id="35370" level="70" type="L2Monster" name="Partisan Court Guard">
+	<npc id="35370" level="40" type="L2Monster" name="Partisan Court Guard">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="69" /> <!-- rhand: Bastard Sword -->
 		<acquire expRate="0.5" sp="1" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2444.46819" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
-			<attack physical="688.86373" magical="470.40463" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="295.91597" magical="216.53847" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="966" hpRegen="14.4916" mp="589.41" mpRegen="2.6347" />
+			<attack physical="274.6926" magical="133.0159" random="30" critical="44" accuracy="5" attackSpeed="276" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="202.2462" magical="164.3821" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="50" />
-				<run ground="110" />
+				<walk ground="54.45" />
+				<run ground="119.79" />
 			</speed>
 			<hitTime>630</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -3212,36 +3188,28 @@
 			<height normal="27" grown="32" />
 		</collision>
 	</npc>
-	<npc id="35371" level="70" type="L2Monster" name="Partisan Court Guard">
+	<npc id="35371" level="40" type="L2Monster" name="Partisan Court Guard">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="14" /> <!-- rhand: Bow -->
 		<acquire expRate="0.5" sp="1" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2444.46819" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
-			<attack physical="688.86373" magical="470.40463" random="10" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
-			<defence physical="295.91597" magical="216.53847" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="966" hpRegen="14.4916" mp="589.41" mpRegen="2.6347" />
+			<attack physical="335.0646" magical="133.0159" random="10" critical="88" accuracy="0" attackSpeed="249" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="202.2462" magical="164.3821" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="50" />
-				<run ground="110" />
+				<walk ground="54.45" />
+				<run ground="119.79" />
 			</speed>
 			<hitTime>930</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="9" /> <!--Bows -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -3255,36 +3223,28 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="35372" level="68" type="L2Monster" name="Partisan Soldier">
+	<npc id="35372" level="35" type="L2Monster" name="Partisan Soldier">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="2" /> <!-- rhand: Long Sword -->
-		<acquire expRate="0.5" sp="1" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2345.76698" hpRegen="7.5" mp="1282.4" mpRegen="2.7" />
-			<attack physical="646.17968" magical="441.25696" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="286.3615" magical="209.54692" />
+		<acquire expRate="0.4996" sp="1" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="772" hpRegen="13.9299" mp="495.06" mpRegen="2.5326" />
+			<attack physical="199.9872" magical="105.9462" random="30" critical="44" accuracy="5" attackSpeed="276" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="178.126" magical="143.3108" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="50" />
-				<run ground="110" />
+				<walk ground="54.45" />
+				<run ground="119.79" />
 			</speed>
 			<hitTime>460</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -3298,36 +3258,28 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="35373" level="68" type="L2Monster" name="Partisan Sorcerer">
+	<npc id="35373" level="35" type="L2Monster" name="Partisan Sorcerer">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="7" /> <!-- rhand: Apprentice's Rod -->
-		<acquire expRate="0.5" sp="1" />
-		<stats str="22" int="41" dex="21" wit="20" con="27" men="20">
-			<vitals hp="2345.76698" hpRegen="7.5" mp="1282.4" mpRegen="2.7" />
-			<attack physical="646.17968" magical="441.25696" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="286.3615" magical="209.54692" />
+		<acquire expRate="0.4996" sp="1" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="772" hpRegen="13.9299" mp="495.06" mpRegen="2.5326" />
+			<attack physical="199.9872" magical="105.9462" random="50" critical="11" accuracy="9" attackSpeed="276" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="178.126" magical="143.3108" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="50" />
-				<run ground="120" />
+				<walk ground="54.45" />
+				<run ground="130.68" />
 			</speed>
 			<hitTime>300</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -3341,36 +3293,28 @@
 			<height normal="16" />
 		</collision>
 	</npc>
-	<npc id="35374" level="68" type="L2Monster" name="Partisan Archer">
+	<npc id="35374" level="35" type="L2Monster" name="Partisan Archer">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="14" /> <!-- rhand: Bow -->
-		<acquire expRate="0.5" sp="1" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2345.76698" hpRegen="7.5" mp="1282.4" mpRegen="2.7" />
-			<attack physical="646.17968" magical="441.25696" random="10" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
-			<defence physical="286.3615" magical="209.54692" />
+		<acquire expRate="0.4996" sp="1" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="772" hpRegen="13.9299" mp="495.06" mpRegen="2.5326" />
+			<attack physical="444.7632" magical="105.9462" random="10" critical="88" accuracy="0" attackSpeed="249" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="178.126" magical="143.3108" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="50" />
-				<run ground="110" />
+				<walk ground="54.45" />
+				<run ground="119.79" />
 			</speed>
 			<hitTime>930</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="9" /> <!--Bows -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -3384,36 +3328,28 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="35375" level="73" type="L2Monster" name="Bloody Lord Nurka">
+	<npc id="35375" level="55" type="L2Monster" name="Bloody Lord Nurka">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="72" /> <!-- rhand: Stormbringer -->
-		<acquire expRate="0.5" sp="1" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1150000" hpRegen="8.5" mp="1442.4" mpRegen="3" />
-			<attack physical="752.73928" magical="514.02335" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="310.02959" magical="226.8662" />
+		<acquire expRate="0.4998" sp="1" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="800000" hpRegen="215.689" mp="1095.57" mpRegen="3.9161" />
+			<attack physical="694.656" magical="386.9231" random="30" critical="44" accuracy="4.75" attackSpeed="276" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="329.2128" magical="271.1686" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="70" />
-				<run ground="110" />
+				<walk ground="76.23" />
+				<run ground="119.79" />
 			</speed>
 			<hitTime>480</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="12" /> <!--HP Increase (4x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -3428,36 +3364,28 @@
 			<height normal="37" grown="44.5" />
 		</collision>
 	</npc>
-	<npc id="35376" level="70" type="L2Monster" name="Partisan Healer">
+	<npc id="35376" level="40" type="L2Monster" name="Partisan Healer">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="7" /> <!-- rhand: Apprentice's Rod -->
 		<acquire expRate="0.5" sp="1" />
-		<stats str="22" int="41" dex="21" wit="20" con="27" men="20">
-			<vitals hp="2444.46819" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
-			<attack physical="688.86373" magical="470.40463" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="295.91597" magical="216.53847" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="966" hpRegen="14.4916" mp="589.41" mpRegen="7.5175" />
+			<attack physical="274.6926" magical="133.0159" random="50" critical="11" accuracy="9" attackSpeed="276" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="202.2462" magical="164.3821" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="50" />
-				<run ground="120" />
+				<walk ground="54.45" />
+				<run ground="130.68" />
 			</speed>
 			<hitTime>300</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -3471,36 +3399,28 @@
 			<height normal="16" />
 		</collision>
 	</npc>
-	<npc id="35377" level="70" type="L2Monster" name="Partisan Court Guard">
+	<npc id="35377" level="40" type="L2Monster" name="Partisan Court Guard">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="69" /> <!-- rhand: Bastard Sword -->
 		<acquire expRate="0.5" sp="1" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2444.46819" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
-			<attack physical="688.86373" magical="470.40463" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="295.91597" magical="216.53847" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="966" hpRegen="14.4916" mp="589.41" mpRegen="2.6347" />
+			<attack physical="274.6926" magical="133.0159" random="30" critical="44" accuracy="5" attackSpeed="276" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="202.2462" magical="164.3821" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="50" />
-				<run ground="110" />
+				<walk ground="54.45" />
+				<run ground="119.79" />
 			</speed>
 			<hitTime>630</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -3514,36 +3434,28 @@
 			<height normal="27" grown="32" />
 		</collision>
 	</npc>
-	<npc id="35378" level="70" type="L2Monster" name="Partisan Court Guard">
+	<npc id="35378" level="40" type="L2Monster" name="Partisan Court Guard">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="14" /> <!-- rhand: Bow -->
-		<acquire expRate="0.5" sp="1" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2444.46819" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
-			<attack physical="688.86373" magical="470.40463" random="10" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
-			<defence physical="295.91597" magical="216.53847" />
+		<acquire expRate="0.5513" sp="41" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="376" hpRegen="14.4916" mp="251.97" mpRegen="2.6347" />
+			<attack physical="65.403" magical="25.3847" random="10" critical="88" accuracy="0" attackSpeed="272" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="101.6262" magical="80.1864" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="50" />
-				<run ground="110" />
+				<walk ground="54.45" />
+				<run ground="119.79" />
 			</speed>
 			<hitTime>930</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="9" /> <!--Bows -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -3557,36 +3469,28 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="35379" level="68" type="L2Monster" name="Partisan Soldier">
+	<npc id="35379" level="35" type="L2Monster" name="Partisan Soldier">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="2" /> <!-- rhand: Long Sword -->
-		<acquire expRate="0.5" sp="1" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2345.76698" hpRegen="7.5" mp="1282.4" mpRegen="2.7" />
-			<attack physical="646.17968" magical="441.25696" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="286.3615" magical="209.54692" />
+		<acquire expRate="0.7739" sp="45" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="399" hpRegen="13.9299" mp="268.62" mpRegen="2.5326" />
+			<attack physical="73.9536" magical="33.3314" random="30" critical="88" accuracy="5" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="111.724" magical="86.8233" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="50" />
-				<run ground="110" />
+				<walk ground="54.45" />
+				<run ground="119.79" />
 			</speed>
 			<hitTime>460</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -3600,36 +3504,28 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="35380" level="68" type="L2Monster" name="Partisan Sorcerer">
+	<npc id="35380" level="35" type="L2Monster" name="Partisan Sorcerer">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="7" /> <!-- rhand: Apprentice's Rod -->
-		<acquire expRate="0.5" sp="1" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2345.76698" hpRegen="7.5" mp="1282.4" mpRegen="2.7" />
-			<attack physical="646.17968" magical="441.25696" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="286.3615" magical="209.54692" />
+		<acquire expRate="0.9331" sp="57" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="475" hpRegen="13.9299" mp="318.57" mpRegen="2.5326" />
+			<attack physical="94.7856" magical="44.0451" random="50" critical="88" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="125.426" magical="98.33" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="50" />
-				<run ground="120" />
+				<walk ground="54.45" />
+				<run ground="130.68" />
 			</speed>
 			<hitTime>300</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -3643,36 +3539,28 @@
 			<height normal="16" />
 		</collision>
 	</npc>
-	<npc id="35381" level="68" type="L2Monster" name="Partisan Archer">
+	<npc id="35381" level="35" type="L2Monster" name="Partisan Archer">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="14" /> <!-- rhand: Bow -->
-		<acquire expRate="0.5" sp="1" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2345.76698" hpRegen="7.5" mp="1282.4" mpRegen="2.7" />
-			<attack physical="646.17968" magical="441.25696" random="10" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
-			<defence physical="286.3615" magical="209.54692" />
+		<acquire expRate="1.0473" sp="66" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="532" hpRegen="13.9299" mp="352.98" mpRegen="2.5326" />
+			<attack physical="111.4512" magical="53.5683" random="10" critical="88" accuracy="0" attackSpeed="272" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="135.966" magical="106.6985" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="50" />
-				<run ground="110" />
+				<walk ground="54.45" />
+				<run ground="119.79" />
 			</speed>
 			<hitTime>930</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="9" /> <!--Bows -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>

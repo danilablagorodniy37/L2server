@@ -383,22 +383,22 @@
 			<height normal="23" />
 		</collision>
 	</npc>
-	<npc id="35408" level="76" type="L2Monster" name="Dietrich">
+	<npc id="35408" level="67" type="L2Monster" name="Dietrich">
 		<!-- Confirmed CT2.5 -->
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire expRate="0.1" />
+		<acquire expRate="0.0998" sp="0" />
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="2758.05923328" hpRegen="8.5" mp="1540.8" mpRegen="3" />
-			<attack physical="824.422073095" magical="562.9734023" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="323.78455" magical="236.93149" />
+			<vitals hp="6886" hpRegen="27.846" mp="2777.22" mpRegen="7.4112" />
+			<attack physical="3548.1888" magical="1510.7263" random="30" critical="65" accuracy="5" attackSpeed="410" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="439.2219" magical="356.7096" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="40" water="40" wind="40" earth="40" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="70" />
-				<run ground="180" />
+				<walk ground="128.3" />
+				<run ground="249.32" />
 			</speed>
 			<hitTime>520</hitTime>
 		</stats>
@@ -411,14 +411,6 @@
 			<skill id="4095" level="1" /> <!--Damage Shield -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="11" /> <!--HP Increase (3x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="16" /> <!--Very Strong P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<corpseTime>1</corpseTime>
@@ -430,22 +422,22 @@
 			<height normal="31" grown="38" />
 		</collision>
 	</npc>
-	<npc id="35409" level="76" type="L2Monster" name="Mikhail">
+	<npc id="35409" level="67" type="L2Monster" name="Mikhail">
 		<!-- Confirmed CT2.5 -->
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire expRate="0.1" />
+		<acquire expRate="0.0998" sp="0" />
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="2758.05923328" hpRegen="8.5" mp="1540.8" mpRegen="3" />
-			<attack physical="824.422073095" magical="562.9734023" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="323.78455" magical="236.93149" />
+			<vitals hp="6886" hpRegen="27.846" mp="2777.22" mpRegen="8.4848" />
+			<attack physical="3548.1888" magical="1510.7263" random="30" critical="65" accuracy="5" attackSpeed="410" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="439.2219" magical="356.7096" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="40" water="40" wind="40" earth="40" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="70" />
-				<run ground="180" />
+				<walk ground="128.3" />
+				<run ground="249.32" />
 			</speed>
 			<hitTime>520</hitTime>
 		</stats>
@@ -458,14 +450,6 @@
 			<skill id="4095" level="1" /> <!--Damage Shield -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="11" /> <!--HP Increase (3x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="16" /> <!--Very Strong P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<corpseTime>1</corpseTime>
@@ -477,22 +461,22 @@
 			<height normal="31" grown="38" />
 		</collision>
 	</npc>
-	<npc id="35410" level="78" type="L2Monster" name="Gustav">
+	<npc id="35410" level="70" type="L2Monster" name="Gustav">
 		<!-- Confirmed CT2.5 -->
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire expRate="0.1" />
+		<acquire expRate="0.1" sp="0" />
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="4137000" hpRegen="8.5" mp="1607.4" mpRegen="3" />
-			<attack physical="1334.07646169389" magical="151.247042312474" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="332.70061" magical="243.45587" />
+			<vitals hp="5121519" hpRegen="67.548" mp="6631.14" mpRegen="9.8128" />
+			<attack physical="8010.3774" magical="15385.943" random="30" critical="130" accuracy="5" attackSpeed="480" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="469.7973" magical="726.2211" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="40" water="40" wind="40" earth="40" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="70" />
-				<run ground="180" />
+				<walk ground="164.75" />
+				<run ground="424.28" />
 			</speed>
 			<hitTime>520</hitTime>
 		</stats>
@@ -505,14 +489,6 @@
 			<skill id="4095" level="1" /> <!--Damage Shield -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="1" /> <!--Undead -->
 			<skill id="4435" level="5" /> <!--Greater Resist Stun -->
 			<skill id="4438" level="5" /> <!--Greater Resist Sleep -->
@@ -557,7 +533,7 @@
 			</death>
 		</dropLists>
 	</npc>
-	<npc id="35411" level="73" type="L2Defender" name="Doom Servant">
+	<npc id="35411" level="65" type="L2Defender" name="Doom Servant">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="130" />
@@ -567,18 +543,18 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire expRate="0.1" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2586.66898" hpRegen="8.5" mp="1442.4" mpRegen="3" />
-			<attack physical="752.73928" magical="514.02335" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="310.02959" magical="226.8662" />
+		<acquire expRate="0.0999" sp="0" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="6058" hpRegen="28.8334" mp="1276.5" mpRegen="4.7521" />
+			<attack physical="2226.0269" magical="652.8382" random="50" critical="88" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="430.2606" magical="352.4441" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="15" />
-				<run ground="120" />
+				<walk ground="15.84" />
+				<run ground="130.68" />
 			</speed>
 			<hitTime>450</hitTime>
 		</stats>
@@ -589,14 +565,6 @@
 			<skill id="4085" level="1" /> <!--Critical Damage -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="11" /> <!--HP Increase (3x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="18" /> <!--Extremely Strong P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -642,7 +610,7 @@
 			</death>
 		</dropLists>
 	</npc>
-	<npc id="35412" level="74" type="L2Defender" name="Doom Guard">
+	<npc id="35412" level="66" type="L2Defender" name="Doom Guard">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="130" />
@@ -651,18 +619,18 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire expRate="0.1" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2632.19636" hpRegen="8.5" mp="1475.0" mpRegen="3" />
-			<attack physical="773.81598" magical="528.41601" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="314.65987" magical="230.25444" />
+		<acquire expRate="0.0999" sp="0" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="6734" hpRegen="29.0206" mp="1314.24" mpRegen="4.783" />
+			<attack physical="2336.3088" magical="695.644" random="50" critical="88" accuracy="9" attackSpeed="272" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="443.4395" magical="364.1782" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="15" />
-				<run ground="120" />
+				<walk ground="15.84" />
+				<run ground="130.68" />
 			</speed>
 			<hitTime>450</hitTime>
 		</stats>
@@ -672,14 +640,6 @@
 			<skill id="4085" level="1" /> <!--Critical Damage -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="11" /> <!--HP Increase (3x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="18" /> <!--Extremely Strong P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="5" /> <!--Blunt Weapons -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -725,7 +685,7 @@
 			</death>
 		</dropLists>
 	</npc>
-	<npc id="35413" level="75" type="L2Defender" name="Doom Archer">
+	<npc id="35413" level="67" type="L2Defender" name="Doom Archer">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="157" />
@@ -736,18 +696,18 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="286" /> <!-- rhand: Eminence Bow -->
-		<acquire expRate="0.1" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
-			<attack physical="794.70901" magical="542.68324" random="10" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
-			<defence physical="319.24623" magical="233.61053" />
+		<acquire expRate="0.0998" sp="0" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="6885" hpRegen="29.2079" mp="1350.87" mpRegen="4.8138" />
+			<attack physical="5441.8291" magical="738.3071" random="10" critical="88" accuracy="0" attackSpeed="244" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="457.7976" magical="376.0343" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="40" water="40" wind="40" earth="40" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="40" />
-				<run ground="140" />
+				<walk ground="43.56" />
+				<run ground="152.46" />
 			</speed>
 			<hitTime>800</hitTime>
 		</stats>
@@ -758,14 +718,6 @@
 			<skill id="4085" level="1" /> <!--Critical Damage -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="11" /> <!--HP Increase (3x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="19" /> <!--Extremely Strong P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="9" /> <!--Bows -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -812,7 +764,7 @@
 			</death>
 		</dropLists>
 	</npc>
-	<npc id="35414" level="76" type="L2Defender" name="Doom Trooper">
+	<npc id="35414" level="68" type="L2Defender" name="Doom Trooper">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -822,18 +774,18 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="301" /> <!-- rhand: Scorpion -->
-		<acquire expRate="0.1" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2758.05923328" hpRegen="8.5" mp="1540.8" mpRegen="3" />
-			<attack physical="824.422073095" magical="562.9734023" random="30" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
-			<defence physical="323.78455" magical="236.93149" />
+		<acquire expRate="0.0999" sp="0" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="7037" hpRegen="29.3951" mp="1388.61" mpRegen="4.8447" />
+			<attack physical="2995.2586" magical="784.0934" random="30" critical="44" accuracy="0" attackSpeed="233" type="POLE" range="80" distance="80" width="120" />
+			<defence physical="472.3031" magical="386.9491" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="40" water="40" wind="40" earth="40" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="50" />
-				<run ground="155" />
+				<walk ground="54.45" />
+				<run ground="168.3" />
 			</speed>
 			<hitTime>210</hitTime>
 		</stats>
@@ -842,14 +794,6 @@
 			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="11" /> <!--HP Increase (3x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="19" /> <!--Extremely Strong P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="11" /> <!--Spears -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -895,7 +839,7 @@
 			</death>
 		</dropLists>
 	</npc>
-	<npc id="35415" level="77" type="L2Defender" name="Doom Warrior">
+	<npc id="35415" level="69" type="L2Defender" name="Doom Warrior">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="215" />
@@ -906,18 +850,18 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="71" /> <!-- rhand: Flamberge -->
-		<acquire expRate="0.1" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2856.7687256316" hpRegen="8.5" mp="1574.0" mpRegen="3" />
-			<attack physical="856.44055895414" magical="584.837886935576" random="10" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
-			<defence physical="328.27073" magical="240.21427" />
+		<acquire expRate="0.1" sp="0" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="7185" hpRegen="29.5823" mp="1426.35" mpRegen="4.8756" />
+			<attack physical="2685.191" magical="829.7541" random="10" critical="44" accuracy="0" attackSpeed="310" type="DAGGER" range="40" distance="80" width="120" />
+			<defence physical="485.8974" magical="399.0421" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="40" water="40" wind="40" earth="40" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="40" />
-				<run ground="160" />
+				<walk ground="43.56" />
+				<run ground="174.24" />
 			</speed>
 			<hitTime>170</hitTime>
 		</stats>
@@ -929,14 +873,6 @@
 			<skill id="4085" level="1" /> <!--Critical Damage -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="11" /> <!--HP Increase (3x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="18" /> <!--Extremely Strong P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="7" /> <!--Daggers -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -982,7 +918,7 @@
 			</death>
 		</dropLists>
 	</npc>
-	<npc id="35416" level="78" type="L2Defender" name="Doom Knight">
+	<npc id="35416" level="70" type="L2Defender" name="Doom Knight">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
@@ -992,18 +928,18 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="1472" /> <!-- rhand: Dreadbane -->
-		<acquire expRate="0.1" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="2974.35686398316" hpRegen="8.5" mp="1607.4" mpRegen="3" />
-			<attack physical="890.50085998804" magical="608.096657928153" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="332.70061" magical="243.45587" />
+		<acquire expRate="0.1" sp="0" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="7333" hpRegen="29.7696" mp="1464.09" mpRegen="4.9064" />
+			<attack physical="2278.9915" magical="775.27" random="30" critical="44" accuracy="5" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="469.7973" magical="363.1105" />
 			<attribute>
 				<attack type="DARK" value="20" />
 				<defence fire="40" water="40" wind="40" earth="40" holy="-32" dark="53" />
 			</attribute>
 			<speed>
-				<walk ground="100" />
-				<run ground="170" />
+				<walk ground="108.9" />
+				<run ground="185.13" />
 			</speed>
 			<hitTime>450</hitTime>
 		</stats>
@@ -1014,14 +950,6 @@
 			<skill id="4085" level="1" /> <!--Critical Damage -->
 			<skill id="4275" level="3" /> <!--Sacred Attack Weak Point -->
 			<skill id="4278" level="1" /> <!--Dark Attack -->
-			<skill id="4408" level="11" /> <!--HP Increase (3x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="17" /> <!--Very Strong P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="1" /> <!--Undead -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -1534,35 +1462,27 @@
 			<height normal="55" />
 		</collision>
 	</npc>
-	<npc id="35428" level="73" type="L2Defender" name="Oel Mahum Berserker">
+	<npc id="35428" level="60" type="L2Defender" name="Oel Mahum Berserker">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<acquire expRate="1.2" sp="247" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="70386.6449027313" hpRegen="8.5" mp="2143.56666666667" mpRegen="3" />
-			<attack physical="293.998763258434" magical="625.529276102317" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="1240.61871367051" magical="226.8662" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="79242" hpRegen="1654.2314" mp="7592.4" mpRegen="36.7166" />
+			<attack physical="1378.7626" magical="45974.3423" random="30" critical="130" accuracy="4.75" attackSpeed="480" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="1473.4908" magical="1206.6193" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="70" />
-				<run ground="140" />
+				<walk ground="164.75" />
+				<run ground="329.51" />
 			</speed>
 			<hitTime>650</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4226" level="1" /> <!--Ban Heal -->
-			<skill id="4408" level="14" /> <!--HP Increase (6x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -1573,35 +1493,27 @@
 			<height normal="38" />
 		</collision>
 	</npc>
-	<npc id="35429" level="73" type="L2Defender" name="Oel Mahum Scout">
+	<npc id="35429" level="60" type="L2Defender" name="Oel Mahum Scout">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<acquire expRate="1.2" sp="247" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="31673.9902062291" hpRegen="8.5" mp="2143.56666666667" mpRegen="3" />
-			<attack physical="293.998763258434" magical="625.529276102317" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="1240.61871367051" magical="226.8662" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="35659" hpRegen="1654.2314" mp="7592.4" mpRegen="36.7166" />
+			<attack physical="1378.7626" magical="45974.3423" random="30" critical="130" accuracy="4.75" attackSpeed="480" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="1473.4908" magical="1206.6193" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="70" />
-				<run ground="140" />
+				<walk ground="164.75" />
+				<run ground="329.51" />
 			</speed>
 			<hitTime>650</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
 			<skill id="4225" level="1" /> <!--Resist Stun Attacks -->
-			<skill id="4408" level="14" /> <!--HP Increase (6x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -1612,34 +1524,26 @@
 			<height normal="38" />
 		</collision>
 	</npc>
-	<npc id="35430" level="73" type="L2Defender" name="Oel Mahum Leader">
+	<npc id="35430" level="60" type="L2Defender" name="Oel Mahum Leader">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<acquire expRate="1.2" sp="247" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="35193.3224513656" hpRegen="8.5" mp="2143.56666666667" mpRegen="3" />
-			<attack physical="293.998763258434" magical="625.529276102317" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="1240.61871367051" magical="226.8662" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="39621" hpRegen="1654.2314" mp="7592.4" mpRegen="36.7166" />
+			<attack physical="1378.7626" magical="45974.3423" random="30" critical="130" accuracy="4.75" attackSpeed="480" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="2947.9799" magical="603.3096" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="70" />
-				<run ground="140" />
+				<walk ground="164.75" />
+				<run ground="329.51" />
 			</speed>
 			<hitTime>260</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
-			<skill id="4408" level="14" /> <!--HP Increase (6x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -1650,34 +1554,26 @@
 			<height normal="34" />
 		</collision>
 	</npc>
-	<npc id="35431" level="73" type="L2Defender" name="Oel Mahum Cleric">
+	<npc id="35431" level="60" type="L2Defender" name="Oel Mahum Cleric">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<acquire expRate="1.2" sp="247" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="35193.3224513656" hpRegen="8.5" mp="2143.56666666667" mpRegen="3" />
-			<attack physical="293.998763258434" magical="625.529276102317" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="1240.61871367051" magical="226.8662" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="39621" hpRegen="1654.2314" mp="7592.4" mpRegen="36.7166" />
+			<attack physical="1378.7626" magical="45974.3423" random="30" critical="130" accuracy="4.75" attackSpeed="480" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="736.7454" magical="2415.2563" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="70" />
-				<run ground="140" />
+				<walk ground="164.75" />
+				<run ground="329.51" />
 			</speed>
 			<hitTime>260</hitTime>
 		</stats>
 		<status undying="false" />
 		<skillList>
-			<skill id="4408" level="14" /> <!--HP Increase (6x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
@@ -1688,21 +1584,21 @@
 			<height normal="34" />
 		</collision>
 	</npc>
-	<npc id="35432" level="73" type="L2Defender" name="Oel Mahum Thief">
+	<npc id="35432" level="60" type="L2Defender" name="Oel Mahum Thief">
 		<!-- Confirmed CT2.5 -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<acquire expRate="1.2" sp="247" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="28154.6579610925" hpRegen="8.5" mp="2143.56666666667" mpRegen="3" />
-			<attack physical="293.998763258434" magical="625.529276102317" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="1240.61871367051" magical="226.8662" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="31696" hpRegen="1323.3709" mp="7592.4" mpRegen="36.7166" />
+			<attack physical="1103.01" magical="45974.3423" random="30" critical="130" accuracy="4.75" attackSpeed="480" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="1178.9923" magical="1085.5538" />
 			<attribute>
 				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
 			</attribute>
 			<speed>
-				<walk ground="70" />
-				<run ground="140" />
+				<walk ground="164.75" />
+				<run ground="329.51" />
 			</speed>
 			<hitTime>480</hitTime>
 		</stats>
@@ -1710,14 +1606,6 @@
 		<skillList>
 			<skill id="4071" level="3" /> <!--Resist Bow/Crossbow Weapons -->
 			<skill id="4093" level="1" /> <!--Evasion -->
-			<skill id="4408" level="14" /> <!--HP Increase (6x) -->
-			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
-			<skill id="4410" level="11" /> <!--Average P. Atk. -->
-			<skill id="4411" level="11" /> <!--Average M. Atk. -->
-			<skill id="4412" level="11" /> <!--Average P. Def. -->
-			<skill id="4413" level="11" /> <!--Average M. Def. -->
-			<skill id="4414" level="2" /> <!--Standard Type -->
-			<skill id="4415" level="3" /> <!--One-handed Sword -->
 			<skill id="4416" level="6" /> <!--Humanoids -->
 		</skillList>
 		<exCrtEffect>true</exCrtEffect>
