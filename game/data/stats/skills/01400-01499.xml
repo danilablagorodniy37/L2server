@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
-	<skill id="1400" levels="10" name="Turn Undead" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1400" levels="10" name="Turn Undead" enchantGroup1="103" enchantGroup2="103">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
 		<table name="#itemConsumeCount"> 3 3 4 4 4 4 5 5 5 5 </table>
@@ -84,7 +84,7 @@
 			</effect>
 		</enchant3Effects>
 	</skill>
-	<skill id="1401" levels="11" name="Major Heal" enchantGroup1="2" enchantGroup2="2">
+	<skill id="1401" levels="11" name="Major Heal" enchantGroup1="103" enchantGroup2="103">
 		<table name="#il_mpConsume2"> 60 64 65 67 69 72 74 77 78 80 80 </table>
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> 403 421 439 457 474 490 506 520 534 546 546 </table>
@@ -128,7 +128,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1402" levels="5" name="Major Group Heal" enchantGroup1="2" enchantGroup2="2">
+	<skill id="1402" levels="5" name="Major Group Heal" enchantGroup1="103" enchantGroup2="103">
 		<table name="#il_mpConsume2"> 189 199 214 228 239 </table>
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> 421 457 490 520 546 </table>
@@ -780,7 +780,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1417" levels="5" name="Aura Flash" enchantGroup1="2" enchantGroup2="2">
+	<skill id="1417" levels="5" name="Aura Flash" enchantGroup1="103" enchantGroup2="103">
 		<table name="#il_mpConsume2"> 54 58 62 65 69 </table>
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -440 -466 -489 -508 -524 </table>

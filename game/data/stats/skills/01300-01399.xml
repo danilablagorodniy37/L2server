@@ -67,7 +67,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1303" levels="2" name="Wild Magic" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1303" levels="2" name="Wild Magic" enchantGroup1="101" enchantGroup2="101">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 </table>
 		<table name="#effectPoint"> 582 635 </table>
@@ -108,7 +108,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1304" levels="3" name="Advanced Block" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1304" levels="3" name="Advanced Block" enchantGroup1="101" enchantGroup2="101">
 		<table name="#il_sDef"> 1.6 1.8 2 </table>
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
@@ -150,7 +150,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1305" levels="5" name="The Honor of Pa'agrio" enchantGroup1="2" enchantGroup2="2">
+	<skill id="1305" levels="5" name="The Honor of Pa'agrio" enchantGroup1="104" enchantGroup2="104">
 		<!-- High Five Confirmed -->
 		<table name="#cpAmount"> 616 636 654 671 687 </table>
 		<table name="#effectPoint"> 689 722 743 763 780 </table>
@@ -194,7 +194,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1306" levels="6" name="Ritual of Life" enchantGroup1="2" enchantGroup2="2">
+	<skill id="1306" levels="6" name="Ritual of Life" enchantGroup1="104" enchantGroup2="104">
 		<!-- High Five Confirmed -->
 		<table name="#cpAmount"> 745 770 795 817 839 858 </table>
 		<table name="#effectPoint"> 677 700 722 743 763 780 </table>
@@ -237,7 +237,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1307" levels="3" name="Prayer" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1307" levels="3" name="Prayer" enchantGroup1="102" enchantGroup2="102">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 611 635 655 </table>
@@ -278,7 +278,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1308" levels="3" name="Chant of Predator" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1308" levels="3" name="Chant of Predator" enchantGroup1="102" enchantGroup2="102">
 		<table name="#il_mpConsume2"> 137 156 201 </table>
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
@@ -320,7 +320,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1309" levels="3" name="Chant of Eagle" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1309" levels="3" name="Chant of Eagle" enchantGroup1="102" enchantGroup2="102">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#accCombat"> 2 3 4 </table>
@@ -361,7 +361,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1310" levels="4" name="Chant of Vampire" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1310" levels="4" name="Chant of Vampire" enchantGroup1="102" enchantGroup2="102">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 4 </table>
 		<table name="#absorbDam"> 6 7 8 9 </table>
@@ -402,7 +402,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1311" levels="6" name="Body of Avatar" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1311" levels="6" name="Body of Avatar" enchantGroup1="102" enchantGroup2="102">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 4 5 6 </table>
 		<table name="#effectPoint"> 457 532 566 597 624 646 </table>
@@ -898,7 +898,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1331" levels="10" name="Summon Feline Queen" enchantGroup1="1">
+	<skill id="1331" levels="10" name="Summon Feline Queen" enchantGroup1="103">
 		<table name="#il_mpConsume2"> 56 92 69 75 82 85 88 92 95 98 </table>
 		<table name="#itemConsumeCount"> 1 1 2 2 4 1 1 4 1 2 </table>
 		<table name="#itemConsumeCountOT"> 2 2 2 2 2 4 4 4 6 6 </table>
@@ -939,7 +939,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1332" levels="10" name="Summon Unicorn Seraphim" enchantGroup1="1">
+	<skill id="1332" levels="10" name="Summon Unicorn Seraphim" enchantGroup1="103">
 		<table name="#il_mpConsume2"> 56 92 69 75 82 85 88 92 95 98 </table>
 		<table name="#itemConsumeCount"> 1 1 2 2 4 1 1 4 1 2 </table>
 		<table name="#itemConsumeCountOT"> 2 2 2 2 2 4 4 4 6 6 </table>
@@ -980,7 +980,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1333" levels="10" name="Summon Nightshade" enchantGroup1="1">
+	<skill id="1333" levels="10" name="Summon Nightshade" enchantGroup1="103">
 		<table name="#il_mpConsume2"> 56 92 69 75 82 85 88 92 95 98 </table>
 		<!-- High Five Confirmed -->
 		<table name="#itemConsumeCount"> 1 1 2 2 4 1 1 4 1 2 </table>
@@ -1022,7 +1022,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1334" levels="7" name="Summon Cursed Man" enchantGroup1="1">
+	<skill id="1334" levels="7" name="Summon Cursed Man" enchantGroup1="103">
 		<table name="#itemConsumeCount"> 3 5 12 1 2 3 4 </table>
 		<table name="#itemConsumeCountOT"> 1 1 1 2 2 2 2 </table>
 		<table name="#magicLvl"> 56 60 64 68 70 72 74 </table>
@@ -3438,7 +3438,7 @@
 			<effect name="Betray" />
 		</effects>
 	</skill>
-	<skill id="1381" levels="5" name="Mass Fear" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1381" levels="5" name="Mass Fear" enchantGroup1="103" enchantGroup2="103">
 		<table name="#il_mpConsume2"> 80 87 93 98 103 </table>
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -549 -582 -611 -635 -655 </table>
@@ -3487,7 +3487,7 @@
 			<effect name="Fear" />
 		</effects>
 	</skill>
-	<skill id="1382" levels="5" name="Mass Gloom" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1382" levels="5" name="Mass Gloom" enchantGroup1="103" enchantGroup2="103">
 		<table name="#il_mpConsume2"> 80 87 93 98 103 </table>
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -549 -582 -611 -635 -655 </table>
@@ -4172,7 +4172,7 @@
 			</effect>
 		</enchant3Effects>
 	</skill>
-	<skill id="1394" levels="10" name="Trance" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1394" levels="10" name="Trance" enchantGroup1="103" enchantGroup2="103">
 		<table name="#il_mpConsume2"> 27 28 28 29 30 32 33 33 34 35 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#effectPoint"> -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
@@ -4216,7 +4216,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1395" levels="10" name="Erase" enchantGroup1="1">
+	<skill id="1395" levels="10" name="Erase" enchantGroup1="103">
 		<table name="#il_mpConsume2"> 52 54 55 58 60 62 64 65 67 69 </table>
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
@@ -4254,7 +4254,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1396" levels="10" name="Magical Backfire" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1396" levels="10" name="Magical Backfire" enchantGroup1="103" enchantGroup2="103">
 		<table name="#il_mpConsume2"> 52 54 55 58 60 62 64 65 67 69 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#effectPoint"> -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
@@ -4394,7 +4394,7 @@
 			</effect>
 		</enchant3Effects>
 	</skill>
-	<skill id="1398" levels="10" name="Mana Burn" enchantGroup1="2" enchantGroup2="2">
+	<skill id="1398" levels="10" name="Mana Burn" enchantGroup1="103" enchantGroup2="103">
 		<table name="#effectPoint"> -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
 		<table name="#magicLvl"> 56 58 60 62 64 66 68 70 72 74 </table>
 		<table name="#mpConsume2"> 77 80 83 87 89 93 95 98 100 103 </table>
@@ -4429,7 +4429,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1399" levels="5" name="Mana Storm" enchantGroup1="2" enchantGroup2="2">
+	<skill id="1399" levels="5" name="Mana Storm" enchantGroup1="103" enchantGroup2="103">
 		<table name="#il_mpConsume2"> 120 129 138 147 153 </table>
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -549 -582 -611 -635 -655 </table>

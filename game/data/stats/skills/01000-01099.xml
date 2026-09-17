@@ -36,7 +36,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1002" levels="3" name="Flame Chant" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1002" levels="3" name="Flame Chant" enchantGroup1="102" enchantGroup2="102">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 285 418 532 </table>
@@ -77,7 +77,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1003" levels="3" name="Pa'agrian Gift" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1003" levels="3" name="Pa'agrian Gift" enchantGroup1="102" enchantGroup2="102">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 285 379 457 </table>
@@ -119,7 +119,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1004" levels="3" name="The Wisdom of Pa'agrio" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1004" levels="3" name="The Wisdom of Pa'agrio" enchantGroup1="102" enchantGroup2="102">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 379 457 532 </table>
@@ -161,7 +161,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1005" levels="3" name="Blessings of Pa'agrio" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1005" levels="3" name="Blessings of Pa'agrio" enchantGroup1="102" enchantGroup2="102">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 331 418 495 </table>
@@ -203,7 +203,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1006" levels="3" name="Chant of Fire" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1006" levels="3" name="Chant of Fire" enchantGroup1="102" enchantGroup2="102">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 204 379 495 </table>
@@ -244,7 +244,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1007" levels="3" name="Chant of Battle" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1007" levels="3" name="Chant of Battle" enchantGroup1="102" enchantGroup2="102">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 162 243 418 </table>
@@ -285,7 +285,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1008" levels="3" name="The Glory of Pa'agrio" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1008" levels="3" name="The Glory of Pa'agrio" enchantGroup1="102" enchantGroup2="102">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 379 457 532 </table>
@@ -327,7 +327,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1009" levels="3" name="Chant of Shielding" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1009" levels="3" name="Chant of Shielding" enchantGroup1="102" enchantGroup2="102">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 204 285 379 </table>
@@ -368,7 +368,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1010" levels="3" name="Soul Shield" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1010" levels="3" name="Soul Shield" enchantGroup1="101" enchantGroup2="101">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 121 243 331 </table>
@@ -466,7 +466,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1013" levels="32" name="Recharge" enchantGroup1="2" enchantGroup2="2">
+	<skill id="1013" levels="32" name="Recharge" enchantGroup1="104" enchantGroup2="104">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> 268 285 313 331 360 379 399 418 438 457 477 495 514 532 541 549 558 566 574 582 590 597 604 611 617 624 630 635 641 646 650 655 </table>
 		<table name="#magicLvl"> 28 30 33 35 38 40 42 44 46 48 50 52 54 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 </table>
@@ -600,7 +600,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1020" levels="27" name="Vitalize" enchantGroup1="2" enchantGroup2="2">
+	<skill id="1020" levels="27" name="Vitalize" enchantGroup1="104" enchantGroup2="104">
 		<table name="#il_healPower"> 440 454 467 494 508 521 548 562 575 588 602 615 627 640 653 665 677 689 700 711 722 733 743 753 763 772 780 </table>
 		<!-- High Five Confirmed -->
 		<table name="#dispelAbnormal"> POISON,3;BLEEDING,3 POISON,3;BLEEDING,3 POISON,3;BLEEDING,3 POISON,3;BLEEDING,3 POISON,3;BLEEDING,3 POISON,7;BLEEDING,7 POISON,7;BLEEDING,7 POISON,7;BLEEDING,7 POISON,7;BLEEDING,7 POISON,7;BLEEDING,7 POISON,7;BLEEDING,7 POISON,7;BLEEDING,7 POISON,7;BLEEDING,7 POISON,7;BLEEDING,7 POISON,7;BLEEDING,7 POISON,7;BLEEDING,7 POISON,7;BLEEDING,7 POISON,7;BLEEDING,7 POISON,9;BLEEDING,9 POISON,9;BLEEDING,9 POISON,9;BLEEDING,9 POISON,9;BLEEDING,9 POISON,9;BLEEDING,9 POISON,9;BLEEDING,9 POISON,9;BLEEDING,9 POISON,9;BLEEDING,9 POISON,9;BLEEDING,9 </table>
@@ -677,7 +677,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1028" levels="19" name="Might of Heaven" enchantGroup1="2" enchantGroup2="2">
+	<skill id="1028" levels="19" name="Might of Heaven" enchantGroup1="104" enchantGroup2="104">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -360 -379 -399 -418 -438 -457 -477 -495 -514 -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
 		<table name="#magicLvl"> 38 40 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 </table>
@@ -767,7 +767,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1032" levels="3" name="Invigor" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1032" levels="3" name="Invigor" enchantGroup1="101" enchantGroup2="101">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#defenceTraitPower"> 30 40 50 </table>
@@ -815,7 +815,7 @@
 			</effect>
 		</enchant3Effects>
 	</skill>
-	<skill id="1033" levels="3" name="Resist Poison" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1033" levels="3" name="Resist Poison" enchantGroup1="101" enchantGroup2="101">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#defenceTraitPower"> 30 40 50 </table>
@@ -904,7 +904,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1035" levels="4" name="Mental Shield" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1035" levels="4" name="Mental Shield" enchantGroup1="101" enchantGroup2="101">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 4 </table>
 		<table name="#defenceTraitPower"> 20 30 40 50 </table>
@@ -947,7 +947,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1036" levels="2" name="Magic Barrier" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1036" levels="2" name="Magic Barrier" enchantGroup1="101" enchantGroup2="101">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 2 3 </table>
 		<table name="#effectPoint"> 418 495 </table>
@@ -988,7 +988,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1040" levels="3" name="Shield" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1040" levels="3" name="Shield" enchantGroup1="101" enchantGroup2="101">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 121 243 418 </table>
@@ -1029,7 +1029,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1042" levels="12" name="Hold Undead" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1042" levels="12" name="Hold Undead" enchantGroup1="102" enchantGroup2="102">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -457 -495 -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
 		<table name="#magicLvl"> 48 52 56 58 60 62 64 66 68 70 72 74 </table>
@@ -1087,7 +1087,7 @@
 			<effect name="Stun" />
 		</enchant3Effects>
 	</skill>
-	<skill id="1043" levels="1" name="Holy Weapon" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1043" levels="1" name="Holy Weapon" enchantGroup1="101" enchantGroup2="101">
 		<!-- High Five Confirmed -->
 		<table name="#enchMagicLvl"> 76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85 </table>
 		<table name="#ench1AbnormalTime"> 1240 1280 1320 1360 1400 1440 1480 1520 1560 1600 1640 1680 1720 1760 1800 1840 1880 1920 1960 2000 2040 2080 2120 2160 2200 2240 2280 2320 2360 2400 </table>
@@ -1125,7 +1125,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1044" levels="3" name="Regeneration" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1044" levels="3" name="Regeneration" enchantGroup1="101" enchantGroup2="101">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 331 457 532 </table>
@@ -1166,7 +1166,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1045" levels="6" name="Bless the Body" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1045" levels="6" name="Bless the Body" enchantGroup1="101" enchantGroup2="101">
 		<table name="#il_mpConsume1"> 8 9 10 10 12 13 </table>
 		<table name="#il_mpConsume2"> 31 35 38 42 48 54 </table>
 		<!-- High Five Confirmed -->
@@ -1254,7 +1254,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="1048" levels="6" name="Bless the Soul" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1048" levels="6" name="Bless the Soul" enchantGroup1="101" enchantGroup2="101">
 		<table name="#il_mpConsume1"> 8 9 10 10 12 13 </table>
 		<table name="#il_mpConsume2"> 31 35 38 42 46 52 </table>
 		<!-- High Five Confirmed -->
@@ -1388,7 +1388,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1059" levels="3" name="Empower" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1059" levels="3" name="Empower" enchantGroup1="101" enchantGroup2="101">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 243 418 495 </table>
@@ -1429,7 +1429,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1062" levels="2" name="Berserker Spirit" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1062" levels="2" name="Berserker Spirit" enchantGroup1="101" enchantGroup2="101">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 </table>
 		<table name="#effectPoint"> 331 495 </table>
@@ -1501,7 +1501,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1064" levels="14" name="Silence" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1064" levels="14" name="Silence" enchantGroup1="102" enchantGroup2="102">
 		<table name="#effectPoint"> -379 -418 -457 -495 -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
 		<table name="#magicLvl"> 40 44 48 52 56 58 60 62 64 66 68 70 72 74 </table>
 		<table name="#mpConsume2"> 28 31 35 38 41 43 44 46 48 49 51 52 53 55 </table>
@@ -1544,7 +1544,7 @@
 			<effect name="Mute" />
 		</effects>
 	</skill>
-	<skill id="1068" levels="3" name="Might" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1068" levels="3" name="Might" enchantGroup1="101" enchantGroup2="101">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 121 204 379 </table>
@@ -1585,7 +1585,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1069" levels="42" name="Sleep" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1069" levels="42" name="Sleep" enchantGroup1="102" enchantGroup2="102">
 		<table name="#effectPoint"> -227 -235 -243 -268 -277 -285 -313 -322 -331 -360 -369 -379 -399 -408 -418 -438 -448 -457 -477 -486 -495 -514 -523 -532 -541 -549 -558 -566 -574 -582 -590 -597 -604 -611 -617 -624 -630 -635 -641 -646 -650 -655 </table>
 		<table name="#magicLvl"> 23 24 25 28 29 30 33 34 35 38 39 40 42 43 44 46 47 48 50 51 52 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 </table>
 		<table name="#mpConsume2"> 17 17 18 20 21 21 23 24 24 27 27 28 30 30 31 33 34 35 36 37 38 39 40 41 42 43 44 44 45 46 47 48 48 49 50 51 51 52 53 53 54 55 </table>
@@ -1631,7 +1631,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1071" levels="14" name="Surrender To Water" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1071" levels="14" name="Surrender To Water" enchantGroup1="102" enchantGroup2="102">
 		<table name="#il_value"> 750 750 750 900 900 900 900 900 900 900 900 900 900 900 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#effectPoint"> -379 -418 -457 -495 -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
@@ -1688,7 +1688,7 @@
 			</effect>
 		</enchant3Effects>
 	</skill>
-	<skill id="1072" levels="5" name="Sleeping Cloud" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1072" levels="5" name="Sleeping Cloud" enchantGroup1="102" enchantGroup2="102">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -418 -532 -582 -611 -635 </table>
 		<table name="#magicLvl"> 44 56 62 66 70 </table>
@@ -1737,7 +1737,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1073" levels="2" name="Kiss of Eva" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1073" levels="2" name="Kiss of Eva" enchantGroup1="101" enchantGroup2="101">
 		<table name="#il_mpConsume2"> 20 48 </table>
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 2 3 </table>
@@ -1779,7 +1779,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1074" levels="14" name="Surrender To Wind" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1074" levels="14" name="Surrender To Wind" enchantGroup1="102" enchantGroup2="102">
 		<table name="#il_value"> 750 750 750 900 900 900 900 900 900 900 900 900 900 900 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#effectPoint"> -379 -418 -457 -495 -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
@@ -1858,7 +1858,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1077" levels="3" name="Focus" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1077" levels="3" name="Focus" enchantGroup1="101" enchantGroup2="101">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#critRate"> 1.2 1.25 1.3 </table>
@@ -1899,7 +1899,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1078" levels="6" name="Concentration" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1078" levels="6" name="Concentration" enchantGroup1="101" enchantGroup2="101">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 4 5 6 </table>
 		<table name="#cancel"> 18 25 36 42 48 53 </table>
@@ -1940,7 +1940,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1083" levels="17" name="Surrender To Fire" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1083" levels="17" name="Surrender To Fire" enchantGroup1="102" enchantGroup2="102">
 		<!-- Confirmed CT2.5 -->
 		<table name="#abnormalLvl"> 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 </table>
 		<table name="#castRange"> 750 750 750 900 900 900 900 900 900 900 900 900 900 900 900 900 900 </table>
@@ -1999,7 +1999,7 @@
 			</effect>
 		</enchant3Effects>
 	</skill>
-	<skill id="1085" levels="3" name="Acumen" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1085" levels="3" name="Acumen" enchantGroup1="101" enchantGroup2="101">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 204 331 457 </table>
@@ -2040,7 +2040,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1086" levels="2" name="Haste" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1086" levels="2" name="Haste" enchantGroup1="101" enchantGroup2="101">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 </table>
 		<table name="#effectPoint"> 418 495 </table>
@@ -2081,7 +2081,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1087" levels="3" name="Agility" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1087" levels="3" name="Agility" enchantGroup1="101" enchantGroup2="101">
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#effectPoint"> 243 418 495 </table>
@@ -2233,7 +2233,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1096" levels="16" name="Seal of Chaos" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1096" levels="16" name="Seal of Chaos" enchantGroup1="102" enchantGroup2="102">
 		<table name="#il_accCombat"> 12 12 13 13 13 13 13 13 13 13 13 13 13 13 13 13 </table>
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </table>
@@ -2282,7 +2282,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1097" levels="20" name="Dreaming Spirit" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1097" levels="20" name="Dreaming Spirit" enchantGroup1="102" enchantGroup2="102">
 		<table name="#effectPoint"> -121 -162 -204 -243 -285 -331 -379 -418 -457 -495 -532 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
 		<table name="#magicLvl"> 7 14 20 25 30 35 40 44 48 52 56 58 60 62 64 66 68 70 72 74 </table>
 		<table name="#mpConsume2"> 8 12 16 18 21 24 28 31 35 38 41 43 44 46 48 49 51 52 53 55 </table>
@@ -2328,7 +2328,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1099" levels="15" name="Seal of Slow" enchantGroup1="1" enchantGroup2="1">
+	<skill id="1099" levels="15" name="Seal of Slow" enchantGroup1="102" enchantGroup2="102">
 		<table name="#il_runSpd"> 0.7 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 </table>
 		<!-- High Five Confirmed -->
 		<table name="#abnormalLvl"> 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </table>

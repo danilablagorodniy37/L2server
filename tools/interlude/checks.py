@@ -621,6 +621,52 @@ def interlude_enchant_routes():
 	return problems
 
 
+def interlude_enchant_costs():
+	"""Enchanting a skill costs SP and experience, no adena, with the Interlude chances of its tier (build_enchant_costs.py)."""
+	import build_enchant_costs
+
+	tables, routes = build_enchant_costs.acis_tables()
+	groups = {int(g.get("id")): g.findall("enchant") for g in ET.parse(build_enchant_costs.GROUPS).getroot().findall("group")}
+	problems = defaultdict(list)
+	for f in ds._xml_files(build_enchant_costs.SKILLS):
+		for skill in ET.parse(f).getroot().findall("skill"):
+			for attr, value in skill.attrib.items():
+				if not attr.startswith("enchantGroup"):
+					continue
+				route = int(attr[len("enchantGroup"):])
+				key = f"skill {skill.get('id')} route {route}"
+				index = routes.get((int(skill.get("id")), route))
+				if index is None:
+					problems[key].append("no Interlude costs")
+					continue
+				levels = groups.get(int(value))
+				if levels is None:
+					problems[key].append(f"group {value} missing")
+					continue
+				for lvl, (enchant, wanted) in enumerate(zip(levels, tables[index]), start=1):
+					got = (int(enchant.get("adena")), int(enchant.get("exp")), int(enchant.get("sp")), int(enchant.get("chance76")), int(enchant.get("chance80")))
+					if got != (0, wanted["exp"], wanted["sp"], wanted["rate76"], wanted["rate80"]):
+						problems[key].append(f"group {value} +{lvl}: adena/exp/sp/chance76/chance80 {got}")
+						break
+				if len(levels) != len(tables[index]):
+					problems[key].append(f"group {value} has {len(levels)} levels")
+	return problems
+
+
+def interlude_residence_skills():
+	"""Only fortresses give residence clan skills: none for castles (not in Interlude) or Territory War territories (build_residence_skills.py)."""
+	import build_residence_skills
+
+	problems = defaultdict(list)
+	for skill in ET.parse(build_residence_skills.TREE).getroot().iter("skill"):
+		if skill.get("residenceSkill") != "true":
+			continue
+		for residence in skill.findall("residenceId"):
+			if int(residence.text) in build_residence_skills.REMOVED_RESIDENCES:
+				problems[f"{skill.get('skillId')} {skill.get('skillName')}"].append(f"residence {residence.text}")
+	return problems
+
+
 def interlude_config():
 	"""Server switches keep Interlude values: level cap, disabled later systems, Olympiad rewards."""
 	expected = {
@@ -834,7 +880,7 @@ DATAPACK_CHECKS = {f.__name__: f for f in (
 	item_references, npc_references, boss_positions, skill_references,
 	html_multisell_links, html_buylist_links, html_teleport_links, html_quest_buttons, script_shop_calls, quest_dialog_links, quest_npcs, quest_kill_targets,
 	spawn_zones, leader_minions, loader_classes, xml_schemas,
-	shops_interlude_items, drops_interlude_items, recipes_interlude_items, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_config,
+	shops_interlude_items, drops_interlude_items, recipes_interlude_items, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_enchant_costs, interlude_residence_skills, interlude_config,
 	interlude_loaders, starting_equipment, phantom_gear, phantom_phrases, phantom_config,
 )}
 DATABASE_CHECKS = {"database_tables": database_tables}

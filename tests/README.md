@@ -12,7 +12,7 @@
 | `test_database.py` | Таблицы `l2jdb_custom` совпадают с `game/sql` | MySQL на порту 3307 недоступен |
 | `test_server_boot.py` | Логин и игровой сервер стартуют, сервер регистрируется на логине, в логе нет WARN/ERROR (~1 мин) | без `--run-server` или если сервер уже запущен |
 
-Тесты ядра (JUnit, 231 тест): `core\mvnw.cmd test` или `tools\test.bat --core`.
+Тесты ядра (JUnit, 235 тестов): `core\mvnw.cmd test` или `tools\test.bat --core`.
 
 ## Что делать, если тест упал
 - Сообщение показывает первые проблемы; полный список: `python tools/interlude/validate.py --all`.

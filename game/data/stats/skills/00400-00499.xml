@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
-	<skill id="400" levels="10" name="Tribunal" enchantGroup1="2" enchantGroup2="2">
+	<skill id="400" levels="10" name="Tribunal" enchantGroup1="103" enchantGroup2="103">
 		<table name="#il_physicalAttackPower"> 642 732 796 861 929 998 1068 1139 1209 1279 </table>
 		<table name="#il_mpConsume2"> 55 59 62 63 66 68 70 72 74 76 </table>
 		<!-- High Five Confirmed -->
@@ -162,7 +162,7 @@
 			</effect>
 		</enchant3Effects>
 	</skill>
-	<skill id="401" levels="10" name="Judgment" enchantGroup1="2" enchantGroup2="2">
+	<skill id="401" levels="10" name="Judgment" enchantGroup1="103" enchantGroup2="103">
 		<table name="#il_power"> 733 837 909 984 1062 1140 1220 1301 1382 1461 </table>
 		<table name="#il_mpConsume2"> 55 59 62 63 66 68 70 72 74 76 </table>
 		<table name="#abnormalLvl"> 1 1 1 1 2 2 2 2 2 3 </table>
@@ -275,7 +275,7 @@
 			</effect>
 		</enchant3Effects>
 	</skill>
-	<skill id="402" levels="10" name="Arrest" enchantGroup1="1" enchantGroup2="1">
+	<skill id="402" levels="10" name="Arrest" enchantGroup1="103" enchantGroup2="103">
 		<table name="#effectPoint"> -1046 -1098 -1132 -1163 -1193 -1221 -1247 -1270 -1291 -1309 </table>
 		<table name="#magicLvl"> 55 58 60 62 64 66 68 70 72 74 </table>
 		<table name="#mpConsume2"> 25 27 28 29 30 31 32 33 34 34 </table>
@@ -314,7 +314,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="403" levels="10" name="Shackle" enchantGroup1="1" enchantGroup2="1">
+	<skill id="403" levels="10" name="Shackle" enchantGroup1="103" enchantGroup2="103">
 		<table name="#effectPoint"> -1046 -1098 -1132 -1163 -1193 -1221 -1247 -1270 -1291 -1309 </table>
 		<table name="#magicLvl"> 55 58 60 62 64 66 68 70 72 74 </table>
 		<table name="#mpConsume2"> 25 27 28 29 30 31 32 33 34 34 </table>
@@ -353,7 +353,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="404" levels="5" name="Mass Shackling" enchantGroup1="1" enchantGroup2="1">
+	<skill id="404" levels="5" name="Mass Shackling" enchantGroup1="103" enchantGroup2="103">
 		<table name="#il_mpConsume2"> 40 43 46 59 51 </table>
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -1098 -1163 -1221 -1270 -1309 </table>
@@ -396,7 +396,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="405" levels="10" name="Banish Undead" enchantGroup1="1" enchantGroup2="1">
+	<skill id="405" levels="10" name="Banish Undead" enchantGroup1="103" enchantGroup2="103">
 		<!-- High Five Confirmed -->
 		<table name="#effectPoint"> -523 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
 		<table name="#itemConsumeCount"> 5 6 7 7 8 8 9 9 10 10 </table>
@@ -688,7 +688,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="409" levels="10" name="Critical Blow" enchantGroup1="2" enchantGroup2="2">
+	<skill id="409" levels="10" name="Critical Blow" enchantGroup1="103" enchantGroup2="103">
 		<table name="#il_mpConsume2"> 55 59 62 63 66 68 70 72 74 76 </table>
 		<!-- Confirmed CT2.5 -->
 		<!-- NOTE: This skill increases "Blow Rate" and description in client says "Critical Rate" but is client typo, so please don't change this skill -->
@@ -785,7 +785,7 @@
 			</effect>
 		</enchant7pveEffects>
 	</skill>
-	<skill id="410" levels="3" name="Mortal Strike" enchantGroup1="2" enchantGroup2="2">
+	<skill id="410" levels="3" name="Mortal Strike" enchantGroup1="103" enchantGroup2="103">
 		<table name="#il_blowRate"> 1.2 1.3 1.4 </table>
 		<table name="#il_mpConsume1"> 5 6 7 </table>
 		<table name="#il_mpConsume2"> 22 25 27 </table>
@@ -835,7 +835,7 @@
 		</enchant2Effects>
 		<set name="affectScope" val="SINGLE" />
 	</skill>
-	<skill id="411" levels="3" name="Stealth" enchantGroup1="1" enchantGroup2="1">
+	<skill id="411" levels="3" name="Stealth" enchantGroup1="103" enchantGroup2="103">
 		<table name="#abnormalLvl"> 1 2 3 </table>
 		<table name="#amount"> 0.55 0.7 0.85 </table>
 		<table name="#effectPoint"> 549 611 655 </table>
@@ -870,7 +870,7 @@
 		</effects>
 		<set name="affectScope" val="SINGLE" />
 	</skill>
-	<skill id="412" levels="10" name="Sand Bomb" enchantGroup1="1" enchantGroup2="1">
+	<skill id="412" levels="10" name="Sand Bomb" enchantGroup1="103" enchantGroup2="103">
 		<table name="#il_accCombat"> 6 6 6 6 6 8 9 10 11 12 </table>
 		<!-- Confirmed CT2.5 -->
 		<table name="#abnormalLvl"> 1 1 1 1 1 2 2 2 2 3 </table>
@@ -2111,7 +2111,7 @@
 		</effects>
 		<set name="affectScope" val="SINGLE" />
 	</skill>
-	<skill id="448" levels="1" name="Summon Swoop Cannon" enchantGroup1="1">
+	<skill id="448" levels="1" name="Summon Swoop Cannon" enchantGroup1="103">
 		<table name="#ench1npcId"> 14840 14841 14842 14843 14844 14845 14846 14847 14848 14849 14850 14851 14852 14853 14854 14855 14856 14857 14858 14859 14860 14861 14862 14863 14864 14865 14866 14867 14868 14869 </table>
 		<set name="hitTime" val="10000" />
 		<set name="icon" val="icon.skill0448" />
@@ -2181,7 +2181,7 @@
 			</effect>
 		</enchant1Effects>
 	</skill>
-	<skill id="450" levels="10" name="Banish Seraph" enchantGroup1="1" enchantGroup2="1">
+	<skill id="450" levels="10" name="Banish Seraph" enchantGroup1="103" enchantGroup2="103">
 		<!-- Confirmed CT2.5 -->
 		<table name="#effectPoint"> -523 -549 -566 -582 -597 -611 -624 -635 -646 -655 </table>
 		<table name="#itemConsumeCount"> 5 6 7 7 8 8 9 9 10 10 </table>
@@ -2284,7 +2284,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="452" levels="5" name="Shock Stomp" enchantGroup1="2">
+	<skill id="452" levels="5" name="Shock Stomp" enchantGroup1="103">
 		<!-- High Five Confirmed -->
 		<table name="#magicLvl"> 55 60 64 68 72 </table>
 		<table name="#targetCancelChance"> 40 50 60 70 80 </table>

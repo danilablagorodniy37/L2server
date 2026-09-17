@@ -25,6 +25,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.l2jserver.commons.util.Rnd;
+import com.l2jserver.gameserver.data.json.ExperienceData;
 import com.l2jserver.gameserver.data.xml.impl.EnchantSkillGroupsData;
 import com.l2jserver.gameserver.datatables.SkillData;
 import com.l2jserver.gameserver.model.L2EnchantSkillGroup.EnchantSkillHolder;
@@ -50,6 +51,9 @@ public final class RequestExEnchantSkill extends L2GameClientPacket {
 	private static final Logger LOG_ENCHANT_SKILL = LoggerFactory.getLogger("enchant_skill");
 	
 	private static final String _C__D0_0F_REQUESTEXENCHANTSKILL = "[C] D0:0F RequestExEnchantSkill";
+	
+	/** Skills are enchanted from this level on, and the experience paid for it never drops a player below it. */
+	private static final int MIN_ENCHANT_LEVEL = 76;
 	
 	private int _skillId;
 	private int _skillLvl;
@@ -77,7 +81,7 @@ public final class RequestExEnchantSkill extends L2GameClientPacket {
 			return;
 		}
 		
-		if (player.getLevel() < 76) {
+		if (player.getLevel() < MIN_ENCHANT_LEVEL) {
 			player.sendPacket(SystemMessageId.YOU_CANNOT_USE_SKILL_ENCHANT_ON_THIS_LEVEL);
 			return;
 		}
@@ -104,6 +108,8 @@ public final class RequestExEnchantSkill extends L2GameClientPacket {
 		
 		final int costMultiplier = general().getNormalEnchantCostMultipiler();
 		final int requiredSp = esd.getSpCost() * costMultiplier;
+		// As in Interlude, a route may cost experience as well (data/enchantSkillGroups.xml, exp).
+		final long requiredExp = (long) esd.getExpCost() * costMultiplier;
 		if (player.getSp() >= requiredSp) {
 			// only first lvl requires book
 			final boolean usesBook = (_skillLvl % 100) == 1; // 101, 201, 301 ...
@@ -113,6 +119,11 @@ public final class RequestExEnchantSkill extends L2GameClientPacket {
 			if (character().enchantSkillSpBookNeeded() && usesBook && (spb == null)) // Haven't spellbook
 			{
 				player.sendPacket(SystemMessageId.YOU_DONT_HAVE_ALL_OF_THE_ITEMS_NEEDED_TO_ENCHANT_THAT_SKILL);
+				return;
+			}
+			
+			if (!hasEnoughExp(player.getExp(), requiredExp, ExperienceData.getInstance().getExpForLevel(MIN_ENCHANT_LEVEL))) {
+				player.sendPacket(SystemMessageId.YOU_DONT_HAVE_ENOUGH_EXP_TO_ENCHANT_THAT_SKILL);
 				return;
 			}
 			
@@ -131,6 +142,12 @@ public final class RequestExEnchantSkill extends L2GameClientPacket {
 			if (!check) {
 				player.sendPacket(SystemMessageId.YOU_DONT_HAVE_ALL_OF_THE_ITEMS_NEEDED_TO_ENCHANT_THAT_SKILL);
 				return;
+			}
+			
+			if (requiredExp > 0) {
+				// The H5 enchant window has no experience line, so the player is told in the chat.
+				player.removeExp(requiredExp);
+				player.sendPacket(SystemMessage.getSystemMessage(SystemMessageId.EXP_DECREASED_BY_S1).addLong(requiredExp));
 			}
 			
 			// ok. Destroy ONE copy of the book
@@ -170,6 +187,16 @@ public final class RequestExEnchantSkill extends L2GameClientPacket {
 		} else {
 			player.sendPacket(SystemMessageId.YOU_DONT_HAVE_ENOUGH_SP_TO_ENCHANT_THAT_SKILL);
 		}
+	}
+	
+	/**
+	 * @param currentExp the experience of the player
+	 * @param requiredExp the experience the enchant costs
+	 * @param floorExp the experience the player has to keep
+	 * @return {@code true} if paying the cost leaves the player at or above the floor
+	 */
+	static boolean hasEnoughExp(long currentExp, long requiredExp, long floorExp) {
+		return (requiredExp <= 0) || ((currentExp - requiredExp) >= floorExp);
 	}
 	
 	@Override

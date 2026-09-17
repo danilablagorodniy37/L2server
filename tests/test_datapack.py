@@ -118,3 +118,47 @@ def test_html_quest_buttons_reports_a_button_of_an_unloaded_script(monkeypatch):
 	))
 	monkeypatch.setattr(build_html_links, "loaded_script_names", lambda: {"NoblesseTeleport"})
 	assert dict(checks.html_quest_buttons()) == {"CharacterBirthday": ["data/html/teleporter/30080.htm"]}
+
+
+def test_interlude_enchant_costs_reports_an_adena_price(tmp_path, monkeypatch):
+	"""Pointing a skill back at an H5 group (adena, no experience) must be noticed."""
+	import build_enchant_costs
+	skills = tmp_path / "skills"
+	skills.mkdir()
+	(skills / "s.xml").write_text(
+		'<?xml version="1.0" encoding="UTF-8"?><list>'
+		'<skill id="1" levels="37" name="Triple Slash" enchantGroup1="2" enchantGroup2="104"></skill></list>', encoding="utf-8")
+	monkeypatch.setattr(build_enchant_costs, "SKILLS", skills)
+	problems = checks.interlude_enchant_costs()
+	assert set(problems) == {"skill 1 route 1"}, problems
+
+
+def test_interlude_residence_skills_reports_a_castle_skill(tmp_path, monkeypatch):
+	"""Gludio castle (1) must not give Residence Health again; fortress 106 may."""
+	import build_residence_skills
+	tree = tmp_path / "pledgeSkillTree.xml"
+	tree.write_text(
+		'<?xml version="1.0" encoding="UTF-8"?><list><skillTree type="pledgeSkillTree">'
+		'<skill skillName="Residence Health" skillId="593" skillLvl="1" getLevel="4" residenceSkill="true">'
+		'<residenceId>1</residenceId><residenceId>106</residenceId></skill></skillTree></list>', encoding="utf-8")
+	monkeypatch.setattr(build_residence_skills, "TREE", tree)
+	assert dict(checks.interlude_residence_skills()) == {"593 Residence Health": ["residence 1"]}
+
+
+def test_build_residence_skills_keeps_fortresses_and_drops_empty_skills():
+	import build_residence_skills
+	text = (
+		'\t\t<skill skillName="Residence Health" skillId="593" skillLvl="1" getLevel="4" residenceSkill="true">\n'
+		"\t\t\t<socialClass>APPRENTICE</socialClass>\n"
+		"\t\t\t<residenceId>1</residenceId>\n"
+		"\t\t\t<residenceId>106</residenceId>\n"
+		"\t\t</skill>\n"
+		'\t\t<skill skillName="Gludio Territory Benefaction" skillId="848" skillLvl="1" getLevel="5" residenceSkill="true">\n'
+		"\t\t\t<socialClass>APPRENTICE</socialClass>\n"
+		"\t\t\t<residenceId>81</residenceId>\n"
+		"\t\t</skill>\n"
+	)
+	result, entries, skills = build_residence_skills.without_residences(text)
+	assert (entries, skills) == (2, 1)
+	assert "<residenceId>106</residenceId>" in result and "<residenceId>1</residenceId>" not in result
+	assert "skillId=\"848\"" not in result

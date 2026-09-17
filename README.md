@@ -60,6 +60,8 @@
 | `analyze.py` | Отчёт: сколько предметов, NPC, скиллов и спавнов H5 нет в Interlude |
 | `build_skill_trees.py` | Деревья скиллов классов по aCis, Камаэли до 80 уровня |
 | `build_skill_stats.py` | Значения скиллов (расход, откат, сила, длительность) из aCis |
+| `build_enchant_costs.py` | Цена (SP и опыт) и шансы заточки скиллов по таблицам Interlude |
+| `build_residence_skills.py` | Скиллы резиденций только у крепостей: у замков и территорий убраны |
 | `build_spellbooks.py` | Книги для изучения скиллов и их продажа в магазинах |
 | `build_drops.py` | Дроп и спойл монстров из aCis |
 | `build_quests.py` | Убирает квесты поздних хроник из `QuestLoader` |
