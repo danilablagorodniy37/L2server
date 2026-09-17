@@ -68,9 +68,10 @@ public class PhantomFacts {
 			if (text.isEmpty()) {
 				continue;
 			}
-			final String[] p = text.split("\\s+", 3);
-			if (p.length == 3) {
-				_zones.add(new Zone(Integer.parseInt(p[0]), Integer.parseInt(p[1]), p[2]));
+			// <x> <y> <z> <min level> <max level> <monsters> <zone name>
+			final String[] p = text.split("\\s+", 7);
+			if (p.length == 7) {
+				_zones.add(new Zone(Integer.parseInt(p[3]), Integer.parseInt(p[4]), p[6]));
 			}
 		}
 	}

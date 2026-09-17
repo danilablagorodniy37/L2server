@@ -28,10 +28,24 @@ import com.l2jserver.gameserver.network.serverpackets.ValidateLocation;
 import com.l2jserver.gameserver.util.Util;
 
 /**
- * One bot: walks around its town square, stands, sits down and uses emotes.
+ * One bot: lives in its town, travels to a hunting ground and comes back.
  * Chat is decided by {@link Phantoms}, which can pair two bots into a dialog.
  */
 public class Phantom {
+	/** What the bot is busy with. */
+	public enum State {
+		/** Walking around the town square, sitting, chatting. */
+		TOWN,
+		/** On the way to a hunting ground. */
+		TRAVEL,
+		/** At the hunting ground. */
+		HUNT,
+		/** On the way home. */
+		RETURN,
+		/** Sitting in Giran with a private store. */
+		TRADE
+	}
+
 	/** How a bot types, so the town chat does not look like one person talking. */
 	public enum Style {
 		/** Plain text. */
@@ -74,8 +88,16 @@ public class Phantom {
 	private final Location _spawn;
 	private final int _radius;
 	private final Style _style = Style.values()[Rnd.get(Style.values().length)];
+	private State _state = State.TOWN;
+	private PhantomHunting.Ground _ground;
+	private long _stateSince;
+	private long _stateUntil;
 	private long _nextAction;
 	private long _nextChat;
+	private long _nextSkill;
+	private long _restUntil;
+	private int _kills;
+	private int _deaths;
 	private long _nextReaction;
 	private String _talkingTo;
 	private long _talkUntil;
@@ -154,8 +176,90 @@ public class Phantom {
 		_nextChat = Math.max(_nextChat, System.currentTimeMillis() + millis);
 	}
 
+	public State state() {
+		return _state;
+	}
+
+	public PhantomHunting.Ground ground() {
+		return _ground;
+	}
+
+	/** The town square the bot lives on. */
+	public Location home() {
+		return _home;
+	}
+
+	/** True when the bot has been in this state longer than it planned. */
+	public boolean stateOver(long now) {
+		return now >= _stateUntil;
+	}
+
+	public long stateSince() {
+		return _stateSince;
+	}
+
+	/**
+	 * Puts the bot into a state for a while.
+	 * @param state what it does now
+	 * @param ground the hunting ground it travels to or hunts in, null in town
+	 * @param millis how long it stays in this state before deciding again
+	 */
+	public void enter(State state, PhantomHunting.Ground ground, long millis) {
+		_state = state;
+		_ground = ground;
+		_stateSince = System.currentTimeMillis();
+		_stateUntil = _stateSince + millis;
+		_nextAction = _stateSince;
+	}
+
+	public boolean skillDue(long now) {
+		return now >= _nextSkill;
+	}
+
+	public void skillUsed(long now) {
+		_nextSkill = now + Rnd.get(4000, 9000);
+	}
+
+	public boolean resting(long now) {
+		return now < _restUntil;
+	}
+
+	public void rest(long millis) {
+		_restUntil = System.currentTimeMillis() + millis;
+	}
+
+	public void stopResting() {
+		_restUntil = 0;
+	}
+
+	public int kills() {
+		return _kills;
+	}
+
+	public void killed() {
+		_kills++;
+	}
+
+	public int deaths() {
+		return _deaths;
+	}
+
+	public void died() {
+		_deaths++;
+	}
+
+	/** Where the bot walks around: its town square, or the hunting ground it travels to. */
+	private Location anchor() {
+		return ((_state == State.HUNT) && (_ground != null)) ? new Location(_ground.x(), _ground.y(), _ground.z()) : _home;
+	}
+
 	public void act(long now) {
-		if ((_player == null) || !_player.isVisible() || (now < _nextAction)) {
+		if ((_player == null) || !_player.isVisible() || (now < _nextAction) || (_state == State.TRADE)) {
+			return;
+		}
+		if ((_state == State.HUNT) && (_player.getTarget() != null) && _player.isInCombat()) {
+			// busy fighting, the hunting tick drives it
+			_nextAction = now + 2000;
 			return;
 		}
 
@@ -183,11 +287,12 @@ public class Phantom {
 	}
 
 	private void walk(long now) {
+		final Location around = anchor();
 		for (int i = 0; i < 6; i++) {
-			final int x = _home.getX() + Rnd.get(-_radius, _radius);
-			final int y = _home.getY() + Rnd.get(-_radius, _radius);
-			final int z = GeoData.getInstance().getHeight(x, y, _home.getZ());
-			if (Math.abs(z - _home.getZ()) > 500) {
+			final int x = around.getX() + Rnd.get(-_radius, _radius);
+			final int y = around.getY() + Rnd.get(-_radius, _radius);
+			final int z = GeoData.getInstance().getHeight(x, y, around.getZ());
+			if (Math.abs(z - around.getZ()) > 500) {
 				continue;
 			}
 			if (GeoData.getInstance().canMove(_player, x, y, z)) {

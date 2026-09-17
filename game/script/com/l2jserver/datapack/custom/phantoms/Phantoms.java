@@ -40,9 +40,13 @@ import com.l2jserver.commons.util.Rnd;
 import com.l2jserver.gameserver.ThreadPoolManager;
 import com.l2jserver.gameserver.handler.ChatHandler;
 import com.l2jserver.gameserver.instancemanager.MapRegionManager;
+import com.l2jserver.gameserver.ai.CtrlIntention;
+import com.l2jserver.gameserver.model.L2Object;
 import com.l2jserver.gameserver.model.L2World;
 import com.l2jserver.gameserver.model.Location;
+import com.l2jserver.gameserver.model.actor.instance.L2MonsterInstance;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
+import com.l2jserver.gameserver.model.skills.Skill;
 import com.l2jserver.gameserver.model.events.Containers;
 import com.l2jserver.gameserver.model.events.EventType;
 import com.l2jserver.gameserver.model.events.impl.character.player.PlayerChat;
@@ -78,12 +82,18 @@ public class Phantoms {
 	private PhantomNews _news;
 	private PhantomFacts _facts;
 	private PhantomFactory _factory;
+	private PhantomHunting _hunting;
+	private PhantomTrade _trade;
 	private String[] _towns;
 	private int _chatInterval;
 	private int _regionChatInterval;
 	private int _radius;
 	private boolean _replyToPlayers;
 	private boolean _debugChat;
+	private int _huntShare;
+	private int _huntMinutes;
+	private int _traders;
+	private String _tradeTown;
 
 	public Phantoms() {
 		final File root = server().getDatapackRoot();
@@ -102,7 +112,9 @@ public class Phantoms {
 			final Path data = new File(root, "data/phantoms").toPath();
 			_phrases = new PhraseBook(data.resolve("phrases.txt"));
 			_factory = new PhantomFactory(data.resolve("gear.txt"), property("Account", "phantoms"), number("MinLevel", 20), number("MaxLevel", 80));
-			_facts = new PhantomFacts(data.resolve("zones.txt"), _factory.gear());
+			_hunting = new PhantomHunting(data.resolve("hunting.txt"));
+			_facts = new PhantomFacts(data.resolve("hunting.txt"), _factory.gear());
+			_trade = new PhantomTrade(data.resolve("trade.txt"));
 		} catch (Exception ex) {
 			LOG.warn("could not read data/phantoms!", ex);
 			return;
@@ -113,6 +125,12 @@ public class Phantoms {
 		_regionChatInterval = number("RegionChatInterval", 40);
 		_radius = number("WanderRadius", 1500);
 		_replyToPlayers = Boolean.parseBoolean(_config.getProperty("ReplyToPlayers", "True").trim());
+		// Share of the bots that leave town to hunt, and how long one trip lasts.
+		_huntShare = number("HuntShare", 0);
+		_huntMinutes = number("HuntMinutes", 20);
+		// Bots that keep a private store instead of wandering, and the town they trade in.
+		_traders = number("Traders", 0);
+		_tradeTown = property("TradeTown", "giran_castle_town");
 		_debugChat = Boolean.parseBoolean(_config.getProperty("DebugChat", "False").trim());
 
 		final int count = number("Count", 100);
@@ -146,12 +164,16 @@ public class Phantoms {
 			if (player == null) {
 				continue;
 			}
-			final Location home = townSquare(_towns[i % _towns.length]);
+			final boolean trader = i < _traders;
+			final Location home = townSquare(trader ? _tradeTown : _towns[i % _towns.length]);
 			if (home == null) {
 				continue;
 			}
 			enterWorld(player, home);
 			final Phantom phantom = new Phantom(player, home, _radius);
+			if (trader && _trade.openShop(player)) {
+				phantom.enter(Phantom.State.TRADE, null, Long.MAX_VALUE / 2);
+			}
 			// Spread the first lines over one chat interval instead of all at once.
 			phantom.chatDone(System.currentTimeMillis(), _chatInterval);
 			_phantoms.add(phantom);
@@ -166,10 +188,14 @@ public class Phantoms {
 		_news = new PhantomNews(this, this::onNews);
 		_instance = this;
 		ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(this::tick, 5, 2, TimeUnit.SECONDS);
+		if (_huntShare > 0) {
+			ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(this::huntTick, 20, 1, TimeUnit.SECONDS);
+		}
 		if (_replyToPlayers) {
 			Containers.Global().addListener(new ConsumerEventListener(Containers.Global(), EventType.PLAYER_CHAT, (PlayerChat event) -> onPlayerChat(event), this));
 		}
-		LOG.info("{} bots in the world ({} created), {} phrases.", _phantoms.size(), created, _phrases.size());
+		final long traders = _phantoms.stream().filter(p -> p.state() == Phantom.State.TRADE).count();
+		LOG.info("{} bots in the world ({} created), {} of them trading in {}, {} phrases.", _phantoms.size(), created, traders, _tradeTown, _phrases.size());
 		if (Boolean.parseBoolean(_config.getProperty("DebugNews", "False").trim())) {
 			ThreadPoolManager.getInstance().scheduleGeneral(this::injectDebugNews, 25, TimeUnit.SECONDS);
 		}
@@ -177,6 +203,9 @@ public class Phantoms {
 			final long moved = _phantoms.stream().filter(Phantom::hasMoved).count();
 			LOG.info("{} of {} bots are walking around.", moved, _phantoms.size());
 		}, 90, TimeUnit.SECONDS);
+		if (_huntShare > 0) {
+			ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(this::report, 5, 5, TimeUnit.MINUTES);
+		}
 	}
 
 	private Location townSquare(String region) {
@@ -214,6 +243,164 @@ public class Phantoms {
 				LOG.warn("{} failed to act!", phantom.player().getName(), ex);
 			}
 		}
+	}
+
+	/** What the bots are up to, so the log shows whether hunting works. */
+	private void report() {
+		final Map<Phantom.State, Integer> states = new HashMap<>();
+		int kills = 0;
+		int deaths = 0;
+		for (Phantom phantom : _phantoms) {
+			states.merge(phantom.state(), 1, Integer::sum);
+			kills += phantom.kills();
+			deaths += phantom.deaths();
+		}
+		LOG.info("bots: {} in town, {} travelling, {} hunting, {} coming back, {} trading; {} kills and {} deaths so far.",
+			states.getOrDefault(Phantom.State.TOWN, 0), states.getOrDefault(Phantom.State.TRAVEL, 0),
+			states.getOrDefault(Phantom.State.HUNT, 0), states.getOrDefault(Phantom.State.RETURN, 0),
+			states.getOrDefault(Phantom.State.TRADE, 0), kills, deaths);
+	}
+
+	/** Drives the bots that are out hunting: leaving town, travelling, coming back. */
+	private void huntTick() {
+		final long now = System.currentTimeMillis();
+		for (Phantom phantom : _phantoms) {
+			try {
+				if (phantom.state() == Phantom.State.TRADE) {
+					continue;
+				}
+				if (phantom.player().isDead()) {
+					revive(phantom, now);
+					continue;
+				}
+				if (phantom.state() == Phantom.State.HUNT) {
+					fight(phantom, now);
+				}
+				if (!phantom.stateOver(now)) {
+					continue;
+				}
+				switch (phantom.state()) {
+					case TOWN -> leaveForHunt(phantom);
+					case TRAVEL -> arrive(phantom);
+					case HUNT -> goHome(phantom);
+					case RETURN -> arriveHome(phantom);
+				}
+			} catch (Exception ex) {
+				LOG.warn("{} failed to hunt!", phantom.player().getName(), ex);
+			}
+		}
+	}
+
+	/** One step of a fight: rest, pick a target, hit it, use a skill. */
+	private void fight(Phantom phantom, long now) {
+		final L2PcInstance bot = phantom.player();
+		if (PhantomCombat.shouldFlee(bot)) {
+			// too badly hurt to stay out here
+			goHome(phantom);
+			return;
+		}
+		if (phantom.resting(now)) {
+			if (PhantomCombat.rested(bot)) {
+				phantom.stopResting();
+			} else {
+				if (!bot.isSitting() && !bot.isInCombat()) {
+					bot.sitDown();
+				}
+				return;
+			}
+		} else if (PhantomCombat.shouldRest(bot)) {
+			bot.getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE);
+			bot.sitDown();
+			phantom.rest(Rnd.get(20000, 60000));
+			return;
+		}
+
+		final L2Object target = bot.getTarget();
+		if ((target instanceof L2MonsterInstance monster) && !monster.isAlikeDead() && bot.isInCombat()) {
+			if (phantom.skillDue(now)) {
+				final Skill skill = PhantomCombat.pickAttackSkill(bot, monster);
+				if (skill != null) {
+					bot.useMagic(skill, false, false);
+				}
+				phantom.skillUsed(now);
+			}
+			return;
+		}
+		if ((target instanceof L2MonsterInstance dead) && dead.isAlikeDead()) {
+			phantom.killed();
+			bot.setTarget(null);
+		}
+
+		final L2MonsterInstance next = PhantomCombat.findTarget(bot, phantom.ground());
+		if (next != null) {
+			PhantomCombat.attack(bot, next);
+			for (Skill buff : PhantomCombat.selfBuffs(bot)) {
+				if (bot.getEffectList().getBuffInfoBySkillId(buff.getId()) == null) {
+					bot.useMagic(buff, false, false);
+					break;
+				}
+			}
+		}
+	}
+
+	/** A dead bot gets up in its town and goes back out later. */
+	private void revive(Phantom phantom, long now) {
+		if (phantom.state() == Phantom.State.TOWN) {
+			return;
+		}
+		final L2PcInstance bot = phantom.player();
+		phantom.died();
+		bot.doRevive();
+		bot.setCurrentHp(bot.getMaxHp());
+		bot.setCurrentMp(bot.getMaxMp());
+		final Location home = phantom.home();
+		bot.teleToLocation(home.getX() + Rnd.get(-150, 150), home.getY() + Rnd.get(-150, 150), home.getZ(), false);
+		if (_phrases.has("died")) {
+			say(phantom, Say2.ALL, _phrases.random("died"), null, null);
+		}
+		phantom.enter(Phantom.State.TOWN, null, Rnd.get(2 * 60000, 6 * 60000));
+	}
+
+	/** In town a bot now and then decides to go hunting. */
+	private void leaveForHunt(Phantom phantom) {
+		final int hunting = (int) _phantoms.stream().filter(p -> p.state() != Phantom.State.TOWN).count();
+		if ((hunting * 100) >= (_phantoms.size() * _huntShare)) {
+			phantom.enter(Phantom.State.TOWN, null, Rnd.get(30000, 90000));
+			return;
+		}
+		final PhantomHunting.Ground ground = _hunting.pick(phantom.player().getLevel());
+		if (ground == null) {
+			phantom.enter(Phantom.State.TOWN, null, 5 * 60000L);
+			return;
+		}
+		if (_phrases.has("leaving")) {
+			say(phantom, Say2.ALL, _phrases.random("leaving").replace("{zone}", ground.name()), null, null);
+		}
+		phantom.enter(Phantom.State.TRAVEL, ground, Rnd.get(8000, 20000));
+	}
+
+	/** The trip itself is a teleport, the way a player uses a gatekeeper. */
+	private void arrive(Phantom phantom) {
+		final PhantomHunting.Ground ground = phantom.ground();
+		if (ground == null) {
+			phantom.enter(Phantom.State.TOWN, null, 30000);
+			return;
+		}
+		phantom.player().teleToLocation(ground.x() + Rnd.get(-200, 200), ground.y() + Rnd.get(-200, 200), ground.z(), false);
+		phantom.enter(Phantom.State.HUNT, ground, (_huntMinutes * 60000L) + Rnd.get(0, 5 * 60000));
+	}
+
+	private void goHome(Phantom phantom) {
+		if (_phrases.has("returning")) {
+			say(phantom, Say2.ALL, _phrases.random("returning"), null, null);
+		}
+		phantom.enter(Phantom.State.RETURN, phantom.ground(), Rnd.get(5000, 15000));
+	}
+
+	private void arriveHome(Phantom phantom) {
+		final Location home = phantom.home();
+		phantom.player().teleToLocation(home.getX() + Rnd.get(-150, 150), home.getY() + Rnd.get(-150, 150), home.getZ(), false);
+		phantom.enter(Phantom.State.TOWN, null, Rnd.get(3 * 60000, 12 * 60000));
 	}
 
 	private void speak(Phantom phantom, long now) {

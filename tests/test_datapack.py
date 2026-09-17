@@ -233,3 +233,18 @@ def test_kamael_isle_reports_a_gatekeeper_that_is_gone(monkeypatch):
 	monkeypatch.setattr(checks, "world_spawned", lambda: world)
 	problems = checks.kamael_isle()
 	assert [key for key in problems if key.startswith(f"{ragara} ")], problems
+
+
+def test_phantom_hunting_reports_a_level_without_a_ground(tmp_path, monkeypatch):
+	"""Bots of a level with no hunting ground would stand in town forever."""
+	import build_phantom_hunting as hunting
+	out = tmp_path / "hunting.txt"
+	out.write_text(
+		"# <x> <y> <z> <min level> <max level> <monsters> <zone name>\n"
+		"50568 152408 -2656 20 25 14 Execution Grounds\n"
+		"1 2 3 30 35 4 Cruma Tower\n"
+		"1 2 3 30 35 12 Nowhere\n", encoding="utf-8")
+	monkeypatch.setattr(hunting, "OUT", out)
+	problems = checks.phantom_hunting()
+	assert "Nowhere" in problems and "Cruma Tower" in problems
+	assert [key for key in problems if key.startswith("level ")], problems

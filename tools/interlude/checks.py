@@ -841,6 +841,29 @@ def phantom_gear():
 	return problems
 
 
+def phantom_hunting():
+	"""Every level from 20 to 80 has a hunting ground with monsters, and its zone comes from the client list (build_phantom_hunting.py)."""
+	import build_phantom_hunting as hunting
+
+	problems = defaultdict(list)
+	names = {name for _level, _x, _y, _z, name in hunting.zones()}
+	grounds = []
+	for line in hunting.OUT.read_text(encoding="utf-8").splitlines():
+		line = line.strip()
+		if not line or line.startswith("#"):
+			continue
+		x, y, z, low, high, count, name = line.split(None, 6)
+		grounds.append((int(low), int(high), int(count), name))
+		if name not in names:
+			problems[name].append("not a zone of the client list")
+		if int(count) < hunting.MIN_MONSTERS:
+			problems[name].append(f"only {count} monsters")
+	for level in range(20, 81):
+		if not [g for g in grounds if (g[0] - 2) <= level <= (g[1] + 5)]:
+			problems[f"level {level}"].append("no hunting ground")
+	return problems
+
+
 def phantom_phrases():
 	"""Phrases of the bots use only slots the script can fill, and every section has lines."""
 	problems = defaultdict(list)
@@ -867,7 +890,7 @@ def phantom_phrases():
 		kind = name.split(" ", 1)
 		if (kind[0] in ("seen", "news")) and ((len(kind) < 2) or (kind[1] not in PHANTOM_KINDS)):
 			problems[f"[{name}]"].append("unknown event kind, see PhantomNews")
-		elif kind[0] not in ("general", "trade", "shout", "dialog", "reply", "seen", "news", "chain"):
+		elif kind[0] not in ("general", "trade", "shout", "dialog", "reply", "seen", "news", "chain", "leaving", "returning", "died"):
 			problems[f"[{name}]"].append("unknown section")
 	for required in ("general", "trade", "shout", "dialog"):
 		if required not in sections:
@@ -885,12 +908,20 @@ def phantom_config():
 			problems[town.strip()].append("no such region in data/mapregion")
 	if int(config.get("Count", "0")) < 1:
 		problems["Count"].append("must be at least 1")
+	traders = int(config.get("Traders", "0"))
+	if traders > int(config.get("Count", "0")):
+		problems["Traders"].append("more traders than bots")
+	if traders > 0:
+		town = config.get("TradeTown", "").strip()
+		if town not in regions:
+			problems[town or "TradeTown"].append("no such region in data/mapregion")
 	for line in (PHANTOMS / "zones.txt").read_text(encoding="utf-8").splitlines():
-		parts = line.split("#")[0].split(None, 2)
+		parts = line.split("#")[0].split(None, 4)
 		if not parts:
 			continue
-		if (len(parts) != 3) or not parts[0].isdigit() or not parts[1].isdigit() or (int(parts[0]) > int(parts[1])):
-			problems[line.strip()].append("expected: <min level> <max level> <name>")
+		numbers = parts[:4]
+		if (len(parts) != 5) or not all(value.lstrip("-").isdigit() for value in numbers) or not parts[4].strip():
+			problems[line.strip()].append("expected: <level> <x> <y> <z> <name>")
 	return problems
 
 
@@ -967,7 +998,7 @@ DATAPACK_CHECKS = {f.__name__: f for f in (
 	html_multisell_links, html_buylist_links, html_teleport_links, html_quest_buttons, script_shop_calls, quest_dialog_links, quest_npcs, quest_kill_targets,
 	spawn_zones, leader_minions, loader_classes, xml_schemas,
 	shops_interlude_items, drops_interlude_items, recipes_interlude_items, manor_interlude_items, teleports_interlude, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_enchant_costs, interlude_residence_skills, interlude_npc_stats, kamael_isle, interlude_config,
-	interlude_loaders, starting_equipment, phantom_gear, phantom_phrases, phantom_config,
+	interlude_loaders, starting_equipment, phantom_gear, phantom_hunting, phantom_phrases, phantom_config,
 )}
 DATABASE_CHECKS = {"database_tables": database_tables}
 

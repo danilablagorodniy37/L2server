@@ -1,30 +1,143 @@
-# Hunting zones the bots talk about: <min level> <max level> <name>
-20 30 Ruins of Agony
-20 30 Ruins of Despair
-22 32 Ant Nest
-25 35 Execution Grounds
-28 38 Cruma Marshlands
-30 40 Death Pass
-33 43 Sea of Spores
-35 45 Cruma Tower
-38 48 Enchanted Valley
-40 50 Forest of Mirrors
-40 50 Hardin's Academy
-43 53 Dragon Valley
-45 55 Silent Valley
-48 58 Tower of Insolence
-50 60 Giant's Cave
-52 62 Ketra Orc Outpost
-52 62 Varka Silenos Barracks
-55 65 Hot Springs
-58 68 Blazing Swamp
-60 70 Valley of Saints
-60 70 Wall of Argos
-62 72 Garden of Eva
-65 75 Beast Farm
-65 75 Pagan Temple
-68 78 Forge of the Gods
-70 80 Imperial Tomb
-72 80 Monastery of Silence
-74 80 Four Sepulchers
-75 80 Stakato Nest
+# Hunting zones of the bots: name, recommended level and the point the client map shows.
+# Read from the client with tools/client/hunting_zones.py; do not edit by hand.
+# <level> <x> <y> <z> <name>
+1 112971 -174924 -608 Frozen Valley
+1 -121436 56288 -1586 Isle of Souls
+1 -118070 45956 420 Kamael Village
+1 50953 42105 -3480 Shadow of the Mother Tree
+1 23863 11068 -3720 Shilen's Garden
+1 -95336 240478 -3264 Talking Island, Eastern Territory
+1 -39347 -107274 -2072 Valley of Heroes
+8 21362 51122 -3688 Elven Forest
+8 -10983 -117484 -2464 Immortal Plateau, Northern Region
+8 -104344 226217 -3616 Talking Island, Northern Territory
+8 -22224 14168 -3232 The Dark Forest
+8 128527 -204036 -3408 Western Mining Zone
+9 -112367 234703 -3688 Elven Ruins
+10 139714 -177456 -1536 Abandoned Coal Mines
+10 9340 -112509 -2536 Cave of Trials
+10 29294 74968 -3776 Elven Fortress
+10 -47543 58478 -3336 School of Dark Arts
+12 -103032 46457 -1136 Mimir's Forest
+13 -29466 66678 -3496 Black Rock Hill
+13 -116114 87005 -3544 Hills of Gold
+13 -21966 40544 -3192 Swampland
+14 -6989 109503 -3040 Evil Hunting Grounds
+15 -123842 38117 1176 Cave of Souls
+15 -84728 60089 -2576 Nornil's Garden
+15 -42628 119766 -3528 Ruins of Agony
+15 -19120 136816 -3762 Ruins of Despair
+15 -10612 75881 -3592 The Neutral Zone
+15 -75437 168800 -3632 Windmill Hill
+16 -44763 203497 -3592 Langk Lizardmen Dwellings
+16 -61095 75104 -3383 Spider Nest
+17 -63736 101522 -3552 Fellmere Harvesting Grounds
+18 175836 -205837 -3384 Eastern Mining Zone
+18 -4190 -80040 -2696 Immortal Plateau, Southern Region
+19 -36652 135591 -3160 Entrance to the Ruins of Despair
+19 -50174 129303 -2912 Ruins of Agony Bend
+20 29928 151415 2392 Dion Hills
+20 38291 148029 -3696 Mandragora Farm
+21 -49853 147089 -2784 Abandoned Camp 
+21 -41184 206752 -3357 Necropolis of Sacrifice
+22 -6661 201880 -3632 Ol Mahum Checkpoint
+22 -28327 155125 -3496 Windawood Manor
+23 50081 116859 -2176 Partisan's Hideaway
+23 630 179184 -3720 Plains of Dion
+24 -25283 106820 -3416 Maille Lizardmen Barracks
+24 -89763 105359 -3576 Orc Barracks
+25 5106 126916 -3664 Cruma Marshlands
+25 50568 152408 -2656 Execution Grounds
+25 -16526 208032 -3664 Wasteland
+26 -88539 83389 -2864 Windy Hill
+27 -53001 191425 -3568 Forgotten Temple
+29 -9959 176184 -4160 The Ant Nest
+30 85546 131328 -3672 Breka's Stronghold
+30 39232 143568 -3651 Catacomb of the Heretic
+30 10610 156322 -2472 Floran Agricultural Area
+30 111965 -154172 -1528 Plunderous Plains
+30 -44829 188171 -3256 Red Rock Ridge
+31 113553 134813 -3540 Gorgon Flower Garden
+32 45600 126944 -3686 The Pilgrim's Necropolis
+34 34475 188095 -2976 Bee Hive
+35 67933 117045 -3544 Death Pass
+36 -26489 195307 -3928 Ant Incubator
+38 116267 201177 -3432 Alligator Beach
+39 121618 -141554 -1496 Sky Wagon Relic
+40 115583 192261 -3488 Alligator Island
+40 17225 114173 -3440 Cruma Tower
+40 84413 234334 -3656 Garden of Eva
+40 114306 86573 -3112 Hunters Valley
+40 85391 16228 -3640 Ivory Tower Crater
+40 64328 26803 -3768 Sea of Spores
+40 142065 81300 -3000 The Forest of Mirrors
+40 67097 68815 -3648 Timak Outpost 
+42 43200 170688 -3251 Catacomb of the Branded
+42 107514 174329 -3704 Necropolis of Worship
+45 43408 206881 -3752 Devil's Isle
+45 93218 16969 -3904 Forest of Evil
+45 135580 19467 -3424 Plains of Glory
+45 124904 61992 -3973 The Enchanted Valley
+45 156898 11217 -4032 War-Torn Plains
+46 58316 163851 -2816 Tanor Canyon
+50 91539 -12204 -2440 Outlaw Forest
+50 167047 20304 -3328 The Cemetery
+51 74672 78032 -3398 Catacomb of the Apostate
+52 -25472 77728 -3446 The Patriot's Necropolis
+53 113903 -108752 -884 Frozen Labyrinth
+55 183543 -14974 -2768 Fields of Massacre
+55 168217 37990 -4072 Forsaken Plains 
+57 102728 -126242 -2840 Freya's Garden
+60 136672 79328 -3702 Catacomb of the Witch
+60 106349 -61870 -2904 Devil's Pass
+60 -56064 78720 -3011 Necropolis of Devotion
+60 188611 20588 -3696 The Forbidden Gateway
+60 114649 11115 -5120 Tower of Insolence
+60 65797 -71510 -3744 Valley of Saints
+63 52107 -54328 -3158 Forest of the Dead
+64 106517 -2871 -3454 Ancient Battleground
+65 155310 -16339 -3320 Blazing Swamp
+65 114496 132416 -3101 Necropolis of Martyrdom
+66 69340 -50203 -3314 Swamp of Screams
+67 132997 -60608 -2960 Garden of Beasts
+68 165054 -47861 -3560 Wall of Argos
+70 168560 -17968 -3174 The Disciple's Necropolis
+70 79296 209584 -3709 The Saint's Necropolis
+72 90418 -107317 -3328 Archaic Laboratory
+72 -22480 13872 -3174 Catacomb of Dark Omens
+72 110912 84912 -4816 Catacomb of the Forbidden Path
+73 144880 -113468 -2560 Hot Springs
+73 91280 -117152 -3952 Pavel Ruins
+73 190112 -61776 -2944 Shrine of Loyalty
+74 170838 55776 -5280 Silent Valley
+76 186699 -75915 -2826 Imperial Tomb
+77 146990 -67128 -3640 Ketra Orc Outpost
+77 125740 -40864 -3736 Varka Silenos Barracks
+78 168902 -116703 -2417 Forge of the Gods
+78 145159 189247 -3756 Isle of Prayer
+80 47692 -115745 -3744 Crypts of Disgrace
+80 189964 -116820 -1624 Hall of Flames
+80 106414 -87799 -2949 Monastery of Silence
+80 181737 46469 -4276 The Giant's Cave
+80 174141 -88685 -5112 The Last Imperial Tomb
+81 143203 148824 -12004 Crystal Caverns
+81 148838 179183 -6009 Dark Cloud Mansion
+81 68693 -110438 -1946 Den of Evil
+81 73024 118485 -3720 Dragon Valley
+81 171946 -173352 3440 Mithril Mines
+81 35630 -49748 -760 The Pagan Temple
+82 148444 160914 -3102 Chromatic Highlands
+82 144697 147492 -12159 Emerald Square
+82 88969 -45307 -2112 Stakato Nest
+82 149948 150300 -12170 Steam Corridor
+83 43805 -88010 -2780 Beast Farm
+83 141135 149911 -11840 Coral Garden
+83 91088 182384 -3192 Field of Silence
+83 74592 207656 -3032 Field of Whispers
+83 178127 -84435 -7215 Four Sepulchers
+83 87252 85514 -3103 Plains of the Lizardmen
+83 8480 -14624 -3693 Primeval Isle
+83 84517 62538 -3480 Sel Mahum Training Grounds
+85 131557 114509 -3712 Antharas' Lair 
+85 177160 114922 -7704 Antharas' Nest
+85 215378 -116635 -1608 Valakas' Lair
