@@ -27,6 +27,13 @@ SPAWNS_OUT = ds.GAME / "data" / "spawnlist" / "interlude.xml"
 ZONE_PREFIX = "il_"
 # Monsters and the Beast Farm animals (Alpine Kookaburra, Buffalo, Cougar: quests 20, 631, 655).
 IMPORTED_TYPES = {"L2Monster", "L2FeedableBeast"}
+# Treasure chests of the dungeons. aCis keeps one box per territory and picks it at random, each
+# time, among chests of a few levels and their mimics; H5 spawns cannot pick, so the territory gets
+# its middle-level chest. The H5 chest itself plays the mimic: opened with a key it gives its own
+# drop, beaten open it drops the mimic's (L2ChestInstance, template id + 3536).
+TREASURE_BOX_MAKER = "random_spawn_treasurebox"
+CHEST_TYPE = "L2Chest"
+MIMIC_IDS = range(20000, 30000)
 # Makers with their own logic in aCis whose monsters may still be imported as plain
 # spawns when they are nowhere else in the world (day and night cycles, groups,
 # the Primeval Isle dinosaurs). Instances, events, treasure chests and boss rooms stay out.
@@ -198,6 +205,14 @@ def collect(npcs, spawned, territories, spawns, skipped, plain_makers_only):
 			if maker.get("event") or maker.get("spawnTime"):
 				skipped["maker with event or time"] += 1
 				continue
+			if ai_type == TREASURE_BOX_MAKER:
+				chest = middle_chest(maker, npcs) if plain_makers_only else None
+				territory = file_territories.get(maker.get("territory"))
+				if chest and territory is not None:
+					zone_name = ZONE_PREFIX + territory.get("name")
+					territories[zone_name] = territory
+					spawns.append((f.stem, maker.get("name"), zone_name, [chest]))
+				continue
 			if plain_makers_only:
 				if ai_type != "default_maker":
 					continue
@@ -225,6 +240,16 @@ def collect(npcs, spawned, territories, spawns, skipped, plain_makers_only):
 			zone_name = ZONE_PREFIX + territory.get("name")
 			territories[zone_name] = territory
 			spawns.append((f.stem, maker.get("name"), zone_name, entries))
+
+
+def middle_chest(maker, npcs):
+	"""(npc element, H5 template) of the middle-level chest a treasure box maker picks from."""
+	chests = [(npc, npcs[int(npc.get("id"))]) for npc in maker.findall("npc")
+		if int(npc.get("id")) in npcs and npcs[int(npc.get("id"))]["type"] == CHEST_TYPE and int(npc.get("id")) not in MIMIC_IDS]
+	if not chests:
+		return None
+	chests.sort(key=lambda chest: (chest[1]["level"], int(chest[0].get("id"))))
+	return chests[len(chests) // 2]
 
 
 def write_zones(territories):

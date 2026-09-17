@@ -35,6 +35,9 @@ REMOVED = {
 	"DelusionTeleport", "ToIVortex", "HandysBlockCheckerEvent",
 	# Beast Farm: H5 Beast Handler's Whip (Tunatun keeps his Interlude dialog)
 	"Tunatun",
+	# Treasure chests: H5 Maestro's Key handling with loot tables of later items and a 4 hour
+	# despawn; the core chest (L2ChestInstance, keys and Unlock) is the Interlude one
+	"TreasureChest",
 	# Alexandria: H5 agathion bracelets (Little Angel, Little Devil); she keeps her armor shops
 	# with data/html/default/30098.htm
 	"Alexandria",

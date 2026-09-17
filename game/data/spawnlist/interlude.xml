@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list enabled="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/spawnlist.xsd">
 	<!-- Interlude monsters imported from aCis by tools/interlude/build_spawns.py -->
+	<!-- [17_21] -->
+	<spawn name="gludio15_tb01_m1" zone="il_gludio15_tb1721_01">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio15_tb05_m1" zone="il_gludio15_tb1721_05">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio15_tb06_m1" zone="il_gludio15_tb1721_06">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio15_tb07_m1" zone="il_gludio15_tb1721_07">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio15_tb08_m1" zone="il_gludio15_tb1721_08">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio15_tb09_m1" zone="il_gludio15_tb1721_09">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio15_tb10_m1" zone="il_gludio15_tb1721_10">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio15_tb11_m1" zone="il_gludio15_tb1721_11">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio15_tb13_m1" zone="il_gludio15_tb1721_13">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio15_tb14_m1" zone="il_gludio15_tb1721_14">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
 	<!-- [17_22] -->
 	<spawn name="gludio06_npc1722_05401" zone="il_gludio06_npc1722_054">
 		<npc id="31432" x="-82915" y="155355" z="-3169" heading="24000" count="1" respawnDelay="60" />	<!-- Reeya -->
@@ -17,6 +48,169 @@
 	</spawn>
 	<spawn name="oren10_1819_26m1" zone="il_oren10_1819_26">
 		<npc id="20367" count="4" respawnDelay="60" respawnRandom="15" />	<!-- Merkenis's Escort -->
+	</spawn>
+	<!-- [18_21] -->
+	<spawn name="gludio03_tb08_m1" zone="il_gludio03_tb1821_08">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio03_tb08_m2" zone="il_gludio03_tb1821_08">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio03_tb10_m1" zone="il_gludio03_tb1821_10">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio03_tb10_m2" zone="il_gludio03_tb1821_10">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio03_tb17_m1" zone="il_gludio03_tb1821_17">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio03_tb18_m1" zone="il_gludio03_tb1821_18">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio03_tb19_m1" zone="il_gludio03_tb1821_19">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio03_tb20_m1" zone="il_gludio03_tb1821_20">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio03_tb21_m1" zone="il_gludio03_tb1821_21">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio03_tb21_m2" zone="il_gludio03_tb1821_21">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio03_tb22_m1" zone="il_gludio03_tb1821_22">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio03_tb22_m2" zone="il_gludio03_tb1821_22">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio03_tb23_m1" zone="il_gludio03_tb1821_23">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio03_tb23_m2" zone="il_gludio03_tb1821_23">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio03_tb24_m1" zone="il_gludio03_tb1821_24">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio03_tb25_m1" zone="il_gludio03_tb1821_25">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<!-- [18_22] -->
+	<spawn name="gludio09_tb13_m1" zone="il_gludio09_tb1822_13">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio09_tb13_m2" zone="il_gludio09_tb1822_13">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio09_tb13_m3" zone="il_gludio09_tb1822_13">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio09_tb25_m1" zone="il_gludio09_tb1822_25">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio09_tb25_m2" zone="il_gludio09_tb1822_25">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<!-- [18_23] -->
+	<spawn name="gludio04_tb009_m1" zone="il_gludio04_tb1823_09">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb012_m1" zone="il_gludio04_tb1823_12">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb022_m1" zone="il_gludio04_tb1823_22">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb025_m1" zone="il_gludio04_tb1823_25">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio16_tb13_m1" zone="il_gludio16_tb1823_13">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio16_tb13_m2" zone="il_gludio16_tb1823_13">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio16_tb13_m3" zone="il_gludio16_tb1823_13">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio16_tb15_m1" zone="il_gludio16_tb1823_15">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio16_tb15_m2" zone="il_gludio16_tb1823_15">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio16_tb15_m3" zone="il_gludio16_tb1823_15">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio16_tb23_m1" zone="il_gludio16_tb1823_23">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio16_tb23_m2" zone="il_gludio16_tb1823_23">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio36_tb04_m1" zone="il_gludio36_tb1823_04">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio36_tb04_m2" zone="il_gludio36_tb1823_04">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio36_tb08_m1" zone="il_gludio36_tb1823_08">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio36_tb08_m2" zone="il_gludio36_tb1823_08">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio36_tb09_m1" zone="il_gludio36_tb1823_09">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio36_tb09_m2" zone="il_gludio36_tb1823_09">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio36_tb09_m3" zone="il_gludio36_tb1823_09">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<!-- [18_24] -->
+	<spawn name="gludio22_tb12_m1" zone="il_gludio22_tb1824_12">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio22_tb13_m1" zone="il_gludio22_tb1824_13">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio22_tb14_m1" zone="il_gludio22_tb1824_14">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio22_tb15_m1" zone="il_gludio22_tb1824_15s">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio22_tb16_m1" zone="il_gludio22_tb1824_16s">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio22_tb17_m1" zone="il_gludio22_tb1824_17s">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio22_tb18_m1" zone="il_gludio22_tb1824_18s">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio22_tb19_m1" zone="il_gludio22_tb1824_19s">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio22_tb20_m1" zone="il_gludio22_tb1824_20s">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio22_tb21_m1" zone="il_gludio22_tb1824_21s">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio36_tb02_m1" zone="il_gludio36_tb1824_02">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio36_tb02_m2" zone="il_gludio36_tb1824_02">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio36_tb02_m3" zone="il_gludio36_tb1824_02">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
 	</spawn>
 	<!-- [19_16] -->
 	<spawn name="rune14_1916_17m2" zone="il_rune14_1916_17">
@@ -99,6 +293,174 @@
 	<spawn name="gludio06_npc1921_03101" zone="il_gludio08_npc1921_031">
 		<npc id="31433" x="-15145" y="124606" z="-3113" heading="24000" count="1" respawnDelay="60" />	<!-- Ronaldo -->
 	</spawn>
+	<spawn name="gludio23_tb02_m1" zone="il_gludio23_tb1921_02">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio23_tb03_m1" zone="il_gludio23_tb1921_03">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio23_tb03_m2" zone="il_gludio23_tb1921_03">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio23_tb06_m1" zone="il_gludio23_tb1921_06">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio23_tb07_m1" zone="il_gludio23_tb1921_07">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio23_tb08_m1" zone="il_gludio23_tb1921_08s">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio23_tb09_m1" zone="il_gludio23_tb1921_09">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio23_tb10_m1" zone="il_gludio23_tb1921_10">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio23_tb11_m1" zone="il_gludio23_tb1921_11">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio23_tb11_m2" zone="il_gludio23_tb1921_11">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio23_tb12_m1" zone="il_gludio23_tb1921_12s">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio23_tb13_m1" zone="il_gludio23_tb1921_13s">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<!-- [19_22] -->
+	<spawn name="gludio02_tb08_m1" zone="il_gludio02_tb1922_08">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio02_tb10_m1" zone="il_gludio02_tb1922_10">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio02_tb11_m1" zone="il_gludio02_tb1922_11">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio02_tb12_m1" zone="il_gludio02_tb1922_12">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio02_tb14_m1" zone="il_gludio02_tb1922_14">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio02_tb14_m2" zone="il_gludio02_tb1922_14">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio02_tb17_m1" zone="il_gludio02_tb1922_17">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio02_tb18_m1" zone="il_gludio02_tb1922_18">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio02_tb18_m2" zone="il_gludio02_tb1922_18">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio02_tb20_m1" zone="il_gludio02_tb1922_20">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio40_tb02_m1" zone="il_gludio40_tb1922_02">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio40_tb03_m1" zone="il_gludio40_tb1922_03">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio40_tb05_m1" zone="il_gludio40_tb1922_05">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio41_tb03_m1" zone="il_gludio41_tb1922_03">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio41_tb04_m1" zone="il_gludio41_tb1922_04">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<!-- [19_23] -->
+	<spawn name="gludio04_tb02_m1" zone="il_gludio04_tb1923_02">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb03_m1" zone="il_gludio04_tb1923_03">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb05_m1" zone="il_gludio04_tb1923_05">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb12_m1" zone="il_gludio04_tb1923_12">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb15_m1" zone="il_gludio04_tb1923_15">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb16_m1" zone="il_gludio04_tb1923_16">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb17_m1" zone="il_gludio04_tb1923_17">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb18_m1" zone="il_gludio04_tb1923_18">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb19_m1" zone="il_gludio04_tb1923_19">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb20_m1" zone="il_gludio04_tb1923_20">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb21_m1" zone="il_gludio04_tb1923_21">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb22_m1" zone="il_gludio04_tb1923_22">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb23_m1" zone="il_gludio04_tb1923_23">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb24_m1" zone="il_gludio04_tb1923_24">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb25_m1" zone="il_gludio04_tb1923_25">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb26_m1" zone="il_gludio04_tb1923_26">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb27_m1" zone="il_gludio04_tb1923_27">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb28_m1" zone="il_gludio04_tb1923_28">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb29_m1" zone="il_gludio04_tb1923_29">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb30_m1" zone="il_gludio04_tb1923_30">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb31_m1" zone="il_gludio04_tb1923_31">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb32_m1" zone="il_gludio04_tb1923_32">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio40_tb102_m1" zone="il_gludio40_tb1923_02">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio41_tb01_m1" zone="il_gludio41_tb1923_01">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio41_tb02_m1" zone="il_gludio41_tb1923_02">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<!-- [19_24] -->
+	<spawn name="gludio04_tb107_m1" zone="il_gludio04_tb1924_07">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb108_m1" zone="il_gludio04_tb1924_08">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="gludio04_tb110_m1" zone="il_gludio04_tb1924_10">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
 	<!-- [20_17] -->
 	<spawn name="rune18_2017_13m1" zone="il_rune18_2017_13">
 		<npc id="22227" count="1" respawnDelay="150" respawnRandom="20" />	<!-- Wild Strider -->
@@ -162,9 +524,157 @@
 	<spawn name="oren05_2020_33m1" zone="il_oren05_2020_33">
 		<npc id="20492" count="2" respawnDelay="71" respawnRandom="25" />	<!-- Kirunak's Guards -->
 	</spawn>
+	<!-- [20_21] -->
+	<spawn name="dion18_tb01_m1" zone="il_dion18_tb2021_01">
+		<npc id="18272" count="1" respawnDelay="60" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion18_tb02_m1" zone="il_dion18_tb2021_02">
+		<npc id="18272" count="1" respawnDelay="60" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion18_tb04_m1" zone="il_dion18_tb2021_04">
+		<npc id="18272" count="1" respawnDelay="60" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion18_tb05_m1" zone="il_dion18_tb2021_05">
+		<npc id="18272" count="1" respawnDelay="60" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion18_tb06_m1" zone="il_dion18_tb2021_06">
+		<npc id="18272" count="1" respawnDelay="60" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion18_tb07_m1" zone="il_dion18_tb2021_07">
+		<npc id="18272" count="1" respawnDelay="60" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion18_tb12_m1" zone="il_dion18_tb2021_12">
+		<npc id="18273" count="1" respawnDelay="60" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion18_tb13_m1" zone="il_dion18_tb2021_13">
+		<npc id="18272" count="1" respawnDelay="60" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion18_tb14_m1" zone="il_dion18_tb2021_14">
+		<npc id="18273" count="1" respawnDelay="60" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion18_tb15_m1" zone="il_dion18_tb2021_15">
+		<npc id="18272" count="1" respawnDelay="60" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion18_tb16_m1" zone="il_dion18_tb2021_16">
+		<npc id="18272" count="1" respawnDelay="60" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion18_tb17_m1" zone="il_dion18_tb2021_17">
+		<npc id="18272" count="1" respawnDelay="60" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion18_tb18_m1" zone="il_dion18_tb2021_18">
+		<npc id="18273" count="1" respawnDelay="60" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion18_tb19_m1" zone="il_dion18_tb2021_19">
+		<npc id="18273" count="1" respawnDelay="60" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion18_tb20_m1" zone="il_dion18_tb2021_20">
+		<npc id="18272" count="1" respawnDelay="60" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion18_tb21_m1" zone="il_dion18_tb2021_21">
+		<npc id="18272" count="1" respawnDelay="60" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion18_tb22_m1" zone="il_dion18_tb2021_22">
+		<npc id="18272" count="1" respawnDelay="60" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion18_tb23_m1" zone="il_dion18_tb2021_23">
+		<npc id="18272" count="1" respawnDelay="60" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion18_tb24_m1" zone="il_dion18_tb2021_24">
+		<npc id="18272" count="1" respawnDelay="60" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion19_tb01_m1" zone="il_dion19_tb2021_01">
+		<npc id="18272" count="1" respawnDelay="70" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion19_tb02_m1" zone="il_dion19_tb2021_02">
+		<npc id="18272" count="1" respawnDelay="70" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion19_tb02_m2" zone="il_dion19_tb2021_02">
+		<npc id="18272" count="1" respawnDelay="70" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion19_tb02_m3" zone="il_dion19_tb2021_02">
+		<npc id="18272" count="1" respawnDelay="70" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion19_tb06_m1" zone="il_dion19_tb2021_06">
+		<npc id="18272" count="1" respawnDelay="70" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion19_tb06_m2" zone="il_dion19_tb2021_06">
+		<npc id="18272" count="1" respawnDelay="70" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion19_tb06_m3" zone="il_dion19_tb2021_06">
+		<npc id="18272" count="1" respawnDelay="70" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion19_tb09_m1" zone="il_dion19_tb2021_09">
+		<npc id="18272" count="1" respawnDelay="70" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion19_tb10_m1" zone="il_dion19_tb2021_10">
+		<npc id="18272" count="1" respawnDelay="70" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion19_tb11_m1" zone="il_dion19_tb2021_11">
+		<npc id="18272" count="1" respawnDelay="70" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion19_tb14_m1" zone="il_dion19_tb2021_14">
+		<npc id="18272" count="1" respawnDelay="70" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion19_tb15_m1" zone="il_dion19_tb2021_15">
+		<npc id="18272" count="1" respawnDelay="70" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion19_tb18_m1" zone="il_dion19_tb2021_18">
+		<npc id="18272" count="1" respawnDelay="70" />	<!-- Treasure Chest -->
+	</spawn>
 	<!-- [20_22] -->
 	<spawn name="dion09_npc2022_03301" zone="il_dion09_npc2022_033">
 		<npc id="31427" x="19920" y="143136" z="-3041" heading="4000" count="1" respawnDelay="60" />	<!-- Urgal -->
+	</spawn>
+	<spawn name="dion15_tb09_m1" zone="il_dion15_tb2022_09">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion15_tb10_m1" zone="il_dion15_tb2022_10">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion15_tb11_m1" zone="il_dion15_tb2022_11">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion15_tb12_m1" zone="il_dion15_tb2022_12">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion15_tb13_m1" zone="il_dion15_tb2022_13">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion15_tb14_m1" zone="il_dion15_tb2022_14">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion15_tb14_m2" zone="il_dion15_tb2022_14">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion15_tb15_m1" zone="il_dion15_tb2022_15">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion15_tb16_m1" zone="il_dion15_tb2022_16">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion15_tb17_m1" zone="il_dion15_tb2022_17">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion15_tb18_m1" zone="il_dion15_tb2022_18">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion16_tb05_m1" zone="il_dion16_tb2022_05">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion16_tb08_m1" zone="il_dion16_tb2022_08">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion16_tb09_m1" zone="il_dion16_tb2022_09">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion16_tb10_m1" zone="il_dion16_tb2022_10">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion16_tb11_m1" zone="il_dion16_tb2022_11">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion16_tb12_m1" zone="il_dion16_tb2022_12">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
 	</spawn>
 	<!-- [20_23] -->
 	<spawn name="dion14_2023_01" zone="il_dion14_2023_01">
@@ -228,6 +738,63 @@
 		<npc id="20928" count="3" respawnDelay="32" />	<!-- Hatu Weird Bee -->
 		<npc id="20929" count="3" respawnDelay="32" />	<!-- Hatu Dire Wolf -->
 		<npc id="20934" count="3" respawnDelay="32" />	<!-- Wasp Worker -->
+	</spawn>
+	<spawn name="dion16_tb101_m1" zone="il_dion16_tb2023_01">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion16_tb102_m1" zone="il_dion16_tb2023_02">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion16_tb103_m1" zone="il_dion16_tb2023_03">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion16_tb104_m1" zone="il_dion16_tb2023_04">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion16_tb105_m1" zone="il_dion16_tb2023_05">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion16_tb106_m1" zone="il_dion16_tb2023_06">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion16_tb108_m1" zone="il_dion16_tb2023_08">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion16_tb108_m2" zone="il_dion16_tb2023_08">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion17_tb01_m1" zone="il_dion17_tb2023_01">
+		<npc id="18266" count="1" respawnDelay="140" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion17_tb03_m1" zone="il_dion17_tb2023_03">
+		<npc id="18266" count="1" respawnDelay="140" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion17_tb04_m1" zone="il_dion17_tb2023_04">
+		<npc id="18266" count="1" respawnDelay="140" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion17_tb05_m1" zone="il_dion17_tb2023_05">
+		<npc id="18267" count="1" respawnDelay="140" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion17_tb06_m1" zone="il_dion17_tb2023_06">
+		<npc id="18267" count="1" respawnDelay="140" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion17_tb07_m1" zone="il_dion17_tb2023_07">
+		<npc id="18267" count="1" respawnDelay="140" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion17_tb08_m1" zone="il_dion17_tb2023_08">
+		<npc id="18267" count="1" respawnDelay="140" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion17_tb09_m1" zone="il_dion17_tb2023_09">
+		<npc id="18267" count="1" respawnDelay="140" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion17_tb10_m1" zone="il_dion17_tb2023_10">
+		<npc id="18267" count="1" respawnDelay="140" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion17_tb11_m1" zone="il_dion17_tb2023_11">
+		<npc id="18267" count="1" respawnDelay="140" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion17_tb12_m1" zone="il_dion17_tb2023_12">
+		<npc id="18267" count="1" respawnDelay="140" />	<!-- Treasure Chest -->
 	</spawn>
 	<!-- [21_14] -->
 	<spawn name="schuttgart16_2114_01sm1" zone="il_schuttgart16_2114_01s">
@@ -561,11 +1128,127 @@
 		<npc id="18343" x="35033" y="-49669" z="-760" heading="49152" count="1" respawnDelay="15" />	<!-- Doorman Zombie -->
 		<npc id="18343" x="35035" y="-49850" z="-760" heading="16384" count="1" respawnDelay="15" />	<!-- Doorman Zombie -->
 	</spawn>
+	<!-- [21_18] -->
+	<spawn name="oren14_tb26_m1" zone="il_oren14_tb2118_26">
+		<npc id="18273" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Treasure Chest -->
+	</spawn>
 	<!-- [21_19] -->
 	<spawn name="oren04_npc2119_01901" zone="il_oren04_npc2119_019">
 		<npc id="31414" x="45440" y="52032" z="-2800" heading="16000" count="1" respawnDelay="60" />	<!-- Lynn -->
 	</spawn>
+	<!-- [21_21] -->
+	<spawn name="dion03_tb05_m1" zone="il_dion03_tb2121_05">
+		<npc id="18267" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb06_m1" zone="il_dion03_tb2121_06">
+		<npc id="18267" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb13_m1" zone="il_dion03_tb2121_13">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb15_m1" zone="il_dion03_tb2121_15">
+		<npc id="18267" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb17_m1" zone="il_dion03_tb2121_17">
+		<npc id="18267" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb18_m1" zone="il_dion03_tb2121_18">
+		<npc id="18267" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb19_m1" zone="il_dion03_tb2121_19">
+		<npc id="18267" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb21_m1" zone="il_dion03_tb2121_21">
+		<npc id="18267" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb22_m1" zone="il_dion03_tb2121_22">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb23_m1" zone="il_dion03_tb2121_23">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb24_m1" zone="il_dion03_tb2121_24">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb24_m2" zone="il_dion03_tb2121_24">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb25_m1" zone="il_dion03_tb2121_25">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb25_m2" zone="il_dion03_tb2121_25">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb26_m1" zone="il_dion03_tb2121_26">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb27_m1" zone="il_dion03_tb2121_27">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb27_m2" zone="il_dion03_tb2121_27">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb28_m1" zone="il_dion03_tb2121_28">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb29_m1" zone="il_dion03_tb2121_29">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb30_m1" zone="il_dion03_tb2121_30">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb30_m2" zone="il_dion03_tb2121_30">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb31_m1" zone="il_dion03_tb2121_31">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb31_m2" zone="il_dion03_tb2121_31">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb32_m1" zone="il_dion03_tb2121_32">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb32_m2" zone="il_dion03_tb2121_32">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb33_m1" zone="il_dion03_tb2121_33">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb34_m1" zone="il_dion03_tb2121_34">
+		<npc id="18268" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb35_m1" zone="il_dion03_tb2121_35">
+		<npc id="18267" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb36_m1" zone="il_dion03_tb2121_36">
+		<npc id="18267" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb37_m1" zone="il_dion03_tb2121_37">
+		<npc id="18267" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb38_m1" zone="il_dion03_tb2121_38">
+		<npc id="18267" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion03_tb39_m1" zone="il_dion03_tb2121_39">
+		<npc id="18267" count="1" respawnDelay="200" />	<!-- Treasure Chest -->
+	</spawn>
 	<!-- [21_22] -->
+	<spawn name="dion02_tb23_m1" zone="il_dion02_tb2122_23">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion02_tb29_m1" zone="il_dion02_tb2122_29">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion02_tb32_m1" zone="il_dion02_tb2122_32">
+		<npc id="18267" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion06_tb20_m1" zone="il_dion06_tb2122_20s">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="dion06_tb21_m1" zone="il_dion06_tb2122_21s">
+		<npc id="18265" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
 	<spawn name="dion13_2122_01" zone="il_dion13_2122_01">
 		<npc id="20939" count="10" respawnDelay="45" />	<!-- Tanor Silenos Warrior -->
 	</spawn>
@@ -587,6 +1270,9 @@
 	<spawn name="dion13_2122_08s" zone="il_dion13_2122_08s">
 		<npc id="20939" count="3" respawnDelay="45" />	<!-- Tanor Silenos Warrior -->
 	</spawn>
+	<spawn name="dion15_tb03_m1" zone="il_dion15_tb2122_03s">
+		<npc id="18266" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
 	<!-- [21_23] -->
 	<spawn name="dion13_2123_01" zone="il_dion13_2123_01">
 		<npc id="20939" count="7" respawnDelay="45" />	<!-- Tanor Silenos Warrior -->
@@ -602,6 +1288,139 @@
 	<spawn name="dion14_2123_02" zone="il_dion14_2123_02">
 		<npc id="20931" count="2" respawnDelay="32" />	<!-- Hatu Onyx Beast -->
 		<npc id="20932" count="2" respawnDelay="32" />	<!-- Hatu Crimson Bear -->
+	</spawn>
+	<!-- [21_24] -->
+	<spawn name="giran08_tb22_m1" zone="il_giran08_tb2124_22">
+		<npc id="18274" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb22_m2" zone="il_giran08_tb2124_22">
+		<npc id="18274" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb22_m3" zone="il_giran08_tb2124_22">
+		<npc id="18274" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb22_m4" zone="il_giran08_tb2124_22">
+		<npc id="18274" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb22_m5" zone="il_giran08_tb2124_22">
+		<npc id="18274" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb22_m6" zone="il_giran08_tb2124_22">
+		<npc id="18274" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb23_m1" zone="il_giran08_tb2124_23">
+		<npc id="18275" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb23_m2" zone="il_giran08_tb2124_23">
+		<npc id="18275" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb23_m3" zone="il_giran08_tb2124_23">
+		<npc id="18275" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb23_m4" zone="il_giran08_tb2124_23">
+		<npc id="18275" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb23_m5" zone="il_giran08_tb2124_23">
+		<npc id="18275" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb27_m1" zone="il_giran08_tb2124_27">
+		<npc id="18273" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb27_m2" zone="il_giran08_tb2124_27">
+		<npc id="18273" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb27_m3" zone="il_giran08_tb2124_27">
+		<npc id="18273" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb27_m4" zone="il_giran08_tb2124_27">
+		<npc id="18273" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb27_m5" zone="il_giran08_tb2124_27">
+		<npc id="18273" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb28_m1" zone="il_giran08_tb2124_28">
+		<npc id="18273" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb28_m2" zone="il_giran08_tb2124_28">
+		<npc id="18273" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb28_m3" zone="il_giran08_tb2124_28">
+		<npc id="18273" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb28_m4" zone="il_giran08_tb2124_28">
+		<npc id="18273" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb33_m1" zone="il_giran08_tb2124_33">
+		<npc id="18274" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb33_m2" zone="il_giran08_tb2124_33">
+		<npc id="18274" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb33_m3" zone="il_giran08_tb2124_33">
+		<npc id="18274" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb33_m4" zone="il_giran08_tb2124_33">
+		<npc id="18274" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb33_m5" zone="il_giran08_tb2124_33">
+		<npc id="18274" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb33_m6" zone="il_giran08_tb2124_33">
+		<npc id="18274" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb33_m7" zone="il_giran08_tb2124_33">
+		<npc id="18274" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb37_m1" zone="il_giran08_tb2124_37">
+		<npc id="18275" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb37_m2" zone="il_giran08_tb2124_37">
+		<npc id="18275" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb37_m3" zone="il_giran08_tb2124_37">
+		<npc id="18275" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb37_m4" zone="il_giran08_tb2124_37">
+		<npc id="18275" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb37_m5" zone="il_giran08_tb2124_37">
+		<npc id="18275" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb65_m1" zone="il_giran08_tb2124_65">
+		<npc id="18276" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb65_m2" zone="il_giran08_tb2124_65">
+		<npc id="18276" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb65_m3" zone="il_giran08_tb2124_65">
+		<npc id="18276" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb65_m4" zone="il_giran08_tb2124_65">
+		<npc id="18276" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb68_m1" zone="il_giran08_tb2124_68">
+		<npc id="18276" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb68_m2" zone="il_giran08_tb2124_68">
+		<npc id="18276" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb68_m3" zone="il_giran08_tb2124_68">
+		<npc id="18276" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb68_m4" zone="il_giran08_tb2124_68">
+		<npc id="18276" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb77_m1" zone="il_giran08_tb2124_77">
+		<npc id="18275" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb77_m2" zone="il_giran08_tb2124_77">
+		<npc id="18275" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb78_m1" zone="il_giran08_tb2124_78">
+		<npc id="18274" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran08_tb78_m2" zone="il_giran08_tb2124_78">
+		<npc id="18274" count="1" respawnDelay="90" respawnRandom="90" />	<!-- Treasure Chest -->
 	</spawn>
 	<!-- [21_25] -->
 	<spawn name="gludio29_2125_18m1" zone="il_gludio29_2125_18">
@@ -778,6 +1597,36 @@
 	<spawn name="pabelnpc_m04" zone="il_schuttgart14_npc2214_73">
 		<npc id="32044" x="86101" y="-105818" z="-3338" heading="40960" count="1" respawnDelay="60" />	<!-- Weathermaster -->
 	</spawn>
+	<spawn name="schuttgart14_tb01_m1" zone="il_schuttgart14_tb2214_01">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart14_tb04_m1" zone="il_schuttgart14_tb2214_04">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart14_tb09_m1" zone="il_schuttgart14_tb2214_09">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart14_tb12_m1" zone="il_schuttgart14_tb2214_12">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart14_tb14_m1" zone="il_schuttgart14_tb2214_14">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart14_tb17_m1" zone="il_schuttgart14_tb2214_17">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart14_tb19_m1" zone="il_schuttgart14_tb2214_19">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart14_tb22_m1" zone="il_schuttgart14_tb2214_22">
+		<npc id="18275" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart14_tb25_m1" zone="il_schuttgart14_tb2214_25">
+		<npc id="18275" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart14_tb26_m1" zone="il_schuttgart14_tb2214_26">
+		<npc id="18275" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
 	<spawn name="schuttgart16_2214_01sm1" zone="il_schuttgart16_2214_01s">
 		<npc id="22029" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc -->
 		<npc id="22031" count="2" respawnDelay="48" respawnRandom="15" />	<!-- Ragna Orc Archer -->
@@ -952,6 +1801,24 @@
 		<npc id="22047" count="1" respawnDelay="48" respawnRandom="15" />	<!-- Guardian of the Ghost Town -->
 		<npc id="22049" count="3" respawnDelay="48" respawnRandom="15" />	<!-- Varangka's Succubus -->
 	</spawn>
+	<spawn name="schuttgart16_tb_09m1" zone="il_schuttgart16_tb2214_09">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart16_tb_31m1" zone="il_schuttgart16_tb2214_31">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart16_tb_32m1" zone="il_schuttgart16_tb2214_32">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart16_tb_33m1" zone="il_schuttgart16_tb2214_33">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart16_tb_34m1" zone="il_schuttgart16_tb2214_34">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart16_tb_35m1" zone="il_schuttgart16_tb2214_35">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
 	<spawn name="schuttgart21_2214_31m1" zone="il_schuttgart21_2214_31">
 		<npc id="22060" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Cannon Golem -->
 		<npc id="22059" count="1" respawnDelay="80" respawnRandom="24" />	<!-- Bloodthirsty Ginzu Golem VII -->
@@ -1087,6 +1954,100 @@
 		<npc id="22077" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Horrifying Ginzu Golem VIII -->
 		<npc id="22078" count="2" respawnDelay="80" respawnRandom="24" />	<!-- Deadly Ginzu Golem VIII -->
 	</spawn>
+	<!-- [22_15] -->
+	<spawn name="rune08_tb01_m1" zone="il_rune08_tb2215_01">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb03_m1" zone="il_rune08_tb2215_03">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb04_m1" zone="il_rune08_tb2215_04">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb06_m1" zone="il_rune08_tb2215_06">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb07_m1" zone="il_rune08_tb2215_07">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb09_m1" zone="il_rune08_tb2215_09">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb10_m1" zone="il_rune08_tb2215_10">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb17_m1" zone="il_rune08_tb2215_17">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb19_m1" zone="il_rune08_tb2215_19">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb20_m1" zone="il_rune08_tb2215_20">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb21_m1" zone="il_rune08_tb2215_21">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb23_m1" zone="il_rune08_tb2215_23">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb24_m1" zone="il_rune08_tb2215_24">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb26_m1" zone="il_rune08_tb2215_26">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb27_m1" zone="il_rune08_tb2215_27">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb28_m1" zone="il_rune08_tb2215_28">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb29_m1" zone="il_rune08_tb2215_29">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb30_m1" zone="il_rune08_tb2215_30">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb37_m1" zone="il_rune08_tb2215_37">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb39_m1" zone="il_rune08_tb2215_39">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb40_m1" zone="il_rune08_tb2215_40">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb41_m1" zone="il_rune08_tb2215_41">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb42_m1" zone="il_rune08_tb2215_42">
+		<npc id="18280" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb43_m1" zone="il_rune08_tb2215_43">
+		<npc id="18280" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb44_m1" zone="il_rune08_tb2215_44">
+		<npc id="18280" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb45_m1" zone="il_rune08_tb2215_45">
+		<npc id="18280" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb46_m1" zone="il_rune08_tb2215_46">
+		<npc id="18280" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb49_m1" zone="il_rune08_tb2215_49">
+		<npc id="18280" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb51_m1" zone="il_rune08_tb2215_51">
+		<npc id="18280" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb53_m1" zone="il_rune08_tb2215_53">
+		<npc id="18280" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="rune08_tb56_m1" zone="il_rune08_tb2215_56">
+		<npc id="18280" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
 	<!-- [22_16] -->
 	<spawn name="rune15_2216_01m1" zone="il_rune15_2216_01">
 		<npc id="22105" count="4" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato -->
@@ -1220,8 +2181,29 @@
 		<npc id="22118" count="1" respawnDelay="100" respawnRandom="30" />	<!-- Spiked Stakato Nurse -->
 	</spawn>
 	<!-- [22_17] -->
+	<spawn name="oren30_tb06_m1" zone="il_oren30_tb2218_06">
+		<npc id="18274" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="oren30_tb07_m1" zone="il_oren30_tb2218_07">
+		<npc id="18274" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Treasure Chest -->
+	</spawn>
 	<spawn name="oren31_npc2217_004m1" zone="il_oren31_npc2217_004">
 		<npc id="32012" x="89856" y="-7248" z="-3034" heading="0" count="1" respawnDelay="3600" respawnRandom="900" />	<!-- Tantan -->
+	</spawn>
+	<spawn name="oren31_tb01_m1" zone="il_oren31_tb2217_01">
+		<npc id="18276" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="oren31_tb02_m1" zone="il_oren31_tb2217_02">
+		<npc id="18276" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="oren31_tb03_m1" zone="il_oren31_tb2217_03">
+		<npc id="18276" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="oren31_tb04_m1" zone="il_oren31_tb2217_04">
+		<npc id="18276" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="oren31_tb05_m1" zone="il_oren31_tb2217_05">
+		<npc id="18276" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Treasure Chest -->
 	</spawn>
 	<!-- [22_19] -->
 	<spawn name="oren22_2219_15sm1" zone="il_oren22_2219_15s">
@@ -1269,6 +2251,12 @@
 		<npc id="20950" count="2" respawnDelay="33" respawnRandom="15" />	<!-- Innersen -->
 		<npc id="20953" count="5" respawnDelay="33" respawnRandom="15" />	<!-- Pobby -->
 	</spawn>
+	<spawn name="oren28_tb01_m1" zone="il_oren28_tb2218_01">
+		<npc id="18273" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="oren28_tb02_m1" zone="il_oren28_tb2218_02">
+		<npc id="18273" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Treasure Chest -->
+	</spawn>
 	<!-- [22_20] -->
 	<spawn name="oren21_2220_p23m1" zone="il_oren21_2220_p23">
 		<npc id="20763" count="1" respawnDelay="50" respawnRandom="10" />	<!-- Lord of the Plains -->
@@ -1309,6 +2297,12 @@
 	<spawn name="oren21_2220_p38m1" zone="il_oren21_2220_p38">
 		<npc id="20763" count="1" respawnDelay="50" respawnRandom="10" />	<!-- Lord of the Plains -->
 	</spawn>
+	<spawn name="oren21_tb31_m1" zone="il_oren21_tb2218_31">
+		<npc id="18271" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="oren21_tb32_m1" zone="il_oren21_tb2218_32">
+		<npc id="18271" count="1" respawnDelay="90" respawnRandom="15" />	<!-- Treasure Chest -->
+	</spawn>
 	<spawn name="oren22_2220_p01m1" zone="il_oren22_2220_p01">
 		<npc id="20947" count="8" respawnDelay="33" respawnRandom="15" />	<!-- Connabi -->
 	</spawn>
@@ -1340,6 +2334,108 @@
 	<spawn name="giran03_2221_p47m1" zone="il_giran03_2221_p47">
 		<npc id="20758" count="2" respawnDelay="60" respawnRandom="20" />	<!-- Dragon Bearer Chief -->
 	</spawn>
+	<spawn name="giran03_tb105_m1" zone="il_giran03_tb2221_05">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran03_tb108_m1" zone="il_giran03_tb2221_08">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran03_tb109_m1" zone="il_giran03_tb2221_09">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran03_tb119_m1" zone="il_giran03_tb2221_19">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran03_tb128_m1" zone="il_giran03_tb2221_28">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran03_tb129_m1" zone="il_giran03_tb2221_29">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran03_tb146_m1" zone="il_giran03_tb2221_46">
+		<npc id="18275" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran03_tb147_m1" zone="il_giran03_tb2221_47">
+		<npc id="18275" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb02_m1" zone="il_giran06_tb2221_02">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb03_m1" zone="il_giran06_tb2221_03">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb04_m1" zone="il_giran06_tb2221_04">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb05_m1" zone="il_giran06_tb2221_05">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb06_m1" zone="il_giran06_tb2221_06">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb07_m1" zone="il_giran06_tb2221_07">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb08_m1" zone="il_giran06_tb2221_08">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb09_m1" zone="il_giran06_tb2221_09">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb10_m1" zone="il_giran06_tb2221_10">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb11_m1" zone="il_giran06_tb2221_11">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb12_m1" zone="il_giran06_tb2221_12">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb13_m1" zone="il_giran06_tb2221_13">
+		<npc id="18271" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb14_m1" zone="il_giran06_tb2221_14">
+		<npc id="18271" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb15_m1" zone="il_giran06_tb2221_15">
+		<npc id="18271" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb16_m1" zone="il_giran06_tb2221_16">
+		<npc id="18271" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb17_m1" zone="il_giran06_tb2221_17">
+		<npc id="18271" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb18_m1" zone="il_giran06_tb2221_18">
+		<npc id="18271" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb19_m1" zone="il_giran06_tb2221_19">
+		<npc id="18271" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb20_m1" zone="il_giran06_tb2221_20">
+		<npc id="18271" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb21_m1" zone="il_giran06_tb2221_21">
+		<npc id="18271" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran16_tb22_m1" zone="il_giran16_tb2221_22">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran16_tb23_m1" zone="il_giran16_tb2221_23">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran16_tb26_m1" zone="il_giran16_tb2221_26">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran16_tb27_m1" zone="il_giran16_tb2221_27">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran16_tb29_m1" zone="il_giran16_tb2221_29">
+		<npc id="18268" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran16_tb31_m1" zone="il_giran16_tb2221_31">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
 	<!-- [22_22] -->
 	<spawn name="giran11_npc2222_4701" zone="il_giran11_npc2222_47">
 		<npc id="31428" x="80421" y="144461" z="-3536" heading="0" count="1" respawnDelay="60" />	<!-- Shafa -->
@@ -1349,6 +2445,18 @@
 	</spawn>
 	<spawn name="giran11_npc2222_4901" zone="il_giran11_npc2222_49">
 		<npc id="31419" x="84576" y="148528" z="-3400" heading="0" count="1" respawnDelay="60" />	<!-- Lorel -->
+	</spawn>
+	<spawn name="giran16_tb02_m1" zone="il_giran16_tb2222_02">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran16_tb03_m1" zone="il_giran16_tb2222_03">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran16_tb04_m1" zone="il_giran16_tb2222_04">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran16_tb17_m1" zone="il_giran16_tb2222_17">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
 	</spawn>
 	<!-- [22_23] -->
 	<spawn name="innadril03_2223_0301" zone="il_innadril03_2223_03">
@@ -1458,9 +2566,377 @@
 	<spawn name="innadril04_29s" zone="il_innadril04_2224_29s">
 		<npc id="20989" count="2" respawnDelay="45" />	<!-- Lageos -->
 	</spawn>
+	<spawn name="innadril04_tb01_m1" zone="il_innadril04_tb2224_01">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb01_m2" zone="il_innadril04_tb2224_01">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb01_m3" zone="il_innadril04_tb2224_01">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb01_m4" zone="il_innadril04_tb2224_01">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb02_m1" zone="il_innadril04_tb2224_02">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb02_m2" zone="il_innadril04_tb2224_02">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb02_m3" zone="il_innadril04_tb2224_02">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb03_m1" zone="il_innadril04_tb2224_03">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb04_m1" zone="il_innadril04_tb2224_04">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb04_m2" zone="il_innadril04_tb2224_04">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb04_m3" zone="il_innadril04_tb2224_04">
+		<npc id="18270" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb05_m1" zone="il_innadril04_tb2224_05">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb06_m1" zone="il_innadril04_tb2224_06">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb07_m1" zone="il_innadril04_tb2224_07">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb07_m2" zone="il_innadril04_tb2224_07">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb08_m1" zone="il_innadril04_tb2224_08">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb09_m1" zone="il_innadril04_tb2224_09">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb10_m1" zone="il_innadril04_tb2224_10">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb11_m1" zone="il_innadril04_tb2224_11">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb12_m1" zone="il_innadril04_tb2224_12">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb13_m1" zone="il_innadril04_tb2224_13">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb14_m1" zone="il_innadril04_tb2224_14">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb15_m1" zone="il_innadril04_tb2224_15">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb16_m1" zone="il_innadril04_tb2224_16">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb17_m1" zone="il_innadril04_tb2224_17">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb18_m1" zone="il_innadril04_tb2224_18">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb19_m1" zone="il_innadril04_tb2224_19">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb20_m1" zone="il_innadril04_tb2224_20">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb21_m1" zone="il_innadril04_tb2224_21">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb22_m1" zone="il_innadril04_tb2224_22">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb23_m1" zone="il_innadril04_tb2224_23">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb24_m1" zone="il_innadril04_tb2224_24">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb25_m1" zone="il_innadril04_tb2224_25">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb26_m1" zone="il_innadril04_tb2224_26">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril04_tb27_m1" zone="il_innadril04_tb2224_27">
+		<npc id="18271" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<!-- [22_25] -->
+	<spawn name="innadrill05_tb11_m1" zone="il_innadrill05_tb2225_11">
+		<npc id="18272" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb16_m1" zone="il_innadrill05_tb2225_16">
+		<npc id="18272" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb17_m1" zone="il_innadrill05_tb2225_17">
+		<npc id="18272" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb19_m1" zone="il_innadrill05_tb2225_19">
+		<npc id="18272" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb21_m1" zone="il_innadrill05_tb2225_21">
+		<npc id="18272" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb23_m1" zone="il_innadrill05_tb2225_23">
+		<npc id="18272" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb25_m1" zone="il_innadrill05_tb2225_25">
+		<npc id="18272" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb27_m1" zone="il_innadrill05_tb2225_27">
+		<npc id="18272" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb29_m1" zone="il_innadrill05_tb2225_29">
+		<npc id="18272" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb31_m1" zone="il_innadrill05_tb2225_31">
+		<npc id="18272" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb33_m1" zone="il_innadrill05_tb2225_33">
+		<npc id="18272" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb35_m1" zone="il_innadrill05_tb2225_35">
+		<npc id="18272" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb37_m1" zone="il_innadrill05_tb2225_37">
+		<npc id="18273" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb38_m1" zone="il_innadrill05_tb2225_38">
+		<npc id="18273" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb39_m1" zone="il_innadrill05_tb2225_39">
+		<npc id="18273" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb40_m1" zone="il_innadrill05_tb2225_40">
+		<npc id="18273" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb41_m1" zone="il_innadrill05_tb2225_41">
+		<npc id="18273" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb42_m1" zone="il_innadrill05_tb2225_42">
+		<npc id="18273" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb43_m1" zone="il_innadrill05_tb2225_43">
+		<npc id="18273" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb44_m1" zone="il_innadrill05_tb2225_44">
+		<npc id="18273" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb45_m1" zone="il_innadrill05_tb2225_45">
+		<npc id="18273" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb46_m1" zone="il_innadrill05_tb2225_46">
+		<npc id="18273" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb47_m1" zone="il_innadrill05_tb2225_47">
+		<npc id="18274" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb48_m1" zone="il_innadrill05_tb2225_48">
+		<npc id="18274" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb49_m1" zone="il_innadrill05_tb2225_49">
+		<npc id="18274" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb50_m1" zone="il_innadrill05_tb2225_50">
+		<npc id="18274" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb51_m1" zone="il_innadrill05_tb2225_51">
+		<npc id="18274" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb52_m1" zone="il_innadrill05_tb2225_52">
+		<npc id="18274" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb53_m1" zone="il_innadrill05_tb2225_53">
+		<npc id="18274" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb54_m1" zone="il_innadrill05_tb2225_54">
+		<npc id="18274" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb55_m1" zone="il_innadrill05_tb2225_55">
+		<npc id="18274" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadrill05_tb56_m1" zone="il_innadrill05_tb2225_56">
+		<npc id="18274" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
 	<!-- [23_13] -->
 	<spawn name="schuttgart11_npc2313_03m1" zone="il_schuttgart11_npc2313_03">
 		<npc id="32014" x="104000" y="-156496" z="-1968" heading="0" count="1" respawnDelay="3600" respawnRandom="600" />	<!-- Ivan -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_01m1" zone="il_schuttgart11_tb2313_01">
+		<npc id="18268" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_02m1" zone="il_schuttgart11_tb2313_02">
+		<npc id="18268" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_03m1" zone="il_schuttgart11_tb2313_03">
+		<npc id="18268" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_04m1" zone="il_schuttgart11_tb2313_04">
+		<npc id="18268" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_05m1" zone="il_schuttgart11_tb2313_05">
+		<npc id="18268" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_06m1" zone="il_schuttgart11_tb2313_06">
+		<npc id="18269" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_07m1" zone="il_schuttgart11_tb2313_07">
+		<npc id="18269" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_08m1" zone="il_schuttgart11_tb2313_08">
+		<npc id="18269" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_09m1" zone="il_schuttgart11_tb2313_09">
+		<npc id="18269" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_10m1" zone="il_schuttgart11_tb2313_10">
+		<npc id="18269" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_11m1" zone="il_schuttgart11_tb2313_11">
+		<npc id="18269" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_12m1" zone="il_schuttgart11_tb2313_12">
+		<npc id="18269" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_13m1" zone="il_schuttgart11_tb2313_13">
+		<npc id="18269" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_14m1" zone="il_schuttgart11_tb2313_14">
+		<npc id="18269" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_15m1" zone="il_schuttgart11_tb2313_15">
+		<npc id="18269" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_16m1" zone="il_schuttgart11_tb2313_16">
+		<npc id="18269" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_17m1" zone="il_schuttgart11_tb2313_17">
+		<npc id="18269" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_18m1" zone="il_schuttgart11_tb2313_18">
+		<npc id="18270" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_22m1" zone="il_schuttgart11_tb2313_22">
+		<npc id="18270" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_23m1" zone="il_schuttgart11_tb2313_23">
+		<npc id="18270" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_24m1" zone="il_schuttgart11_tb2313_24">
+		<npc id="18270" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_25m1" zone="il_schuttgart11_tb2313_25">
+		<npc id="18269" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_26m1" zone="il_schuttgart11_tb2313_26">
+		<npc id="18269" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_27m1" zone="il_schuttgart11_tb2313_27">
+		<npc id="18270" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_28m1" zone="il_schuttgart11_tb2313_28">
+		<npc id="18270" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_29m1" zone="il_schuttgart11_tb2313_29">
+		<npc id="18270" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart11_tb2313_30m1" zone="il_schuttgart11_tb2313_30">
+		<npc id="18270" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<!-- [23_14] -->
+	<spawn name="schuttgart12_tb2314_01m1" zone="il_schuttgart12_tb2314_01">
+		<npc id="18276" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_02m1" zone="il_schuttgart12_tb2314_02">
+		<npc id="18276" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_03m1" zone="il_schuttgart12_tb2314_03">
+		<npc id="18276" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_04m1" zone="il_schuttgart12_tb2314_04">
+		<npc id="18276" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_05m1" zone="il_schuttgart12_tb2314_05">
+		<npc id="18276" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_06m1" zone="il_schuttgart12_tb2314_06">
+		<npc id="18276" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_07m1" zone="il_schuttgart12_tb2314_07">
+		<npc id="18276" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_08m1" zone="il_schuttgart12_tb2314_08">
+		<npc id="18276" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_09m1" zone="il_schuttgart12_tb2314_09">
+		<npc id="18276" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_10m1" zone="il_schuttgart12_tb2314_10">
+		<npc id="18276" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_11m1" zone="il_schuttgart12_tb2314_11">
+		<npc id="18276" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_12m1" zone="il_schuttgart12_tb2314_12">
+		<npc id="18276" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_13m1" zone="il_schuttgart12_tb2314_13">
+		<npc id="18277" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_14m1" zone="il_schuttgart12_tb2314_14">
+		<npc id="18277" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_15m1" zone="il_schuttgart12_tb2314_15">
+		<npc id="18277" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_16m1" zone="il_schuttgart12_tb2314_16">
+		<npc id="18277" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_17m1" zone="il_schuttgart12_tb2314_17">
+		<npc id="18277" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_18m1" zone="il_schuttgart12_tb2314_18">
+		<npc id="18277" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_19m1" zone="il_schuttgart12_tb2314_19">
+		<npc id="18277" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_20m1" zone="il_schuttgart12_tb2314_20">
+		<npc id="18278" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_21m1" zone="il_schuttgart12_tb2314_21">
+		<npc id="18278" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_22m1" zone="il_schuttgart12_tb2314_22">
+		<npc id="18278" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_23m1" zone="il_schuttgart12_tb2314_23">
+		<npc id="18278" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_24m1" zone="il_schuttgart12_tb2314_24">
+		<npc id="18278" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_25m1" zone="il_schuttgart12_tb2314_25">
+		<npc id="18278" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_26m1" zone="il_schuttgart12_tb2314_26">
+		<npc id="18278" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_27m1" zone="il_schuttgart12_tb2314_27">
+		<npc id="18277" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="schuttgart12_tb2314_28m1" zone="il_schuttgart12_tb2314_28">
+		<npc id="18276" count="1" respawnDelay="900" respawnRandom="180" />	<!-- Treasure Chest -->
 	</spawn>
 	<!-- [23_15] -->
 	<spawn name="rune13_2315_01m1" zone="il_rune13_2315_01">
@@ -1746,9 +3222,441 @@
 		<npc id="22134" count="1" respawnDelay="50" />	<!-- Guardian of the Holy Land -->
 		<npc id="22134" count="1" respawnDelay="50" />	<!-- Guardian of the Holy Land -->
 	</spawn>
+	<!-- [23_16] -->
+	<spawn name="godard28_tb01_m1" zone="il_godard28_tb2316_01">
+		<npc id="18284" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb02_m1" zone="il_godard28_tb2316_02">
+		<npc id="18284" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb03_m1" zone="il_godard28_tb2316_03">
+		<npc id="18284" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb04_m1" zone="il_godard28_tb2316_04">
+		<npc id="18284" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb05_m1" zone="il_godard28_tb2316_05">
+		<npc id="18284" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb06_m1" zone="il_godard28_tb2316_06">
+		<npc id="18284" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb07_m1" zone="il_godard28_tb2316_07">
+		<npc id="18284" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb08_m1" zone="il_godard28_tb2316_08">
+		<npc id="18285" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb12_m1" zone="il_godard28_tb2316_12">
+		<npc id="18285" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb16_m1" zone="il_godard28_tb2316_16">
+		<npc id="18285" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb23_m1" zone="il_godard28_tb2316_23">
+		<npc id="18285" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb24_m1" zone="il_godard28_tb2316_24">
+		<npc id="18285" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb25_m1" zone="il_godard28_tb2316_25">
+		<npc id="18285" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb27_m1" zone="il_godard28_tb2316_27">
+		<npc id="18285" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb28_m1" zone="il_godard28_tb2316_28">
+		<npc id="18285" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb29_m1" zone="il_godard28_tb2316_29">
+		<npc id="18285" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb30_m1" zone="il_godard28_tb2316_30">
+		<npc id="18285" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb31_m1" zone="il_godard28_tb2316_31">
+		<npc id="18286" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb33_m1" zone="il_godard28_tb2316_33">
+		<npc id="18286" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb34_m1" zone="il_godard28_tb2316_34">
+		<npc id="18286" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb36_m1" zone="il_godard28_tb2316_36">
+		<npc id="18286" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb45_m1" zone="il_godard28_tb2316_45">
+		<npc id="18286" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb46_m1" zone="il_godard28_tb2316_46">
+		<npc id="18286" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb47_m1" zone="il_godard28_tb2316_47">
+		<npc id="18286" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb55_m1" zone="il_godard28_tb2316_55">
+		<npc id="18286" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb57_m1" zone="il_godard28_tb2316_57">
+		<npc id="18286" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard28_tb58_m1" zone="il_godard28_tb2316_58">
+		<npc id="18286" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<!-- [23_18] -->
+	<spawn name="aden28_tb01_m1" zone="il_aden28_tb2318_01">
+		<npc id="18282" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden28_tb06_m1" zone="il_aden28_tb2318_06">
+		<npc id="18282" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden28_tb07_m1" zone="il_aden28_tb2318_07">
+		<npc id="18282" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden28_tb08_m1" zone="il_aden28_tb2318_08">
+		<npc id="18282" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden28_tb09_m1" zone="il_aden28_tb2318_09">
+		<npc id="18282" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden28_tb10_m1" zone="il_aden28_tb2318_10">
+		<npc id="18282" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden28_tb11_m1" zone="il_aden28_tb2318_11">
+		<npc id="18282" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden28_tb12_m1" zone="il_aden28_tb2318_12">
+		<npc id="18282" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden28_tb13_m1" zone="il_aden28_tb2318_13">
+		<npc id="18282" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden28_tb14_m1" zone="il_aden28_tb2318_14">
+		<npc id="18282" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden29_tb02_m1" zone="il_aden29_tb2318_02">
+		<npc id="18283" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden29_tb04_m1" zone="il_aden29_tb2318_04">
+		<npc id="18283" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden29_tb05_m1" zone="il_aden29_tb2318_05">
+		<npc id="18283" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden29_tb06_m1" zone="il_aden29_tb2318_06">
+		<npc id="18283" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden29_tb07_m1" zone="il_aden29_tb2318_07">
+		<npc id="18283" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden29_tb08_m1" zone="il_aden29_tb2318_08">
+		<npc id="18283" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden30_tb01_m1" zone="il_aden30_tb2318_01">
+		<npc id="18283" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden30_tb02_m1" zone="il_aden30_tb2318_02">
+		<npc id="18283" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden30_tb03_m1" zone="il_aden30_tb2318_03">
+		<npc id="18283" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden30_tb04_m1" zone="il_aden30_tb2318_04">
+		<npc id="18283" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden30_tb05_m1" zone="il_aden30_tb2318_05">
+		<npc id="18283" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden33_tb01_m1" zone="il_aden33_tb2318_01">
+		<npc id="18278" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden33_tb02_m1" zone="il_aden33_tb2318_02">
+		<npc id="18278" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden33_tb03_m1" zone="il_aden33_tb2318_03">
+		<npc id="18278" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden33_tb04_m1" zone="il_aden33_tb2318_04">
+		<npc id="18278" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden34_tb01_m1" zone="il_aden34_tb2318_01">
+		<npc id="18278" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden34_tb02_m1" zone="il_aden34_tb2318_02">
+		<npc id="18278" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden34_tb03_m1" zone="il_aden34_tb2318_03">
+		<npc id="18278" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden34_tb04_m1" zone="il_aden34_tb2318_04">
+		<npc id="18278" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden34_tb05_m1" zone="il_aden34_tb2318_05">
+		<npc id="18278" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden35_tb01_m1" zone="il_aden35_tb2318_01">
+		<npc id="18279" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden35_tb02_m1" zone="il_aden35_tb2318_02">
+		<npc id="18279" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden35_tb03_m1" zone="il_aden35_tb2318_03">
+		<npc id="18279" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden35_tb04_m1" zone="il_aden35_tb2318_04">
+		<npc id="18279" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden36_tb01_m1" zone="il_aden36_tb2318_01">
+		<npc id="18279" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden36_tb02_m1" zone="il_aden36_tb2318_02">
+		<npc id="18279" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden36_tb03_m1" zone="il_aden36_tb2318_03">
+		<npc id="18279" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden36_tb05_m1" zone="il_aden36_tb2318_05">
+		<npc id="18279" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden36_tb06_m1" zone="il_aden36_tb2318_06">
+		<npc id="18279" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden36_tb07_m1" zone="il_aden36_tb2318_07">
+		<npc id="18279" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden36_tb08_m1" zone="il_aden36_tb2318_08">
+		<npc id="18279" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden36_tb11_m1" zone="il_aden36_tb2318_11">
+		<npc id="18279" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden37_tb01_m1" zone="il_aden37_tb2318_01">
+		<npc id="18280" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden37_tb02_m1" zone="il_aden37_tb2318_02">
+		<npc id="18280" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden37_tb03_m1" zone="il_aden37_tb2318_03">
+		<npc id="18280" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden37_tb04_m1" zone="il_aden37_tb2318_04">
+		<npc id="18280" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden37_tb05_m1" zone="il_aden37_tb2318_05">
+		<npc id="18280" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden37_tb06_m1" zone="il_aden37_tb2318_06">
+		<npc id="18280" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden37_tb07_m1" zone="il_aden37_tb2318_07">
+		<npc id="18280" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden37_tb08_m1" zone="il_aden37_tb2318_08">
+		<npc id="18280" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden37_tb09_m1" zone="il_aden37_tb2318_09">
+		<npc id="18280" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden37_tb10_m1" zone="il_aden37_tb2318_10">
+		<npc id="18280" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden38_tb01_m1" zone="il_aden38_tb2318_01">
+		<npc id="18280" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden38_tb02_m1" zone="il_aden38_tb2318_02">
+		<npc id="18280" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden38_tb03_m1" zone="il_aden38_tb2318_03">
+		<npc id="18280" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden38_tb04_m1" zone="il_aden38_tb2318_04">
+		<npc id="18280" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden38_tb05_m1" zone="il_aden38_tb2318_05">
+		<npc id="18280" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden38_tb06_m1" zone="il_aden38_tb2318_06">
+		<npc id="18280" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden39_tb01_m1" zone="il_aden39_tb2318_01">
+		<npc id="18281" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden39_tb03_m1" zone="il_aden39_tb2318_03">
+		<npc id="18281" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden39_tb05_m1" zone="il_aden39_tb2318_05">
+		<npc id="18281" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden39_tb06_m1" zone="il_aden39_tb2318_06">
+		<npc id="18281" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden39_tb07_m1" zone="il_aden39_tb2318_07">
+		<npc id="18281" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden40_tb02_m1" zone="il_aden40_tb2318_02">
+		<npc id="18281" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden40_tb03_m1" zone="il_aden40_tb2318_03">
+		<npc id="18281" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden40_tb04_m1" zone="il_aden40_tb2318_04">
+		<npc id="18281" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden40_tb05_m1" zone="il_aden40_tb2318_05">
+		<npc id="18281" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden40_tb06_m1" zone="il_aden40_tb2318_06">
+		<npc id="18281" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden40_tb07_m1" zone="il_aden40_tb2318_07">
+		<npc id="18281" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden41_tb01_m1" zone="il_aden41_tb2318_01">
+		<npc id="18282" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden41_tb03_m1" zone="il_aden41_tb2318_03">
+		<npc id="18282" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden41_tb05_m1" zone="il_aden41_tb2318_05">
+		<npc id="18282" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden41_tb07_m1" zone="il_aden41_tb2318_07">
+		<npc id="18282" count="1" respawnDelay="390" />	<!-- Treasure Chest -->
+	</spawn>
+	<!-- [23_19] -->
+	<spawn name="aden08_tb05_m1" zone="il_aden08_tb2319_05">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb11_m1" zone="il_aden08_tb2319_11">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb13_m1" zone="il_aden08_tb2319_13">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb24_m1" zone="il_aden08_tb2319_24">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb31_m1" zone="il_aden08_tb2319_31">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb40_m1" zone="il_aden08_tb2319_40">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb41_m1" zone="il_aden08_tb2319_41">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb46_m1" zone="il_aden08_tb2319_46">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb47_m1" zone="il_aden08_tb2319_47">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb48_m1" zone="il_aden08_tb2319_48">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb49_m1" zone="il_aden08_tb2319_49">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb51_m1" zone="il_aden08_tb2319_51">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb52_m1" zone="il_aden08_tb2319_52">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb53_m1" zone="il_aden08_tb2319_53">
+		<npc id="18275" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb54_m1" zone="il_aden08_tb2319_54">
+		<npc id="18275" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb56_m1" zone="il_aden08_tb2319_56">
+		<npc id="18275" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb58_m1" zone="il_aden08_tb2319_58">
+		<npc id="18275" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb59_m1" zone="il_aden08_tb2319_59">
+		<npc id="18275" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb60_m1" zone="il_aden08_tb2319_60">
+		<npc id="18275" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb61_m1" zone="il_aden08_tb2319_61">
+		<npc id="18275" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb62_m1" zone="il_aden08_tb2319_62">
+		<npc id="18276" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb63_m1" zone="il_aden08_tb2319_63">
+		<npc id="18276" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb64_m1" zone="il_aden08_tb2319_64">
+		<npc id="18276" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb65_m1" zone="il_aden08_tb2319_65">
+		<npc id="18276" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb66_m1" zone="il_aden08_tb2319_66">
+		<npc id="18276" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb67_m1" zone="il_aden08_tb2319_67">
+		<npc id="18276" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden08_tb68_m1" zone="il_aden08_tb2319_68">
+		<npc id="18276" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
 	<!-- [23_20] -->
 	<spawn name="aden14_npc2320_12501" zone="il_aden14_npc2320_125">
 		<npc id="31668" x="117376" y="75024" z="-2648" heading="10000" count="1" respawnDelay="60" />	<!-- Tangen -->
+	</spawn>
+	<spawn name="aden24_tb05_m1" zone="il_aden24_tb2320_05">
+		<npc id="18272" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden24_tb06_m1" zone="il_aden24_tb2320_06">
+		<npc id="18272" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden24_tb07_m1" zone="il_aden24_tb2320_07">
+		<npc id="18272" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden24_tb08_m1" zone="il_aden24_tb2320_08">
+		<npc id="18272" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden24_tb09_m1" zone="il_aden24_tb2320_09">
+		<npc id="18272" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden24_tb10_m1" zone="il_aden24_tb2320_10">
+		<npc id="18272" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden24_tb11_m1" zone="il_aden24_tb2320_11">
+		<npc id="18272" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden24_tb12_m1" zone="il_aden24_tb2320_12">
+		<npc id="18272" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden24_tb13_m1" zone="il_aden24_tb2320_13">
+		<npc id="18272" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden24_tb16_m1" zone="il_aden24_tb2320_16">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden24_tb17_m1" zone="il_aden24_tb2320_17">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden24_tb18_m1" zone="il_aden24_tb2320_18">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden24_tb19_m1" zone="il_aden24_tb2320_19">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden24_tb23_m1" zone="il_aden24_tb2320_23">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden24_tb24_m1" zone="il_aden24_tb2320_24">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden24_tb29_m1" zone="il_aden24_tb2320_29">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
 	</spawn>
 	<!-- [23_21] -->
 	<spawn name="giran03_2321_p06_1m1" zone="il_giran03_2321_p06_1">
@@ -1799,6 +3707,110 @@
 	<spawn name="giran03_npc2321_11m1" zone="il_giran03_npc2321_11">
 		<npc id="31044" x="122904" y="110828" z="-3728" heading="24576" count="1" respawnDelay="60" />	<!-- Galman -->
 	</spawn>
+	<spawn name="giran03_tb06_m1" zone="il_giran03_tb2321_06">
+		<npc id="18276" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran03_tb08_m1" zone="il_giran03_tb2321_08">
+		<npc id="18276" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran03_tb09_m1" zone="il_giran03_tb2321_09">
+		<npc id="18276" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran03_tb10_m1" zone="il_giran03_tb2321_10">
+		<npc id="18276" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran03_tb12_m1" zone="il_giran03_tb2321_12">
+		<npc id="18276" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran03_tb14_m1" zone="il_giran03_tb2321_14">
+		<npc id="18276" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran03_tb15_m1" zone="il_giran03_tb2321_15">
+		<npc id="18277" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran03_tb18_m1" zone="il_giran03_tb2321_18">
+		<npc id="18277" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran03_tb19_m1" zone="il_giran03_tb2321_19">
+		<npc id="18277" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran03_tb21_m1" zone="il_giran03_tb2321_21">
+		<npc id="18277" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran03_tb22_m1" zone="il_giran03_tb2321_22">
+		<npc id="18277" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran03_tb23_m1" zone="il_giran03_tb2321_23">
+		<npc id="18277" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran03_tb24_m1" zone="il_giran03_tb2321_24">
+		<npc id="18278" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb101_m1" zone="il_giran06_tb2321_01">
+		<npc id="18271" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran06_tb102_m1" zone="il_giran06_tb2321_02">
+		<npc id="18271" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran17_tb3_m1" zone="il_giran17_tb2321_03">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran17_tb4_m1" zone="il_giran17_tb2321_04">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<!-- [23_22] -->
+	<spawn name="giran17_tb02_m1" zone="il_giran17_tb2322_02">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran17_tb03_m1" zone="il_giran17_tb2322_03">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran17_tb04_m1" zone="il_giran17_tb2322_04">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran17_tb05_m1" zone="il_giran17_tb2322_05">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran17_tb07_m1" zone="il_giran17_tb2322_07">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran17_tb08_m1" zone="il_giran17_tb2322_08">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran17_tb09_m1" zone="il_giran17_tb2322_09">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran17_tb10_m1" zone="il_giran17_tb2322_10">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran17_tb11_m1" zone="il_giran17_tb2322_11">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran17_tb12_m1" zone="il_giran17_tb2322_12">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran17_tb13_m1" zone="il_giran17_tb2322_13">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran17_tb14_m1" zone="il_giran17_tb2322_14">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran17_tb15_m1" zone="il_giran17_tb2322_15">
+		<npc id="18270" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran17_tb16_m1" zone="il_giran17_tb2322_16">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran17_tb17_m1" zone="il_giran17_tb2322_17">
+		<npc id="18269" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<!-- [23_23] -->
+	<spawn name="innadril08_tb23_m1" zone="il_innadril08_tb2323_23">
+		<npc id="18273" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="innadril08_tb24_m1" zone="il_innadril08_tb2323_24">
+		<npc id="18272" count="1" respawnDelay="150" />	<!-- Treasure Chest -->
+	</spawn>
 	<!-- [23_24] -->
 	<spawn name="innadril09_npc2324_2501" zone="il_innadril09_npc2324_25">
 		<npc id="31436" x="107682" y="218987" z="-3657" heading="58000" count="1" respawnDelay="60" />	<!-- Dani -->
@@ -1807,13 +3819,316 @@
 	<spawn name="godard05_npc2414_0201" zone="il_godard05_npc2414_02">
 		<npc id="31542" x="157136" y="-121456" z="-2363" heading="40000" count="1" respawnDelay="129600" />	<!-- Yeti's Table -->
 	</spawn>
+	<!-- [24_15] -->
+	<spawn name="godard12_tb01_m1" zone="il_godard12_tb2415_01">
+		<npc id="18284" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb02_m1" zone="il_godard12_tb2415_02">
+		<npc id="18284" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb03_m1" zone="il_godard12_tb2415_03">
+		<npc id="18284" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb04_m1" zone="il_godard12_tb2415_04">
+		<npc id="18284" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb05_m1" zone="il_godard12_tb2415_05">
+		<npc id="18284" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb07_m1" zone="il_godard12_tb2415_07">
+		<npc id="18284" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb08_m1" zone="il_godard12_tb2415_08">
+		<npc id="18284" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb09_m1" zone="il_godard12_tb2415_09">
+		<npc id="18284" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb12_m1" zone="il_godard12_tb2415_12">
+		<npc id="18284" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb13_m1" zone="il_godard12_tb2415_13">
+		<npc id="18284" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb14_m1" zone="il_godard12_tb2415_14">
+		<npc id="18285" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb15_m1" zone="il_godard12_tb2415_15">
+		<npc id="18285" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb16_m1" zone="il_godard12_tb2415_16">
+		<npc id="18285" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb17_m1" zone="il_godard12_tb2415_17">
+		<npc id="18285" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb18_m1" zone="il_godard12_tb2415_18">
+		<npc id="18285" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb19_m1" zone="il_godard12_tb2415_19">
+		<npc id="18285" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb20_m1" zone="il_godard12_tb2415_20">
+		<npc id="18285" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb21_m1" zone="il_godard12_tb2415_21">
+		<npc id="18285" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb22_m1" zone="il_godard12_tb2415_22">
+		<npc id="18285" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb23_m1" zone="il_godard12_tb2415_23">
+		<npc id="18286" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb24_m1" zone="il_godard12_tb2415_24">
+		<npc id="18286" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb25_m1" zone="il_godard12_tb2415_25">
+		<npc id="18286" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb26_m1" zone="il_godard12_tb2415_26">
+		<npc id="18286" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb27_m1" zone="il_godard12_tb2415_27">
+		<npc id="18286" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb28_m1" zone="il_godard12_tb2415_28">
+		<npc id="18286" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb29_m1" zone="il_godard12_tb2415_29">
+		<npc id="18286" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb30_m1" zone="il_godard12_tb2415_30">
+		<npc id="18286" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard12_tb31_m1" zone="il_godard12_tb2415_31">
+		<npc id="18286" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
 	<!-- [24_16] -->
 	<spawn name="godard02_npc2416_4301" zone="il_godard02_npc2416_43">
 		<npc id="31291" x="144252" y="-55584" z="-2965" heading="51000" count="1" respawnDelay="60" />	<!-- Terava -->
 	</spawn>
+	<!-- [24_17] -->
+	<spawn name="aden03_tb01_m1" zone="il_aden03_tb2417_01">
+		<npc id="18283" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb03_m1" zone="il_aden03_tb2417_03">
+		<npc id="18283" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb04_m1" zone="il_aden03_tb2417_04">
+		<npc id="18283" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb05_m1" zone="il_aden03_tb2417_05">
+		<npc id="18283" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb06_m1" zone="il_aden03_tb2417_06">
+		<npc id="18282" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb07_m1" zone="il_aden03_tb2417_07">
+		<npc id="18282" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb09_m1" zone="il_aden03_tb2417_09">
+		<npc id="18282" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb11_m1" zone="il_aden03_tb2417_11">
+		<npc id="18282" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb12_m1" zone="il_aden03_tb2417_12">
+		<npc id="18282" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb13_m1" zone="il_aden03_tb2417_13">
+		<npc id="18282" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb14_m1" zone="il_aden03_tb2417_14">
+		<npc id="18282" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb15_m1" zone="il_aden03_tb2417_15">
+		<npc id="18282" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb16_m1" zone="il_aden03_tb2417_16">
+		<npc id="18282" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb18_m1" zone="il_aden03_tb2417_18">
+		<npc id="18281" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb19_m1" zone="il_aden03_tb2417_19">
+		<npc id="18282" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb20_m1" zone="il_aden03_tb2417_20">
+		<npc id="18280" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb21_m1" zone="il_aden03_tb2417_21">
+		<npc id="18280" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb24_m1" zone="il_aden03_tb2417_24">
+		<npc id="18280" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb25_m1" zone="il_aden03_tb2417_25">
+		<npc id="18280" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb26_m1" zone="il_aden03_tb2417_26">
+		<npc id="18280" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb27_m1" zone="il_aden03_tb2417_27">
+		<npc id="18280" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb28_m1" zone="il_aden03_tb2417_28">
+		<npc id="18280" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb81_m1" zone="il_aden03_tb2417_81">
+		<npc id="18281" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb82_m1" zone="il_aden03_tb2417_82">
+		<npc id="18282" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb93_m1" zone="il_aden03_tb2417_93">
+		<npc id="18282" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden03_tb99_m1" zone="il_aden03_tb2417_99">
+		<npc id="18283" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
 	<!-- [24_18] -->
 	<spawn name="aden13_npc2418_4501" zone="il_aden13_npc2418_45">
 		<npc id="31438" x="150928" y="28384" z="-2246" heading="33000" count="1" respawnDelay="60" />	<!-- Lara -->
+	</spawn>
+	<spawn name="aden25_tb01_m1" zone="il_aden25_tb2418_01">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden25_tb04_m1" zone="il_aden25_tb2418_04">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden25_tb05_m1" zone="il_aden25_tb2418_05">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden25_tb06_m1" zone="il_aden25_tb2418_06">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden25_tb07_m1" zone="il_aden25_tb2418_07">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden25_tb08_m1" zone="il_aden25_tb2418_08">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden25_tb09_m1" zone="il_aden25_tb2418_09">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden25_tb10_m1" zone="il_aden25_tb2418_10">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden25_tb11_m1" zone="il_aden25_tb2418_11">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden25_tb12_m1" zone="il_aden25_tb2418_12">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden25_tb13_m1" zone="il_aden25_tb2418_13">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden25_tb14_m1" zone="il_aden25_tb2418_14">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden25_tb15_m1" zone="il_aden25_tb2418_15">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden25_tb16_m1" zone="il_aden25_tb2418_16">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<!-- [24_20] -->
+	<spawn name="aden10_tb02_m1" zone="il_aden10_tb2420_02">
+		<npc id="18272" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb03_m1" zone="il_aden10_tb2420_03">
+		<npc id="18272" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb04_m1" zone="il_aden10_tb2420_04">
+		<npc id="18272" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb05_m1" zone="il_aden10_tb2420_05">
+		<npc id="18272" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb06_m1" zone="il_aden10_tb2420_06">
+		<npc id="18272" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb07_m1" zone="il_aden10_tb2420_07">
+		<npc id="18272" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb08_m1" zone="il_aden10_tb2420_08">
+		<npc id="18272" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb10_m1" zone="il_aden10_tb2420_10">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb11_m1" zone="il_aden10_tb2420_11">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb12_m1" zone="il_aden10_tb2420_12">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb13_m1" zone="il_aden10_tb2420_13">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb14_m1" zone="il_aden10_tb2420_14">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb18_m1" zone="il_aden10_tb2420_18">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb19_m1" zone="il_aden10_tb2420_19">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb21_m1" zone="il_aden10_tb2420_21">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb22_m1" zone="il_aden10_tb2420_22">
+		<npc id="18273" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb23_m1" zone="il_aden10_tb2420_23">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb24_m1" zone="il_aden10_tb2420_24">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb25_m1" zone="il_aden10_tb2420_25">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb26_m1" zone="il_aden10_tb2420_26">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb27_m1" zone="il_aden10_tb2420_27">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb28_m1" zone="il_aden10_tb2420_28">
+		<npc id="18274" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb29_m1" zone="il_aden10_tb2420_29">
+		<npc id="18275" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb32_m1" zone="il_aden10_tb2420_32">
+		<npc id="18275" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb34_m1" zone="il_aden10_tb2420_34">
+		<npc id="18275" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb35_m1" zone="il_aden10_tb2420_35">
+		<npc id="18275" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb36_m1" zone="il_aden10_tb2420_36">
+		<npc id="18275" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb37_m1" zone="il_aden10_tb2420_37">
+		<npc id="18275" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb39_m1" zone="il_aden10_tb2420_39">
+		<npc id="18276" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb40_m1" zone="il_aden10_tb2420_40">
+		<npc id="18276" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb41_m1" zone="il_aden10_tb2420_41">
+		<npc id="18276" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb42_m1" zone="il_aden10_tb2420_42">
+		<npc id="18276" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
 	</spawn>
 	<!-- [24_21] -->
 	<spawn name="giran05_2421_01m1" zone="il_giran05_2421_01">
@@ -2070,6 +4385,156 @@
 		<npc id="21087" count="4" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Knight -->
 		<npc id="21088" count="2" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Banshee -->
 		<npc id="21089" count="4" respawnDelay="300" respawnRandom="200" />	<!-- Bloody Lord -->
+	</spawn>
+	<spawn name="giran05_tb01_m1" zone="il_giran05_tb2421_01">
+		<npc id="18278" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb02_m1" zone="il_giran05_tb2421_02">
+		<npc id="18278" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb04_m1" zone="il_giran05_tb2421_04">
+		<npc id="18278" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb07_m1" zone="il_giran05_tb2421_07">
+		<npc id="18278" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb08_m1" zone="il_giran05_tb2421_08">
+		<npc id="18278" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb09_m1" zone="il_giran05_tb2421_09">
+		<npc id="18278" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb10_m1" zone="il_giran05_tb2421_10">
+		<npc id="18279" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb11_m1" zone="il_giran05_tb2421_11">
+		<npc id="18279" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb12_m1" zone="il_giran05_tb2421_12">
+		<npc id="18279" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb13_m1" zone="il_giran05_tb2421_13">
+		<npc id="18279" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb14_m1" zone="il_giran05_tb2421_14">
+		<npc id="18279" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb15_m1" zone="il_giran05_tb2421_15">
+		<npc id="18279" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb16_m1" zone="il_giran05_tb2421_16">
+		<npc id="18279" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb17_m1" zone="il_giran05_tb2421_17">
+		<npc id="18279" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb18_m1" zone="il_giran05_tb2421_18">
+		<npc id="18279" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb20_m1" zone="il_giran05_tb2421_20">
+		<npc id="18280" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb21_m1" zone="il_giran05_tb2421_21">
+		<npc id="18280" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb22_m1" zone="il_giran05_tb2421_22">
+		<npc id="18280" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb23_m1" zone="il_giran05_tb2421_23">
+		<npc id="18280" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb24_m1" zone="il_giran05_tb2421_24">
+		<npc id="18280" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb25_m1" zone="il_giran05_tb2421_25">
+		<npc id="18280" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb26_m1" zone="il_giran05_tb2421_26">
+		<npc id="18280" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb27_m1" zone="il_giran05_tb2421_27">
+		<npc id="18280" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb28_m1" zone="il_giran05_tb2421_28">
+		<npc id="18280" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb29_m1" zone="il_giran05_tb2421_29">
+		<npc id="18281" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb31_m1" zone="il_giran05_tb2421_31">
+		<npc id="18281" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb32_m1" zone="il_giran05_tb2421_32">
+		<npc id="18281" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb38_m1" zone="il_giran05_tb2421_38">
+		<npc id="18281" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb45_m1" zone="il_giran05_tb2421_45">
+		<npc id="18281" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb50_m1" zone="il_giran05_tb2421_50">
+		<npc id="18281" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb51_m1" zone="il_giran05_tb2421_51">
+		<npc id="18281" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb53_m1" zone="il_giran05_tb2421_53">
+		<npc id="18281" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb56_m1" zone="il_giran05_tb2421_56">
+		<npc id="18281" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb59_m1" zone="il_giran05_tb2421_59">
+		<npc id="18282" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb64_m1" zone="il_giran05_tb2421_64">
+		<npc id="18281" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb64_m2" zone="il_giran05_tb2421_64">
+		<npc id="18281" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb66_m1" zone="il_giran05_tb2421_66">
+		<npc id="18282" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb75_m1" zone="il_giran05_tb2421_75">
+		<npc id="18282" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb76_m1" zone="il_giran05_tb2421_76">
+		<npc id="18282" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb77_m1" zone="il_giran05_tb2421_77">
+		<npc id="18282" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb78_m1" zone="il_giran05_tb2421_78">
+		<npc id="18282" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb79_m1" zone="il_giran05_tb2421_79">
+		<npc id="18282" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb80_m1" zone="il_giran05_tb2421_80">
+		<npc id="18282" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb81_m1" zone="il_giran05_tb2421_81">
+		<npc id="18283" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb82_m1" zone="il_giran05_tb2421_82">
+		<npc id="18283" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb83_m1" zone="il_giran05_tb2421_83">
+		<npc id="18283" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb84_m1" zone="il_giran05_tb2421_84">
+		<npc id="18283" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb85_m1" zone="il_giran05_tb2421_85">
+		<npc id="18283" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb86_m1" zone="il_giran05_tb2421_86">
+		<npc id="18283" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="giran05_tb87_m1" zone="il_giran05_tb2421_87">
+		<npc id="18283" count="1" respawnDelay="540" />	<!-- Treasure Chest -->
 	</spawn>
 	<!-- [25_12] -->
 	<spawn name="schuttgart06_2512_01m1" zone="il_schuttgart06_2512_01">
@@ -2821,6 +5286,137 @@
 	<spawn name="frintessa_2515_m01" zone="il_frintessa_2515_02">
 		<npc id="29059" x="174259" y="-86550" z="-5088" heading="16440" count="1" respawnDelay="0" />	<!--  -->
 	</spawn>
+	<spawn name="godard14_tb03_m1" zone="il_godard14_tb2515_03">
+		<npc id="18285" count="1" respawnDelay="2700" respawnRandom="900" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard14_tb03_m2" zone="il_godard14_tb2515_03">
+		<npc id="18285" count="1" respawnDelay="2700" respawnRandom="900" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard14_tb03_m3" zone="il_godard14_tb2515_03">
+		<npc id="18285" count="1" respawnDelay="2700" respawnRandom="900" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard14_tb03_m4" zone="il_godard14_tb2515_03">
+		<npc id="18285" count="1" respawnDelay="2700" respawnRandom="900" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="godard14_tb03_m5" zone="il_godard14_tb2515_03">
+		<npc id="18285" count="1" respawnDelay="2700" respawnRandom="900" />	<!-- Treasure Chest -->
+	</spawn>
+	<!-- [25_17] -->
+	<spawn name="aden26_tb01_m1" zone="il_aden26_tb2517_01">
+		<npc id="18277" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb02_m1" zone="il_aden26_tb2517_02">
+		<npc id="18277" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb03_m1" zone="il_aden26_tb2517_03">
+		<npc id="18277" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb04_m1" zone="il_aden26_tb2517_04">
+		<npc id="18277" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb05_m1" zone="il_aden26_tb2517_05">
+		<npc id="18277" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb06_m1" zone="il_aden26_tb2517_06">
+		<npc id="18277" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb07_m1" zone="il_aden26_tb2517_07">
+		<npc id="18277" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb08_m1" zone="il_aden26_tb2517_08">
+		<npc id="18278" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb09_m1" zone="il_aden26_tb2517_09">
+		<npc id="18278" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb10_m1" zone="il_aden26_tb2517_10">
+		<npc id="18278" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb11_m1" zone="il_aden26_tb2517_11">
+		<npc id="18278" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb14_m1" zone="il_aden26_tb2517_14">
+		<npc id="18278" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb15_m1" zone="il_aden26_tb2517_15">
+		<npc id="18278" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb16_m1" zone="il_aden26_tb2517_16">
+		<npc id="18278" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb17_m1" zone="il_aden26_tb2517_17">
+		<npc id="18278" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb18_m1" zone="il_aden26_tb2517_18">
+		<npc id="18279" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb20_m1" zone="il_aden26_tb2517_20">
+		<npc id="18279" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb21_m1" zone="il_aden26_tb2517_21">
+		<npc id="18279" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb22_m1" zone="il_aden26_tb2517_22">
+		<npc id="18279" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb23_m1" zone="il_aden26_tb2517_23">
+		<npc id="18279" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb24_m1" zone="il_aden26_tb2517_24">
+		<npc id="18279" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb26_m1" zone="il_aden26_tb2517_26">
+		<npc id="18279" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden26_tb27_m1" zone="il_aden26_tb2517_27">
+		<npc id="18279" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<!-- [25_18] -->
+	<spawn name="aden09_tb01_m1" zone="il_aden09_tb2518_01">
+		<npc id="18275" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden09_tb02_m1" zone="il_aden09_tb2518_02">
+		<npc id="18275" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden09_tb03_m1" zone="il_aden09_tb2518_03">
+		<npc id="18275" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden09_tb04_m1" zone="il_aden09_tb2518_04">
+		<npc id="18275" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden09_tb09_m1" zone="il_aden09_tb2518_09">
+		<npc id="18275" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden09_tb10_m1" zone="il_aden09_tb2518_10">
+		<npc id="18275" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden09_tb11_m1" zone="il_aden09_tb2518_11">
+		<npc id="18275" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden09_tb12_m1" zone="il_aden09_tb2518_12">
+		<npc id="18276" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden09_tb13_m1" zone="il_aden09_tb2518_13">
+		<npc id="18276" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden09_tb14_m1" zone="il_aden09_tb2518_14">
+		<npc id="18276" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden09_tb15_m1" zone="il_aden09_tb2518_15">
+		<npc id="18276" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden09_tb16_m1" zone="il_aden09_tb2518_16">
+		<npc id="18276" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden09_tb17_m1" zone="il_aden09_tb2518_17">
+		<npc id="18276" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden09_tb18_m1" zone="il_aden09_tb2518_18">
+		<npc id="18276" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden09_tb19_m1" zone="il_aden09_tb2518_19">
+		<npc id="18276" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
 	<!-- [25_19] -->
 	<spawn name="aden07_2519_01m1" zone="il_aden07_2519_01">
 		<npc id="20646" count="8" respawnDelay="82" respawnRandom="20" />	<!-- Halingka -->
@@ -3020,6 +5616,105 @@
 	<spawn name="aden07_2519_p41m1" zone="il_aden07_2519_p41">
 		<npc id="20771" count="1" respawnDelay="150" respawnRandom="50" />	<!-- Barif -->
 	</spawn>
+	<spawn name="aden07_tb01_m1" zone="il_aden07_tb2519_01">
+		<npc id="18277" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb02_m1" zone="il_aden07_tb2519_02">
+		<npc id="18277" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb05_m1" zone="il_aden07_tb2519_05">
+		<npc id="18277" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb06_m1" zone="il_aden07_tb2519_06">
+		<npc id="18277" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb07_m1" zone="il_aden07_tb2519_07">
+		<npc id="18277" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb09_m1" zone="il_aden07_tb2519_09">
+		<npc id="18277" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb10_m1" zone="il_aden07_tb2519_10">
+		<npc id="18277" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb11_m1" zone="il_aden07_tb2519_11">
+		<npc id="18277" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb12_m1" zone="il_aden07_tb2519_12">
+		<npc id="18277" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb13_m1" zone="il_aden07_tb2519_13">
+		<npc id="18277" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb14_m1" zone="il_aden07_tb2519_14">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb19_m1" zone="il_aden07_tb2519_19">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb20_m1" zone="il_aden07_tb2519_20">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb21_m1" zone="il_aden07_tb2519_21">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb22_m1" zone="il_aden07_tb2519_22">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb23_m1" zone="il_aden07_tb2519_23">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb24_m1" zone="il_aden07_tb2519_24">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb25_m1" zone="il_aden07_tb2519_25">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb26_m1" zone="il_aden07_tb2519_26">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb27_m1" zone="il_aden07_tb2519_27">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb28_m1" zone="il_aden07_tb2519_28">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb29_m1" zone="il_aden07_tb2519_29">
+		<npc id="18278" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb30_m1" zone="il_aden07_tb2519_30">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb31_m1" zone="il_aden07_tb2519_31">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb32_m1" zone="il_aden07_tb2519_32">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb33_m1" zone="il_aden07_tb2519_33">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb34_m1" zone="il_aden07_tb2519_34">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb35_m1" zone="il_aden07_tb2519_35">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb36_m1" zone="il_aden07_tb2519_36">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb38_m1" zone="il_aden07_tb2519_38">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb39_m1" zone="il_aden07_tb2519_39">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb40_m1" zone="il_aden07_tb2519_40">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden07_tb41_m1" zone="il_aden07_tb2519_41">
+		<npc id="18279" count="1" respawnDelay="180" />	<!-- Treasure Chest -->
+	</spawn>
 	<spawn name="aden22_2519_11m1" zone="il_aden22_2519_11">
 		<npc id="21258" count="1" respawnDelay="27" />	<!-- Fallen Orc Shaman -->
 	</spawn>
@@ -3043,6 +5738,43 @@
 	</spawn>
 	<spawn name="aden22_2519_25m1" zone="il_aden22_2519_25">
 		<npc id="21258" count="2" respawnDelay="27" />	<!-- Fallen Orc Shaman -->
+	</spawn>
+	<spawn name="aden22_tb02_m1" zone="il_aden22_tb2519_02">
+		<npc id="18277" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden22_tb03_m1" zone="il_aden22_tb2519_03">
+		<npc id="18277" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden22_tb04_m1" zone="il_aden22_tb2519_04">
+		<npc id="18277" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden22_tb05_m1" zone="il_aden22_tb2519_05">
+		<npc id="18277" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden22_tb09_m1" zone="il_aden22_tb2519_09">
+		<npc id="18277" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden22_tb10_m1" zone="il_aden22_tb2519_10">
+		<npc id="18278" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden22_tb11_m1" zone="il_aden22_tb2519_11">
+		<npc id="18278" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden22_tb12_m1" zone="il_aden22_tb2519_12">
+		<npc id="18278" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden22_tb20_m1" zone="il_aden22_tb2519_20">
+		<npc id="18278" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden22_tb21_m1" zone="il_aden22_tb2519_21">
+		<npc id="18278" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<!-- [25_20] -->
+	<spawn name="aden10_tb103_m1" zone="il_aden10_tb2520_03">
+		<npc id="18276" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
+	</spawn>
+	<spawn name="aden10_tb104_m1" zone="il_aden10_tb2520_04">
+		<npc id="18276" count="1" respawnDelay="90" />	<!-- Treasure Chest -->
 	</spawn>
 	<!-- [19_16] -->
 	<spawn name="altar_combat1_01" zone="il_rune14_mb1916_11">

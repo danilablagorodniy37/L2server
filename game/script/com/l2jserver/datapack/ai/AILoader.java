@@ -41,7 +41,6 @@ import com.l2jserver.datapack.ai.group_template.RandomSpawn;
 import com.l2jserver.datapack.ai.group_template.SeeThroughSilentMove;
 import com.l2jserver.datapack.ai.group_template.SilentValley;
 import com.l2jserver.datapack.ai.group_template.SummonPc;
-import com.l2jserver.datapack.ai.group_template.TreasureChest;
 import com.l2jserver.datapack.ai.group_template.TurekOrcs;
 import com.l2jserver.datapack.ai.group_template.VarkaKetra;
 import com.l2jserver.datapack.ai.group_template.WarriorFishingBlock;
@@ -242,7 +241,6 @@ public class AILoader {
 		SeeThroughSilentMove.class,
 		SilentValley.class,
 		SummonPc.class,
-		TreasureChest.class,
 		TurekOrcs.class,
 		VarkaKetra.class,
 		WarriorFishingBlock.class,

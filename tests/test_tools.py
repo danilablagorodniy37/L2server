@@ -236,3 +236,19 @@ def test_interlude_stats_apply_the_acis_formulas():
 	assert stats["mDef"] == pytest.approx(150 * b.MEN[20] * lvl_mod)
 	assert stats["crit"] == round(4 * b.DEX[30] * 10)
 	assert b.STR[40] == 1.2 and b.CON[43] == 1.58  # same values as data/stats/statBonus.xml of H5
+
+
+def test_middle_chest_picks_a_chest_not_a_mimic():
+	"""A treasure box maker lists chests of three levels and their mimics; the middle chest is taken."""
+	import xml.etree.ElementTree as ET
+	maker = ET.fromstring(
+		'<npcmaker><ai type="random_spawn_treasurebox"/>'
+		'<npc id="18266" total="1" respawn="90sec"/><npc id="21802" total="1" respawn="90sec"/>'
+		'<npc id="18267" total="1" respawn="90sec"/><npc id="21803" total="1" respawn="90sec"/>'
+		'<npc id="18268" total="1" respawn="90sec"/><npc id="21804" total="1" respawn="90sec"/></npcmaker>')
+	npcs = {
+		18266: {"type": "L2Chest", "level": 24}, 18267: {"type": "L2Chest", "level": 27}, 18268: {"type": "L2Chest", "level": 30},
+		21802: {"type": "L2Chest", "level": 24}, 21803: {"type": "L2Chest", "level": 27}, 21804: {"type": "L2Chest", "level": 30},
+	}
+	npc, template = build_spawns.middle_chest(maker, npcs)
+	assert npc.get("id") == "18267" and template["level"] == 27
