@@ -47,8 +47,19 @@ public class PhantomCombat {
 	private static final double FLEE_HP = 0.25;
 	/** A bot sits until it has this share of HP again. */
 	private static final double RESTED_HP = 0.85;
-	/** Levels above the bot it still dares to attack: it picks on its own kind, not on stronger ones. */
-	private static final int MAX_LEVEL_ABOVE = 0;
+	/** Levels above the bot it still dares to attack: it picks on weaker monsters, the way a player farms. */
+	private static final int MAX_LEVEL_ABOVE = -2;
+	/** Soulshots by grade, from no grade to S: a bot fights with shots like anybody else. */
+	private static final int[] SOULSHOTS = {
+		1835, 1463, 1464, 1465, 1466, 1467
+	};
+	/** The same for a mage. */
+	private static final int[] SPIRITSHOTS = {
+		2509, 2510, 2511, 2512, 2513, 2514
+	};
+	/** How many shots a bot takes with it, and when it refills. */
+	private static final int SHOTS = 2000;
+	private static final int SHOTS_LEFT = 400;
 	/** How far a bot walks for something lying on the ground. */
 	private static final int LOOT_RADIUS = 700;
 	/** How close it has to stand to pick it up. */
@@ -133,6 +144,29 @@ public class PhantomCombat {
 			return;
 		}
 		bot.doPickupItem(item);
+	}
+
+	/**
+	 * Fills the bot's pouch with shots for its weapon and switches them on.<br>
+	 * Without them a bot hits half as hard as the player next to it and dies to monsters of its own level.
+	 * @param bot the bot heading out to hunt
+	 */
+	public static void supply(L2PcInstance bot) {
+		final L2ItemInstance weapon = bot.getActiveWeaponInstance();
+		if (weapon == null) {
+			return;
+		}
+		final boolean mage = bot.isMageClass();
+		final int grade = Math.max(0, Math.min(weapon.getItem().getCrystalType().getId(), SOULSHOTS.length - 1));
+		final int shotId = mage ? SPIRITSHOTS[grade] : SOULSHOTS[grade];
+		final long left = bot.getInventory().getInventoryItemCount(shotId, -1);
+		if (left < SHOTS_LEFT) {
+			bot.getInventory().addItem("PhantomShots", shotId, SHOTS - left, bot, null);
+		}
+		if (!bot.getAutoSoulShot().contains(shotId)) {
+			bot.addAutoSoulShot(shotId);
+		}
+		bot.rechargeShots(!mage, mage);
 	}
 
 	/** Sets the bot on its target; it keeps hitting until the monster or the bot is down. */

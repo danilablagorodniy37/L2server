@@ -329,8 +329,12 @@ public class Phantoms {
 			return;
 		}
 		if (phantom.resting(now)) {
-			if (PhantomCombat.rested(bot)) {
+			if (PhantomCombat.rested(bot) || bot.isInCombat()) {
+				// rested, or something came to eat the bot while it sat
 				phantom.stopResting();
+				if (bot.isSitting()) {
+					bot.standUp();
+				}
 			} else {
 				if (!bot.isSitting() && !bot.isInCombat()) {
 					bot.sitDown();
@@ -398,8 +402,10 @@ public class Phantoms {
 
 	/** In town a bot now and then decides to go hunting. */
 	private void leaveForHunt(Phantom phantom) {
-		final int hunting = (int) _phantoms.stream().filter(p -> p.state() != Phantom.State.TOWN).count();
-		if ((hunting * 100) >= (_phantoms.size() * _huntShare)) {
+		// The share counts the bots that may hunt at all: the traders keep their shops whatever happens.
+		final int hunting = (int) _phantoms.stream().filter(p -> (p.state() != Phantom.State.TOWN) && (p.state() != Phantom.State.TRADE)).count();
+		final int hunters = (int) _phantoms.stream().filter(p -> p.state() != Phantom.State.TRADE).count();
+		if ((hunting * 100) >= (hunters * _huntShare)) {
 			phantom.enter(Phantom.State.TOWN, null, Rnd.get(30000, 90000));
 			return;
 		}
@@ -422,6 +428,7 @@ public class Phantoms {
 			return;
 		}
 		phantom.player().teleToLocation(ground.x() + Rnd.get(-200, 200), ground.y() + Rnd.get(-200, 200), ground.z(), false);
+		PhantomCombat.supply(phantom.player());
 		phantom.enter(Phantom.State.HUNT, ground, (_huntMinutes * 60000L) + Rnd.get(0, 5 * 60000));
 	}
 
