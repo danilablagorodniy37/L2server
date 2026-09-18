@@ -29,6 +29,7 @@ import com.l2jserver.commons.util.Rnd;
 import com.l2jserver.gameserver.enums.PrivateStoreType;
 import com.l2jserver.gameserver.model.TradeItem;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
+import com.l2jserver.gameserver.model.itemcontainer.Inventory;
 import com.l2jserver.gameserver.model.items.instance.L2ItemInstance;
 import com.l2jserver.gameserver.network.serverpackets.PrivateStoreMsgSell;
 import com.l2jserver.gameserver.util.Broadcast;
@@ -44,6 +45,8 @@ public class PhantomTrade {
 
 	/** How many lines one shop offers. */
 	private static final int SHOP_SIZE = 4;
+	/** With this many slots taken the bot has hunted enough and walks back to sell. */
+	public static final int BAG_LIMIT = 60;
 	/** Shop titles, so the row of stores does not read the same. */
 	private static final String[] TITLES = {
 		"cheap gear", "buy now", "good price", "%s", "selling %s", "%s cheap", "best price in town"
@@ -103,6 +106,34 @@ public class PhantomTrade {
 		bot.broadcastUserInfo();
 		Broadcast.toSelfAndKnownPlayers(bot, new PrivateStoreMsgSell(bot));
 		return true;
+	}
+
+	/**
+	 * The bot sells its loot in town: everything it is not wearing goes for half the shop price.
+	 * @param bot the bot back from hunting
+	 * @return the adena it made
+	 */
+	public static long sellLoot(L2PcInstance bot) {
+		long paid = 0;
+		for (L2ItemInstance item : bot.getInventory().getItems()) {
+			if (item.isEquipped() || (item.getId() == Inventory.ADENA_ID) || !item.isSellable() || item.isQuestItem()) {
+				continue;
+			}
+			final long price = (item.getReferencePrice() / 2) * item.getCount();
+			if (bot.getInventory().destroyItem("PhantomSell", item, bot, null) == null) {
+				continue;
+			}
+			paid += price;
+		}
+		if (paid > 0) {
+			bot.addAdena("PhantomSell", paid, null, false);
+		}
+		return paid;
+	}
+
+	/** True when the bot carries as much as it can and should head back to town. */
+	public static boolean bagFull(L2PcInstance bot) {
+		return bot.getInventory().getSize() >= BAG_LIMIT;
 	}
 
 	@Override

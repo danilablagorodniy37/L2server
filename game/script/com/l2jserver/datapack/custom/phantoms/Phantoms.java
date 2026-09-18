@@ -45,6 +45,7 @@ import com.l2jserver.gameserver.model.L2Object;
 import com.l2jserver.gameserver.model.L2World;
 import com.l2jserver.gameserver.model.Location;
 import com.l2jserver.gameserver.model.actor.instance.L2MonsterInstance;
+import com.l2jserver.gameserver.model.items.instance.L2ItemInstance;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jserver.gameserver.model.skills.Skill;
 import com.l2jserver.gameserver.model.events.Containers;
@@ -250,15 +251,17 @@ public class Phantoms {
 		final Map<Phantom.State, Integer> states = new HashMap<>();
 		int kills = 0;
 		int deaths = 0;
+		long earned = 0;
 		for (Phantom phantom : _phantoms) {
 			states.merge(phantom.state(), 1, Integer::sum);
 			kills += phantom.kills();
 			deaths += phantom.deaths();
+			earned += phantom.earned();
 		}
-		LOG.info("bots: {} in town, {} travelling, {} hunting, {} coming back, {} trading; {} kills and {} deaths so far.",
+		LOG.info("bots: {} in town, {} travelling, {} hunting, {} coming back, {} trading; {} kills, {} deaths and {} adena of loot sold.",
 			states.getOrDefault(Phantom.State.TOWN, 0), states.getOrDefault(Phantom.State.TRAVEL, 0),
 			states.getOrDefault(Phantom.State.HUNT, 0), states.getOrDefault(Phantom.State.RETURN, 0),
-			states.getOrDefault(Phantom.State.TRADE, 0), kills, deaths);
+			states.getOrDefault(Phantom.State.TRADE, 0), kills, deaths, earned);
 	}
 
 	/** Drives the bots that are out hunting: leaving town, travelling, coming back. */
@@ -299,6 +302,11 @@ public class Phantoms {
 			goHome(phantom);
 			return;
 		}
+		if (PhantomTrade.bagFull(bot)) {
+			// nothing more fits in the bag, so back to town to sell
+			goHome(phantom);
+			return;
+		}
 		if (phantom.resting(now)) {
 			if (PhantomCombat.rested(bot)) {
 				phantom.stopResting();
@@ -329,6 +337,12 @@ public class Phantoms {
 		if ((target instanceof L2MonsterInstance dead) && dead.isAlikeDead()) {
 			phantom.killed();
 			bot.setTarget(null);
+		}
+
+		final L2ItemInstance loot = PhantomCombat.findLoot(bot);
+		if (loot != null) {
+			PhantomCombat.take(bot, loot);
+			return;
 		}
 
 		final L2MonsterInstance next = PhantomCombat.findTarget(bot, phantom.ground());
@@ -400,6 +414,7 @@ public class Phantoms {
 	private void arriveHome(Phantom phantom) {
 		final Location home = phantom.home();
 		phantom.player().teleToLocation(home.getX() + Rnd.get(-150, 150), home.getY() + Rnd.get(-150, 150), home.getZ(), false);
+		phantom.earned(PhantomTrade.sellLoot(phantom.player()));
 		phantom.enter(Phantom.State.TOWN, null, Rnd.get(3 * 60000, 12 * 60000));
 	}
 

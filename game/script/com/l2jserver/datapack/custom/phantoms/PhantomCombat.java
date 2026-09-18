@@ -29,6 +29,7 @@ import com.l2jserver.gameserver.model.L2World;
 import com.l2jserver.gameserver.model.actor.L2Character;
 import com.l2jserver.gameserver.model.actor.instance.L2MonsterInstance;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
+import com.l2jserver.gameserver.model.items.instance.L2ItemInstance;
 import com.l2jserver.gameserver.model.skills.Skill;
 
 /**
@@ -48,6 +49,10 @@ public class PhantomCombat {
 	private static final double RESTED_HP = 0.85;
 	/** Levels above the bot it still dares to attack. */
 	private static final int MAX_LEVEL_ABOVE = 3;
+	/** How far a bot walks for something lying on the ground. */
+	private static final int LOOT_RADIUS = 700;
+	/** How close it has to stand to pick it up. */
+	private static final int PICKUP_RANGE = 60;
 
 	private PhantomCombat() {
 	}
@@ -88,6 +93,46 @@ public class PhantomCombat {
 			}
 		}
 		return best;
+	}
+
+	/**
+	 * What the bot's kills left on the ground: its own loot, nothing another player has a claim on.
+	 * @param bot the bot
+	 * @return the closest item it may take, or null when there is nothing lying around
+	 */
+	public static L2ItemInstance findLoot(L2PcInstance bot) {
+		L2ItemInstance best = null;
+		double bestDistance = Double.MAX_VALUE;
+		for (L2Object object : L2World.getInstance().getVisibleObjects(bot, LOOT_RADIUS)) {
+			if (!(object instanceof L2ItemInstance item) || !item.isVisible()) {
+				continue;
+			}
+			if ((item.getOwnerId() != 0) && (item.getOwnerId() != bot.getObjectId())) {
+				continue;
+			}
+			final double distance = bot.calculateDistance(item, false, false);
+			if (distance < bestDistance) {
+				best = item;
+				bestDistance = distance;
+			}
+		}
+		return best;
+	}
+
+	/**
+	 * Walks to the item and picks it up once the bot stands over it, the way a player does.
+	 * @param bot the bot
+	 * @param item what is lying there
+	 */
+	public static void take(L2PcInstance bot, L2ItemInstance item) {
+		if (bot.isSitting()) {
+			bot.standUp();
+		}
+		if (bot.calculateDistance(item, false, false) > PICKUP_RANGE) {
+			bot.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, item.getLocation());
+			return;
+		}
+		bot.doPickupItem(item);
 	}
 
 	/** Sets the bot on its target; it keeps hitting until the monster or the bot is down. */

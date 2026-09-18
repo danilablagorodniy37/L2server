@@ -98,6 +98,7 @@ public class Phantom {
 	private long _restUntil;
 	private int _kills;
 	private int _deaths;
+	private long _earned;
 	private long _nextReaction;
 	private String _talkingTo;
 	private long _talkUntil;
@@ -246,6 +247,15 @@ public class Phantom {
 
 	public void died() {
 		_deaths++;
+	}
+	
+	/** The adena the bot made selling what it brought back from hunting. */
+	public long earned() {
+		return _earned;
+	}
+	
+	public void earned(long adena) {
+		_earned += adena;
 	}
 
 	/** Where the bot walks around: its town square, or the hunting ground it travels to. */
