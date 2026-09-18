@@ -75,6 +75,17 @@ public class PhantomCombat {
 	 * @return the monster, or null when there is nothing to kill nearby
 	 */
 	public static L2MonsterInstance findTarget(L2PcInstance bot, PhantomHunting.Ground ground) {
+		return findTarget(bot, ground, MAX_LEVEL_ABOVE);
+	}
+
+	/**
+	 * The same, for a party that has to be more careful because nobody in it can heal.
+	 * @param bot the bot
+	 * @param ground where it hunts, or null to look around itself
+	 * @param maxLevelAbove how far above its own level a monster may be
+	 * @return the monster, or null
+	 */
+	public static L2MonsterInstance findTarget(L2PcInstance bot, PhantomHunting.Ground ground, int maxLevelAbove) {
 		L2MonsterInstance best = null;
 		double bestDistance = Double.MAX_VALUE;
 		for (L2Object object : L2World.getInstance().getVisibleObjects(bot, SEARCH_RADIUS)) {
@@ -84,7 +95,7 @@ public class PhantomCombat {
 			if (monster.isAlikeDead() || monster.isRaid() || monster.isRaidMinion() || !monster.isAutoAttackable(bot)) {
 				continue;
 			}
-			if (monster.getLevel() > (bot.getLevel() + MAX_LEVEL_ABOVE)) {
+			if (monster.getLevel() > (bot.getLevel() + maxLevelAbove)) {
 				continue;
 			}
 			// someone is already killing it

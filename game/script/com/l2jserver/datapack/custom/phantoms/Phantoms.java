@@ -45,6 +45,7 @@ import com.l2jserver.gameserver.ai.CtrlIntention;
 import com.l2jserver.gameserver.model.L2Object;
 import com.l2jserver.gameserver.model.L2World;
 import com.l2jserver.gameserver.model.Location;
+import com.l2jserver.gameserver.model.actor.L2Character;
 import com.l2jserver.gameserver.model.actor.instance.L2MonsterInstance;
 import com.l2jserver.gameserver.model.actor.instance.L2RaidBossInstance;
 import com.l2jserver.gameserver.model.base.ClassId;
@@ -168,7 +169,8 @@ public class Phantoms {
 				number("LlmTimeout", 4000), number("LlmSlots", 3), number("LlmWords", 14));
 		}
 
-		final int count = number("Count", 100);
+		// Count is the whole crowd: the standing parties are part of it, not on top of it.
+		final int count = Math.max(1, number("Count", 100) - (_squadCount * _squadSize));
 		ThreadPoolManager.getInstance().scheduleGeneral(() -> spawnAll(count), number("StartDelay", 30), TimeUnit.SECONDS);
 	}
 
@@ -394,7 +396,7 @@ public class Phantoms {
 					squad.nextRaid(now + (_raidEvery * 60000L));
 					continue;
 				}
-				if (now < squad.nextRaid()) {
+				if ((now < squad.nextRaid()) || !squad.fit()) {
 					continue;
 				}
 				final L2RaidBossInstance boss = raidFor(squad.level());
@@ -417,8 +419,14 @@ public class Phantoms {
 	/** A raid boss a party of this level can take: alive, of its own size, and no epic. */
 	private L2RaidBossInstance raidFor(int level) {
 		final List<L2RaidBossInstance> possible = new ArrayList<>();
+		final List<L2Character> taken = new ArrayList<>();
+		for (PhantomSquad squad : _elite) {
+			if (squad.quarry() != null) {
+				taken.add(squad.quarry());
+			}
+		}
 		for (L2RaidBossInstance boss : RaidBossSpawnManager.getInstance().getBosses().values()) {
-			if ((boss == null) || boss.isDead() || !boss.isVisible()) {
+			if ((boss == null) || boss.isDead() || !boss.isVisible() || taken.contains(boss)) {
 				continue;
 			}
 			if ((boss.getLevel() > (level + 2)) || (boss.getLevel() < (level - 25))) {
@@ -438,7 +446,7 @@ public class Phantoms {
 			ClassId.phoenixKnight, ClassId.cardinal, ClassId.hierophant, ClassId.swordMuse, ClassId.spectralDancer,
 			ClassId.sagittarius, ClassId.moonlightSentinel, ClassId.ghostSentinel, ClassId.duelist
 		};
-		int taken = Math.min(stored.size(), number("Count", 100));
+		int taken = Math.min(stored.size(), Math.max(1, number("Count", 100) - (_squadCount * _squadSize)));
 		for (int i = 0; i < _squadCount; i++) {
 			final PhantomSquad squad = new PhantomSquad("party " + (i + 1), _squadCamp, _squadPlace);
 			for (int seat = 0; seat < _squadSize; seat++) {

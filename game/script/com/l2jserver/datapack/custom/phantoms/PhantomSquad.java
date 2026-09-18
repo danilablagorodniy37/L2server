@@ -24,6 +24,8 @@ import java.util.List;
 import com.l2jserver.commons.util.Rnd;
 import com.l2jserver.gameserver.ai.CtrlIntention;
 import com.l2jserver.gameserver.enums.PartyDistributionType;
+import com.l2jserver.gameserver.model.TeleportWhereType;
+import com.l2jserver.gameserver.instancemanager.MapRegionManager;
 import com.l2jserver.gameserver.model.L2Party;
 import com.l2jserver.gameserver.model.Location;
 import com.l2jserver.gameserver.model.actor.L2Character;
@@ -40,13 +42,26 @@ public class PhantomSquad {
 	/** How far from the camp a fight may wander. */
 	private static final int CAMP_RADIUS = 1600;
 	/** Below this share of HP the healer takes care of a member. */
-	private static final double HEAL_AT = 0.7;
+	private static final double HEAL_AT = 0.85;
 	/** How often the buffers go round the party. */
-	private static final long BUFF_EVERY = 3 * 60 * 1000L;
+	private static final long BUFF_EVERY = 2 * 60 * 1000L;
 	/** How long a dead member lies there before the party brings it back. */
-	private static final long RAISE_AFTER = 15 * 1000L;
+	private static final long RAISE_AFTER = 12 * 1000L;
 	/** One action of a kind per member and second, so a party does not cast in a loop. */
-	private static final long CAST_EVERY = 3000L;
+	private static final long CAST_EVERY = 1200L;
+	/** Without a healer a party takes on much weaker monsters. */
+	private static final int CAREFUL_LEVELS = -6;
+	/** A member of a party with no healer sits down at this share of HP and gets up at the next one. */
+	private static final double SIT_AT = 0.4;
+	private static final double UP_AT = 0.85;
+	/** How often the party fills its pouches with shots again. */
+	private static final long SUPPLY_EVERY = 5 * 60 * 1000L;
+	/** How many quick rounds of buffing a party does when it arrives. */
+	private static final int BUFF_ROUNDS = 12;
+	/** With this share of the party on the ground it is a wipe: everybody pulls back. */
+	private static final double WIPE = 0.5;
+	/** How long a beaten party rests in town before it goes back. */
+	private static final long REST_AFTER_WIPE = 3 * 60 * 1000L;
 
 	private final String _name;
 	private final List<Phantom> _members = new ArrayList<>();
@@ -60,6 +75,10 @@ public class PhantomSquad {
 	private long _nextBuff;
 	private long _nextCast;
 	private long _nextRaise;
+	private long _restUntil;
+	private long _nextSupply;
+	private int _buffRounds;
+	private L2Character _target;
 
 	public PhantomSquad(String name, Location camp, String where) {
 		_name = name;
@@ -191,10 +210,119 @@ public class PhantomSquad {
 		if (_members.isEmpty()) {
 			return;
 		}
+		if (now < _restUntil) {
+			// beaten and licking its wounds in town
+			recover();
+			return;
+		}
+		if (_restUntil > 0) {
+			_restUntil = 0;
+			goHome();
+		}
+		if (wiped()) {
+			retreat(now);
+			return;
+		}
 		raise(now);
 		heal(now);
 		buff(now);
-		fight();
+		supply(now);
+		catchBreath();
+		fight(now);
+	}
+
+	/** True when somebody in the party can heal the others. */
+	public boolean hasHealer() {
+		for (Phantom member : _members) {
+			if (!member.player().isDead() && (pick(member.player(), L2EffectType.HP) != null)) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	/** Shots run out after a few thousand swings, so the party fills its pouches now and then. */
+	private void supply(long now) {
+		if (now < _nextSupply) {
+			return;
+		}
+		_nextSupply = now + SUPPLY_EVERY;
+		for (Phantom member : _members) {
+			if (!member.player().isDead()) {
+				PhantomCombat.supply(member.player());
+			}
+		}
+	}
+
+	/** With no healer around, a hurt member sits out of the fight until it is patched up. */
+	private void catchBreath() {
+		if (hasHealer()) {
+			return;
+		}
+		for (Phantom member : _members) {
+			final L2PcInstance player = member.player();
+			if (player.isDead()) {
+				continue;
+			}
+			final double ratio = PhantomCombat.hpRatio(player);
+			if (!player.isSitting() && (ratio < SIT_AT)) {
+				player.getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE);
+				player.setTarget(null);
+				player.sitDown();
+			} else if (player.isSitting() && (ratio >= UP_AT)) {
+				player.standUp();
+			}
+		}
+	}
+
+	/** True when half the party or more is on the ground. */
+	public boolean wiped() {
+		final long down = _members.stream().filter(member -> member.player().isDead()).count();
+		return (_members.size() >= 2) && ((down / (double) _members.size()) >= WIPE);
+	}
+
+	/** True when everybody is up and in one piece: only then does a party go looking for a raid boss. */
+	public boolean fit() {
+		for (Phantom member : _members) {
+			if (member.player().isDead() || (PhantomCombat.hpRatio(member.player()) < 0.8)) {
+				return false;
+			}
+		}
+		return (_restUntil == 0) && !_members.isEmpty();
+	}
+
+	/** The party gives up the fight, gets its dead up and sits down in the nearest town. */
+	private void retreat(long now) {
+		_quarry = null;
+		_target = null;
+		_restUntil = now + REST_AFTER_WIPE;
+		final Location town = MapRegionManager.getInstance().getTeleToLocation(_members.get(0).player(), TeleportWhereType.TOWN);
+		for (Phantom member : _members) {
+			final L2PcInstance player = member.player();
+			if (player.isDead()) {
+				player.doRevive();
+				member.diedAt(0);
+			}
+			player.getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE);
+			player.setTarget(null);
+			player.teleToLocation(town.getX() + Rnd.get(-120, 120), town.getY() + Rnd.get(-120, 120), town.getZ(), false);
+		}
+	}
+
+	/** Sitting in town after a beating: health and mana come back before the party goes out again. */
+	private void recover() {
+		for (Phantom member : _members) {
+			final L2PcInstance player = member.player();
+			if (player.isDead()) {
+				player.doRevive();
+				member.diedAt(0);
+			}
+			if (!player.isSitting() && !player.isInCombat()) {
+				player.sitDown();
+			}
+			player.setCurrentHp(Math.min(player.getMaxHp(), player.getCurrentHp() + (player.getMaxHp() * 0.05)));
+			player.setCurrentMp(Math.min(player.getMaxMp(), player.getCurrentMp() + (player.getMaxMp() * 0.05)));
+		}
 	}
 
 	/** The party brings its dead back on the spot, the way a healer with a resurrection does. */
@@ -267,7 +395,8 @@ public class PhantomSquad {
 		if (now < _nextBuff) {
 			return;
 		}
-		_nextBuff = now + BUFF_EVERY;
+		// right after settling the party dresses fast, then keeps the buffs up every couple of minutes
+		_nextBuff = now + ((_buffRounds++ < BUFF_ROUNDS) ? 4000L : BUFF_EVERY);
 		for (Phantom member : _members) {
 			final L2PcInstance buffer = member.player();
 			if (buffer.isDead()) {
@@ -285,7 +414,15 @@ public class PhantomSquad {
 	}
 
 	/** The leader chooses what the party kills, everybody else joins in. */
-	private void fight() {
+	private void fight(long now) {
+		if ((_target != null) && _target.isDead()) {
+			// something the party brought down
+			final Phantom head = leader();
+			if (head != null) {
+				head.killed();
+			}
+			_target = null;
+		}
 		final Phantom head = leader();
 		if ((head == null) || head.player().isDead()) {
 			return;
@@ -301,16 +438,20 @@ public class PhantomSquad {
 		} else {
 			target = (leader.getTarget() instanceof L2MonsterInstance monster) && !monster.isAlikeDead() ? monster : null;
 			if (target == null) {
-				target = PhantomCombat.findTarget(leader, null);
+				if (leader.isSitting()) {
+					return;
+				}
+				target = PhantomCombat.findTarget(leader, null, hasHealer() ? 0 : CAREFUL_LEVELS);
 				if (target == null) {
 					return;
 				}
 				PhantomCombat.attack(leader, target);
 			}
 		}
+		_target = target;
 		for (Phantom member : _members) {
 			final L2PcInstance player = member.player();
-			if (player.isDead() || (player == leader) || player.isCastingNow()) {
+			if (player.isDead() || (player == leader) || player.isCastingNow() || player.isSitting()) {
 				continue;
 			}
 			if (player.calculateDistance(target, false, false) > CAMP_RADIUS) {
@@ -368,6 +509,7 @@ public class PhantomSquad {
 			member.enter(Phantom.State.HUNT, null, Long.MAX_VALUE / 2);
 		}
 		formParty();
+		_nextBuff = 0;
 	}
 
 	/** The level of the party: what its members average out at. */
