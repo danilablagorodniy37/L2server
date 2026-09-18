@@ -48,7 +48,7 @@ public class PhantomCombat {
 	/** A bot sits until it has this share of HP again. */
 	private static final double RESTED_HP = 0.85;
 	/** Levels above the bot it still dares to attack: it picks on weaker monsters, the way a player farms. */
-	private static final int MAX_LEVEL_ABOVE = -2;
+	private static final int MAX_LEVEL_ABOVE = -5;
 	/** Soulshots by grade, from no grade to S: a bot fights with shots like anybody else. */
 	private static final int[] SOULSHOTS = {
 		1835, 1463, 1464, 1465, 1466, 1467

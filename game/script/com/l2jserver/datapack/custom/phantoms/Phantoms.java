@@ -257,13 +257,17 @@ public class Phantoms {
 			ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(this::report, 5, 5, TimeUnit.MINUTES);
 		}
 		if (_brain != null) {
-			ThreadPoolManager.getInstance().executeGeneral(() -> {
+			// The model may be cold, or not running yet; the bots keep asking for it every few minutes.
+			ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(() -> {
+				if (_brain.enabled() && _brain.answered() > 0) {
+					return;
+				}
 				if (_brain.awake()) {
 					LOG.info("the bots think with {}.", _brain);
 				} else {
-					LOG.info("{} did not answer, the bots keep to their phrase book.", _brain);
+					LOG.info("{} did not answer, the bots keep to their phrase book for now.", _brain);
 				}
-			});
+			}, 5, 5 * 60, TimeUnit.SECONDS);
 		}
 	}
 
@@ -578,6 +582,11 @@ public class Phantoms {
 		if ((target instanceof L2MonsterInstance dead) && dead.isAlikeDead()) {
 			phantom.killed();
 			bot.setTarget(null);
+		}
+
+		if (phantom.supplyDue(now)) {
+			PhantomCombat.supply(bot);
+			phantom.supplied(now);
 		}
 
 		final L2ItemInstance loot = PhantomCombat.findLoot(bot);

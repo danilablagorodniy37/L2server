@@ -102,6 +102,7 @@ public class Phantom {
 	private long _diedAt;
 	private boolean _inSquad;
 	private boolean _townOnly;
+	private long _nextSupply;
 	private long _nextReaction;
 	private String _talkingTo;
 	private long _talkUntil;
@@ -286,6 +287,15 @@ public class Phantom {
 
 	public void townOnly(boolean value) {
 		_townOnly = value;
+	}
+
+	/** Shots run out after a few thousand swings: true when it is time to fill the pouch again. */
+	public boolean supplyDue(long now) {
+		return now > _nextSupply;
+	}
+
+	public void supplied(long now) {
+		_nextSupply = now + (5 * 60000L);
 	}
 
 	/** Where the bot walks around: its town square, or the hunting ground it travels to. */

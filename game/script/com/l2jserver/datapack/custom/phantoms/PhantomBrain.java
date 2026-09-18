@@ -53,6 +53,8 @@ public class PhantomBrain {
 	private final String _model;
 	private final int _words;
 	private final Duration _timeout;
+	/** How long the first question may take: the model has to be read off the disk first. */
+	private static final Duration WAKE_UP = Duration.ofSeconds(90);
 	private final Semaphore _slots;
 	private final AtomicInteger _answered = new AtomicInteger();
 	private final AtomicInteger _missed = new AtomicInteger();
@@ -118,6 +120,10 @@ public class PhantomBrain {
 	}
 
 	private String ask(String prompt) {
+		return ask(prompt, _timeout);
+	}
+
+	private String ask(String prompt, Duration timeout) {
 		final JsonObject options = new JsonObject();
 		options.addProperty("num_predict", 48);
 		options.addProperty("temperature", 0.8);
@@ -125,11 +131,13 @@ public class PhantomBrain {
 		body.addProperty("model", _model);
 		body.addProperty("prompt", prompt);
 		body.addProperty("stream", false);
+		// the model stays in memory between questions, or the first bot of the hour waits ten seconds for it
+		body.addProperty("keep_alive", "2h");
 		body.add("options", options);
 
 		try {
 			final HttpRequest request = HttpRequest.newBuilder(URI.create(_url)) //
-				.timeout(_timeout) //
+				.timeout(timeout) //
 				.header("Content-Type", "application/json") //
 				.POST(HttpRequest.BodyPublishers.ofString(body.toString())) //
 				.build();
@@ -164,9 +172,14 @@ public class PhantomBrain {
 		return line.isEmpty() ? null : line;
 	}
 
-	/** Checks the model is there; when it is not, the bots quietly keep to the phrase book. */
+	/**
+	 * Wakes the model up and keeps it in memory. Loading a model off the disk takes ten seconds or
+	 * more, far longer than a bot waits for an answer, so this one question is given a minute.
+	 * @return true when the model answered
+	 */
 	public boolean awake() {
-		_enabled = ask("say ok") != null;
+		_enabled = true;
+		_enabled = ask("say ok", WAKE_UP) != null;
 		return _enabled;
 	}
 
