@@ -839,6 +839,7 @@ def starting_equipment():
 # ---------------------------------------------------------------- phantom players (bots)
 
 PHANTOMS = DATA / "phantoms"
+SQUAD_RADIUS = 2500  # how far from their camp the standing parties find something to kill
 # Slots PhantomFacts can fill; keep in sync with its value() method.
 PHANTOM_SLOTS = {"me", "me.class", "me.level", "me.race", "town", "player", "zone", "zone.low", "zone.any", "grade",
 	"weapon", "weapon.other", "armor", "price", "raid", "raid.dead", "epic", "castle", "castle.owner", "dawn", "online", "need",
@@ -951,6 +952,72 @@ def phantom_phrases():
 	return problems
 
 
+def phantom_squads():
+	"""The standing parties of bots have a camp with monsters of their level around it (phantoms.properties)."""
+	problems = defaultdict(list)
+	config = properties("phantoms.properties")
+	squads = int(config.get("Squads", "0"))
+	size = int(config.get("SquadSize", "9"))
+	level = int(config.get("SquadLevel", "78"))
+	if squads < 0:
+		problems["Squads"].append("cannot be less than none")
+	if squads > 0:
+		if not (2 <= size <= 9):
+			problems["SquadSize"].append(f"is {size}, a party holds two to nine")
+		if not (1 <= level <= 80):
+			problems["SquadLevel"].append(f"is {level}, Interlude ends at 80")
+		camp = (int(config.get("SquadX", "0")), int(config.get("SquadY", "0")), int(config.get("SquadZ", "0")))
+		near = monsters_near(camp, SQUAD_RADIUS)
+		fitting = [m for m in near if (level - 10) <= m <= (level + 3)]
+		if len(fitting) < (size * squads) / 2:
+			problems[config.get("SquadPlace", "SquadPlace")].append(
+				f"only {len(fitting)} monsters of level {level - 10}-{level + 3} within {SQUAD_RADIUS} of the camp")
+	# the crowd splits into shopkeepers, townsfolk and hunters, and everybody has to fit
+	count = int(config.get("Count", "0"))
+	traders = int(config.get("Traders", "0"))
+	town = int(config.get("TownBots", "0"))
+	hunters = count - traders - town
+	if (traders + town) > count:
+		problems["TownBots"].append(f"{traders} traders and {town} townsfolk do not fit in {count} bots")
+	if (squads > 0) and (hunters < (squads * size)):
+		problems["Squads"].append(f"{squads} parties of {size} need more than the {hunters} bots left to hunt")
+	small = int(config.get("SmallParties", "0"))
+	if small < 0:
+		problems["SmallParties"].append("cannot be less than none")
+	if (small * 4) > hunters:
+		problems["SmallParties"].append(f"{small} groups of up to four need more than the {hunters} bots left to hunt")
+	return problems
+
+
+def monsters_near(point, radius):
+	"""Levels of the monsters this world spawns around a point."""
+	npcs = ds.h5_npcs()
+	out = []
+	for npc_id, x, y, _z in ds.h5_spawns():
+		template = npcs.get(npc_id)
+		if (template is None) or (template["type"] != "L2Monster"):
+			continue
+		if (abs(x - point[0]) < radius) and (abs(y - point[1]) < radius):
+			out.append(template["level"])
+	return out
+
+
+def hunting_html():
+	"""The GM page of hunting grounds matches data/phantoms/hunting.txt (build_hunting_html.py)."""
+	import build_hunting_html as page
+
+	problems = defaultdict(list)
+	text = page.OUT.read_text(encoding="utf-8")
+	for x, y, z, low, high, _monsters, name in page.grounds():
+		if f"admin_move_to {x} {y} {z}" not in text:
+			problems[name].append("no link with its place")
+		if name not in text:
+			problems[name].append("missing from the page")
+		if f"{low}-{high}" not in text:
+			problems[name].append("no levels shown")
+	return problems
+
+
 def phantom_config():
 	"""The towns of config/phantoms.properties exist and the hunting zones parse."""
 	problems = defaultdict(list)
@@ -968,6 +1035,18 @@ def phantom_config():
 		town = config.get("TradeTown", "").strip()
 		if town not in regions:
 			problems[town or "TradeTown"].append("no such region in data/mapregion")
+	# the small model the bots think with
+	if config.get("Llm", "False").lower() == "true":
+		if not config.get("LlmUrl", "").startswith("http"):
+			problems["LlmUrl"].append("expected the address of the model, such as http://127.0.0.1:11434/api/generate")
+		if not config.get("LlmModel", "").strip():
+			problems["LlmModel"].append("no model named")
+		if int(config.get("LlmTimeout", "0")) < 500:
+			problems["LlmTimeout"].append("a bot waits at least half a second for an answer")
+		if int(config.get("LlmSlots", "0")) < 1:
+			problems["LlmSlots"].append("at least one bot has to be allowed to think")
+		if not (4 <= int(config.get("LlmWords", "0")) <= 40):
+			problems["LlmWords"].append("a line of chat is between four and forty words")
 	for line in (PHANTOMS / "zones.txt").read_text(encoding="utf-8").splitlines():
 		parts = line.split("#")[0].split(None, 4)
 		if not parts:
@@ -1051,7 +1130,7 @@ DATAPACK_CHECKS = {f.__name__: f for f in (
 	html_multisell_links, html_buylist_links, html_teleport_links, html_quest_buttons, script_shop_calls, quest_dialog_links, quest_npcs, quest_kill_targets,
 	spawn_zones, leader_minions, loader_classes, xml_schemas,
 	shops_interlude_items, drops_interlude_items, recipes_interlude_items, manor_interlude_items, teleports_interlude, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_enchant_costs, interlude_residence_skills, interlude_npc_stats, kamael_isle, interlude_config, server_rates,
-	interlude_loaders, starting_equipment, phantom_gear, phantom_hunting, phantom_trade, phantom_phrases, phantom_config,
+	interlude_loaders, starting_equipment, phantom_gear, phantom_hunting, phantom_trade, phantom_phrases, phantom_config, phantom_squads, hunting_html,
 )}
 DATABASE_CHECKS = {"database_tables": database_tables}
 

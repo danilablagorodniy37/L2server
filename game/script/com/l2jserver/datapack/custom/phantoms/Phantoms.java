@@ -40,11 +40,14 @@ import com.l2jserver.commons.util.Rnd;
 import com.l2jserver.gameserver.ThreadPoolManager;
 import com.l2jserver.gameserver.handler.ChatHandler;
 import com.l2jserver.gameserver.instancemanager.MapRegionManager;
+import com.l2jserver.gameserver.instancemanager.RaidBossSpawnManager;
 import com.l2jserver.gameserver.ai.CtrlIntention;
 import com.l2jserver.gameserver.model.L2Object;
 import com.l2jserver.gameserver.model.L2World;
 import com.l2jserver.gameserver.model.Location;
 import com.l2jserver.gameserver.model.actor.instance.L2MonsterInstance;
+import com.l2jserver.gameserver.model.actor.instance.L2RaidBossInstance;
+import com.l2jserver.gameserver.model.base.ClassId;
 import com.l2jserver.gameserver.model.items.instance.L2ItemInstance;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jserver.gameserver.model.skills.Skill;
@@ -73,8 +76,11 @@ public class Phantoms {
 	private static final int SIGHT_RANGE = 1600;
 	private static final long SEEN_MEMORY = 5 * 60 * 1000L;
 	private static final long NEWS_MEMORY = 20 * 60 * 1000L;
+	/** Out of a hundred turns with nothing happening, how many end in a word of small talk. */
+	private static final int SMALL_TALK = 35;
 
 	private final List<Phantom> _phantoms = new ArrayList<>();
+	private final List<PhantomSquad> _squads = new ArrayList<>();
 	private final Set<Integer> _objectIds = new HashSet<>();
 	private final Map<Integer, Long> _regionChat = new HashMap<>();
 	private final Map<Integer, Long> _regionChain = new HashMap<>();
@@ -97,6 +103,16 @@ public class Phantoms {
 	private int _huntMinutes;
 	private int _traders;
 	private String _tradeTown;
+	private int _squadCount;
+	private int _squadSize;
+	private int _squadLevel;
+	private String _squadPlace;
+	private Location _squadCamp;
+	private int _smallParties;
+	private int _townBots;
+	private int _raidMinutes;
+	private int _raidEvery;
+	private final List<PhantomSquad> _elite = new ArrayList<>();
 
 	public Phantoms() {
 		final File root = server().getDatapackRoot();
@@ -134,6 +150,17 @@ public class Phantoms {
 		// Bots that keep a private store instead of wandering, and the town they trade in.
 		_traders = number("Traders", 0);
 		_tradeTown = property("TradeTown", "giran_castle_town");
+		// Standing parties of high level bots that farm one place together, and small groups of two to four.
+		_squadCount = number("Squads", 0);
+		_squadSize = number("SquadSize", 9);
+		_squadLevel = number("SquadLevel", 78);
+		_squadPlace = property("SquadPlace", "Ketra Orc Outpost");
+		_squadCamp = new Location(number("SquadX", 138161), number("SquadY", -83551), number("SquadZ", -4601));
+		_smallParties = number("SmallParties", 0);
+		// Bots that stay in the towns whatever happens, and how the parties go about raid bosses.
+		_townBots = number("TownBots", 0);
+		_raidMinutes = number("RaidMinutes", 12);
+		_raidEvery = number("RaidEvery", 30);
 		_debugChat = Boolean.parseBoolean(_config.getProperty("DebugChat", "False").trim());
 		// A small language model on this machine answers players; without it the bots keep to the phrase book.
 		if (Boolean.parseBoolean(_config.getProperty("Llm", "False").trim())) {
@@ -173,12 +200,16 @@ public class Phantoms {
 				continue;
 			}
 			final boolean trader = i < _traders;
+			final boolean townBot = !trader && (i < (_traders + _townBots));
 			final Location home = townSquare(trader ? _tradeTown : _towns[i % _towns.length]);
 			if (home == null) {
 				continue;
 			}
+			// A bot loaded from the database knows nothing until it is taught its class again.
+			PhantomFactory.teach(player);
 			enterWorld(player, home);
 			final Phantom phantom = new Phantom(player, home, _radius);
+			phantom.townOnly(townBot);
 			if (trader && _trade.openShop(player)) {
 				phantom.enter(Phantom.State.TRADE, null, Long.MAX_VALUE / 2);
 			}
@@ -193,6 +224,8 @@ public class Phantoms {
 			return;
 		}
 
+		spawnSquads(stored);
+		smallParties();
 		_news = new PhantomNews(this, this::onNews);
 		_instance = this;
 		ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(this::tick, 5, 2, TimeUnit.SECONDS);
@@ -203,6 +236,12 @@ public class Phantoms {
 			Containers.Global().addListener(new ConsumerEventListener(Containers.Global(), EventType.PLAYER_CHAT, (PlayerChat event) -> onPlayerChat(event), this));
 		}
 		Containers.Global().addListener(new ConsumerEventListener(Containers.Global(), EventType.PLAYER_PARTY_INVITE, (PlayerPartyInvite event) -> onPartyInvite(event), this));
+		if (!_squads.isEmpty()) {
+			ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(this::squadTick, 25, 1, TimeUnit.SECONDS);
+		}
+		if (!_elite.isEmpty() && (_raidEvery > 0)) {
+			ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(this::raidTick, 3, 1, TimeUnit.MINUTES);
+		}
 		final long traders = _phantoms.stream().filter(p -> p.state() == Phantom.State.TRADE).count();
 		LOG.info("{} bots in the world ({} created), {} of them trading in {}, {} phrases.", _phantoms.size(), created, traders, _tradeTown, _phrases.size());
 		if (Boolean.parseBoolean(_config.getProperty("DebugNews", "False").trim())) {
@@ -279,6 +318,15 @@ public class Phantoms {
 		if (_brain != null) {
 			LOG.info("the bot model answered {} times, the phrase book {} times.", _brain.answered(), _brain.missed());
 		}
+		if (!_squads.isEmpty()) {
+			int squadKills = 0;
+			int squadDeaths = 0;
+			for (PhantomSquad squad : _squads) {
+				squadKills += squad.kills();
+				squadDeaths += squad.deaths();
+			}
+			LOG.info("{} parties of bots hold their ground: {} kills and {} deaths between them.", _squads.size(), squadKills, squadDeaths);
+		}
 		LOG.info("bots: {} in town, {} travelling, {} hunting, {} coming back, {} trading; {} kills, {} deaths and {} adena of loot sold.",
 			states.getOrDefault(Phantom.State.TOWN, 0), states.getOrDefault(Phantom.State.TRAVEL, 0),
 			states.getOrDefault(Phantom.State.HUNT, 0), states.getOrDefault(Phantom.State.RETURN, 0),
@@ -290,7 +338,7 @@ public class Phantoms {
 		final long now = System.currentTimeMillis();
 		for (Phantom phantom : _phantoms) {
 			try {
-				if (phantom.state() == Phantom.State.TRADE) {
+				if ((phantom.state() == Phantom.State.TRADE) || phantom.inSquad()) {
 					continue;
 				}
 				if (phantom.player().isDead()) {
@@ -313,6 +361,166 @@ public class Phantoms {
 				LOG.warn("{} failed to hunt!", phantom.player().getName(), ex);
 			}
 		}
+	}
+
+	/** Every second each standing party looks after its own. */
+	private void squadTick() {
+		final long now = System.currentTimeMillis();
+		for (PhantomSquad squad : _squads) {
+			try {
+				squad.act(now);
+				squad.keepTogether();
+			} catch (Exception ex) {
+				LOG.warn("{} failed!", squad, ex);
+			}
+		}
+	}
+
+	/** Now and then a full party leaves its hunting ground for a raid boss of its size. */
+	private void raidTick() {
+		final long now = System.currentTimeMillis();
+		for (PhantomSquad squad : _elite) {
+			try {
+				if (squad.raiding() || (squad.raidUntil() > now)) {
+					if (now > squad.raidUntil()) {
+						squad.goHome();
+						squad.nextRaid(now + (_raidEvery * 60000L));
+					}
+					continue;
+				}
+				if (squad.quarry() != null) {
+					// the boss is down
+					squad.goHome();
+					squad.nextRaid(now + (_raidEvery * 60000L));
+					continue;
+				}
+				if (now < squad.nextRaid()) {
+					continue;
+				}
+				final L2RaidBossInstance boss = raidFor(squad.level());
+				if (boss == null) {
+					squad.nextRaid(now + (5 * 60000L));
+					continue;
+				}
+				squad.goRaid(boss, now + (_raidMinutes * 60000L));
+				final Phantom leader = squad.leader();
+				if ((leader != null) && _phrases.has("leaving")) {
+					say(leader, Say2.ALL, _phrases.random("leaving").replace("{zone}", boss.getName()), null, null);
+				}
+				LOG.info("{} went for {} (level {}).", squad, boss.getName(), boss.getLevel());
+			} catch (Exception ex) {
+				LOG.warn("{} failed to go raiding!", squad, ex);
+			}
+		}
+	}
+
+	/** A raid boss a party of this level can take: alive, of its own size, and no epic. */
+	private L2RaidBossInstance raidFor(int level) {
+		final List<L2RaidBossInstance> possible = new ArrayList<>();
+		for (L2RaidBossInstance boss : RaidBossSpawnManager.getInstance().getBosses().values()) {
+			if ((boss == null) || boss.isDead() || !boss.isVisible()) {
+				continue;
+			}
+			if ((boss.getLevel() > (level + 2)) || (boss.getLevel() < (level - 25))) {
+				continue;
+			}
+			possible.add(boss);
+		}
+		return possible.isEmpty() ? null : possible.get(Rnd.get(possible.size()));
+	}
+
+	/** The full parties of high level bots that hold one hunting ground. */
+	private void spawnSquads(List<Integer> stored) {
+		if (_squadCount <= 0) {
+			return;
+		}
+		final ClassId[] roster = {
+			ClassId.phoenixKnight, ClassId.cardinal, ClassId.hierophant, ClassId.swordMuse, ClassId.spectralDancer,
+			ClassId.sagittarius, ClassId.moonlightSentinel, ClassId.ghostSentinel, ClassId.duelist
+		};
+		int taken = Math.min(stored.size(), number("Count", 100));
+		for (int i = 0; i < _squadCount; i++) {
+			final PhantomSquad squad = new PhantomSquad("party " + (i + 1), _squadCamp, _squadPlace);
+			for (int seat = 0; seat < _squadSize; seat++) {
+				final ClassId classId = roster[seat % roster.length];
+				L2PcInstance player = null;
+				if (taken < stored.size()) {
+					player = L2PcInstance.load(stored.get(taken));
+					if ((player != null) && ((player.getClassId() != classId) || (player.getLevel() < _squadLevel))) {
+						player = null;
+					}
+					taken++;
+				}
+				if (player == null) {
+					player = _factory.create(classId, _squadLevel + Rnd.get(0, 2));
+				}
+				if (player == null) {
+					continue;
+				}
+				PhantomFactory.teach(player);
+				enterWorld(player, _squadCamp);
+				final Phantom phantom = new Phantom(player, _squadCamp, _radius);
+				phantom.inSquad(true);
+				phantom.chatDone(System.currentTimeMillis(), _chatInterval);
+				_phantoms.add(phantom);
+				_objectIds.add(player.getObjectId());
+				squad.add(phantom);
+			}
+			if (squad.members().isEmpty()) {
+				continue;
+			}
+			squad.settle();
+			_squads.add(squad);
+			_elite.add(squad);
+		}
+		LOG.info("{} full parties of {} hunt in {}.", _squads.size(), _squadSize, _squadPlace);
+	}
+
+	/** Small groups of two to four bots that hunt together instead of alone. */
+	private void smallParties() {
+		if (_smallParties <= 0) {
+			return;
+		}
+		final List<Phantom> free = new ArrayList<>();
+		for (Phantom phantom : _phantoms) {
+			if (!phantom.inSquad() && !phantom.townOnly() && (phantom.state() != Phantom.State.TRADE)) {
+				free.add(phantom);
+			}
+		}
+		int made = 0;
+		for (int i = 0; i < _smallParties; i++) {
+			if (free.size() < 2) {
+				break;
+			}
+			final Phantom leader = free.remove(Rnd.get(free.size()));
+			final PhantomHunting.Ground ground = _hunting.pick(leader.player().getLevel());
+			if (ground == null) {
+				continue;
+			}
+			final PhantomSquad squad = new PhantomSquad("group " + (i + 1), new Location(ground.x(), ground.y(), ground.z()), ground.name());
+			squad.add(leader);
+			leader.inSquad(true);
+			final int size = Rnd.get(2, 4);
+			for (int seat = 1; (seat < size) && !free.isEmpty(); seat++) {
+				Phantom mate = null;
+				for (Phantom candidate : free) {
+					if (Math.abs(candidate.player().getLevel() - leader.player().getLevel()) <= 5) {
+						mate = candidate;
+						break;
+					}
+				}
+				if (mate == null) {
+					break;
+				}
+				free.remove(mate);
+				mate.inSquad(true);
+				squad.add(mate);
+			}
+			squad.settle();
+			_squads.add(squad);
+			made++;
+		}
+		LOG.info("{} small groups of bots hunt together.", made);
 	}
 
 	/** One step of a fight: rest, pick a target, hit it, use a skill. */
@@ -402,6 +610,11 @@ public class Phantoms {
 
 	/** In town a bot now and then decides to go hunting. */
 	private void leaveForHunt(Phantom phantom) {
+		if (phantom.townOnly()) {
+			// this one lives in town: it walks around, trades words and never goes hunting
+			phantom.enter(Phantom.State.TOWN, null, Rnd.get(60000, 180000));
+			return;
+		}
 		// The share counts the bots that may hunt at all: the traders keep their shops whatever happens.
 		final int hunting = (int) _phantoms.stream().filter(p -> (p.state() != Phantom.State.TOWN) && (p.state() != Phantom.State.TRADE)).count();
 		final int hunters = (int) _phantoms.stream().filter(p -> p.state() != Phantom.State.TRADE).count();
@@ -451,7 +664,7 @@ public class Phantoms {
 		final PhantomNews.Item seen = _news.seenNear(phantom.player().getX(), phantom.player().getY(), SIGHT_RANGE, SEEN_MEMORY);
 		if ((seen != null) && _phrases.has("seen " + seen.kind()) && (Rnd.get(100) < 45)) {
 			_news.mention(seen);
-			say(phantom, Say2.ALL, _phrases.random("seen " + seen.kind()), null, seen);
+			sayAbout(phantom, Say2.ALL, "seen " + seen.kind(), seen);
 			return;
 		}
 		
@@ -460,7 +673,7 @@ public class Phantoms {
 		if ((news != null) && _phrases.has("news " + news.kind()) && (Rnd.get(100) < 25)) {
 			_news.mention(news);
 			final int channel = (Rnd.get(100) < 25) && regionFree(phantom, now) ? Say2.SHOUT : Say2.ALL;
-			say(phantom, channel, _phrases.random("news " + news.kind()), null, news);
+			sayAbout(phantom, channel, "news " + news.kind(), news);
 			return;
 		}
 		
@@ -481,15 +694,65 @@ public class Phantoms {
 			}
 		}
 		
-		// 4. Small talk.
+		// 4. Nothing happened. A bot in town may say a word now and then; one out hunting keeps quiet.
+		if ((phantom.state() != Phantom.State.TOWN) && (phantom.state() != Phantom.State.TRADE)) {
+			return;
+		}
 		final int roll = Rnd.get(100);
-		if ((roll < 12) && regionFree(phantom, now)) {
+		if ((roll < 12) && (phantom.state() == Phantom.State.TRADE) && regionFree(phantom, now)) {
+			// calling your wares is the point of a shop row
 			say(phantom, Say2.TRADE, _phrases.random("trade"), null, null);
-		} else if ((roll < 20) && regionFree(phantom, now)) {
+		} else if ((roll < 16) && regionFree(phantom, now)) {
 			say(phantom, Say2.SHOUT, _phrases.random("shout"), null, null);
-		} else {
+		} else if (roll < SMALL_TALK) {
 			say(phantom, Say2.ALL, _phrases.random("general"), null, null);
 		}
+	}
+	
+	/**
+	 * A line about something that just happened. The model writes it when there is one, because it can fit
+	 * the words to the event; the phrase book answers for it when there is not.
+	 * @param phantom the bot speaking
+	 * @param channel the chat channel
+	 * @param section the phrases.txt section that matches the event
+	 * @param item what happened
+	 */
+	private void sayAbout(Phantom phantom, int channel, String section, PhantomNews.Item item) {
+		final String fallback = _phrases.random(section);
+		if ((_brain == null) || !_brain.enabled() || (item == null)) {
+			say(phantom, channel, fallback, null, item);
+			return;
+		}
+		ThreadPoolManager.getInstance().executeGeneral(() -> {
+			String line = null;
+			try {
+				line = _brain.reply(situation(phantom), "You have just seen this happen: " + describe(item)
+					+ " Say one line about it in chat, as a player would.", phantom.lastAnswer());
+			} catch (Exception ex) {
+				LOG.warn("{} could not think of a line!", phantom.player().getName(), ex);
+			}
+			if (line == null) {
+				say(phantom, channel, fallback, null, item);
+				return;
+			}
+			phantom.startTalking(null, line, System.currentTimeMillis());
+			say(phantom, channel, line, null, null);
+		});
+	}
+	
+	/** What happened, in words a model can read. */
+	private static String describe(PhantomNews.Item item) {
+		final StringBuilder out = new StringBuilder(item.kind().replace('_', ' '));
+		if ((item.subject() != null) && !item.subject().isBlank()) {
+			out.append(", ").append(item.subject());
+		}
+		if ((item.object() != null) && !item.object().isBlank()) {
+			out.append(" and ").append(item.object());
+		}
+		if ((item.extra() != null) && !item.extra().isBlank()) {
+			out.append(" (").append(item.extra()).append(')');
+		}
+		return out.append('.').toString();
 	}
 	
 	private static String topic(PhantomNews.Item news, PhantomNews.Item seen) {

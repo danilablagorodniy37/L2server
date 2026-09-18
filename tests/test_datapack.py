@@ -281,3 +281,53 @@ def test_server_rates_reports_multiplied_amounts(tmp_path, monkeypatch):
 	assert "rates.properties DeathDropAmountMultiplier" in problems, problems
 	assert "rates.properties UseQuestRewardMultipliers" in problems, problems
 	assert "rates.properties RateXp" not in problems, problems
+
+
+def test_phantom_squads_reports_a_camp_without_monsters(tmp_path, monkeypatch):
+	"""A party camped where nothing spawns would stand around doing nothing."""
+	(tmp_path / "phantoms.properties").write_text(
+		"Count = 300\nSquads = 4\nSquadSize = 9\nSquadLevel = 78\n"
+		"SquadPlace = Nowhere\nSquadX = 0\nSquadY = 0\nSquadZ = 0\nSmallParties = 20\n", encoding="utf-8")
+	monkeypatch.setattr(checks, "CONFIG", tmp_path)
+
+	problems = checks.phantom_squads()
+
+	assert "Nowhere" in problems, problems
+
+
+def test_phantom_squads_reports_more_groups_than_bots(tmp_path, monkeypatch):
+	"""Twenty groups of four cannot be cut out of ten bots."""
+	(tmp_path / "phantoms.properties").write_text(
+		"Count = 10\nTraders = 0\nTownBots = 0\nSquads = 0\nSmallParties = 20\n", encoding="utf-8")
+	monkeypatch.setattr(checks, "CONFIG", tmp_path)
+
+	problems = checks.phantom_squads()
+
+	assert "SmallParties" in problems, problems
+
+
+def test_hunting_html_reports_a_ground_without_a_link(tmp_path, monkeypatch):
+	"""A ground missing from the GM page is a ground the GM cannot fly to."""
+	import build_hunting_html as page
+	out = tmp_path / "HuntingGrounds.htm"
+	out.write_text("<html><body>Cruma Tower 30-49</body></html>", encoding="utf-8")
+	monkeypatch.setattr(page, "OUT", out)
+
+	problems = checks.hunting_html()
+
+	assert problems, "every ground of hunting.txt should be reported as missing"
+	assert any("no link with its place" in reason for reasons in problems.values() for reason in reasons), problems
+
+
+def test_phantom_squads_reports_a_crowd_that_does_not_fit(tmp_path, monkeypatch):
+	"""More shopkeepers and townsfolk than bots would leave nobody to hunt."""
+	(tmp_path / "phantoms.properties").write_text(
+		"Count = 100\nTraders = 40\nTownBots = 100\nSquads = 4\nSquadSize = 9\n"
+		"SquadLevel = 78\nSquadPlace = Ketra\nSquadX = 138161\nSquadY = -83551\nSquadZ = -4601\n"
+		"SmallParties = 0\n", encoding="utf-8")
+	monkeypatch.setattr(checks, "CONFIG", tmp_path)
+
+	problems = checks.phantom_squads()
+
+	assert "TownBots" in problems, problems
+	assert "Squads" in problems, problems

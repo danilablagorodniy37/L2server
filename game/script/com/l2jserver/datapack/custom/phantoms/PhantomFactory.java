@@ -37,7 +37,11 @@ import com.l2jserver.gameserver.enums.Race;
 import com.l2jserver.gameserver.model.actor.appearance.PcAppearance;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jserver.gameserver.model.base.ClassId;
+import com.l2jserver.gameserver.data.xml.impl.SkillTreesData;
+import com.l2jserver.gameserver.datatables.SkillData;
+import com.l2jserver.gameserver.model.L2SkillLearn;
 import com.l2jserver.gameserver.model.items.L2Item;
+import com.l2jserver.gameserver.model.skills.Skill;
 import com.l2jserver.gameserver.model.items.instance.L2ItemInstance;
 
 /**
@@ -104,8 +108,17 @@ public class PhantomFactory {
 	}
 
 	public L2PcInstance create() {
-		final int level = Rnd.get(_minLevel, _maxLevel);
-		final ClassId classId = randomClass(level);
+		return create(null, Rnd.get(_minLevel, _maxLevel));
+	}
+
+	/**
+	 * A new bot of a given trade, for a party that needs a healer rather than whoever comes along.
+	 * @param wanted the class it should be, null for any class of its level
+	 * @param level the level it starts at
+	 * @return the character, or null when no name was free
+	 */
+	public L2PcInstance create(ClassId wanted, int level) {
+		final ClassId classId = (wanted != null) ? wanted : randomClass(level);
 		final boolean female = (classId.getRace() == Race.KAMAEL) ? FEMALE_KAMAEL.contains(classId.getId()) : Rnd.nextBoolean();
 		final var appearance = new PcAppearance((byte) Rnd.get(3), (byte) Rnd.get(3), (byte) Rnd.get(3), female);
 		final String name = randomName();
@@ -119,12 +132,34 @@ public class PhantomFactory {
 		}
 
 		player.addExpAndSp(ExperienceData.getInstance().getExpForLevel(level), 0);
+		teach(player);
 		player.setCurrentHpMp(player.getMaxHp(), player.getMaxMp());
 		player.setCurrentCp(player.getMaxCp());
 		equip(player, classId, level);
 		player.storeMe();
 		player.getInventory().updateDatabase();
 		return player;
+	}
+
+	/**
+	 * Teaches a bot everything its class knows at its level: without it a healer cannot heal,
+	 * a prophet cannot buff and a fighter swings its weapon and nothing else.
+	 * @param player the bot
+	 * @return how many skills it learned
+	 */
+	public static int teach(L2PcInstance player) {
+		int learned = 0;
+		for (L2SkillLearn learn : SkillTreesData.getInstance().getCompleteClassSkillTree(player.getClassId()).values()) {
+			if (learn.getGetLevel() > player.getLevel()) {
+				continue;
+			}
+			final Skill skill = SkillData.getInstance().getSkill(learn.getSkillId(), learn.getSkillLevel());
+			if ((skill != null) && (player.getKnownSkill(skill.getId()) == null)) {
+				player.addSkill(skill, false);
+				learned++;
+			}
+		}
+		return learned;
 	}
 
 	private ClassId randomClass(int level) {

@@ -99,6 +99,9 @@ public class Phantom {
 	private int _kills;
 	private int _deaths;
 	private long _earned;
+	private long _diedAt;
+	private boolean _inSquad;
+	private boolean _townOnly;
 	private long _nextReaction;
 	private String _talkingTo;
 	private long _talkUntil;
@@ -256,6 +259,33 @@ public class Phantom {
 	
 	public void earned(long adena) {
 		_earned += adena;
+	}
+
+	/** When the bot fell, so its party knows how long it has been lying there. */
+	public long diedAt() {
+		return _diedAt;
+	}
+
+	public void diedAt(long when) {
+		_diedAt = when;
+	}
+
+	/** True when the bot hunts in a standing party and not on its own. */
+	public boolean inSquad() {
+		return _inSquad;
+	}
+
+	public void inSquad(boolean value) {
+		_inSquad = value;
+	}
+
+	/** True for a bot that lives in the towns and never goes out to hunt. */
+	public boolean townOnly() {
+		return _townOnly;
+	}
+
+	public void townOnly(boolean value) {
+		_townOnly = value;
 	}
 
 	/** Where the bot walks around: its town square, or the hunting ground it travels to. */
