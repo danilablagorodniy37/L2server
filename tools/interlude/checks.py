@@ -887,7 +887,7 @@ def phantom_hunting():
 		if int(count) < hunting.MIN_MONSTERS:
 			problems[name].append(f"only {count} monsters")
 	for level in range(20, 81):
-		if not [g for g in grounds if (g[0] - 2) <= level <= (g[1] + 5)]:
+		if not [g for g in grounds if g[0] <= level <= (g[1] + 8)]:
 			problems[f"level {level}"].append("no hunting ground")
 	return problems
 
@@ -940,6 +940,9 @@ def phantom_phrases():
 		kind = name.split(" ", 1)
 		if (kind[0] in ("seen", "news")) and ((len(kind) < 2) or (kind[1] not in PHANTOM_KINDS)):
 			problems[f"[{name}]"].append("unknown event kind, see PhantomNews")
+		elif kind[0] == "party":
+			if (len(kind) < 2) or (kind[1] not in ("yes", "no")):
+				problems[f"[{name}]"].append("a party section is either 'party yes' or 'party no'")
 		elif kind[0] not in ("general", "trade", "shout", "dialog", "reply", "seen", "news", "chain", "leaving", "returning", "died"):
 			problems[f"[{name}]"].append("unknown section")
 	for required in ("general", "trade", "shout", "dialog"):

@@ -391,7 +391,9 @@
 		<table name="#reuse"> 0.01 0.01 0.01 1 </table>
 		<table name="#runSpd"> 2 3 3 1 </table>
 		<set name="abnormalLvl" val="1" />
-		<set name="abnormalTime" val="10" />
+		<!-- GM speed stays on until //gmspeed 0: retail gives it 10 seconds, which is of no use to a GM. -->
+		<set name="abnormalTime" val="31536000" />
+		<set name="stayAfterDeath" val="true" />
 		<set name="abnormalType" val="ATTACK_TIME_DOWN" />
 		<set name="affectScope" val="SINGLE" />
 		<set name="effectPoint" val="1" />

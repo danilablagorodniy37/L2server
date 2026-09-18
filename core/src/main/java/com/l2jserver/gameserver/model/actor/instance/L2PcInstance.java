@@ -475,6 +475,9 @@ public final class L2PcInstance extends L2Playable {
 	private boolean _inCrystallize;
 	private boolean _inCraftMode;
 	private long _offlineShopStart = 0;
+	
+	/** True for a bot: a character the server plays itself. */
+	private boolean _phantom = false;
 	private Transform _transformation;
 	private volatile Map<Integer, Skill> _transformSkills;
 	/** True if the L2PcInstance is sitting */
@@ -5035,6 +5038,15 @@ public final class L2PcInstance extends L2Playable {
 	 * Select the Warehouse to be used in next activity.
 	 * @param partner
 	 */
+	/** A character played by the server itself: it has no client, so nothing can be asked of it in a window. */
+	public boolean isPhantom() {
+		return _phantom;
+	}
+
+	public void setPhantom(boolean phantom) {
+		_phantom = phantom;
+	}
+
 	public void onTransactionRequest(L2PcInstance partner) {
 		_requestExpireTime = GameTimeController.getInstance().getGameTicks() + (REQUEST_TIMEOUT * GameTimeController.TICKS_PER_SECOND);
 		partner.setActiveRequester(this);

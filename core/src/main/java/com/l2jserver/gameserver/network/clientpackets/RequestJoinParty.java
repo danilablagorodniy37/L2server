@@ -28,6 +28,8 @@ import com.l2jserver.gameserver.model.BlockList;
 import com.l2jserver.gameserver.model.L2Party;
 import com.l2jserver.gameserver.model.L2World;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
+import com.l2jserver.gameserver.model.events.EventDispatcher;
+import com.l2jserver.gameserver.model.events.impl.character.player.PlayerPartyInvite;
 import com.l2jserver.gameserver.network.SystemMessageId;
 import com.l2jserver.gameserver.network.serverpackets.ActionFailed;
 import com.l2jserver.gameserver.network.serverpackets.AskJoinParty;
@@ -64,7 +66,7 @@ public final class RequestJoinParty extends L2GameClientPacket {
 			return;
 		}
 		
-		if ((target.getClient() == null) || target.getClient().isDetached()) {
+		if (!target.isPhantom() && ((target.getClient() == null) || target.getClient().isDetached())) {
 			requestor.sendMessage("Player is in offline mode.");
 			return;
 		}
@@ -128,6 +130,16 @@ public final class RequestJoinParty extends L2GameClientPacket {
 		sm.addCharName(target);
 		requestor.sendPacket(sm);
 		
+		if (target.isPhantom()) {
+			// A bot has no window to answer in: whoever plays it decides, and answers in a moment.
+			final PartyDistributionType partyDistributionType = PartyDistributionType.findById(_partyDistributionTypeId);
+			if (!requestor.isInParty() && (partyDistributionType != null)) {
+				requestor.setPartyDistributionType(partyDistributionType);
+			}
+			EventDispatcher.getInstance().notifyEventAsync(new PlayerPartyInvite(target, requestor));
+			return;
+		}
+
 		if (!requestor.isInParty()) {
 			createNewParty(target, requestor);
 		} else {

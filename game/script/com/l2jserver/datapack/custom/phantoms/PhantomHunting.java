@@ -45,7 +45,8 @@ public class PhantomHunting {
 	public record Ground(int x, int y, int z, int minLevel, int maxLevel, int monsters, String name) {
 		/** A bot fights monsters of about its own level: too low is a waste of time, too high is a death. */
 		public boolean fits(int level) {
-			return (level >= (minLevel - 2)) && (level <= (maxLevel + 5));
+			// never below the monsters of the ground, and not so far above that there is nothing to kill
+			return (level >= minLevel) && (level <= (maxLevel + 8));
 		}
 	}
 

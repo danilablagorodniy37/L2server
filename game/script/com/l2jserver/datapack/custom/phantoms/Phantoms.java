@@ -51,6 +51,7 @@ import com.l2jserver.gameserver.model.skills.Skill;
 import com.l2jserver.gameserver.model.events.Containers;
 import com.l2jserver.gameserver.model.events.EventType;
 import com.l2jserver.gameserver.model.events.impl.character.player.PlayerChat;
+import com.l2jserver.gameserver.model.events.impl.character.player.PlayerPartyInvite;
 import com.l2jserver.gameserver.model.events.listeners.ConsumerEventListener;
 import com.l2jserver.gameserver.network.L2GameClient;
 import com.l2jserver.gameserver.network.clientpackets.Say2;
@@ -85,6 +86,7 @@ public class Phantoms {
 	private PhantomFactory _factory;
 	private PhantomHunting _hunting;
 	private PhantomTrade _trade;
+	private PhantomBrain _brain;
 	private String[] _towns;
 	private int _chatInterval;
 	private int _regionChatInterval;
@@ -133,6 +135,11 @@ public class Phantoms {
 		_traders = number("Traders", 0);
 		_tradeTown = property("TradeTown", "giran_castle_town");
 		_debugChat = Boolean.parseBoolean(_config.getProperty("DebugChat", "False").trim());
+		// A small language model on this machine answers players; without it the bots keep to the phrase book.
+		if (Boolean.parseBoolean(_config.getProperty("Llm", "False").trim())) {
+			_brain = new PhantomBrain(property("LlmUrl", "http://127.0.0.1:11434/api/generate"), property("LlmModel", "llama3.2"),
+				number("LlmTimeout", 4000), number("LlmSlots", 3), number("LlmWords", 14));
+		}
 
 		final int count = number("Count", 100);
 		ThreadPoolManager.getInstance().scheduleGeneral(() -> spawnAll(count), number("StartDelay", 30), TimeUnit.SECONDS);
@@ -195,6 +202,7 @@ public class Phantoms {
 		if (_replyToPlayers) {
 			Containers.Global().addListener(new ConsumerEventListener(Containers.Global(), EventType.PLAYER_CHAT, (PlayerChat event) -> onPlayerChat(event), this));
 		}
+		Containers.Global().addListener(new ConsumerEventListener(Containers.Global(), EventType.PLAYER_PARTY_INVITE, (PlayerPartyInvite event) -> onPartyInvite(event), this));
 		final long traders = _phantoms.stream().filter(p -> p.state() == Phantom.State.TRADE).count();
 		LOG.info("{} bots in the world ({} created), {} of them trading in {}, {} phrases.", _phantoms.size(), created, traders, _tradeTown, _phrases.size());
 		if (Boolean.parseBoolean(_config.getProperty("DebugNews", "False").trim())) {
@@ -206,6 +214,15 @@ public class Phantoms {
 		}, 90, TimeUnit.SECONDS);
 		if (_huntShare > 0) {
 			ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(this::report, 5, 5, TimeUnit.MINUTES);
+		}
+		if (_brain != null) {
+			ThreadPoolManager.getInstance().executeGeneral(() -> {
+				if (_brain.awake()) {
+					LOG.info("the bots think with {}.", _brain);
+				} else {
+					LOG.info("{} did not answer, the bots keep to their phrase book.", _brain);
+				}
+			});
 		}
 	}
 
@@ -219,6 +236,7 @@ public class Phantoms {
 	}
 
 	private void enterWorld(L2PcInstance player, Location home) {
+		player.setPhantom(true);
 		final L2GameClient client = new L2GameClient(null);
 		client.setDetached(true);
 		client.setActiveChar(player);
@@ -257,6 +275,9 @@ public class Phantoms {
 			kills += phantom.kills();
 			deaths += phantom.deaths();
 			earned += phantom.earned();
+		}
+		if (_brain != null) {
+			LOG.info("the bot model answered {} times, the phrase book {} times.", _brain.answered(), _brain.missed());
 		}
 		LOG.info("bots: {} in town, {} travelling, {} hunting, {} coming back, {} trading; {} kills, {} deaths and {} adena of loot sold.",
 			states.getOrDefault(Phantom.State.TOWN, 0), states.getOrDefault(Phantom.State.TRAVEL, 0),
@@ -545,6 +566,36 @@ public class Phantoms {
 		}
 	}
 
+	/** A player asked a bot into a party: it thinks it over for a few seconds and answers. */
+	private void onPartyInvite(PlayerPartyInvite event) {
+		final L2PcInstance requestor = event.requestor();
+		final Phantom phantom = byObjectId(event.player());
+		if ((phantom == null) || (requestor == null)) {
+			return;
+		}
+		// a bot keeping a shop in Giran is not going anywhere
+		final boolean busy = phantom.state() == Phantom.State.TRADE;
+		ThreadPoolManager.getInstance().scheduleGeneral(() -> {
+			try {
+				if (PhantomParty.accepts(phantom.player(), requestor, busy) && PhantomParty.join(phantom.player(), requestor)) {
+					sayTo(phantom, requestor, "party yes");
+				} else {
+					PhantomParty.decline(requestor);
+					sayTo(phantom, requestor, "party no");
+				}
+			} catch (Exception ex) {
+				LOG.warn("{} failed to answer a party invitation!", phantom.player().getName(), ex);
+			}
+		}, Rnd.get(PhantomParty.ANSWER_MIN, PhantomParty.ANSWER_MAX));
+	}
+
+	/** A line straight to the player who asked something of the bot. */
+	private void sayTo(Phantom phantom, L2PcInstance player, String section) {
+		if (_phrases.has(section)) {
+			say(phantom, Say2.TELL, _phrases.random(section), player.getName(), null, player.getName());
+		}
+	}
+
 	private void onPlayerChat(PlayerChat event) {
 		final L2PcInstance player = event.player();
 		if ((player == null) || (_objectIds.contains(player.getObjectId()) && !_debugChat)) {
@@ -645,15 +696,45 @@ public class Phantoms {
 			return;
 		}
 
-		final String answer = line;
-		phantom.startTalking(player.getName(), answer, now);
+		final String fallback = line;
 		phantom.delayChat(20000);
 		if (direct) {
 			phantom.lookAt(player);
 		}
-		// A short pause, as if the bot were typing.
 		final String tellTo = (channel == Say2.TELL) ? player.getName() : null;
-		ThreadPoolManager.getInstance().scheduleGeneral(() -> say(phantom, channel, answer, player.getName(), null, tellTo), Rnd.get(1200, 3500));
+		final boolean think = (_brain != null) && _brain.enabled() && direct;
+		// A short pause, as if the bot were typing; the model, when there is one, thinks in that time.
+		ThreadPoolManager.getInstance().scheduleGeneral(() -> {
+			String answer = null;
+			if (think) {
+				try {
+					answer = _brain.reply(situation(phantom), text, phantom.lastAnswer());
+				} catch (Exception ex) {
+					LOG.warn("{} could not think of an answer!", phantom.player().getName(), ex);
+				}
+			}
+			if (answer == null) {
+				answer = fallback;
+			}
+			phantom.startTalking(player.getName(), answer, System.currentTimeMillis());
+			say(phantom, channel, answer, player.getName(), null, tellTo);
+		}, Rnd.get(1200, 3500));
+	}
+
+	/** Who the bot is and what it is doing, the way it would tell a player. */
+	private String situation(Phantom phantom) {
+		final L2PcInstance bot = phantom.player();
+		final String job = bot.getClassId().name().replace('_', ' ').toLowerCase(Locale.ROOT);
+		final String where = (phantom.ground() != null) ? phantom.ground().name() : MapRegionManager.getInstance().getClosestTownName(bot);
+		final String doing = switch (phantom.state()) {
+			case TOWN -> "You are standing in " + where + ", resting between hunts.";
+			case TRAVEL -> "You are on your way to " + where + " to hunt.";
+			case HUNT -> "You are hunting monsters in " + where + ".";
+			case RETURN -> "You are walking back to town from " + where + ".";
+			case TRADE -> "You sit in Giran with a private store, selling gear.";
+		};
+		return "You are " + bot.getName() + ", a level " + bot.getLevel() + " " + job
+			+ " playing on a Lineage 2 Interlude server with x44 rates. " + doing;
 	}
 
 	/** Right after something happens, a bot or two who saw it say something. */

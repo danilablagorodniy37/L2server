@@ -42,13 +42,13 @@ public class PhantomCombat {
 	/** Monsters further away than this are not worth walking to. */
 	private static final int SEARCH_RADIUS = 1200;
 	/** Below this share of HP the bot backs off and sits down. */
-	private static final double RETREAT_HP = 0.35;
+	private static final double RETREAT_HP = 0.5;
 	/** Below this share of HP the bot goes home. */
-	private static final double FLEE_HP = 0.15;
+	private static final double FLEE_HP = 0.25;
 	/** A bot sits until it has this share of HP again. */
 	private static final double RESTED_HP = 0.85;
-	/** Levels above the bot it still dares to attack. */
-	private static final int MAX_LEVEL_ABOVE = 3;
+	/** Levels above the bot it still dares to attack: it picks on its own kind, not on stronger ones. */
+	private static final int MAX_LEVEL_ABOVE = 0;
 	/** How far a bot walks for something lying on the ground. */
 	private static final int LOOT_RADIUS = 700;
 	/** How close it has to stand to pick it up. */
