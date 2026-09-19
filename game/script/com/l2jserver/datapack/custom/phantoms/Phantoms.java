@@ -105,6 +105,8 @@ public class Phantoms {
 	private int _huntShare;
 	private int _huntMinutes;
 	private int _traders;
+	private int _buyers;
+	private int _restockMinutes;
 	private String _tradeTown;
 	/** A place where a number of standing parties of bots camp. */
 	private record Camp(int parties, int size, int level, Location where, String name) {
@@ -154,6 +156,9 @@ public class Phantoms {
 		// Bots that keep a private store instead of wandering, and the town they trade in.
 		_traders = number("Traders", 0);
 		_tradeTown = property("TradeTown", "giran_castle_town");
+		// How many of the shopkeepers buy instead of sell, and how often a store gets new goods.
+		_buyers = number("Buyers", 0);
+		_restockMinutes = number("RestockMinutes", 20);
 		// Standing parties of high level bots that farm one place together, and small groups of two to four.
 		readCamps();
 		_smallParties = number("SmallParties", 0);
@@ -230,8 +235,13 @@ public class Phantoms {
 			enterWorld(player, home);
 			final Phantom phantom = new Phantom(player, home, _radius);
 			phantom.townOnly(townBot);
-			if (trader && _trade.openShop(player)) {
-				phantom.enter(Phantom.State.TRADE, null, Long.MAX_VALUE / 2);
+			if (trader) {
+				// the first few of the shopkeepers buy gear, the rest sell it
+				final boolean buying = i < _buyers;
+				if (buying ? _trade.openBuyShop(player) : _trade.openShop(player)) {
+					phantom.buying(buying);
+					phantom.enter(Phantom.State.TRADE, null, Long.MAX_VALUE / 2);
+				}
 			}
 			// Spread the first lines over one chat interval instead of all at once.
 			phantom.chatDone(System.currentTimeMillis(), _chatInterval);
@@ -260,6 +270,9 @@ public class Phantoms {
 		Containers.Global().addListener(new ConsumerEventListener(Containers.Global(), EventType.PLAYER_TRADE_REQUEST, (PlayerTradeRequest event) -> onTradeRequest(event), this));
 		if (!_squads.isEmpty()) {
 			ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(this::squadTick, 25, 1, TimeUnit.SECONDS);
+		}
+		if ((_traders > 0) && (_restockMinutes > 0)) {
+			ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(this::restockTick, 2, 2, TimeUnit.MINUTES);
 		}
 		if (!_elite.isEmpty() && (_raidEvery > 0)) {
 			ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(this::raidTick, 3, 1, TimeUnit.MINUTES);
@@ -388,6 +401,28 @@ public class Phantoms {
 				}
 			} catch (Exception ex) {
 				LOG.warn("{} failed to hunt!", phantom.player().getName(), ex);
+			}
+		}
+	}
+
+	/** A store that has stood a while, or sold out, gets new goods. */
+	private void restockTick() {
+		final long now = System.currentTimeMillis();
+		for (Phantom phantom : _phantoms) {
+			if (phantom.state() != Phantom.State.TRADE) {
+				continue;
+			}
+			final L2PcInstance bot = phantom.player();
+			final boolean empty = phantom.buying() ? (bot.getBuyList().getItemCount() == 0) : (bot.getSellList().getItemCount() == 0);
+			if (!empty && !phantom.restockDue(now, _restockMinutes)) {
+				continue;
+			}
+			try {
+				if (_trade.restock(bot, phantom.buying())) {
+					phantom.restocked(now);
+				}
+			} catch (Exception ex) {
+				LOG.warn("{} could not fill its shop!", bot.getName(), ex);
 			}
 		}
 	}

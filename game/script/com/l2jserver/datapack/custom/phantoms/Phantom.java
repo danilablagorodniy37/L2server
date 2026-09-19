@@ -103,6 +103,8 @@ public class Phantom {
 	private boolean _inSquad;
 	private boolean _townOnly;
 	private long _nextSupply;
+	private long _nextRestock;
+	private boolean _buying;
 	private long _nextReaction;
 	private String _talkingTo;
 	private long _talkUntil;
@@ -296,6 +298,24 @@ public class Phantom {
 
 	public void supplied(long now) {
 		_nextSupply = now + 60000L;
+	}
+
+	/** True for a shopkeeper that buys gear instead of selling it. */
+	public boolean buying() {
+		return _buying;
+	}
+
+	public void buying(boolean value) {
+		_buying = value;
+	}
+
+	/** True when the shop has stood with the same goods long enough. */
+	public boolean restockDue(long now, int minutes) {
+		return now > (_nextRestock + (minutes * 60000L));
+	}
+
+	public void restocked(long now) {
+		_nextRestock = now;
 	}
 
 	/** Where the bot walks around: its town square, or the hunting ground it travels to. */

@@ -761,7 +761,10 @@ def interlude_config():
 		"chronicle.properties": {"EnableInstances": "False", "EnableGracia": "False", "EnableHellbound": "False",
 			"EnableTerritoryWar": "False", "EnableAttributes": "False"},
 		"vitality.properties": {"Enabled": "False"},
-		"general.properties": {"AllowMail": "False", "AllowAttachments": "False", "EnableBlockCheckerEvent": "False",
+		# Master access for every character was a leftover of the working H5 server: the GM account
+		# gets its level from the gm_blago1 trigger in the database, and the bots need none.
+		"general.properties": {"EverybodyHasAdminRights": "False",
+			"AllowMail": "False", "AllowAttachments": "False", "EnableBlockCheckerEvent": "False",
 			"EnableBotReportButton": "False"},
 		"olympiad.properties": {"CompetitionRewardItem": "6651"},
 		# H5 gives every NPC a random weapon glow (+4..+21); Interlude NPCs have plain weapons.

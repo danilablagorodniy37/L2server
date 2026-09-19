@@ -31,6 +31,8 @@ import com.l2jserver.gameserver.model.TradeItem;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jserver.gameserver.model.itemcontainer.Inventory;
 import com.l2jserver.gameserver.model.items.instance.L2ItemInstance;
+import com.l2jserver.gameserver.model.TradeList;
+import com.l2jserver.gameserver.network.serverpackets.PrivateStoreMsgBuy;
 import com.l2jserver.gameserver.network.serverpackets.PrivateStoreMsgSell;
 import com.l2jserver.gameserver.util.Broadcast;
 
@@ -47,6 +49,16 @@ public class PhantomTrade {
 	private static final int SHOP_SIZE = 4;
 	/** With this many slots taken the bot has hunted enough and walks back to sell. */
 	public static final int BAG_LIMIT = 60;
+	/** How many kinds of goods a buying bot asks for. */
+	private static final int BUY_SIZE = 3;
+	/** What a buyer offers: a share of what the shops charge. */
+	private static final double BUY_RATE = 0.4;
+	/** Spending money a buying bot keeps on hand. */
+	private static final long PURSE = 20000000;
+	/** Titles of the buying stores. */
+	private static final String[] BUYING = {
+		"buying %s", "wtb %s", "buying gear", "wtb any grade"
+	};
 	/** Shop titles, so the row of stores does not read the same. */
 	private static final String[] TITLES = {
 		"cheap gear", "buy now", "good price", "%s", "selling %s", "%s cheap", "best price in town"
@@ -106,6 +118,58 @@ public class PhantomTrade {
 		bot.broadcastUserInfo();
 		Broadcast.toSelfAndKnownPlayers(bot, new PrivateStoreMsgSell(bot));
 		return true;
+	}
+
+	/**
+	 * Opens a buying store: the bot offers adena for gear, so a player has somewhere to sell what drops.
+	 * @param bot the shop keeper
+	 * @return true when the store is open
+	 */
+	public boolean openBuyShop(L2PcInstance bot) {
+		if (_goods.isEmpty()) {
+			return false;
+		}
+		final TradeList list = bot.getBuyList();
+		list.clear();
+		String first = null;
+		long total = 0;
+		for (int i = 0; i < BUY_SIZE; i++) {
+			final Good good = _goods.get(Rnd.get(_goods.size()));
+			final long price = Math.max(1, (long) (good.price() * BUY_RATE));
+			list.addItemByItemId(good.itemId(), 1, price);
+			total += price;
+			if (first == null) {
+				first = good.name();
+			}
+		}
+		if (list.getItemCount() == 0) {
+			return false;
+		}
+		// a store nobody can pay from closes itself, so the purse is filled first
+		if (bot.getAdena() < (total + PURSE)) {
+			bot.addAdena("PhantomBuy", (total + PURSE) - bot.getAdena(), null, false);
+		}
+		list.setTitle(String.format(BUYING[Rnd.get(BUYING.length)], first).trim());
+		bot.setPrivateStoreType(PrivateStoreType.BUY);
+		bot.sitDown();
+		bot.broadcastUserInfo();
+		Broadcast.toSelfAndKnownPlayers(bot, new PrivateStoreMsgBuy(bot));
+		return true;
+	}
+
+	/**
+	 * Puts fresh goods in a store that has been standing for a while or has sold out.
+	 * @param bot the shop keeper
+	 * @param buying true when this one buys instead of selling
+	 * @return true when the store is open again
+	 */
+	public boolean restock(L2PcInstance bot, boolean buying) {
+		bot.setPrivateStoreType(PrivateStoreType.NONE);
+		if (buying) {
+			return openBuyShop(bot);
+		}
+		bot.getSellList().clear();
+		return openShop(bot);
 	}
 
 	/**
