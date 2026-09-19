@@ -17,5 +17,9 @@ if exist "%CLIENT%" (
 	robocopy "%CLIENT%" "%TARGET%\client-system-%STAMP%" /E /NFL /NDL /NJH /NJS /NP >nul
 )
 
+rem keep the last week and no more: a dump a day of six megabytes, a client folder of two hundred
+powershell -NoProfile -Command "Get-ChildItem '%TARGET%' -Filter 'l2jdb_custom-*.sql' | Sort-Object Name -Descending | Select-Object -Skip 7 | Remove-Item -Force"
+powershell -NoProfile -Command "Get-ChildItem '%TARGET%' -Directory -Filter 'client-system-*' | Sort-Object Name -Descending | Select-Object -Skip 3 | Remove-Item -Recurse -Force"
+
 echo Done. What is in git needs no backup: game, core, tools and the plan.
 endlocal

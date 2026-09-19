@@ -32,9 +32,12 @@
 поэтому одновременно можно запускать только одну из сборок.
 
 ## Резервные копии
-`toolsackup.bat` — дамп базы `l2jdb_custom` и копия `system` клиента в `S:\Programming\L2serverackups`
+`toolsackup.bat` — дамп базы `l2jdb_custom` и копия `system` клиента в `S:\Programming\L2serverackups`, старые копии подчищаются (7 дампов, 3 папки клиента)
 (git держит всё остальное: `game`, `core`, `tools`, план). Клиентские файлы, которые правились руками,
 лежат рядом с оригиналами: `L2.ini.orig`, `ServerName-*.orig`, `*.bak` из поставки.
+
+`tools\interlude\clean_phantoms.py` — удаляет персонажей ботов сверх `Count` вместе с их предметами
+(запускать с остановленным сервером, `--dry-run` показывает, что уйдёт).
 
 ## Тесты
 `tools\test.bat` — проверки датапака, скриптов `tools/interlude` и базы (pytest, ~20 с).
