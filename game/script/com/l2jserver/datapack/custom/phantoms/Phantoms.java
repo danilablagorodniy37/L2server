@@ -1244,6 +1244,65 @@ public class Phantoms {
 	/**
 	 * @return true when this player is a bot; the chat handlers use it, a bot has no client but reads messages
 	 */
+	/**
+	 * The camp of a standing party, for the GM page.
+	 * @param name the name of the party, such as 3.2
+	 * @return where it camps, or null when there is no such party
+	 */
+	public static Location partyCamp(String name) {
+		if (_instance == null) {
+			return null;
+		}
+		for (PhantomSquad squad : _instance._squads) {
+			if (squad.name().equalsIgnoreCase(name) || squad.name().equalsIgnoreCase("party " + name)) {
+				return squad.camp();
+			}
+		}
+		return null;
+	}
+
+	/**
+	 * What the bots are doing right now, as a page for the GM window.
+	 * @return the html
+	 */
+	public static String page() {
+		final StringBuilder out = new StringBuilder("<html><title>Bots</title><body>");
+		if (_instance == null) {
+			return out.append("The bots are not running.</body></html>").toString();
+		}
+		final Map<Phantom.State, Integer> states = new HashMap<>();
+		int kills = 0;
+		int deaths = 0;
+		long earned = 0;
+		for (Phantom phantom : _instance._phantoms) {
+			states.merge(phantom.state(), 1, Integer::sum);
+			kills += phantom.kills();
+			deaths += phantom.deaths();
+			earned += phantom.earned();
+		}
+		out.append("<center><table width=280><tr><td align=center>");
+		out.append(_instance._phantoms.size()).append(" bots in the world</td></tr></table></center><br>");
+		out.append("In town: <font color=\"LEVEL\">").append(states.getOrDefault(Phantom.State.TOWN, 0)).append("</font><br1>");
+		out.append("Travelling: <font color=\"LEVEL\">").append(states.getOrDefault(Phantom.State.TRAVEL, 0)).append("</font><br1>");
+		out.append("Hunting: <font color=\"LEVEL\">").append(states.getOrDefault(Phantom.State.HUNT, 0)).append("</font><br1>");
+		out.append("Coming back: <font color=\"LEVEL\">").append(states.getOrDefault(Phantom.State.RETURN, 0)).append("</font><br1>");
+		out.append("Keeping shops: <font color=\"LEVEL\">").append(states.getOrDefault(Phantom.State.TRADE, 0)).append("</font><br>");
+		out.append("Kills <font color=\"LEVEL\">").append(kills).append("</font>, deaths <font color=\"LEVEL\">").append(deaths);
+		out.append("</font>, loot sold for <font color=\"LEVEL\">").append(earned).append("</font> adena<br>");
+		if (_instance._brain != null) {
+			out.append("Model: ").append(_instance._brain.answered()).append(" lines, phrase book ").append(_instance._brain.missed()).append("<br>");
+		}
+		out.append("<br><center>Standing parties</center>");
+		for (PhantomSquad squad : _instance._squads) {
+			if (squad.members().size() < 5) {
+				continue;
+			}
+			out.append("<a action=\"bypass -h admin_bots where ").append(squad.name().replace("party ", "")).append("\">");
+			out.append(squad.state()).append("</a><br1>");
+		}
+		return out.append("</body></html>").toString();
+	}
+
 	public static boolean isPhantom(L2PcInstance player) {
 		return (player != null) && (_instance != null) && _instance._objectIds.contains(player.getObjectId());
 	}

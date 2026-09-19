@@ -89,6 +89,7 @@ import com.l2jserver.datapack.handlers.admincommandhandlers.AdminPForge;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminPathNode;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminPcCondOverride;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminPetition;
+import com.l2jserver.datapack.handlers.admincommandhandlers.AdminPhantoms;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminPledge;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminPolymorph;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminPunishment;
@@ -322,6 +323,7 @@ public class MasterHandler {
 		AdminMonsterRace.class,
 		AdminPathNode.class,
 		AdminPetition.class,
+		AdminPhantoms.class,
 		AdminPForge.class,
 		AdminPledge.class,
 		AdminPolymorph.class,
