@@ -840,6 +840,7 @@ def starting_equipment():
 
 PHANTOMS = DATA / "phantoms"
 SQUAD_RADIUS = 2500  # how far from their camp the standing parties find something to kill
+MIN_CAMP_MONSTERS = 10  # fewer than this around a camp and the parties stand idle
 # Slots PhantomFacts can fill; keep in sync with its value() method.
 PHANTOM_SLOTS = {"me", "me.class", "me.level", "me.race", "town", "player", "zone", "zone.low", "zone.any", "grade",
 	"weapon", "weapon.other", "armor", "price", "raid", "raid.dead", "epic", "castle", "castle.owner", "dawn", "online", "need",
@@ -953,34 +954,39 @@ def phantom_phrases():
 
 
 def phantom_squads():
-	"""The standing parties of bots have a camp with monsters of their level around it (phantoms.properties)."""
+	"""Every camp of standing bot parties has monsters of their level around it (phantoms.properties)."""
 	problems = defaultdict(list)
 	config = properties("phantoms.properties")
-	squads = int(config.get("Squads", "0"))
-	size = int(config.get("SquadSize", "9"))
-	level = int(config.get("SquadLevel", "78"))
-	if squads < 0:
-		problems["Squads"].append("cannot be less than none")
-	if squads > 0:
+	seats = 0
+	for key, line in sorted(config.items()):
+		if not key.startswith("Camp") or not key[4:].isdigit():
+			continue
+		parts = line.split(None, 6)
+		if (len(parts) != 7) or not all(value.lstrip("-").isdigit() for value in parts[:6]):
+			problems[key].append("expected: <parties> <size> <level> <x> <y> <z> <name>")
+			continue
+		parties, size, level = int(parts[0]), int(parts[1]), int(parts[2])
+		camp = (int(parts[3]), int(parts[4]), int(parts[5]))
+		name = parts[6].strip()
+		seats += parties * size
 		if not (2 <= size <= 9):
-			problems["SquadSize"].append(f"is {size}, a party holds two to nine")
+			problems[name].append(f"a party of {size}, but a party holds two to nine")
 		if not (1 <= level <= 80):
-			problems["SquadLevel"].append(f"is {level}, Interlude ends at 80")
-		camp = (int(config.get("SquadX", "0")), int(config.get("SquadY", "0")), int(config.get("SquadZ", "0")))
+			problems[name].append(f"level {level}, Interlude ends at 80")
+		if parties < 1:
+			problems[name].append("no parties")
 		near = monsters_near(camp, SQUAD_RADIUS)
-		fitting = [m for m in near if (level - 10) <= m <= (level + 3)]
-		if len(fitting) < (size * squads) / 2:
-			problems[config.get("SquadPlace", "SquadPlace")].append(
-				f"only {len(fitting)} monsters of level {level - 10}-{level + 3} within {SQUAD_RADIUS} of the camp")
-	# the crowd splits into shopkeepers, townsfolk and hunters, and everybody has to fit
+		fitting = [m for m in near if (level - 12) <= m <= (level + 3)]
+		if len(fitting) < MIN_CAMP_MONSTERS:
+			problems[name].append(f"only {len(fitting)} monsters of level {level - 12}-{level + 3} within {SQUAD_RADIUS} of the camp")
+
+	# the crowd splits into shopkeepers, townsfolk, parties and lone hunters, and everybody has to fit
 	count = int(config.get("Count", "0"))
 	traders = int(config.get("Traders", "0"))
 	town = int(config.get("TownBots", "0"))
-	hunters = count - traders - town
-	if (traders + town) > count:
-		problems["TownBots"].append(f"{traders} traders and {town} townsfolk do not fit in {count} bots")
-	if (squads > 0) and (hunters < (squads * size)):
-		problems["Squads"].append(f"{squads} parties of {size} need more than the {hunters} bots left to hunt")
+	hunters = count - traders - town - seats
+	if (traders + town + seats) > count:
+		problems["Count"].append(f"{traders} traders, {town} townsfolk and {seats} in parties do not fit in {count} bots")
 	small = int(config.get("SmallParties", "0"))
 	if small < 0:
 		problems["SmallParties"].append("cannot be less than none")

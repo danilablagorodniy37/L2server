@@ -12,6 +12,7 @@ import sys
 import datasets as ds
 
 GROUNDS = ds.GAME / "data" / "phantoms" / "hunting.txt"
+CONFIG = ds.GAME / "config" / "phantoms.properties"
 OUT = ds.GAME / "data" / "html" / "admin" / "teleports" / "HuntingGrounds.htm"
 
 
@@ -27,6 +28,20 @@ def grounds():
 	return out
 
 
+def camp():
+	"""(x, y, z, name) of the place the standing parties of bots hold, from config/phantoms.properties."""
+	config = {}
+	for line in CONFIG.read_text(encoding="utf-8").splitlines():
+		line = line.strip()
+		if line and not line.startswith("#") and ("=" in line):
+			key, value = line.split("=", 1)
+			config[key.strip()] = value.strip()
+	if int(config.get("Squads", "0")) < 1:
+		return None
+	return (int(config["SquadX"]), int(config["SquadY"]), int(config["SquadZ"]),
+		config.get("SquadPlace", "the bot parties"), int(config.get("Squads", "0")), int(config.get("SquadSize", "9")))
+
+
 def page(rows):
 	"""The admin html: a title, a line per ground, a way back."""
 	lines = ['<html><title>Bot Hunting Grounds</title><body>',
@@ -38,6 +53,12 @@ def page(rows):
 		'</tr></table>',
 		'</center>',
 		'<br>']
+	standing = camp()
+	if standing:
+		x, y, z, name, squads, size = standing
+		lines.append(f'<a action="bypass -h admin_move_to {x} {y} {z}">{name}</a> '
+			f'<font color="LEVEL">{squads} parties of {size}</font> camp here<br1>')
+		lines.append('<br1>')
 	for x, y, z, low, high, monsters, name in rows:
 		lines.append(f'<a action="bypass -h admin_move_to {x} {y} {z}">{name}</a> '
 			f'<font color="LEVEL">{low}-{high}</font>, {monsters} mobs<br1>')

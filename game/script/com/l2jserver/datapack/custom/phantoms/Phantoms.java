@@ -104,11 +104,12 @@ public class Phantoms {
 	private int _huntMinutes;
 	private int _traders;
 	private String _tradeTown;
-	private int _squadCount;
-	private int _squadSize;
-	private int _squadLevel;
-	private String _squadPlace;
-	private Location _squadCamp;
+	/** A place where a number of standing parties of bots camp. */
+	private record Camp(int parties, int size, int level, Location where, String name) {
+	}
+
+	private final List<Camp> _camps = new ArrayList<>();
+	private int _partySeats;
 	private int _smallParties;
 	private int _townBots;
 	private int _raidMinutes;
@@ -152,11 +153,7 @@ public class Phantoms {
 		_traders = number("Traders", 0);
 		_tradeTown = property("TradeTown", "giran_castle_town");
 		// Standing parties of high level bots that farm one place together, and small groups of two to four.
-		_squadCount = number("Squads", 0);
-		_squadSize = number("SquadSize", 9);
-		_squadLevel = number("SquadLevel", 78);
-		_squadPlace = property("SquadPlace", "Ketra Orc Outpost");
-		_squadCamp = new Location(number("SquadX", 138161), number("SquadY", -83551), number("SquadZ", -4601));
+		readCamps();
 		_smallParties = number("SmallParties", 0);
 		// Bots that stay in the towns whatever happens, and how the parties go about raid bosses.
 		_townBots = number("TownBots", 0);
@@ -170,8 +167,27 @@ public class Phantoms {
 		}
 
 		// Count is the whole crowd: the standing parties are part of it, not on top of it.
-		final int count = Math.max(1, number("Count", 100) - (_squadCount * _squadSize));
+		final int count = Math.max(1, number("Count", 100) - _partySeats);
 		ThreadPoolManager.getInstance().scheduleGeneral(() -> spawnAll(count), number("StartDelay", 30), TimeUnit.SECONDS);
+	}
+
+	/** Reads Camp1, Camp2, ... of config/phantoms.properties: parties, size, level, place, name. */
+	private void readCamps() {
+		for (int i = 1; i <= 20; i++) {
+			final String line = _config.getProperty("Camp" + i);
+			if ((line == null) || line.isBlank()) {
+				continue;
+			}
+			try {
+				final String[] p = line.trim().split("\\s+", 7);
+				final Camp camp = new Camp(Integer.parseInt(p[0]), Integer.parseInt(p[1]), Integer.parseInt(p[2]),
+					new Location(Integer.parseInt(p[3]), Integer.parseInt(p[4]), Integer.parseInt(p[5])), p[6].trim());
+				_camps.add(camp);
+				_partySeats += camp.parties() * camp.size();
+			} catch (Exception ex) {
+				LOG.warn("Camp{} of phantoms.properties is not <parties> <size> <level> <x> <y> <z> <name>: {}", i, line);
+			}
+		}
 	}
 
 	private String property(String key, String fallback) {
@@ -226,7 +242,7 @@ public class Phantoms {
 			return;
 		}
 
-		spawnSquads(stored);
+		spawnCamps(stored);
 		smallParties();
 		_news = new PhantomNews(this, this::onNews);
 		_instance = this;
@@ -332,6 +348,9 @@ public class Phantoms {
 				squadDeaths += squad.deaths();
 			}
 			LOG.info("{} parties of bots hold their ground: {} kills and {} deaths between them.", _squads.size(), squadKills, squadDeaths);
+			for (PhantomSquad squad : _elite) {
+				LOG.info("  {}", squad.state());
+			}
 		}
 		LOG.info("bots: {} in town, {} travelling, {} hunting, {} coming back, {} trading; {} kills, {} deaths and {} adena of loot sold.",
 			states.getOrDefault(Phantom.State.TOWN, 0), states.getOrDefault(Phantom.State.TRAVEL, 0),
@@ -442,36 +461,54 @@ public class Phantoms {
 	}
 
 	/** The full parties of high level bots that hold one hunting ground. */
-	private void spawnSquads(List<Integer> stored) {
-		if (_squadCount <= 0) {
+	private void spawnCamps(List<Integer> stored) {
+		if (_camps.isEmpty()) {
 			return;
 		}
+		// the parties take the stored characters that come after the crowd
+		int taken = Math.min(stored.size(), Math.max(1, number("Count", 100) - _partySeats));
+		int number = 0;
+		for (Camp camp : _camps) {
+			taken = spawnSquads(stored, taken, camp, ++number);
+		}
+	}
+
+	/**
+	 * The parties of one camp.
+	 * @param stored the characters of the bot account
+	 * @param taken how many of them are already in the world
+	 * @param camp where and how many
+	 * @param number which camp this is, for the names in the log
+	 * @return how many stored characters are in the world now
+	 */
+	private int spawnSquads(List<Integer> stored, int taken, Camp camp, int number) {
 		final ClassId[] roster = {
 			ClassId.phoenixKnight, ClassId.cardinal, ClassId.hierophant, ClassId.swordMuse, ClassId.spectralDancer,
 			ClassId.sagittarius, ClassId.moonlightSentinel, ClassId.ghostSentinel, ClassId.duelist
 		};
-		int taken = Math.min(stored.size(), Math.max(1, number("Count", 100) - (_squadCount * _squadSize)));
-		for (int i = 0; i < _squadCount; i++) {
-			final PhantomSquad squad = new PhantomSquad("party " + (i + 1), _squadCamp, _squadPlace);
-			for (int seat = 0; seat < _squadSize; seat++) {
+		final Location where = camp.where();
+		int made = 0;
+		for (int i = 0; i < camp.parties(); i++) {
+			final PhantomSquad squad = new PhantomSquad("party " + number + "." + (i + 1), where, camp.name());
+			for (int seat = 0; seat < camp.size(); seat++) {
 				final ClassId classId = roster[seat % roster.length];
 				L2PcInstance player = null;
 				if (taken < stored.size()) {
 					player = L2PcInstance.load(stored.get(taken));
-					if ((player != null) && ((player.getClassId() != classId) || (player.getLevel() < _squadLevel))) {
+					if ((player != null) && ((player.getClassId() != classId) || (player.getLevel() < camp.level()))) {
 						player = null;
 					}
 					taken++;
 				}
 				if (player == null) {
-					player = _factory.create(classId, _squadLevel + Rnd.get(0, 2));
+					player = _factory.create(classId, camp.level() + Rnd.get(0, 2));
 				}
 				if (player == null) {
 					continue;
 				}
 				PhantomFactory.teach(player);
-				enterWorld(player, _squadCamp);
-				final Phantom phantom = new Phantom(player, _squadCamp, _radius);
+				enterWorld(player, where);
+				final Phantom phantom = new Phantom(player, where, _radius);
 				phantom.inSquad(true);
 				phantom.chatDone(System.currentTimeMillis(), _chatInterval);
 				_phantoms.add(phantom);
@@ -484,8 +521,10 @@ public class Phantoms {
 			squad.settle();
 			_squads.add(squad);
 			_elite.add(squad);
+			made++;
 		}
-		LOG.info("{} full parties of {} hunt in {}.", _squads.size(), _squadSize, _squadPlace);
+		LOG.info("{} full parties of {} hunt in {}.", made, camp.size(), camp.name());
+		return taken;
 	}
 
 	/** Small groups of two to four bots that hunt together instead of alone. */

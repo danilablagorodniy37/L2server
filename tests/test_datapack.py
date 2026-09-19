@@ -286,8 +286,8 @@ def test_server_rates_reports_multiplied_amounts(tmp_path, monkeypatch):
 def test_phantom_squads_reports_a_camp_without_monsters(tmp_path, monkeypatch):
 	"""A party camped where nothing spawns would stand around doing nothing."""
 	(tmp_path / "phantoms.properties").write_text(
-		"Count = 300\nSquads = 4\nSquadSize = 9\nSquadLevel = 78\n"
-		"SquadPlace = Nowhere\nSquadX = 0\nSquadY = 0\nSquadZ = 0\nSmallParties = 20\n", encoding="utf-8")
+		"Count = 300\nTraders = 40\nTownBots = 100\nSmallParties = 0\n"
+		"Camp1 = 4 9 78 0 0 0 Nowhere\n", encoding="utf-8")
 	monkeypatch.setattr(checks, "CONFIG", tmp_path)
 
 	problems = checks.phantom_squads()
@@ -295,15 +295,28 @@ def test_phantom_squads_reports_a_camp_without_monsters(tmp_path, monkeypatch):
 	assert "Nowhere" in problems, problems
 
 
-def test_phantom_squads_reports_more_groups_than_bots(tmp_path, monkeypatch):
-	"""Twenty groups of four cannot be cut out of ten bots."""
+def test_phantom_squads_reports_a_camp_line_that_does_not_parse(tmp_path, monkeypatch):
+	"""A camp line with a missing number would leave the parties unspawned."""
 	(tmp_path / "phantoms.properties").write_text(
-		"Count = 10\nTraders = 0\nTownBots = 0\nSquads = 0\nSmallParties = 20\n", encoding="utf-8")
+		"Count = 300\nTraders = 0\nTownBots = 0\nSmallParties = 0\n"
+		"Camp1 = 4 9 78 136958 -89946 Ketra Orc Outpost\n", encoding="utf-8")
 	monkeypatch.setattr(checks, "CONFIG", tmp_path)
 
 	problems = checks.phantom_squads()
 
-	assert "SmallParties" in problems, problems
+	assert "Camp1" in problems, problems
+
+
+def test_phantom_squads_reports_a_crowd_that_does_not_fit(tmp_path, monkeypatch):
+	"""More shopkeepers, townsfolk and party members than bots leaves nobody to hunt."""
+	(tmp_path / "phantoms.properties").write_text(
+		"Count = 100\nTraders = 40\nTownBots = 100\nSmallParties = 0\n"
+		"Camp1 = 4 9 78 136958 -89946 -3697 Ketra Orc Outpost\n", encoding="utf-8")
+	monkeypatch.setattr(checks, "CONFIG", tmp_path)
+
+	problems = checks.phantom_squads()
+
+	assert "Count" in problems, problems
 
 
 def test_hunting_html_reports_a_ground_without_a_link(tmp_path, monkeypatch):
@@ -317,17 +330,3 @@ def test_hunting_html_reports_a_ground_without_a_link(tmp_path, monkeypatch):
 
 	assert problems, "every ground of hunting.txt should be reported as missing"
 	assert any("no link with its place" in reason for reasons in problems.values() for reason in reasons), problems
-
-
-def test_phantom_squads_reports_a_crowd_that_does_not_fit(tmp_path, monkeypatch):
-	"""More shopkeepers and townsfolk than bots would leave nobody to hunt."""
-	(tmp_path / "phantoms.properties").write_text(
-		"Count = 100\nTraders = 40\nTownBots = 100\nSquads = 4\nSquadSize = 9\n"
-		"SquadLevel = 78\nSquadPlace = Ketra\nSquadX = 138161\nSquadY = -83551\nSquadZ = -4601\n"
-		"SmallParties = 0\n", encoding="utf-8")
-	monkeypatch.setattr(checks, "CONFIG", tmp_path)
-
-	problems = checks.phantom_squads()
-
-	assert "TownBots" in problems, problems
-	assert "Squads" in problems, problems

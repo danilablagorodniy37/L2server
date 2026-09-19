@@ -27,6 +27,8 @@ import com.l2jserver.gameserver.enums.PartyDistributionType;
 import com.l2jserver.gameserver.model.TeleportWhereType;
 import com.l2jserver.gameserver.instancemanager.MapRegionManager;
 import com.l2jserver.gameserver.model.L2Party;
+import com.l2jserver.gameserver.model.L2Object;
+import com.l2jserver.gameserver.model.L2World;
 import com.l2jserver.gameserver.model.Location;
 import com.l2jserver.gameserver.model.actor.L2Character;
 import com.l2jserver.gameserver.model.actor.instance.L2MonsterInstance;
@@ -51,6 +53,12 @@ public class PhantomSquad {
 	private static final long CAST_EVERY = 1200L;
 	/** Without a healer a party takes on much weaker monsters. */
 	private static final int CAREFUL_LEVELS = -6;
+	/** A pair or a trio with a healer can afford monsters close to its own level. */
+	private static final int WITH_HEALER = -2;
+	/** A full party with a healer kills monsters of its own level and a little above, as players do. */
+	private static final int FULL_PARTY = 3;
+	/** From this many members a party counts as a full one. */
+	private static final int FULL_SIZE = 5;
 	/** A member of a party with no healer sits down at this share of HP and gets up at the next one. */
 	private static final double SIT_AT = 0.4;
 	private static final double UP_AT = 0.85;
@@ -229,6 +237,45 @@ public class PhantomSquad {
 		supply(now);
 		catchBreath();
 		fight(now);
+	}
+
+	/**
+	 * How far above its own level the party dares to look for a target: a full party with a healer
+	 * takes on monsters of its own size, a pair stays below, and without a healer well below.
+	 * @return the level offset for {@link PhantomCombat#findTarget}
+	 */
+	public int levelOffset() {
+		if (!hasHealer()) {
+			return CAREFUL_LEVELS;
+		}
+		return (_members.size() >= FULL_SIZE) ? FULL_PARTY : WITH_HEALER;
+	}
+
+	/**
+	 * A monster that is attacking somebody in the party. A player keeps no list of who hit it, so
+	 * the monsters standing around are asked who they are after.
+	 * @return the monster, or null when the party is left alone
+	 */
+	private L2Character biting() {
+		final Phantom head = leader();
+		if (head == null) {
+			return null;
+		}
+		for (L2Object object : L2World.getInstance().getVisibleObjects(head.player(), CAMP_RADIUS)) {
+			if (!(object instanceof L2MonsterInstance monster) || monster.isAlikeDead() || monster.isRaid()) {
+				continue;
+			}
+			final L2Object victim = monster.getTarget();
+			if (victim == null) {
+				continue;
+			}
+			for (Phantom member : _members) {
+				if (victim == member.player()) {
+					return monster;
+				}
+			}
+		}
+		return null;
 	}
 
 	/** True when somebody in the party can heal the others. */
@@ -441,7 +488,12 @@ public class PhantomSquad {
 				if (leader.isSitting()) {
 					return;
 				}
-				target = PhantomCombat.findTarget(leader, null, hasHealer() ? 0 : CAREFUL_LEVELS);
+				// whatever is already eating the party comes first: those monsters have a target of their
+				// own, so the plain search passes them by and the party would stand there being chewed on
+				target = biting();
+				if (target == null) {
+					target = PhantomCombat.findTarget(leader, null, levelOffset());
+				}
 				if (target == null) {
 					return;
 				}
@@ -524,6 +576,13 @@ public class PhantomSquad {
 
 	public int deaths() {
 		return _members.stream().mapToInt(Phantom::deaths).sum();
+	}
+
+	/** A line for the log: who is standing, what they have killed and where they are. */
+	public String state() {
+		final long up = _members.stream().filter(member -> !member.player().isDead()).count();
+		return _name + ": " + up + "/" + _members.size() + " up in " + _where + ", " + kills() + " kills, " + deaths() + " deaths"
+			+ (raiding() ? " (on a raid)" : "");
 	}
 
 	@Override
