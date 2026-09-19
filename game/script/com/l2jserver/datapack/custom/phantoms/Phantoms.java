@@ -81,6 +81,8 @@ public class Phantoms {
 	private static final long NEWS_MEMORY = 20 * 60 * 1000L;
 	/** A tick of the bots that takes longer than this is worth a line in the log. */
 	private static final long SLOW_TICK = 400;
+	/** How much room a player gets around a raid boss before the bots look for another one. */
+	private static final int RAID_ROOM = 3000;
 	/** Out of a hundred turns with nothing happening, how many end in a word of small talk. */
 	private static final int SMALL_TALK = 35;
 
@@ -545,9 +547,23 @@ public class Phantoms {
 			if ((boss.getLevel() > (level + 2)) || (boss.getLevel() < (level - 25))) {
 				continue;
 			}
+			// a raid a player is already standing at belongs to that player
+			if (playerNear(boss)) {
+				continue;
+			}
 			possible.add(boss);
 		}
 		return possible.isEmpty() ? null : possible.get(Rnd.get(possible.size()));
+	}
+
+	/** True when a real player is close enough to a boss for the bots to leave it alone. */
+	private boolean playerNear(L2Character boss) {
+		for (L2Object object : L2World.getInstance().getVisibleObjects(boss, RAID_ROOM)) {
+			if ((object instanceof L2PcInstance player) && !player.isPhantom() && player.isVisible()) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/** The full parties of high level bots that hold one hunting ground. */
