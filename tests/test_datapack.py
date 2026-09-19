@@ -427,3 +427,13 @@ def test_character_creation_reports_a_class_without_a_skill_tree(tmp_path, monke
 	problems = checks.character_creation()
 
 	assert problems["Human Fighter"] == ["no skill tree"], problems
+
+
+def test_interlude_epics_reports_a_boss_that_is_nowhere(monkeypatch):
+	"""An epic with no spawn row and no script is one nobody can ever fight."""
+	epics = checks.INTERLUDE_EPICS + ((29999, "Nobody's Boss", None),)
+	monkeypatch.setattr(checks, "INTERLUDE_EPICS", epics)
+
+	problems = checks.interlude_epics()
+
+	assert "Nobody's Boss" in problems, problems

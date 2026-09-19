@@ -1020,6 +1020,41 @@ def skill_levels():
 	return out
 
 
+def interlude_epics():
+	"""The epics of Interlude stand in the world: a row in the spawn tables or a script that spawns them."""
+	problems = defaultdict(list)
+	grand = set(sql_ids("grandboss_data.sql", BOSS_ROW))
+	raids = set(sql_ids("raidboss_spawnlist.sql", BOSS_ROW))
+	scripts = "\n".join(f.read_text(encoding="utf-8", errors="replace")
+		for f in (ds.GAME / "script" / "com" / "l2jserver" / "datapack" / "ai").rglob("*.java"))
+	loaded = (ds.GAME / "script" / "com" / "l2jserver" / "datapack" / "ai" / "AILoader.java").read_text(encoding="utf-8")
+	for npc_id, name, spawner in INTERLUDE_EPICS:
+		if npc_id in grand:
+			if f"{npc_id}" not in scripts:
+				problems[name].append("a row in grandboss_data but no script to spawn it")
+			continue
+		if npc_id in raids:
+			continue
+		if (spawner is not None) and (spawner in loaded) and (f"{npc_id}" in scripts):
+			continue
+		problems[name].append("nowhere in the world: no spawn row and no script")
+	return problems
+
+
+# The epics High Five moved into instances, and the script that puts each one back in the world.
+INTERLUDE_EPICS = (
+	(29022, "Zaken", "InterludeEpics"),
+	(29045, "Frintezza", "InterludeEpics"),
+	(29065, "Sailren", "Sailren"),
+	(29062, "Andreas Van Halter", None),
+	(29001, "Queen Ant", "QueenAnt"),
+	(29006, "Core", "Core"),
+	(29014, "Orfen", "Orfen"),
+	(29020, "Baium", "Baium"),
+	(29028, "Valakas", "Valakas"),
+)
+
+
 def character_creation():
 	"""Every class a player can pick has a starting point, base stats and a skill tree."""
 	problems = defaultdict(list)
@@ -1286,7 +1321,7 @@ DATAPACK_CHECKS = {f.__name__: f for f in (
 	html_multisell_links, html_buylist_links, html_teleport_links, html_quest_buttons, script_shop_calls, quest_dialog_links, quest_npcs, quest_kill_targets,
 	spawn_zones, leader_minions, loader_classes, xml_schemas,
 	shops_interlude_items, drops_interlude_items, recipes_interlude_items, manor_interlude_items, teleports_interlude, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_enchant_costs, interlude_residence_skills, interlude_npc_stats, kamael_isle, interlude_config, server_rates,
-	interlude_loaders, starting_equipment, phantom_gear, phantom_hunting, phantom_trade, phantom_phrases, phantom_config, phantom_squads, phantom_ids, phantom_settings, character_creation, hunting_html,
+	interlude_loaders, starting_equipment, phantom_gear, phantom_hunting, phantom_trade, phantom_phrases, phantom_config, phantom_squads, phantom_ids, phantom_settings, character_creation, interlude_epics, hunting_html,
 )}
 DATABASE_CHECKS = {"database_tables": database_tables}
 

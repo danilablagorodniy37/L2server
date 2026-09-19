@@ -53,6 +53,7 @@ import com.l2jserver.datapack.ai.individual.SinEater;
 import com.l2jserver.datapack.ai.individual.Valakas;
 import com.l2jserver.datapack.ai.individual.Antharas.Antharas;
 import com.l2jserver.datapack.ai.individual.Baium.Baium;
+import com.l2jserver.datapack.ai.individual.InterludeEpics;
 import com.l2jserver.datapack.ai.individual.Sailren.Sailren;
 import com.l2jserver.datapack.ai.individual.Venom.Venom;
 import com.l2jserver.datapack.ai.npc.Abercrombie.Abercrombie;
@@ -247,6 +248,7 @@ public class AILoader {
 		// Individual
 		Antharas.class,
 		Baium.class,
+		InterludeEpics.class,
 		Sailren.class,
 		Venom.class,
 		Ballista.class,
