@@ -46,7 +46,8 @@ public class PhantomBrain {
 	/** How the bot is told to write: the model is a player typing in a hurry, not an assistant. */
 	private static final String STYLE = "Answer in character as this player, in one line of at most %d words. "
 		+ "Write the way a player types in chat: lowercase, short, no punctuation at the end, no quotes, no emoji, no roleplay asterisks. "
-		+ "Never mention being an AI or a model. If you do not know something, say so in a few words.";
+		+ "Never mention being an AI or a model. Do not invent facts about the server: if you do not know "
+		+ "something, say so in a few words. Never speak of yourself in the third person.";
 
 	private final HttpClient _http;
 	private final String _url;
@@ -91,12 +92,24 @@ public class PhantomBrain {
 	 * @return the answer, or null when the model is busy, slow or not there - the caller then uses the phrase book
 	 */
 	public String reply(String who, String heard, String said) {
+		return reply(who, heard, said, null);
+	}
+
+	/**
+	 * The same, when the bot knows who is talking to it.
+	 * @param who the bot in a line or two
+	 * @param heard what was said
+	 * @param said the conversation so far, or null
+	 * @param speaker the name of the player, or null
+	 * @return the answer, or null
+	 */
+	public String reply(String who, String heard, String said, String speaker) {
 		if (!_enabled || !_slots.tryAcquire()) {
 			_missed.incrementAndGet();
 			return null;
 		}
 		try {
-			final String answer = ask(prompt(who, heard, said));
+			final String answer = ask(prompt(who, heard, said, speaker));
 			if (answer == null) {
 				_missed.incrementAndGet();
 				return null;
@@ -108,13 +121,15 @@ public class PhantomBrain {
 		}
 	}
 
-	private String prompt(String who, String heard, String said) {
+	private String prompt(String who, String heard, String said, String speaker) {
 		final StringBuilder out = new StringBuilder();
 		out.append(who).append('\n');
 		if ((said != null) && !said.isBlank()) {
 			out.append("What has been said so far:\n").append(said).append('\n');
 		}
-		out.append("Another player says to you: ").append(heard).append('\n');
+		// naming the other one keeps the bot from answering to its own name
+		out.append((speaker == null) ? "Another player" : ("A player called " + speaker));
+		out.append(" says to you: ").append(heard).append('\n');
 		out.append(String.format(STYLE, _words));
 		return out.toString();
 	}

@@ -1165,7 +1165,7 @@ public class Phantoms {
 			String answer = null;
 			if (think) {
 				try {
-					answer = _brain.reply(situation(phantom), text, phantom.talk(player.getName(), System.currentTimeMillis()));
+					answer = _brain.reply(situation(phantom), text, phantom.talk(player.getName(), System.currentTimeMillis()), player.getName());
 				} catch (Exception ex) {
 					LOG.warn("{} could not think of an answer!", phantom.player().getName(), ex);
 				}
@@ -1193,7 +1193,15 @@ public class Phantoms {
 			case TRADE -> "You sit in Giran with a private store, selling gear.";
 		};
 		return "You are " + bot.getName() + ", a level " + bot.getLevel() + " " + job
-			+ " playing on a Lineage 2 Interlude server with x44 rates. " + doing;
+			+ " playing on a Lineage 2 Interlude server with x44 rates. " + doing + "\n" + known(bot);
+	}
+
+	/** The handful of things a bot really knows about this server, for the model to answer from. */
+	private String known(L2PcInstance bot) {
+		return _facts.fill("What you know right now: a good place to hunt at your level is {zone}, and {zone.any} "
+			+ "is where others go; {raid} is up and {raid.dead} was killed not long ago; {castle} castle belongs to "
+			+ "{castle.owner}; about {online} people are online; a {weapon} goes for about {price} adena; you carry "
+			+ bot.getAdena() + " adena.", bot, null);
 	}
 
 	/** Right after something happens, a bot or two who saw it say something. */
