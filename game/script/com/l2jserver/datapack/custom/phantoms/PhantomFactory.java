@@ -21,6 +21,8 @@ package com.l2jserver.datapack.custom.phantoms;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -148,13 +150,23 @@ public class PhantomFactory {
 	 * @return how many skills it learned
 	 */
 	public static int teach(L2PcInstance player) {
-		int learned = 0;
+		// a skill tree holds every level of a skill, so the best one the bot has grown into is taken;
+		// adding them in the order they come would leave it with the weakest
+		final Map<Integer, Integer> best = new HashMap<>();
 		for (L2SkillLearn learn : SkillTreesData.getInstance().getCompleteClassSkillTree(player.getClassId()).values()) {
 			if (learn.getGetLevel() > player.getLevel()) {
 				continue;
 			}
-			final Skill skill = SkillData.getInstance().getSkill(learn.getSkillId(), learn.getSkillLevel());
-			if ((skill != null) && (player.getKnownSkill(skill.getId()) == null)) {
+			best.merge(learn.getSkillId(), learn.getSkillLevel(), Math::max);
+		}
+		int learned = 0;
+		for (var entry : best.entrySet()) {
+			final Skill known = player.getKnownSkill(entry.getKey());
+			if ((known != null) && (known.getLevel() >= entry.getValue())) {
+				continue;
+			}
+			final Skill skill = SkillData.getInstance().getSkill(entry.getKey(), entry.getValue());
+			if (skill != null) {
 				player.addSkill(skill, false);
 				learned++;
 			}
