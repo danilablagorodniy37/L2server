@@ -302,3 +302,46 @@ class TestCleanClientIni:
 		fixed, changed = clean_ini.clean("[PrimeShop]\r\nSomethingElse=1\r\n")
 		assert "UsePrimeShop=false" in fixed
 		assert any("added" in line for line in changed), changed
+
+
+class TestClientInterface:
+	"""tools/client/xdat.py reads system/Interface.xdat, the window layout of the client."""
+
+	@staticmethod
+	def text(word):
+		"""A string the way the file holds it: one byte of length, the characters, a NUL."""
+		raw = word.encode("ascii") + b"\x00"
+		return bytes([len(raw)]) + raw
+
+	def blob(self):
+		return (
+			b"\x02\x00\x00\x00"
+			+ self.text("Window") + self.text("TestWnd") + self.text("undefined") + (b"\x01" * 8)
+			+ self.text("Button") + self.text("btnOne") + self.text("undefined") + self.text("TestWnd") + (b"\x02" * 4)
+			+ self.text("Texture") + self.text("VitalityPointBar") + self.text("TestWnd") + (b"\x03" * 6))
+
+	def test_reads_the_strings_with_their_places(self):
+		import xdat
+		found = xdat.strings(self.blob())
+		assert [text for _offset, text in found][:3] == ["Window", "TestWnd", "undefined"]
+		assert all(offset >= 0 for offset, _text in found)
+
+	def test_finds_the_widgets_and_what_they_belong_to(self):
+		import xdat
+		found = xdat.widgets(self.blob())
+		assert [(w.kind, w.name) for w in found] == [
+			("Window", "TestWnd"), ("Button", "btnOne"), ("Texture", "VitalityPointBar")]
+		assert {w.window for w in found} == {"TestWnd"}
+		assert all(w.size > 0 for w in found), "every record has a size"
+
+	def test_counts_a_window(self):
+		import xdat
+		rows = xdat.summary(xdat.widgets(self.blob()))
+		assert rows[0][0] == "TestWnd"
+		assert rows[0][1] == 3
+
+	def test_names_the_systems_of_the_later_chronicles(self):
+		import xdat
+		rows = {label: count for label, count, _bytes, _windows in xdat.systems(xdat.widgets(self.blob()))}
+		assert rows["vitality"] == 1, "the vitality bar of High Five is found"
+		assert rows["attributes"] == 0
