@@ -1131,6 +1131,12 @@ def phantom_squads():
 	hunters = count - traders - town - seats
 	if (traders + town + seats) > count:
 		problems["Count"].append(f"{traders} traders, {town} townsfolk and {seats} in parties do not fit in {count} bots")
+	# the bots take up seats on the server: there has to be room left for players
+	online = 0
+	if (CONFIG / "server.properties").is_file():
+		online = int(properties("server.properties").get("MaxOnlineUsers", "0"))
+	if (online > 0) and (count > (online - 200)):
+		problems["MaxOnlineUsers"].append(f"{count} bots with room for {online}: fewer than 200 seats left for players")
 	small = int(config.get("SmallParties", "0"))
 	if small < 0:
 		problems["SmallParties"].append("cannot be less than none")
