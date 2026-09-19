@@ -31,6 +31,11 @@
 Рабочий High Five в `L2 SERVER - 2` использует те же порты (2106, 7777, 9014),
 поэтому одновременно можно запускать только одну из сборок.
 
+## Резервные копии
+`toolsackup.bat` — дамп базы `l2jdb_custom` и копия `system` клиента в `S:\Programming\L2serverackups`
+(git держит всё остальное: `game`, `core`, `tools`, план). Клиентские файлы, которые правились руками,
+лежат рядом с оригиналами: `L2.ini.orig`, `ServerName-*.orig`, `*.bak` из поставки.
+
 ## Тесты
 `tools\test.bat` — проверки датапака, скриптов `tools/interlude` и базы (pytest, ~20 с).
 `--core` добавляет JUnit-тесты ядра, `--server` — тест запуска серверов. Подробно: [tests/README.md](tests/README.md).
