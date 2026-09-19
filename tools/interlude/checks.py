@@ -1020,6 +1020,26 @@ def skill_levels():
 	return out
 
 
+def interlude_attributes():
+	"""Interlude has no attribute system: no elemental defence on NPCs and nothing elemental on gear."""
+	import strip_attributes
+
+	problems = defaultdict(list)
+	for f in sorted(strip_attributes.NPCS.glob("*.xml")):
+		text = f.read_text(encoding="utf-8")
+		if "<attribute>" in text:
+			problems[f.name].append(f"{text.count('<attribute>')} elemental defence blocks of High Five")
+	for f in ds._xml_files(DATA / "stats" / "items"):
+		for item in ET.parse(f).getroot().findall("item"):
+			for node in item.findall("set"):
+				name = (node.get("name") or "").lower()
+				if ("elemental" in name) or name.startswith("attribute"):
+					problems[_item_name(int(item.get("id")))].append(f"{node.get('name')} on a piece of gear")
+	if properties("chronicle.properties").get("EnableAttributes", "").lower() != "false":
+		problems["chronicle.properties EnableAttributes"].append("must be False, Interlude has no attributes")
+	return problems
+
+
 def interlude_epics():
 	"""The epics of Interlude stand in the world: a row in the spawn tables or a script that spawns them."""
 	problems = defaultdict(list)
@@ -1321,7 +1341,7 @@ DATAPACK_CHECKS = {f.__name__: f for f in (
 	html_multisell_links, html_buylist_links, html_teleport_links, html_quest_buttons, script_shop_calls, quest_dialog_links, quest_npcs, quest_kill_targets,
 	spawn_zones, leader_minions, loader_classes, xml_schemas,
 	shops_interlude_items, drops_interlude_items, recipes_interlude_items, manor_interlude_items, teleports_interlude, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_enchant_costs, interlude_residence_skills, interlude_npc_stats, kamael_isle, interlude_config, server_rates,
-	interlude_loaders, starting_equipment, phantom_gear, phantom_hunting, phantom_trade, phantom_phrases, phantom_config, phantom_squads, phantom_ids, phantom_settings, character_creation, interlude_epics, hunting_html,
+	interlude_loaders, starting_equipment, phantom_gear, phantom_hunting, phantom_trade, phantom_phrases, phantom_config, phantom_squads, phantom_ids, phantom_settings, character_creation, interlude_epics, interlude_attributes, hunting_html,
 )}
 DATABASE_CHECKS = {"database_tables": database_tables}
 

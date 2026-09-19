@@ -437,3 +437,37 @@ def test_interlude_epics_reports_a_boss_that_is_nowhere(monkeypatch):
 	problems = checks.interlude_epics()
 
 	assert "Nobody's Boss" in problems, problems
+
+
+def test_interlude_attributes_reports_elemental_defence_on_a_monster(tmp_path, monkeypatch):
+	"""The elemental defence of High Five would come back to life the moment attributes were switched on."""
+	import strip_attributes
+	npcs = tmp_path / "npcs"
+	npcs.mkdir()
+	(npcs / "20000-20099.xml").write_text(
+		'<?xml version="1.0" encoding="UTF-8"?><list><npc id="20001" name="Rat">'
+		'<stats><attribute><defence fire="20" water="20" /></attribute></stats></npc></list>', encoding="utf-8")
+	monkeypatch.setattr(strip_attributes, "NPCS", npcs)
+
+	problems = checks.interlude_attributes()
+
+	assert "20000-20099.xml" in problems, problems
+
+
+def test_strip_attributes_takes_the_block_and_leaves_the_rest():
+	"""Only the elemental block goes; the physical and magical defence of the monster stays."""
+	import strip_attributes
+	text = (
+		"\t\t<stats>\n"
+		'\t\t\t<defence physical="512" magical="385" />\n'
+		"\t\t\t<attribute>\n"
+		'\t\t\t\t<defence fire="20" water="20" wind="-5" earth="20" holy="20" dark="20" />\n'
+		"\t\t\t</attribute>\n"
+		"\t\t</stats>\n")
+
+	fixed, count = strip_attributes.strip(text)
+
+	assert count == 1
+	assert "<attribute>" not in fixed
+	assert 'physical="512"' in fixed
+	assert fixed.count("<defence") == 1

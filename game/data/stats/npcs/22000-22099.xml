@@ -19,9 +19,6 @@
 			<vitals hp="460.9625" hpRegen="6.3042" mp="316.224" mpRegen="2.0862" />
 			<attack physical="88.6902" magical="37.7492" random="10" critical="44" accuracy="4.75" attackSpeed="278" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="116.0923" magical="103.6406" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="26.4" />
 				<run ground="143" />
@@ -117,9 +114,6 @@
 			<vitals hp="487.5704" hpRegen="6.3595" mp="333.06" mpRegen="2.1045" />
 			<attack physical="96.2678" magical="41.3338" random="10" critical="44" accuracy="4.75" attackSpeed="278" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="120.7824" magical="107.8276" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="44" />
 				<run ground="121" />
@@ -211,9 +205,6 @@
 			<vitals hp="515.1786" hpRegen="6.4148" mp="350.0424" mpRegen="2.1228" />
 			<attack physical="104.3878" magical="45.21" random="10" critical="88" accuracy="0" attackSpeed="278" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
 			<defence physical="125.6137" magical="112.1408" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="53.9" />
 				<run ground="121" />
@@ -310,9 +301,6 @@
 			<vitals hp="515.1786" hpRegen="6.4148" mp="350.0424" mpRegen="2.1228" />
 			<attack physical="104.3878" magical="45.21" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="125.6137" magical="112.1408" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="-13" dark="53" />
-			</attribute>
 			<speed>
 				<walk ground="88" />
 				<run ground="132" />
@@ -415,9 +403,6 @@
 			<vitals hp="543.7958" hpRegen="6.4701" mp="367.1712" mpRegen="2.1411" />
 			<attack physical="113.0789" magical="49.3963" random="10" critical="88" accuracy="0" attackSpeed="278" type="DAGGER" range="40" distance="80" width="120" />
 			<defence physical="130.588" magical="116.5815" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="49.5" />
 				<run ground="121" />
@@ -516,9 +501,6 @@
 			<vitals hp="573.4292" hpRegen="6.5254" mp="384.4464" mpRegen="2.1594" />
 			<attack physical="122.3707" magical="53.9122" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="135.7071" magical="121.1515" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="39.6" />
 				<run ground="121" />
@@ -617,9 +599,6 @@
 			<vitals hp="573.4292" hpRegen="6.5254" mp="384.4464" mpRegen="2.1594" />
 			<attack physical="122.3707" magical="53.9122" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="135.7071" magical="121.1515" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="49.5" />
 				<run ground="132" />
@@ -720,9 +699,6 @@
 			<vitals hp="604.0842" hpRegen="6.5807" mp="401.868" mpRegen="2.1777" />
 			<attack physical="132.2931" magical="58.7775" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="140.9725" magical="125.8522" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="39.6" />
 				<run ground="121" />
@@ -827,9 +803,6 @@
 			<vitals hp="635.7644" hpRegen="8.532" mp="419.436" mpRegen="2.6352" />
 			<attack physical="142.8766" magical="64.0132" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="146.3858" magical="130.6849" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="49.5" />
 				<run ground="132" />
@@ -937,9 +910,6 @@
 			<vitals hp="668.4713" hpRegen="8.6031" mp="437.1504" mpRegen="2.6572" />
 			<attack physical="154.1519" magical="69.6404" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="151.9485" magical="135.651" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="49.5" />
 				<run ground="132" />
@@ -1045,9 +1015,6 @@
 			<vitals hp="702.2046" hpRegen="8.6742" mp="455.0112" mpRegen="2.6791" />
 			<attack physical="166.1503" magical="75.6812" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="157.6618" magical="140.7514" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="49.5" />
 				<run ground="143" />
@@ -1145,9 +1112,6 @@
 			<vitals hp="702.2046" hpRegen="8.6742" mp="455.0112" mpRegen="2.6791" />
 			<attack physical="166.1503" magical="75.6812" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="157.6618" magical="140.7514" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="49.5" />
 				<run ground="143" />
@@ -1245,9 +1209,6 @@
 			<vitals hp="702.2046" hpRegen="8.6742" mp="455.0112" mpRegen="2.6791" />
 			<attack physical="166.1503" magical="75.6812" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="157.6618" magical="140.7514" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="49.5" />
 				<run ground="143" />
@@ -1346,9 +1307,6 @@
 			<vitals hp="702.2046" hpRegen="8.6742" mp="455.0112" mpRegen="2.6791" />
 			<attack physical="166.1503" magical="75.6812" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="157.6618" magical="140.7514" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="49.5" />
 				<run ground="143" />
@@ -1442,9 +1400,6 @@
 			<vitals hp="702.2046" hpRegen="8.6742" mp="455.0112" mpRegen="2.6791" />
 			<attack physical="166.1503" magical="75.6812" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="157.6618" magical="140.7514" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="49.5" />
 				<run ground="143" />
@@ -1540,9 +1495,6 @@
 			<vitals hp="702.2046" hpRegen="8.6742" mp="455.0112" mpRegen="2.6791" />
 			<attack physical="166.1503" magical="75.6812" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="157.6618" magical="140.7514" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="49.5" />
 				<run ground="143" />
@@ -1636,9 +1588,6 @@
 			<vitals hp="604.0842" hpRegen="6.5807" mp="401.868" mpRegen="2.1777" />
 			<attack physical="132.2931" magical="58.7775" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="140.9725" magical="125.8522" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="33" />
 				<run ground="159.5" />
@@ -1741,9 +1690,6 @@
 			<vitals hp="635.7644" hpRegen="8.532" mp="419.436" mpRegen="2.6352" />
 			<attack physical="142.8766" magical="64.0132" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="146.3858" magical="130.6849" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="26.4" />
 				<run ground="143" />
@@ -1838,9 +1784,6 @@
 			<vitals hp="668.4713" hpRegen="8.6031" mp="437.1504" mpRegen="2.6572" />
 			<attack physical="154.1519" magical="69.6404" random="10" critical="88" accuracy="0" attackSpeed="278" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
 			<defence physical="151.9485" magical="135.651" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="53" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="55" />
 				<run ground="143" />
@@ -1946,9 +1889,6 @@
 			<vitals hp="702.2046" hpRegen="8.6742" mp="455.0112" mpRegen="2.6791" />
 			<attack physical="166.1503" magical="75.6812" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="157.6618" magical="140.7514" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="33" />
 				<run ground="154" />
@@ -2047,9 +1987,6 @@
 			<vitals hp="736.9618" hpRegen="8.7453" mp="473.0184" mpRegen="2.7011" />
 			<attack physical="178.903" magical="82.158" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="163.5268" magical="145.9874" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="33" />
 				<run ground="154" />
@@ -2153,9 +2090,6 @@
 			<vitals hp="772.738" hpRegen="8.8164" mp="491.172" mpRegen="2.723" />
 			<attack physical="192.4415" magical="89.0938" random="10" critical="88" accuracy="0" attackSpeed="278" type="DAGGER" range="40" distance="80" width="120" />
 			<defence physical="169.5446" magical="151.3597" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="88" />
 				<run ground="165" />
@@ -2258,9 +2192,6 @@
 			<vitals hp="809.5264" hpRegen="8.8875" mp="509.472" mpRegen="2.745" />
 			<attack physical="206.797" magical="96.512" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="175.716" magical="156.8692" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="53" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="55" />
 				<run ground="148.5" />
@@ -2365,9 +2296,6 @@
 			<vitals hp="847.3175" hpRegen="8.9586" mp="527.9184" mpRegen="2.767" />
 			<attack physical="222.0007" magical="104.4364" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="182.0418" magical="162.5165" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="33" />
 				<run ground="159.5" />
@@ -2468,9 +2396,6 @@
 			<vitals hp="886.0997" hpRegen="9.0297" mp="546.5112" mpRegen="2.7889" />
 			<attack physical="238.0834" magical="112.8912" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="188.5224" magical="168.3021" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="55" />
 				<run ground="159.5" />
@@ -2571,9 +2496,6 @@
 			<vitals hp="966.5779" hpRegen="9.1719" mp="584.136" mpRegen="2.8328" />
 			<attack physical="273.0065" magical="131.4891" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="201.95" magical="180.2894" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="53" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="55" />
 				<run ground="159.5" />
@@ -2680,10 +2602,6 @@
 			<vitals hp="925.8588" hpRegen="9.1008" mp="565.2504" mpRegen="2.8109" />
 			<attack physical="255.0755" magical="121.9006" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="195.1584" magical="174.2263" />
-			<attribute>
-				<attack type="DARK" value="20" />
-				<defence fire="20" water="20" wind="20" earth="20" holy="-83" dark="53" />
-			</attribute>
 			<speed>
 				<walk ground="88" />
 				<run ground="154" />
@@ -2755,10 +2673,6 @@
 			<vitals hp="966.5779" hpRegen="9.1719" mp="584.136" mpRegen="2.8328" />
 			<attack physical="273.0065" magical="131.4891" random="10" critical="88" accuracy="0" attackSpeed="278" type="DAGGER" range="40" distance="80" width="120" />
 			<defence physical="201.95" magical="180.2894" />
-			<attribute>
-				<attack type="DARK" value="20" />
-				<defence fire="20" water="20" wind="20" earth="20" holy="-32" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="55" />
 				<run ground="154" />
@@ -2829,9 +2743,6 @@
 			<vitals hp="966.5779" hpRegen="9.1719" mp="584.136" mpRegen="2.8328" />
 			<attack physical="273.0065" magical="131.4891" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="201.95" magical="180.2894" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="88" />
 				<run ground="154" />
@@ -2917,9 +2828,6 @@
 			<vitals hp="1050.8165" hpRegen="11.3839" mp="647.82" mpRegen="3.3562" />
 			<attack physical="311.7998" magical="152.5015" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="215.9995" magical="192.8321" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="55" />
 				<run ground="154" />
@@ -3011,9 +2919,6 @@
 			<vitals hp="1094.2894" hpRegen="11.4708" mp="680.028" mpRegen="3.3818" />
 			<attack physical="332.7165" magical="163.9741" random="10" critical="88" accuracy="0" attackSpeed="278" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
 			<defence physical="223.2571" magical="199.3112" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="49.5" />
 				<run ground="143" />
@@ -3104,9 +3009,6 @@
 			<vitals hp="1138.6292" hpRegen="11.5577" mp="712.48" mpRegen="3.4075" />
 			<attack physical="354.6809" magical="176.1232" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="230.6692" magical="205.9284" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="88" />
 				<run ground="154" />
@@ -3207,9 +3109,6 @@
 			<vitals hp="1183.8059" hpRegen="11.6446" mp="745.176" mpRegen="3.4331" />
 			<attack physical="377.7165" magical="188.9721" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="238.2352" magical="212.6828" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="55" />
 				<run ground="154" />
@@ -3304,9 +3203,6 @@
 			<vitals hp="1183.8059" hpRegen="11.6446" mp="745.176" mpRegen="3.4331" />
 			<attack physical="377.7165" magical="188.9721" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="238.2352" magical="212.6828" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="55" />
 				<run ground="154" />
@@ -3402,9 +3298,6 @@
 			<vitals hp="1183.8059" hpRegen="11.6446" mp="745.176" mpRegen="3.4331" />
 			<attack physical="377.7165" magical="188.9721" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="238.2352" magical="212.6828" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="55" />
 				<run ground="154" />
@@ -3492,9 +3385,6 @@
 			<vitals hp="1183.8059" hpRegen="11.6446" mp="745.176" mpRegen="3.4331" />
 			<attack physical="377.7165" magical="188.9721" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="238.2352" magical="212.6828" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="55" />
 				<run ground="154" />
@@ -3579,9 +3469,6 @@
 			<vitals hp="1183.8059" hpRegen="11.6446" mp="745.176" mpRegen="3.4331" />
 			<attack physical="377.7165" magical="188.9721" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="238.2352" magical="212.6828" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="55" />
 				<run ground="154" />
@@ -3675,9 +3562,6 @@
 			<vitals hp="1324.0162" hpRegen="11.9053" mp="844.728" mpRegen="3.5099" />
 			<attack physical="453.4597" magical="231.9457" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="261.8454" magical="233.7607" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="88" />
 				<run ground="154" />
@@ -3772,9 +3656,6 @@
 			<vitals hp="1372.1857" hpRegen="11.9922" mp="878.4" mpRegen="3.5356" />
 			<attack physical="480.9784" magical="247.8173" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="270.015" magical="241.054" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="88" />
 				<run ground="154" />
@@ -3862,9 +3743,6 @@
 			<vitals hp="1276.5363" hpRegen="11.8184" mp="811.3" mpRegen="3.4843" />
 			<attack physical="427.087" magical="216.8615" random="10" critical="88" accuracy="0" attackSpeed="278" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
 			<defence physical="253.8245" magical="226.6001" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="49.5" />
 				<run ground="154" />
@@ -3961,9 +3839,6 @@
 			<vitals hp="1421.001" hpRegen="12.0791" mp="912.316" mpRegen="3.5612" />
 			<attack physical="509.6558" magical="264.4958" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="278.3314" magical="248.4785" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="55" />
 				<run ground="154" />
@@ -4050,9 +3925,6 @@
 			<vitals hp="1421.001" hpRegen="12.0791" mp="912.316" mpRegen="3.5612" />
 			<attack physical="509.6558" magical="264.4958" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="278.3314" magical="248.4785" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="55" />
 				<run ground="154" />
@@ -4144,9 +4016,6 @@
 			<vitals hp="1421.001" hpRegen="12.0791" mp="912.316" mpRegen="3.5612" />
 			<attack physical="509.6558" magical="264.4958" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="278.3314" magical="248.4785" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="55" />
 				<run ground="154" />
@@ -4231,9 +4100,6 @@
 			<vitals hp="1421.001" hpRegen="12.0791" mp="912.316" mpRegen="3.5612" />
 			<attack physical="509.6558" magical="264.4958" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="278.3314" magical="248.4785" />
-			<attribute>
-				<defence fire="53" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="55" />
 				<run ground="154" />
@@ -4312,9 +4178,6 @@
 			<vitals hp="966.5779" hpRegen="9.1719" mp="584.136" mpRegen="2.8328" />
 			<attack physical="273.0065" magical="131.4891" random="10" critical="88" accuracy="0" attackSpeed="278" type="DAGGER" range="40" distance="80" width="120" />
 			<defence physical="201.95" magical="180.2894" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="-13" dark="53" />
-			</attribute>
 			<speed>
 				<walk ground="16.5" />
 				<run ground="16.5" />
@@ -4413,9 +4276,6 @@
 			<vitals hp="1229.7868" hpRegen="11.7315" mp="778.116" mpRegen="3.4587" />
 			<attack physical="401.8452" magical="202.5441" random="10" critical="88" accuracy="0" attackSpeed="278" type="DAGGER" range="40" distance="80" width="120" />
 			<defence physical="245.954" magical="219.5737" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="-13" dark="53" />
-			</attribute>
 			<speed>
 				<walk ground="88" />
 				<run ground="110" />
@@ -4494,9 +4354,6 @@
 			<vitals hp="1138.6292" hpRegen="11.5577" mp="712.48" mpRegen="3.4075" />
 			<attack physical="354.6809" magical="176.1232" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="230.6692" magical="205.9284" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="99" />
 				<run ground="110" />
@@ -4587,9 +4444,6 @@
 			<vitals hp="1050.8165" hpRegen="11.3839" mp="647.82" mpRegen="3.3562" />
 			<attack physical="311.7998" magical="152.5015" random="10" critical="88" accuracy="0" attackSpeed="278" type="DAGGER" range="40" distance="80" width="120" />
 			<defence physical="215.9995" magical="192.8321" />
-			<attribute>
-				<defence fire="-13" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="79.2" />
 				<run ground="165" />
@@ -4689,9 +4543,6 @@
 			<vitals hp="1372.1857" hpRegen="11.9922" mp="878.4" mpRegen="3.5356" />
 			<attack physical="480.9784" magical="247.8173" random="10" critical="88" accuracy="0" attackSpeed="278" type="DAGGER" range="40" distance="80" width="120" />
 			<defence physical="270.015" magical="241.054" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="-13" dark="53" />
-			</attribute>
 			<speed>
 				<walk ground="66" />
 				<run ground="132" />
@@ -4791,9 +4642,6 @@
 			<vitals hp="1229.7868" hpRegen="11.7315" mp="778.116" mpRegen="3.4587" />
 			<attack physical="401.8452" magical="202.5441" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="245.954" magical="219.5737" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="33" />
 				<run ground="209" />
@@ -4898,9 +4746,6 @@
 			<vitals hp="1276.5363" hpRegen="11.8184" mp="811.3" mpRegen="3.4843" />
 			<attack physical="427.087" magical="216.8615" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="253.8245" magical="226.6001" />
-			<attribute>
-				<defence fire="-13" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="79.2" />
 				<run ground="165" />
@@ -5009,9 +4854,6 @@
 			<vitals hp="1276.5363" hpRegen="11.8184" mp="811.3" mpRegen="3.4843" />
 			<attack physical="427.087" magical="216.8615" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="253.8245" magical="226.6001" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="79.2" />
 				<run ground="198" />
@@ -5120,9 +4962,6 @@
 			<vitals hp="1324.0162" hpRegen="11.9053" mp="844.728" mpRegen="3.5099" />
 			<attack physical="453.4597" magical="231.9457" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="261.8454" magical="233.7607" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="143" />
 				<run ground="198" />
@@ -5239,9 +5078,6 @@
 			<vitals hp="1324.0162" hpRegen="11.9053" mp="844.728" mpRegen="3.5099" />
 			<attack physical="453.4597" magical="231.9457" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="261.8454" magical="233.7607" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="143" />
 				<run ground="198" />
@@ -5363,9 +5199,6 @@
 			<vitals hp="1372.1857" hpRegen="11.9922" mp="878.4" mpRegen="3.5356" />
 			<attack physical="480.9784" magical="247.8173" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="270.015" magical="241.054" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="79.2" />
 				<run ground="154" />
@@ -5474,9 +5307,6 @@
 			<vitals hp="1372.1857" hpRegen="11.9922" mp="878.4" mpRegen="3.5356" />
 			<attack physical="480.9784" magical="247.8173" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="270.015" magical="241.054" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="33" />
 				<run ground="154" />
@@ -5579,9 +5409,6 @@
 			<vitals hp="1421.001" hpRegen="12.0791" mp="912.316" mpRegen="3.5612" />
 			<attack physical="509.6558" magical="264.4958" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="278.3314" magical="248.4785" />
-			<attribute>
-				<defence fire="-13" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="88" />
 				<run ground="165" />
@@ -5684,9 +5511,6 @@
 			<vitals hp="1470.416" hpRegen="14.378" mp="946.476" mpRegen="4.0992" />
 			<attack physical="539.5019" magical="281.9993" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="286.7927" magical="256.0322" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="79.2" />
 				<run ground="165" />
@@ -5802,9 +5626,6 @@
 			<vitals hp="1470.416" hpRegen="14.378" mp="946.476" mpRegen="4.0992" />
 			<attack physical="539.5019" magical="281.9993" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="286.7927" magical="256.0322" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="55" />
 				<run ground="165" />
@@ -5889,9 +5710,6 @@
 			<vitals hp="1520.3816" hpRegen="14.4807" mp="980.88" mpRegen="4.1285" />
 			<attack physical="570.5232" magical="300.3444" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="295.3965" magical="263.7132" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="143" />
 				<run ground="198" />
@@ -6011,9 +5829,6 @@
 			<vitals hp="1470.416" hpRegen="14.378" mp="946.476" mpRegen="4.0992" />
 			<attack physical="539.5019" magical="281.9993" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="286.7927" magical="256.0322" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="33" />
 				<run ground="154" />
@@ -6114,9 +5929,6 @@
 			<vitals hp="1520.3816" hpRegen="14.4807" mp="980.88" mpRegen="4.1285" />
 			<attack physical="570.5232" magical="300.3444" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="295.3965" magical="263.7132" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="79.2" />
 				<run ground="154" />
@@ -6231,9 +6043,6 @@
 			<vitals hp="1520.3816" hpRegen="14.4807" mp="980.88" mpRegen="4.1285" />
 			<attack physical="570.5232" magical="300.3444" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="295.3965" magical="263.7132" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="55" />
 				<run ground="165" />
@@ -6329,9 +6138,6 @@
 			<vitals hp="1520.3816" hpRegen="14.4807" mp="980.88" mpRegen="4.1285" />
 			<attack physical="570.5232" magical="300.3444" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="295.3965" magical="263.7132" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="55" />
 				<run ground="165" />
@@ -6418,9 +6224,6 @@
 			<vitals hp="1570.8463" hpRegen="14.5834" mp="1015.528" mpRegen="4.1578" />
 			<attack physical="602.7234" magical="319.546" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="304.1402" magical="271.5191" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="58.3" />
 				<run ground="165" />
@@ -6503,9 +6306,6 @@
 			<vitals hp="1570.8463" hpRegen="14.5834" mp="1015.528" mpRegen="4.1578" />
 			<attack physical="602.7234" magical="319.546" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="304.1402" magical="271.5191" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="143" />
 				<run ground="198" />
@@ -6597,9 +6397,6 @@
 			<vitals hp="1570.8463" hpRegen="14.5834" mp="1015.528" mpRegen="4.1578" />
 			<attack physical="602.7234" magical="319.546" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="304.1402" magical="271.5191" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="143" />
 				<run ground="198" />
@@ -6691,9 +6488,6 @@
 			<vitals hp="1570.8463" hpRegen="14.5834" mp="1015.528" mpRegen="4.1578" />
 			<attack physical="602.7234" magical="319.546" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="304.1402" magical="271.5191" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="143" />
 				<run ground="198" />
@@ -6785,9 +6579,6 @@
 			<vitals hp="1570.8463" hpRegen="14.5834" mp="1015.528" mpRegen="4.1578" />
 			<attack physical="602.7234" magical="319.546" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="304.1402" magical="271.5191" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="143" />
 				<run ground="198" />
@@ -6879,9 +6670,6 @@
 			<vitals hp="1570.8463" hpRegen="14.5834" mp="1015.528" mpRegen="4.1578" />
 			<attack physical="602.7234" magical="319.546" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="304.1402" magical="271.5191" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="143" />
 				<run ground="198" />
@@ -6973,9 +6761,6 @@
 			<vitals hp="1570.8463" hpRegen="14.5834" mp="1015.528" mpRegen="4.1578" />
 			<attack physical="602.7234" magical="319.546" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="304.1402" magical="271.5191" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="143" />
 				<run ground="198" />
@@ -7067,9 +6852,6 @@
 			<vitals hp="1570.8463" hpRegen="14.5834" mp="1015.528" mpRegen="4.1578" />
 			<attack physical="602.7234" magical="319.546" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="304.1402" magical="271.5191" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="143" />
 				<run ground="198" />
@@ -7161,9 +6943,6 @@
 			<vitals hp="1570.8463" hpRegen="14.5834" mp="1015.528" mpRegen="4.1578" />
 			<attack physical="602.7234" magical="319.546" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="304.1402" magical="271.5191" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="143" />
 				<run ground="198" />
@@ -7255,9 +7034,6 @@
 			<vitals hp="1570.8463" hpRegen="14.5834" mp="1015.528" mpRegen="4.1578" />
 			<attack physical="602.7234" magical="319.546" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="304.1402" magical="271.5191" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="143" />
 				<run ground="198" />
@@ -7337,9 +7113,6 @@
 			<vitals hp="1520.3816" hpRegen="14.4807" mp="980.88" mpRegen="4.1285" />
 			<attack physical="570.5232" magical="300.3444" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="295.3965" magical="263.7132" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="33" />
 				<run ground="220" />
@@ -7445,9 +7218,6 @@
 			<vitals hp="1570.8463" hpRegen="14.5834" mp="1015.528" mpRegen="4.1578" />
 			<attack physical="602.7234" magical="319.546" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="304.1402" magical="271.5191" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="58.3" />
 				<run ground="165" />
@@ -7531,9 +7301,6 @@
 			<vitals hp="1621.7562" hpRegen="14.6861" mp="1050.42" mpRegen="4.187" />
 			<attack physical="636.1024" magical="339.6175" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="313.0211" magical="279.4474" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="58.3" />
 				<run ground="165" />
@@ -7630,9 +7397,6 @@
 			<vitals hp="1621.7562" hpRegen="14.6861" mp="1050.42" mpRegen="4.187" />
 			<attack physical="636.1024" magical="339.6175" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="313.0211" magical="279.4474" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="58.3" />
 				<run ground="165" />
@@ -7705,9 +7469,6 @@
 			<vitals hp="1570.8463" hpRegen="14.5834" mp="1015.528" mpRegen="4.1578" />
 			<attack physical="602.7234" magical="319.546" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="304.1402" magical="271.5191" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="33" />
 				<run ground="187" />
@@ -7809,9 +7570,6 @@
 			<vitals hp="1622" hpRegen="23.204" mp="1165.5" mpRegen="3.8889" />
 			<attack physical="686.7432" magical="359.3097" random="30" critical="88" accuracy="4.75" attackSpeed="272" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="297.4829" magical="262.0632" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="87.12" />
 				<run ground="130.68" />
@@ -7911,9 +7669,6 @@
 			<vitals hp="1570.8463" hpRegen="14.5834" mp="1015.528" mpRegen="4.1578" />
 			<attack physical="602.7234" magical="319.546" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="304.1402" magical="271.5191" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="77" />
 				<run ground="143" />
@@ -8019,9 +7774,6 @@
 			<vitals hp="1621.7562" hpRegen="14.6861" mp="1050.42" mpRegen="4.187" />
 			<attack physical="636.1024" magical="339.6175" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="313.0211" magical="279.4474" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="77" />
 				<run ground="187" />
@@ -8120,9 +7872,6 @@
 			<vitals hp="1673.0547" hpRegen="14.7888" mp="1085.556" mpRegen="4.2163" />
 			<attack physical="670.6565" magical="360.5701" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="322.0361" magical="287.4955" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="66" />
 				<run ground="187" />
@@ -8229,9 +7978,6 @@
 			<vitals hp="1724.6831" hpRegen="14.8915" mp="1120.936" mpRegen="4.2456" />
 			<attack physical="706.3783" magical="382.4128" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="331.182" magical="295.6604" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="66" />
 				<run ground="187" />
@@ -8331,9 +8077,6 @@
 			<vitals hp="1673.0547" hpRegen="14.7888" mp="1085.556" mpRegen="4.2163" />
 			<attack physical="670.6565" magical="360.5701" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="322.0361" magical="287.4955" />
-			<attribute>
-				<defence fire="20" water="20" wind="-13" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="154" />
 				<run ground="154" />
@@ -8437,9 +8180,6 @@
 			<vitals hp="1724.6831" hpRegen="14.8915" mp="1120.936" mpRegen="4.2456" />
 			<attack physical="706.3783" magical="382.4128" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="331.182" magical="295.6604" />
-			<attribute>
-				<defence fire="20" water="20" wind="-13" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="154" />
 				<run ground="154" />
@@ -8541,9 +8281,6 @@
 			<vitals hp="1724.6831" hpRegen="14.8915" mp="1120.936" mpRegen="4.2456" />
 			<attack physical="706.3783" magical="382.4128" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="331.182" magical="295.6604" />
-			<attribute>
-				<defence fire="-5" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="49.5" />
 				<run ground="203.5" />
@@ -8645,9 +8382,6 @@
 			<vitals hp="1776.5802" hpRegen="14.9942" mp="1156.56" mpRegen="4.2749" />
 			<attack physical="743.2561" magical="405.1524" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="340.455" magical="303.9389" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="49.5" />
 				<run ground="203.5" />
@@ -8741,9 +8475,6 @@
 			<vitals hp="1776.5802" hpRegen="14.9942" mp="1156.56" mpRegen="4.2749" />
 			<attack physical="743.2561" magical="405.1524" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="340.455" magical="303.9389" />
-			<attribute>
-				<defence fire="-13" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="79.2" />
 				<run ground="132" />
@@ -8845,9 +8576,6 @@
 			<vitals hp="1828.6827" hpRegen="15.0969" mp="1192.428" mpRegen="4.3042" />
 			<attack physical="781.2742" magical="428.7932" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="349.8516" magical="312.3276" />
-			<attribute>
-				<defence fire="-13" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="79.2" />
 				<run ground="132" />
@@ -8946,9 +8674,6 @@
 			<vitals hp="1828.6827" hpRegen="15.0969" mp="1192.428" mpRegen="4.3042" />
 			<attack physical="781.2742" magical="428.7932" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="349.8516" magical="312.3276" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="22" />
 				<run ground="22" />
@@ -9061,9 +8786,6 @@
 			<vitals hp="1880.9252" hpRegen="15.1996" mp="1228.54" mpRegen="4.3334" />
 			<attack physical="820.4123" magical="453.3368" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="359.3676" magical="320.8229" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="22" />
 				<run ground="22" />
@@ -9174,9 +8896,6 @@
 			<vitals hp="1933.2404" hpRegen="15.3023" mp="1264.896" mpRegen="4.3627" />
 			<attack physical="860.6458" magical="478.782" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="368.9986" magical="329.421" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="22" />
 				<run ground="187" />
@@ -9277,9 +8996,6 @@
 			<vitals hp="1985.5593" hpRegen="17.775" mp="1301.496" mpRegen="4.941" />
 			<attack physical="901.9452" magical="505.1246" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="378.7402" magical="338.1177" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="22" />
 				<run ground="187" />
@@ -9380,9 +9096,6 @@
 			<vitals hp="1985.5593" hpRegen="17.775" mp="1301.496" mpRegen="4.941" />
 			<attack physical="901.9452" magical="505.1246" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="378.7402" magical="338.1177" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="44" />
 				<run ground="132" />
@@ -9487,9 +9200,6 @@
 			<vitals hp="2037.8108" hpRegen="17.8935" mp="1338.34" mpRegen="4.9739" />
 			<attack physical="944.2765" magical="532.3573" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="388.5874" magical="346.9087" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="44" />
 				<run ground="132" />
@@ -9592,9 +9302,6 @@
 			<vitals hp="2037.8108" hpRegen="17.8935" mp="1338.34" mpRegen="4.9739" />
 			<attack physical="944.2765" magical="532.3573" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="388.5874" magical="346.9087" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="17.6" />
 				<run ground="187" />
@@ -9698,9 +9405,6 @@
 			<vitals hp="2089.9227" hpRegen="18.012" mp="1375.428" mpRegen="5.0069" />
 			<attack physical="987.6007" magical="560.4696" random="50" critical="11" accuracy="9" attackSpeed="278" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="398.5353" magical="355.7896" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="17.6" />
 				<run ground="187" />
@@ -9805,9 +9509,6 @@
 			<vitals hp="1776.5802" hpRegen="14.9942" mp="1156.56" mpRegen="4.2749" />
 			<attack physical="743.2561" magical="405.1524" random="30" critical="44" accuracy="4.75" attackSpeed="278" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="340.455" magical="303.9389" />
-			<attribute>
-				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
-			</attribute>
 			<speed>
 				<walk ground="22" />
 				<run ground="187" />
