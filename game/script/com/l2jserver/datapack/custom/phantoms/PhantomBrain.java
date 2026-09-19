@@ -87,7 +87,7 @@ public class PhantomBrain {
 	 * What the bot says back.
 	 * @param who the bot in a line or two: name, level, class, what it is doing
 	 * @param heard what the player said
-	 * @param said the bot's own last line, so it does not repeat itself, or null
+	 * @param said the conversation so far, a few lines of it, or null
 	 * @return the answer, or null when the model is busy, slow or not there - the caller then uses the phrase book
 	 */
 	public String reply(String who, String heard, String said) {
@@ -112,7 +112,7 @@ public class PhantomBrain {
 		final StringBuilder out = new StringBuilder();
 		out.append(who).append('\n');
 		if ((said != null) && !said.isBlank()) {
-			out.append("A moment ago you said: ").append(said).append('\n');
+			out.append("What has been said so far:\n").append(said).append('\n');
 		}
 		out.append("Another player says to you: ").append(heard).append('\n');
 		out.append(String.format(STYLE, _words));

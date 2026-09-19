@@ -1165,7 +1165,7 @@ public class Phantoms {
 			String answer = null;
 			if (think) {
 				try {
-					answer = _brain.reply(situation(phantom), text, phantom.lastAnswer());
+					answer = _brain.reply(situation(phantom), text, phantom.talk(player.getName(), System.currentTimeMillis()));
 				} catch (Exception ex) {
 					LOG.warn("{} could not think of an answer!", phantom.player().getName(), ex);
 				}
@@ -1173,7 +1173,9 @@ public class Phantoms {
 			if (answer == null) {
 				answer = fallback;
 			}
-			phantom.startTalking(player.getName(), answer, System.currentTimeMillis());
+			final long spoken = System.currentTimeMillis();
+			phantom.startTalking(player.getName(), answer, spoken);
+			phantom.remember(player.getName(), text, answer, spoken);
 			say(phantom, channel, answer, player.getName(), null, tellTo);
 		}, Rnd.get(1200, 3500));
 	}

@@ -21,6 +21,9 @@ package com.l2jserver.datapack.custom.phantoms;
 import com.l2jserver.commons.util.Rnd;
 import com.l2jserver.gameserver.GeoData;
 import com.l2jserver.gameserver.ai.CtrlIntention;
+import java.util.ArrayList;
+import java.util.List;
+
 import com.l2jserver.gameserver.model.Location;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jserver.gameserver.network.serverpackets.SocialAction;
@@ -32,6 +35,11 @@ import com.l2jserver.gameserver.util.Util;
  * Chat is decided by {@link Phantoms}, which can pair two bots into a dialog.
  */
 public class Phantom {
+	/** How many lines of a conversation a bot keeps in mind. */
+	private static final int TALK_LINES = 6;
+	/** How long a bot keeps the lines of a conversation. */
+	private static final long TALK_KEPT = 5 * 60 * 1000L;
+
 	/** What the bot is busy with. */
 	public enum State {
 		/** Walking around the town square, sitting, chatting. */
@@ -104,6 +112,10 @@ public class Phantom {
 	private boolean _townOnly;
 	private long _nextSupply;
 	private long _nextRestock;
+	/** The last few lines said to this bot and by it, so a conversation holds together. */
+	private final List<String> _talk = new ArrayList<>();
+	private String _talkingWith;
+	private long _memoryUntil;
 	private boolean _buying;
 	private long _nextReaction;
 	private String _talkingTo;
@@ -298,6 +310,43 @@ public class Phantom {
 
 	public void supplied(long now) {
 		_nextSupply = now + 60000L;
+	}
+
+	/**
+	 * Keeps what was said, so the next answer follows the one before it.
+	 * @param who the player talking to the bot
+	 * @param heard what they said
+	 * @param answer what the bot answered
+	 * @param now the time
+	 */
+	public void remember(String who, String heard, String answer, long now) {
+		if ((who == null) || !who.equals(_talkingWith) || (now > _memoryUntil)) {
+			_talk.clear();
+			_talkingWith = who;
+		}
+		_talkUntil = now + TALK_MEMORY;
+		if (heard != null) {
+			_talk.add(who + ": " + heard);
+		}
+		if (answer != null) {
+			_talk.add("you: " + answer);
+		}
+		while (_talk.size() > TALK_LINES) {
+			_talk.remove(0);
+		}
+	}
+
+	/**
+	 * The conversation so far with this player, a few lines of it.
+	 * @param who the player
+	 * @param now the time
+	 * @return the lines, or null when there is nothing to remember
+	 */
+	public String talk(String who, long now) {
+		if (_talk.isEmpty() || (now > _memoryUntil) || (who == null) || !who.equals(_talkingWith)) {
+			return null;
+		}
+		return String.join("\n", _talk);
 	}
 
 	/** True for a shopkeeper that buys gear instead of selling it. */
