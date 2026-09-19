@@ -579,6 +579,10 @@ public class Phantoms {
 	/** One step of a fight: rest, pick a target, hit it, use a skill. */
 	private void fight(Phantom phantom, long now) {
 		final L2PcInstance bot = phantom.player();
+		if (PhantomCombat.drink(bot)) {
+			// a potion first, the way a player does before it comes to running
+			return;
+		}
 		if (PhantomCombat.shouldFlee(bot)) {
 			// too badly hurt to stay out here
 			goHome(phantom);

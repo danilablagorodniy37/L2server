@@ -23,6 +23,8 @@ import java.util.List;
 
 import com.l2jserver.commons.util.Rnd;
 import com.l2jserver.gameserver.GeoData;
+import com.l2jserver.gameserver.handler.IItemHandler;
+import com.l2jserver.gameserver.handler.ItemHandler;
 import com.l2jserver.gameserver.ai.CtrlIntention;
 import com.l2jserver.gameserver.model.L2Object;
 import com.l2jserver.gameserver.model.L2World;
@@ -47,6 +49,8 @@ public class PhantomCombat {
 	private static final double FLEE_HP = 0.25;
 	/** A bot sits until it has this share of HP again. */
 	private static final double RESTED_HP = 0.85;
+	/** The share of mana a bot keeps for the next fight instead of spending it all on skills. */
+	private static final double MP_RESERVE = 0.25;
 	/** Levels above the bot it still dares to attack: it picks on weaker monsters, the way a player farms. */
 	private static final int MAX_LEVEL_ABOVE = -5;
 	/** Soulshots by grade, from no grade to S: a bot fights with shots like anybody else. */
@@ -60,6 +64,12 @@ public class PhantomCombat {
 	/** How many shots a bot carries: it is topped up long before it can run out. */
 	private static final int SHOTS = 5000;
 	private static final int SHOTS_LEFT = 2000;
+	/** Greater Healing Potion, and how many a bot carries. */
+	private static final int POTION = 1539;
+	private static final int POTIONS = 200;
+	private static final int POTIONS_LEFT = 50;
+	/** Below this share of HP a bot drinks, and no oftener than the potion allows. */
+	private static final double DRINK_AT = 0.55;
 	/** How far a bot walks for something lying on the ground. */
 	private static final int LOOT_RADIUS = 700;
 	/** How close it has to stand to pick it up. */
@@ -175,6 +185,10 @@ public class PhantomCombat {
 		if (left < SHOTS_LEFT) {
 			bot.getInventory().addItem("PhantomShots", shotId, SHOTS - left, bot, null);
 		}
+		final long potions = bot.getInventory().getInventoryItemCount(POTION, -1);
+		if (potions < POTIONS_LEFT) {
+			bot.getInventory().addItem("PhantomShots", POTION, POTIONS - potions, bot, null);
+		}
 		if (!bot.getAutoSoulShot().contains(shotId)) {
 			bot.addAutoSoulShot(shotId);
 		}
@@ -197,20 +211,29 @@ public class PhantomCombat {
 	 * @return the skill, or null when it should just swing its weapon
 	 */
 	public static Skill pickAttackSkill(L2PcInstance bot, L2Character target) {
-		final List<Skill> usable = new ArrayList<>();
+		// what is left after the weakest quarter of the mana: a bot keeps something back for the next fight
+		final double spare = bot.getCurrentMp() - (bot.getMaxMp() * MP_RESERVE);
+		Skill best = null;
+		double bestWorth = 0;
 		for (Skill skill : bot.getAllSkills()) {
 			if (!skill.isActive() || !skill.isBad() || skill.isContinuous() || skill.isPassive()) {
 				continue;
 			}
-			if (bot.isSkillDisabled(skill) || (skill.getMpConsume2() > bot.getCurrentMp())) {
+			if (bot.isSkillDisabled(skill) || (skill.getMpConsume2() > spare)) {
 				continue;
 			}
 			if ((skill.getCastRange() > 0) && (bot.calculateDistance(target, false, false) > skill.getCastRange())) {
 				continue;
 			}
-			usable.add(skill);
+			// the costliest skill of the highest grade hits hardest; a little chance for the others,
+			// so a bot does not cast the same thing every single time
+			final double worth = skill.getMpConsume2() + skill.getMagicLevel() + Rnd.get(20);
+			if (worth > bestWorth) {
+				best = skill;
+				bestWorth = worth;
+			}
 		}
-		return usable.isEmpty() ? null : usable.get(Rnd.get(usable.size()));
+		return best;
 	}
 
 	/** The buffs a bot casts on itself before it starts hunting. */
@@ -222,6 +245,23 @@ public class PhantomCombat {
 			}
 		}
 		return out;
+	}
+
+	/**
+	 * A hurt bot drinks a healing potion, the way a player does before it comes to running away.
+	 * @param bot the bot
+	 * @return true when it drank
+	 */
+	public static boolean drink(L2PcInstance bot) {
+		if ((hpRatio(bot) > DRINK_AT) || bot.isDead()) {
+			return false;
+		}
+		final L2ItemInstance potion = bot.getInventory().getItemByItemId(POTION);
+		if (potion == null) {
+			return false;
+		}
+		final IItemHandler handler = ItemHandler.getInstance().getHandler(potion.getEtcItem());
+		return (handler != null) && handler.useItem(bot, potion, false);
 	}
 
 	public static double hpRatio(L2PcInstance bot) {

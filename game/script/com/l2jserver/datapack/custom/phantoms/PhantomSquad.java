@@ -232,6 +232,9 @@ public class PhantomSquad {
 			return;
 		}
 		raise(now);
+		for (Phantom member : _members) {
+			PhantomCombat.drink(member.player());
+		}
 		heal(now);
 		buff(now);
 		supply(now);
