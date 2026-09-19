@@ -181,6 +181,11 @@ public class PhantomBrain {
 			line = line.substring(0, newLine).strip();
 		}
 		line = line.replace("\"", "").replace("*", "").replace("\r", "").strip();
+		// the model sometimes writes the line the way a chat log looks, with a name in front of it
+		final int colon = line.indexOf(':');
+		if ((colon > 0) && (colon < 18) && (line.indexOf(' ') > colon)) {
+			line = line.substring(colon + 1).strip();
+		}
 		if (line.length() > 120) {
 			line = line.substring(0, 120).strip();
 		}
