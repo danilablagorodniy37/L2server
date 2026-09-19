@@ -501,13 +501,13 @@ public class Phantoms {
 					taken++;
 				}
 				if (player == null) {
-					player = _factory.create(classId, camp.level() + Rnd.get(0, 2), true);
+					player = _factory.create(classId, camp.level() + Rnd.get(0, 2));
 				}
 				if (player == null) {
 					continue;
 				}
 				PhantomFactory.teach(player);
-				// a bot from an earlier run may have been made before the parties wore jewels
+				// jewels and enchants: only what the bot is not wearing yet is added
 				PhantomFactory.dressForBattle(player);
 				enterWorld(player, where);
 				final Phantom phantom = new Phantom(player, where, _radius);

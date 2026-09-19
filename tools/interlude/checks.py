@@ -839,6 +839,7 @@ def starting_equipment():
 # ---------------------------------------------------------------- phantom players (bots)
 
 PHANTOMS = DATA / "phantoms"
+PHANTOM_SRC = ds.GAME / "script" / "com" / "l2jserver" / "datapack" / "custom" / "phantoms"
 SQUAD_RADIUS = 2500  # how far from their camp the standing parties find something to kill
 MIN_CAMP_MONSTERS = 10  # fewer than this around a camp and the parties stand idle
 # Slots PhantomFacts can fill; keep in sync with its value() method.
@@ -951,6 +952,69 @@ def phantom_phrases():
 		if required not in sections:
 			problems[f"[{required}]"].append("section missing")
 	return problems
+
+
+def phantom_ids():
+	"""The item and skill ids written into the bot scripts exist and belong to Interlude."""
+	problems = defaultdict(list)
+	items = ds.h5_items()
+	allowed = allowed_items()
+
+	def item(kind, item_id, want_type=None):
+		template = items.get(item_id)
+		if template is None:
+			problems[f"{kind} {item_id}"].append("no such item")
+		elif item_id not in allowed:
+			problems[f"{kind} {item_id} {template['name']}"].append("not an Interlude or Kamael item")
+		elif want_type and (template["type"] != want_type):
+			problems[f"{kind} {item_id} {template['name']}"].append(f"is a {template['type']}, expected a {want_type}")
+
+	combat = (PHANTOM_SRC / "PhantomCombat.java").read_text(encoding="utf-8")
+	for kind in ("SOULSHOTS", "SPIRITSHOTS"):
+		block = re.search(rf"{kind}\s*=\s*\{{([^}}]*)\}}", combat)
+		if not block:
+			problems[kind].append("not found in PhantomCombat.java")
+			continue
+		ids = [int(value) for value in re.findall(r"\d+", block.group(1))]
+		if len(ids) != 6:
+			problems[kind].append(f"{len(ids)} shots, expected one per grade from none to S")
+		for item_id in ids:
+			item(kind.lower()[:-1], item_id, "EtcItem")
+
+	factory = (PHANTOM_SRC / "PhantomFactory.java").read_text(encoding="utf-8")
+	jewels = re.search(r"JEWELS\s*=\s*\{(.*?)\n\t\};", factory, re.S)
+	if not jewels:
+		problems["JEWELS"].append("not found in PhantomFactory.java")
+	else:
+		pairs = re.findall(r"(\d+),\s*(\d+)", jewels.group(1))
+		if not pairs:
+			problems["JEWELS"].append("no jewels listed")
+		for item_id, count in pairs:
+			item("jewel", int(item_id), "Armor")
+			if not (1 <= int(count) <= 2):
+				problems[f"jewel {item_id}"].append(f"{count} of them, a player wears one or two")
+
+	skills = skill_levels()
+	buffs = (PHANTOM_SRC / "PhantomBuffs.java").read_text(encoding="utf-8")
+	found = re.findall(r"new Buff\((\d+),\s*(\d+)\)", buffs)
+	if len(found) < 10:
+		problems["PhantomBuffs"].append(f"only {len(found)} buffs, the set should cover body, soul and trade")
+	for skill_id, level in found:
+		levels = skills.get(int(skill_id))
+		if levels is None:
+			problems[f"buff {skill_id}"].append("no such skill")
+		elif int(level) > levels:
+			problems[f"buff {skill_id}"].append(f"level {level}, the skill goes up to {levels}")
+	return problems
+
+
+def skill_levels():
+	"""skill id -> how many levels it has."""
+	out = {}
+	for f in ds._xml_files(DATA / "stats" / "skills"):
+		for skill in ET.parse(f).getroot().findall("skill"):
+			out[int(skill.get("id"))] = int(skill.get("levels", 1))
+	return out
 
 
 def phantom_squads():
@@ -1136,7 +1200,7 @@ DATAPACK_CHECKS = {f.__name__: f for f in (
 	html_multisell_links, html_buylist_links, html_teleport_links, html_quest_buttons, script_shop_calls, quest_dialog_links, quest_npcs, quest_kill_targets,
 	spawn_zones, leader_minions, loader_classes, xml_schemas,
 	shops_interlude_items, drops_interlude_items, recipes_interlude_items, manor_interlude_items, teleports_interlude, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_enchant_costs, interlude_residence_skills, interlude_npc_stats, kamael_isle, interlude_config, server_rates,
-	interlude_loaders, starting_equipment, phantom_gear, phantom_hunting, phantom_trade, phantom_phrases, phantom_config, phantom_squads, hunting_html,
+	interlude_loaders, starting_equipment, phantom_gear, phantom_hunting, phantom_trade, phantom_phrases, phantom_config, phantom_squads, phantom_ids, hunting_html,
 )}
 DATABASE_CHECKS = {"database_tables": database_tables}
 

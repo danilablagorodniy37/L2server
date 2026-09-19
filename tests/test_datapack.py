@@ -330,3 +330,35 @@ def test_hunting_html_reports_a_ground_without_a_link(tmp_path, monkeypatch):
 
 	assert problems, "every ground of hunting.txt should be reported as missing"
 	assert any("no link with its place" in reason for reasons in problems.values() for reason in reasons), problems
+
+
+def test_phantom_ids_reports_a_buff_that_does_not_exist(tmp_path, monkeypatch):
+	"""A wrong skill id means the bots go hunting without that buff and nobody notices."""
+	src = checks.PHANTOM_SRC
+	(tmp_path / "PhantomCombat.java").write_text(
+		(src / "PhantomCombat.java").read_text(encoding="utf-8"), encoding="utf-8")
+	(tmp_path / "PhantomFactory.java").write_text(
+		(src / "PhantomFactory.java").read_text(encoding="utf-8"), encoding="utf-8")
+	(tmp_path / "PhantomBuffs.java").write_text(
+		(src / "PhantomBuffs.java").read_text(encoding="utf-8").replace("new Buff(1204, 2)", "new Buff(999999, 2)"),
+		encoding="utf-8")
+	monkeypatch.setattr(checks, "PHANTOM_SRC", tmp_path)
+
+	problems = checks.phantom_ids()
+
+	assert "buff 999999" in problems, problems
+
+
+def test_phantom_ids_reports_a_soulshot_of_a_later_chronicle(tmp_path, monkeypatch):
+	"""Shots the server does not have leave the bots hitting at half strength."""
+	src = checks.PHANTOM_SRC
+	for name in ("PhantomFactory.java", "PhantomBuffs.java"):
+		(tmp_path / name).write_text((src / name).read_text(encoding="utf-8"), encoding="utf-8")
+	# 22082 is a Blessed Spiritshot of a later chronicle, not an Interlude soulshot
+	(tmp_path / "PhantomCombat.java").write_text(
+		(src / "PhantomCombat.java").read_text(encoding="utf-8").replace("1835, 1463", "22082, 1463"), encoding="utf-8")
+	monkeypatch.setattr(checks, "PHANTOM_SRC", tmp_path)
+
+	problems = checks.phantom_ids()
+
+	assert [key for key in problems if key.startswith("soulshot 22082")], problems

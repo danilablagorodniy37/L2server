@@ -27,6 +27,9 @@ import com.l2jserver.gameserver.model.skills.Skill;
  * A player walks to a buffer before every trip; a bot has nobody to walk to, so it is given the
  * plain set of Interlude buffs any player would carry: the prophet's dances of the body and soul,
  * and one or two more for its trade. Nothing a player could not have bought in town.
+ * <p>
+ * A bot is buffed again whenever it fills its pouch with shots, once a minute, and only what has
+ * run out is cast; a buff from a real prophet nearby is stronger and stays.
  */
 public class PhantomBuffs {
 	/** A skill and the level it is given at. */
@@ -60,9 +63,6 @@ public class PhantomBuffs {
 		new Buff(1059, 3), // Empower
 		new Buff(1078, 6), // Concentration
 	};
-
-	/** How long the set holds before a bot is buffed again, in milliseconds. */
-	public static final long HOLDS = 15 * 60 * 1000L;
 
 	private PhantomBuffs() {
 	}

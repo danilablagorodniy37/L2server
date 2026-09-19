@@ -295,8 +295,14 @@ public class PhantomSquad {
 		}
 		_nextSupply = now + SUPPLY_EVERY;
 		for (Phantom member : _members) {
-			if (!member.player().isDead()) {
-				PhantomCombat.supply(member.player());
+			final L2PcInstance player = member.player();
+			if (player.isDead()) {
+				continue;
+			}
+			PhantomCombat.supply(player);
+			// a party never walks to town, so what it picked up is sold where it stands
+			if (PhantomTrade.bagFull(player)) {
+				member.earned(PhantomTrade.sellLoot(player));
 			}
 		}
 	}

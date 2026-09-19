@@ -118,16 +118,6 @@ public class PhantomFactory {
 	 * @return the character, or null when no name was free
 	 */
 	public L2PcInstance create(ClassId wanted, int level) {
-		return create(wanted, level, false);
-	}
-
-	/**
-	 * @param wanted the class it should be, null for any class of its level
-	 * @param level the level it starts at
-	 * @param full true for a party bot: jewels on top of the armour and everything enchanted
-	 * @return the character, or null when no name was free
-	 */
-	public L2PcInstance create(ClassId wanted, int level, boolean full) {
 		final ClassId classId = (wanted != null) ? wanted : randomClass(level);
 		final boolean female = (classId.getRace() == Race.KAMAEL) ? FEMALE_KAMAEL.contains(classId.getId()) : Rnd.nextBoolean();
 		final var appearance = new PcAppearance((byte) Rnd.get(3), (byte) Rnd.get(3), (byte) Rnd.get(3), female);
@@ -146,9 +136,6 @@ public class PhantomFactory {
 		player.setCurrentHpMp(player.getMaxHp(), player.getMaxMp());
 		player.setCurrentCp(player.getMaxCp());
 		equip(player, classId, level);
-		if (full) {
-			dressForBattle(player);
-		}
 		player.storeMe();
 		player.getInventory().updateDatabase();
 		return player;
@@ -215,9 +202,17 @@ public class PhantomFactory {
 		}
 	}
 
-	/** Tateossian jewels, the S grade set of Interlude: necklace, two earrings, two rings. */
-	private static final int[] JEWELS = {
-		920, 858, 858, 889, 889
+	/** Tateossian jewels, the S grade set of Interlude: a necklace, two earrings and two rings. */
+	private static final int[][] JEWELS = {
+		{
+			920, 1
+		},
+		{
+			858, 2
+		},
+		{
+			889, 2
+		},
 	};
 	/** What a party bot's gear is enchanted to: enough to matter against monsters of its own level. */
 	private static final int ENCHANT = 6;
@@ -227,10 +222,26 @@ public class PhantomFactory {
 	 * @param player the bot
 	 */
 	public static void dressForBattle(L2PcInstance player) {
-		for (int itemId : JEWELS) {
-			final L2ItemInstance jewel = player.getInventory().addItem("Phantom", itemId, 1, player, null);
-			if (jewel != null) {
-				player.getInventory().equipItem(jewel);
+		for (int[] jewel : JEWELS) {
+			final int itemId = jewel[0];
+			final int wanted = jewel[1];
+			// a bot is dressed again every time it is loaded, so only what is missing is added
+			long has = 0;
+			for (L2ItemInstance item : player.getInventory().getItems()) {
+				if (item.getId() == itemId) {
+					has++;
+				}
+			}
+			for (long i = has; i < wanted; i++) {
+				final L2ItemInstance added = player.getInventory().addItem("Phantom", itemId, 1, player, null);
+				if (added == null) {
+					break;
+				}
+			}
+			for (L2ItemInstance item : player.getInventory().getItems()) {
+				if ((item.getId() == itemId) && !item.isEquipped()) {
+					player.getInventory().equipItem(item);
+				}
 			}
 		}
 		for (L2ItemInstance item : player.getInventory().getItems()) {
