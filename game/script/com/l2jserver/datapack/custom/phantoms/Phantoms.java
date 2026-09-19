@@ -79,6 +79,8 @@ public class Phantoms {
 	private static final int SIGHT_RANGE = 1600;
 	private static final long SEEN_MEMORY = 5 * 60 * 1000L;
 	private static final long NEWS_MEMORY = 20 * 60 * 1000L;
+	/** A tick of the bots that takes longer than this is worth a line in the log. */
+	private static final long SLOW_TICK = 400;
 	/** Out of a hundred turns with nothing happening, how many end in a word of small talk. */
 	private static final int SMALL_TALK = 35;
 
@@ -119,6 +121,8 @@ public class Phantoms {
 	private int _raidMinutes;
 	private int _raidEvery;
 	private final List<PhantomSquad> _elite = new ArrayList<>();
+	/** How long the ticks take, so a crowd of bots cannot quietly eat the server. */
+	private final Map<String, long[]> _ticks = new HashMap<>();
 
 	public Phantoms() {
 		final File root = server().getDatapackRoot();
@@ -258,9 +262,9 @@ public class Phantoms {
 		smallParties();
 		_news = new PhantomNews(this, this::onNews);
 		_instance = this;
-		ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(this::tick, 5, 2, TimeUnit.SECONDS);
+		ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(() -> timed("walk", this::tick), 5, 2, TimeUnit.SECONDS);
 		if (_huntShare > 0) {
-			ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(this::huntTick, 20, 1, TimeUnit.SECONDS);
+			ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(() -> timed("hunt", this::huntTick), 20, 1, TimeUnit.SECONDS);
 		}
 		if (_replyToPlayers) {
 			Containers.Global().addListener(new ConsumerEventListener(Containers.Global(), EventType.PLAYER_CHAT, (PlayerChat event) -> onPlayerChat(event), this));
@@ -269,7 +273,7 @@ public class Phantoms {
 		Containers.Global().addListener(new ConsumerEventListener(Containers.Global(), EventType.PLAYER_CLAN_INVITE, (PlayerClanInvite event) -> onClanInvite(event), this));
 		Containers.Global().addListener(new ConsumerEventListener(Containers.Global(), EventType.PLAYER_TRADE_REQUEST, (PlayerTradeRequest event) -> onTradeRequest(event), this));
 		if (!_squads.isEmpty()) {
-			ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(this::squadTick, 25, 1, TimeUnit.SECONDS);
+			ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(() -> timed("party", this::squadTick), 25, 1, TimeUnit.SECONDS);
 		}
 		if ((_traders > 0) && (_restockMinutes > 0)) {
 			ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(this::restockTick, 2, 2, TimeUnit.MINUTES);
@@ -369,6 +373,10 @@ public class Phantoms {
 				LOG.info("  {}", squad.state());
 			}
 		}
+		final String cost = tickCost();
+		if (!cost.isEmpty()) {
+			LOG.info("bot ticks: {}.", cost);
+		}
 		LOG.info("bots: {} in town, {} travelling, {} hunting, {} coming back, {} trading; {} kills, {} deaths and {} adena of loot sold.",
 			states.getOrDefault(Phantom.State.TOWN, 0), states.getOrDefault(Phantom.State.TRAVEL, 0),
 			states.getOrDefault(Phantom.State.HUNT, 0), states.getOrDefault(Phantom.State.RETURN, 0),
@@ -403,6 +411,44 @@ public class Phantoms {
 				LOG.warn("{} failed to hunt!", phantom.player().getName(), ex);
 			}
 		}
+	}
+
+	/**
+	 * Runs one of the bot ticks and remembers how long it took.
+	 * @param name what the tick is called in the log
+	 * @param work the tick itself
+	 */
+	private void timed(String name, Runnable work) {
+		final long start = System.nanoTime();
+		try {
+			work.run();
+		} finally {
+			final long millis = (System.nanoTime() - start) / 1000000;
+			final long[] counter = _ticks.computeIfAbsent(name, key -> new long[3]);
+			counter[0]++;
+			counter[1] += millis;
+			counter[2] = Math.max(counter[2], millis);
+			if (millis > SLOW_TICK) {
+				LOG.warn("the {} tick of the bots took {} ms.", name, millis);
+			}
+		}
+	}
+
+	/** What the ticks cost, for the report, and a clean slate for the next five minutes. */
+	private String tickCost() {
+		final StringBuilder out = new StringBuilder();
+		for (var entry : _ticks.entrySet()) {
+			final long[] counter = entry.getValue();
+			if (counter[0] == 0) {
+				continue;
+			}
+			out.append(out.length() > 0 ? ", " : "").append(entry.getKey()).append(' ') //
+				.append(counter[1] / counter[0]).append(" ms on average, ").append(counter[2]).append(" ms at worst");
+			counter[0] = 0;
+			counter[1] = 0;
+			counter[2] = 0;
+		}
+		return out.toString();
 	}
 
 	/** A store that has stood a while, or sold out, gets new goods. */

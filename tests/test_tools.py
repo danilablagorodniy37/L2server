@@ -252,3 +252,53 @@ def test_middle_chest_picks_a_chest_not_a_mimic():
 	}
 	npc, template = build_spawns.middle_chest(maker, npcs)
 	assert npc.get("id") == "18267" and template["level"] == 27
+
+
+class TestCleanClientIni:
+	"""tools/client/clean_ini.py takes the previous owner's settings out of the client's L2.ini."""
+
+	INI = (
+		"[URL]\r\n"
+		"ServerAddr=127.0.0.1\r\n"
+		"GamePointURL=http://pvp-moon.ru/login\r\n"
+		"L2HomeURL=http://l2world.ru/\r\n"
+		"L2UseReplayManager=true\r\n"
+		"\r\n"
+		"[AutoLogOn]\r\n"
+		"IsL2AutoLogOn=Ture\r\n"
+		"L2ID=zodiac\r\n"
+		"L2Passwd=zodiac\r\n"
+		"\r\n"
+		"[PrimeShop]\r\n"
+		"UsePrimeShop=true\r\n"
+	)
+
+	def test_clears_the_other_servers_pages_and_login(self):
+		import clean_ini
+		fixed, changed = clean_ini.clean(self.INI)
+		assert "GamePointURL=\r\n" in fixed
+		assert "L2HomeURL=\r\n" in fixed
+		assert "IsL2AutoLogOn=False\r\n" in fixed
+		assert "L2ID=\r\n" in fixed
+		assert "zodiac" not in fixed
+		assert "UsePrimeShop=false\r\n" in fixed, "the item mall of the later chronicles stays shut"
+		assert len(changed) == 7, changed
+
+	def test_leaves_our_own_settings_alone(self):
+		import clean_ini
+		fixed, _ = clean_ini.clean(self.INI)
+		assert "ServerAddr=127.0.0.1\r\n" in fixed
+		assert fixed.count("[URL]") == 1
+
+	def test_a_clean_file_changes_nothing(self):
+		import clean_ini
+		once, _ = clean_ini.clean(self.INI)
+		twice, changed = clean_ini.clean(once)
+		assert once == twice, "cleaning a clean file must not touch it"
+		assert changed == []
+
+	def test_adds_a_missing_setting_to_its_section(self):
+		import clean_ini
+		fixed, changed = clean_ini.clean("[PrimeShop]\r\nSomethingElse=1\r\n")
+		assert "UsePrimeShop=false" in fixed
+		assert any("added" in line for line in changed), changed

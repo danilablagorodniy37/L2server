@@ -362,3 +362,20 @@ def test_phantom_ids_reports_a_soulshot_of_a_later_chronicle(tmp_path, monkeypat
 	problems = checks.phantom_ids()
 
 	assert [key for key in problems if key.startswith("soulshot 22082")], problems
+
+
+def test_phantom_settings_reports_a_setting_nobody_reads(tmp_path, monkeypatch):
+	"""A setting left in the file after the code stopped reading it is a trap for the next change."""
+	(tmp_path / "phantoms.properties").write_text("Enabled = True\nLongGone = 5\n", encoding="utf-8")
+	src = tmp_path / "src"
+	src.mkdir()
+	(src / "Phantoms.java").write_text(
+		'class Phantoms { void a() { property("Enabled", "False"); number("Count", 100); } }', encoding="utf-8")
+	monkeypatch.setattr(checks, "CONFIG", tmp_path)
+	monkeypatch.setattr(checks, "PHANTOM_SRC", src)
+
+	problems = checks.phantom_settings()
+
+	assert "LongGone" in problems, problems
+	assert "Count" in problems, "a setting the scripts read must be in the file"
+	assert "Enabled" not in problems, problems

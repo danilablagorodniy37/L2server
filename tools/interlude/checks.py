@@ -1020,6 +1020,32 @@ def skill_levels():
 	return out
 
 
+def phantom_settings():
+	"""Every setting the bot scripts read is in config/phantoms.properties, and nothing there is dead."""
+	problems = defaultdict(list)
+	config = properties("phantoms.properties")
+	wanted = set()
+	for f in sorted(PHANTOM_SRC.glob("*.java")):
+		text = f.read_text(encoding="utf-8")
+		for match in re.finditer(r'(?:number|property)\("([A-Za-z0-9_]+)"', text):
+			wanted.add(match.group(1))
+		for match in re.finditer(r'_config\.getProperty\("([A-Za-z0-9_]+)"', text):
+			wanted.add(match.group(1))
+	for key in sorted(wanted):
+		# Camp1, Camp2 and so on are read by number, so the code only names the prefix
+		if key == "Camp":
+			if not [name for name in config if name.startswith("Camp")]:
+				problems["Camp1"].append("the bot scripts look for camps, the file has none")
+			continue
+		if key not in config:
+			problems[key].append("read by the bot scripts, missing from phantoms.properties")
+	for key in sorted(config):
+		# the camps are read by number, Camp1, Camp2 and so on
+		if (key not in wanted) and not key.startswith("Camp"):
+			problems[key].append("in phantoms.properties, read by nothing")
+	return problems
+
+
 def phantom_squads():
 	"""Every camp of standing bot parties has monsters of their level around it (phantoms.properties)."""
 	problems = defaultdict(list)
@@ -1203,7 +1229,7 @@ DATAPACK_CHECKS = {f.__name__: f for f in (
 	html_multisell_links, html_buylist_links, html_teleport_links, html_quest_buttons, script_shop_calls, quest_dialog_links, quest_npcs, quest_kill_targets,
 	spawn_zones, leader_minions, loader_classes, xml_schemas,
 	shops_interlude_items, drops_interlude_items, recipes_interlude_items, manor_interlude_items, teleports_interlude, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_enchant_costs, interlude_residence_skills, interlude_npc_stats, kamael_isle, interlude_config, server_rates,
-	interlude_loaders, starting_equipment, phantom_gear, phantom_hunting, phantom_trade, phantom_phrases, phantom_config, phantom_squads, phantom_ids, hunting_html,
+	interlude_loaders, starting_equipment, phantom_gear, phantom_hunting, phantom_trade, phantom_phrases, phantom_config, phantom_squads, phantom_ids, phantom_settings, hunting_html,
 )}
 DATABASE_CHECKS = {"database_tables": database_tables}
 
