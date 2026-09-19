@@ -379,3 +379,51 @@ def test_phantom_settings_reports_a_setting_nobody_reads(tmp_path, monkeypatch):
 	assert "LongGone" in problems, problems
 	assert "Count" in problems, "a setting the scripts read must be in the file"
 	assert "Enabled" not in problems, problems
+
+
+def test_character_creation_reports_a_class_with_nowhere_to_start(tmp_path, monkeypatch):
+	"""A starting class with no creation point leaves the player looking at an empty character screen."""
+	chars = tmp_path / "stats" / "chars"
+	(chars / "baseStats").mkdir(parents=True)
+	(tmp_path / "skillTrees").mkdir()
+	(chars / "classList.xml").write_text(
+		'<?xml version="1.0" encoding="UTF-8"?><list>'
+		'<class classId="0" name="Human Fighter" />'
+		'<class classId="10" name="Human Mystic" /></list>', encoding="utf-8")
+	(chars / "pcCreationPoints.xml").write_text(
+		'<?xml version="1.0" encoding="UTF-8"?><list><startPoints>'
+		'<spawn x="1" y="2" z="3" /><classId>0</classId></startPoints></list>', encoding="utf-8")
+	for class_id, name in ((0, "HumanFighter"), (10, "HumanMystic")):
+		(chars / "baseStats" / f"{name}.xml").write_text(
+			f'<?xml version="1.0" encoding="UTF-8"?><list><classId>{class_id}</classId></list>', encoding="utf-8")
+	(tmp_path / "skillTrees" / "classSkillTree.xml").write_text(
+		'<?xml version="1.0" encoding="UTF-8"?><list>'
+		'<skillTree type="classSkillTree" classId="0" /><skillTree type="classSkillTree" classId="10" /></list>',
+		encoding="utf-8")
+	monkeypatch.setattr(checks, "DATA", tmp_path)
+
+	problems = checks.character_creation()
+
+	assert "Human Mystic" in problems, problems
+	assert "Human Fighter" not in problems, problems
+
+
+def test_character_creation_reports_a_class_without_a_skill_tree(tmp_path, monkeypatch):
+	"""A class with no skill tree cannot learn anything from its trainer."""
+	chars = tmp_path / "stats" / "chars"
+	(chars / "baseStats").mkdir(parents=True)
+	(tmp_path / "skillTrees").mkdir()
+	(chars / "classList.xml").write_text(
+		'<?xml version="1.0" encoding="UTF-8"?><list><class classId="0" name="Human Fighter" /></list>', encoding="utf-8")
+	(chars / "pcCreationPoints.xml").write_text(
+		'<?xml version="1.0" encoding="UTF-8"?><list><startPoints>'
+		'<spawn x="1" y="2" z="3" /><classId>0</classId></startPoints></list>', encoding="utf-8")
+	(chars / "baseStats" / "HumanFighter.xml").write_text(
+		'<?xml version="1.0" encoding="UTF-8"?><list><classId>0</classId></list>', encoding="utf-8")
+	(tmp_path / "skillTrees" / "classSkillTree.xml").write_text(
+		'<?xml version="1.0" encoding="UTF-8"?><list></list>', encoding="utf-8")
+	monkeypatch.setattr(checks, "DATA", tmp_path)
+
+	problems = checks.character_creation()
+
+	assert problems["Human Fighter"] == ["no skill tree"], problems

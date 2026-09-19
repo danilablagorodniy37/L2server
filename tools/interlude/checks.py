@@ -1020,6 +1020,57 @@ def skill_levels():
 	return out
 
 
+def character_creation():
+	"""Every class a player can pick has a starting point, base stats and a skill tree."""
+	problems = defaultdict(list)
+	chars = DATA / "stats" / "chars"
+	classes = {}
+	for entry in ET.parse(chars / "classList.xml").getroot().findall("class"):
+		classes[int(entry.get("classId"))] = (entry.get("name"), entry.get("parentClassId"))
+
+	# the first classes of every race are the ones a new character starts in; the ids above the
+	# classes are the client's own pseudo classes (traps, siege attackers) and belong to nobody
+	classes = {class_id: value for class_id, value in classes.items() if class_id not in PSEUDO_CLASSES}
+	starting = {class_id for class_id, (_name, parent) in classes.items() if parent is None}
+	placed = set()
+	for points in ET.parse(chars / "pcCreationPoints.xml").getroot().findall("startPoints"):
+		spawns = points.findall("spawn")
+		for class_id in points.findall("classId"):
+			placed.add(int(class_id.text))
+			if not spawns:
+				problems[classes.get(int(class_id.text), (class_id.text,))[0]].append("a starting point with no spawn")
+	for class_id in sorted(starting - placed):
+		problems[classes[class_id][0]].append("a new character of this class has nowhere to start")
+
+	# the loader keys the templates by the classId inside the file, not by its name
+	stats = set()
+	for f in sorted((chars / "baseStats").glob("*.xml")):
+		node = ET.parse(f).getroot().find("classId")
+		if node is None:
+			problems[f.name].append("a character template without a classId")
+		else:
+			stats.add(int(node.text))
+	trees = set()
+	for tree in ET.parse(DATA / "skillTrees" / "classSkillTree.xml").getroot().findall("skillTree"):
+		if tree.get("classId"):
+			trees.add(int(tree.get("classId")))
+
+	for class_id, (name, _parent) in sorted(classes.items()):
+		if class_id in LATER_CHRONICLE_CLASSES:
+			continue
+		if class_id not in stats:
+			problems[name].append("no base stats in stats/chars/baseStats")
+		if class_id not in trees:
+			problems[name].append("no skill tree")
+	return problems
+
+
+# Dual class ids the Kamael brought as subclasses only; they are not picked at creation.
+LATER_CHRONICLE_CLASSES = {135, 136}
+# Not classes at all: the client uses these ids for traps, ghosts and siege attackers.
+PSEUDO_CLASSES = {118, 119, 120, 121, 122, 123}
+
+
 def phantom_settings():
 	"""Every setting the bot scripts read is in config/phantoms.properties, and nothing there is dead."""
 	problems = defaultdict(list)
@@ -1229,7 +1280,7 @@ DATAPACK_CHECKS = {f.__name__: f for f in (
 	html_multisell_links, html_buylist_links, html_teleport_links, html_quest_buttons, script_shop_calls, quest_dialog_links, quest_npcs, quest_kill_targets,
 	spawn_zones, leader_minions, loader_classes, xml_schemas,
 	shops_interlude_items, drops_interlude_items, recipes_interlude_items, manor_interlude_items, teleports_interlude, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_enchant_costs, interlude_residence_skills, interlude_npc_stats, kamael_isle, interlude_config, server_rates,
-	interlude_loaders, starting_equipment, phantom_gear, phantom_hunting, phantom_trade, phantom_phrases, phantom_config, phantom_squads, phantom_ids, phantom_settings, hunting_html,
+	interlude_loaders, starting_equipment, phantom_gear, phantom_hunting, phantom_trade, phantom_phrases, phantom_config, phantom_squads, phantom_ids, phantom_settings, character_creation, hunting_html,
 )}
 DATABASE_CHECKS = {"database_tables": database_tables}
 
