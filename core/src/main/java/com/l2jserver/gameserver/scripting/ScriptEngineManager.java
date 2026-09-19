@@ -57,6 +57,37 @@ public final class ScriptEngineManager {
 		String[].class
 	};
 	
+	/** The compiled scripts kept between runs; null until the first list is loaded. */
+	private ScriptCache _cache;
+	/** True when the classes on disk are the ones these sources would produce. */
+	private boolean _cached;
+	
+	/**
+	 * Compiles the whole datapack into game/cache/scripts once and reads the classes from there at
+	 * every start after that, so a start that changes nothing saves the compiler its work.
+	 * @return the cache, ready to be asked for classes
+	 */
+	private ScriptCache cache() {
+		if (_cache != null) {
+			return _cache;
+		}
+		final var root = server().getScriptRoot().toPath();
+		_cache = new ScriptCache(root, root.getParent().resolve("cache").resolve("scripts"));
+		final var sources = _cache.sources();
+		final var stamp = ScriptCache.stamp(sources, CLASS_PATH);
+		if (_cache.valid(stamp)) {
+			_cached = true;
+			LOG.info("Scripts: {} classes read from the cache.", sources.size());
+			return _cache;
+		}
+		final long start = System.currentTimeMillis();
+		_cached = _cache.compile(sources, CLASS_PATH, stamp);
+		if (_cached) {
+			LOG.info("Scripts: {} compiled into the cache in {} ms.", sources.size(), System.currentTimeMillis() - start);
+		}
+		return _cache;
+	}
+	
 	private InMemoryJavaCompiler compiler() {
 		return InMemoryJavaCompiler.newInstance() //
 			.useOptions("-classpath", CLASS_PATH, "-g") //
@@ -71,6 +102,8 @@ public final class ScriptEngineManager {
 		if (!list.isFile()) {
 			throw new IllegalArgumentException("Argument must be an file containing a list of scripts to be loaded");
 		}
+		
+		cache();
 		
 		final var compiler = compiler();
 		try (var fis = new FileInputStream(list);
@@ -96,14 +129,28 @@ public final class ScriptEngineManager {
 				} else if (file.isDirectory() && parts[0].endsWith("/*")) {
 					executeAllScriptsInDirectory(compiler, file, false);
 				} else if (file.isFile()) {
-					addSource(compiler, file);
+					if (_cached) {
+						fromCache(file);
+					} else {
+						addSource(compiler, file);
+					}
 				} else {
 					LOG.warn("Failed loading: ({}) @ {}:{} - Reason: doesnt exists or is not a file.", file.getCanonicalPath(), list.getName(), lnr.getLineNumber());
 				}
 			}
 		}
 		
-		compiler.compileAll().forEach((k, v) -> runMain(v));
+		if (!_cached) {
+			compiler.compileAll().forEach((k, v) -> runMain(v));
+		}
+	}
+	
+	/** Runs a script whose class is already compiled. */
+	private void fromCache(File file) {
+		final var clazz = cache().load(getClassForFile(file));
+		if (clazz != null) {
+			runMain(clazz);
+		}
 	}
 	
 	private void executeAllScriptsInDirectory(InMemoryJavaCompiler compiler, File dir, boolean recurseDown) {
@@ -123,12 +170,23 @@ public final class ScriptEngineManager {
 				}
 				executeAllScriptsInDirectory(compiler, file, recurseDown);
 			} else if (file.isFile()) {
-				addSource(compiler, file);
+				if (_cached) {
+					fromCache(file);
+				} else {
+					addSource(compiler, file);
+				}
 			}
 		}
 	}
 	
 	public Class<?> compileScript(File file) {
+		cache();
+		if (_cached) {
+			final var clazz = cache().load(getClassForFile(file));
+			if (clazz != null) {
+				return clazz;
+			}
+		}
 		try (var fis = new FileInputStream(file);
 			var isr = new InputStreamReader(fis);
 			var reader = new BufferedReader(isr)) {

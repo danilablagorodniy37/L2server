@@ -253,6 +253,23 @@ public class PhantomFactory {
 		player.broadcastUserInfo();
 	}
 
+	/**
+	 * Gives a bot the gear of its grade once it has outgrown what it wears. Bots gain levels while
+	 * they hunt, and a level 40 bot in no grade armour dies to everything.
+	 * @param player the bot
+	 * @return true when it was given new gear
+	 */
+	public boolean refit(L2PcInstance player) {
+		final String wanted = PhantomGear.gradeForLevel(player.getLevel());
+		final L2ItemInstance weapon = player.getActiveWeaponInstance();
+		if ((weapon != null) && wanted.equals(weapon.getItem().getCrystalType().name())) {
+			return false;
+		}
+		equip(player, player.getClassId(), player.getLevel());
+		player.broadcastUserInfo();
+		return true;
+	}
+
 	private boolean usesShield(L2PcInstance player, ClassId classId) {
 		final L2ItemInstance weapon = player.getActiveWeaponInstance();
 		return (weapon != null) && (weapon.getItem().getBodyPart() == L2Item.SLOT_R_HAND) && !classId.isMage();

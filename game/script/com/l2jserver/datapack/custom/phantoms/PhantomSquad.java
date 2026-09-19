@@ -62,6 +62,8 @@ public class PhantomSquad {
 	/** A member of a party with no healer sits down at this share of HP and gets up at the next one. */
 	private static final double SIT_AT = 0.4;
 	private static final double UP_AT = 0.85;
+	/** How often the party looks at whether its members have outgrown their gear. */
+	private static final long OUTFIT_EVERY = 5 * 60 * 1000L;
 	/** How often the party fills its pouches with shots and puts its buffs back on. */
 	private static final long SUPPLY_EVERY = 60 * 1000L;
 	/** How many quick rounds of buffing a party does when it arrives. */
@@ -85,6 +87,7 @@ public class PhantomSquad {
 	private long _nextRaise;
 	private long _restUntil;
 	private long _nextSupply;
+	private long _nextOutfit;
 	private int _buffRounds;
 	private L2Character _target;
 
@@ -279,6 +282,15 @@ public class PhantomSquad {
 			}
 		}
 		return null;
+	}
+
+	/** True once every few minutes, when it is worth looking at what the party wears. */
+	public boolean outfitDue(long now) {
+		if (now < _nextOutfit) {
+			return false;
+		}
+		_nextOutfit = now + OUTFIT_EVERY;
+		return true;
 	}
 
 	/** True when somebody in the party can heal the others. */

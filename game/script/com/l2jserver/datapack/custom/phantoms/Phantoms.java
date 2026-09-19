@@ -399,6 +399,11 @@ public class Phantoms {
 			try {
 				squad.act(now);
 				squad.keepTogether();
+				if (squad.outfitDue(now)) {
+					for (Phantom member : squad.members()) {
+						_factory.refit(member.player());
+					}
+				}
 			} catch (Exception ex) {
 				LOG.warn("{} failed!", squad, ex);
 			}
@@ -635,6 +640,9 @@ public class Phantoms {
 
 		if (phantom.supplyDue(now)) {
 			PhantomCombat.supply(bot);
+			if (_factory.refit(bot)) {
+				LOG_CHAT.info("[phantom] {} bought the gear of level {}.", bot.getName(), bot.getLevel());
+			}
 			phantom.supplied(now);
 		}
 
