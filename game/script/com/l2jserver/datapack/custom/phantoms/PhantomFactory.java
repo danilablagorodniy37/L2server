@@ -118,6 +118,16 @@ public class PhantomFactory {
 	 * @return the character, or null when no name was free
 	 */
 	public L2PcInstance create(ClassId wanted, int level) {
+		return create(wanted, level, false);
+	}
+
+	/**
+	 * @param wanted the class it should be, null for any class of its level
+	 * @param level the level it starts at
+	 * @param full true for a party bot: jewels on top of the armour and everything enchanted
+	 * @return the character, or null when no name was free
+	 */
+	public L2PcInstance create(ClassId wanted, int level, boolean full) {
 		final ClassId classId = (wanted != null) ? wanted : randomClass(level);
 		final boolean female = (classId.getRace() == Race.KAMAEL) ? FEMALE_KAMAEL.contains(classId.getId()) : Rnd.nextBoolean();
 		final var appearance = new PcAppearance((byte) Rnd.get(3), (byte) Rnd.get(3), (byte) Rnd.get(3), female);
@@ -136,6 +146,9 @@ public class PhantomFactory {
 		player.setCurrentHpMp(player.getMaxHp(), player.getMaxMp());
 		player.setCurrentCp(player.getMaxCp());
 		equip(player, classId, level);
+		if (full) {
+			dressForBattle(player);
+		}
 		player.storeMe();
 		player.getInventory().updateDatabase();
 		return player;
@@ -200,6 +213,33 @@ public class PhantomFactory {
 				}
 			}
 		}
+	}
+
+	/** Tateossian jewels, the S grade set of Interlude: necklace, two earrings, two rings. */
+	private static final int[] JEWELS = {
+		920, 858, 858, 889, 889
+	};
+	/** What a party bot's gear is enchanted to: enough to matter against monsters of its own level. */
+	private static final int ENCHANT = 6;
+
+	/**
+	 * Finishes a party bot: the jewels a player of that level would wear, and the enchants.
+	 * @param player the bot
+	 */
+	public static void dressForBattle(L2PcInstance player) {
+		for (int itemId : JEWELS) {
+			final L2ItemInstance jewel = player.getInventory().addItem("Phantom", itemId, 1, player, null);
+			if (jewel != null) {
+				player.getInventory().equipItem(jewel);
+			}
+		}
+		for (L2ItemInstance item : player.getInventory().getItems()) {
+			if (item.isEquipped() && (item.getEnchantLevel() < ENCHANT) && (item.isWeapon() || item.isArmor())) {
+				item.setEnchantLevel(ENCHANT);
+				item.updateDatabase();
+			}
+		}
+		player.broadcastUserInfo();
 	}
 
 	private boolean usesShield(L2PcInstance player, ClassId classId) {

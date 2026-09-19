@@ -57,9 +57,9 @@ public class PhantomCombat {
 	private static final int[] SPIRITSHOTS = {
 		2509, 2510, 2511, 2512, 2513, 2514
 	};
-	/** How many shots a bot takes with it, and when it refills. */
-	private static final int SHOTS = 2000;
-	private static final int SHOTS_LEFT = 400;
+	/** How many shots a bot carries: it is topped up long before it can run out. */
+	private static final int SHOTS = 5000;
+	private static final int SHOTS_LEFT = 2000;
 	/** How far a bot walks for something lying on the ground. */
 	private static final int LOOT_RADIUS = 700;
 	/** How close it has to stand to pick it up. */
@@ -163,6 +163,7 @@ public class PhantomCombat {
 	 * @param bot the bot heading out to hunt
 	 */
 	public static void supply(L2PcInstance bot) {
+		PhantomBuffs.cast(bot);
 		final L2ItemInstance weapon = bot.getActiveWeaponInstance();
 		if (weapon == null) {
 			return;

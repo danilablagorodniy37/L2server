@@ -295,7 +295,7 @@ public class Phantom {
 	}
 
 	public void supplied(long now) {
-		_nextSupply = now + (5 * 60000L);
+		_nextSupply = now + 60000L;
 	}
 
 	/** Where the bot walks around: its town square, or the hunting ground it travels to. */

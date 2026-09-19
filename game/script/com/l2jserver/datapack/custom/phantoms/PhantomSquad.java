@@ -62,8 +62,8 @@ public class PhantomSquad {
 	/** A member of a party with no healer sits down at this share of HP and gets up at the next one. */
 	private static final double SIT_AT = 0.4;
 	private static final double UP_AT = 0.85;
-	/** How often the party fills its pouches with shots again. */
-	private static final long SUPPLY_EVERY = 5 * 60 * 1000L;
+	/** How often the party fills its pouches with shots and puts its buffs back on. */
+	private static final long SUPPLY_EVERY = 60 * 1000L;
 	/** How many quick rounds of buffing a party does when it arrives. */
 	private static final int BUFF_ROUNDS = 12;
 	/** With this share of the party on the ground it is a wipe: everybody pulls back. */
@@ -509,7 +509,9 @@ public class PhantomSquad {
 			if (player.calculateDistance(target, false, false) > CAMP_RADIUS) {
 				continue;
 			}
-			if ((player.getTarget() != target) || !player.isInCombat()) {
+			// Only when it is not already swinging: setting the intention again every second
+			// restarts the attack and the bot never lands a hit.
+			if ((player.getTarget() != target) || (player.getAI().getIntention() != CtrlIntention.AI_INTENTION_ATTACK)) {
 				PhantomCombat.attack(player, target);
 			} else if (Rnd.get(100) < 25) {
 				final Skill skill = PhantomCombat.pickAttackSkill(player, target);
