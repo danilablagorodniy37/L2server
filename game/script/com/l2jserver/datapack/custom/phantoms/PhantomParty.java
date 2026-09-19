@@ -20,9 +20,12 @@ package com.l2jserver.datapack.custom.phantoms;
 
 import com.l2jserver.commons.util.Rnd;
 import com.l2jserver.gameserver.enums.PartyDistributionType;
+import com.l2jserver.gameserver.model.L2Clan;
 import com.l2jserver.gameserver.model.L2Party;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
+import com.l2jserver.gameserver.network.SystemMessageId;
 import com.l2jserver.gameserver.network.serverpackets.JoinParty;
+import com.l2jserver.gameserver.network.serverpackets.SystemMessage;
 
 /**
  * What a bot does when a player asks it into a party.<br>
@@ -84,6 +87,45 @@ public class PhantomParty {
 		requestor.getParty().setPendingInvitation(false);
 		requestor.sendPacket(new JoinParty(1));
 		return true;
+	}
+
+	/**
+	 * Whether the bot joins the clan it was asked into.
+	 * @param bot the bot
+	 * @param clan the clan asking
+	 * @return true when it says yes
+	 */
+	public static boolean joinsClan(L2PcInstance bot, L2Clan clan) {
+		if ((clan == null) || (bot.getClan() != null) || bot.isDead()) {
+			return false;
+		}
+		if (clan.getMembersCount() >= clan.getMaxNrOfMembers(0)) {
+			return false;
+		}
+		// a bot with a place of its own in the world says yes about half the time
+		return Rnd.get(100) < 55;
+	}
+
+	/**
+	 * Puts the bot in the clan, the way the answer packet would.
+	 * @param bot the bot
+	 * @param clan the clan
+	 * @param pledgeType main clan, academy or a royal guard
+	 */
+	public static void joinClan(L2PcInstance bot, L2Clan clan, int pledgeType) {
+		bot.setPledgeType(pledgeType);
+		if (pledgeType == L2Clan.SUBUNIT_ACADEMY) {
+			bot.setPowerGrade(9);
+			bot.setLvlJoinedAcademy(bot.getLevel());
+		} else {
+			bot.setPowerGrade(5);
+		}
+		clan.addClanMember(bot);
+		bot.setClanPrivileges(bot.getClan().getRankPrivs(bot.getPowerGrade()));
+		final SystemMessage joined = SystemMessage.getSystemMessage(SystemMessageId.S1_HAS_JOINED_CLAN);
+		joined.addString(bot.getName());
+		clan.broadcastToOnlineMembers(joined);
+		bot.broadcastUserInfo();
 	}
 
 	/** The bot turns the invitation down; the player's window closes as if it had been declined. */

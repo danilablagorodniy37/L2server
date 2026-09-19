@@ -943,9 +943,9 @@ def phantom_phrases():
 		kind = name.split(" ", 1)
 		if (kind[0] in ("seen", "news")) and ((len(kind) < 2) or (kind[1] not in PHANTOM_KINDS)):
 			problems[f"[{name}]"].append("unknown event kind, see PhantomNews")
-		elif kind[0] == "party":
-			if (len(kind) < 2) or (kind[1] not in ("yes", "no")):
-				problems[f"[{name}]"].append("a party section is either 'party yes' or 'party no'")
+		elif kind[0] in ("party", "clan", "trade") and (len(kind) > 1):
+			if kind[1] not in ("yes", "no"):
+				problems[f"[{name}]"].append(f"a {kind[0]} answer is either '{kind[0]} yes' or '{kind[0]} no'")
 		elif kind[0] not in ("general", "trade", "shout", "dialog", "reply", "seen", "news", "chain", "leaving", "returning", "died"):
 			problems[f"[{name}]"].append("unknown section")
 	for required in ("general", "trade", "shout", "dialog"):

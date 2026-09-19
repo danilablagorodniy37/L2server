@@ -55,7 +55,9 @@ import com.l2jserver.gameserver.model.skills.Skill;
 import com.l2jserver.gameserver.model.events.Containers;
 import com.l2jserver.gameserver.model.events.EventType;
 import com.l2jserver.gameserver.model.events.impl.character.player.PlayerChat;
+import com.l2jserver.gameserver.model.events.impl.character.player.PlayerClanInvite;
 import com.l2jserver.gameserver.model.events.impl.character.player.PlayerPartyInvite;
+import com.l2jserver.gameserver.model.events.impl.character.player.PlayerTradeRequest;
 import com.l2jserver.gameserver.model.events.listeners.ConsumerEventListener;
 import com.l2jserver.gameserver.network.L2GameClient;
 import com.l2jserver.gameserver.network.clientpackets.Say2;
@@ -254,6 +256,8 @@ public class Phantoms {
 			Containers.Global().addListener(new ConsumerEventListener(Containers.Global(), EventType.PLAYER_CHAT, (PlayerChat event) -> onPlayerChat(event), this));
 		}
 		Containers.Global().addListener(new ConsumerEventListener(Containers.Global(), EventType.PLAYER_PARTY_INVITE, (PlayerPartyInvite event) -> onPartyInvite(event), this));
+		Containers.Global().addListener(new ConsumerEventListener(Containers.Global(), EventType.PLAYER_CLAN_INVITE, (PlayerClanInvite event) -> onClanInvite(event), this));
+		Containers.Global().addListener(new ConsumerEventListener(Containers.Global(), EventType.PLAYER_TRADE_REQUEST, (PlayerTradeRequest event) -> onTradeRequest(event), this));
 		if (!_squads.isEmpty()) {
 			ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(this::squadTick, 25, 1, TimeUnit.SECONDS);
 		}
@@ -919,6 +923,38 @@ public class Phantoms {
 				LOG.warn("{} failed to answer a party invitation!", phantom.player().getName(), ex);
 			}
 		}, Rnd.get(PhantomParty.ANSWER_MIN, PhantomParty.ANSWER_MAX));
+	}
+
+	/** A player asked a bot into a clan: it thinks it over and either joins or says no. */
+	private void onClanInvite(PlayerClanInvite event) {
+		final L2PcInstance requestor = event.requestor();
+		final Phantom phantom = byObjectId(event.player());
+		if ((phantom == null) || (requestor == null) || (requestor.getClan() == null)) {
+			return;
+		}
+		ThreadPoolManager.getInstance().scheduleGeneral(() -> {
+			try {
+				if (PhantomParty.joinsClan(phantom.player(), requestor.getClan())) {
+					PhantomParty.joinClan(phantom.player(), requestor.getClan(), event.pledgeType());
+					sayTo(phantom, requestor, "clan yes");
+				} else {
+					sayTo(phantom, requestor, "clan no");
+				}
+			} catch (Exception ex) {
+				LOG.warn("{} failed to answer a clan invitation!", phantom.player().getName(), ex);
+			}
+		}, Rnd.get(PhantomParty.ANSWER_MIN, PhantomParty.ANSWER_MAX));
+	}
+
+	/** A player asked a bot to trade: the bots keep shops, so they say where to find theirs. */
+	private void onTradeRequest(PlayerTradeRequest event) {
+		final L2PcInstance requestor = event.requestor();
+		final Phantom phantom = byObjectId(event.player());
+		if ((phantom == null) || (requestor == null)) {
+			return;
+		}
+		ThreadPoolManager.getInstance().scheduleGeneral(() -> sayTo(phantom, requestor, "trade no"),
+			Rnd.get(PhantomParty.ANSWER_MIN, PhantomParty.ANSWER_MAX));
 	}
 
 	/** A line straight to the player who asked something of the bot. */

@@ -21,6 +21,8 @@ package com.l2jserver.gameserver.network.clientpackets;
 import com.l2jserver.gameserver.model.L2Clan;
 import com.l2jserver.gameserver.model.L2World;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
+import com.l2jserver.gameserver.model.events.EventDispatcher;
+import com.l2jserver.gameserver.model.events.impl.character.player.PlayerClanInvite;
 import com.l2jserver.gameserver.network.SystemMessageId;
 import com.l2jserver.gameserver.network.serverpackets.AskJoinPledge;
 
@@ -61,6 +63,12 @@ public final class RequestJoinPledge extends L2GameClientPacket {
 			return;
 		}
 		
+		if (target.isPhantom()) {
+			// A bot has no window to answer in: whoever plays it decides, and answers in a moment.
+			EventDispatcher.getInstance().notifyEventAsync(new PlayerClanInvite(target, activeChar, _pledgeType));
+			return;
+		}
+
 		if (!activeChar.getRequest().setRequest(target, this)) {
 			return;
 		}

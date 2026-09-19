@@ -64,7 +64,9 @@ import com.l2jserver.gameserver.model.events.impl.character.player.PlayerLogin;
 import com.l2jserver.gameserver.model.events.impl.character.player.PlayerLogout;
 import com.l2jserver.gameserver.model.events.impl.character.player.PlayerMenuSelected;
 import com.l2jserver.gameserver.model.events.impl.character.player.PlayerOneSkillSelected;
+import com.l2jserver.gameserver.model.events.impl.character.player.PlayerClanInvite;
 import com.l2jserver.gameserver.model.events.impl.character.player.PlayerPartyInvite;
+import com.l2jserver.gameserver.model.events.impl.character.player.PlayerTradeRequest;
 import com.l2jserver.gameserver.model.events.impl.character.player.PlayerPKChanged;
 import com.l2jserver.gameserver.model.events.impl.character.player.PlayerProfessionCancel;
 import com.l2jserver.gameserver.model.events.impl.character.player.PlayerProfessionChange;
@@ -222,7 +224,9 @@ public enum EventType {
 	PLAYER_LEVEL_CHANGED(PlayerLevelChanged.class, void.class),
 	PLAYER_LOGIN(PlayerLogin.class, void.class),
 	PLAYER_LOGOUT(PlayerLogout.class, void.class),
+	PLAYER_CLAN_INVITE(PlayerClanInvite.class, void.class),
 	PLAYER_PARTY_INVITE(PlayerPartyInvite.class, void.class),
+	PLAYER_TRADE_REQUEST(PlayerTradeRequest.class, void.class),
 	PLAYER_PK_CHANGED(PlayerPKChanged.class, void.class),
 	PLAYER_PROFESSION_CHANGE(PlayerProfessionChange.class, void.class),
 	PLAYER_PROFESSION_CANCEL(PlayerProfessionCancel.class, void.class),

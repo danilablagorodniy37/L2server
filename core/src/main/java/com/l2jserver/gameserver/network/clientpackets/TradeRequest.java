@@ -30,6 +30,8 @@ import com.l2jserver.gameserver.model.BlockList;
 import com.l2jserver.gameserver.model.L2Object;
 import com.l2jserver.gameserver.model.L2World;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
+import com.l2jserver.gameserver.model.events.EventDispatcher;
+import com.l2jserver.gameserver.model.events.impl.character.player.PlayerTradeRequest;
 import com.l2jserver.gameserver.model.effects.AbstractEffect;
 import com.l2jserver.gameserver.model.skills.AbnormalType;
 import com.l2jserver.gameserver.model.skills.BuffInfo;
@@ -170,6 +172,12 @@ public final class TradeRequest extends L2GameClientPacket {
 			return;
 		}
 		
+		if (partner.isPhantom()) {
+			// A bot has no window to answer in: it says its piece in a private message instead.
+			EventDispatcher.getInstance().notifyEventAsync(new PlayerTradeRequest(partner, player));
+			return;
+		}
+
 		player.onTransactionRequest(partner);
 		partner.sendPacket(new SendTradeRequest(player.getObjectId()));
 		sm = SystemMessage.getSystemMessage(SystemMessageId.REQUEST_C1_FOR_TRADE);
