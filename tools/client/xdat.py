@@ -17,6 +17,7 @@ Usage:
     python tools/client/xdat.py --window InventoryWnd    what one window is made of
     python tools/client/xdat.py --find talisman      every widget whose name matches
     python tools/client/xdat.py --systems            what the systems of the later chronicles take up
+    python tools/client/xdat.py --cut Wnd1,Wnd2 --out new.xdat    a copy without those windows
 """
 
 import sys
@@ -131,6 +132,63 @@ def systems(items):
 	return rows
 
 
+def children(blob, items=None):
+	"""
+	window name -> (offset of the count, how many children it says it has, the child widgets).
+	<p>
+	A window is written as its own record, then a four byte count of the widgets inside it, then
+	those widgets one after another. Cutting a widget without lowering that count leaves the client
+	reading into the next window and it closes itself, so the count is what makes a cut safe.
+	"""
+	items = items if items is not None else widgets(blob)
+	out = {}
+	for window, group in by_window(items).items():
+		# the record of the window itself is not one of its children
+		group = [w for w in group if w.name != window]
+		if (window == "(no window)") or not group:
+			continue
+		first = min(group, key=lambda w: w.offset)
+		if first.offset < 4:
+			continue
+		said = int.from_bytes(blob[first.offset - 4:first.offset], "little")
+		out[window] = (first.offset - 4, said, sorted(group, key=lambda w: w.offset))
+	return out
+
+
+def cut(blob, names):
+	"""
+	Takes whole widget records out of the file and lowers the count of the window they sat in.
+	<p>
+	Only a window whose count matches what is really there can be cut: anywhere else the reader has
+	miscounted, and changing the file on a guess is how a client stops starting.
+	@param blob the file as it is
+	@param names the windows to empty, by name
+	@return (the new file, how many widgets went, how many bytes went, the windows left alone)
+	"""
+	wanted = {name.lower() for name in names}
+	items = widgets(blob)
+	counts = children(blob, items)
+	out = bytearray(blob)
+	gone = 0
+	removed = 0
+	skipped = []
+	# from the back, so the offsets of what is still to come do not move
+	for window in sorted(counts, key=lambda name: -counts[name][0]):
+		if window.lower() not in wanted:
+			continue
+		where, said, group = counts[window]
+		if said != len(group):
+			skipped.append(f"{window}: the file says {said} widgets, the reader sees {len(group)}")
+			continue
+		start = group[0].offset
+		end = group[-1].offset + group[-1].size
+		del out[start:end]
+		out[where:where + 4] = (0).to_bytes(4, "little")
+		gone += end - start
+		removed += len(group)
+	return bytes(out), removed, gone, skipped
+
+
 def main():
 	# a value that follows --window or --find is not the file to read
 	args = []
@@ -139,7 +197,7 @@ def main():
 		if skip:
 			skip = False
 			continue
-		if arg in ("--window", "--find"):
+		if arg in ("--window", "--find", "--cut", "--out"):
 			skip = True
 			continue
 		if not arg.startswith("--"):
@@ -160,6 +218,21 @@ def main():
 		for widget in items:
 			if (widget.window or "").lower() == wanted:
 				print(f"  0x{widget.offset:06x} {widget.size:6} {widget.kind:16} {widget.name}")
+		return
+
+	if "--cut" in sys.argv:
+		names = sys.argv[sys.argv.index("--cut") + 1].split(",")
+		where = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else None
+		fixed, count, gone, skipped = cut(blob, names)
+		print(f"  {count} widgets, {gone} bytes would go: {', '.join(names)}")
+		for line in skipped:
+			print(f"  left alone, {line}")
+		if where is None:
+			print("  no --out given, nothing written")
+			return
+		where.write_bytes(fixed)
+		again = widgets(fixed)
+		print(f"  written to {where}: {len(again)} widgets left in {len(by_window(again))} windows")
 		return
 
 	if "--find" in sys.argv:

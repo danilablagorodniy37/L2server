@@ -340,6 +340,39 @@ class TestClientInterface:
 		assert rows[0][0] == "TestWnd"
 		assert rows[0][1] == 3
 
+	def counted_blob(self):
+		"""A window whose four byte child count sits right before its children, as the file has it."""
+		head = self.text("Window") + self.text("TestWnd") + self.text("undefined") + (b"\x01" * 8)
+		kids = (self.text("Button") + self.text("btnOne") + self.text("TestWnd") + (b"\x02" * 4)
+			+ self.text("Texture") + self.text("VitalityPointBar") + self.text("TestWnd") + (b"\x03" * 6))
+		return head + (2).to_bytes(4, "little") + kids
+
+	def test_cuts_the_children_and_zeroes_the_count(self):
+		import xdat
+		blob = self.counted_blob()
+		fixed, count, gone, skipped = xdat.cut(blob, ["TestWnd"])
+		assert (count, skipped) == (2, [])
+		assert gone > 0
+		assert b"VitalityPointBar" not in fixed
+		assert b"btnOne" not in fixed
+		assert (0).to_bytes(4, "little") in fixed, "the window must now say it has no children"
+
+	def test_leaves_a_window_alone_when_the_count_does_not_match(self):
+		"""A file the reader has miscounted must not be written to on a guess."""
+		import xdat
+		blob = self.counted_blob().replace((2).to_bytes(4, "little"), (5).to_bytes(4, "little"), 1)
+		fixed, count, gone, skipped = xdat.cut(blob, ["TestWnd"])
+		assert (count, gone) == (0, 0)
+		assert fixed == blob
+		assert skipped and "TestWnd" in skipped[0]
+
+	def test_cutting_a_window_that_is_not_there_changes_nothing(self):
+		import xdat
+		blob = self.counted_blob()
+		fixed, count, gone, skipped = xdat.cut(blob, ["NoSuchWnd"])
+		assert (count, gone, skipped) == (0, 0, [])
+		assert fixed == blob
+
 	def test_names_the_systems_of_the_later_chronicles(self):
 		import xdat
 		rows = {label: count for label, count, _bytes, _windows in xdat.systems(xdat.widgets(self.blob()))}
