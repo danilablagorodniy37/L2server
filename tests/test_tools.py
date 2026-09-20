@@ -347,32 +347,6 @@ class TestClientInterface:
 			+ self.text("Texture") + self.text("VitalityPointBar") + self.text("TestWnd") + (b"\x03" * 6))
 		return head + (2).to_bytes(4, "little") + kids
 
-	def test_cuts_the_children_and_zeroes_the_count(self):
-		import xdat
-		blob = self.counted_blob()
-		fixed, count, gone, skipped = xdat.cut(blob, ["TestWnd"])
-		assert (count, skipped) == (2, [])
-		assert gone > 0
-		assert b"VitalityPointBar" not in fixed
-		assert b"btnOne" not in fixed
-		assert (0).to_bytes(4, "little") in fixed, "the window must now say it has no children"
-
-	def test_leaves_a_window_alone_when_the_count_does_not_match(self):
-		"""A file the reader has miscounted must not be written to on a guess."""
-		import xdat
-		blob = self.counted_blob().replace((2).to_bytes(4, "little"), (5).to_bytes(4, "little"), 1)
-		fixed, count, gone, skipped = xdat.cut(blob, ["TestWnd"])
-		assert (count, gone) == (0, 0)
-		assert fixed == blob
-		assert skipped and "TestWnd" in skipped[0]
-
-	def test_cutting_a_window_that_is_not_there_changes_nothing(self):
-		import xdat
-		blob = self.counted_blob()
-		fixed, count, gone, skipped = xdat.cut(blob, ["NoSuchWnd"])
-		assert (count, gone, skipped) == (0, 0, [])
-		assert fixed == blob
-
 	def test_names_the_systems_of_the_later_chronicles(self):
 		import xdat
 		rows = {label: count for label, count, _bytes, _windows in xdat.systems(xdat.widgets(self.blob()))}
@@ -386,14 +360,6 @@ class TestClientInterface:
 		assert xdat.mismatches(blob) == []
 		wrong = blob.replace((2).to_bytes(4, "little"), (5).to_bytes(4, "little"), 1)
 		assert xdat.mismatches(wrong) == [("TestWnd", 5, 2)]
-
-	def test_a_file_that_counts_wrong_is_not_cut_at_all(self):
-		"""One window counting wrong means the whole file is misread; nothing may be written."""
-		import xdat
-		blob = self.counted_blob().replace((2).to_bytes(4, "little"), (5).to_bytes(4, "little"), 1)
-		fixed, count, gone, skipped = xdat.cut(blob, ["NoSuchWnd"])
-		assert (fixed, count, gone) == (blob, 0, 0)
-		assert skipped and "not understood" in skipped[0]
 
 	def test_records_of_one_kind_have_one_shape(self):
 		"""Same kind, same number of strings and numbers - that is what makes the file readable."""
@@ -410,3 +376,166 @@ class TestClientInterface:
 		button = [row for row in data["records"] if row["name"] == "btnOne"][0]
 		assert (button["kind"], button["window"], button["numbers"]) == ("Button", "TestWnd", 4)
 		assert button["raw"] == "02020202", "the numbers of the record, as they stand in the file"
+
+
+class TestClientInterfaceFormat:
+	"""tools/client/xdat_layout.py reads the structure of Interface.xdat out of the file itself."""
+
+	KINDS = ("Texture", "TextBox", "Button", "CheckBox", "ListCtrl", "ComboBox", "BarCtrl", "Tab")
+
+	@staticmethod
+	def text(word):
+		raw = word.encode("ascii") + b"\x00"
+		return bytes([len(raw)]) + raw
+
+	@classmethod
+	def widget(cls, kind, name, extra=(), numbers=8):
+		"""A record: the kind, the name of the widget, a few more strings, then its numbers."""
+		return cls.text(kind) + cls.text(name) + b"".join(cls.text(one) for one in extra) + (b"\x11" * numbers)
+
+	@classmethod
+	def window(cls, name, children, bias=0, after=0):
+		"""A window record; somewhere in its numbers stands how many children follow it."""
+		head = cls.widget("Window", name, ("undefined",), 12)
+		return head + (len(children) + bias).to_bytes(4, "little") + (b"\x22" * after) + b"".join(children)
+
+	@classmethod
+	def file(cls, windows=8, header=b"\x10" * 16, bias=0, rare=True, after=0):
+		"""A file the size and shape of the real one: many windows, many kinds, names that repeat."""
+		out = [header]
+		for w in range(windows):
+			name = f"Some{w}Wnd"
+			children = [cls.widget(cls.KINDS[(w + c) % len(cls.KINDS)], f"w{w}_{c}", (name, "undefined"), 4 + (c % 4) * 4)
+				for c in range(3 + (w % 5))]
+			if rare and (w == 2):
+				# a kind that stands in the file exactly once, as MinimapCtrl does in the real one
+				children.append(cls.widget("MinimapCtrl", "theMap", (name,), 6))
+			out.append(cls.window(name, children, bias, after))
+		return b"".join(out)
+
+	def test_reads_the_kinds_out_of_the_file(self):
+		"""The names of the windows and the word inside every record are not kinds, and must not be taken for them."""
+		import xdat_layout
+		kinds, container, spot, bias, right, total = xdat_layout.discover(self.file())
+		assert container == "Window"
+		assert (spot, bias) == ("end-4", 0)
+		assert right == total > 0, "every window has to count right"
+		assert set(self.KINDS) <= kinds
+		assert "undefined" not in kinds
+		assert not [name for name in kinds if name.endswith("Wnd") and name != "Window"], sorted(kinds)
+
+	def test_finds_the_kind_that_stands_in_the_file_once(self):
+		"""The first cut broke on a kind the reader did not know; now the short window gives it away."""
+		import xdat_layout
+		blob = self.file()
+		kinds, _container, _spot, _bias, right, total = xdat_layout.discover(blob)
+		assert "MinimapCtrl" in kinds
+		assert right == total
+		# without it one window is short, and that is what points at it
+		without = xdat_layout.read(blob, kinds - {"MinimapCtrl"})
+		assert xdat_layout.suspects(blob, xdat_layout.strings(blob), kinds - {"MinimapCtrl"}, "Window", "end-4", 0)
+		assert xdat_layout.agreement(blob, without, "Window", "end-4", 0)[0] < total
+
+	def test_reads_a_count_that_takes_the_window_in(self):
+		"""Some counts include the holder itself; that is read off the file too, not assumed."""
+		import xdat_layout
+		kinds, container, spot, bias, right, total = xdat_layout.discover(self.file(bias=1))
+		assert (container, spot, bias) == ("Window", "end-4", 1)
+		assert right == total > 0
+
+	def test_finds_the_count_when_more_numbers_follow_it(self):
+		"""The count does not have to be the last thing in the record, and where it is is looked for."""
+		import xdat_layout
+		kinds, container, spot, bias, right, total = xdat_layout.discover(self.file(after=12))
+		assert (container, spot, bias) == ("Window", "end-16", 0)
+		assert right == total > 0
+
+	def test_writes_the_file_back_byte_for_byte(self):
+		import xdat_layout
+		blob = self.file()
+		again, dropped = xdat_layout.Layout.of(blob).rebuild()
+		assert (again, dropped) == (blob, 0)
+
+	def test_empties_a_window_and_leaves_the_others_as_they_were(self):
+		import xdat
+		import xdat_layout
+		blob = self.file()
+		before = xdat_layout.Layout.of(blob)
+		held = {holder.name: [record.name for record in children] for holder, children in before.groups}
+		fixed, gone, bytes_gone, problems = xdat.cut(blob, ["Some3Wnd"])
+		assert problems == []
+		assert gone == len(held["Some3Wnd"]) > 0
+		assert bytes_gone == (len(blob) - len(fixed)) > 0
+		after = xdat_layout.Layout(fixed, before.kinds, before.container, before.spot, before.bias)
+		assert after.understood(), after.wrong()
+		now = {holder.name: [record.name for record in children] for holder, children in after.groups}
+		assert now["Some3Wnd"] == [], "the window is still there, with nothing in it"
+		assert {name: rows for name, rows in now.items() if name != "Some3Wnd"} \
+			== {name: rows for name, rows in held.items() if name != "Some3Wnd"}
+
+	@classmethod
+	def lying(cls, window=4, says=99):
+		"""The same file with one window saying it holds more children than it does."""
+		blob = bytearray(cls.file())
+		import xdat_layout
+		layout = xdat_layout.Layout.of(bytes(blob))
+		holder = layout.groups[window][0]
+		at = xdat_layout.count_place(holder, layout.spot)
+		blob[at:at + 4] = says.to_bytes(4, "little")
+		return bytes(blob), holder.name
+
+	def test_refuses_a_file_it_cannot_account_for(self):
+		"""One window that does not add up means the file is not understood; nothing is written."""
+		import xdat
+		blob, _name = self.lying()
+		fixed, gone, bytes_gone, problems = xdat.cut(blob, ["Some3Wnd"])
+		assert (fixed, gone, bytes_gone) == (blob, 0, 0)
+		assert problems and "not understood" in problems[0]
+
+	def test_never_empties_the_window_that_does_not_add_up(self):
+		"""Where the count is wrong the reader does not know where the widgets end, so it stops."""
+		import xdat
+		blob, name = self.lying()
+		fixed, gone, bytes_gone, problems = xdat.cut(blob, [name], force=True)
+		assert (fixed, gone, bytes_gone) == (blob, 0, 0)
+		assert problems and any("does not add up itself" in line for line in problems)
+
+	def test_empties_what_does_add_up_in_a_file_that_does_not_all(self):
+		"""A window that counts right can still be emptied, and the file says what it left alone."""
+		import xdat
+		import xdat_layout
+		blob, lied = self.lying()
+		before = xdat_layout.Layout.of(blob)
+		held = {holder.name: [record.name for record in children] for holder, children in before.groups}
+		fixed, gone, _bytes_gone, problems = xdat.cut(blob, ["Some3Wnd"], force=True)
+		assert gone == len(held["Some3Wnd"]) > 0
+		assert any("do not add up" in line for line in problems), problems
+		after = xdat_layout.Layout(fixed, before.kinds, before.container, before.spot, before.bias)
+		now = {holder.name: [record.name for record in children] for holder, children in after.groups}
+		assert now["Some3Wnd"] == []
+		assert now[lied] == held[lied], "the window that lies about its children is untouched"
+
+	def test_refuses_a_file_that_holds_the_places_of_its_records(self):
+		"""Nothing may move in a file that points at its own records, and a cut moves everything after it."""
+		import xdat
+		import xdat_layout
+		blob = self.file(header=b"\x10" * 400)
+		starts = [record.start for record in xdat_layout.Layout.of(blob).records]
+		table = b"".join(start.to_bytes(4, "little") for start in starts)
+		blob = table + blob[len(table):]
+		fixed, gone, _bytes_gone, problems = xdat.cut(blob, ["Some3Wnd"])
+		assert (fixed, gone) == (blob, 0)
+		assert problems and "places of its own records" in problems[0]
+
+	def test_lowers_a_count_of_records_in_the_header(self):
+		"""When the header says how many records the file has, a cut has to say the new number."""
+		import xdat
+		import xdat_layout
+		plain = self.file()
+		records = len(xdat_layout.Layout.of(plain).records)
+		header = b"\x10" * 4 + records.to_bytes(4, "little") + b"\x10" * 8
+		blob = self.file(header=header)
+		assert xdat_layout.Layout.of(blob).header_counters() == [(4, "records")]
+		fixed, gone, _bytes_gone, problems = xdat.cut(blob, ["Some3Wnd"])
+		assert problems == []
+		assert int.from_bytes(fixed[4:8], "little") == (records - gone)

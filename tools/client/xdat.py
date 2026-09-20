@@ -17,14 +17,14 @@ Usage:
     python tools/client/xdat.py --window InventoryWnd    what one window is made of
     python tools/client/xdat.py --find talisman      every widget whose name matches
     python tools/client/xdat.py --systems            what the systems of the later chronicles take up
-    python tools/client/xdat.py --check              can the file be written to at all
+    python tools/client/xdat.py --check              what the file says about its own shape
     python tools/client/xdat.py --dump --json out.json   everything the reader sees, for a report
-    python tools/client/xdat.py --cut Wnd1,Wnd2 --out new.xdat    a copy without those windows
+    python tools/client/xdat.py --cut Wnd1,Wnd2 --out new.xdat    a copy with those windows emptied
     python tools/client/xdat.py --cut-systems --out new.xdat      a copy without the systems above
 
-Read --check first. A cut only holds if every window in the file is made of the records the
-reader found; where the counts disagree, something in the file is not understood yet and the
-client closes itself at the start, whatever the cut looks like.
+The cut itself is xdat_layout's work: the kinds of record, which kind holds the others and where it
+keeps their number are read out of the file, not guessed, and nothing is written unless every window
+in the file counts its children right and the file that comes out reads back the same way.
 """
 
 import json
@@ -218,10 +218,33 @@ def mismatches(blob, items=None):
 	return sorted(rows)
 
 
+def structure(blob):
+	"""What the file says about its own shape (xdat_layout), for the report and for the JSON."""
+	import xdat_layout
+
+	layout = xdat_layout.Layout.of(blob)
+	right, total = layout.agreement()
+	return {
+		"kinds": sorted(layout.kinds),
+		"holder": layout.container,
+		"count_at": layout.spot,
+		"count_takes_the_holder_in": bool(layout.bias),
+		"records": len(layout.records),
+		"windows": total,
+		"windows_counting_right": right,
+		"understood": layout.understood(),
+		"counts_wrong": [{"window": name, "said": said, "found": found} for name, said, found in layout.wrong()],
+		"kinds_with_several_shapes": layout.loose_kinds(),
+		"values_pointing_at_records": layout.offset_references(),
+		"header_counters": [{"at": at, "counts": what} for at, what in layout.header_counters()],
+	}
+
+
 def dump(blob, items=None):
 	"""Everything the reader knows about the file, as plain data: for a report or for JSON."""
 	items = items if items is not None else widgets(blob)
 	return {
+		"structure": structure(blob),
 		"bytes": len(blob),
 		"widgets": len(items),
 		"windows": len(by_window(items)),
@@ -244,44 +267,19 @@ def dump(blob, items=None):
 
 def cut(blob, names, force=False):
 	"""
-	Takes whole widget records out of the file and lowers the count of the window they sat in.
+	A copy of the file with the named windows emptied, or the reason it cannot be done.
 	<p>
-	Only a window whose count matches what is really there can be cut: anywhere else the reader has
-	miscounted, and changing the file on a guess is how a client stops starting.
+	The work is xdat_layout's: it reads the kinds, the holder and the place of the count out of the
+	file, empties the windows in the tree and writes it back, then reads the result again and checks
+	that every window still holds what it should. Nothing is written when that check does not pass.
 	@param blob the file as it is
 	@param names the windows to empty, by name
-	@param force write even though the reader cannot account for every window
-	@return (the new file, how many widgets went, how many bytes went, the windows left alone)
+	@param force empty what can be emptied although the file as a whole does not add up
+	@return (the new file, how many widgets went, how many bytes went, [what was left alone and why])
 	"""
-	wanted = {name.lower() for name in names}
-	items = widgets(blob)
-	counts = children(blob, items)
-	# one window may count right while the file as a whole is misread; then the records that move
-	# up into the hole are not the ones the client expects and it closes itself at the start
-	wrong = mismatches(blob, items)
-	if wrong and not force:
-		named = "; ".join(f"{window} says {said}, the reader sees {seen}" for window, said, seen in wrong[:3])
-		return blob, 0, 0, [f"the file is not understood, {len(wrong)} windows count wrong: {named}"
-			f"{' and more' if len(wrong) > 3 else ''} - start with --check (--force writes anyway)"]
-	out = bytearray(blob)
-	gone = 0
-	removed = 0
-	skipped = []
-	# from the back, so the offsets of what is still to come do not move
-	for window in sorted(counts, key=lambda name: -counts[name][0]):
-		if window.lower() not in wanted:
-			continue
-		where, said, group = counts[window]
-		if said != len(group):
-			skipped.append(f"{window}: the file says {said} widgets, the reader sees {len(group)}")
-			continue
-		start = group[0].offset
-		end = group[-1].offset + group[-1].size
-		del out[start:end]
-		out[where:where + 4] = (0).to_bytes(4, "little")
-		gone += end - start
-		removed += len(group)
-	return bytes(out), removed, gone, skipped
+	import xdat_layout
+
+	return xdat_layout.cut(blob, names, force=force)
 
 
 def main():
@@ -303,20 +301,31 @@ def main():
 	print(f"{path}: {len(blob)} bytes, {len(items)} widgets in {len(by_window(items))} windows\n")
 
 	if "--check" in sys.argv:
+		import xdat_layout
+
 		head = header(blob, items)
-		rest = trailer(blob, items)
 		print(f"  header: {len(head)} bytes before the first record  {head[:32].hex(' ')}")
-		print(f"  trailer: {len(rest)} bytes after the last one  {rest[:32].hex(' ')}")
-		wrong = mismatches(blob, items)
-		print(f"\n  {len(wrong)} of {len(children(blob, items))} windows count wrong:")
-		for window, said, seen in wrong[:20]:
-			print(f"    {window:34} says {said:5}, the reader sees {seen:5}")
-		print(f"\n  {'kind':22} {'records':>8}  shapes (strings, numbers) x how many")
-		for kind, found in sorted(shapes(items).items(), key=lambda row: -sum(n for _s, n in row[1])):
-			total = sum(number for _one, number in found)
-			text = ", ".join(f"({one[0]},{one[1]}) x{number}" for one, number in found[:3])
-			print(f"  {kind:22} {total:8}  {len(found):3} shapes: {text}")
-		print("\n  a cut is safe only when no window counts wrong and every kind has one shape.")
+		layout = xdat_layout.Layout.of(blob)
+		right, total = layout.agreement()
+		print(f"\n  read out of the file itself:")
+		print(f"    {len(layout.kinds)} kinds of widget, {len(layout.records)} records")
+		print(f"    the holder is {layout.container}, its count of children stands at {layout.spot}"
+			f"{' and takes the holder in' if layout.bias else ''}")
+		print(f"    {right} of {total} windows count right"
+			+ ("  - the file is accounted for" if layout.understood() else "  - the rest is not understood yet"))
+		for name, said, seen in layout.wrong()[:20]:
+			print(f"      {name:34} says {said:6}, the file has {seen:6}")
+		loose = layout.loose_kinds()
+		if loose:
+			print(f"    kinds whose records are not all alike, which is usual: {', '.join(loose[:10])}")
+		hits = layout.offset_references()
+		print(f"    values that point at the start of a record: {hits}"
+			+ ("  - records cannot be moved" if hits > (len(layout.records) // 5) else ""))
+		counters = layout.header_counters()
+		if counters:
+			print(f"    the header counts the file: {', '.join(f'{what} at {at}' for at, what in counters)}")
+		print(f"\n  kinds: {', '.join(sorted(layout.kinds)[:24])}{' ...' if len(layout.kinds) > 24 else ''}")
+		print("\n  a cut runs when every window counts right; the tool reads the result back either way.")
 		return
 
 	if "--dump" in sys.argv:
@@ -352,10 +361,11 @@ def main():
 		else:
 			names = sys.argv[sys.argv.index("--cut") + 1].split(",")
 		where = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else None
-		fixed, count, gone, skipped = cut(blob, names, force="--force" in sys.argv)
-		print(f"  {count} widgets, {gone} bytes would go: {', '.join(names)}")
-		for line in skipped:
-			print(f"  left alone, {line}")
+		fixed, count, gone, notes = cut(blob, names, force="--force" in sys.argv)
+		print(f"  {count} widgets, {gone} bytes out of {', '.join(names[:6])}"
+			f"{f' and {len(names) - 6} more' if len(names) > 6 else ''}")
+		for line in notes:
+			print(f"  - {line}")
 		if where is None:
 			print("  no --out given, nothing written")
 			return
