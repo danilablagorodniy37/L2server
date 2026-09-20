@@ -7,7 +7,10 @@ of systems this server does not run. This puts our own values in and leaves ever
 The file is a Lineage2Ver413 one; tools/client/l2dat.py reads and writes it, CRC and all. The
 original is kept next to it as L2.ini.orig the first time this runs.
 
-Usage: python tools/client/clean_ini.py [<client system folder>] [--dry-run]
+Usage:
+    python tools/client/clean_ini.py --list        every section and key the file holds
+    python tools/client/clean_ini.py --dry-run     what would change
+    python tools/client/clean_ini.py               change it
 """
 
 import sys
@@ -87,6 +90,12 @@ def main():
 	raw = path.read_bytes()
 	data, key = l2dat.decode(path)
 	text = data.decode("cp1251")
+	if "--list" in sys.argv:
+		print(f"{path} ({key} key), {len(raw)} bytes")
+		for line in text.split("\r\n"):
+			if line.strip():
+				print("  " + line.rstrip())
+		return
 	fixed, changed = clean(text)
 	print(f"{path} ({key} key), {len(changed)} setting(s) to change")
 	for line in changed:

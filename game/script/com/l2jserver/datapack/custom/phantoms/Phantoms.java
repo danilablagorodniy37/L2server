@@ -1329,6 +1329,24 @@ public class Phantoms {
 		return out.append("</body></html>").toString();
 	}
 
+	/**
+	 * One line for the GM panel: how many bots there are and what they are doing.
+	 * @return the line, or null when the bots are not running
+	 */
+	public static String summary() {
+		if (_instance == null) {
+			return null;
+		}
+		final Map<Phantom.State, Integer> states = new HashMap<>();
+		for (Phantom phantom : _instance._phantoms) {
+			states.merge(phantom.state(), 1, Integer::sum);
+		}
+		final int town = states.getOrDefault(Phantom.State.TOWN, 0);
+		final int shops = states.getOrDefault(Phantom.State.TRADE, 0);
+		final int out = _instance._phantoms.size() - town - shops;
+		return _instance._phantoms.size() + ": " + town + " in town, " + shops + " shops, " + out + " out hunting";
+	}
+
 	public static boolean isPhantom(L2PcInstance player) {
 		return (player != null) && (_instance != null) && _instance._objectIds.contains(player.getObjectId());
 	}

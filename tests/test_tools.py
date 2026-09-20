@@ -378,3 +378,35 @@ class TestClientInterface:
 		rows = {label: count for label, count, _bytes, _windows in xdat.systems(xdat.widgets(self.blob()))}
 		assert rows["vitality"] == 1, "the vitality bar of High Five is found"
 		assert rows["attributes"] == 0
+
+	def test_says_which_windows_count_wrong(self):
+		"""The check has to name the windows the reader cannot account for."""
+		import xdat
+		blob = self.counted_blob()
+		assert xdat.mismatches(blob) == []
+		wrong = blob.replace((2).to_bytes(4, "little"), (5).to_bytes(4, "little"), 1)
+		assert xdat.mismatches(wrong) == [("TestWnd", 5, 2)]
+
+	def test_a_file_that_counts_wrong_is_not_cut_at_all(self):
+		"""One window counting wrong means the whole file is misread; nothing may be written."""
+		import xdat
+		blob = self.counted_blob().replace((2).to_bytes(4, "little"), (5).to_bytes(4, "little"), 1)
+		fixed, count, gone, skipped = xdat.cut(blob, ["NoSuchWnd"])
+		assert (fixed, count, gone) == (blob, 0, 0)
+		assert skipped and "not understood" in skipped[0]
+
+	def test_records_of_one_kind_have_one_shape(self):
+		"""Same kind, same number of strings and numbers - that is what makes the file readable."""
+		import xdat
+		found = xdat.shapes(xdat.widgets(self.counted_blob()))
+		assert all(len(shapes) == 1 for shapes in found.values()), found
+		assert found["Button"][0][0] == (3, 4), "Button, its name, its window, then four bytes"
+
+	def test_dump_holds_every_record_with_its_bytes(self):
+		import xdat
+		blob = self.counted_blob()
+		data = xdat.dump(blob)
+		assert (data["bytes"], data["widgets"], data["counts_wrong"]) == (len(blob), 3, [])
+		button = [row for row in data["records"] if row["name"] == "btnOne"][0]
+		assert (button["kind"], button["window"], button["numbers"]) == ("Button", "TestWnd", 4)
+		assert button["raw"] == "02020202", "the numbers of the record, as they stand in the file"

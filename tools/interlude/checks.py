@@ -302,6 +302,33 @@ def html_quest_buttons():
 	return dead
 
 
+ADMIN_HTML = ds.GAME / "data" / "html" / "admin"
+
+# GM menu buttons and the setting that switches the system they lead to off
+ADMIN_MENU_SYSTEMS = (
+	("chronicle.properties", "EnableTerritoryWar", ("admin_territory_war",)),
+	("chronicle.properties", "EnableGracia", ("admin_gracia_seeds",)),
+	("chronicle.properties", "EnableHellbound", ("admin_hellbound",)),
+	("chronicle.properties", "EnableInstances", ("admin_html instancezone",)),
+	("vitality.properties", "Enabled", ("admin_set_vitality", "admin_full_vitality")),
+)
+
+
+def admin_menu_buttons():
+	"""The GM menus offer only the systems this server runs."""
+	off = []
+	for name, key, commands in ADMIN_MENU_SYSTEMS:
+		if properties(name).get(key, "False").strip().lower() != "true":
+			off.extend(commands)
+	problems = defaultdict(list)
+	for f in sorted(ADMIN_HTML.glob("*_menu.htm")):
+		text = f.read_text(encoding="utf-8", errors="replace")
+		for command in off:
+			if f"bypass -h {command}" in text:
+				problems[command].append(f.name)
+	return problems
+
+
 def script_shop_calls():
 	"""Loaded scripts open multisells and buylists that exist."""
 	multisells, buylists = ds.multisell_ids(), ds.buylist_ids()
@@ -1338,7 +1365,7 @@ def floating_spawns():
 GEO_CHECKS = {"floating_spawns": floating_spawns}
 DATAPACK_CHECKS = {f.__name__: f for f in (
 	item_references, npc_references, boss_positions, skill_references,
-	html_multisell_links, html_buylist_links, html_teleport_links, html_quest_buttons, script_shop_calls, quest_dialog_links, quest_npcs, quest_kill_targets,
+	html_multisell_links, html_buylist_links, html_teleport_links, html_quest_buttons, admin_menu_buttons, script_shop_calls, quest_dialog_links, quest_npcs, quest_kill_targets,
 	spawn_zones, leader_minions, loader_classes, xml_schemas,
 	shops_interlude_items, drops_interlude_items, recipes_interlude_items, manor_interlude_items, teleports_interlude, quest_rewards, spawns_interlude_npcs, interlude_skill_trees, interlude_enchant_routes, interlude_enchant_costs, interlude_residence_skills, interlude_npc_stats, kamael_isle, interlude_config, server_rates,
 	interlude_loaders, starting_equipment, phantom_gear, phantom_hunting, phantom_trade, phantom_phrases, phantom_config, phantom_squads, phantom_ids, phantom_settings, character_creation, interlude_epics, interlude_attributes, hunting_html,

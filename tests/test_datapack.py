@@ -471,3 +471,14 @@ def test_strip_attributes_takes_the_block_and_leaves_the_rest():
 	assert "<attribute>" not in fixed
 	assert 'physical="512"' in fixed
 	assert fixed.count("<defence") == 1
+
+
+def test_admin_menu_buttons_reports_a_switched_off_system(tmp_path, monkeypatch):
+	"""The GM menus used to offer Territory War, Gracia, Hellbound, instances and vitality."""
+	menu = tmp_path / "game_menu.htm"
+	menu.write_text('<html><body>'
+		'<button value="TerritoryWar" action="bypass -h admin_territory_war" width=82 height=20>'
+		'<button value="Castle" action="bypass -h admin_siege" width=82 height=20>'
+		'</body></html>', encoding="utf-8")
+	monkeypatch.setattr(checks, "ADMIN_HTML", tmp_path)
+	assert dict(checks.admin_menu_buttons()) == {"admin_territory_war": ["game_menu.htm"]}

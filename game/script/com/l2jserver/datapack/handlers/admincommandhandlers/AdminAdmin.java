@@ -19,10 +19,13 @@
 package com.l2jserver.datapack.handlers.admincommandhandlers;
 
 import static com.l2jserver.gameserver.config.Configuration.character;
+import static com.l2jserver.gameserver.config.Configuration.chronicle;
 import static com.l2jserver.gameserver.config.Configuration.rates;
 
+import java.lang.reflect.Modifier;
 import java.util.StringTokenizer;
 
+import org.aeonbits.owner.Accessible;
 import org.aeonbits.owner.Mutable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -172,28 +175,31 @@ public class AdminAdmin implements IAdminCommandHandler {
 				}
 			}
 			AdminHtml.showAdminHtml(activeChar, "gm_menu.htm");
-		} else if (command.startsWith("admin_set")) {
-			StringTokenizer st = new StringTokenizer(command);
+		} else if (command.startsWith("admin_setconfig")) {
+			final StringTokenizer st = new StringTokenizer(command);
 			st.nextToken();
-			try {
-				String configName = st.nextToken();
-				String name = st.nextToken();
-				String value = st.nextToken();
-				
-				final var field = Configuration.class.getDeclaredField(configName);
-				if (field.getType().isInstance(Mutable.class)) {
-					try {
-						((Mutable) field.get(Configuration.class)).setProperty(name, value);
-						activeChar.sendMessage("Set " + name + "=" + value + " in " + configName + ".");
-					} catch (Exception ex) {
-						activeChar.sendMessage("Failed to set " + name + "=" + value + " in " + configName + ".");
-					}
-				}
-			} catch (Exception ex) {
+			if (st.countTokens() < 2) {
 				activeChar.sendMessage("Usage: //setconfig <parameter> <value>");
-			} finally {
-				showConfigPage(activeChar);
+			} else {
+				setConfig(activeChar, st.nextToken(), st.nextToken());
 			}
+			showConfigPage(activeChar);
+		} else if (command.startsWith("admin_set")) {
+			// //set <parameter> <value>, and the old form with the file in front of it
+			final StringTokenizer st = new StringTokenizer(command);
+			st.nextToken();
+			final String[] words = new String[st.countTokens()];
+			for (int i = 0; i < words.length; i++) {
+				words[i] = st.nextToken();
+			}
+			if (words.length >= 3) {
+				setConfig(activeChar, words[1], words[2]);
+			} else if (words.length == 2) {
+				setConfig(activeChar, words[0], words[1]);
+			} else {
+				activeChar.sendMessage("Usage: //set <parameter> <value>");
+			}
+			showConfigPage(activeChar);
 		} else if (command.startsWith("admin_gmon")) {
 			// nothing
 		}
@@ -219,45 +225,91 @@ public class AdminAdmin implements IAdminCommandHandler {
 		AdminHtml.showAdminHtml(activeChar, filename + "_menu.htm");
 	}
 	
+	/**
+	 * What this server is set to, and a box to change one of the settings that can be changed while
+	 * it runs. Most of them cannot: they are read once at the start, and the page says so instead of
+	 * offering a button that does nothing.
+	 * @param activeChar the GM
+	 */
 	public void showConfigPage(L2PcInstance activeChar) {
-		final var html = "<html><title>L2J :: Config</title><body>" +
-                "<center><table width=270><tr>" +
-                "<td width=60><button value=\"Main\" action=\"bypass -h admin_admin\" width=60 height=25 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td>" +
-                "<td width=150>Config Server Panel</td><td width=60><button value=\"Back\" action=\"bypass -h admin_admin4\" width=60 height=25 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td>" +
-                "</tr></table></center><br>" +
-                "<center><table width=260><tr><td width=140></td><td width=40></td><td width=40></td></tr>" +
-                "<tr><td><font color=\"00AA00\">Drop:</font></td><td></td><td></td></tr>" +
-                "<tr><td><font color=\"LEVEL\">Rate EXP</font> = " +
-                rates().getRateXp() +
-                "</td>" +
-                "<td><edit var=\"param1\" width=40 height=15></td><td><button value=\"Set\" action=\"bypass -h admin_setconfig RateXp $param1\" width=40 height=25 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr>" +
-                "<tr><td><font color=\"LEVEL\">Rate SP</font> = " +
-                rates().getRateSp() +
-                "</td><td><edit var=\"param2\" width=40 height=15></td>" +
-                "<td><button value=\"Set\" action=\"bypass -h admin_setconfig RateSp $param2\" width=40 height=25 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr>" +
-                "<tr><td><font color=\"LEVEL\">Rate Drop Spoil</font> = " +
-                rates().getCorpseDropChanceMultiplier() +
-                "</td><td><edit var=\"param4\" width=40 height=15></td>" +
-                "<td><button value=\"Set\" action=\"bypass -h admin_setconfig RateDropSpoil $param4\" width=40 height=25 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr>" +
-                "<tr><td width=140></td><td width=40></td><td width=40></td></tr>" +
-                "<tr><td><font color=\"00AA00\">Enchant:</font></td><td></td><td></td></tr>" +
-                "<tr><td><font color=\"LEVEL\">Enchant Element Stone</font> = " +
-                character().getEnchantChanceElementStone() +
-                "</td><td><edit var=\"param8\" width=40 height=15></td>" +
-                "<td><button value=\"Set\" action=\"bypass -h admin_setconfig EnchantChanceElementStone $param8\" width=40 height=25 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr>" +
-                "<tr><td><font color=\"LEVEL\">Enchant Element Crystal</font> = " +
-                character().getEnchantChanceElementCrystal() +
-                "</td><td><edit var=\"param9\" width=40 height=15></td>" +
-                "<td><button value=\"Set\" action=\"bypass -h admin_setconfig EnchantChanceElementCrystal $param9\" width=40 height=25 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr>" +
-                "<tr><td><font color=\"LEVEL\">Enchant Element Jewel</font> = " +
-                character().getEnchantChanceElementJewel() +
-                "</td><td><edit var=\"param10\" width=40 height=15></td>" +
-                "<td><button value=\"Set\" action=\"bypass -h admin_setconfig EnchantChanceElementJewel $param10\" width=40 height=25 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr>" +
-                "<tr><td><font color=\"LEVEL\">Enchant Element Energy</font> = " +
-                character().getEnchantChanceElementEnergy() +
-                "</td><td><edit var=\"param11\" width=40 height=15></td>" +
-                "<td><button value=\"Set\" action=\"bypass -h admin_setconfig EnchantChanceElementEnergy $param11\" width=40 height=25 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr>" +
-                "</table></body></html>";
-		activeChar.sendPacket(new NpcHtmlMessage(html));
+		final StringBuilder out = new StringBuilder(2048);
+		out.append("<html><title>Settings</title><body>");
+		out.append("<center><table width=280 border=0 bgcolor=\"444444\"><tr>");
+		out.append(tab("Panel", "admin_panel")).append(tab("Main", "admin_admin"));
+		out.append(tab("Server", "admin_admin4")).append(tab("Settings", "admin_config_server"));
+		out.append("</tr></table></center>");
+		out.append("<table width=280>");
+		out.append(line("Level cap", String.valueOf(character().getMaxPlayerLevel())));
+		out.append(line("Experience", "x" + (int) rates().getRateXp() + ", SP x" + (int) rates().getRateSp()));
+		out.append(line("Drop chance", "x" + (int) rates().getDeathDropChanceMultiplier()
+			+ ", spoil x" + (int) rates().getCorpseDropChanceMultiplier()));
+		out.append(line("Quest rewards", "x" + (int) rates().getRateQuestReward()));
+		out.append(line("Instances", onOff(chronicle().enableInstances())));
+		out.append(line("Gracia", onOff(chronicle().enableGracia())));
+		out.append(line("Hellbound", onOff(chronicle().enableHellbound())));
+		out.append(line("Territory War", onOff(chronicle().enableTerritoryWar())));
+		out.append(line("Attributes", onOff(chronicle().enableAttributes())));
+		out.append("</table><br>");
+		out.append("<center>Change one right now</center>");
+		out.append("<table width=280><tr><td width=100><edit var=\"name\" width=95 height=15></td>");
+		out.append("<td width=100><edit var=\"value\" width=95 height=15></td>");
+		out.append("<td width=60><button value=\"Set\" action=\"bypass -h admin_setconfig $name $value\" ");
+		out.append("width=55 height=21 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td></tr></table>");
+		out.append("<font color=\"888888\">Only what server.properties, general.properties and geodata.properties ");
+		out.append("hold changes without a restart. Everything else here is read once at the start: change the file ");
+		out.append("and start the server again.</font>");
+		out.append("</body></html>");
+		activeChar.sendPacket(new NpcHtmlMessage(out.toString()));
+	}
+	
+	/**
+	 * Changes one setting of a configuration file that can be written to while the server runs.
+	 * @param activeChar the GM to answer
+	 * @param name the setting, as it is spelled in the file
+	 * @param value what it should be
+	 */
+	private void setConfig(L2PcInstance activeChar, String name, String value) {
+		for (var field : Configuration.class.getDeclaredFields()) {
+			if (!Modifier.isStatic(field.getModifiers())) {
+				continue;
+			}
+			final Object config;
+			try {
+				field.setAccessible(true);
+				config = field.get(null);
+			} catch (Exception ex) {
+				continue;
+			}
+			// only a file that can say whether it holds the setting is asked about it
+			if (!(config instanceof Accessible accessible) || (accessible.getProperty(name) == null)) {
+				continue;
+			}
+			if (!(config instanceof Mutable mutable)) {
+				activeChar.sendMessage(name + " is read once at the start; change the file and restart.");
+				return;
+			}
+			try {
+				mutable.setProperty(name, value);
+				activeChar.sendMessage(name + " is now " + value + " (" + field.getName() + ").");
+			} catch (Exception ex) {
+				LOG.warn("Could not set {} to {}.", name, value, ex);
+				activeChar.sendMessage("Could not set " + name + " to " + value + ".");
+			}
+			return;
+		}
+		activeChar.sendMessage("No setting called " + name + " can be changed while the server runs.");
+	}
+	
+	private static String onOff(boolean on) {
+		return on ? "<font color=\"00AA00\">on</font>" : "off";
+	}
+	
+	private static String line(String name, String value) {
+		return "<tr><td width=100>" + name + "</td><td width=180><font color=\"LEVEL\">" + value + "</font></td></tr>";
+	}
+	
+	private static String tab(String name, String bypass) {
+		return "<td><button value=\"" + name + "\" action=\"bypass -h " + bypass + "\" width=68 height=21 "
+			+ "back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
 	}
 }

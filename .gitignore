@@ -8,6 +8,9 @@
 # Geodata (~900 MB) - copied locally, see README
 game/data/geodata/
 
+# javac leaves its argument file behind when the script compile test fails
+game/javac.*.args
+
 # Runtime output
 logs/
 log/
