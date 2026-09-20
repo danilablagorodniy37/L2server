@@ -5235,7 +5235,9 @@ public final class L2PcInstance extends L2Playable {
 	public void setPrivateStoreType(PrivateStoreType privateStoreType) {
 		_privateStoreType = privateStoreType;
 		
-		if (customs().offlineDisconnectFinished() && (privateStoreType == PrivateStoreType.NONE) && ((getClient() == null) || getClient().isDetached())) {
+		// A phantom never had a client: its store closes because the server changes the goods or a player
+		// buys them all, and taking it out of the world would empty the market one shop keeper at a time.
+		if (customs().offlineDisconnectFinished() && (privateStoreType == PrivateStoreType.NONE) && !isPhantom() && ((getClient() == null) || getClient().isDetached())) {
 			deleteMe();
 		}
 	}

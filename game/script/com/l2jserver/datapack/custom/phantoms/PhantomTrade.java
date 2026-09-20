@@ -168,6 +168,14 @@ public class PhantomTrade {
 		if (buying) {
 			return openBuyShop(bot);
 		}
+		// What nobody bought goes with the old shop: the goods are made out of nothing every time,
+		// and a bag that is never emptied grows by four items every twenty minutes.
+		for (TradeItem line : bot.getSellList().getItems()) {
+			final L2ItemInstance left = bot.getInventory().getItemByObjectId(line.getObjectId());
+			if ((left != null) && !left.isEquipped()) {
+				bot.getInventory().destroyItem("PhantomShop", left, bot, null);
+			}
+		}
 		bot.getSellList().clear();
 		return openShop(bot);
 	}
