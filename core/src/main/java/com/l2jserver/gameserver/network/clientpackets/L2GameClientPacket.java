@@ -50,12 +50,13 @@ public abstract class L2GameClientPacket extends ReceivablePacket<L2GameClient> 
 		try {
 			readImpl();
 			return true;
+		} catch (BufferUnderflowException e) {
+			// A packet shorter than its fields is the client's fault, not a server error: no stack trace,
+			// otherwise any client can fill the error log by sending cut packets.
+			LOG.warn("Client: {} - Packet too short: {}", getClient().toString(), getType());
+			getClient().onBufferUnderflow();
 		} catch (Exception e) {
 			LOG.error("Client: {} - Failed reading: {} ; {}", getClient().toString(), getType(), e.getMessage(), e);
-			
-			if (e instanceof BufferUnderflowException) {
-				getClient().onBufferUnderflow();
-			}
 		}
 		return false;
 	}

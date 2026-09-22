@@ -6,6 +6,7 @@ import datasets as ds
 
 def pytest_addoption(parser):
 	parser.addoption("--run-server", action="store_true", help="start login and game server and check the boot log")
+	parser.addoption("--run-crash", action="store_true", help="throw broken and hostile traffic at the running servers")
 
 
 def pytest_collection_modifyitems(config, items):
@@ -13,6 +14,7 @@ def pytest_collection_modifyitems(config, items):
 		"acis": None if ds.ACIS.exists() else f"aCis datapack not found at {ds.ACIS}",
 		"db": None if checks.mysql_available() else "MySQL is not reachable on localhost:3307",
 		"server": None if config.getoption("--run-server") else "boot test is opt-in: --run-server",
+		"crash": None if config.getoption("--run-crash") else "crash test is opt-in: --run-crash",
 	}
 	for item in items:
 		for marker, reason in skips.items():

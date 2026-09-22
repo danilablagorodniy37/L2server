@@ -41,7 +41,7 @@
 
 ## Тесты
 `tools\test.bat` — проверки датапака, скриптов `tools/interlude` и базы (pytest, ~20 с).
-`--core` добавляет JUnit-тесты ядра, `--server` — тест запуска серверов. Подробно: [tests/README.md](tests/README.md).
+`--core` добавляет JUnit-тесты ядра, `--server` — тест запуска серверов, `--crash` — краш-тест запущенного сервера. Подробно: [tests/README.md](tests/README.md).
 
 ## Боты
 
