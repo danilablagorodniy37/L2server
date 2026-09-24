@@ -40,8 +40,6 @@ import static com.l2jserver.gameserver.network.SystemMessageId.YOUR_APPRENTICE_S
 import static com.l2jserver.gameserver.network.SystemMessageId.YOUR_BIRTHDAY_GIFT_HAS_ARRIVED;
 import static com.l2jserver.gameserver.network.SystemMessageId.YOUR_SPONSOR_C1_HAS_LOGGED_IN;
 
-import java.util.Base64;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -395,11 +393,6 @@ public class EnterWorld extends L2GameClientPacket {
 		
 		activeChar.sendPacket(WELCOME_TO_LINEAGE);
 		
-		activeChar.sendMessage(getText("VGhpcyBzZXJ2ZXIgdXNlcyBMMkosIGEgcHJvamVjdCBmb3VuZGVkIGJ5IEwyQ2hlZg=="));
-		activeChar.sendMessage(getText("YW5kIGRldmVsb3BlZCBieSBMMkogVGVhbSBhdCB3d3cubDJqc2VydmVyLmNvbQ=="));
-		activeChar.sendMessage(getText("Q29weXJpZ2h0IDIwMDQtMjAyNQ=="));
-		activeChar.sendMessage(getText("VGhhbmsgeW91IGZvciAyMSB5ZWFycyE="));
-		
 		SevenSigns.getInstance().sendCurrentPeriodMsg(activeChar);
 		AnnouncementsTable.getInstance().showAnnouncements(activeChar);
 		
@@ -563,10 +556,6 @@ public class EnterWorld extends L2GameClientPacket {
 				apprentice.sendPacket(msg);
 			}
 		}
-	}
-	
-	private static String getText(String string) {
-		return new String(Base64.getDecoder().decode(string));
 	}
 	
 	@Override
