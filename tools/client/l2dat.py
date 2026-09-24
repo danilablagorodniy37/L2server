@@ -2,7 +2,9 @@
 
 A client file starts with a 28 byte header, "Lineage2VerNNN" in UTF-16, and the rest depends
 on the version:
-  Ver111  every byte is XORed with 0xAC (the .ini files use this);
+  Ver111  every byte is XORed with 0xAC (the .ini files and Interface.u, Engine.u, Core.u use this);
+  Ver121  every byte is XORed with one key made from the file name: the sum of the characters of the
+          lower-case name, extension included, & 0xFF (the texture packages SysTextures/*.utx);
   Ver413  RSA blocks of 128 bytes, then zlib. Each decrypted block keeps its payload size in
           byte 3 and the payload itself right-aligned; the blocks together are a 4 byte length
           and a zlib stream. The last 20 bytes of the file are a trailer whose bytes 12-16 hold
@@ -17,6 +19,7 @@ Usage: python tools/client/l2dat.py <file> [<file> ...]   prints what each file 
 import struct
 import sys
 import zlib
+from pathlib import Path
 
 HEADER = 28
 NUL = bytes([0])
@@ -69,15 +72,39 @@ def encode_413(data):
 	return bytes(out) + NUL * 12 + struct.pack("<I", zlib.crc32(bytes(out)) & 0xFFFFFFFF) + NUL * 4
 
 
-def decode(path):
-	"""(plain bytes, key name) of a client file."""
+def xor_121(name):
+	"""The Ver121 key of a file: the sum of the characters of its lower-case name, & 0xFF."""
+	return sum(map(ord, Path(name).name.lower())) & 0xFF
+
+
+def xor(data, key):
+	return data.translate(bytes(b ^ key for b in range(256)))
+
+
+def decode(path, name=None):
+	"""(plain bytes, key name) of a client file; name is the file name the key comes from, when the file
+	is a copy under another one (L2UI_CT1.utx.orig is still keyed as L2UI_CT1.utx)."""
 	raw = open(path, "rb").read()
 	kind = version(raw)
 	if kind == "Lineage2Ver413":
 		return decode_413(raw)
 	if kind == "Lineage2Ver111":
-		return bytes(b ^ XOR_111 for b in raw[HEADER:]), "111"
+		return xor(raw[HEADER:], XOR_111), "111"
+	if kind == "Lineage2Ver121":
+		return xor(raw[HEADER:], xor_121(name or path)), "121"
 	raise ValueError(f"unsupported file version {kind!r}")
+
+
+def encode(data, kind, name=None):
+	"""A client file of that version around the plain bytes; Ver121 needs the name the file will have."""
+	header = f"Lineage2Ver{kind}".encode("utf-16-le")
+	if kind == "111":
+		return header + xor(data, XOR_111)
+	if kind == "121":
+		return header + xor(data, xor_121(name))
+	if kind == "413":
+		return encode_413(data)
+	raise ValueError(f"cannot write version {kind}")
 
 
 def read_compact(data, pos):

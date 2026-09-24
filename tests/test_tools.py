@@ -305,76 +305,105 @@ class TestCleanClientIni:
 
 
 class TestClientInterface:
-	"""tools/client/xdat.py reads system/Interface.xdat, the window layout of the client."""
+	"""tools/client/xdat.py reads and writes system/Interface.xdat, the window layout of the client."""
 
 	@staticmethod
-	def text(word):
-		"""A string the way the file holds it: one byte of length, the characters, a NUL."""
-		raw = word.encode("ascii") + b"\x00"
-		return bytes([len(raw)]) + raw
+	def layout(*windows):
+		return {"shortcuts": [], "windows": list(windows), "separator": 1, "wndDefPos": [], "fonts": [], "styles": [],
+			"chatChannels": [], "tail": b""}
 
-	def blob(self):
-		return (
-			b"\x02\x00\x00\x00"
-			+ self.text("Window") + self.text("TestWnd") + self.text("undefined") + (b"\x01" * 8)
-			+ self.text("Button") + self.text("btnOne") + self.text("undefined") + self.text("TestWnd") + (b"\x02" * 4)
-			+ self.text("Texture") + self.text("VitalityPointBar") + self.text("TestWnd") + (b"\x03" * 6))
-
-	def test_reads_the_strings_with_their_places(self):
+	def test_writes_back_what_it_read(self):
+		"""Windows nest: a window inside a window keeps its own children, and the file says so."""
 		import xdat
-		found = xdat.strings(self.blob())
-		assert [text for _offset, text in found][:3] == ["Window", "TestWnd", "undefined"]
-		assert all(offset >= 0 for offset, _text in found)
+		inner = xdat.new("Window", "InnerWnd", children=[xdat.new("TextBox", "txtHello", text="hello")])
+		button = xdat.new("Button", "btnOne", size=1, sizeAbsolute=1, width=36, height=36,
+			usePosition=1, relativePoint=1, anchorPoint=1, relativeTo=None, x=7.0, y=35.0)
+		blob = xdat.write(self.layout(xdat.new("Window", "TestWnd", script="TestWnd", children=[button, inner])))
+		again = xdat.read(blob)
+		assert xdat.write(again) == blob
+		window = again["windows"][0]
+		assert [c["name"] for c in window["children"]] == ["btnOne", "InnerWnd"]
+		assert window["children"][1]["children"][0]["text"] == "hello"
+		assert (window["children"][0]["width"], window["children"][0]["y"]) == (36, 35.0)
 
-	def test_finds_the_widgets_and_what_they_belong_to(self):
+	def test_a_string_outside_latin1_is_utf16(self):
 		import xdat
-		found = xdat.widgets(self.blob())
-		assert [(w.kind, w.name) for w in found] == [
-			("Window", "TestWnd"), ("Button", "btnOne"), ("Texture", "VitalityPointBar")]
-		assert {w.window for w in found} == {"TestWnd"}
-		assert all(w.size > 0 for w in found), "every record has a size"
+		word = "Привет"
+		blob = xdat.write(self.layout(xdat.new("Window", "Wnd", children=[xdat.new("TextBox", "txt", text=xdat.Text(word))])))
+		text = xdat.read(blob)["windows"][0]["children"][0]["text"]
+		assert text == word
+		assert isinstance(text, xdat.Text)
 
-	def test_counts_a_window(self):
+	def test_walk_goes_into_nested_windows(self):
 		import xdat
-		rows = xdat.summary(xdat.widgets(self.blob()))
-		assert rows[0][0] == "TestWnd"
-		assert rows[0][1] == 3
+		tree = xdat.new("Window", "A", children=[xdat.new("Window", "B", children=[xdat.new("Button", "C")])])
+		assert [(depth, node["name"]) for depth, node, _parent in xdat.walk([tree])] == [(0, "A"), (1, "B"), (2, "C")]
 
-	def counted_blob(self):
-		"""A window whose four byte child count sits right before its children, as the file has it."""
-		head = self.text("Window") + self.text("TestWnd") + self.text("undefined") + (b"\x01" * 8)
-		kids = (self.text("Button") + self.text("btnOne") + self.text("TestWnd") + (b"\x02" * 4)
-			+ self.text("Texture") + self.text("VitalityPointBar") + self.text("TestWnd") + (b"\x03" * 6))
-		return head + (2).to_bytes(4, "little") + kids
-
-	def test_cuts_the_children_and_zeroes_the_count(self):
+	@pytest.mark.client
+	def test_the_real_file_comes_back_byte_for_byte(self):
 		import xdat
-		blob = self.counted_blob()
-		fixed, count, gone, skipped = xdat.cut(blob, ["TestWnd"])
-		assert (count, skipped) == (2, [])
-		assert gone > 0
-		assert b"VitalityPointBar" not in fixed
-		assert b"btnOne" not in fixed
-		assert (0).to_bytes(4, "little") in fixed, "the window must now say it has no children"
+		from conftest import CLIENT
+		data = (CLIENT / "Interface.xdat.orig").read_bytes()
+		layout = xdat.read(data)
+		assert xdat.write(layout) == data
+		assert len(layout["windows"]) > 200
+		assert xdat.find(layout, "InventoryWnd") is not None
 
-	def test_leaves_a_window_alone_when_the_count_does_not_match(self):
-		"""A file the reader has miscounted must not be written to on a guess."""
-		import xdat
-		blob = self.counted_blob().replace((2).to_bytes(4, "little"), (5).to_bytes(4, "little"), 1)
-		fixed, count, gone, skipped = xdat.cut(blob, ["TestWnd"])
-		assert (count, gone) == (0, 0)
-		assert fixed == blob
-		assert skipped and "TestWnd" in skipped[0]
 
-	def test_cutting_a_window_that_is_not_there_changes_nothing(self):
-		import xdat
-		blob = self.counted_blob()
-		fixed, count, gone, skipped = xdat.cut(blob, ["NoSuchWnd"])
-		assert (count, gone, skipped) == (0, 0, [])
-		assert fixed == blob
+class TestClientCrypt:
+	"""tools/client/l2dat.py: the Lineage2VerNNN files of the client."""
 
-	def test_names_the_systems_of_the_later_chronicles(self):
-		import xdat
-		rows = {label: count for label, count, _bytes, _windows in xdat.systems(xdat.widgets(self.blob()))}
-		assert rows["vitality"] == 1, "the vitality bar of High Five is found"
-		assert rows["attributes"] == 0
+	def test_ver111_is_xor_0xac(self, tmp_path):
+		import l2dat
+		plain = bytes(range(256)) * 4
+		path = tmp_path / "Some.u"
+		path.write_bytes(l2dat.encode(plain, "111"))
+		assert l2dat.version(path.read_bytes()) == "Lineage2Ver111"
+		assert path.read_bytes()[28] == 0x00 ^ 0xAC
+		assert l2dat.decode(path) == (plain, "111")
+
+	def test_ver121_key_comes_from_the_file_name(self, tmp_path):
+		import l2dat
+		assert l2dat.xor_121("L2UI_CH3.utx") == 0x68, "sum of the characters of l2ui_ch3.utx, & 0xFF"
+		plain = bytes([0xC1, 0x83, 0x2A, 0x9E]) + bytes(100)
+		path = tmp_path / "L2UI_CH3.utx"
+		path.write_bytes(l2dat.encode(plain, "121", path.name))
+		assert l2dat.decode(path) == (plain, "121")
+		# a copy under another name is still keyed as the original
+		copy = tmp_path / "L2UI_CH3.utx.orig"
+		copy.write_bytes(path.read_bytes())
+		assert l2dat.decode(copy, "L2UI_CH3.utx")[0] == plain
+
+
+@pytest.mark.client
+class TestClientPackages:
+	"""tools/client/upackage.py and utexture.py on the packages of the client copy."""
+
+	def test_interface_u_keeps_the_source_of_its_classes(self):
+		import upackage
+		from conftest import CLIENT
+		package = upackage.Package.open(CLIENT / "Interface.u.orig")
+		assert (package.version, package.licensee) == (123, 37)
+		sources = package.sources()
+		assert len(sources) > 200
+		assert sources["MenuWnd"].startswith("class MenuWnd extends UICommonAPI")
+
+	def test_reads_an_rgba_texture_and_puts_the_same_pixels_back(self):
+		import upackage
+		import utexture
+		from conftest import CLIENT
+		package = upackage.Package.open(CLIENT.parent / "SysTextures" / "L2UI_CT1.utx.orig", "L2UI_CT1.utx")
+		texture = utexture.find(package, "InventoryWnd.Inventory_DF_EquipSlot")
+		assert (texture.width, texture.height, texture.format, len(texture.levels)) == (256, 512, utexture.RGBA8, 1)
+		assert utexture.replace(package, {texture: texture.image()}) == package.data
+
+	def test_blanks_a_dxt_texture(self):
+		import upackage
+		import utexture
+		from conftest import CLIENT
+		package = upackage.Package.open(CLIENT.parent / "SysTextures" / "L2Font-e.utx.orig", "L2Font-e.utx")
+		texture = utexture.find(package, "mini_logo-e")
+		assert texture.format == utexture.DXT3
+		assert texture.image().getextrema()[3][1] > 0, "the logo has visible pixels"
+		blanked = upackage.Package(utexture.replace(package, {texture: None}))
+		assert utexture.find(blanked, "mini_logo-e").image().getextrema()[3] == (0, 0)

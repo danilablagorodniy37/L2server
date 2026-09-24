@@ -1,7 +1,12 @@
+from pathlib import Path
+
 import pytest
 
 import checks
 import datasets as ds
+
+# the client copy of this build (tools/client works on it)
+CLIENT = Path("S:/Programming/L2client/HighFive/system")
 
 
 def pytest_addoption(parser):
@@ -12,6 +17,7 @@ def pytest_addoption(parser):
 def pytest_collection_modifyitems(config, items):
 	skips = {
 		"acis": None if ds.ACIS.exists() else f"aCis datapack not found at {ds.ACIS}",
+		"client": None if CLIENT.exists() else f"the client of this build is not at {CLIENT}",
 		"db": None if checks.mysql_available() else "MySQL is not reachable on localhost:3307",
 		"server": None if config.getoption("--run-server") else "boot test is opt-in: --run-server",
 		"crash": None if config.getoption("--run-crash") else "crash test is opt-in: --run-crash",
