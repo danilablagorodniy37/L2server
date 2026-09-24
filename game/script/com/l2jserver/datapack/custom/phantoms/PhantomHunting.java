@@ -23,6 +23,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import com.l2jserver.commons.util.Rnd;
@@ -68,6 +69,11 @@ public class PhantomHunting {
 
 	public int size() {
 		return _grounds.size();
+	}
+
+	/** Every ground, in the order of hunting.txt, for the GM page. */
+	public List<Ground> grounds() {
+		return Collections.unmodifiableList(_grounds);
 	}
 
 	/** The grounds a bot of this level can hunt in. */

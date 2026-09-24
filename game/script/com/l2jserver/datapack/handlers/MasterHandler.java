@@ -45,6 +45,7 @@ import com.l2jserver.datapack.handlers.admincommandhandlers.AdminAdmin;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminAgathion;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminAnnouncements;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminBBS;
+import com.l2jserver.datapack.handlers.admincommandhandlers.AdminBosses;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminBuffs;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminCHSiege;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminCamera;
@@ -86,10 +87,12 @@ import com.l2jserver.datapack.handlers.admincommandhandlers.AdminMessages;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminMobGroup;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminMonsterRace;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminPForge;
+import com.l2jserver.datapack.handlers.admincommandhandlers.AdminPanel;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminPathNode;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminPcCondOverride;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminPetition;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminPhantoms;
+import com.l2jserver.datapack.handlers.admincommandhandlers.AdminPlayers;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminPledge;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminPolymorph;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminPunishment;
@@ -99,6 +102,7 @@ import com.l2jserver.datapack.handlers.admincommandhandlers.AdminRepairChar;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminRes;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminRide;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminScan;
+import com.l2jserver.datapack.handlers.admincommandhandlers.AdminServerPanel;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminShop;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminShowQuests;
 import com.l2jserver.datapack.handlers.admincommandhandlers.AdminShutdown;
@@ -280,6 +284,7 @@ public class MasterHandler {
 		AdminAgathion.class,
 		AdminAnnouncements.class,
 		AdminBBS.class,
+		AdminBosses.class,
 		AdminBuffs.class,
 		AdminCamera.class,
 		AdminChangeAccessLevel.class,
@@ -324,7 +329,9 @@ public class MasterHandler {
 		AdminPathNode.class,
 		AdminPetition.class,
 		AdminPhantoms.class,
+		AdminPlayers.class,
 		AdminPForge.class,
+		AdminPanel.class,
 		AdminPledge.class,
 		AdminPolymorph.class,
 		AdminPunishment.class,
@@ -334,6 +341,7 @@ public class MasterHandler {
 		AdminRes.class,
 		AdminRide.class,
 		AdminScan.class,
+		AdminServerPanel.class,
 		AdminShop.class,
 		AdminShowQuests.class,
 		AdminShutdown.class,

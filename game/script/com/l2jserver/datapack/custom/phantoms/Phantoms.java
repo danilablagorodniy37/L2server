@@ -125,6 +125,8 @@ public class Phantoms {
 	private final List<PhantomSquad> _elite = new ArrayList<>();
 	/** How long the ticks take, so a crowd of bots cannot quietly eat the server. */
 	private final Map<String, long[]> _ticks = new HashMap<>();
+	/** Set from the GM page: every bot stands where it is until it is cleared. */
+	private volatile boolean _paused;
 
 	public Phantoms() {
 		final File root = server().getDatapackRoot();
@@ -421,6 +423,9 @@ public class Phantoms {
 	 * @param work the tick itself
 	 */
 	private void timed(String name, Runnable work) {
+		if (_paused) {
+			return;
+		}
 		final long start = System.nanoTime();
 		try {
 			work.run();
@@ -455,6 +460,9 @@ public class Phantoms {
 
 	/** A store that has stood a while, or sold out, gets new goods. */
 	private void restockTick() {
+		if (_paused) {
+			return;
+		}
 		final long now = System.currentTimeMillis();
 		for (Phantom phantom : _phantoms) {
 			if (phantom.state() != Phantom.State.TRADE) {
@@ -495,6 +503,9 @@ public class Phantoms {
 
 	/** Now and then a full party leaves its hunting ground for a raid boss of its size. */
 	private void raidTick() {
+		if (_paused) {
+			return;
+		}
 		final long now = System.currentTimeMillis();
 		for (PhantomSquad squad : _elite) {
 			try {
@@ -1287,46 +1298,70 @@ public class Phantoms {
 		return null;
 	}
 
+	/** Every bot, for the GM page. */
+	public static List<Phantom> all() {
+		return _instance == null ? List.of() : List.copyOf(_instance._phantoms);
+	}
+
+	/** The standing parties, for the GM page. */
+	public static List<PhantomSquad> squads() {
+		return _instance == null ? List.of() : List.copyOf(_instance._squads);
+	}
+
+	/** The hunting grounds a party can be sent to, for the GM page. */
+	public static List<PhantomHunting.Ground> grounds() {
+		return _instance == null ? List.of() : _instance._hunting.grounds();
+	}
+
 	/**
-	 * What the bots are doing right now, as a page for the GM window.
-	 * @return the html
+	 * Stops or starts every bot at once. A stopped bot drops what it was doing and stands where it is; it still
+	 * answers in chat.
+	 * @param paused whether the bots stop
+	 * @return false when the bots are not running
 	 */
-	public static String page() {
-		final StringBuilder out = new StringBuilder("<html><title>Bots</title><body>");
+	public static boolean pause(boolean paused) {
 		if (_instance == null) {
-			return out.append("The bots are not running.</body></html>").toString();
+			return false;
 		}
-		final Map<Phantom.State, Integer> states = new HashMap<>();
-		int kills = 0;
-		int deaths = 0;
-		long earned = 0;
-		for (Phantom phantom : _instance._phantoms) {
-			states.merge(phantom.state(), 1, Integer::sum);
-			kills += phantom.kills();
-			deaths += phantom.deaths();
-			earned += phantom.earned();
-		}
-		out.append("<center><table width=280><tr><td align=center>");
-		out.append(_instance._phantoms.size()).append(" bots in the world</td></tr></table></center><br>");
-		out.append("In town: <font color=\"LEVEL\">").append(states.getOrDefault(Phantom.State.TOWN, 0)).append("</font><br1>");
-		out.append("Travelling: <font color=\"LEVEL\">").append(states.getOrDefault(Phantom.State.TRAVEL, 0)).append("</font><br1>");
-		out.append("Hunting: <font color=\"LEVEL\">").append(states.getOrDefault(Phantom.State.HUNT, 0)).append("</font><br1>");
-		out.append("Coming back: <font color=\"LEVEL\">").append(states.getOrDefault(Phantom.State.RETURN, 0)).append("</font><br1>");
-		out.append("Keeping shops: <font color=\"LEVEL\">").append(states.getOrDefault(Phantom.State.TRADE, 0)).append("</font><br>");
-		out.append("Kills <font color=\"LEVEL\">").append(kills).append("</font>, deaths <font color=\"LEVEL\">").append(deaths);
-		out.append("</font>, loot sold for <font color=\"LEVEL\">").append(earned).append("</font> adena<br>");
-		if (_instance._brain != null) {
-			out.append("Model: ").append(_instance._brain.answered()).append(" lines, phrase book ").append(_instance._brain.missed()).append("<br>");
-		}
-		out.append("<br><center>Standing parties</center>");
-		for (PhantomSquad squad : _instance._squads) {
-			if (squad.members().size() < 5) {
-				continue;
+		_instance._paused = paused;
+		if (paused) {
+			for (Phantom phantom : _instance._phantoms) {
+				final L2PcInstance bot = phantom.player();
+				bot.abortAttack();
+				bot.abortCast();
+				bot.stopMove(null);
+				bot.getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE);
 			}
-			out.append("<a action=\"bypass -h admin_bots where ").append(squad.name().replace("party ", "")).append("\">");
-			out.append(squad.state()).append("</a><br1>");
 		}
-		return out.append("</body></html>").toString();
+		return true;
+	}
+
+	public static boolean paused() {
+		return (_instance != null) && _instance._paused;
+	}
+
+	/**
+	 * Sends a standing party to another hunting ground.
+	 * @param name the name of the party, such as 3.2
+	 * @param ground the ground, an index into {@link #grounds()}
+	 * @return what happened, for the GM
+	 */
+	public static String moveParty(String name, int ground) {
+		if (_instance == null) {
+			return "The bots are not running.";
+		}
+		final List<PhantomHunting.Ground> grounds = _instance._hunting.grounds();
+		if ((ground < 0) || (ground >= grounds.size())) {
+			return "No such hunting ground.";
+		}
+		for (PhantomSquad squad : _instance._squads) {
+			if (squad.name().equalsIgnoreCase(name) || squad.name().equalsIgnoreCase("party " + name)) {
+				final PhantomHunting.Ground to = grounds.get(ground);
+				squad.moveTo(new Location(to.x(), to.y(), to.z()), to.name());
+				return squad.name() + " went to " + to.name() + ".";
+			}
+		}
+		return "No such party.";
 	}
 
 	public static boolean isPhantom(L2PcInstance player) {
