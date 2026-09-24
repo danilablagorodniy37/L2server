@@ -2,11 +2,15 @@
 title Game Server Console
 cd /d "%~dp0"
 
+rem the server needs Java 21: JAVA_HOME wins over whatever java comes first in PATH
+set JAVA=java
+if defined JAVA_HOME if exist "%JAVA_HOME%\bin\java.exe" set JAVA="%JAVA_HOME%\bin\java.exe"
+
 :start
 echo Starting L2J Game Server...
 echo.
 
-java -Xms4g -Xmx12g -cp "l2jserver.jar;libs/*" com.l2jserver.gameserver.GameServer
+%JAVA% -Xms4g -Xmx12g -cp "l2jserver.jar;libs/*" com.l2jserver.gameserver.GameServer
 
 if ERRORLEVEL 2 goto restart
 if ERRORLEVEL 1 goto error

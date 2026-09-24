@@ -11,6 +11,19 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 GAME = ROOT / "game"
+
+
+def jdk(tool):
+	"""A tool of the JDK the server runs on (Java 21): the one in JAVA_HOME first, whatever comes first in PATH
+	(an older Java, sometimes) only without JAVA_HOME. None when there is neither."""
+	import shutil
+	home = os.environ.get("JAVA_HOME")
+	if home:
+		for name in (tool + ".exe", tool):
+			candidate = Path(home) / "bin" / name
+			if candidate.exists():
+				return str(candidate)
+	return shutil.which(tool)
 ACIS = Path(os.environ.get("ACIS_DATAPACK", ROOT.parent / "acis_public-master" / "aCis_datapack")) / "data" / "xml"
 
 KAMAEL_CLASS_IDS = set(range(123, 137))

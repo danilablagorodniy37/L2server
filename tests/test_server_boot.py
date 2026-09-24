@@ -57,10 +57,10 @@ def boot_log():
 	started = time.time()
 	login = game = None
 	try:
-		login = subprocess.Popen(["java", "-Xms1g", "-Xmx4g", "-jar", "l2jlogin.jar"], cwd=LOGIN,
+		login = subprocess.Popen([ds.jdk("java"), "-Xms1g", "-Xmx4g", "-jar", "l2jlogin.jar"], cwd=LOGIN,
 			stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 		assert wait_for(lambda: port_open(9014), 120, login), "login server did not open port 9014"
-		game = subprocess.Popen(["java", "-Xms4g", "-Xmx12g", "-cp", "l2jserver.jar;libs/*", "com.l2jserver.gameserver.GameServer"],
+		game = subprocess.Popen([ds.jdk("java"), "-Xms4g", "-Xmx12g", "-cp", "l2jserver.jar;libs/*", "com.l2jserver.gameserver.GameServer"],
 			cwd=GAME, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 		def loaded():
