@@ -407,3 +407,68 @@ class TestClientPackages:
 		assert texture.image().getextrema()[3][1] > 0, "the logo has visible pixels"
 		blanked = upackage.Package(utexture.replace(package, {texture: None}))
 		assert utexture.find(blanked, "mini_logo-e").image().getextrema()[3] == (0, 0)
+
+
+class TestBuildInterface:
+	"""The rules tools/client/build_interface.py keeps when it takes parts of the interface out."""
+
+	@staticmethod
+	def ui(sources):
+		import build_interface
+		import xdat
+		window = xdat.new("Window", "TestWnd", children=[
+			xdat.new("Button", "btnPost"), xdat.new("ItemWindow", "EquipItem_Slot"), xdat.new("TextBox", "txtValue"),
+			xdat.new("ItemWindow", "EquipItem_Template"), xdat.new("ItemWindow", "EquipItem_Head", extendsName="EquipItem_Template"),
+			xdat.new("Texture", "Mark", file="l2ui_ct1.Mark")])
+		layout = {"shortcuts": [], "windows": [window], "separator": 1, "wndDefPos": [], "fonts": [], "styles": [],
+			"chatChannels": [], "tail": b""}
+		return build_interface.Interface(layout, sources)
+
+	def test_a_case_label_is_no_lookup(self):
+		ui = self.ui({"TestWnd": 'switch(strID) { case "btnPost": ShowPost(); }'})
+		ui.remove("TestWnd", "btnPost", reason="test")
+		assert not ui.has("TestWnd", "btnPost")
+
+	def test_a_looked_up_item_window_stays(self):
+		"""AddItem into an item window that is not there crashes the client."""
+		ui = self.ui({"TestWnd": 'slot = GetItemWindowHandle("TestWnd.EquipItem_Slot");'})
+		with pytest.raises(ValueError):
+			ui.remove("TestWnd", "EquipItem_Slot", reason="test")
+
+	def test_a_looked_up_text_box_can_go(self):
+		ui = self.ui({"TestWnd": 'txt = GetTextBoxHandle(m_WindowName $ ".txtValue");'})
+		ui.remove("TestWnd", "txtValue", reason="test")
+		assert not ui.has("TestWnd", "txtValue")
+
+	def test_hiding_never_zeroes_a_template(self):
+		"""Eighteen equipment slots take their size from EquipItem_Underwear."""
+		ui = self.ui({})
+		with pytest.raises(ValueError):
+			ui.hide("TestWnd", "EquipItem_Template", reason="test")
+		ui.hide("TestWnd", "EquipItem_Slot", reason="test")
+		assert ui.widget("TestWnd", "EquipItem_Slot")[0]["width"] == 0
+
+	def test_a_hidden_texture_loses_its_picture(self):
+		ui = self.ui({})
+		ui.hide("TestWnd", "Mark", reason="test")
+		assert ui.widget("TestWnd", "Mark")[0]["file"] is None
+
+	def test_equip_slots_keep_the_size_of_the_picture(self):
+		from PIL import Image
+		import build_interface
+		picture = Image.new("RGBA", (256, 512), (128, 128, 128, 255))
+		out = build_interface.equip_slots(picture)
+		assert out.size == picture.size
+		assert out.getpixel((20, 300))[3] == 0, "the belt row is cleared"
+		assert out.getpixel((20, 20))[3] == 255, "the helmet row stays"
+
+	@pytest.mark.client
+	def test_the_whole_build_runs_on_the_client_copy(self):
+		import build_interface
+		import xdat
+		data, log = build_interface.build()
+		layout = xdat.read(data)
+		assert xdat.write(layout) == data
+		names = {node["name"] for _depth, node, _parent in xdat.walk([xdat.find(layout, "SystemMenuWnd")])}
+		assert "btnPost" not in names and "btnQuit" in names
+		assert any("InventoryWnd" in line for line in log)
