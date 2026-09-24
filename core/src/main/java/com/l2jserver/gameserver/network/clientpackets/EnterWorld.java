@@ -90,7 +90,6 @@ import com.l2jserver.gameserver.network.serverpackets.ExShowContactList;
 import com.l2jserver.gameserver.network.serverpackets.ExShowScreenMessage;
 import com.l2jserver.gameserver.network.serverpackets.ExStorageMaxCount;
 import com.l2jserver.gameserver.network.serverpackets.ExUISetting;
-import com.l2jserver.gameserver.network.serverpackets.ExVoteSystemInfo;
 import com.l2jserver.gameserver.network.serverpackets.FriendList;
 import com.l2jserver.gameserver.network.serverpackets.HennaInfo;
 import com.l2jserver.gameserver.network.serverpackets.ItemList;
@@ -431,7 +430,7 @@ public class EnterWorld extends L2GameClientPacket {
 		activeChar.onPlayerEnter();
 		
 		sendPacket(new SkillCoolTime(activeChar));
-		sendPacket(new ExVoteSystemInfo(activeChar));
+		activeChar.getRecSystem().sendInfo();
 		sendPacket(new ExShowContactList(activeChar));
 		
 		for (L2ItemInstance item : activeChar.getInventory().getItems()) {
@@ -491,7 +490,8 @@ public class EnterWorld extends L2GameClientPacket {
 			activeChar.sendPacket(new ExShowScreenMessage(customs().getScreenWelcomeMessageText(), (int) customs().getScreenWelcomeMessageTime()));
 		}
 		
-		final int birthday = activeChar.checkBirthDay();
+		// the birthday gift comes by mail: without mail there is neither a gift nor a word about it
+		final int birthday = general().allowMail() ? activeChar.checkBirthDay() : -1;
 		if (birthday == 0) {
 			activeChar.sendPacket(YOUR_BIRTHDAY_GIFT_HAS_ARRIVED);
 			// activeChar.sendPacket(new ExBirthdayPopup()); Removed in H5?

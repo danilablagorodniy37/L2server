@@ -22,7 +22,6 @@ import com.l2jserver.gameserver.model.L2Object;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jserver.gameserver.network.SystemMessageId;
 import com.l2jserver.gameserver.network.serverpackets.ExBrExtraUserInfo;
-import com.l2jserver.gameserver.network.serverpackets.ExVoteSystemInfo;
 import com.l2jserver.gameserver.network.serverpackets.SystemMessage;
 import com.l2jserver.gameserver.network.serverpackets.UserInfo;
 
@@ -87,8 +86,8 @@ public final class RequestVoteNew extends L2GameClientPacket {
 		sendPacket(new ExBrExtraUserInfo(activeChar));
 		target.broadcastUserInfo();
 		
-		activeChar.sendPacket(new ExVoteSystemInfo(activeChar));
-		target.sendPacket(new ExVoteSystemInfo(target));
+		activeChar.getRecSystem().sendInfo();
+		target.getRecSystem().sendInfo();
 	}
 	
 	@Override

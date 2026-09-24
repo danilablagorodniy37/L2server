@@ -50,4 +50,7 @@ public interface ChronicleConfiguration extends Config {
 
 	@Key("EnableAttributes")
 	boolean enableAttributes();
+
+	@Key("EnableRecommendationBonus")
+	boolean enableRecommendationBonus();
 }

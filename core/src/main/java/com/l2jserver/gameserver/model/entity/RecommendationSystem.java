@@ -18,6 +18,8 @@
  */
 package com.l2jserver.gameserver.model.entity;
 
+import static com.l2jserver.gameserver.config.Configuration.chronicle;
+
 import java.util.Objects;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
@@ -87,6 +89,10 @@ public class RecommendationSystem {
 	 * @param xpSpGain Whether the start is coming from xpSpGain or other mechanisms.
 	 */
 	public void startBonusTask(boolean xpSpGain) {
+		if (!chronicle().enableRecommendationBonus()) {
+			return;
+		}
+		
 		if (xpSpGain) {
 			_player.debugFeature("RecBonus", "Set peace pause flag to false.");
 			_recoBonusPeacePause = false;
@@ -97,7 +103,7 @@ public class RecommendationSystem {
 		
 		if (getBonusTime() <= 0) {
 			_player.debugFeature("RecBonus", "Not scheduling task because bonus time is {}.", getBonusTime());
-			_player.sendPacket(new ExVoteSystemInfo(_player));
+			sendInfo();
 			return;
 		}
 		
@@ -119,7 +125,7 @@ public class RecommendationSystem {
 		scheduleBonusTask(getBonusTime());
 		
 		_player.debugFeature("RecBonus", "Starting task.");
-		_player.sendPacket(new ExVoteSystemInfo(_player));
+		sendInfo();
 	}
 	
 	/**
@@ -139,7 +145,7 @@ public class RecommendationSystem {
 		
 		if (!isBonusTaskActive()) {
 			_player.debugFeature("RecBonus", "Not stopping task because it is not started.");
-			_player.sendPacket(new ExVoteSystemInfo(_player));
+			sendInfo();
 			return;
 		}
 		
@@ -148,7 +154,7 @@ public class RecommendationSystem {
 		setBonusTime(remainingTime);
 		
 		_player.debugFeature("RecBonus", "Stopping task.");
-		_player.sendPacket(new ExVoteSystemInfo(_player));
+		sendInfo();
 	}
 	
 	/**
@@ -159,7 +165,7 @@ public class RecommendationSystem {
 		setBonusTime(0);
 		
 		_player.debugFeature("RecBonus", "Finishing task.");
-		_player.sendPacket(new ExVoteSystemInfo(_player));
+		sendInfo();
 	}
 	
 	/**
@@ -225,7 +231,20 @@ public class RecommendationSystem {
 	
 	/** @return recommendation bonus percentage */
 	public int getBonus() {
+		if (!chronicle().enableRecommendationBonus()) {
+			return 0;
+		}
 		return (getBonusTime() > 0) || _player.hasAbnormalTypeVote() ? RecoBonus.getRecoBonus(_player) : 0;
+	}
+	
+	/**
+	 * Sends the recommendation bonus window of the client (ExVoteSystemInfo). Interlude has no such bonus: while it is
+	 * switched off in chronicle.properties the packet is never sent, and the client never opens the window.
+	 */
+	public void sendInfo() {
+		if (chronicle().enableRecommendationBonus()) {
+			_player.sendPacket(new ExVoteSystemInfo(_player));
+		}
 	}
 	
 	/** @return recommendations received by other players */

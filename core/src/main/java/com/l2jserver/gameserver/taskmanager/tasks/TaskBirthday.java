@@ -53,6 +53,11 @@ public class TaskBirthday extends Task {
 	
 	@Override
 	public void onTimeElapsed(ExecutedTask task) {
+		// the gift is a letter: no mail, no gift
+		if (!general().allowMail()) {
+			return;
+		}
+		
 		// TODO(Zoey76): Fix first run.
 		final int birthdayGiftCount = giveBirthdayGifts(task.getLastActivation());
 		

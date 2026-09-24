@@ -34,8 +34,7 @@ public final class ExBasicActionList extends L2GameServerPacket {
 		43, 44, 45, 46,
 		47, 48, 50, 52,
 		53, 54, 55, 56,
-		57, 63, 64, 65,
-		70, 1000, 1001, 1003,
+		57, 1000, 1001, 1003,
 		1004, 1005, 1006, 1007,
 		1008, 1009, 1010, 1011,
 		1012, 1013, 1014, 1015,
@@ -64,7 +63,9 @@ public final class ExBasicActionList extends L2GameServerPacket {
 	public static final int[] DEFAULT_ACTION_LIST;
 	
 	static {
-		int count1 = 74; // 0 <-> (count1 - 1)
+		// Interlude knows the actions 0-61; 62 and up came later (Charm, the mini-game, My Teleports, the bot
+		// report, Shyness, the airship wheel, the couple socials) and stay out of the actions window.
+		int count1 = 62; // 0 <-> (count1 - 1)
 		int count2 = 99; // 1000 <-> (1000 + count2 - 1)
 		int count3 = 16; // 5000 <-> (5000 + count3 - 1)
 		DEFAULT_ACTION_LIST = new int[count1 + count2 + count3];

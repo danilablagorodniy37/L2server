@@ -18,6 +18,7 @@
  */
 package com.l2jserver.gameserver.model.entity;
 
+import static com.l2jserver.gameserver.config.Configuration.chronicle;
 import static com.l2jserver.gameserver.config.Configuration.hunting;
 
 import java.util.Calendar;
@@ -55,6 +56,10 @@ public class HuntingSystem {
 	}
 	
 	public void onPlayerLogin() {
+		if (!hunting().getNevitEnable()) {
+			return;
+		}
+		
 		final Calendar cal = Calendar.getInstance();
 		cal.set(Calendar.HOUR_OF_DAY, 6);
 		cal.set(Calendar.MINUTE, 30);
@@ -81,6 +86,10 @@ public class HuntingSystem {
 	}
 	
 	public void addPoints(int val) {
+		if (!hunting().getNevitEnable()) {
+			return;
+		}
+		
 		setNevitBlessingPoints(getNevitBlessingPoints() + val);
 		
 		if (getNevitBlessingPoints() > hunting().getNevitBlessingMaxPoints()) {
@@ -92,6 +101,10 @@ public class HuntingSystem {
 	}
 	
 	public void startHuntingSystemTask() {
+		if (!hunting().getNevitEnable()) {
+			return;
+		}
+		
 		if ((_huntingBonusTask == null) && (((getHuntingBonusTime() < hunting().getHuntingBonusMaxTime()) || !hunting().getHuntingBonusLimit()))) {
 			_huntingBonusTask = ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(new HuntingBonusTask(), 1000, 10000);
 			if (hunting().getHuntingBonusLimit()) {
@@ -136,6 +149,10 @@ public class HuntingSystem {
 	}
 	
 	public void checkNevitBlessingEffect(int value) {
+		if (!hunting().getNevitEnable()) {
+			return;
+		}
+		
 		if (getNevitBlessingTime() > 0) {
 			stopNevitBlessingEffectTask(false);
 			value = getNevitBlessingTime();
@@ -243,6 +260,10 @@ public class HuntingSystem {
 	}
 	
 	public double getNevitHourglassMultiplier() {
+		// the recommendation bonus of High Five rides on the same multiplier
+		if (!chronicle().enableRecommendationBonus()) {
+			return 0;
+		}
 		return (getActiveChar().getRecSystem().getBonusTime() > 0) || getActiveChar().hasAbnormalTypeVote() ? RecoBonus.getRecoMultiplier(getActiveChar()) : 0;
 	}
 }
