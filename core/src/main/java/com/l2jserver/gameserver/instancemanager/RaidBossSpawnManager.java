@@ -24,6 +24,7 @@ import java.util.Calendar;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -393,6 +394,32 @@ public class RaidBossSpawnManager {
 		LOG.info("Spawning Night Raid Boss {}.", raidBoss.getName());
 		
 		_bosses.put(raidBoss.getId(), raidBoss);
+	}
+	
+	/**
+	 * Spawns a dead raid boss right away instead of at its respawn time: the timer is cancelled and the boss appears at
+	 * its spawn as it would when the timer ran out.
+	 * @param bossId the boss id
+	 * @return {@code false} when the boss is not waiting for its respawn
+	 */
+	public boolean spawnNow(int bossId) {
+		final ScheduledFuture<?> schedule = _schedules.remove(bossId);
+		if (schedule == null) {
+			return false;
+		}
+		schedule.cancel(false);
+		new SpawnSchedule(bossId).run();
+		return true;
+	}
+	
+	/**
+	 * @param bossId the boss id
+	 * @return when a dead boss comes back, in milliseconds since the epoch, or 0 when it is not waiting for that
+	 */
+	public long getRespawnTime(int bossId) {
+		// the timer knows it for every dead boss, also for those that were dead when the server started
+		final ScheduledFuture<?> schedule = _schedules.get(bossId);
+		return schedule == null ? 0L : System.currentTimeMillis() + Math.max(0, schedule.getDelay(TimeUnit.MILLISECONDS));
 	}
 	
 	/**

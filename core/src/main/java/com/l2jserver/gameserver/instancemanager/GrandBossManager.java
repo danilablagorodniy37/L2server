@@ -19,10 +19,12 @@
 package com.l2jserver.gameserver.instancemanager;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -159,6 +161,11 @@ public final class GrandBossManager implements IStorable {
 	
 	public boolean checkIfInZone(L2PcInstance player) {
 		return (player != null) && (getZone(player.getX(), player.getY(), player.getZ()) != null);
+	}
+	
+	/** @return the ids of every grand boss of grandboss_data */
+	public Set<Integer> getBossIds() {
+		return Collections.unmodifiableSet(_bossStatus.keySet());
 	}
 	
 	public int getBossStatus(int bossId) {
